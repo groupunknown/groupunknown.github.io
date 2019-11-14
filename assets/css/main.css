@@ -987,18 +987,19 @@ table tfoot td {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  bottom: 0;
+  bottom: 10px;
   display: block;
-  width: 7px;
-  height: 7px;
-  -webkit-border-radius: 100%;
-          border-radius: 100%;
+  width: 100px;
+  height: 2px;
+  /*-webkit-border-radius: 100%;
+          border-radius: 100%;*/
   background-color: #515151;
 }
 
 .about p {
-  font-size: 16px;
+  font-size: 12px;
   margin: 0 0 10px;
+  font-family: sans-serif;
 }
 
 .content-box {
