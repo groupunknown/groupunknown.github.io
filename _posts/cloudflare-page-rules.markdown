@@ -2,7 +2,7 @@
 layout: post
 title:  "Cloudflare page rules"
 date:   2019-11-13 11:49:08 -0400
-categories: tutoriais
+categories:
 ---
 For xbt to work with cloudflare you need to add the following page rules for your sub domain.
 
