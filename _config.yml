@@ -31,7 +31,7 @@ github_username:  groupunknown
 theme: minima
 plugins:
   - jekyll-feed
-permalink: pretty
+permalink: /:title/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
