@@ -6,7 +6,7 @@ categories:
 ---
 For xbt to work with cloudflare you need to add the following page rules for your sub domain.
 
-where :
+where:
 *.mysite.com - is the domain where your xbt is installed and pointed to. In case you want static domain you may change *.mysite.com to sub.mysite.com , change sub to any sub domain name you are using for your tracker.
 
 2710 - is the port on which your xbt is running.
@@ -25,4 +25,4 @@ where :
 * 8443
 * 8880
 
-- ![Cloudflare Page Rules]({{site.baseurl}}/assets/img/cloudflare-page-rules.png)
+![Cloudflare Page Rules]({{site.baseurl}}/assets/img/cloudflare-page-rules.png)
