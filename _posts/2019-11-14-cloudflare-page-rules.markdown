@@ -13,16 +13,16 @@ where :
 
 ## Ports Supported By Cloudflare:
 
-* `2052`
-* `2053`
-* `2082`
-* `2083`
-* `2086`
-* `2087`
-* `2095`
-* `2096`
-* `8080`
-* `8443`
-* `8880`
+* 2052
+* 2053
+* 2082
+* 2083
+* 2086
+* 2087
+* 2095
+* 2096
+* 8080
+* 8443
+* 8880
 
 - ![Cloudflare Page Rules]({{site.baseurl}}/assets/img/cloudflare-page-rules.png)
