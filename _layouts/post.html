@@ -8,7 +8,7 @@ layout: main
       <figure>
         <img class="page-image" src={{ "/assets/img/" | prepend: site.baseurl | append : page.img}} alt="{{page.title}}">
         {% if page.fig-caption %}
-          <figcaption>{{page.fig-caption}}</figcaption>
+        <figcaption>{{page.fig-caption}}</figcaption>
         {% endif %}
       </figure>
     </div> <!-- End Page Cover Image -->
@@ -18,35 +18,39 @@ layout: main
       <header class="header-page">
         <h1 class="page-title">{{page.title}}</h1>
         <!--<div class="page-date"><span>{{page.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;&nbsp;</span></div>-->
-        <div class="page-date"><span>{%raw%}
-{%assign d = page.date | date: "%a"%}
-{%assign m = page.date | date: "%-m"%}
-{%case d%}
-  {% when "Sun" %}Domingo
-  {% when "Mon" %}Segunda feira
-  {% when "Tue" %}Terça feira
-  {% when "Wed" %}Quarta feira
-  {% when "Thu" %}Quinta feira
-  {% when "Fri" %}Sexta feira
-  {% when "Sat" %}Sábado
-{%endcase%}
-{{page.date | date: "%-d de "}}
-{%case m%}
-  {% when '1' %}Janeiro
-  {% when '2' %}Fevereiro
-  {% when '3' %}Março
-  {% when '4' %}Abril
-  {% when '5' %}Maio
-  {% when '6' %}Junho
-  {% when '7' %}Julho
-  {% when '8' %}Agosto
-  {% when '9' %}Setembro
-  {% when '10' %}Outubro
-  {% when '11' %}Novembro
-  {% when '12' %}Dezembro
-{%endcase%}
-{{ page.date | date: " de %Y"}}
-{%endraw%}</span></div>
+        <div class="page-date">
+          <span>
+            {%raw%}
+            {%assign d = page.date | date: "%a"%}
+            {%assign m = page.date | date: "%-m"%}
+            {%case d%}
+            {%when "Sun" %}Domingo
+            {%when "Mon" %}Segunda feira
+            {%when "Tue" %}Terça feira
+            {%when "Wed" %}Quarta feira
+            {%when "Thu" %}Quinta feira
+            {%when "Fri" %}Sexta feira
+            {%when "Sat" %}Sábado
+            {%endcase%}
+            {{page.date | date: "%-d de "}}
+            {%case m%}
+            {%when '1' %}Janeiro
+            {%when '2' %}Fevereiro
+            {%when '3' %}Março
+            {%when '4' %}Abril
+            {%when '5' %}Maio
+            {%when '6' %}Junho
+            {%when '7' %}Julho
+            {%when '8' %}Agosto
+            {%when '9' %}Setembro
+            {%when '10' %}Outubro
+            {%when '11' %}Novembro
+            {%when '12' %}Dezembro
+            {%endcase%}
+            {{ page.date | date: " de %Y"}}
+            {%endraw%}
+          </span>
+        </div>
       </header>
       {{content | markdownify}}
       <div class="page-footer">
@@ -57,7 +61,7 @@ layout: main
         </div>
         <div class="page-tag">
           {% for tag in page.tags %}
-            <a href="{{site.baseurl}}/tags#{{tag}}" class="tag">&#35; {{ tag }}</a>
+          <a href="{{site.baseurl}}/tags#{{tag}}" class="tag">&#35; {{ tag }}</a>
           {% endfor %}
         </div>
       </div>
