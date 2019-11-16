@@ -19,37 +19,7 @@ layout: main
         <h1 class="page-title">{{page.title}}</h1>
         <!--<div class="page-date"><span>{{page.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;&nbsp;</span></div>-->
         <div class="page-date">
-          <span>
-            {%raw%}
-            {%assign d = page.date | date: "%a"%}
-            {%assign m = page.date | date: "%-m"%}
-            {%case d%}
-            {%when "Sun" %}Domingo
-            {%when "Mon" %}Segunda feira
-            {%when "Tue" %}Terça feira
-            {%when "Wed" %}Quarta feira
-            {%when "Thu" %}Quinta feira
-            {%when "Fri" %}Sexta feira
-            {%when "Sat" %}Sábado
-            {%endcase%}
-            {{page.date | date: "%-d de "}}
-            {%case m%}
-            {%when '1' %}Janeiro
-            {%when '2' %}Fevereiro
-            {%when '3' %}Março
-            {%when '4' %}Abril
-            {%when '5' %}Maio
-            {%when '6' %}Junho
-            {%when '7' %}Julho
-            {%when '8' %}Agosto
-            {%when '9' %}Setembro
-            {%when '10' %}Outubro
-            {%when '11' %}Novembro
-            {%when '12' %}Dezembro
-            {%endcase%}
-            {{ page.date | date: " de %Y"}}
-            {%endraw%}
-          </span>
+          <span>{{ page.date | date: "%-d %B %Y" }}</span>
         </div>
       </header>
       {{content | markdownify}}
