@@ -19,24 +19,25 @@ layout: main
         <h1 class="page-title">{{page.title}}</h1>
         <!--<div class="page-date"><span>{{page.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;&nbsp;</span></div>-->
         <div class="page-date">
-          <span><!-- Whitespace added for readability -->
-{% assign m = page.date | date: "%-m" %}
-{{ page.date | date: "%-d" }}
-{% case m %}
-  {% when '1' %}Januar
-  {% when '2' %}Februar
-  {% when '3' %}M&auml;rz
-  {% when '4' %}April
-  {% when '5' %}Mai
-  {% when '6' %}Juni
-  {% when '7' %}Juli
-  {% when '8' %}August
-  {% when '9' %}September
-  {% when '10' %}Oktober
-  {% when '11' %}November
-  {% when '12' %}Dezember
-{% endcase %}
-{{ page.date | date: "%Y" }}</span>
+          <span>
+            {% assign m = page.date | date: "%-m" %}
+            {{ page.date | date: "%-d" }}
+            {% case m %}
+            {% when '1' %}de Janeiro de
+            {% when '2' %}de Fevereiro de
+            {% when '3' %}de Março de
+            {% when '4' %}de Abril de
+            {% when '5' %}de Maio de
+            {% when '6' %}de Junho de
+            {% when '7' %}de Julho de
+            {% when '8' %}de Agosto de
+            {% when '9' %}de Setembro de
+            {% when '10' %}de Outubro de
+            {% when '11' %}de Novembro de
+            {% when '12' %}de Dezembro de
+            {% endcase %}
+            {{ page.date | date: "%Y" }}
+          </span>
         </div>
       </header>
       {{content | markdownify}}
