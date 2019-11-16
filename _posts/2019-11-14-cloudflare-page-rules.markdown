@@ -3,6 +3,10 @@ layout: post
 title:  "Cloudflare page rules"
 date:   2019-11-13 11:49:08 -0400
 categories:
+description: # Add post description (optional)
+img: cloudflare-page-rules.png # Add image post (optional)
+fig-caption: # Add figcaption (optional)
+tags: [cloudflare, xbt]
 ---
 For xbt to work with cloudflare you need to add the following page rules for your sub domain.
 
