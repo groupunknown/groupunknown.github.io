@@ -1329,15 +1329,17 @@ a.newer-posts:hover {
 .page-footer .page-share a {
   display: inline-block;
   text-decoration: none;
-  background-color: #fafafa;
-  border: 1px solid #ecf0f1;
-  padding: 5px 10px;
-  margin-left: 5px;
-  color: #263959;
+  background-color: #f1f8ff;
+  border-radius: 3px;
+  border: 1px solid #def;
   font-size: 12px;
   -webkit-transition: background-color .3s;
   -o-transition: background-color .3s;
   transition: background-color .3s;
+  padding: .3em .9em;
+  margin: 0 .5em .5em 0;
+  white-space: nowrap;
+  
 }
 
 .page-footer .page-share a:first-child {
@@ -1345,7 +1347,7 @@ a.newer-posts:hover {
 }
 
 .page-footer .page-share a:hover {
-  background-color: #ecf0f1;
+  background-color: #def;
 }
 
 .page-footer .page-tag a {
