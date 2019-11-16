@@ -25,4 +25,4 @@ where :
 * `8443`
 * `8880`
 
-- ![Cloudflare Page Rules](![Macbook]({{site.baseurl}}/assets/img/cloudflare-page-rules.png))
+- ![Cloudflare Page Rules]({{site.baseurl}}/assets/img/cloudflare-page-rules.png)
