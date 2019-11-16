@@ -1,7 +1,7 @@
 ---
 layout: main
 ---
-{% for post in paginator.posts %}
+<!--{% for post in paginator.posts %}
 <article class="post">
   {% if post.img %}
     <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : post.img}})" href="{{post.url | prepend: site.baseurl}}"></a>
@@ -13,6 +13,30 @@ layout: main
     <span class="post-date">{{post.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;—&nbsp;</span>
     <span class="post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span>
   </div>
+</article>
+{% endfor %}
+
+{% include pagination.html %} -->
+
+{% for post in paginator.posts %}
+<article class="post">
+  <div class="post-content">
+    {% if post.img %}
+    <img class="post-thumbnail" src="{{"/assets/img/" | prepend: site.baseurl | append : post.img}}">
+    {% else %}
+    {% endif %}
+    <div class="title">
+      <h1>
+        <a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a>
+      </h1>
+    </div>
+    <div class="markdown-body">
+     <div>{{ post.content | strip_html | truncatewords: 30 }}</div>
+     <div class="more">
+      <a class="btn" href="{{post.url | prepend: site.baseurl}}">Ler mais...</a>
+    </div>
+  </div>
+</div>
 </article>
 {% endfor %}
 
