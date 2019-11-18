@@ -22,7 +22,7 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
 
-{% highlight javascript %}
+{% highlight javascript linenos %}
 function pad(number, length) {
 	var str = '' + number;
 	while (str.length < length) {
