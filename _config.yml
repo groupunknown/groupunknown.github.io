@@ -36,12 +36,3 @@ paginate_path: "/page/:num"
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
 
 theme: jekyll-theme-minimal
-
-# Conversion
-highlighter: rouge
-
-# Markdown Processors
-kramdown:
-  input: GFM
-  auto_ids: true
-  syntax_highlighter: rouge
