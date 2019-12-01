@@ -18,7 +18,7 @@ Here is some example HTML:
 <ul class="randomize">
   <li>Item 0</li>
   <li>Item 1</li>
-  <li>Item 2 <img data-src="https://jekyllcodex.org/uploads/grumpycat2.jpg" /></li>
+  <li>Item 2 <img data-src="https://groupunknown.com/uploads/grumpycat2.jpg" /></li>
 </ul>
 ```
 
