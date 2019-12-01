@@ -1,0 +1,26 @@
+{% include header.html %}
+
+    <div class="content">
+        <div class="container">
+                  <br /><br /><img src="/img/logo-2x.png" alt="Jekyll logo" />
+                  <article class="post">
+                      {{ content }}
+                  </article>
+
+      </div>
+  </div>
+
+  {% comment %}<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+  </script>{% endcomment %}
+
+{% include footer.html %}

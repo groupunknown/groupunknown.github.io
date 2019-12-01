@@ -1,38 +1,71 @@
-title: GroupUnknown™
-description: > # this means to ignore newlines until "baseurl:"
-  GroupUnknown™ Network S.A.
-permalink: ':title/'
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-site-twitter: #if your site has a twitter account, enter it here
-
-# Author Settings
-author: GroupUnknown™ # add your name
-author-img: david-freeman.jpg # add your photo
-about-author: Sou desenvolvedor web focado no desenvolvimento front-end. Sempre com fome de continuar aprendendo. # add description
-social-twitter: yVitorHugo # add your Twitter handle
-social-facebook: yVitorHugo # add your Facebook handle
-social-github: groupunknown # add your Github handle
-social-linkedin: # add your Linkedin handle
-social-email: contato@groupunknown.com # add your Email address
-
-# Disqus
-discus-identifier: mr-brown # add your discus identifier
+---
+title: Jekyll Codex
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  products:
+    title: Products
+    output: true
+    permalink: "/donate/:path/"
+  uploads:
+    title: Uploads
+    output: false
+  without-plugin:
+    title: Without Plugin
+    output: true
+    permalink: "/without-plugin/:path/"
+defaults:
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+- scope:
+    path: ''
+    type: without-plugin
+  values:
+    layout: without-plugin-item
+- scope:
+    path: ''
+    type: products
+  values:
+    layout: product
+description: 'GroupUnknown™ Network S.A.'
 
 # Tracker
 analytics: UA-120280297-1 # Google Analytics
 google_ad_client: # Google AdSense
 
-# Build Settings
+url: https://groupunknown.org
+permalink: "/blog/:title/"
+facebook_url: https://www.facebook.com/groupunknown
+twitter_url: https://twitter.com/groupunknown
+linkedin_url: 
+googleplus_url: 
+pinterest_url: 
+instagram_url: 
+highlighter: rouge
 markdown: kramdown
-plugins:
-  - jekyll-sitemap
-  - jekyll-paginate
-  - jemoji
-
-paginate: 8
-paginate_path: "/page/:num"
-
-exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
-
-theme: jekyll-theme-minimal
+kramdown:
+  syntax_highlighter_opts:
+    disable: true
+input_types:
+- text
+- textarea
+- email
+- date
+- checkbox
+- radio
+- number
+- submit
+form_engines:
+- cloudcannon
+- formspree
+- formbucket

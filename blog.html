@@ -1,0 +1,12 @@
+---
+title: Blog
+layout: page
+---
+
+<h2>Sobre este blog</h2>
+
+Em nosso blog, mantemos você atualizado sobre o que está acontecendo neste site. Você tem um ótimo tópico ou está faltando alguma coisa? Deixe-me uma linha através do twitter <a href="https://twitter.com/yVitorHugo" target="_blank">@yVitorHugo</a>.
+
+<br /><br /><br />
+
+{% for post in site.posts %}{{ post.date | date: "%Y/%m/%d" }} - <a href="{{ post.url }}">{{ post.title }}</a><br />{% endfor %}
