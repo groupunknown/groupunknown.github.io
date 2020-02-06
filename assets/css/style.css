@@ -68,6 +68,12 @@ body {
 	cursor: default;
 }
 
+body,
+html {
+  height: 100%;
+  display: grid;
+}
+
 a {
 	color: var(--link);
 	background-color: transparent;
@@ -149,60 +155,6 @@ input:checked + .slider:before {
 	border-radius: 2px;
 }
 
-
 .container {
-	width: 100%;
-	margin: 0 auto
-}
-
-@media (min-width:576px) {
-	.container {
-		max-width: 540px;
-		padding: 10px
-	}
-}
-
-@media (min-width:768px) {
-	.container {
-		max-width: 720px
-	}
-}
-
-@media (min-width:992px) {
-	.container {
-		max-width: 960px
-	}
-}
-
-@media (min-width:1200px) {
-	.container {
-		max-width: 1140px
-	}
-}
-
-.container-fluid {
-	width: 100%;
-	margin: 0 auto
-}
-
-.row {
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-}
-
-.col-center {
-	flex: 60%;
-}
-
-.col-left,
-.col-right {
-	flex: 20%;
-}
-
-@media screen and (max-width: 700px) {
-	.row {   
-		flex-direction: column;
-	}
+	margin: auto;
 }
