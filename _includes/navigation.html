@@ -6,6 +6,8 @@
 			<li><a href="{{ item.url }}" {% if item.url == page.url %} class="active"{% endif %}>{{ item.title }}</a></li>
 			{% endfor %}
 		</ul>
-		{% include author_role.html %}
+		{% if page.is_post %}
+			{% include author_role.html %}
+		{% endif %}
 	</nav>
 </header>
