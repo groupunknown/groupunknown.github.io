@@ -1,22 +1,20 @@
 
-
-
 {% capture role_class %}
-	{% if  page.author == Kezo %}
-	    administrator
-	{% elsif  page.author == Relka %}
-	    contributor
-	{% elsif  page.author == Baragu %}
+	{% if page.author == "Kezo" %}
+		administrator
+	{% elsif page.author == "Relka" %}
+		contributor
+	{% elsif page.author == "Baragu" %}
 		author
 	{% endif %}
 {% endcapture %}
 
 {% capture role_name %}
-	{% if  page.author == Kezo %}
+	{% if page.author == "Kezo" %}
 	    Administrador
-	{% elsif  page.author == Relka %}
+	{% elsif  page.author == "Relka" %}
 	    Estagiário
-	{% elsif  page.author == Baragu %}
+	{% elsif  page.author == "Baragu" %}
 		Autor
 	{% endif %}
 {% endcapture %}
