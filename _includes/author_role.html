@@ -1,0 +1,35 @@
+
+
+
+{% capture role_class %}
+	{% if  page.author == Kezo %}
+	    administrator
+	{% elsif  page.author == Relka %}
+	    contributor
+	{% elsif  page.author == Baragu %}
+		author
+	{% endif %}
+{% endcapture %}
+
+{% capture role_name %}
+	{% if  page.author == Kezo %}
+	    Administrador
+	{% elsif  page.author == Relka %}
+	    Estagiário
+	{% elsif  page.author == Baragu %}
+		Autor
+	{% endif %}
+{% endcapture %}
+
+<div class="author">
+	<div class="author-avatar">
+		<div class="user-overlay"></div>
+		<img width="80" height="80" avatar="{{ page.author }}" alt="{{ page.author }}">
+	</div>
+	<div class="author-informations">
+		<div class="author-name">{{ page.author }}</div>
+		<div class="author-role {{ role_class }}">
+			<em>{{ role_name }}</em>
+		</div>
+	</div>
+</div>
