@@ -1,15 +1,19 @@
 {% if page.previous.url or page.next.url %}
     <div class="pagination">
+        <div class="pull-left">
         {% if page.next.url %}
-            <a class="pull-left" href="{{ site.url }}{{ site.baseurl }}{{ page.next.url }}">
+            <a href="{{ site.url }}{{ site.baseurl }}{{ page.next.url }}">
                 &larr; {{ page.next.title | truncatewords: 4 }}
             </a>
         {% endif %}
+        </div>
+        <div class="pull-right" >
         {% if page.previous.url %}
-            <a class="pull-right" href="{{ site.url }}{{ site.baseurl }}{{ page.previous.url }}">
+            <a href="{{ site.url }}{{ site.baseurl }}{{ page.previous.url }}">
                 {{ page.previous.title | truncatewords: 4}} &rarr;
             </a>
         {% endif %}
+        </div>
     </div>
     <div style="clear:both"></div>
 {% endif %}
