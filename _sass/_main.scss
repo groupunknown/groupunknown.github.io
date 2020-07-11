@@ -232,3 +232,13 @@ figcaption {
 ::-webkit-scrollbar-corner {
     background-color: transparent;
 }
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pull-left, .pull-right {
+    padding: .3em 1em;
+}
