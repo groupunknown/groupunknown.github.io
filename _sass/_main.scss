@@ -200,3 +200,35 @@ section {
 figcaption {
     font-size: smaller;
 }
+
+::selection {
+    background: #fff4be
+}
+
+::-moz-selection {
+    background: #fff4be
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    height: 5px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    -webkit-border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05), inset 1px 1px 0px rgba(0, 0, 0, 0.05);
+}
+
+::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
