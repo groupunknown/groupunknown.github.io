@@ -4,7 +4,7 @@ layout: default
 
 <section class="posts">
 	{% for post in site.posts %}
-		<div class="post-content">
+		<div class="post-content {% cycle 'left', 'right' %}">
 			{% include author_role_post.html %}
 			<div class="post-sub-content">
 				<h3 class="post-title">
