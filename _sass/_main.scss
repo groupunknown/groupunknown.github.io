@@ -65,6 +65,37 @@ pre {
 	padding: .5rem;
 }
 
+
+.theme-switch input {
+    display:none;
+}
+
+.slider {
+    width: 22px;
+    height: 100%;
+    cursor: pointer;
+    transition: .4s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.slider:before {
+    color: var(--color);
+    content: "\2600";
+    font-size: 24px;
+    position: absolute;
+}
+
+input:checked + .slider:before {
+    content: "\2600";
+}
+.slider.round:before {
+    border-radius: 2px;
+}
+
 .post p {
 	margin: .5rem 0;
 }
@@ -202,24 +233,24 @@ main {
 
 
 @media screen and (max-width: 45rem ) {
-header li {
-    display: inline;
-	margin-right: 1rem;
-}
-.logo {
-	padding-bottom: 1rem;
-}
-header ul {
-	border-bottom: 1px solid var(--color-grey);
-	padding-bottom: 2rem;	
-}
-nav ul {
-    border-right: 0px;
-}
+	header li {
+	    display: inline;
+		margin-right: 1rem;
+	}
+	.logo {
+		padding-bottom: 1rem;
+	}
+	header ul {
+		border-bottom: 1px solid var(--color-grey);
+		padding-bottom: 2rem;	
+	}
+	nav ul {
+	    border-right: 0px;
+	}
 
-.photos ul {
-	margin-top: 0.5rem;
-}
+	.photos ul {
+		margin-top: 0.5rem;
+	}
 
 }
 
