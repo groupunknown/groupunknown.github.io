@@ -295,6 +295,15 @@ figcaption {
     font-size: smaller;
 }
 
+.tag {
+	padding: .1rem .5rem;
+    color: var(--color);
+    background: var(--color-grey);
+    vertical-align: middle;
+    border-radius: 2px;
+    letter-spacing: -0.025em;
+}
+
 .pagination {
     display: flex;
     justify-content: space-between;
