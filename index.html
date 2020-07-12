@@ -12,6 +12,11 @@ layout: default
 	{% endfor %}
 	</ul>
 
+	{% if paginator and paginator.page and paginator.total_pages > 1 and paginator.page > 1 %}
+		<hr data-content="{{ paginator.page }} de {{ paginator.total_pages }}">
+    {% endif %}
+	
+
 	{% if paginator.total_pages > 1 %}
 	<div class="pagination">
 		{% if paginator.previous_page %}
