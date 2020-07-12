@@ -4,7 +4,7 @@ title: Tags
 ---
 
 <section class="posts">
-{% assign tags =  site.note | map: 'tags' | join: ','  | split: ',' | uniq %}
+{% assign tags =  site.note | map: 'tags' | uniq %}
 {% for tag in tags %}
   <h1>{{ tag }}</h1>
   <ul>
