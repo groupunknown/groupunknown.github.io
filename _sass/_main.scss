@@ -40,9 +40,8 @@ body {
 }
 
 *,:after,:before {
+	-webkit-box-sizing: border-box;
 	box-sizing:border-box;
-	background-color:inherit;
-	color:inherit;
 	margin:0;
 	padding:0;
 }
