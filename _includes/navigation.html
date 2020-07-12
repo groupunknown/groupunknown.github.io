@@ -1,16 +1,10 @@
 <header role="banner">
-	<nav role="navigation" class="nav-links">
-		{% for item in site.data.navigation.links %}
-			<div class="nav-link">
-				<a href="{{ item.url }}" {% if item.url == page.url %} class="active"{% endif %}>{{ item.title }}</a>
-			</div>
-		{% endfor %}
-		{% if page.id %}
-			{% include author_role_page.html %}
-		{% endif %}
+	<!--<h1 class="logo">{{ site.title }}</h1>-->
+	<nav role="navigation">
+		<ul>
+			{% for item in site.data.navigation.links %}
+				<li><a href="{{ item.url }}" {% if item.url == page.url %} class="active"{% endif %}>{{ item.title }}</a></li>
+			{% endfor %}
+		</ul>
 	</nav>
 </header>
-<label class="theme-switch" for="checkbox">
-	<input type="checkbox" id="checkbox">
-	<div class="slider round"></div>
-</label>

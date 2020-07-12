@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to add an RSS feed to a Jekyll blog
-description: Generate an Atom (RSS-like) feed of your Jekyll posts
-summary: Generate an Atom (RSS-like) feed of your Jekyll posts.
+title: Image caption in Jekyll
+description: Using an image caption in Jekyll
+summary: Using an image caption in Jekyll.
 tags: [jekyll, coding]
 ---
 
@@ -15,3 +15,5 @@ VHS roof party waistcoat cold-pressed, street art wolf master cleanse affogato f
 Salvia blue bottle fanny pack mlkshk normcore YOLO viral umami four dollar toast skateboard. Chambray taxidermy slow-carb street art chartreuse. Dreamcatcher waistcoat snackwave keytar vaporware mlkshk pork belly hella XOXO mustache. Tattooed semiotics edison bulb, disrupt polaroid craft beer vape enamel pin bespoke flannel letterpress brooklyn subway tile copper mug. Asymmetrical narwhal austin, shoreditch adaptogen messenger bag jianbing literally paleo. Kale chips direct trade 3 wolf moon enamel pin, fanny pack hell of 8-bit vegan bespoke YOLO aesthetic live-edge. Retro succulents before they sold out whatever bushwick.
 
 Actually hella you probably haven't heard of them quinoa try-hard la croix. Street art schlitz actually hell of pour-over air plant. Post-ironic franzen brunch mumblecore readymade. Food truck photo booth polaroid, gochujang vegan street art yr before they sold out man bun. Tilde selfies chia pitchfork everyday carry post-ironic mumblecore sartorial VHS master cleanse activated charcoal biodiesel williamsburg cronut jean shorts. Poutine helvetica keffiyeh butcher pop-up.
+
+

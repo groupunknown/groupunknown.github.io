@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to add an RSS feed to a Jekyll blog
-description: Generate an Atom (RSS-like) feed of your Jekyll posts
-summary: Generate an Atom (RSS-like) feed of your Jekyll posts.
+title: Displaying GitHub Gists in Jekyll sites
+description: A Liquid tag for Jekyll sites that allows embedding Gists
+summary: A Liquid tag for Jekyll sites that allows embedding Gists.
 tags: [jekyll, coding]
 ---
 

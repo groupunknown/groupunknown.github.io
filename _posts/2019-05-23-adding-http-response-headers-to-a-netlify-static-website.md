@@ -1,9 +1,10 @@
 ---
 layout: post
-title: How to add an RSS feed to a Jekyll blog
-description: Generate an Atom (RSS-like) feed of your Jekyll posts
-summary: Generate an Atom (RSS-like) feed of your Jekyll posts.
-tags: [jekyll, coding]
+title: Adding HTTP response headers to a Netlify static website
+description: Increase the security of your Netlify website by adding security headers
+summary: Increase the security of your Netlify website by adding security headers.
+comments: true
+tags: [netlify, coding, security]
 ---
 
 Lorem ipsum dolor amet tousled viral art party blue bottle single-origin coffee cardigan, selvage man braid helvetica. Banh mi taxidermy meditation microdosing. Selvage cornhole YOLO, small batch vexillologist raclette VHS prism sustainable 8-bit ugh semiotics letterpress disrupt pop-up. Celiac shabby chic ugh, jianbing whatever kitsch tattooed edison bulb kogi irony etsy.

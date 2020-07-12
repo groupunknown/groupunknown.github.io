@@ -1,8 +1,9 @@
 ---
 layout: post
-title: How to add an RSS feed to a Jekyll blog
-description: Generate an Atom (RSS-like) feed of your Jekyll posts
-summary: Generate an Atom (RSS-like) feed of your Jekyll posts.
+title: Staticman comments on a Jekyll site
+description: Generating comments on static sites with Staticman
+summary: Generating comments on static sites with Staticman.
+comments: true
 tags: [jekyll, coding]
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to add an RSS feed to a Jekyll blog
-description: Generate an Atom (RSS-like) feed of your Jekyll posts
-summary: Generate an Atom (RSS-like) feed of your Jekyll posts.
+title: Custom 404 page for Jekyll on Github pages
+description: Serve custom 404 error pages with Jekyll
+summary: Serve custom 404 error pages with Jekyll.
 tags: [jekyll, coding]
 ---
 

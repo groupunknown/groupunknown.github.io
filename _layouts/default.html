@@ -6,10 +6,13 @@ layout: compress
 <html lang="pt-BR" >
 {% include head.html %}  
 <body>
-    <main role="main" class="main">
+    <main role="main">
         {% include navigation.html %}
         {{ content }}
     </main>
-    <script src="{{ site.baseurl }}/assets/js/letters.avatar.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/preferscolorscheme.min.js"></script>
+    {% if page.id %}
+		<script src="{{ site.baseurl }}/assets/js/letters.avatar.min.js"></script>
+	{% endif %}
 </body>
 </html>
