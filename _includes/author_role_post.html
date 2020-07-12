@@ -1,19 +1,19 @@
 {% capture role_class %}
-	{% if page.author == "Kezo" %}
+	{% if post.author == "Kezo" %}
 		ribbon-administrator
-	{% elsif page.author == "Relka" %}
+	{% elsif post.author == "Relka" %}
 		ribbon-contributor
-	{% elsif page.author == "Baragu" %}
+	{% elsif post.author == "Baragu" %}
 		ribbon-author
 	{% endif %}
 {% endcapture %}
 
 {% capture role_name %}
-	{% if page.author == "Kezo" %}
+	{% if post.author == "Kezo" %}
 	    Administrador
-	{% elsif  page.author == "Relka" %}
+	{% elsif  post.author == "Relka" %}
 	    Estagiário
-	{% elsif  page.author == "Baragu" %}
+	{% elsif  post.author == "Baragu" %}
 		Autor
 	{% endif %}
 {% endcapture %}
@@ -21,10 +21,10 @@
 <div class="author">
 	<div class="author-avatar">
 		<div class="user-overlay"></div>
-		<img width="80" height="80" avatar="{{ page.author }}" alt="{{ page.author }}">
+		<img width="80" height="80" avatar="{{ post.author }}" alt="{{ post.author }}">
 	</div>
 	<div class="author-informations">
-		<div class="author-name">{{ page.author }}</div>
+		<div class="author-name">{{ post.author }}</div>
 		<div class="author-role {{ role_class }}">
 			<em>{{ role_name }}</em>
 		</div>
