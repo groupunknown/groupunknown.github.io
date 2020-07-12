@@ -436,16 +436,17 @@ th {
     font-weight: 700
 }
 
-.pagination {
+.posts {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
 }
 
-.pull-left a, .pull-right a {
-    padding: .3em 1em;
+.post-content {
+    display: flex;
+    padding-bottom: 3em;
 }
-
 
 .author {
     max-width: 98px;
@@ -455,6 +456,15 @@ th {
     -webkit-box-shadow: 0 2px 3px 0 rgba(154,154,154,0.04);
     box-shadow: 0 2px 3px 0 rgba(154,154,154,0.04);
     border: 1px solid #f5f5f5;
+}
+
+.right .author {
+    order: 2;
+    margin-right: 0;
+    margin-left: 1em;
+}
+.right .post-itens {
+    flex-direction: row-reverse;
 }
 
 .author-avatar {
@@ -481,6 +491,105 @@ th {
     background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.3));
 }
 
+.post-sub-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.left .post-sub-content {
+    background-color: #fff;
+    box-shadow: 5px 5px 0px #f5f5f5;
+    -webkit-box-shadow: 5px 5px 0px #f5f5f5;
+    border: 1px solid #f5f5f5;
+}
+.right .post-sub-content {
+    background-color: #fff;
+    box-shadow: -5px 5px 0px #f5f5f5;
+    -webkit-box-shadow: -5px 5px 0px #f5f5f5;
+    border: 1px solid #f5f5f5;
+}
+.left .post-sub-content:before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    top: 20%;
+    left: -9px;
+    background: #ffffff;
+    border: 1px solid transparent;
+    border-left-color: #f5f5f5;
+    border-bottom-color: #f5f5f5;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.right .post-sub-content:before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    top: 20%;
+    right: -9px;
+    background: #ffffff;
+    border: 1px solid transparent;
+    border-right-color: #f5f5f5;
+    border-top-color: #f5f5f5;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.post-title {
+    line-height: 1.2;
+    padding: 0;
+    margin: 0;
+}
+
+.post-title a {
+    color: #616161;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.post-description {
+    font-size: .8em;
+}
+
+.post-itens {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tag {
+    font-size: .8em;
+    padding: .35em .3em .3em .3em;
+    background: #ffedc9;
+    color: #795548;
+    vertical-align: middle;
+    line-height: 1em;
+    display: inline-block;
+    border-radius: 2px;
+    letter-spacing: -0.025em;
+}
+
+.post-date {
+    font-size: .8em;
+}
+
 .author-name {
     font-size: .8em;
     font-weight: 600;
@@ -500,6 +609,15 @@ th {
     text-shadow: 0px 0px 5px #FFEB3B;
     background-image: url('assets/img/magic-effect.gif'),linear-gradient(90deg,#f00 0%,#29ff00 100%,#fff);
     animation: namerainbow 5s infinite linear;
+}
+
+@keyframes namerainbow {
+    0% {
+        filter: hue-rotate(-360deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
 }
 
 .author-role {
@@ -535,7 +653,6 @@ th {
     font-style: normal;
     font-weight: normal;
 }
-
 
 .ribbon-administrator {
     color: #ffff;
@@ -578,11 +695,27 @@ th {
     background: #FFCA28;
 }
 
-@keyframes namerainbow {
-    0% {
-        filter: hue-rotate(-360deg);
+@media screen and (max-width: 768px) {
+    .post-content.left {
+        padding: 0 2em;
     }
-    100% {
-        filter: hue-rotate(360deg);
+    .post-content.right {
+        padding: 2em;
+    }
+    .author {
+        display: none;
+    }
+    .post-sub-content:before {
+        display: none;
+    }
+    .right .post-sub-content {
+        box-shadow: 5px 5px 0px #f5f5f5;
+        -webkit-box-shadow: 5px 5px 0px #f5f5f5;
+    }
+    .post-sub-content {
+        min-height: 150px;
+    }
+    .right .post-itens {
+        flex-direction: row;
     }
 }
