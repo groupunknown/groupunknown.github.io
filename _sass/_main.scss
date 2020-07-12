@@ -452,6 +452,38 @@ time {
 	font-size: .8em;
 }
 
+.theme-switch input {
+    display:none;
+}
+
+.slider {
+    width: 22px;
+    height: 100%;
+    cursor: pointer;
+    transition: .4s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.slider:before {
+    color: #000;
+    content: "\2600";
+    font-size: 24px;
+    position: absolute;
+}
+
+input:checked + .slider:before {
+    color: #fc0;
+    content: "\2600";
+}
+.slider.round:before {
+    border-radius: 2px;
+}
+
+
 .main {
     max-width: 768px;
     margin: 0 auto;
