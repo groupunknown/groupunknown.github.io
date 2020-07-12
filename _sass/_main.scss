@@ -48,15 +48,14 @@ body {
     text-rendering: optimizeLegibility;
 	line-height:1.5;
 	font-size: 1rem;
-	color: rgb(22, 23, 26);
 }
 
 nav ul {
-    border-right: 1px solid #edf2f7;
+    border-right: 1px solid var(--color-grey);
 }
 
 a {
-    color: #000;
+    color: var(--color);
     text-decoration-skip-ink: auto;
     text-decoration: underline;
 }
@@ -83,7 +82,7 @@ pre {
 }
 
 code,pre {
-	background: rgb(236, 237, 238);
+	background: var(--color-grey);
 }
 
 code {
@@ -104,7 +103,7 @@ img {
 }
 
 hr {
-	background: #000;
+	background: var(--color);
     height: 1px;
     border: 0;
 }
@@ -135,7 +134,7 @@ header,section {
 
 blockquote {
 	font-style: italic;
-    border-left: 5px solid #ececec;
+    border-left: 5px solid var(--color-grey);
     padding-left: 1rem;
 }
 
@@ -211,7 +210,7 @@ header li {
 	padding-bottom: 1rem;
 }
 header ul {
-	border-bottom: 1px solid #edf2f7;
+	border-bottom: 1px solid var(--color-grey);
 	padding-bottom: 2rem;	
 }
 nav ul {
