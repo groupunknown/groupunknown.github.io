@@ -34,6 +34,11 @@ body {
     background-color: var(--background);
 }
 
+* {
+    font-family: Roboto,Arial,sans-serif;
+    letter-spacing: -.015em;
+}
+
 *,:after,:before {
 	box-sizing:border-box;
 	background-color:inherit;
@@ -57,7 +62,7 @@ nav ul {
 a {
     color: var(--color);
     text-decoration-skip-ink: auto;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 pre {
@@ -271,6 +276,18 @@ figcaption {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.pagination div a {
+    font-size: .9em;
+    background: var(--background);
+    border: 1px solid var(--color-grey);
+    padding: .3em .5em;
+    border-radius: 3px;
+}
+
+.pagination div a:hover {
+    background-color: var(--color-grey);
 }
 
 .post {
