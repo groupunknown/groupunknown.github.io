@@ -86,8 +86,13 @@ article,aside,details,figcaption,figure,footer,header,main,nav,section {
     display: block
 }
 
-ol,ul {
+ol, ul, li {
     list-style: none
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0;
 }
 
 table {
