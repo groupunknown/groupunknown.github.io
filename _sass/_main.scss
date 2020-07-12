@@ -1,3 +1,39 @@
+:root {
+    --color-white: hsl(0, 0%, 100%);
+    --color-black: hsl(0, 0%, 4%);
+    --color-light: hsl(0, 0%, 96%);
+    --color-dark: hsl(0, 0%, 21%);
+    --background: hsl(0, 0%, 100%);
+    --color: hsl(0, 0%, 0%);
+    --color-grey: hsl(0, 0%, 96%);
+    --menu-hover: hsl(216, 14%, 93%);
+    --link: hsl(212, 97%, 43%);
+    --highlight-background: #fffdf0;
+    --highlight-border: #fff4be;
+}
+
+[data-theme="dark"] {
+     --background: #24252f;
+    --color: hsl(0, 0%, 100%);
+    --color-light: hsl(0, 0%, 21%);
+    --color-grey: #333541;
+    --menu-hover: hsl(221, 17%, 18%);
+    --link: hsl(0, 0%, 100%);
+    --highlight-background: #262b36;
+    --highlight-border: #464646;
+}
+
+@media (prefers-color-scheme: light) {
+    html {
+        content: "dark";
+    }
+}
+
+body {
+    color: var(--color);
+    background-color: var(--background);
+}
+
 *,:after,:before {
 	box-sizing:border-box;
 	background-color:inherit;
