@@ -167,9 +167,30 @@ img {
 }
 
 hr {
-	background: var(--color);
-    height: 1px;
+    position: relative;
+    text-align: center;
+    height: 1.5rem;
     border: 0;
+    opacity: .8;
+    font-size: .8rem;
+}
+
+hr:before {
+    content: '';
+    background: linear-gradient(to right, transparent, var(--color-grey), transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+  }
+
+hr:after {
+    content: attr(data-content);
+    position: relative;
+    padding: 0 .8rem;
+    line-height: 1.5rem;
+    background-color: var(--background);
 }
 
 header {
