@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to add an RSS feed to a Jekyll blog
-description: Generate an Atom (RSS-like) feed of your Jekyll posts
-summary: Generate an Atom (RSS-like) feed of your Jekyll posts.
+title: Showing the word count in Jekyll
+description: Obtaining the word count from a post in Jekyll
+summary: Obtaining the word count from a post in Jekyll.
 tags: [jekyll, coding]
 ---
 
