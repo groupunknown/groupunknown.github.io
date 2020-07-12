@@ -34,10 +34,5 @@
     {% endcapture %}
     {{ include_to_scssify | scssify }}
   </style>
-  <script type="text/javascript">
-    const theme = localStorage.getItem('theme');
-    if (theme === "dark") {
-      document.documentElement.setAttribute('data-theme', 'dark');
-    }
-  </script>
+  <script src="{{ base.url | prepend: site.url }}/assets/js/loadpreferscolorscheme.min.js"></script>
 </head>
