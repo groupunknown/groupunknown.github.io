@@ -436,6 +436,12 @@ th {
     font-weight: 700
 }
 
+.main {
+    max-width: 768px;
+    margin: 0 auto;
+    backface-visibility: hidden;
+}
+
 .posts {
     display: flex;
     flex-direction: column;
