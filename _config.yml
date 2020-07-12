@@ -60,5 +60,5 @@ defaults:
     values:
       layout: "post"
 
-paginate: 5
+paginate: 10
 paginate_path: /page:num/
