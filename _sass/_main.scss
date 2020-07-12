@@ -42,12 +42,12 @@
 }
 
 body {
+	font-size: 1em;
+	line-height: 1.5;
 	color: var(--color);
     background-color: var(--background);
 	-webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-	line-height:1.5;
-	font-size: 1rem;
 }
 
 nav ul {
@@ -61,8 +61,8 @@ a {
 }
 
 pre {
-	margin: .5rem 0;
-	padding: .5rem;
+	margin: .5em 0;
+	padding: .5em;
 }
 
 
@@ -129,11 +129,11 @@ input:checked + .slider:before {
 }
 
 .post p {
-	margin: .5rem 0;
+	margin: .5em 0;
 }
 
 .post h1, .post h2, .post h3, .post h4 {
-	margin: 1rem 0;
+	margin: 1em 0;
 }
 
 .post h2:first-child, .project h2:first-child, .photo h2:first-child {
@@ -141,7 +141,7 @@ input:checked + .slider:before {
 }
 
 .meta {
-	margin: 2rem 0;
+	margin: 2em 0;
 }
 
 code,pre {
@@ -149,7 +149,7 @@ code,pre {
 }
 
 code {
-	padding: .1rem;
+	padding: .1em;
 }
 
 pre code {
@@ -157,7 +157,7 @@ pre code {
 }
 
 pre {
-	padding: 1rem;
+	padding: 1em;
 	overflow-x: auto;
 }
 
@@ -172,7 +172,7 @@ hr {
 }
 
 header {
-	flex-basis:10rem;
+	flex-basis:10em;
 	flex-grow:1;
 	position:relative;
 }
@@ -182,9 +182,9 @@ header a {
 }
 
 header li {
-	margin-bottom: .2rem;
+	margin-bottom: .2em;
 	text-align: right;
-	margin-right: 2rem;
+	margin-right: 2em;
 }
 
 header a.active {
@@ -192,18 +192,18 @@ header a.active {
 }
 
 header,section {
-	padding:1rem;
+	padding:1em;
 }
 
 blockquote {
 	font-style: italic;
     border-left: 5px solid var(--color-grey);
-    padding-left: 1rem;
+    padding-left: 1em;
 }
 
 h1,h2,h3,h4,h5 {
 	line-height: 1;
-	margin: 1rem 0;
+	margin: 1em 0;
 	font-weight: 600;
 }
 
@@ -220,11 +220,11 @@ strong, b {
 }
 
 .photos li {
-	margin-bottom: 1.5rem;
+	margin-bottom: 1.5em;
 }
 
 .photo picture, .project picture {
-	margin-bottom: 0.5rem;
+	margin-bottom: 0.5em;
 }
 
 .posts ul,header ul {
@@ -235,7 +235,7 @@ strong, b {
 	align-items:center;
 	display:flex;
 	justify-content:space-between;
-	margin-bottom: .5rem;
+	margin-bottom: .5em;
 }
 
 .posts li a, .posts li div, .projects li a {
@@ -246,7 +246,7 @@ strong, b {
 }
 
 .posts li time, .projects li time {
-	padding-left: 1rem;
+	padding-left: 1em;
 	white-space: nowrap;
 	font-variant-numeric: tabular-nums;
 }
@@ -258,30 +258,30 @@ strong, b {
 main {
 	display:flex;
 	flex-wrap:wrap;
-	max-width:60rem;
-	margin:2rem auto;
-	padding:1rem;
+	max-width:60em;
+	margin:2em auto;
+	padding:1em;
 }
 
 
-@media screen and (max-width: 45rem ) {
+@media screen and (max-width: 45em ) {
 	header li {
 	    display: inline;
-		margin-right: 1rem;
+		margin-right: 1em;
 	}
 	.logo {
-		padding-bottom: 1rem;
+		padding-bottom: 1em;
 	}
 	header ul {
 		border-bottom: 1px solid var(--color-grey);
-		padding-bottom: 2rem;	
+		padding-bottom: 2em;	
 	}
 	nav ul {
 	    border-right: 0px;
 	}
 
 	.photos ul {
-		margin-top: 0.5rem;
+		margin-top: 0.5em;
 	}
 
 }
