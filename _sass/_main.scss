@@ -311,20 +311,20 @@ figcaption {
     letter-spacing: -0.025rem;
 }
 
-.pagination {
+.pgntn {
     display: flex;
     justify-content: space-between;
     align-items: center;
 	margin-bottom: .5rem;
 }
 
-.pagination div a {
+.pgntn div a {
     background: var(--background);
     padding: .5rem 1rem;
     border-radius: 3px;
 }
 
-.pagination div a:hover {
+.pgntn div a:hover {
     background-color: var(--color-grey);
 }
 
@@ -333,4 +333,56 @@ figcaption {
     box-shadow: 5px 5px 0px var(--color-grey);
     -webkit-box-shadow: 5px 5px 0px var(--color-grey);
     border: 1px solid var(--color-grey);
+}
+
+
+
+
+
+
+
+
+.pagination a {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    background: var(--background);
+    border: 1px solid var(--color-grey);
+    color: var(--link);
+    cursor: pointer;
+    float: left;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    margin-left: -1px;
+    padding: 7px 12px;
+    position: relative;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap
+}
+
+.pagination a:first-child {
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    margin-left: 0
+}
+
+.pagination a:last-child {
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px
+}
+
+.pagination a:focus,
+.pagination a:hover {
+    background-color: var(--color-light);
+    text-decoration: none;
+    z-index: 2
+}
+
+.pagination .active,
+.pagination .active:hover {
+    cursor: default;
+    background-color: var(--color-grey);
+    z-index: 3
 }
