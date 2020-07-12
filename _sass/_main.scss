@@ -29,11 +29,6 @@
     }
 }
 
-* {
-    font-family: Roboto,Arial,sans-serif;
-    letter-spacing: -.015em;
-}
-
 *,:after,:before {
 	-webkit-box-sizing: border-box;
 	box-sizing:border-box;
@@ -42,7 +37,8 @@
 }
 
 body {
-	font-size: 1em;
+	font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+    font-size: .9375rem;
 	line-height: 1.5;
 	color: var(--color);
     background-color: var(--background);
