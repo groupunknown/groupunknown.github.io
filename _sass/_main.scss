@@ -483,6 +483,28 @@ input:checked + .slider:before {
     border-radius: 2px;
 }
 
+.nav-links {
+    display: flex;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5em 0;
+}
+
+.nav-link {
+    color: var(--color);
+    background: var(--color-grey);
+    padding: .2em 1em;
+    border-radius: 2px;
+    margin-right: .5em;
+}
+
+.nav-link:last-child {
+    margin-right: 0;
+}
 
 .main {
     max-width: 768px;
