@@ -14,7 +14,7 @@
         -
       {% endif %}
       {% if paginator and paginator.page and paginator.total_pages > 1 and paginator.page > 1 %}
-        Page {{ paginator.page }} of {{ paginator.total_pages }} -
+        Página {{ paginator.page }} de {{ paginator.total_pages }} -
       {% endif %}
       {{ site.title | escape }}
       {% unless page.tag or page.title %}
