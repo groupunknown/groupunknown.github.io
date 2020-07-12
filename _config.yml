@@ -40,7 +40,7 @@ collections:
     permalink: /:name
   posts:
     output: true
-    permalink: /:slug #/:year/:month/:day/:slug
+    permalink: /:year/:month/:day/:slug
   
 defaults:
   -
