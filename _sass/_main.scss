@@ -10,6 +10,7 @@
     --link: hsl(212, 97%, 43%);
     --highlight-background: #fffdf0;
     --highlight-border: #fff4be;
+    --selection-color: #fff4be;
 }
 
 [data-theme="dark"] {
@@ -21,6 +22,7 @@
     --link: hsl(0, 0%, 100%);
     --highlight-background: #262b36;
     --highlight-border: #464646;
+    --selection-color: #262b36;
 }
 
 @media (prefers-color-scheme: light) {
@@ -63,11 +65,11 @@ pre {
 
 
 ::selection {
-    background: #fff4be
+    background: var(--selection-color)
 }
 
 ::-moz-selection {
-    background: #fff4be
+    background: var(--selection-color)
 }
 
 ::-webkit-scrollbar {
