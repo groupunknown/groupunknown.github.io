@@ -68,7 +68,6 @@ DEPENDENCIES
   jekyll-paginate
   jekyll-seo-tag
   jekyll-sitemap
-  jekyll-timeago
 
 BUNDLED WITH
    1.17.2
