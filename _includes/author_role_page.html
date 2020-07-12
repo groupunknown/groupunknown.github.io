@@ -1,0 +1,32 @@
+{% capture role_class %}
+	{% if post.author == "Kezo" %}
+		ribbon-administrator
+	{% elsif post.author == "Relka" %}
+		ribbon-contributor
+	{% elsif post.author == "Baragu" %}
+		ribbon-author
+	{% endif %}
+{% endcapture %}
+
+{% capture role_name %}
+	{% if post.author == "Kezo" %}
+	    Administrador
+	{% elsif  post.author == "Relka" %}
+	    Estagiário
+	{% elsif  post.author == "Baragu" %}
+		Autor
+	{% endif %}
+{% endcapture %}
+
+<div class="author">
+	<div class="author-avatar">
+		<div class="user-overlay"></div>
+		<img width="80" height="80" avatar="{{ post.author }}" alt="{{ post.author }}">
+	</div>
+	<div class="author-informations">
+		<div class="author-name">{{ post.author }}</div>
+		<div class="author-role {{ role_class }}">
+			<em>{{ role_name }}</em>
+		</div>
+	</div>
+</div>

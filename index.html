@@ -5,7 +5,7 @@ layout: default
 <section class="posts">
 	{% for post in site.posts %}
 		<div class="post-content">
-			{% include author_role.html %}
+			{% include author_role_post.html %}
 			<div class="post-sub-content">
 				<h3 class="post-title">
 					<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
