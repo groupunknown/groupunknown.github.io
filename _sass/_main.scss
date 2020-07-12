@@ -137,6 +137,9 @@ input:checked + .slider:before {
 }
 
 .meta {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
 	margin: 2rem 0;
 }
 
