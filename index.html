@@ -7,7 +7,7 @@ layout: default
 	{% for post in paginator.posts %}
 	<li>
 		<a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a>
-		<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d-%m-%Y" }}</time>
+		<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d-%m-%Y" }} {{ post.date | timeago }}</time>
 	</li>
 	{% endfor %}
 	</ul>
