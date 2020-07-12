@@ -24,7 +24,7 @@ layout: default
 		{% if paginator.previous_page %}
 			<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Anterior</a>
 		{% else %}
-			<a class="active">{{ page }}</a>
+			<a class="active">Anterior</a>
 		{% endif %}
 
 		{% for page in (1..paginator.total_pages) %}
@@ -40,7 +40,7 @@ layout: default
 		{% if paginator.next_page %}
 			<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Próximo</a>
 		{% else %}
-			<a class="active">{{ page }}</a>
+			<a class="active">Próximo</a>
 		{% endif %}
 	</div>
 	{% endif %}
