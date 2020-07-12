@@ -5,6 +5,10 @@
 				<a href="{{ item.url }}" {% if item.url == page.url %} class="active"{% endif %}>{{ item.title }}</a>
 			</div>
 		{% endfor %}
+		<label class="theme-switch" for="checkbox">
+			<input type="checkbox" id="checkbox">
+			<div class="slider round"></div>
+		</label>
 		{% if page.id %}
 			{% include author_role_page.html %}
 		{% endif %}
