@@ -82,7 +82,9 @@ a:focus {
     outline-offset: -2px;
 }
 
-[hidden] {
+
+[hidden],
+.hidden {
     display: none!important;
 }
 
@@ -424,10 +426,6 @@ nav {
 
 .col {
     padding: .8rem .5rem;
-}
-
-.hidden {
-    display: none;
 }
 
 .btn-menu {
