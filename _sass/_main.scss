@@ -31,11 +31,18 @@
     }
 }
 
-*,:after,:before {
-	-webkit-box-sizing: border-box;
-	box-sizing:border-box;
-	margin:0;
-	padding:0;
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 body {
@@ -46,48 +53,6 @@ body {
     background-color: var(--background);
 	-webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-}
-
-nav ul {
-    border-right: 1px solid var(--color-grey);
-}
-
-a {
-    color: var(--color);
-    text-decoration: none;
-}
-
-pre {
-	margin: .5rem 0;
-	padding: .5rem;
-}
-
-input, button, select, textarea {
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-}
-
-button, select {
-    text-transform: none;
-}
-
-button {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-button {
-    overflow: visible;
-}
-
-button, input, optgroup, select, textarea {
-    color: inherit;
-    font: inherit;
-    margin: 0;
 }
 
 main {
@@ -106,6 +71,145 @@ section {
     border: 1px solid var(--color-grey);
 }
 
+a {
+    color: var(--link);
+    background-color: transparent;
+}
+
+a,
+a:active,
+a:hover {
+    text-decoration: none;
+    outline: 0;
+}
+
+a:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+[hidden] {
+    display: none!important;
+}
+
+b,
+strong {
+    font-weight: 600;
+}
+
+img {
+    pointer-events: none;
+    vertical-align: middle;
+    border: 0;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+pre {
+    overflow: auto;
+}
+
+code,
+pre {
+    font-family: monospace;
+    font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+button {
+    overflow: visible;
+}
+
+button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+textarea {
+    resize: vertical;
+    overflow: auto;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+td,
+th {
+    padding: 0;
+}
+
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.375rem;
+}
+
+h4 {
+    font-size: 1.125rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 0.875rem;
+}
+
+p {
+    font-size: 1.125rem;
+    font-weight: 200;
+    line-height: 1.8;
+}
 
 ::selection {
     background: var(--selection-color)
