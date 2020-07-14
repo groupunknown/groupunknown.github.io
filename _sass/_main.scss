@@ -63,6 +63,30 @@ pre {
 	padding: .5rem;
 }
 
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button, select {
+    text-transform: none;
+}
+button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+button {
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
 
 ::selection {
     background: var(--selection-color)
@@ -401,4 +425,96 @@ figcaption {
 .pagination .active:hover {
     cursor: default;
     background-color: var(--color-grey);
+}
+
+header {
+    padding: 0;
+    color: var(--color-white);
+    background-color: #24292e;
+    background: var(--background);
+    border-bottom: 1px solid var(--color-grey);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0 2.0rem;
+}
+
+.col {
+    padding: .8rem .5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn-menu {
+    -moz-appearance: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-appearance: none;
+    -webkit-user-select: none;
+    appearance: none;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-size: inherit;
+    padding: 0;
+    text-decoration: none;
+    user-select: none;
+    white-space: nowrap;
+}
+
+.navbar-menu {
+    display: flex;
+    width: 18px;
+    height: 22px;
+}
+
+.navbar-menu span {
+    background: var(--color);
+    display: block;
+    height: 2px;
+    font-weight: 100;
+    position: absolute;
+    transform-origin: center;
+    transition-duration: 86ms;
+    transition-property: background-color, opacity, transform;
+    transition-timing-function: ease-out;
+    width: 18px;
+}
+
+.navbar-menu span:nth-child(1) {
+    top: calc(50% - 6px)
+}
+
+.navbar-menu span:nth-child(2) {
+    top: calc(50% - 1px)
+}
+
+.navbar-menu span:nth-child(3) {
+    top: calc(50% + 4px)
+}
+
+.navbar-menu.open-menu span:nth-child(1) {
+    transform: translateY(5px) rotate(45deg)
+}
+
+.navbar-menu.open-menu span:nth-child(2) {
+    opacity: 0
+}
+
+.navbar-menu.open-menu span:nth-child(3) {
+    transform: translateY(-5px) rotate(-45deg)
+}
+
+.theme-switch {
+    display: flex;
+    width: 18px;
+    height: 22px;
 }
