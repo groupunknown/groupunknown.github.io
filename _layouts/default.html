@@ -10,15 +10,11 @@ layout: compress
 	{% include header.html %}
 
     <main role="main">
-    	<aside>
-    		{% include laside.html %}
-    	</aside>
 
-        	{{ content }}
+    	{{ content }}
 
-        <aside>
-        	{% include raside.html %}
-        </aside>
+        {% include aside.html %}
+
     </main>
 
 	{% include footer.html %}
