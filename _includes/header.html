@@ -1,0 +1,36 @@
+<header role="banner">
+	<nav role="navigation">
+
+		<div class="col">
+			<button class="btn-menu navbar-menu" type="button">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+
+		<div class="col">
+			<div class="branding">
+				<a href="/">
+					<img src="https://torrents4you.io/assets/img/torrents4you.webp" alt="{{site.title}}">
+				</a>
+			</div>
+		</div>
+
+		<div class="col hidden">
+			<ul>
+				{% for item in site.data.navigation.links %}
+					<li><a href="{{ item.url }}" {% if item.url == page.url %} class="active"{% endif %}>{{ item.title }}</a></li>
+				{% endfor %}
+			</ul>
+		</div>
+
+		<div class="col">
+			<label class="theme-switch" for="checkbox">
+				<input type="checkbox" id="checkbox">
+				<div class="slider round"></div>
+			</label>
+		</div>
+
+	</nav>
+</header>
