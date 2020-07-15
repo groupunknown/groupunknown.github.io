@@ -11,7 +11,7 @@
     --highlight-background: #fffdf0;
     --highlight-border: #fff4be;
     --selection-color: #fff4be;
-    --img-logo: url('../assets/img/dark.webp');
+    --img-logo: url(../assets/img/dark.webp);
 }
 
 [data-theme="dark"] {
@@ -24,7 +24,7 @@
     --highlight-background: #262b36;
     --highlight-border: #464646;
     --selection-color: #262b36;
-    --img-logo: url('../assets/img/light.webp');
+    --img-logo: url(../assets/img/light.webp);
 }
 
 @media (prefers-color-scheme: light) {
