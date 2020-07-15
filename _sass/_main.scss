@@ -469,16 +469,12 @@ nav {
 }
 
 .branding a {
-    width: 70px;
+    width: 50px;
     height: 50px;
 }
 
-.branding a span {
-    position: absolute;
-    width: 70px;
-    height: 50px;
-    background-size: 70px 50px;
-    background: var(--img-logo) left top no-repeat;
+.branding svg {
+	color: var(--color);
 }
 
 .theme-switch {
