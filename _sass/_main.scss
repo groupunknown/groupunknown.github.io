@@ -301,36 +301,6 @@ aside {
     background-color: transparent;
 }
 
-.theme-switch input {
-    display:none;
-}
-
-.slider {
-    width: 22px;
-    height: 100%;
-    cursor: pointer;
-    transition: .4s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-.slider:before {
-    color: var(--color);
-    content: "\2600";
-    font-size: 24px;
-    position: absolute;
-}
-
-input:checked + .slider:before {
-    content: "\2600";
-}
-.slider.round:before {
-    border-radius: 2px;
-}
-
 .posts {
     display: flex;
     flex-direction: column;
@@ -515,4 +485,45 @@ nav {
     height: 50px;
     background-size: 70px 50px;
     background: var(--img-logo) left top no-repeat;
+}
+
+.theme-switch input {
+    display:none;
+}
+
+.slider {
+    width: 22px;
+    height: 100%;
+    cursor: pointer;
+    transition: .4s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.slider:before {
+    color: var(--color);
+    content: "\2600";
+    font-size: 24px;
+    position: absolute;
+}
+
+input:checked + .slider:before {
+    content: "\2600";
+}
+
+.slider.round:before {
+    border-radius: 2px;
+}
+
+.nav-menu {
+    width: 100%;
+}
+
+.nav-menu ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
