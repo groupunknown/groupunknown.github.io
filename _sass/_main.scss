@@ -527,3 +527,20 @@ input:checked + .slider:before {
     justify-content: space-around;
     align-items: center;
 }
+
+@media screen and (max-width: 48em) {
+    main {
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+
+    section {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    aside {
+        max-width: 100%;
+    }
+}
