@@ -58,13 +58,13 @@ html, body {
 }
 
 body {
-	font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
     font-size: .9rem;
 	line-height: 1.5;
 	color: var(--color);
     background-color: var(--background);
 	-webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
+    text-rendering: optimizeSpeed;
 }
 
 a {
@@ -240,12 +240,38 @@ p {
     line-height: 1.8;
 }
 
-main {
+
+header {
+	position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 10;
+    color: var(--color-white);
+    background: var(--background);
+    border-bottom: 1px solid var(--color-grey);
+}
+
+nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 60rem;
+    align-items: center;
+    max-width: 80rem;
+    height: 4rem;
     margin: 0 auto;
-    padding: 2rem .5rem;
+    padding: 0 2rem;
+}
+
+main {
+	display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 240px 2fr 1fr;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 1rem;
 }
 
 section {
@@ -259,10 +285,19 @@ section {
     border: 1px solid var(--color-grey);
 }
 
-aside {
+aside:first-child {
+	display: block;
+    grid-row-end: initial;
+    width: 240px;
+    background-color: var(--background);
+    box-shadow: 5px 5px 0px var(--color-grey);
+    -webkit-box-shadow: 5px 5px 0px var(--color-grey);
+    border: 1px solid var(--color-grey);
+}
+
+aside:last-child {
+	display: block;
     width: 100%;
-    max-width: 18.750rem;
-    padding: .5rem;
     background-color: var(--background);
     box-shadow: 5px 5px 0px var(--color-grey);
     -webkit-box-shadow: 5px 5px 0px var(--color-grey);
@@ -378,26 +413,8 @@ aside {
     background-color: var(--color-grey);
 }
 
-
-header {
-    padding: 0;
-    color: var(--color-white);
-    background: var(--background);
-    border-bottom: 1px solid var(--color-grey);
-}
-
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 60rem;
-    margin: 0 auto;
-    padding: 0 2.0rem;
-}
-
 .col {
-    padding: .8rem .5rem;
+    padding: .5rem;
 }
 
 .btn-menu {
