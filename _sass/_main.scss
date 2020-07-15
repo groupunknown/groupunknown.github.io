@@ -300,6 +300,8 @@ section {
 }
 
 .aside-left nav a {
+	display: flex;
+    align-items: center;
 	font-size: .9rem;
     color: var(--color);
     padding: .5rem;
