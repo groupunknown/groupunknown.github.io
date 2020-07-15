@@ -382,13 +382,13 @@ aside {
 header {
     padding: 0;
     color: var(--color-white);
-    background-color: #24292e;
     background: var(--background);
     border-bottom: 1px solid var(--color-grey);
 }
 
 nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     max-width: 60rem;
