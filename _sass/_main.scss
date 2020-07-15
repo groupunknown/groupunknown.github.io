@@ -12,6 +12,9 @@
     --highlight-border: #fff4be;
     --selection-color: #fff4be;
     --img-logo: url(../assets/img/dark.webp);
+    --layout: 240px 2fr 1fr;
+    --layout-gap: 1rem;
+    --layout-padding: 1rem;
 }
 
 [data-theme="dark"] {
@@ -263,14 +266,14 @@ header nav {
 }
 
 main {
-	display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: 240px 2fr 1fr;
+    display: grid;
+    grid-gap: var(--layout-gap);
+    grid-template-columns: var(--layout);
+    padding: var(--layout-padding);
     font-size: 1rem;
     width: 100%;
     max-width: 80rem;
     margin: 0 auto;
-    padding: 1rem;
     padding-top: 6rem;
 }
 
@@ -284,7 +287,7 @@ section {
 }
 
 .aside-left {
-    width: 240px;
+    width: var(--layout-sidebar-left-width);
 }
 
 .aside-left nav {
@@ -315,9 +318,8 @@ section {
     margin-right: .5rem;
 }
 
-
 .aside-right {
-	width: 100%;
+	width: var(--layout-sidebar-right-width);
     padding: 1rem;
     background-color: var(--background);
     box-shadow: 5px 5px 0px var(--color-grey);
@@ -624,19 +626,10 @@ section {
     align-items: center;
 }
 
-@media screen and (max-width: 48em) {
+@media (max-width: 64rem) {
     main {
-        flex-direction: column;
-        padding: 2rem 1rem;
-    }
-
-    section {
-        max-width: 100%;
-        margin-right: 0;
-        margin-bottom: 2rem;
-    }
-
-    aside {
-        max-width: 100%;
+        --layout: 100%;
+        --layout-gap: .5rem;
+        --layout-padding: .5rem;
     }
 }
