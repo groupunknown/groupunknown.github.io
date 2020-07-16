@@ -507,6 +507,26 @@ section {
     transform: translateY(-5px) rotate(-45deg)
 }
 
+.nav-menu ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: .9rem;
+    color: var(--color);
+    padding: .5rem;
+    border-radius: 3px;
+}
+
+.nav-menu ul li a:hover {
+    background-color: var(--menu-hover);
+}
+
+.nav-menu ul li {
+    display: flex;
+    width: 100%;
+}
+
 .branding {
     display: flex;
     align-items: center;
