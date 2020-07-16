@@ -1,3 +1,16 @@
 <aside class="aside-right">
 	<div class="ads-block">300x250</div>
+
+	<div class="cards">
+		<div class="card-header">Postagens recentes</div>
+		<div class="cards-posts">
+			{% for post in site.posts limit:8 %}
+			<a href="{{post.url | prepend: site.baseurl}}">
+				<h2>{{post.title}}</h2>
+				<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d-%m-%Y" }}</time>
+			</a>
+			{% endfor %}
+		</div>
+	</div>
+
 </aside>
