@@ -11,7 +11,11 @@ layout: compress
 
     <main role="main">
 
-    	{% include laside.html %}
+		{% include laside.html %}
+
+		{% if site.tags != "" %}
+			{% include tags.html %}
+		{% endif %}
 
     	{{ content }}
 
