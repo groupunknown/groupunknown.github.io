@@ -12,7 +12,7 @@
     --highlight-border: #fff4be;
     --selection-color: #fff4be;
     --img-logo: url(../assets/img/dark.webp);
-    --layout: 240px 2fr 1fr;
+    --layout: 240px 5fr 1fr;
     --layout-gap: 1rem;
     --layout-padding: 1rem;
 }
@@ -320,8 +320,6 @@ section {
 
 .aside-right {
 	width: 100%;
-	display: inline-grid;
-    justify-items: center;
 }
 
 .ads-block {
