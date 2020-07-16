@@ -65,11 +65,17 @@
 
 <aside class="aside-left">
 	<nav>
-		<span>{{ site.data.laside.list_links }}</span>
-		{% for item in site.data.laside.links %}
-			<a href="{{ item.url }}" {% if item.url == page.url %} class="active"{% endif %}>{{ item.title }}</a>
+		<span>{{ site.data.laside.condicao_title }}</span>
+		{% for item in site.data.laside.condicao_links %}
+			<a href="{{ item.url }}" {% if item.url == page.url %} class="active"{% endif %}>{{ item.icon }}{{ item.title }}</a>
 		{% endfor %}
-			
-		<a href="/fisica"></a>
+		<span>{{ site.data.laside.testes_title }}</span>
+		{% for item in site.data.laside.condicao_links %}
+			<a href="{{ item.url }}" {% if item.url == page.url %} class="active"{% endif %}>{{ item.icon }}{{ item.title }}</a>
+		{% endfor %}
+		<span>{{ site.data.laside.testes_title }}</span>
+		{% for item in site.data.laside.testes_links %}
+			<a href="{{ item.url }}" {% if item.url == page.url %} class="active"{% endif %}>{{ item.icon }}{{ item.title }}</a>
+		{% endfor %}
 	</nav>
 </aside>
