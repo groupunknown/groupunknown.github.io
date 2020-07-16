@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Condições físicas
-category: condicao
+categories: condicao
 ---
 
 ### Coming soon!

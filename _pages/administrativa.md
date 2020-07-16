@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Condições administrativas
-category: condicao
+categories: condicao
 ---
 
 ### Coming soon!

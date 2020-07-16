@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Condições médicas
-category: condicao
+categories: condicao
 ---
 
 ### Coming soon!

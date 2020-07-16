@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Sobre
-category: diversos
+categories: diversos
 ---
 
 ### Coming soon!
