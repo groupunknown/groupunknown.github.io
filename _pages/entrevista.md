@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Entrevista motivacional
-category: teste
+categories: teste
 ---
 
 ### Coming soon!

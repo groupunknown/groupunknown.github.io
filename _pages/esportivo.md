@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Testes esportivos
-category: teste
+categories: teste
 ---
 
 ### Coming soon!

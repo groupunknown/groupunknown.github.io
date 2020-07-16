@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Teste psicotécnico
-category: teste
+categories: teste
 ---
 
 ### Coming soon!

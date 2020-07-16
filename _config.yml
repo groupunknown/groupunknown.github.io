@@ -36,7 +36,7 @@ plugins:
 collections:
   pages:
     output: true
-    permalink: /:category/:name
+    permalink: /:categories/:name
   posts:
     output: true
     permalink: /:slug #/:year/:month/:day/:slug
