@@ -63,3 +63,13 @@
 </aside>
 
 
+<aside class="aside-left">
+	<nav>
+		<span>{{ site.data.laside.list_links }}</span>
+		{% for item in site.data.laside.links %}
+			<a href="{{ item.url }}" {% if item.url == page.url %} class="active"{% endif %}>{{ item.title }}</a>
+		{% endfor %}
+			
+		<a href="/fisica"></a>
+	</nav>
+</aside>
