@@ -258,7 +258,7 @@ blockquote:before {
    font-size:40px;
    margin-left:-10px;
    font-family:georgia,serif;
-   color:#eee;
+   color: var(--color-grey);
 }
 
 blockquote p {
@@ -297,28 +297,6 @@ pre code {
    color: var(--color);
    font-size: 11px;
    padding: 0;
-}
-sup {
-   font-size: 0.83em;
-   vertical-align: super;
-   line-height: 0;
-}
-* {
-   -webkit-print-color-adjust: exact;
-}
-@media screen and (min-width: 914px) {
-   body {
-      width: 854px;
-      margin:10px auto;
-   }
-}
-@media print {
-   body,code,pre code,h1,h2,h3,h4,h5,h6 {
-      color: var(--color);
-   }
-   table, pre {
-      page-break-inside: avoid;
-   }
 }
 
 
