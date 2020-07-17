@@ -3,7 +3,7 @@ layout: page
 title: Sobre
 categories: diversos
 tags: [ajuda, sobre]
-date: 2020-07-17
+date: 2020-07-17 00:00:00 +0000
 ---
 
 # H1
