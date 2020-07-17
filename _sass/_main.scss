@@ -734,6 +734,21 @@ main {
     font-size: 3rem;
 }
 
+.ads-block-sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 600px;
+    font-size: 2rem;
+    background: var(--color-light);
+}
+
+.ads-block-sub span:first-child {
+    font-size: 3rem;
+}
+
 .ads-posts {
     display: flex;
     justify-content: center;
