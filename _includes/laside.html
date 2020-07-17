@@ -1,6 +1,6 @@
 <aside class="aside-left">
 	<nav>
-		{% for item in site.data.laside.laside %}
+		{% for item in site.data.laside.iaside %}
 		    <span>{{ item.title }}</span>
 		    {% for entry in item.links %}
 		        <a href="{{ entry.url }}" {% if entry.url == page.url %} class="active"{% endif %}>{{ entry.icon }}{{ entry.title }}</a>
