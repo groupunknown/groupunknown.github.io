@@ -8,7 +8,7 @@ layout: default
 		<hr data-content="{% include date_formatting.html date=page.date %}">
 		{{ content }}
 		<div class="meta">
-			<time datetime="{{ page.date | date_to_xmlschema }}">{% include date_formatting.html date=page.date %}</time>
+			{% comment %}<time datetime="{{ page.date | date_to_xmlschema }}">{% include date_formatting.html date=page.date %}</time>{% endcomment %}
 			<div class="post-tags">
 				{% for tag in page.tags %}
 					<a class="tag" href="/tag/{{tag}}">#{{tag}}</a>
