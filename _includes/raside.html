@@ -10,7 +10,7 @@
 			{% for post in site.posts limit:8 %}
 			<a href="{{post.url | prepend: site.baseurl}}">
 				<span>{{post.title}}</span>
-				<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d-%m-%Y" }}</time>
+				<time datetime="{{ post.date | date_to_xmlschema }}">{% include date_formatting.html date=post.date %}</time>
 			</a>
 			{% endfor %}
 		</div>
