@@ -2,6 +2,7 @@
 layout: page
 title: Sobre
 categories: diversos
+tags: [ajuda, sobre]
 ---
 
 # H1
