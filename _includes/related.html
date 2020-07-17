@@ -1,0 +1,21 @@
+<section class="related">
+    <div class="related-post">
+        <h4>Postagens relacionadas</h4>
+        {% assign maxrc = 0 %}
+        <ul>
+           {% for post in site.posts %}
+               {% if post.url != page.url %}
+                   {% if post.tags == page.tags %}
+                       <li>
+                           <a href="{{post.url}}">{{ post.title }}</a>
+                       </li>
+                   {% assign maxrc  = maxrc | plus: 1 %}
+                       {% if maxrc == 3 %}
+                            {% break %}
+                       {% endif %}
+                   {% endif %}
+               {% endif %}
+           {% endfor %}
+        </ul>
+    </div>
+</section>
