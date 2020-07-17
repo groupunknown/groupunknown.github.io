@@ -14,6 +14,10 @@
 		{% for item in site.data.laside.diversos_links %}
 			<a href="{{ item.url }}" {% if item.url == page.url %} class="active"{% endif %}>{{ item.icon }}{{ item.title }}</a>
 		{% endfor %}
-
 	</nav>
+
+	{% if page.id %}
+		{% include related.html %}
+	{% endif %}
+
 </aside>
