@@ -2,9 +2,21 @@
 layout: default
 ---
 
-<section class="post">
-	<h2>{{ page.title }}</h2>
-	{{ content }}
+<section class="content">
+	<div class="post">
+		<h2>{{ page.title }}</h2>
+		{{ content }}
+		<div class="meta">
+			<time datetime="{{ page.date | date_to_xmlschema }}">{% include date_formatting.html date=page.date %}</time>
+			<div class="tags">
+				{% for tag in page.tags %}
+					<a class="tag" href="/tag/{{tag}}">#{{tag}}</a>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	{% include suggestion.html %}
+	{% include related.html %}
 </section>
 
 
