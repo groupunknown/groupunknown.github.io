@@ -386,6 +386,16 @@ main {
 	width: 100%;
 }
 
+.post {
+    height: max-content;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: var(--background);
+    box-shadow: 5px 5px 0px var(--color-grey);
+    -webkit-box-shadow: 5px 5px 0px var(--color-grey);
+    border: 1px solid var(--color-grey);
+}
+
 .cards {
     margin: 1.5rem 0;
     background-color: var(--background);
