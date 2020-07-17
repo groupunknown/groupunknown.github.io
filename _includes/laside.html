@@ -1,23 +1,12 @@
 <aside class="aside-left">
 	<nav>
-		<span>{{ site.data.laside.condicao_title }}</span>
-		{% for item in site.data.laside.condicao_links %}
-			<a href="{{ item.url }}" {% if item.url == page.url %} class="active"{% endif %}>{{ item.icon }}{{ item.title }}</a>
-		{% endfor %}
-
-		<span>{{ site.data.laside.testes_title }}</span>
-		{% for item in site.data.laside.testes_links %}
-			<a href="{{ item.url }}" {% if item.url == page.url %} class="active"{% endif %}>{{ item.icon }}{{ item.title }}</a>
-		{% endfor %}
-
-		<span>{{ site.data.laside.diversos_title }}</span>
-		{% for item in site.data.laside.diversos_links %}
-			<a href="{{ item.url }}" {% if item.url == page.url %} class="active"{% endif %}>{{ item.icon }}{{ item.title }}</a>
+		{% for item in site.data.laside.laside %}
+		    <span>{{ item.title }}</span>
+		    {% for entry in item.links %}
+		        <a href="{{ entry.url }}" {% if entry.url == page.url %} class="active"{% endif %}>{{ entry.icon }}{{ entry.title }}</a>
+		    {% endfor %}
 		{% endfor %}
 	</nav>
-
-	{% if page.id %}
-		{% include related.html %}
-	{% endif %}
-
 </aside>
+
+
