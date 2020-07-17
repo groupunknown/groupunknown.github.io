@@ -204,14 +204,13 @@ hr:after {
 
 ol,
 ul {
-    margin: 0;
-    padding: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
-ol,
-ul,
-li {
-    list-style: none;
+ol li,
+ul li {
+    margin: 10px 0px;
 }
 
 h1,
