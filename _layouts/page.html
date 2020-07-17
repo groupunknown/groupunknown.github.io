@@ -5,6 +5,7 @@ layout: default
 <section class="content">
 	<div class="post">
 		<h3>{{ page.title }}</h3>
+		<hr data-content="{% include date_formatting.html date=page.date %}">
 		{{ content }}
 		<div class="meta">
 			<time datetime="{{ page.date | date_to_xmlschema }}">{% include date_formatting.html date=page.date %}</time>
