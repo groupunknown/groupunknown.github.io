@@ -6,7 +6,7 @@ layout: default
 	<h2>{{ page.title }}</h2>
 	{{ content }}
 	<div class="meta">
-		<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d-%m-%Y" }}</time>
+		<time datetime="{{ page.date | date_to_xmlschema }}">{% include date_formatting.html date=page.date %}</time>
 		<div class="tags">
 			{% for tag in page.tags %}
 				<a class="tag" href="/tag/{{tag}}">#{{tag}}</a>
