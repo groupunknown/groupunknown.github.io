@@ -323,16 +323,6 @@ main {
 	width: 100%;
 }
 
-.ads-block {
-	display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 250px;
-    font-size: 3rem;
-    background: var(--color-light);
-}
-
 .cards {
     margin-top: 1.5rem;
     background-color: var(--background);
@@ -420,6 +410,16 @@ main {
     box-shadow: 5px 5px 0px var(--color-grey);
     -webkit-box-shadow: 5px 5px 0px var(--color-grey);
     border: 1px solid var(--color-grey);
+}
+
+.posts ul li.ads {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border: none;
 }
 
 .posts .post-date {
@@ -717,4 +717,24 @@ main {
         --layout-gap: .5rem;
         --layout-padding: .5rem;
     }
+}
+
+.ads-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 250px;
+    font-size: 3rem;
+    background: var(--color-light);
+}
+
+.ads-posts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 100px;
+    font-size: 3rem;
+    background: var(--color-light);
 }
