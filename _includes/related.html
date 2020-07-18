@@ -1,20 +1,22 @@
-<div class="cards">
-    <div class="card-header">Postagens relacionadas</div>
-    <div class="cards-posts">
-        {% assign maxrc = 0 %}
-        {% for post in site.posts %}
-        {% if post.url != page.url %}
-        {% if post.tags == page.tags %}
-        <a href="{{post.url | prepend: site.baseurl}}">
-            <span>{{post.title}}</span>
-            <time datetime="{{ post.date | date_to_xmlschema }}">{% include date_formatting.html date=post.date %}</time>
-        </a>
-        {% assign maxrc  = maxrc | plus: 1 %}
-        {% if maxrc == 3 %}
-        {% break %}
-        {% endif %}
-        {% endif %}
-        {% endif %}
-        {% endfor %}
+{% if post.tags != 0 %}
+    <div class="cards">
+        <div class="card-header">Postagens relacionadas</div>
+        <div class="cards-posts">
+            {% assign maxrc = 0 %}
+            {% for post in site.posts %}
+                {% if post.url != page.url %}
+                    {% if post.tags == page.tags %}
+                        <a href="{{post.url | prepend: site.baseurl}}">
+                            <span>{{post.title}}</span>
+                            <time datetime="{{ post.date | date_to_xmlschema }}">{% include date_formatting.html date=post.date %}</time>
+                        </a>
+                        {% assign maxrc  = maxrc | plus: 1 %}
+                        {% if maxrc == 3 %}
+                            {% break %}
+                        {% endif %}
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        </div>
     </div>
-</div>
+{% endif %}
