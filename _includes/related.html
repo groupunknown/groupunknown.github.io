@@ -16,22 +16,11 @@
                             {% break %}
                         {% endif %}
                     {% else %}
-
-                        {% if page.previous.url or page.next.url %}
-                            {% if page.next.url %}
-                                <a href="{{ site.url }}{{ site.baseurl }}{{ page.next.url }}">
-                                    <span>{{page.next.title}}</span>
-                                    <time datetime="{{ page.next.date | date_to_xmlschema }}">{% include date_formatting.html date=post.date %}</time>
-                                </a>
-                            {% endif %}
-                            {% if page.previous.url %}
-                                <a href="{{ site.url }}{{ site.baseurl }}{{ page.previous.url }}">
-                                    <span>{{page.previous.title}}</span>
-                                    <time datetime="{{ page.previous.date | date_to_xmlschema }}">{% include date_formatting.html date=post.date %}</time>
-                                </a>
-                            {% endif %}
+                        {% if maxrc == 1 %}
+                            <a href="/">
+                                <span>Página inicial</span>
+                            </a>
                         {% endif %}
-
                     {% endif %}
                 {% endif %}
             {% endfor %}
