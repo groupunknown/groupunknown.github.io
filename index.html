@@ -7,11 +7,14 @@ layout: default
 	<div class="posts-article">
 	{% for post in paginator.posts %}
 		<article class="post-article">
-			{% if page.featured_image %}
+
+
+			{% if page.img %}
 				<div class="post-imagem">
-					<img src="{{ site.baseurl }}/assets/img/articles/{{ page.featured_image }}" alt="{{ post.title }}" />
+					<img src="{{ site.baseurl }}/assets/img/articles/{{ page.img }}" alt="{{ post.title }}" />
 				</div>
 			{% endif %}
+
 			<div class="post-date">
 				<time datetime="{{ post.date | date_to_xmlschema }}">{% include date_formatting.html date=post.date %}</time>
 			</div>
