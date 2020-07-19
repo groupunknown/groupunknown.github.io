@@ -481,7 +481,6 @@ main {
 .posts .posts-article .post-article {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
     margin: 0;
     margin-bottom: 1.5rem;
     background-color: var(--background);
@@ -507,7 +506,7 @@ main {
 
 .posts .posts-article .post-article .post-date {
     font-size: .8rem;
-    padding: .5rem 1rem;
+    padding: 1rem 1rem .5rem 1rem;
 }
 
 .posts .posts-article .post-article .post-title {
