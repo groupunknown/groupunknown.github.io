@@ -473,17 +473,12 @@ main {
 }
 
 .posts,
-.posts ul {
+.posts .posts-article {
     display: flex;
     flex-direction: column;
 }
 
-.posts ul {
-    padding: 0;
-    margin: 0;
-}
-
-.posts ul li {
+.posts .posts-article .post-article {
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -495,7 +490,7 @@ main {
     border: 1px solid var(--color-grey);
 }
 
-.posts ul li.ads {
+.posts .posts-article .ads {
     display: flex;
     justify-content: center;
     align-items: center;
