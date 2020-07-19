@@ -4,7 +4,12 @@ layout: default
 
 <section class="content">
 	{% include ads-top.html %}
-	<div class="post">
+	<article class="post">
+		{% if page.img %}
+			<div class="post-imagem">
+				<img src="{{ site.baseurl }}/assets/img/articles/{{ page.img }}" alt="{{ page.title }}" />
+			</div>
+		{% endif %}
 		<h3>{{ page.title }}</h3>
 		<hr data-content="{% include date_formatting.html date=page.date %}">
 		{{ content }}
@@ -16,7 +21,7 @@ layout: default
 				{% endfor %}
 			</div>
 		</div>
-	</div>
+	</article>
 	{% include suggestion.html %}
 	{% include related.html %}
 </section>
