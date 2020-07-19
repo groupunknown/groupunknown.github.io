@@ -396,6 +396,11 @@ main {
     border: 1px solid var(--color-grey);
 }
 
+.post .post-imagem img {
+    width: 100%;
+    height: auto;
+}
+
 .post h3:first-child {
     text-align: center;
 }
