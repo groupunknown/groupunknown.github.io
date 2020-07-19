@@ -3,9 +3,7 @@ layout: default
 ---
 
 <section class="posts">
-	<div class="ads">
-		<div class="ads-top">Ads - coming soon!</div>
-	</div>
+	{% include ads-top.html %}
 	<ul>
 	{% for post in paginator.posts %}
 		<li>
@@ -23,9 +21,7 @@ layout: default
 		</li>
 
 		{% if forloop.index0 == 4 %}
-		    <li class="ads">
-		        <div class="ads-posts">Ads - coming soon!</div>
-		    </li>
+			{% include ads-center.html %}
 		{% endif %}
 
 	{% endfor %}
