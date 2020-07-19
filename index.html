@@ -7,9 +7,9 @@ layout: default
 	<div class="posts-article">
 	{% for post in paginator.posts %}
 		<article class="post-article">
-			{% if page.featured-image %}
+			{% if page.featured_image %}
 				<div class="post-imagem">
-					<img src="{{ site.baseurl }}/assets/img/articles/{{ page.featured-image }}" alt="{{ page.featured-image-alt | default: post.title }}" />
+					<img src="{{ site.baseurl }}/assets/img/articles/{{ page.featured_image }}" alt="{{ post.title }}" />
 				</div>
 			{% endif %}
 			<div class="post-date">
