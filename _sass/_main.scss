@@ -832,6 +832,17 @@ main {
     font-size: 3rem;
 }
 
+.ads {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border: none;
+}
+
+.ads-top,
 .ads-posts {
     display: flex;
     justify-content: center;
