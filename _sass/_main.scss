@@ -507,11 +507,12 @@ main {
 
 .posts .posts-article .post-article .post-date {
     font-size: .8rem;
+    padding: .5rem 1rem;
 }
 
 .posts .posts-article .post-article .post-title {
     line-height: 1.25;
-    margin-bottom: .5rem;
+    padding: 0 1rem;
     font-size: 1.5rem;
     overflow-wrap: anywhere;
     word-break: break-word;
@@ -519,6 +520,10 @@ main {
 
 .posts .posts-article .post-article .post-title a {
     color: var(--color);
+}
+
+.posts .posts-article .post-article .post-tags {
+    padding: .5rem 1rem 1rem 1rem;
 }
 
 .post-tags .tag {
