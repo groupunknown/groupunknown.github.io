@@ -4,9 +4,12 @@ layout: default
 
 <section class="posts">
 	{% include ads-top.html %}
-	<ul>
+	<div class="posts-article">
 	{% for post in paginator.posts %}
-		<li>
+		<article class="post-article">
+			<div class="post-imagem">
+				<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--TzaEY4TR--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://since1979.dev/wp-content/uploads/2020/07/my-tips-on-learning-how-to-code.jpg">
+			</div>
 			<div class="post-date">
 				<time datetime="{{ post.date | date_to_xmlschema }}">{% include date_formatting.html date=post.date %}</time>
 			</div>
@@ -18,14 +21,14 @@ layout: default
 					<a href="/tag/{{tag}}" class="tag">#{{tag}}</a>
 				{% endfor %}
 			</div>
-		</li>
+		</article>
 
 		{% if forloop.index0 == 4 %}
 			{% include ads-center.html %}
 		{% endif %}
 
 	{% endfor %}
-	</ul>
+	</div>
 
 	{% comment %}
 		{% if paginator and paginator.page and paginator.total_pages > 1 and paginator.page > 1 %}
