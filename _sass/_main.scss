@@ -500,11 +500,16 @@ main {
     border: none;
 }
 
-.posts .post-date {
+.posts .posts-article .post-article .post-imagem img {
+    width: 100%;
+    height: auto;
+}
+
+.posts .posts-article .post-article .post-date {
     font-size: .8rem;
 }
 
-.posts .post-title {
+.posts .posts-article .post-article .post-title {
     line-height: 1.25;
     margin-bottom: .5rem;
     font-size: 1.5rem;
@@ -512,7 +517,7 @@ main {
     word-break: break-word;
 }
 
-.posts .post-title a {
+.posts .posts-article .post-article .post-title a {
     color: var(--color);
 }
 
