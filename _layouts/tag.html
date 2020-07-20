@@ -4,8 +4,8 @@ layout: default
 <section class="posts">
 	{% include ads-top.html %}
 	<div class="posts-article">
-		<h1>Tag: {{ page.tag }}</h1>
-	{% for post in site.tags[page.tag] %}
+		<h3 class="posts-article-tag-title">Tag: {{ page.tag }}</h3>
+	{% for post in paginator.site.tags[page.tag] %}
 		<article class="post-article">
 			{% if post.img %}
 				<div class="post-imagem">
@@ -31,4 +31,5 @@ layout: default
 
 	{% endfor %}
 	</div>
+	{% include pagination.html %}
 </section>
