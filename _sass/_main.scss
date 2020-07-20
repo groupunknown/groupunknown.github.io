@@ -898,6 +898,10 @@ main {
     border-radius: 3px;
 }
 
+.tag-list-name svg {
+    padding-right: .5rem;
+}
+
 .tag-list-name:hover {
     background-color: var(--color-light);
 }
@@ -906,6 +910,26 @@ main {
     display: flex;
     flex-direction: column;
     padding: .5rem 1rem;
+}
+
+.tag-content .tag-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tag-content .tag-name svg {
+    padding-right: .5rem;
+}
+
+.tag-content .tag-name .tag-count {
+    min-width: 30px;
+    font-size: 1rem;
+    text-align: center;
+    padding: .3rem .5rem;
+    background: var(--color-grey);
+    border-radius: 3px;
+    user-select: none;
 }
 
 .tag-articles {
@@ -925,4 +949,3 @@ main {
 .tag-article-title:hover {
     background-color: var(--color-light);
 }
-
