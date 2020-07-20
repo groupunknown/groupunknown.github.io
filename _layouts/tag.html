@@ -5,7 +5,8 @@ layout: default
 	{% include ads-top.html %}
 	<div class="posts-article">
 		<h3 class="posts-article-tag-title">Tag: {{ page.tag }}</h3>
-	{% for post in paginator.site.tags[page.tag] %}
+	{% for post in site.tags[page.tag] %}
+	{% for post in paginator.tags[page.tag] %}
 		<article class="post-article">
 			{% if post.img %}
 				<div class="post-imagem">
