@@ -5,9 +5,9 @@ layout: default
 	{% include ads-top.html %}
 	
 	{% assign tags = site.tags | sort %}
-	<div class="tag-content">
+	<div class="tag-list-content">
 		{% for tag in tags %}
-			<a class="tag-list-name" href="/tags#{{ tag | first | slugify }}/">{{ tag[0] | replace:'-', ' ' }} <span class="tag-list-count">{{ tag | last | size }}</span></a>
+			<a class="tag-list-name" href="/tags#{{ tag | first | slugify }}">{{ tag[0] | replace:'-', ' ' }} <span class="tag-list-count">{{ tag | last | size }}</span></a>
 		{% endfor %}
 	</div>
 	<div class="tag-content"> 
