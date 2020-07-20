@@ -3,33 +3,22 @@ layout: default
 ---
 <section class="content">
 	{% include ads-top.html %}
-
-	<div class="page-tags">
-		{% assign tags = site.tags | sort %}
-		{% for tag in tags %}
-			<a href="/tag/{{ tag | first | slugify }}/" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">{{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})</a>
-		{% endfor %}
-	</div>
-
-
-	<div class="post-preview"> 
-		{% for tag in tags %} 
-		<h2 id="{{ tag[0] | slugify }}" style="padding-top: 70px;"> {{ tag[0] }}  <i class="badge">{{ tag | last | size }}</i></h2>
-		<ul class="later on">
-			{% for post in tag[1] %}
-			<a class="post-subtitle" href="{{ site.baseurl }}{{ post.url }}">
-				<li>
-					{{ post.title }}
-					<small class="post-meta"> - Posted on {{ post.date | date: "%B %-d, %Y" }}</small>
-				</li>
-			</a>
-			{% endfor %}
-		</ul>
-		<a href="#top" class="btn btn-default">
-			<span class="fa fa-refresh" aria-hidden="true"></span> Go back to the top
-		</a> 
-		<hr/>
-		{% endfor %}
-	</div>
 	
+	{% assign tags = site.tags | sort %}
+	<div class="tag-content">
+		{% for tag in tags %}
+			<a class="tag-list-name" href="/tags#{{ tag | first | slugify }}/">{{ tag[0] | replace:'-', ' ' }} <span class="tag-list-count">{{ tag | last | size }}</span></a>
+		{% endfor %}
+	</div>
+	<div class="tag-content"> 
+		{% for tag in tags %} 
+		<h3 class="tag-name" id="{{ tag[0] | slugify }}">{{ tag[0] }} <span class="tag-count">{{ tag | last | size }}</span></h3>
+		<div class="tag-articles">
+			{% for post in tag[1] %}
+				<a class="tag-article-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}<span class="tag-article-date">{{ post.date | date: "%B %-d, %Y" }}</span></a>
+			{% endfor %}
+		</div>
+		{% endfor %}
+	</div>
+
 </section>
