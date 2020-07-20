@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<section class="posts">
+	{% include ads-top.html %}
+	<div class="posts-article">
+		<h3 class="posts-article-tag-title">Tag: {{ page.tag }}</h3>
+	{% for post in site.tags[page.tag] %}
+		<article class="post-article">
+			{% if post.img %}
+				<div class="post-imagem">
+					<img src="{{ site.baseurl }}/assets/img/articles/{{ post.img }}" alt="{{ post.title }}" />
+				</div>
+			{% endif %}
+			<div class="post-date">
+				<time datetime="{{ post.date | date_to_xmlschema }}">{% include date_formatting.html date=post.date %}</time>
+			</div>
+			<div class="post-title">
+				<a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a>
+			</div>
+			<div class="post-tags">
+				{% for tag in post.tags %}
+					<a href="/tag/{{tag}}" class="tag">#{{tag}}</a>
+				{% endfor %}
+			</div>
+		</article>
+
+		{% if forloop.index0 == 4 %}
+			{% include ads-center.html %}
+		{% endif %}
+
+	{% endfor %}
+	</div>
+</section>
