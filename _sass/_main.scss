@@ -345,8 +345,8 @@ main {
     min-width: 15rem;
 }
 
-.aside-left div,
-.aside-left nav {
+.aside-left > div,
+.aside-left > nav {
     margin-bottom: 1.5rem
 }
 
@@ -392,11 +392,11 @@ main {
     min-width: 18.750rem;
 }
 
-.aside-right div {
-    margin-bottom: 1.5rem
+.aside-right > div {
+    margin-bottom: 1.5rem;
 }
 
-.aside-right div:last-child {
+.aside-right > div:last-child {
     margin-bottom: 0;
 }
 
