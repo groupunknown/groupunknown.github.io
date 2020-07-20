@@ -342,6 +342,12 @@ main {
 
 .aside-left {
     width: 100%;
+    min-width: 15rem;
+}
+
+.aside-left div,
+.aside-left nav {
+    margin-bottom: 1.5rem
 }
 
 .aside-left nav {
@@ -384,6 +390,11 @@ main {
 
 .aside-right {
 	width: 100%;
+    min-width: 18.750rem;
+}
+
+.aside-right div {
+    margin-bottom: 1.5rem
 }
 
 .post {
