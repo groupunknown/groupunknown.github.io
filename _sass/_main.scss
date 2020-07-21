@@ -898,28 +898,50 @@ main {
     border-radius: 3px;
 }
 
-.tag-list-name svg {
-    padding-right: .5rem;
-}
-
 .tag-list-name:hover {
     background-color: var(--color-light);
+}
+
+.tag-list-name span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.tag-list-count {
+    min-width: 30px;
+    font-size: .875rem;
+    background: var(--color-grey);
+    border-radius: 3px;
+    user-select: none;
 }
 
 .tag-content {
     display: flex;
     flex-direction: column;
-    padding: .5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 3px;
+    border: 1px solid var(--color-grey);
+}
+
+.tag-content h3:first-child {
+    margin-top: 0;
 }
 
 .tag-content .tag-name {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 1rem 0;
 }
 
-.tag-content .tag-name svg {
-    padding-right: .5rem;
+.tag-content .tag-name span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
 }
 
 .tag-content .tag-name .tag-count {
