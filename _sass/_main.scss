@@ -894,7 +894,7 @@ main {
     justify-content: space-between;
     align-items: center;
     color: var(--color);
-    padding: .5rem 1rem;
+    padding: .5rem;
     border-radius: 3px;
 }
 
@@ -946,7 +946,7 @@ main {
 
 .tag-content .tag-name .tag-count {
     min-width: 30px;
-    font-size: 1rem;
+    font-size: .875rem;
     text-align: center;
     padding: .3rem .5rem;
     background: var(--color-grey);
