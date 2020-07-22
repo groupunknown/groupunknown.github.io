@@ -201,6 +201,12 @@ hr:after {
     background-color: var(--background);
 }
 
+:target {
+    border-bottom: 3px solid var(--highlight-border);
+    background: var(--highlight-background);
+    scroll-margin-top: 5.75rem;
+}
+
 ol,
 ul {
     margin-top: 0;
@@ -935,7 +941,6 @@ main {
     justify-content: space-between;
     align-items: center;
     margin: 1rem 0;
-    scroll-margin-top: 5.75rem;
 }
 
 .tag-content .tag-name span {
