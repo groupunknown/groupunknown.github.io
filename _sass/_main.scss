@@ -975,3 +975,34 @@ main {
 .tag-article-date {
     font-size: .875rem;
 }
+
+footer {
+    color: var(--color);
+    background: var(--background);
+    border-top: 1px solid var(--color-grey);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80rem;
+    min-height: 3.75rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.f-right {
+    display: flex;
+}
+
+.f-social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: .25rem;
+}
+
+.f-social-icon:last-child {
+    padding-right: 0;
+}
