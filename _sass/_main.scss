@@ -201,6 +201,10 @@ hr:after {
     background-color: var(--background);
 }
 
+:target {
+    scroll-margin-top: 5.75rem;
+}
+
 ol,
 ul {
     margin-top: 0;
