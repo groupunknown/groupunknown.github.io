@@ -1,7 +1,11 @@
 <div class="author-row">
     {% if author.image %}
-    <img src="{{ author.image }}" class="author-img">
+    <div class="author-avatar">
+        <img src="{{ author.image }}" class="author-img">
+    </div>
     {% endif %}
-    <span>{{ author.name }}</span>
-    <span>{{ author.bio }}</span>
+    <div class="author-bio">
+        <div>{{ author.name }}</div>
+        <div>{{ author.bio }}</div>
+    </div>
 </div>
