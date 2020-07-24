@@ -21,7 +21,10 @@ layout: default
 				{% endfor %}
 			</div>
 		</div>
-		{% include author_bio.html %}
+		{% assign author = site.data.authors[page.author] %}
+		{% if author.bio %}
+	    	{% include author_bio.html %}
+		{% endif %}
 	</article>
 	{% include suggestion.html %}
 	{% include related.html %}
