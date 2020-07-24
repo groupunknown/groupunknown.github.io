@@ -3,6 +3,7 @@ layout: page
 title: Sobre
 categories: diversos
 date: 2020-07-17 00:00:00 +0000
+author: dwight_schrute
 tags: [jekyll, coding]
 ---
 
