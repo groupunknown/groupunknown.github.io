@@ -21,6 +21,9 @@ layout: default
 				{% endfor %}
 			</div>
 		</div>
+		{% if author.bio %}
+	    	{% include author_bio.html %}
+		{% endif %}
 	</article>
 	{% include suggestion.html %}
 	{% include related.html %}
