@@ -8,19 +8,19 @@ layout: default
 	{% for post in paginator.posts %}
 		<article class="post-article">
 			{% if post.img %}
-				<div class="post-imagem">
+				<div class="post-imagem" data-placeholder>
 					<img src="{{ site.baseurl }}/assets/img/articles/{{ post.img }}" alt="{{ post.title }}" />
 				</div>
 			{% endif %}
 			<div class="post-date">
-				<time datetime="{{ post.date | date_to_xmlschema }}">{% include date_formatting.html date=post.date %}</time>
+				<time datetime="{{ post.date | date_to_xmlschema }}" data-placeholder>{% include date_formatting.html date=post.date %}</time>
 			</div>
 			<div class="post-title">
-				<a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a>
+				<a href="{{post.url | prepend: site.baseurl}}" data-placeholder>{{post.title}}</a>
 			</div>
 			<div class="post-tags">
 				{% for tag in post.tags %}
-					<a href="/tags#{{tag}}" class="tag">#{{tag}}</a>
+					<a href="/tags#{{tag}}" class="tag" data-placeholder>#{{tag}}</a>
 				{% endfor %}
 			</div>
 		</article>

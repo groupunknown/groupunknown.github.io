@@ -26,7 +26,16 @@
 		</div>
 	</div>
 </footer>
-
+<script>
+	window.addEventListener('load', function() {
+		function removeAttributes(element, attrs) {
+			attrs.forEach(attr => element.removeAttribute(attr))
+		}
+		removeAttributes(document.querySelector('body'), 'data-placeholder')
+	});
+	/*document.addEventListener('DOMContentLoaded', function() {}, false);*/
+	/*document.addEventListener("DOMContentLoaded", () => {});*/
+</script>
 <script src="{{ site.baseurl }}/assets/js/preferscolorscheme.min.js"></script>
 {% if page.id %}
 	<script src="{{ site.baseurl }}/assets/js/letters.avatar.min.js"></script>
