@@ -341,10 +341,8 @@ time[data-placeholder] {
 }
 
 .post-imagem[data-placeholder] {
+    background: none;
     border-radius: 0;
-}
-[data-placeholder] img {
-    opacity: 0 !important;
 }
 
 @keyframes placeholder{
