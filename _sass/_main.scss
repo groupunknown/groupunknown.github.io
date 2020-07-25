@@ -341,7 +341,7 @@ time[data-placeholder] {
 }
 
 .post-imagem[data-placeholder] {
-    background: none!important;
+    background: var(--color-light) !important;
     border-radius: 0;
 }
 
