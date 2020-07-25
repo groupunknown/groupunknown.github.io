@@ -27,11 +27,8 @@
 	</div>
 </footer>
 <script>
-	window.addEventListener('load', function() {
-		function removeAttributes(element, attrs) {
-			attrs.forEach(attr => element.removeAttribute(attr))
-		}
-		removeAttributes(document.querySelector('body'), 'data-placeholder')
+	jQuery(window).bind("load", function() {
+		jQuery(this).removeAttr('data-placeholder');
 	});
 	/*document.addEventListener('DOMContentLoaded', function() {}, false);*/
 	/*document.addEventListener("DOMContentLoaded", () => {});*/
