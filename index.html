@@ -8,9 +8,7 @@ layout: default
 	{% for post in paginator.posts %}
 		<article class="post-article">
 			{% if post.img %}
-				<div class="post-imagem" data-placeholder>
-					<img src="{{ site.baseurl }}/assets/img/articles/{{ post.img }}" alt="{{ post.title }}" />
-				</div>
+				<div class="post-imagem" style="background-image: url({{ site.baseurl }}/assets/img/articles/{{ post.img }})" data-placeholder></div>
 			{% endif %}
 			<div class="post-date">
 				<time datetime="{{ post.date | date_to_xmlschema }}" data-placeholder>{% include date_formatting.html date=post.date %}</time>
