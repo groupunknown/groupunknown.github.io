@@ -5,10 +5,8 @@ layout: default
 <section class="content">
 	{% include ads-top.html %}
 	<article class="post">
-		{% if page.img %}
-			<div class="post-imagem">
-				<img src="{{ site.baseurl }}/assets/img/articles/{{ page.img }}" alt="{{ page.title }}" />
-			</div>
+		{% if post.img %}
+			<div class="post-imagem" style="background-image: url({{ site.baseurl }}/assets/img/articles/{{ page.img }})"></div>
 		{% endif %}
 		<h3 class="post-title">{{ page.title }}</h3>
 		<hr data-content="{% include date_formatting.html date=page.date %}">
