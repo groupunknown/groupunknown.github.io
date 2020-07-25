@@ -461,12 +461,12 @@ main {
     border: 1px solid var(--color-grey);
 }
 
-.post .post-imagem img {
-    width: calc(100% + 1rem + 1rem);
+.post-imagem {
+    width: 100%;
     height: auto;
-    margin-top: -1rem;
-    margin-left: -1rem;
-    margin-bottom: 2rem;
+    padding-bottom: 16rem;
+    background-size: cover;
+    background-position: center center;
 }
 
 .post h3.post-title {
