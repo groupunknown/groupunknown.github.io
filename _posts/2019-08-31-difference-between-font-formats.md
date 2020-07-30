@@ -2,9 +2,9 @@
 layout: post
 title: Difference between font formats
 description: What is the difference between various font formats?
+image: difference-between-font-formats.webp
 summary: What is the difference between various font formats?
 comments: true
-img: difference-between-font-formats.webp
 tags: [typography]
 ---
 

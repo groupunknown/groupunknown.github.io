@@ -5,9 +5,9 @@ layout: default
 <section class="content">
 	{% include ads-top.html %}
 	<article class="post">
-		{% if page.img %}
+		{% if page.image %}
 			<div class="post-imagem">
-				<img src="{{ site.baseurl }}/assets/img/articles/{{ page.img }}" alt="{{ page.title }}" />
+				<img src="{{ site.baseurl }}/assets/img/articles/{{ page.image }}" alt="{{ page.title }}" />
 			</div>
 		{% endif %}
 		<h3 class="post-title">{{ page.title }}</h3>
