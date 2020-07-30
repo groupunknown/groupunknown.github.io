@@ -4,16 +4,15 @@
     <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
     <title>
         {% if page.tag or page.title %}
-        {% if page.tag %}
-        {{ page.tag | escape }}
-        {% else %}
-        {{ page.title | escape }}
-        {% endif %}
+            {% if page.tag %}
+                {{ page.tag | escape }}
+            {% else %}
+                {{ page.title | escape }}
+            {% endif %}
         –
         {% endif %}
-        {% if paginator and paginator.page and paginator.total_pages > 1 and paginator.page > 1 %} Página {{ paginator.page }} de {{ paginator.total_pages }} – {% endif %}
-        {{ site.title | escape }}
-        {% unless page.tag or page.title %} – {{ site.description | escape }}
+        {% if paginator and paginator.page and paginator.total_pages > 1 and paginator.page > 1 %}
+            Página {{ paginator.page }} de {{ paginator.total_pages }} – {% endif %} {{ site.title | escape }} {% unless page.tag or page.title %} – {{ site.description | escape }}
         {% endunless %}
     </title>
 
