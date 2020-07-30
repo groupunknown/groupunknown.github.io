@@ -2,29 +2,33 @@ site: GroupUnknown™
 url: https://groupunknown.com
 title: GroupUnknown™
 description: Network S.A.
-google_analytics: UA-120280297-1
-social_facebook: groupunknown
-social_twitter: #yourpagename
-social_instagram: #yourpagename
-twitter:
-  username: #yourusername
-  card: summary
-  creator: #yourusername
-author:
-  twitter: #yourusername
-  name: #yourusername
-  avatar:
-  email: #youremail
-  url: #yoururl
-permalink: pretty
+tagline: Blog dedicado à assuntos diversos
+lang: pt_BR
 
+social_facebook: groupunknown
+social_twitter: 
+social_instagram: 
+#twitter:
+  #username: 
+  #card: summary
+#facebook:
+  #app_id: 
+  #publisher: 
+  #admins:
+
+permalink: pretty
 baseurl: ""
+
+google_analytics: UA-120280297-1
 
 webmaster_verifications:
   google: BHhjherZoAFIqjGDO05JmCzgLmKjOIr-pD8N7TYvkg8
+  #bing: 
+  #alexa: 
+  #yandex: 
+  #baidu: 
 
 highlighter: rouge
-
 markdown: kramdown
 kramdown:
   html_to_native: true
