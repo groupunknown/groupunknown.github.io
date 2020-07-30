@@ -63,21 +63,21 @@ defaults:
       path: ""
     values:
       layout: "default"
-      image: /assets/images/default-card.webp
+      image: /assets/images/
   -
     scope:
       path: ""
       type: "pages"
     values:
       layout: "page"
-      image: /assets/images/default-card.webp
+      image: /assets/images/
   -
     scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
-      image: /assets/images/default-card.webp
+      image: /assets/images/
 
 paginate: 10
 paginate_path: /page:num/
