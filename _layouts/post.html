@@ -5,7 +5,9 @@ layout: default
 <section class="content">
 	{% include ads-top.html %}
 	<article class="post">
-		{% if page.image %}
+		{% if page.image == "/assets/images/default-card.webp" %}
+
+		{% else %}
 			<div class="post-imagem">
 				<img src="{{ site.baseurl }} {{ page.image }}" alt="{{ page.title }}" />
 			</div>
