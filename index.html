@@ -7,7 +7,7 @@ layout: default
 	<div class="posts-article">
 	{% for post in paginator.posts %}
 		<article class="post-article">
-			{% if post.image %}
+			{% if post.image != "/assets/images/default-card.webp" %}
 				<div class="post-imagem" style="background-image: url({{ site.baseurl }} {{ post.image }})" data-placeholder></div>
 			{% endif %}
 			<div class="post-date">
