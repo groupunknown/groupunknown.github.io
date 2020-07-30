@@ -81,4 +81,4 @@ defaults:
 
 paginate: 10
 paginate_path: /page:num/
-seo_paginator_message: "%<current>s / %<total>s | "
+#seo_paginator_message: "%<current>s / %<total>s | "
