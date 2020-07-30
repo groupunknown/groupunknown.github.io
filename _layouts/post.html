@@ -7,7 +7,7 @@ layout: default
 	<article class="post">
 		{% if page.image != "/assets/images/default-card.webp" %}
 			<div class="post-imagem">
-				<img src="{{ site.baseurl }} {{ page.image }}" alt="{{ page.title }}" />
+				<img src="{{ page.image }}" alt="{{ page.title }}" />
 			</div>
 		{% endif %}
 		<h3 class="post-title">{{ page.title }}</h3>
