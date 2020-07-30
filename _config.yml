@@ -20,6 +20,9 @@ permalink: pretty
 
 baseurl: ""
 
+webmaster_verifications:
+  google: UA-120280297-1
+
 highlighter: rouge
 
 markdown: kramdown
