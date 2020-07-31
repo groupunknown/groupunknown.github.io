@@ -1,5 +1,5 @@
 <header class="fixed" role="banner">
-	<script>var navbar = JSON.parse(localStorage.getItem('theme')).navbar;$('[data-navbar='+navbar+']').addClass('active');if (navbar === 'static'){$('header').removeClass('fixed').addClass('static');}</script>
+	<script>var navbar = JSON.parse(localStorage.getItem('theme')).navbar;if (navbar === 'static'){$('header').removeClass('fixed').addClass('static');}</script>
 	<nav role="navigation">
 
 		<div class="col">
@@ -38,6 +38,7 @@
 					<a data-navbar="{{ item.value }}">{{ item.icon }} {{ item.title }}</a>
 				{% endfor %}
 			</div>
+			<script>var navbar = JSON.parse(localStorage.getItem('theme')).navbar;$('[data-navbar='+navbar+']').addClass('active');</script>
 			<div class="nav-theme-style">
 				{% for item in site.data.navigation.style %}
 					<a data-style="{{ item.value }}">{{ item.icon }} {{ item.title }}</a>
