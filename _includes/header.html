@@ -43,7 +43,7 @@
 					<a data-style="{{ item.value }}">{{ item.icon }} {{ item.title }}</a>
 				{% endfor %}
 			</div>
-			<script>var layout = JSON.parse(localStorage.getItem('theme')).layout, navbar = JSON.parse(localStorage.getItem('theme')).navbar, style = JSON.parse(localStorage.getItem('theme')).style;$('[data-navbar='+layout+']').addClass('active');$('[data-navbar='+navbar+']').addClass('active');$('[data-navbar='+style+']').addClass('active');</script>
+			<script>var datatheme = JSON.parse(localStorage.getItem('theme'));$('[data-layout='+datatheme.layout+']').addClass('active');$('[data-navbar='+datatheme.navbar+']').addClass('active');$('[data-style='+datatheme.style+']').addClass('active');</script>
 		</div>
 
 	</nav>
