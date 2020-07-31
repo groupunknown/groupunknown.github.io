@@ -26,6 +26,9 @@ $(document).ready(function() {
         if (navbar === 'static') {
             $('header').removeClass('fixed').addClass('static');
         }
+        if (navbar === 'fixed') {
+            $('header').removeClass('static').addClass('fixed');
+        }
     }
 
     function theme_style(e) {
