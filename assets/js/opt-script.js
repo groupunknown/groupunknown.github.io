@@ -1,17 +1,29 @@
-
 $(document).ready(function() {
-    let layout = document.querySelector('.nav-theme-layout a'),
-        navbar = document.querySelector('.nav-theme-navbar a'),
-        style = document.querySelector('.nav-theme-style a');
+    //var default = { 'layout': 'boxed', 'navbar': 'fixed', 'style': 'light'},
+    var layout = document.querySelector('.nav-theme-layout'),
+        navbar = document.querySelector('.nav-theme-navbar'),
+        style = document.querySelector('.nav-theme-style');
 
+    function SetLocalStorage(item, key, value) {
+        var data = localStorage.getItem('theme');
+        data = data ? JSON.parse(data) : {};
+        data[key] = value;
+        localStorage.setItem(item, JSON.stringify(data));
+    }
 
-    layout.addEventListener('change', theme_layout, false);
-    navbar.addEventListener('change', theme_navbar, false);
-    style.addEventListener('change', theme_style, false);
+    function theme_layout(e) {
+        SetLocalStorage('theme', 'layout', e.target.closest('a').dataset.layout);
+    }
+
+    function theme_navbar(e) {
+        SetLocalStorage('theme', 'navbar', e.target.closest('a').dataset.navbar);
+    }
+
+    function theme_style(e) {
+        SetLocalStorage('theme', 'style', e.target.closest('a').dataset.style);
+    }
+
+    layout.addEventListener('click', theme_layout, false);
+    navbar.addEventListener('click', theme_navbar, false);
+    style.addEventListener('click', theme_style, false);
 });
-
-
-
-document.querySelector('.nav-theme-layout').addEventListener('click', (e) => {
-    console.log(e.target.closest('a').dataset.layout);
-})
