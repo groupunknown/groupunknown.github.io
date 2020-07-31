@@ -18,6 +18,7 @@ $(document).ready(function() {
 
     function theme_layout(e) {
         SetLocalStorage('theme', 'layout', e.target.closest('a').dataset.layout);
+
     }
 
     function theme_navbar(e) {
@@ -33,6 +34,13 @@ $(document).ready(function() {
 
     function theme_style(e) {
         SetLocalStorage('theme', 'style', e.target.closest('a').dataset.style);
+        var style = JSON.parse(localStorage.getItem('theme')).style;
+        if (style === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+        if (style === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
     }
 
     layout.addEventListener('click', theme_layout, false);
