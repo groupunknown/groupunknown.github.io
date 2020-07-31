@@ -392,9 +392,16 @@ main {
     padding: var(--layout-padding);
     font-size: 1rem;
     width: 100%;
-    max-width: 80rem;
     margin: 0 auto;
     padding-top: 6rem;
+}
+
+.boxed {
+    max-width: 80rem;
+}
+
+.full {
+    max-width: 100%;
 }
 
 .aside-left {
