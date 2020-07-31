@@ -24,11 +24,14 @@ $(document).ready(function() {
     function theme_navbar(e) {
         SetLocalStorage('theme', 'navbar', e.target.closest('a').dataset.navbar);
         var navbar = JSON.parse(localStorage.getItem('theme')).navbar;
-        $('[data-navbar='+navbar+']').addClass('active');
         if (navbar === 'static') {
+            $('[data-navbar="static"]').addClass('active');
+            $('[data-navbar="fixed"]').removeClass('active');
             $('header').removeClass('fixed').addClass('static');
         }
         if (navbar === 'fixed') {
+            $('[data-navbar="fixed"]').addClass('active');
+            $('[data-navbar="static"]').removeClass('active');
             $('header').removeClass('static').addClass('fixed');
         }
     }
