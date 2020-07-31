@@ -25,12 +25,12 @@ $(document).ready(function() {
     function theme_layout(e) {
         SetLocalStorage('theme', 'layout', e.target.closest('a').dataset.layout);
         if (GetLocalStorage('theme', 'layout') === 'full') {
-            $('[data-style="full"]').addClass('active');
-            $('[data-style="boxed"]').removeClass('active');
+            $('[data-layout="full"]').addClass('active');
+            $('[data-layout="boxed"]').removeClass('active');
         }
         if (GetLocalStorage('theme', 'layout') === 'boxed') {
-            $('[data-style="boxed"]').addClass('active');
-            $('[data-style="full"]').removeClass('active');
+            $('[data-layout="boxed"]').addClass('active');
+            $('[data-layout="full"]').removeClass('active');
         }
     }
 
