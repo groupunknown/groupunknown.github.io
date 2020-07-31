@@ -29,7 +29,7 @@
 		<div class="col nav-menu hidden">
 			<div class="nav-theme-layout">
 				{% for item in site.data.navigation.layout %}
-					<a href="{{ item.url }}" class="{{ item.value }}">{{ item.title }}</a>
+					<a href="{{ item.url }}" class="{{ item.value }}">{{ item.icon }} {{ item.title }}</a>
 				{% endfor %}
 			</div>
 			<div class="nav-theme-navbar">
