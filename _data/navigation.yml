@@ -10,8 +10,10 @@
 
 layout:
 - title: Full Width
+  icon: <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 5H22V3H2V5Z" fill="currentColor" /><path d="M2 21H22V19H2V21Z" fill="currentColor" /><path fill-rule="evenodd" clip-rule="evenodd" d="M2 7V17H22V7H2ZM4 9H20V15H4V9Z" fill="currentColor" /></svg>
   value: layout-full
 - title: Boxed
+  icon: <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 21V3H5V21H3Z" fill="currentColor" /><path fill-rule="evenodd" clip-rule="evenodd" d="M7 3H17V21H7V3ZM9 5V19H15V5H9Z" fill="currentColor" /><path d="M19 3V21H21V3H19Z" fill="currentColor" /></svg>
   value: layout-boxed
 
 navbar:
@@ -25,3 +27,4 @@ style:
   value: style-light
 - title: Dark
   value: style-dark
+

@@ -755,6 +755,30 @@ main {
     width: 100%;
 }
 
+.nav-theme-layout, .nav-theme-navbar, .nav-theme-style {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-theme-layout a, .nav-theme-navbar a, .nav-theme-style a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: .875rem;
+    color: var(--color);
+    width: 100%;
+    margin: .5rem;
+    padding: .5rem;
+    border-radius: 3px;
+}
+
+.nav-theme-layout a:hover, .nav-theme-navbar a:hover, .nav-theme-style a:hover,
+.nav-theme-layout a.active, .nav-theme-navbar a.active, .nav-theme-style a.active {
+    background: var(--color-light);
+}
+
 .branding {
     display: flex;
     align-items: center;
