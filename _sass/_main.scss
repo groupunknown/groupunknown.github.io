@@ -748,23 +748,10 @@ main {
     transform: translateY(-5px) rotate(-45deg)
 }
 
-.nav-menu ul li a {
+.nav-menu {
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-    font-size: .9rem;
-    color: var(--color);
-    padding: .5rem;
-    border-radius: 3px;
-}
-
-.nav-menu ul li a:hover {
-    background-color: var(--menu-hover);
-}
-
-.nav-menu ul li {
-    display: flex;
+    justify-content: space-evenly;
     width: 100%;
 }
 
@@ -870,16 +857,6 @@ main {
 
 .switch-sun:hover {
     transform: rotate(-25deg);
-}
-
-.nav-menu {
-    width: 100%;
-}
-
-.nav-menu ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 @media (max-width: 64rem) {
