@@ -38,12 +38,12 @@
 					<a data-navbar="{{ item.value }}">{{ item.icon }} {{ item.title }}</a>
 				{% endfor %}
 			</div>
-			<script>var navbar = JSON.parse(localStorage.getItem('theme')).navbar;$('[data-navbar='+navbar+']').addClass('active');</script>
 			<div class="nav-theme-style">
 				{% for item in site.data.navigation.style %}
 					<a data-style="{{ item.value }}">{{ item.icon }} {{ item.title }}</a>
 				{% endfor %}
 			</div>
+			<script>var layout = JSON.parse(localStorage.getItem('theme')).layout, navbar = JSON.parse(localStorage.getItem('theme')).navbar, style = JSON.parse(localStorage.getItem('theme')).style;$('[data-navbar='+layout+']').addClass('active');$('[data-navbar='+navbar+']').addClass('active');$('[data-navbar='+style+']').addClass('active');</script>
 		</div>
 
 	</nav>
