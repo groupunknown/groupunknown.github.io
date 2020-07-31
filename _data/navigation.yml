@@ -1,9 +1,27 @@
-links:
-- title: Artigos
-  url: /
-- title: Sobre
-  url: /sobre
-- title: Search
-  url: /search
-- title: Rss
-  url: /atom.xml
+#links:
+#- title: Artigos
+#  url: /
+#- title: Sobre
+#  url: /sobre
+#- title: Search
+#  url: /search
+#- title: Rss
+#  url: /atom.xml
+
+layout:
+- title: Full Width
+  value: layout-full
+- title: Boxed
+  value: layout-boxed
+
+navbar:
+- title: Fixed to window
+  value: navbar-fixed
+- title: Static top of page
+  value: navbar-static
+
+style:
+- title: Light
+  value: style-light
+- title: Dark
+  value: style-dark

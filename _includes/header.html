@@ -27,11 +27,21 @@
 		</div>
 
 		<div class="col nav-menu hidden">
-			<ul>
-				{% for item in site.data.navigation.links %}
-					<li><a href="{{ item.url }}" {% if item.url == page.url %} class="active"{% endif %}>{{ item.title }}</a></li>
+			<div class="nav-theme-layout">
+				{% for item in site.data.navigation.layout %}
+					<a href="{{ item.url }}" class="{{ item.value }}">{{ item.title }}</a>
 				{% endfor %}
-			</ul>
+			</div>
+			<div class="nav-theme-navbar">
+				{% for item in site.data.navigation.navbar %}
+					<a href="{{ item.url }}" class="{{ item.value }}">{{ item.title }}</a>
+				{% endfor %}
+			</div>
+			<div class="nav-theme-style">
+				{% for item in site.data.navigation.style %}
+					<a href="{{ item.url }}" class="{{ item.value }}">{{ item.title }}</a>
+				{% endfor %}
+			</div>
 		</div>
 
 	</nav>
