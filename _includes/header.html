@@ -34,12 +34,12 @@
 			</div>
 			<div class="nav-theme-navbar">
 				{% for item in site.data.navigation.navbar %}
-					<a href="{{ item.url }}" class="{{ item.value }}">{{ item.title }}</a>
+					<a href="{{ item.url }}" class="{{ item.value }}">{{ item.icon }} {{ item.title }}</a>
 				{% endfor %}
 			</div>
 			<div class="nav-theme-style">
 				{% for item in site.data.navigation.style %}
-					<a href="{{ item.url }}" class="{{ item.value }}">{{ item.title }}</a>
+					<a href="{{ item.url }}" class="{{ item.value }}">{{ item.icon }} {{ item.title }}</a>
 				{% endfor %}
 			</div>
 		</div>
