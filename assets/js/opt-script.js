@@ -24,6 +24,7 @@ $(document).ready(function() {
     function theme_navbar(e) {
         SetLocalStorage('theme', 'navbar', e.target.closest('a').dataset.navbar);
         var navbar = JSON.parse(localStorage.getItem('theme')).navbar;
+        $('[data-navbar='+navbar+']').addClass('active');
         if (navbar === 'static') {
             $('header').removeClass('fixed').addClass('static');
         }
@@ -35,6 +36,7 @@ $(document).ready(function() {
     function theme_style(e) {
         SetLocalStorage('theme', 'style', e.target.closest('a').dataset.style);
         var style = JSON.parse(localStorage.getItem('theme')).style;
+        $('[data-style='+style+']').addClass('active');
         if (style === 'dark') {
             document.documentElement.setAttribute('data-theme', 'dark');
         }
