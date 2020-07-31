@@ -371,6 +371,10 @@ header {
     position: fixed;
 }
 
+header.fixed ~ main {
+    padding-top: 6rem;
+}
+
 .static {
     position: static;
 }
