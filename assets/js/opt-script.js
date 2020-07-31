@@ -27,10 +27,12 @@ $(document).ready(function() {
         if (GetLocalStorage('theme', 'layout') === 'full') {
             $('[data-layout="full"]').addClass('active');
             $('[data-layout="boxed"]').removeClass('active');
+            $('main').removeClass('boxed').addClass('full');
         }
         if (GetLocalStorage('theme', 'layout') === 'boxed') {
             $('[data-layout="boxed"]').addClass('active');
             $('[data-layout="full"]').removeClass('active');
+            $('main').removeClass('full').addClass('boxed');
         }
     }
 
