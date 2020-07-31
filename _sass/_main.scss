@@ -751,15 +751,23 @@ main {
 .nav-menu {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100%;
 }
 
 .nav-theme-layout, .nav-theme-navbar, .nav-theme-style {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    border-right: 1px solid var(--color-grey);
+}
+
+.nav-theme-style {
+    border-right: 0;
+    padding-right: 0;
+    margin-right: 0;
 }
 
 .nav-theme-layout a, .nav-theme-navbar a, .nav-theme-style a {
@@ -768,8 +776,7 @@ main {
     align-items: center;
     font-size: .875rem;
     color: var(--color);
-    width: 100%;
-    margin: .5rem;
+    min-width: 5rem;
     padding: .5rem;
     border-radius: 3px;
 }
