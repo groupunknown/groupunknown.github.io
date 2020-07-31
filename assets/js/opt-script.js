@@ -16,20 +16,32 @@ $(document).ready(function() {
         localStorage.setItem(item, JSON.stringify(data));
     }
 
+    function GetLocalStorage(item, key) {
+        var data = localStorage.getItem(item);
+        data = data ? JSON.parse(data) : {};
+        return data[key];
+    }
+
     function theme_layout(e) {
         SetLocalStorage('theme', 'layout', e.target.closest('a').dataset.layout);
-
+        if (GetLocalStorage('theme', 'layout') === 'full') {
+            $('[data-style="full"]').addClass('active');
+            $('[data-style="boxed"]').removeClass('active');
+        }
+        if (GetLocalStorage('theme', 'layout') === 'boxed') {
+            $('[data-style="boxed"]').addClass('active');
+            $('[data-style="full"]').removeClass('active');
+        }
     }
 
     function theme_navbar(e) {
         SetLocalStorage('theme', 'navbar', e.target.closest('a').dataset.navbar);
-        var navbar = JSON.parse(localStorage.getItem('theme')).navbar;
-        if (navbar === 'static') {
+        if (GetLocalStorage('theme', 'navbar') === 'static') {
             $('[data-navbar="static"]').addClass('active');
             $('[data-navbar="fixed"]').removeClass('active');
             $('header').removeClass('fixed').addClass('static');
         }
-        if (navbar === 'fixed') {
+        if (GetLocalStorage('theme', 'navbar') === 'fixed') {
             $('[data-navbar="fixed"]').addClass('active');
             $('[data-navbar="static"]').removeClass('active');
             $('header').removeClass('static').addClass('fixed');
@@ -38,12 +50,15 @@ $(document).ready(function() {
 
     function theme_style(e) {
         SetLocalStorage('theme', 'style', e.target.closest('a').dataset.style);
-        var style = JSON.parse(localStorage.getItem('theme')).style;
-        $('[data-style='+style+']').addClass('active');
-        if (style === 'dark') {
+        //$('[data-style='+style+']').addClass('active');
+        if (GetLocalStorage('theme', 'style') === 'dark') {
+            $('[data-style="dark"]').addClass('active');
+            $('[data-style="light"]').removeClass('active');
             document.documentElement.setAttribute('data-theme', 'dark');
         }
-        if (style === 'light') {
+        if (GetLocalStorage('theme', 'style') === 'light') {
+            $('[data-style="light"]').addClass('active');
+            $('[data-style="dark"]').removeClass('active');
             document.documentElement.setAttribute('data-theme', 'light');
         }
     }
