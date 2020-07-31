@@ -357,7 +357,7 @@ time[data-placeholder] {
 
 
 header {
-	position: fixed;
+	
     top: 0px;
     left: 0px;
     right: 0px;
@@ -365,6 +365,14 @@ header {
     color: var(--color);
     background: var(--background);
     border-bottom: 1px solid var(--color-grey);
+}
+
+.fixed {
+    position: fixed;
+}
+
+.static {
+    position: static;
 }
 
 header nav {
