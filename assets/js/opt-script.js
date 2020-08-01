@@ -41,24 +41,24 @@ $(document).ready(function() {
 
     function theme_navbar(e) {
         setLocalStorage('theme', 'navbar', e.target.closest('a').dataset.navbar);
-        if (getLocalStorage('theme', 'navbar') === 'static') {
+        /*if (getLocalStorage('theme', 'navbar') === 'static') {
             dataclass('navbar', 'static', 'fixed');
             $('header').removeClass('fixed').addClass('static');
         }
         if (getLocalStorage('theme', 'navbar') === 'fixed') {
             dataclass('navbar', 'fixed', 'static');
             $('header').removeClass('static').addClass('fixed');
-        }
+        }*/
+        getLocalStorage('theme', 'navbar') === 'static' ? dataclass('navbar', 'fixed', 'static') || $('header').removeClass('fixed').addClass('static') : dataclass('navbar', 'static', 'fixed') || $('header').removeClass('static').addClass('fixed');
     }
 
     function theme_style(e) {
         setLocalStorage('theme', 'style', e.target.closest('a').dataset.style);
-        getLocalStorage('theme', 'style') === 'light' ? dataclass('style', 'light', 'dark') || document.documentElement.setAttribute('data-theme', 'light') : dataclass('style', 'dark', 'light') || document.documentElement.setAttribute('data-theme', 'dark');
+        getLocalStorage('theme', 'style') === 'light' ? dataclass('style', 'light', 'dark') || $('html').attr('data-theme', 'light') : dataclass('style', 'dark', 'light') || $('html').attr('data-theme', 'dark');
     }
 
     layout.addEventListener('click', theme_layout, false);
     navbar.addEventListener('click', theme_navbar, false);
     style.addEventListener('click', theme_style, false);
 });
-
 
