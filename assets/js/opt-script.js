@@ -3,7 +3,8 @@ $(document).ready(function() {
         current = JSON.parse(localStorage.getItem('theme')),
         layout = document.querySelector('.nav-theme-layout'),
         navbar = document.querySelector('.nav-theme-navbar'),
-        style = document.querySelector('.nav-theme-style');
+        style = document.querySelector('.nav-theme-style'),
+        options = document.querySelector('.navbar-menu');
 
     if (localStorage.getItem('theme') === null) {
         localStorage.setItem('theme', JSON.stringify(theme));
@@ -42,8 +43,17 @@ $(document).ready(function() {
         getLocalStorage('theme', 'style') === 'light' ? dataclass('style', 'light', 'dark') || $('html').attr('data-theme', 'light') : dataclass('style', 'dark', 'light') || $('html').attr('data-theme', 'dark');
     }
 
+    function options(e) {
+        e.classList.toggle('open-menu');
+        if (e.classList.contains('open-menu')) {
+            options.classList.toggle('hidden');
+        } else {
+            options.classList.toggle('hidden');
+        }
+    }
+
     layout.addEventListener('click', theme_layout, false);
     navbar.addEventListener('click', theme_navbar, false);
     style.addEventListener('click', theme_style, false);
+    options.addEventListener('click', theme_style, false);
 });
-
