@@ -44,12 +44,11 @@ $(document).ready(function() {
     }
 
     function menuoptions(e) {
-        e.classList.toggle('open-menu');
-        if (e.classList.contains('open-menu')) {
-            e.classList.toggle('hidden');
+        if(this.classList.contains('open-menu')) {
+            this.toggle('hidden');
         } else {
-            e.classList.toggle('hidden');
-        }
+            this.toggle('hidden');
+        }   
     }
 
     layout.addEventListener('click', theme_layout, false);
