@@ -44,8 +44,8 @@ $(document).ready(function() {
     }
 
     function menuoptions(e) {
-        $('.navbar-menu').toggle('open-menu');
-        $('.nav-menu').toggle('hidden');
+        $('.navbar-menu').toggleClass('open-menu');
+        $('.nav-menu').toggleClass('hidden');
     }
 
     layout.addEventListener('click', theme_layout, false);
