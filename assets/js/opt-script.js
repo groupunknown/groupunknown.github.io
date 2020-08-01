@@ -44,11 +44,8 @@ $(document).ready(function() {
     }
 
     function menuoptions(e) {
-        if(this.classList.contains('open-menu')) {
-            this.toggle('hidden');
-        } else {
-            this.toggle('hidden');
-        }   
+        $('.navbar-menu').toggle('open-menu');
+        $('.nav-menu').toggle('hidden');
     }
 
     layout.addEventListener('click', theme_layout, false);
@@ -56,3 +53,4 @@ $(document).ready(function() {
     style.addEventListener('click', theme_style, false);
     options.addEventListener('click', menuoptions, false);
 });
+
