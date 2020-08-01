@@ -227,18 +227,24 @@ h6 {
 
 h1 {
     font-size: 2.5rem;
+    margin-bottom: .5rem;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin: 1.5rem 0 0.75rem;
+    line-height: 32px;
 }
 
 h3 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+    margin: 1.5rem 0 0.75rem;
+    line-height: 32px;
 }
 
 h4 {
     font-size: 1.5rem;
+    margin: 1.875rem 0 1.375rem;
 }
 
 h5 {
@@ -250,28 +256,26 @@ h6 {
 }
 
 p {
-    font-size: .9rem;
-    margin-top: 0;
-    margin-bottom: 1rem;
+    margin: 0 0 .875rem;
 }
 
 blockquote {
-    padding: 13px 13px 21px 15px;
-    margin-bottom: 18px;
+    padding: 0.813rem 0.813rem 1.313rem 0.938rem;
+    margin-bottom: 1.125rem;
     font-family: georgia,serif;
     font-style: italic;
 }
 
 blockquote:before {
     content:"\201C";
-    font-size: 40px;
+    font-size: 2.5rem;
     margin-left: -10px;
     font-family: georgia,serif;
     color: var(--color-grey);
 }
 
 blockquote p {
-   font-size: 14px;
+   font-size: 0.875rem;
    font-weight: 300;
    line-height: 18px;
    margin-bottom: 0;
@@ -285,8 +289,8 @@ code, pre {
 code {
    background-color: var(--highlight-background);
    color: var(--highlight-color);
-   padding: 1px 3px;
-   font-size: 12px;
+   padding: 0.125rem 0.25rem;
+   font-size: 0.75rem;
    -webkit-border-radius: 3px;
    -moz-border-radius: 3px;
    border-radius: 3px;
