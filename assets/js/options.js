@@ -53,4 +53,3 @@ $(document).ready(function() {
     style.addEventListener('click', theme_style, false);
     options.addEventListener('click', menuoptions, false);
 });
-
