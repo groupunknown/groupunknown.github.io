@@ -41,15 +41,7 @@ $(document).ready(function() {
 
     function theme_navbar(e) {
         setLocalStorage('theme', 'navbar', e.target.closest('a').dataset.navbar);
-        /*if (getLocalStorage('theme', 'navbar') === 'static') {
-            dataclass('navbar', 'static', 'fixed');
-            $('header').removeClass('fixed').addClass('static');
-        }
-        if (getLocalStorage('theme', 'navbar') === 'fixed') {
-            dataclass('navbar', 'fixed', 'static');
-            $('header').removeClass('static').addClass('fixed');
-        }*/
-        getLocalStorage('theme', 'navbar') === 'static' ? dataclass('navbar', 'fixed', 'static') || $('header').removeClass('fixed').addClass('static') : dataclass('navbar', 'static', 'fixed') || $('header').removeClass('static').addClass('fixed');
+        getLocalStorage('theme', 'navbar') === 'static' ? dataclass('navbar', 'static', 'fixed') || $('header').removeClass('fixed').addClass('static') : dataclass('navbar', 'fixed', 'static') || $('header').removeClass('static').addClass('fixed');
     }
 
     function theme_style(e) {
