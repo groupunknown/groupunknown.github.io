@@ -43,17 +43,17 @@ $(document).ready(function() {
         getLocalStorage('theme', 'style') === 'light' ? dataclass('style', 'light', 'dark') || $('html').attr('data-theme', 'light') : dataclass('style', 'dark', 'light') || $('html').attr('data-theme', 'dark');
     }
 
-    function options(e) {
+    function menuoptions(e) {
         e.classList.toggle('open-menu');
         if (e.classList.contains('open-menu')) {
-            options.classList.toggle('hidden');
+            e.classList.toggle('hidden');
         } else {
-            options.classList.toggle('hidden');
+            e.classList.toggle('hidden');
         }
     }
 
     layout.addEventListener('click', theme_layout, false);
     navbar.addEventListener('click', theme_navbar, false);
     style.addEventListener('click', theme_style, false);
-    options.addEventListener('click', theme_style, false);
+    options.addEventListener('click', menuoptions, false);
 });
