@@ -29,14 +29,7 @@ $(document).ready(function() {
 
     function theme_layout(e) {
         setLocalStorage('theme', 'layout', e.target.closest('a').dataset.layout);
-        if (getLocalStorage('theme', 'layout') === 'full') {
-            dataclass('layout', 'full', 'boxed');
-            $('main').removeClass('boxed').addClass('full');
-        }
-        if (getLocalStorage('theme', 'layout') === 'boxed') {
-            dataclass('layout', 'boxed', 'full');
-            $('main').removeClass('full').addClass('boxed');
-        }
+        getLocalStorage('theme', 'layout') === 'full' ? dataclass('layout', 'full', 'boxed') || $('main').removeClass('boxed').addClass('full') : dataclass('layout', 'boxed', 'full') || $('main').removeClass('full').addClass('boxed');
     }
 
     function theme_navbar(e) {
