@@ -46,9 +46,9 @@ $(document).ready(function() {
     function menuoptions(e) {
         e.classList.toggle('open-menu');
         if (e.classList.contains('open-menu')) {
-            options.classList.toggle('hidden');
+            e.classList.toggle('hidden');
         } else {
-            options.classList.toggle('hidden');
+            e.classList.toggle('hidden');
         }
     }
 
