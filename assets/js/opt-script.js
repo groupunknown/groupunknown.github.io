@@ -53,17 +53,7 @@ $(document).ready(function() {
 
     function theme_style(e) {
         setLocalStorage('theme', 'style', e.target.closest('a').dataset.style);
-
-        getLocalStorage('theme', 'style') === 'light' ? dataclass('style', 'light', 'dark') || document.documentElement.setAttribute('data-theme', 'dark') : dataclass('style', 'dark', 'light') || document.documentElement.setAttribute('data-theme', 'light');
-
-        if (getLocalStorage('theme', 'style') === 'dark') {
-            //dataclass('style', 'dark', 'light');
-            //document.documentElement.setAttribute('data-theme', 'dark');
-        }
-        if (getLocalStorage('theme', 'style') === 'light') {
-            //dataclass('style', 'light', 'dark');
-            //document.documentElement.setAttribute('data-theme', 'light');
-        }
+        getLocalStorage('theme', 'style') === 'light' ? dataclass('style', 'light', 'dark') || document.documentElement.setAttribute('data-theme', 'light') : dataclass('style', 'dark', 'light') || document.documentElement.setAttribute('data-theme', 'dark');
     }
 
     layout.addEventListener('click', theme_layout, false);
