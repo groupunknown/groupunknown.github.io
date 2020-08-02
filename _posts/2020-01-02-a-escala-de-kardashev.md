@@ -7,3 +7,5 @@ summary: ?
 comments: true
 tags: [escala, kardashev]
 ---
+
+Coming soon!
