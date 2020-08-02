@@ -5,7 +5,7 @@ description: ?
 image: assets/images/qual-e-o-sentido-da-vida.webp
 summary: ?
 comments: true
-tags: [sentido, vida]
+tags: [sentido]
 ---
 
 Coming soon!

@@ -5,7 +5,7 @@ description: ?
 image: assets/images/a-escala-de-kardashev.webp
 summary: ?
 comments: true
-tags: [escala, kardashev]
+tags: [escala]
 ---
 
 Coming soon!
