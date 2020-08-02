@@ -2,3 +2,12 @@
 
 <script>var theme = localStorage.getItem('theme');if (theme === "dark"){document.documentElement.setAttribute('data-theme', 'dark');}</script>
 window.onload=function(){var e=document.querySelector('.theme-switch input[type="checkbox"]'),t=localStorage.getItem("theme"),c=document.querySelector(".theme-switch div");t&&(document.documentElement.setAttribute("data-theme",t),"dark"===t&&(e.checked=!0)),e.addEventListener("change",function(e){e.target.checked?(document.documentElement.setAttribute("data-theme","dark"),localStorage.setItem("theme","dark"),c.classList.remove("switch-sun"),c.classList.add("switch-moon")):(document.documentElement.setAttribute("data-theme","light"),localStorage.setItem("theme","light"),c.classList.remove("switch-moon"),c.classList.add("switch-sun"))},!1)};
+
+<nav>
+{% for item in site.data.laside.iaside %}
+<span>{{ item.title }}</span>
+{% for entry in item.links %}
+<a href="{{ entry.url }}" {% if entry.url == page.url %} class="active"{% endif %}>{{ entry.icon }}{{ entry.name }}</a>
+{% endfor %}
+{% endfor %}
+</nav>
