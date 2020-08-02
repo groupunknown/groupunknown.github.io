@@ -79,5 +79,5 @@ defaults:
       layout: "post"
       image: /assets/images/default-card.webp
 
-#paginate: 10
-#paginate_path: /page:num/
+paginate: 10
+paginate_path: /page:num/
