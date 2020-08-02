@@ -1,9 +1,8 @@
 ---
 layout: post
 title: A escala de Kardashev
-description: ?
-image: assets/images/a-escala-de-kardashev.webp
-summary: ?
+description: A escala de Kardashev
+summary: A escala de Kardashev
 comments: true
 tags: [escala]
 ---
