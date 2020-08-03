@@ -864,7 +864,8 @@ body.menu-show header {
     transition-property: max-width;
 }
 
-.suggest-item {
+.suggest-item,
+.suggest-empty {
     display: flex;
     width: 100%;
 }
@@ -874,7 +875,6 @@ body.menu-show header {
     background-color: var(--color-light);
 }
 
-.suggest-item span,
 .suggest-item a {
     display: flex;
     width: 100%;
