@@ -44,18 +44,19 @@ $(document).ready(function() {
         getLocalStorage('theme', 'style') === 'light' ? dataclass('style', 'light', 'dark') || $('html').attr('data-theme', 'light') : dataclass('style', 'dark', 'light') || $('html').attr('data-theme', 'dark');
     }
 
-    function menuoptions(e) {
+    function menu_options(e) {
         $('.nav-option').toggleClass('open-menu');
         $('.nav-menu-option').toggleClass('hidden');
     }
 
-    function menu(e) {
-
+    function menu_navbar(e) {
+        $('.navbar-menu').toggleClass('open-menu');
+        $('.nav-menu-navbar').toggleClass('hidden');
     }
 
     layout.addEventListener('click', theme_layout, false);
     navbar.addEventListener('click', theme_navbar, false);
     style.addEventListener('click', theme_style, false);
-    options.addEventListener('click', menuoptions, false);
-    navbarmenu.addEventListener('click', menu, false);
+    options.addEventListener('click', menu_options, false);
+    navbarmenu.addEventListener('click', menu_navbar, false);
 });
