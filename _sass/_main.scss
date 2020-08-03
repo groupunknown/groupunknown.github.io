@@ -723,6 +723,7 @@ main {
     white-space: nowrap;
 }
 
+.nav-option,
 .navbar-menu {
 	position: relative;
     display: flex;
@@ -730,6 +731,7 @@ main {
     height: 22px;
 }
 
+.nav-option,
 .navbar-menu span {
     background: var(--color);
     display: block;
@@ -743,26 +745,32 @@ main {
     width: 18px;
 }
 
+.nav-option span:nth-child(1),
 .navbar-menu span:nth-child(1) {
     top: calc(50% - 6px)
 }
 
+.nav-option span:nth-child(2),
 .navbar-menu span:nth-child(2) {
     top: calc(50% - 1px)
 }
 
+.nav-option span:nth-child(3),
 .navbar-menu span:nth-child(3) {
     top: calc(50% + 4px)
 }
 
+.nav-option.open-menu span:nth-child(1),
 .navbar-menu.open-menu span:nth-child(1) {
     transform: translateY(5px) rotate(45deg)
 }
 
+.nav-option.open-menu span:nth-child(2),
 .navbar-menu.open-menu span:nth-child(2) {
     opacity: 0
 }
 
+.nav-option.open-menu span:nth-child(3),
 .navbar-menu.open-menu span:nth-child(3) {
     transform: translateY(-5px) rotate(-45deg)
 }
