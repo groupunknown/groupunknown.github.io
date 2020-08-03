@@ -56,7 +56,7 @@
 			<div class="search-results">
 				<ul id="results"></ul>
 			</div>
-			<script>SimpleJekyllSearch({searchInput:document.getElementById('search'),resultsContainer:document.getElementById('results'),searchResultTemplate:'<li><a href="{url}" tabindex="1"><p>{title}</p><span>{url}</span></a></li>',noResultsText:'<li><p>No results found!</p></li>',json:'/search.json'})</script>
+			<script>SimpleJekyllSearch({searchInput:document.getElementById('search'),resultsContainer:document.getElementById('results'),searchResultTemplate:'<li><a href="{url}" tabindex="1"><p>{title}</p><span>{url}</span></a></li>',noResultsText:'<li><p>Nenhum resultado encontrado, tente ser menos específico...</p></li>',json:'/search.json'})</script>
 			<script>$(document).ready(function(){$('#search').on('blur',function(){$('.search-results').fadeOut('medium');});$('#search').on('focus',function(){$('.search-results').show();});});</script>
 		</div>
 
