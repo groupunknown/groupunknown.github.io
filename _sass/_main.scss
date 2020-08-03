@@ -794,6 +794,8 @@ body.menu-show header nav {
 }
 
 .nav-menu-navbar {
+    display: flex;
+    flex-direction: column;
     height: 100%;
 }
 
