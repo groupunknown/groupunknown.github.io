@@ -789,6 +789,10 @@ body.menu-show header {
     backdrop-filter: blur(8px);
 }
 
+body.menu-show header nav {
+    height: 100%;
+}
+
 .search-console {
     display: flex;
     width: 100%;
@@ -830,15 +834,13 @@ body.menu-show header {
 
 .nav-menu-navbar .search-console button {
     background: transparent;
-    color: transparent;
-    background-image: url(https://descurioso.io/assets/img/search.svg);
-    background-repeat: no-repeat;
-    background-size: 18px;
+    color: var(--color);
     background-position: center;
     border: none;
     cursor: pointer;
-    padding: .5rem 0;
+    padding: .5rem;
 }
+
 .nav-menu-navbar .search-console button:active {
     border-top-right-radius: 2px!important;
     border-bottom-right-radius: 2px!important;
