@@ -4,7 +4,8 @@ $(document).ready(function() {
         layout = document.querySelector('.nav-theme-layout'),
         navbar = document.querySelector('.nav-theme-navbar'),
         style = document.querySelector('.nav-theme-style'),
-        options = document.querySelector('.navbar-menu');
+        navbarmenu = document.querySelector('.navbar-menu'),
+        options = document.querySelector('.nav-option');
 
     if (localStorage.getItem('theme') === null) {
         localStorage.setItem('theme', JSON.stringify(theme));
@@ -44,12 +45,17 @@ $(document).ready(function() {
     }
 
     function menuoptions(e) {
-        $('.navbar-menu').toggleClass('open-menu');
-        $('.nav-menu').toggleClass('hidden');
+        $('.nav-option').toggleClass('open-menu');
+        $('.nav-menu-option').toggleClass('hidden');
+    }
+
+    function menu(e) {
+
     }
 
     layout.addEventListener('click', theme_layout, false);
     navbar.addEventListener('click', theme_navbar, false);
     style.addEventListener('click', theme_style, false);
     options.addEventListener('click', menuoptions, false);
+    navbarmenu.addEventListener('click', menu, false);
 });

@@ -3,7 +3,7 @@
 	<nav role="navigation">
 
 		<div class="col">
-			<button class="btn-menu nav-option" type="button">
+			<button class="btn-menu navbar-menu" type="button">
 				<span></span>
 				<span></span>
 				<span></span>
@@ -21,14 +21,14 @@
 		</div>
 
 		<div class="col">
-			<button class="btn-menu navbar-menu" type="button">
+			<button class="btn-menu nav-option" type="button">
 				<span></span>
 				<span></span>
 				<span></span>
 			</button>
 		</div>
 
-		<div class="col nav-menu hidden">
+		<div class="col nav-menu-option hidden">
 			<div class="nav-theme-layout">
 				{% for item in site.data.navigation.layout %}
 					<a data-layout="{{ item.value }}">{{ item.icon }} {{ item.title }}</a>
