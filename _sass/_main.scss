@@ -859,6 +859,7 @@ body.menu-show header {
     flex-direction: column;
     width: 100%;
     max-width: 380px;
+    padding-top: .5rem;
     transition: .2s ease-in-out;
     transition-property: max-width;
 }
@@ -870,7 +871,7 @@ body.menu-show header {
 
 .suggest-item:hover {
     border-radius: 3px;
-    background-color: var(--menu-hover);
+    background-color: var(--color-light);
 }
 
 .suggest-item a {
