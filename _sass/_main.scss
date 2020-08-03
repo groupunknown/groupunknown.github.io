@@ -870,6 +870,10 @@ body.menu-show header {
     width: 100%;
 }
 
+.suggest-empty {
+    cursor: default;
+}
+
 .suggest-item:hover {
     border-radius: 3px;
     background-color: var(--color-light);
