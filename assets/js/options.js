@@ -50,6 +50,7 @@ $(document).ready(function() {
     }
 
     function menu_navbar(e) {
+        $('body').toggleClass('menu-show');
         $('.navbar-menu').toggleClass('open-menu');
         $('.nav-menu-navbar').toggleClass('hidden');
     }

@@ -783,6 +783,11 @@ main {
     width: 100%;
 }
 
+body.menu-show header {
+    background: transparent;
+    backdrop-filter: blur(4px);
+}
+
 .nav-theme-layout, .nav-theme-navbar, .nav-theme-style {
     display: flex;
     align-items: center;
