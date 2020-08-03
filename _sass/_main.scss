@@ -789,14 +789,10 @@ body.menu-show header {
     backdrop-filter: blur(8px);
 }
 
-body.menu-show header nav {
-    height: 100%;
-}
-
 .nav-menu-navbar {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    padding-top: 10vh;
 }
 
 .search-console {
