@@ -4,7 +4,6 @@ title: Qual é o sentido da vida?
 description: Qual é o sentido da vida?
 <!--- image: assets/images/qual-e-o-sentido-da-vida.webp -->
 summary: Qual é o sentido da vida?
-genres: [Ação, Drama, Terror, Ficção científica, Thriller]
 comments: true
 tags: [sentido]
 ---
