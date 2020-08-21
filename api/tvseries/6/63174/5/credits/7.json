@@ -1,0 +1,61 @@
+{
+  "cast": [
+    {
+      "character": "Lucifer Morningstar",
+      "credit_id": "559cb1f1c3a3681be4000bec",
+      "gender": 2,
+      "id": 192944,
+      "name": "Tom Ellis",
+      "order": 0,
+      "profile_path": "/sJkxqJfSgcwussMeywxyrnYxVX.jpg"
+    },
+    {
+      "character": "Chloe Decker",
+      "credit_id": "559cb21f9251414206000bef",
+      "gender": 1,
+      "id": 37014,
+      "name": "Lauren German",
+      "order": 1,
+      "profile_path": "/if1TbO8dSfPiDCMfy52nH7A2D7.jpg"
+    },
+    {
+      "character": "Daniel \"Dan\" Espinoza",
+      "credit_id": "559cb261c3a3681be4000bfa",
+      "gender": 2,
+      "id": 116474,
+      "name": "Kevin Alejandro",
+      "order": 2,
+      "profile_path": "/16WhElhjn3irGqQuMS8Z7L0ixit.jpg"
+    },
+    {
+      "character": "Amenadiel",
+      "credit_id": "55fdc6ed92514152b10018cd",
+      "gender": 2,
+      "id": 21356,
+      "name": "D.B. Woodside",
+      "order": 3,
+      "profile_path": "/eb4NCvnZeA4yCIcIip5tYwX07Fo.jpg"
+    },
+    {
+      "character": "Mazikeen \"Maze\"",
+      "credit_id": "559cb2529251414204000af7",
+      "gender": 1,
+      "id": 515875,
+      "name": "Lesley-Ann Brandt",
+      "order": 4,
+      "profile_path": "/fKCs8ANOPojfWXerhJ8aDX9fJZI.jpg"
+    },
+    {
+      "character": "Linda Martin",
+      "credit_id": "559cb272c3a3681bdd000abb",
+      "gender": 1,
+      "id": 46074,
+      "name": "Rachael Harris",
+      "order": 9,
+      "profile_path": "/39RYYTxxHaJKDXFTabjAPH8z5r6.jpg"
+    }
+  ],
+  "crew": [],
+  "guest_stars": [],
+  "id": 2397417
+}

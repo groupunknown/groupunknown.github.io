@@ -1,0 +1,160 @@
+{
+  "air_date": "2016-02-22",
+  "crew": [
+    {
+      "id": 21561,
+      "credit_id": "56f28528925141554f0012c4",
+      "name": "Tim Matheson",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": "/trZ4QaDidCOPNy7HK9cYnmKHkg9.jpg"
+    },
+    {
+      "id": 139853,
+      "credit_id": "56f285139251415548001218",
+      "name": "Sheri Elwood",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 1,
+      "profile_path": null
+    }
+  ],
+  "episode_number": 5,
+  "guest_stars": [
+    {
+      "id": 92614,
+      "name": "Dawn Olivieri",
+      "credit_id": "56f16c1992514144780004a5",
+      "character": "Olivia Monroe",
+      "order": 20,
+      "gender": 1,
+      "profile_path": "/tet7ZVbzhLWwT44m9j94folyl5N.jpg"
+    },
+    {
+      "id": 1215759,
+      "name": "Eddie Shin",
+      "credit_id": "56f16dfec3a36850ac00002b",
+      "character": "Benny Cho",
+      "order": 24,
+      "gender": 2,
+      "profile_path": "/sJQM9isg1IYedw6KYgPIE3l6xjc.jpg"
+    },
+    {
+      "id": 124495,
+      "name": "Lanny Joon",
+      "credit_id": "56f283a2c3a36807660014fb",
+      "character": "Yellow Viper",
+      "order": 26,
+      "gender": 0,
+      "profile_path": "/bIT1IKcrbp6gNBQPop4mJ69tWS9.jpg"
+    },
+    {
+      "id": 134180,
+      "name": "Alyssa Diaz",
+      "credit_id": "56f2840a925141554f001297",
+      "character": "Dani Ramirez",
+      "order": 26,
+      "gender": 1,
+      "profile_path": "/nUWjDdSvhcTX25CuheDFhCGEWqk.jpg"
+    },
+    {
+      "id": 121825,
+      "name": "Germaine De Leon",
+      "credit_id": "56f28417925141553f00131c",
+      "character": "Diego Ramirez",
+      "order": 27,
+      "gender": 2,
+      "profile_path": "/lfNbi77qHUYxyP5ut9wsLumWqdj.jpg"
+    },
+    {
+      "id": 58058,
+      "name": "Lochlyn Munro",
+      "credit_id": "56f28434c3a368077500125d",
+      "character": "Anthony Paolucci",
+      "order": 28,
+      "gender": 2,
+      "profile_path": "/bOJ03k0oe2R6snRgzV8M4Qtoo4O.jpg"
+    },
+    {
+      "id": 1460719,
+      "name": "Shaun Omaid",
+      "credit_id": "5ec6f84ce635710021cc280b",
+      "character": "Hector",
+      "order": 185,
+      "gender": 0,
+      "profile_path": "/6uvHGg1SI6er1Y5Z7eoDsA1OrGN.jpg"
+    },
+    {
+      "id": 1366577,
+      "name": "Howard Siegel",
+      "credit_id": "5ec6f8635a5ed00020444167",
+      "character": "Grizzled Uni Cop",
+      "order": 186,
+      "gender": 0,
+      "profile_path": "/wZMxlBaWDdI3El2nw12peOUkRig.jpg"
+    },
+    {
+      "id": 1475082,
+      "name": "Gabriela Zimmerman",
+      "credit_id": "5ec6f8819979d2001f348ad2",
+      "character": "Mrs. Cortez",
+      "order": 187,
+      "gender": 1,
+      "profile_path": "/mFLgc6qU7l0bYwLpfYll4UvrxKy.jpg"
+    },
+    {
+      "id": 2648018,
+      "name": "Paula Zerpa",
+      "credit_id": "5ec6f8963d3557001ce8a10f",
+      "character": "Paola Cortez",
+      "order": 188,
+      "gender": 1,
+      "profile_path": "/deWjKWCbsMrOB09PpOsLrNBwXck.jpg"
+    },
+    {
+      "id": 1781890,
+      "name": "Olena Medwid",
+      "credit_id": "5ec6f8ad5a5ed000204441c4",
+      "character": "Machete Model",
+      "order": 189,
+      "gender": 0,
+      "profile_path": "/4G8WvmpExl1hkHYD1inKQlBQE2E.jpg"
+    },
+    {
+      "id": 1376357,
+      "name": "Teresa Laverty",
+      "credit_id": "5ec6f925140bad001d19af0a",
+      "character": "Bartender",
+      "order": 191,
+      "gender": 0,
+      "profile_path": "/fOZz3cTHTCJ3s6pv6tpMCWZMAlR.jpg"
+    },
+    {
+      "id": 1366720,
+      "name": "Pippa Mackie",
+      "credit_id": "5ec6f9378e2e003dd611e5dd",
+      "character": "Barista",
+      "order": 192,
+      "gender": 1,
+      "profile_path": "/vJ8kKchKkcBCweRUKXuELFSv5rF.jpg"
+    },
+    {
+      "id": 2554153,
+      "name": "Tori Katongo",
+      "credit_id": "5ec6f90c0fb17f001d7b1d77",
+      "character": "Cute Female Uni Cop",
+      "order": 467,
+      "gender": 1,
+      "profile_path": "/rZKjVHS7pqkcUmoPNgKbDwPFbqW.jpg"
+    }
+  ],
+  "name": "Sapatos",
+  "overview": "Lucifer descobre que nem tudo no mundo da moda é belo. Após conseguir novas informações, Amenadiel bola um plano para levar Lucifer para casa.",
+  "id": 1160786,
+  "production_code": "4X6504",
+  "season_number": 1,
+  "still_path": "/nrRGeYit3Tvr2NocDmKEA5bH9sz.jpg",
+  "vote_average": 6.833,
+  "vote_count": 27
+}

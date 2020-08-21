@@ -1,0 +1,169 @@
+{
+  "air_date": "2017-05-08",
+  "crew": [
+    {
+      "id": 1579755,
+      "credit_id": "5724ebc39251411d090002b0",
+      "name": "Mike Costa",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 1264792,
+      "credit_id": "59c267b2c3a3682cc200dc6f",
+      "name": "Julia Fontana",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 1,
+      "profile_path": null
+    },
+    {
+      "id": 1224412,
+      "credit_id": "59c26985c3a3682cc200dea2",
+      "name": "Brad Tanenbaum",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": null
+    }
+  ],
+  "episode_number": 15,
+  "guest_stars": [
+    {
+      "id": 182617,
+      "name": "Geoffrey Owens",
+      "credit_id": "5ec93be8140bad001c18fe9e",
+      "character": "Assistant Dean",
+      "order": 365,
+      "gender": 2,
+      "profile_path": "/PO73VvUgDsAIYY6sdzDw01HFSk.jpg"
+    },
+    {
+      "id": 149468,
+      "name": "Ryan Bittle",
+      "credit_id": "5ec93c040fb17f001b7d2969",
+      "character": "Mr. Taylor",
+      "order": 366,
+      "gender": 2,
+      "profile_path": "/ArbignTNjGTVuWKbbe1835ir5JW.jpg"
+    },
+    {
+      "id": 1090276,
+      "name": "Alison Becker",
+      "credit_id": "5ec93ca78e2e0000212896ae",
+      "character": "Madison",
+      "order": 367,
+      "gender": 1,
+      "profile_path": "/A8DPg4s05eXNZSUyld4aQM0NUBQ.jpg"
+    },
+    {
+      "id": 37979,
+      "name": "Emily Holmes",
+      "credit_id": "5ec93cbd8e2e00002021db44",
+      "character": "Joy",
+      "order": 368,
+      "gender": 1,
+      "profile_path": "/251GyvALh5NiorRIwvn1oLgVmI6.jpg"
+    },
+    {
+      "id": 5354,
+      "name": "Kwesi Ameyaw",
+      "credit_id": "5ec93cda140bad001b1aca2a",
+      "character": "Craig",
+      "order": 369,
+      "gender": 2,
+      "profile_path": "/34xshC6FVZMfbKIocnBLjqQSLPw.jpg"
+    },
+    {
+      "id": 1549815,
+      "name": "Farrah Aviva",
+      "credit_id": "5ec93da3140bad001b1acbfe",
+      "character": "Yoga Mom",
+      "order": 370,
+      "gender": 0,
+      "profile_path": "/3U20068ltTLl5lhxuMqlwxKkWQA.jpg"
+    },
+    {
+      "id": 1721268,
+      "name": "Christian Convery",
+      "credit_id": "5ec93db70fb17f001b7d2cb5",
+      "character": "Ethan",
+      "order": 371,
+      "gender": 2,
+      "profile_path": "/kInpq1ES67sdANsQU14E9DnhMqN.jpg"
+    },
+    {
+      "id": 2650591,
+      "name": "Luke Kilvert",
+      "credit_id": "5ec93dd88e2e000021289a31",
+      "character": "Ranger",
+      "order": 372,
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1507856,
+      "name": "Gwenda Lorenzetti",
+      "credit_id": "5ec93e1fd2147c0022bc0b51",
+      "character": "Check-In Lady",
+      "order": 373,
+      "gender": 0,
+      "profile_path": "/4XKn3tnrSjPqjN8SbKmdUs1N6hM.jpg"
+    },
+    {
+      "id": 2042231,
+      "name": "Patrick Rinehart",
+      "credit_id": "5ec93e357f1d83001fdd095c",
+      "character": "Trophy Husband",
+      "order": 374,
+      "gender": 2,
+      "profile_path": "/uVnbzbWBSCXoS9J80SqvVfP3jnG.jpg"
+    },
+    {
+      "id": 134610,
+      "name": "Marco Soriano",
+      "credit_id": "5ec93e4e8e2e00002021de07",
+      "character": "Jon",
+      "order": 375,
+      "gender": 2,
+      "profile_path": "/1WeVFqcwfaUnM3ixnzTOyMsUI5T.jpg"
+    },
+    {
+      "id": 2641037,
+      "name": "Emma Barratt",
+      "credit_id": "5ec93e750fb17f001d7edd23",
+      "character": "Beautiful Woman #1",
+      "order": 376,
+      "gender": 1,
+      "profile_path": "/os6DgaTBcHC1YZDqBIFJSeVzkFX.jpg"
+    },
+    {
+      "id": 2650596,
+      "name": "Teagan Mann",
+      "credit_id": "5ec93ec1140bad001b1acd53",
+      "character": "Beautiful Woman #2",
+      "order": 377,
+      "gender": 1,
+      "profile_path": "/mF1IdEbBQqQjG3WK9hdrWphAz3N.jpg"
+    },
+    {
+      "id": 2509652,
+      "name": "Marlie Collins",
+      "credit_id": "5ec93f1b6c849200212d4a4a",
+      "character": "Beautiful Woman #3",
+      "order": 378,
+      "gender": 0,
+      "profile_path": "/rEMLA1mGza69RtmGBjkLPL3FnKG.jpg"
+    }
+  ],
+  "name": "Pequeno e esperto parasita",
+  "overview": "Lucifer descobre o que precisa fazer para reativar a lâmina de Azrael. Chloe e Dan investigam a morte de uma recrutadora escolar.",
+  "id": 1314232,
+  "production_code": "T13.20065",
+  "season_number": 2,
+  "still_path": "/hepWWJSwEGv3OtjkKEPd9CC1U8T.jpg",
+  "vote_average": 7.75,
+  "vote_count": 16
+}

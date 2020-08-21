@@ -1,0 +1,216 @@
+{
+  "cast": [
+    {
+      "character": "Lucifer Morningstar",
+      "credit_id": "559cb1f1c3a3681be4000bec",
+      "gender": 2,
+      "id": 192944,
+      "name": "Tom Ellis",
+      "order": 0,
+      "profile_path": "/sJkxqJfSgcwussMeywxyrnYxVX.jpg"
+    },
+    {
+      "character": "Chloe Decker",
+      "credit_id": "559cb21f9251414206000bef",
+      "gender": 1,
+      "id": 37014,
+      "name": "Lauren German",
+      "order": 1,
+      "profile_path": "/if1TbO8dSfPiDCMfy52nH7A2D7.jpg"
+    },
+    {
+      "character": "Daniel \"Dan\" Espinoza",
+      "credit_id": "559cb261c3a3681be4000bfa",
+      "gender": 2,
+      "id": 116474,
+      "name": "Kevin Alejandro",
+      "order": 2,
+      "profile_path": "/16WhElhjn3irGqQuMS8Z7L0ixit.jpg"
+    },
+    {
+      "character": "Amenadiel",
+      "credit_id": "55fdc6ed92514152b10018cd",
+      "gender": 2,
+      "id": 21356,
+      "name": "D.B. Woodside",
+      "order": 3,
+      "profile_path": "/eb4NCvnZeA4yCIcIip5tYwX07Fo.jpg"
+    },
+    {
+      "character": "Mazikeen \"Maze\"",
+      "credit_id": "559cb2529251414204000af7",
+      "gender": 1,
+      "id": 515875,
+      "name": "Lesley-Ann Brandt",
+      "order": 4,
+      "profile_path": "/fKCs8ANOPojfWXerhJ8aDX9fJZI.jpg"
+    },
+    {
+      "character": "Ella Lopez",
+      "credit_id": "57e09a81c3a36853f2001780",
+      "gender": 1,
+      "id": 56457,
+      "name": "Aimee Garcia",
+      "order": 7,
+      "profile_path": "/n0hKZHujbdzjkti2y4s7w48boTB.jpg"
+    },
+    {
+      "character": "Linda Martin",
+      "credit_id": "559cb272c3a3681bdd000abb",
+      "gender": 1,
+      "id": 46074,
+      "name": "Rachael Harris",
+      "order": 9,
+      "profile_path": "/39RYYTxxHaJKDXFTabjAPH8z5r6.jpg"
+    },
+    {
+      "character": "Beatrice \"Trixie\" Espinoza",
+      "credit_id": "55fdc74392514152a80017a4",
+      "gender": 1,
+      "id": 1512021,
+      "name": "Scarlett Estevez",
+      "order": 698,
+      "profile_path": "/3vZJxaHFC1bMuXd4a3tSrYhAffz.jpg"
+    },
+    {
+      "character": "Charlotte Richards",
+      "credit_id": "57a5d4909251410eb100429e",
+      "gender": 1,
+      "id": 74423,
+      "name": "Tricia Helfer",
+      "order": 699,
+      "profile_path": "/9LaGlfE5TeNnk1UZHFZPB9uy65q.jpg"
+    }
+  ],
+  "crew": [
+    {
+      "id": 207074,
+      "credit_id": "56c0b6a2c3a368180a00d499",
+      "name": "Jason Ning",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1778029,
+      "credit_id": "59c269c192514176e600ec4f",
+      "name": "Sherwin Shilati",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": null
+    }
+  ],
+  "guest_stars": [
+    {
+      "id": 134423,
+      "name": "Timothy Omundson",
+      "credit_id": "5939c4ca9251411f1b00139b",
+      "character": "God Johnson",
+      "order": 74,
+      "gender": 2,
+      "profile_path": "/fPhLMiodU7mVegOYvJ8aoj84ZHJ.jpg"
+    },
+    {
+      "id": 165284,
+      "name": "Alimi Ballard",
+      "credit_id": "5ec941e3a35c8e0021e2a1d9",
+      "character": "Dr. Liam Garrity",
+      "order": 379,
+      "gender": 2,
+      "profile_path": "/njuPTyVWPTevFnPeQ8Oaf55erYQ.jpg"
+    },
+    {
+      "id": 1358648,
+      "name": "Laura Coover",
+      "credit_id": "5ec941f2d2147c0023c1ef06",
+      "character": "Nurse Kipsey",
+      "order": 380,
+      "gender": 1,
+      "profile_path": "/gGl9ZufEliljHT6zG69Ge3mjs9e.jpg"
+    },
+    {
+      "id": 1259515,
+      "name": "Simon Chin",
+      "credit_id": "5ec942256c849200202ff806",
+      "character": "Security Guard",
+      "order": 381,
+      "gender": 2,
+      "profile_path": "/cpZ7ctAbDbX6ZwtTiU8ecV5DjT1.jpg"
+    },
+    {
+      "id": 582968,
+      "name": "Julian Domingues",
+      "credit_id": "5ec94238eb79c2001ea25b86",
+      "character": "Billy",
+      "order": 382,
+      "gender": 0,
+      "profile_path": "/snbEbbu79PFsqA2sdM9A3047XJK.jpg"
+    },
+    {
+      "id": 1359625,
+      "name": "Amro Majzoub",
+      "credit_id": "5ec942f2140bad001d1d7274",
+      "character": "Normal Ned",
+      "order": 383,
+      "gender": 2,
+      "profile_path": "/3SHmelruRFOYviyq1npiydzFBEx.jpg"
+    },
+    {
+      "id": 2650619,
+      "name": "Craig Meester",
+      "credit_id": "5ec943006c8492001f2b3b9a",
+      "character": "Beardy",
+      "order": 384,
+      "gender": 2,
+      "profile_path": "/90Dkv7EF4XvunF98DoXX2sxwjKj.jpg"
+    },
+    {
+      "id": 1294714,
+      "name": "Joshua Pak",
+      "credit_id": "5ec94508a35c8e0021e2a4ea",
+      "character": "Clerk",
+      "order": 385,
+      "gender": 2,
+      "profile_path": "/2Ce7dIC1TEWlDfxuq8PhzCCpYJF.jpg"
+    },
+    {
+      "id": 101247,
+      "name": "Adrian Petriw",
+      "credit_id": "5ec945216c849200202ffaf4",
+      "character": "Tourettes Todd",
+      "order": 386,
+      "gender": 2,
+      "profile_path": "/3jbR14GEKoUCbrs3NVmQw8eWRvu.jpg"
+    },
+    {
+      "id": 153849,
+      "name": "Suzanne Ristic",
+      "credit_id": "5ec94544eb79c2001fa1eb2a",
+      "character": "Sue Hightower",
+      "order": 387,
+      "gender": 1,
+      "profile_path": "/6jTjn1S3oVOcHc2czQdnOARz6Ni.jpg"
+    },
+    {
+      "id": 1432102,
+      "name": "John Stewart",
+      "credit_id": "5ec945676c849200202ffb4b",
+      "character": "Pyro Pete",
+      "order": 388,
+      "gender": 0,
+      "profile_path": "/1Gzfadr9yRqHV1PRMa8h0VIex4r.jpg"
+    },
+    {
+      "id": 1937045,
+      "name": "Sharmaine Yeoh",
+      "credit_id": "5ec94580d2147c0022bc10e4",
+      "character": "OCD Debbie",
+      "order": 389,
+      "gender": 1,
+      "profile_path": "/8CiAjt8TyDef8xF6USt0EV5hYbo.jpg"
+    }
+  ],
+  "id": 1315166
+}

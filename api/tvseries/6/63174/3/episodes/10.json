@@ -1,0 +1,97 @@
+{
+  "air_date": "2017-12-11",
+  "crew": [
+    {
+      "id": 139853,
+      "credit_id": "56f285139251415548001218",
+      "name": "Sheri Elwood",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 1,
+      "profile_path": null
+    },
+    {
+      "id": 17309,
+      "credit_id": "5726288ac3a3683841002270",
+      "name": "Greg Beeman",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": null
+    }
+  ],
+  "episode_number": 10,
+  "guest_stars": [
+    {
+      "id": 2276844,
+      "name": "Anastasia Leddick",
+      "credit_id": "5c9e3ba5c3a3687e3cf1df01",
+      "character": "Helena Handbasket",
+      "order": 141,
+      "gender": 1,
+      "profile_path": "/wSinrtra7MkyPF2oZUj386uCWio.jpg"
+    },
+    {
+      "id": 6950,
+      "name": "Kevin Carroll",
+      "credit_id": "5ec9a60deb79c2001ea2d960",
+      "character": "Sinnerman",
+      "order": 481,
+      "gender": 2,
+      "profile_path": "/4SiddRCkzh1IEDAWghewExKK2IM.jpg"
+    },
+    {
+      "id": 1520066,
+      "name": "Britt Baron",
+      "credit_id": "5ec9a8d9a35c8e001fe29a63",
+      "character": "Maggie Cole",
+      "order": 481,
+      "gender": 1,
+      "profile_path": "/4upOoNvKNSg2RX2sEpbYzbkHbKX.jpg"
+    },
+    {
+      "id": 2651086,
+      "name": "Taylor C. Baker",
+      "credit_id": "5ec9a93e0fb17f001d7f76d8",
+      "character": "Bedazzled Skater",
+      "order": 482,
+      "gender": 1,
+      "profile_path": "/smoi9CyVCRo33y0vsXawJXQmooa.jpg"
+    },
+    {
+      "id": 1759659,
+      "name": "Anissa Borrego",
+      "credit_id": "5ec9ab8b0fb17f001b7d9442",
+      "character": "Barista",
+      "order": 483,
+      "gender": 1,
+      "profile_path": "/sCD07WiAI9EskZJcLvBVqh07Y33.jpg"
+    },
+    {
+      "id": 1709428,
+      "name": "Nicole Dele",
+      "credit_id": "5ec9aba4eb79c2001ea2dd2b",
+      "character": "Vanessa",
+      "order": 484,
+      "gender": 1,
+      "profile_path": "/8GLVHYn6gqPmDOaqX1spWBdDTwh.jpg"
+    },
+    {
+      "id": 1937816,
+      "name": "Diana Solis",
+      "credit_id": "5ec9abced2147c0023c284b3",
+      "character": "Blindfolded Hottie",
+      "order": 485,
+      "gender": 1,
+      "profile_path": "/iuVoeEEvTgfayph69OVqYvdlmkl.jpg"
+    }
+  ],
+  "name": "Cesto de pecados",
+  "overview": "O Pecador continua atormentando Lúcifer enquanto outra vida está em risco. Trixie cruza o caminho de Charlotte.",
+  "id": 1404330,
+  "production_code": "T13.20757",
+  "season_number": 3,
+  "still_path": "/j6vGdven74cWqzJ9tbqeWBPFtjV.jpg",
+  "vote_average": 8.5,
+  "vote_count": 12
+}

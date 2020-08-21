@@ -1,0 +1,252 @@
+{
+  "cast": [
+    {
+      "character": "Ella Lopez",
+      "credit_id": "57e09a81c3a36853f2001780",
+      "gender": 1,
+      "id": 56457,
+      "name": "Aimee Garcia",
+      "order": 7,
+      "profile_path": "/n0hKZHujbdzjkti2y4s7w48boTB.jpg"
+    },
+    {
+      "character": "Lucifer Morningstar",
+      "credit_id": "559cb1f1c3a3681be4000bec",
+      "gender": 2,
+      "id": 192944,
+      "name": "Tom Ellis",
+      "order": 0,
+      "profile_path": "/sJkxqJfSgcwussMeywxyrnYxVX.jpg"
+    },
+    {
+      "character": "Chloe Decker",
+      "credit_id": "559cb21f9251414206000bef",
+      "gender": 1,
+      "id": 37014,
+      "name": "Lauren German",
+      "order": 1,
+      "profile_path": "/if1TbO8dSfPiDCMfy52nH7A2D7.jpg"
+    },
+    {
+      "character": "Mazikeen \"Maze\"",
+      "credit_id": "559cb2529251414204000af7",
+      "gender": 1,
+      "id": 515875,
+      "name": "Lesley-Ann Brandt",
+      "order": 4,
+      "profile_path": "/fKCs8ANOPojfWXerhJ8aDX9fJZI.jpg"
+    },
+    {
+      "character": "Linda Martin",
+      "credit_id": "559cb272c3a3681bdd000abb",
+      "gender": 1,
+      "id": 46074,
+      "name": "Rachael Harris",
+      "order": 9,
+      "profile_path": "/39RYYTxxHaJKDXFTabjAPH8z5r6.jpg"
+    },
+    {
+      "character": "Beatrice \"Trixie\" Espinoza",
+      "credit_id": "55fdc74392514152a80017a4",
+      "gender": 1,
+      "id": 1512021,
+      "name": "Scarlett Estevez",
+      "order": 698,
+      "profile_path": "/3vZJxaHFC1bMuXd4a3tSrYhAffz.jpg"
+    },
+    {
+      "character": "Amenadiel",
+      "credit_id": "55fdc6ed92514152b10018cd",
+      "gender": 2,
+      "id": 21356,
+      "name": "D.B. Woodside",
+      "order": 3,
+      "profile_path": "/eb4NCvnZeA4yCIcIip5tYwX07Fo.jpg"
+    },
+    {
+      "character": "Charlotte Richards",
+      "credit_id": "57a5d4909251410eb100429e",
+      "gender": 1,
+      "id": 74423,
+      "name": "Tricia Helfer",
+      "order": 699,
+      "profile_path": "/9LaGlfE5TeNnk1UZHFZPB9uy65q.jpg"
+    },
+    {
+      "character": "Daniel \"Dan\" Espinoza",
+      "credit_id": "559cb261c3a3681be4000bfa",
+      "gender": 2,
+      "id": 116474,
+      "name": "Kevin Alejandro",
+      "order": 2,
+      "profile_path": "/16WhElhjn3irGqQuMS8Z7L0ixit.jpg"
+    },
+    {
+      "character": "Marcus Pierce",
+      "credit_id": "59c2476f925141768a00c978",
+      "gender": 2,
+      "id": 11824,
+      "name": "Tom Welling",
+      "order": 5,
+      "profile_path": "/tkwREdAuj33kNTG7O8niRQMxepy.jpg"
+    }
+  ],
+  "crew": [
+    {
+      "id": 2035698,
+      "credit_id": "5aebd477c3a368721000284e",
+      "name": "Recardo Lopez, Jr.",
+      "department": "Writing",
+      "job": "Story",
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 1222590,
+      "credit_id": "5aebd4899251417f47001d97",
+      "name": "Ildy Modrovich",
+      "department": "Writing",
+      "job": "Teleplay",
+      "gender": 1,
+      "profile_path": null
+    },
+    {
+      "id": 1248201,
+      "credit_id": "5aebd49b0e0a266e0800223c",
+      "name": "Joe Henderson",
+      "department": "Writing",
+      "job": "Teleplay",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 116474,
+      "credit_id": "5aebd4af0e0a266e26001afa",
+      "name": "Kevin Alejandro",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": "/16WhElhjn3irGqQuMS8Z7L0ixit.jpg"
+    }
+  ],
+  "guest_stars": [
+    {
+      "id": 23446,
+      "name": "Neil Gaiman",
+      "credit_id": "5b0d5349c3a368428400967f",
+      "character": "God (voice)",
+      "order": 140,
+      "gender": 2,
+      "profile_path": "/wXPREg2zhD9gsycde7AoMebVyfA.jpg"
+    },
+    {
+      "id": 93228,
+      "name": "Louis Herthum",
+      "credit_id": "5ecab805d2147c0022bdb89a",
+      "character": "Lt. John Decker",
+      "order": 571,
+      "gender": 2,
+      "profile_path": "/7QarKov7OLIKKv6m152rnEyOnfq.jpg"
+    },
+    {
+      "id": 116278,
+      "name": "Brian Tee",
+      "credit_id": "5ecab81db3e627002130cd8c",
+      "character": "Ben Rogers",
+      "order": 572,
+      "gender": 2,
+      "profile_path": "/hxBPRA15C2Qtfqaw05Q5pKpG7ga.jpg"
+    },
+    {
+      "id": 1224149,
+      "name": "David Meunier",
+      "credit_id": "5ecab831b3e627002130cd92",
+      "character": "Rex Wilson",
+      "order": 573,
+      "gender": 2,
+      "profile_path": "/cHk0sLgU2J0MDxG3K35cn9Owf7K.jpg"
+    },
+    {
+      "id": 1372185,
+      "name": "Al Coronel",
+      "credit_id": "5ecab84e6c8492002032835b",
+      "character": "Nick Seals",
+      "order": 574,
+      "gender": 2,
+      "profile_path": "/iKSfh80jdDA7MckjaRXJVcasfRe.jpg"
+    },
+    {
+      "id": 1610950,
+      "name": "Selkie Hom",
+      "credit_id": "5ecaba93140bad001b1d6969",
+      "character": "Erika Dunlap",
+      "order": 575,
+      "gender": 1,
+      "profile_path": "/ceYRKYNV4tJKLfIX0S7E6wfyDQx.jpg"
+    },
+    {
+      "id": 2493269,
+      "name": "Jermaine Love",
+      "credit_id": "5ecabb16d2147c0021b912ff",
+      "character": "Nathan Fury",
+      "order": 576,
+      "gender": 2,
+      "profile_path": "/wWFoOihVhdBY6aEc1e2BlRr1R9E.jpg"
+    },
+    {
+      "id": 1210153,
+      "name": "Rocky Myers",
+      "credit_id": "5ecabb438e2e000020257d2b",
+      "character": "Stryder Novac",
+      "order": 577,
+      "gender": 2,
+      "profile_path": "/9pigmwnqQlUqX0U4Pg5BeYZYQGY.jpg"
+    },
+    {
+      "id": 30791,
+      "name": "Will Roberts",
+      "credit_id": "5ecabcdbe635710020d18218",
+      "character": "Crew Chief",
+      "order": 578,
+      "gender": 2,
+      "profile_path": "/4eiHqFEnZSJA8MZrKNEL1q1MSfx.jpg"
+    },
+    {
+      "id": 2616583,
+      "name": "Jon Ryckman",
+      "credit_id": "5ecabecdd2147c0021b916bd",
+      "character": "Lead Guard",
+      "order": 579,
+      "gender": 2,
+      "profile_path": "/uwUTgZSEY3NWXs7ykTZ5BQCi8Lz.jpg"
+    },
+    {
+      "id": 2389862,
+      "name": "Rachele Schank",
+      "credit_id": "5ecabefa140bad45ee1608cb",
+      "character": "Charlynn",
+      "order": 580,
+      "gender": 1,
+      "profile_path": "/5iOm87k3C7uBYne7RVbj8fEutWe.jpg"
+    },
+    {
+      "id": 1855754,
+      "name": "John Tague",
+      "credit_id": "5ecabf34140bad001b1d7248",
+      "character": "Grizzled Cop",
+      "order": 581,
+      "gender": 0,
+      "profile_path": "/xZTsJLYaFEzBwurpQTW3eEYHNpp.jpg"
+    },
+    {
+      "id": 1546674,
+      "name": "Nikea Gamby-Turner",
+      "credit_id": "5ecabf52b3e627002130d806",
+      "character": "Stacy Zallis",
+      "order": 582,
+      "gender": 1,
+      "profile_path": "/zhJoJvrmlublvpnuxhaWIB8jOqY.jpg"
+    }
+  ],
+  "id": 1497932
+}

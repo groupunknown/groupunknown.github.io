@@ -1,0 +1,151 @@
+{
+  "air_date": "2017-01-16",
+  "crew": [
+    {
+      "id": 139853,
+      "credit_id": "56f285139251415548001218",
+      "name": "Sheri Elwood",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 1,
+      "profile_path": null
+    },
+    {
+      "id": 17309,
+      "credit_id": "5726288ac3a3683841002270",
+      "name": "Greg Beeman",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": null
+    }
+  ],
+  "episode_number": 11,
+  "guest_stars": [
+    {
+      "id": 1648626,
+      "name": "Robert Salvador",
+      "credit_id": "58edfe2ec3a3683ddf00695e",
+      "character": "Hot Dude",
+      "order": 72,
+      "gender": 2,
+      "profile_path": "/vHy2jnXHCh3QZoxs6cCSv4uIkgw.jpg"
+    },
+    {
+      "id": 583051,
+      "name": "Diana Bang",
+      "credit_id": "594a6cba92514145b900db47",
+      "character": "Suki",
+      "order": 76,
+      "gender": 1,
+      "profile_path": "/8DTmzeUY4R1x8tYj1e1rvHZbB4y.jpg"
+    },
+    {
+      "id": 1596265,
+      "name": "Joel Semande",
+      "credit_id": "59919126925141435a00e51c",
+      "character": "Handsome Guy",
+      "order": 79,
+      "gender": 0,
+      "profile_path": "/LNvVvpgkhHk1jyzEruVu9klMLg.jpg"
+    },
+    {
+      "id": 6213,
+      "name": "Jamie Kennedy",
+      "credit_id": "5ec854bc6c849200202e3e9c",
+      "character": "Andy Kleinburg",
+      "order": 325,
+      "gender": 2,
+      "profile_path": "/zSBGgxJOS6c06ucEcoD9JYwZ4Rw.jpg"
+    },
+    {
+      "id": 207939,
+      "name": "Toby Levins",
+      "credit_id": "5ec8554bd2147c0022bade91",
+      "character": "Tim Pickman",
+      "order": 326,
+      "gender": 2,
+      "profile_path": "/xce4pr2wngY2GiJyE50zpyekZmR.jpg"
+    },
+    {
+      "id": 1516834,
+      "name": "Jennifer Cheon",
+      "credit_id": "5ec8556b9979d200213ad107",
+      "character": "Jana Lawrence",
+      "order": 327,
+      "gender": 1,
+      "profile_path": "/AsnOpfbnASQ2kzqKHKbZN0DdDQF.jpg"
+    },
+    {
+      "id": 77040,
+      "name": "Kira Clavell",
+      "credit_id": "5ec8561fe635710020ce8dd1",
+      "character": "Statuesque Woman",
+      "order": 328,
+      "gender": 1,
+      "profile_path": "/eB4FLd89cDoayP796bVvmz2loB7.jpg"
+    },
+    {
+      "id": 1841595,
+      "name": "Tina Grant",
+      "credit_id": "5ec856890fb17f001b7c01d1",
+      "character": "Raven Hair",
+      "order": 329,
+      "gender": 1,
+      "profile_path": "/ry23yTHPuzO8wxHU4j8cYI0WjRk.jpg"
+    },
+    {
+      "id": 2649779,
+      "name": "Heart Hayes",
+      "credit_id": "5ec857a29979d200203235c5",
+      "character": "Sharon",
+      "order": 330,
+      "gender": 1,
+      "profile_path": "/3GOD5KQ8Bgj1sxcQCAPM2JAKRb0.jpg"
+    },
+    {
+      "id": 1887188,
+      "name": "Sarah Porchetta",
+      "credit_id": "5ec85c02e635710021cd1329",
+      "character": "Hipster",
+      "order": 331,
+      "gender": 0,
+      "profile_path": "/tViijwD1ZSCLkyUiss0pbCspsxh.jpg"
+    },
+    {
+      "id": 2028024,
+      "name": "Kayla Stanton",
+      "credit_id": "5ec85d85d2147c0023c04353",
+      "character": "Redhead",
+      "order": 332,
+      "gender": 1,
+      "profile_path": "/xa21kU0ZsUCiK5IiUqqtttvmvfA.jpg"
+    },
+    {
+      "id": 1590698,
+      "name": "Wren Walker",
+      "credit_id": "5ec85de5e635710020ce933b",
+      "character": "Uniform Officer",
+      "order": 333,
+      "gender": 0,
+      "profile_path": "/odUs4PlznRpJRNTdip2BkVOCkRG.jpg"
+    },
+    {
+      "id": 1953657,
+      "name": "Celeste Ziegler",
+      "credit_id": "5ec85e2c8e2e0000202096f0",
+      "character": "Brunette",
+      "order": 334,
+      "gender": 1,
+      "profile_path": "/y8epLuq1IWwAjgvGmWwvOR7Ibln.jpg"
+    }
+  ],
+  "name": "Aeromoça interrompida",
+  "overview": "Lucifer descobre que é a única conexão óbvia entre duas vítimas de assassinato. Dra. Linda dá conselhos a Maze. Chloe toma uma decisão.",
+  "id": 1245026,
+  "production_code": "T13.20061",
+  "season_number": 2,
+  "still_path": "/gYxxRr8GLKlmn9ICBQ9MdW3TUsy.jpg",
+  "vote_average": 8.2,
+  "vote_count": 15
+}

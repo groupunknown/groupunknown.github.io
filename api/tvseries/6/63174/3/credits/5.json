@@ -1,0 +1,198 @@
+{
+  "cast": [
+    {
+      "character": "Lucifer Morningstar",
+      "credit_id": "559cb1f1c3a3681be4000bec",
+      "gender": 2,
+      "id": 192944,
+      "name": "Tom Ellis",
+      "order": 0,
+      "profile_path": "/sJkxqJfSgcwussMeywxyrnYxVX.jpg"
+    },
+    {
+      "character": "Chloe Decker",
+      "credit_id": "559cb21f9251414206000bef",
+      "gender": 1,
+      "id": 37014,
+      "name": "Lauren German",
+      "order": 1,
+      "profile_path": "/if1TbO8dSfPiDCMfy52nH7A2D7.jpg"
+    },
+    {
+      "character": "Daniel \"Dan\" Espinoza",
+      "credit_id": "559cb261c3a3681be4000bfa",
+      "gender": 2,
+      "id": 116474,
+      "name": "Kevin Alejandro",
+      "order": 2,
+      "profile_path": "/16WhElhjn3irGqQuMS8Z7L0ixit.jpg"
+    },
+    {
+      "character": "Amenadiel",
+      "credit_id": "55fdc6ed92514152b10018cd",
+      "gender": 2,
+      "id": 21356,
+      "name": "D.B. Woodside",
+      "order": 3,
+      "profile_path": "/eb4NCvnZeA4yCIcIip5tYwX07Fo.jpg"
+    },
+    {
+      "character": "Mazikeen \"Maze\"",
+      "credit_id": "559cb2529251414204000af7",
+      "gender": 1,
+      "id": 515875,
+      "name": "Lesley-Ann Brandt",
+      "order": 4,
+      "profile_path": "/fKCs8ANOPojfWXerhJ8aDX9fJZI.jpg"
+    },
+    {
+      "character": "Marcus Pierce",
+      "credit_id": "59c2476f925141768a00c978",
+      "gender": 2,
+      "id": 11824,
+      "name": "Tom Welling",
+      "order": 5,
+      "profile_path": "/tkwREdAuj33kNTG7O8niRQMxepy.jpg"
+    },
+    {
+      "character": "Charlotte Richards",
+      "credit_id": "57a5d4909251410eb100429e",
+      "gender": 1,
+      "id": 74423,
+      "name": "Tricia Helfer",
+      "order": 6,
+      "profile_path": "/9LaGlfE5TeNnk1UZHFZPB9uy65q.jpg"
+    },
+    {
+      "character": "Ella Lopez",
+      "credit_id": "57e09a81c3a36853f2001780",
+      "gender": 1,
+      "id": 56457,
+      "name": "Aimee Garcia",
+      "order": 7,
+      "profile_path": "/n0hKZHujbdzjkti2y4s7w48boTB.jpg"
+    },
+    {
+      "character": "Linda Martin",
+      "credit_id": "559cb272c3a3681bdd000abb",
+      "gender": 1,
+      "id": 46074,
+      "name": "Rachael Harris",
+      "order": 9,
+      "profile_path": "/39RYYTxxHaJKDXFTabjAPH8z5r6.jpg"
+    },
+    {
+      "character": "Beatrice \"Trixie\" Espinoza",
+      "credit_id": "55fdc74392514152a80017a4",
+      "gender": 1,
+      "id": 1512021,
+      "name": "Scarlett Estevez",
+      "order": 693,
+      "profile_path": "/3vZJxaHFC1bMuXd4a3tSrYhAffz.jpg"
+    }
+  ],
+  "crew": [
+    {
+      "id": 11817,
+      "credit_id": "56be64919251417344004abb",
+      "name": "Nathan Hope",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1490537,
+      "credit_id": "5700432ec3a3686e9200370c",
+      "name": "Chris Rafferty",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 0,
+      "profile_path": null
+    }
+  ],
+  "guest_stars": [
+    {
+      "id": 8269,
+      "name": "Suzanne Cryer",
+      "credit_id": "5ec975987f1d83001edcbaed",
+      "character": "Grace Foley",
+      "order": 440,
+      "gender": 1,
+      "profile_path": "/2l8WjcbjE64mPI1OftJHI07mJmf.jpg"
+    },
+    {
+      "id": 133591,
+      "name": "Ian Reed Kesler",
+      "credit_id": "5ec975ad140bad001d1dbb54",
+      "character": "The Fixer",
+      "order": 441,
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 157067,
+      "name": "Matthew Yang King",
+      "credit_id": "5ec975d40fb17f001d7f2c48",
+      "character": "Adrian Yates",
+      "order": 442,
+      "gender": 2,
+      "profile_path": "/jcLJIw0s2uP4PSnH5E8oM3pUyiV.jpg"
+    },
+    {
+      "id": 205349,
+      "name": "Omar Leyva",
+      "credit_id": "5ec975eeeb79c2001ea2a256",
+      "character": "Lalo Vasquez",
+      "order": 443,
+      "gender": 2,
+      "profile_path": "/mpUNAbWsmIEH27JqWmMKTJBedBG.jpg"
+    },
+    {
+      "id": 154742,
+      "name": "Troy Blendell",
+      "credit_id": "5ec976bd8e2e0000202223c9",
+      "character": "Larry",
+      "order": 445,
+      "gender": 2,
+      "profile_path": "/x63p8KjNN3jns9LonNCWqRnOLvi.jpg"
+    },
+    {
+      "id": 106370,
+      "name": "Jeff Bowser",
+      "credit_id": "5ec976e3a35c8e0021e2e6a9",
+      "character": "Simon Fisher",
+      "order": 446,
+      "gender": 2,
+      "profile_path": "/kE3mPMYwiVgtL2z3EnARt2FIAIC.jpg"
+    },
+    {
+      "id": 1530985,
+      "name": "Justin Chu Cary",
+      "credit_id": "5ec97701a35c8e0021e2e6bc",
+      "character": "Benson Reeves",
+      "order": 447,
+      "gender": 2,
+      "profile_path": "/7ecsAxR9WBeliKAUA0NIDOg33i4.jpg"
+    },
+    {
+      "id": 1585143,
+      "name": "Chelsea Gilson",
+      "credit_id": "5ec97719e635710020cfde73",
+      "character": "Blonde Model",
+      "order": 448,
+      "gender": 1,
+      "profile_path": "/hlq8a03SBGgkkw021T9mAUOO4RI.jpg"
+    },
+    {
+      "id": 2211451,
+      "name": "LaFonda Baker",
+      "credit_id": "5ec9769de635710020cfde25",
+      "character": "Uni",
+      "order": 610,
+      "gender": 1,
+      "profile_path": "/6t7mscAFM3cfuk9I6OeL0jW5VRg.jpg"
+    }
+  ],
+  "id": 1384456
+}

@@ -1,0 +1,106 @@
+{
+  "air_date": "2018-01-22",
+  "crew": [
+    {
+      "id": 1382168,
+      "credit_id": "56f41101925141769e001e90",
+      "name": "Alex Katsnelson",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 1613214,
+      "credit_id": "5724ebfdc3a3685ac10008eb",
+      "name": "Tara Nicole Weyr",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 1,
+      "profile_path": null
+    }
+  ],
+  "episode_number": 12,
+  "guest_stars": [
+    {
+      "id": 57278,
+      "name": "Kate Beahan",
+      "credit_id": "5ada42750e0a262d450006e5",
+      "character": "Justine Doble",
+      "order": 122,
+      "gender": 1,
+      "profile_path": "/mUp1n98wsdh2Is5g6kahkreL7If.jpg"
+    },
+    {
+      "id": 1040679,
+      "name": "Donny Boaz",
+      "credit_id": "5ec9bbeceb79c2001fa23522",
+      "character": "'Dangerous Doug' Libby",
+      "order": 499,
+      "gender": 2,
+      "profile_path": "/3QF9rdUqqMhTHorkAtVqsH6zvXt.jpg"
+    },
+    {
+      "id": 1226852,
+      "name": "Sonya Balmores",
+      "credit_id": "5ec9be38e635710021ce29c3",
+      "character": "Wild Child",
+      "order": 500,
+      "gender": 1,
+      "profile_path": "/knbho01kwkNbm5pEcCEMCcgnRQd.jpg"
+    },
+    {
+      "id": 2627672,
+      "name": "Justin Johnson Cortez",
+      "credit_id": "5ec9be6ca35c8e0020e2db8e",
+      "character": "Manny 'The Moondog' Taylor",
+      "order": 501,
+      "gender": 2,
+      "profile_path": "/wdN7TMXY72yGfazz0OXVXIzP1sq.jpg"
+    },
+    {
+      "id": 1369055,
+      "name": "Rick Kelly",
+      "credit_id": "5ec9bf536c84920020309c2c",
+      "character": "Tyler Utah",
+      "order": 502,
+      "gender": 2,
+      "profile_path": "/986mw8Kcbe2Oliwovw01aVv68bI.jpg"
+    },
+    {
+      "id": 2308851,
+      "name": "Jess Lundgren",
+      "credit_id": "5ec9c00ed2147c0021b83086",
+      "character": "Orca",
+      "order": 503,
+      "gender": 2,
+      "profile_path": "/ruWJLKlw7V1TkxYMQQRLzxaxmEO.jpg"
+    },
+    {
+      "id": 1175748,
+      "name": "David Paladino",
+      "credit_id": "5ec9c056140bad45ee15871a",
+      "character": "Johnny Utah",
+      "order": 504,
+      "gender": 2,
+      "profile_path": "/tT7HwXxA4zgxtqTUttCDs3H20sA.jpg"
+    },
+    {
+      "id": 154744,
+      "name": "David Grant Wright",
+      "credit_id": "5ec9c0ed8e2e000020229e6a",
+      "character": "Dr. Kaminsky",
+      "order": 505,
+      "gender": 2,
+      "profile_path": "/iHx09m0XM8QI7Ojlt1pojdM1TdU.jpg"
+    }
+  ],
+  "name": "Ela no centro de tudo",
+  "overview": "Depois de descobrir a identidade e a situação de Pierce, Lúcifer se oferece para ajudá-lo a fazer um acordo. Amenadiel precisa resolver um problema pessoal.",
+  "id": 1415335,
+  "production_code": "T13.20758",
+  "season_number": 3,
+  "still_path": "/wYwcsYwKHF0lxiyQVlpkqO4nC7m.jpg",
+  "vote_average": 7.909,
+  "vote_count": 11
+}
