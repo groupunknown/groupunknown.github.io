@@ -1,0 +1,33 @@
+{
+  "air_date": "2014-08-10",
+  "crew": [
+    {
+      "id": 1224259,
+      "credit_id": "525803dd19c29531db38c238",
+      "name": "Kate Barnow",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 1,
+      "profile_path": null
+    },
+    {
+      "id": 134088,
+      "credit_id": "544c0198c3a36872bc000869",
+      "name": "Jesse Warn",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 1,
+      "profile_path": "/ivvqREnPzI1nFyUCEC0lD4DsqMf.jpg"
+    }
+  ],
+  "episode_number": 8,
+  "guest_stars": [],
+  "name": "Almost Home",
+  "overview": "Eric reavalia sua estratégia, e Sookie arrisca a própria vida para ajudar Bill. Violet vislumbra a chance de vingança contra seus traidores.",
+  "id": 989977,
+  "production_code": "",
+  "season_number": 7,
+  "still_path": "/ljwcMBCM3LarFJgDZd6wyiUZFg8.jpg",
+  "vote_average": 6.167,
+  "vote_count": 6
+}

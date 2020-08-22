@@ -1,0 +1,146 @@
+{
+  "backdrop_path": "/iInlACH548YsNljJgjF9B4qB8BA.jpg",
+  "created_by": [
+    {
+      "id": 2152,
+      "credit_id": "525803dd19c29531db38c17a",
+      "name": "Alan Ball",
+      "gender": 2,
+      "profile_path": null
+    }
+  ],
+  "episode_run_time": [
+    60,
+    52
+  ],
+  "first_air_date": "2008-09-07",
+  "genres": [
+    {
+      "id": 18,
+      "name": "Drama"
+    },
+    {
+      "id": 10765,
+      "name": "Sci-Fi & Fantasy"
+    }
+  ],
+  "homepage": "http://www.hbo.com/trueblood/",
+  "id": 10545,
+  "in_production": false,
+  "languages": [
+    "en"
+  ],
+  "last_air_date": "2014-08-24",
+  "last_episode_to_air": {
+    "air_date": "2014-08-24",
+    "episode_number": 10,
+    "id": 989976,
+    "name": "Thank you",
+    "overview": "No último episódio da série, Sookie imagina o seu futuro, com Bill ou sem ele. Eric e Pam embarcam numa nova aventura, enquanto Sarah enfrenta as consequências pelos seus atos. Sam aceita sua nova realidade, e Andy recebe algo inesperado.",
+    "production_code": "",
+    "season_number": 7,
+    "show_id": 10545,
+    "still_path": "/1bVEzKGzow2bamDR8CUO6HAELN.jpg",
+    "vote_average": 4,
+    "vote_count": 9
+  },
+  "name": "True Blood ",
+  "next_episode_to_air": null,
+  "networks": [
+    {
+      "name": "HBO",
+      "id": 49,
+      "logo_path": "/tuomPhY2UtuPTqqFnKMVHvSb724.png",
+      "origin_country": "US"
+    }
+  ],
+  "number_of_episodes": 80,
+  "number_of_seasons": 7,
+  "origin_country": [
+    "US"
+  ],
+  "original_language": "en",
+  "original_name": "True Blood",
+  "overview": "Numa nova era de evolução científica, os vampiros conseguiram deixar de ser monstros lendários para se tornarem cidadãos comuns. Essa mudança, que aconteceu do dia para a noite, deve-se a cientistas japoneses, que inventaram um sangue sintético, fazendo com que os humanos deixassem de ser o seu prato principal. Já os humanos ainda não se sentem totalmente seguros convivendo lado a lado com toda a legião de vampiros que está saindo de seus caixões. Ao redor do mundo, cada um escolheu o seu lado a favor ou contra essa revolução, mas numa pequena cidade de Lousiana, as pessoas ainda estão formando a sua opinião. Sookie, garçonete de um pequena lanchonete, tem o poder de ouvir os pensamentos das pessoas e não vê problemas na integração desses novos membros à sociedade, principalmente quando se trata de Bill Compton, um atraente vampiro de 173 anos de idade. Mas ela pode vir a mudar de opinião, à medida que desvenda os mistérios que envolvem a chegada de Bill em sua cidade. Mergulhe no mundo obscuro desse novo drama envolvente, que saiu das mãos do mesmo criador de \"Six Feet Under\", Alan Ball. Uma nova sociedade está se formando e cada um precisa escolher a sua posição dentro dela.",
+  "popularity": 40.04,
+  "poster_path": "/vTkL1QE4yHXu5v13hoqd83Iv5R5.jpg",
+  "production_companies": [],
+  "seasons": [
+    {
+      "air_date": "2008-06-16",
+      "episode_count": 13,
+      "id": 20782,
+      "name": "Especiais",
+      "overview": "",
+      "poster_path": "/hJGy8q7pJc1I2hhbbADtVagg9jw.jpg",
+      "season_number": 0
+    },
+    {
+      "air_date": "2008-09-07",
+      "episode_count": 12,
+      "id": 20777,
+      "name": "Temporada 1",
+      "overview": "Na Lousiana, as pessoas ainda estão se acostumando à ideia de conviver com os vampiros. A jovem Sookie não vê problemas nesta coexistência e até se apaixona por um atraente vampiro de 173 anos de idade. No entanto, uma série de acontecimentos pode fazê-la mudar de opinião. Primeira temporada da série original da HBO, vencedora de prêmios importantes como Emmy e Golden Globe.",
+      "poster_path": "/xQ4pJNDN3ht54zstgHdaB5bgtji.jpg",
+      "season_number": 1
+    },
+    {
+      "air_date": "2009-06-14",
+      "episode_count": 12,
+      "id": 20778,
+      "name": "Temporada 2",
+      "overview": "Na segunda temporada da série é fácil perceber que o conflito entre vampiros e humanos só aumenta. A trama deixa a cidade de Bon Temps e vai a outros lugares, como o Texas, onde a protagonista Sookie investiga o desaparecimento de um vampiro de dois mil anos de idade. Bill é sequestrado, adicionando ainda mais suspense aos episódios.",
+      "poster_path": "/mzSuElDGm2mIT2Pc5IT3UTD31Xc.jpg",
+      "season_number": 2
+    },
+    {
+      "air_date": "2010-06-13",
+      "episode_count": 12,
+      "id": 20779,
+      "name": "Temporada 3",
+      "overview": "Novos personagens são incluídos na história nesta terceira temporada, entre eles Russell Edgington, o Vampiro Rei do Mississippi, que tem planos ambiciosos para expandir seu poder. Uma revelação sobre os antepassados de Sookie também é fundamental para o desenvolvimento da trama, que volta o seu foco para Bon Temps.",
+      "poster_path": "/k6izfIRCWNTxVSElSgVytGSuK8X.jpg",
+      "season_number": 3
+    },
+    {
+      "air_date": "2011-06-26",
+      "episode_count": 12,
+      "id": 20780,
+      "name": "Temporada 4",
+      "overview": "Russell Edgington não é mais uma ameaça, pelo menos por enquanto, mas Sookie e seus aliados em Bon Temps têm novos problemas nesta quarta temporada. Qual será o destino de Bill, que partiu o coração da protagonista da série? E o que o futuro reserva para Eric Norseman, após quase ser mandado para o limbo? Confira as respostas para estas perguntas em 12 excitantes episódios.",
+      "poster_path": "/iWPBPx9DasFo0cSIAeDx0iBzvvP.jpg",
+      "season_number": 4
+    },
+    {
+      "air_date": "2012-06-10",
+      "episode_count": 12,
+      "id": 20781,
+      "name": "Temporada 5",
+      "overview": "A quinta temporada apresenta novos personagens à trama, como Roman, conhecido como ‘O Guardião’, o poderoso líder de uma organização de vampiros que defende a convivência pacífica com os humanos. Cheia de suspense, romance, mistério e uma pitada de humor, a série mantém o foco na luta de poder entre as criaturas da noite, que pode afetar o destino da humanidade.",
+      "poster_path": "/rR6qRmaPovs2KEaEBJVm8iAINMw.jpg",
+      "season_number": 5
+    },
+    {
+      "air_date": "2013-06-16",
+      "episode_count": 10,
+      "id": 20783,
+      "name": "Temporada 6",
+      "overview": "A temporada de caça aos vampiros está aberta na Louisiana. Isso é péssima notícia para Sookie e seus aliados, que correm perigo de todos os lados. Os irmãos Stackhouse se preparam para o encontro com o assassino de seus pais, enquanto Bill retorna com ainda mais poderes. A sexta temporada da série está ainda mais sensual e assustadora.",
+      "poster_path": "/fdG0kqJ5ueGHiSy1kWN9VoIQXt1.jpg",
+      "season_number": 6
+    },
+    {
+      "air_date": "2014-06-22",
+      "episode_count": 10,
+      "id": 20784,
+      "name": "Temporada 7",
+      "overview": "Sookie, Bill e Eric enfrentam novas ameaças e uma dura realidade em Bon Temps. Tara ainda sofre com os ajustes de uma vida diferente, enquanto o prefeito Sam tem planos ousados para a cidade. A sétima e última temporada traz ainda surpreendentes relacionamentos e desfechos sangrentos para alguns personagens da sexy e assustadora série original da HBO.",
+      "poster_path": "/lpjC9iLPr6QGorJmsZEN9f4Io6u.jpg",
+      "season_number": 7
+    }
+  ],
+  "status": "Ended",
+  "type": "Scripted",
+  "vote_average": 7.5,
+  "vote_count": 953
+}

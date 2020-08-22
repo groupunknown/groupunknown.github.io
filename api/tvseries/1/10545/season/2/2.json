@@ -1,0 +1,2159 @@
+{
+  "_id": "525803be19c29531db389a01",
+  "air_date": "2009-06-14",
+  "episodes": [
+    {
+      "air_date": "2009-06-14",
+      "episode_number": 1,
+      "id": 430406,
+      "name": "Nothing But the Blood",
+      "overview": "Outro assassinato assusta os habitantes de Bon Temps. Sookie e Bill se desentendem quando ela descobre o que aconteceu com Jessica. Sam lembra-se de um encontro estranho e Jason vai a um retiro da Comunidade do Sol.",
+      "production_code": "",
+      "season_number": 2,
+      "show_id": 10545,
+      "still_path": "/mdgIquVRT63NPiXHynQApDgNxtq.jpg",
+      "vote_average": 7.4,
+      "vote_count": 10,
+      "crew": [
+        {
+          "id": 1228520,
+          "credit_id": "525803c219c29531db38a0c8",
+          "name": "Alexander Woo",
+          "department": "Writing",
+          "job": "Writer",
+          "gender": 2,
+          "profile_path": null
+        },
+        {
+          "id": 88743,
+          "credit_id": "525803c219c29531db38a0f4",
+          "name": "Daniel Minahan",
+          "department": "Directing",
+          "job": "Director",
+          "gender": 2,
+          "profile_path": "/zBRWTVYdZ77HT1zWpZtLXZ8AW1F.jpg"
+        }
+      ],
+      "guest_stars": [
+        {
+          "id": 118546,
+          "name": "Adina Porter",
+          "credit_id": "533d6e2fc3a36879120031fb",
+          "character": "Lettie Mae Thornton",
+          "order": 11,
+          "gender": 1,
+          "profile_path": "/2mXvJkXGVCoqyV1Gxmki9WrkRke.jpg"
+        },
+        {
+          "id": 221098,
+          "name": "Anna Camp",
+          "credit_id": "52ca0c1f19c2956d1f01702e",
+          "character": "Sarah Newlin",
+          "order": 15,
+          "gender": 1,
+          "profile_path": "/32H0SJbTK3tvLVgf3X1aiaUdcxe.jpg"
+        },
+        {
+          "id": 101416,
+          "name": "Michael McMillian",
+          "credit_id": "5423d95b0e0a263b6e00321e",
+          "character": "Steve Newlin",
+          "order": 53,
+          "gender": 2,
+          "profile_path": "/8uS5Mi7aIVuF5XWARbX9EeBRQZN.jpg"
+        },
+        {
+          "id": 21722,
+          "name": "John Billingsley",
+          "credit_id": "5423d77cc3a36808800031c3",
+          "character": "Mike Spencer",
+          "order": 84,
+          "gender": 2,
+          "profile_path": "/uQzAvv4LUt57GBrYzDj5Ao1vhUT.jpg"
+        },
+        {
+          "id": 1192492,
+          "name": "Aisha Hinds",
+          "credit_id": "5423dd0e0e0a263b710033ae",
+          "character": "Miss Jeanette",
+          "order": 98,
+          "gender": 1,
+          "profile_path": "/zk59cqqDmJMFjnjYSC2xOqwp91r.jpg"
+        },
+        {
+          "id": 1005140,
+          "name": "Caleb Moody",
+          "credit_id": "5423daeac3a3680887002efd",
+          "character": "Royce",
+          "order": 101,
+          "gender": 0,
+          "profile_path": null
+        },
+        {
+          "id": 95195,
+          "name": "Michael Bofshever",
+          "credit_id": "5423e8f9c3a368086e003261",
+          "character": "Orry Dawson",
+          "order": 105,
+          "gender": 2,
+          "profile_path": "/v0StOMYNP2HIGjfGBQJIcn6OcBY.jpg"
+        },
+        {
+          "id": 85416,
+          "name": "Adam Leadbeater",
+          "credit_id": "5423e91bc3a368088000338f",
+          "character": "Karl",
+          "order": 106,
+          "gender": 2,
+          "profile_path": null
+        },
+        {
+          "id": 156131,
+          "name": "Sharon Tay",
+          "credit_id": "5423ed09c3a36808870030ac",
+          "character": "News Anchor",
+          "order": 108,
+          "gender": 1,
+          "profile_path": "/1DU5WyCW091JbihI0oPZFLcxCL3.jpg"
+        },
+        {
+          "id": 76886,
+          "name": "Betsy Rue",
+          "credit_id": "5423ed290e0a263b7e0034c2",
+          "character": "Shawnelle",
+          "order": 109,
+          "gender": 1,
+          "profile_path": "/wSRDoq5JIsKo4RkYaOwXu2Tla0h.jpg"
+        },
+        {
+          "id": 128404,
+          "name": "George Gerdes",
+          "credit_id": "5423ed3c0e0a263b7100352d",
+          "character": "Sid Matt Lancaster",
+          "order": 110,
+          "gender": 2,
+          "profile_path": null
+        },
+        {
+          "id": 1231273,
+          "name": "Lauren Pritchard",
+          "credit_id": "5423ed5d0e0a263b71003533",
+          "character": "Coralee",
+          "order": 111,
+          "gender": 1,
+          "profile_path": "/q7ZDvRKW6ZAoimkOb6fR6nmgKy7.jpg"
+        },
+        {
+          "id": 1223003,
+          "name": "Missy Doty",
+          "credit_id": "5423ed8e0e0a263b6e003416",
+          "character": "Vonetta",
+          "order": 113,
+          "gender": 1,
+          "profile_path": "/jvMhNAU4pec6z3R39HTZK3IAKpI.jpg"
+        },
+        {
+          "id": 161875,
+          "name": "Tanya Wright",
+          "credit_id": "5423ed9c0e0a263b8400345d",
+          "character": "Kenya",
+          "order": 114,
+          "gender": 1,
+          "profile_path": "/AjF29SrFm2RxNTpUhMzvlwHG9dY.jpg"
+        },
+        {
+          "id": 112464,
+          "name": "Ashley Jones",
+          "credit_id": "5423edd30e0a263b77003462",
+          "character": "Daphne Landry",
+          "order": 115,
+          "gender": 1,
+          "profile_path": null
+        },
+        {
+          "id": 66527,
+          "name": "Martin Spanjers",
+          "credit_id": "5423e6afc3a368087200395b",
+          "character": "Young Sam",
+          "order": 341,
+          "gender": 2,
+          "profile_path": null
+        },
+        {
+          "id": 156689,
+          "name": "Jessica Tuck",
+          "credit_id": "5423d4bdc3a3681eca0019cf",
+          "character": "Nan Flanagan",
+          "order": 347,
+          "gender": 1,
+          "profile_path": "/jxBUK4AO2CAJs1WmVERHUnP8gE1.jpg"
+        }
+      ]
+    },
+    {
+      "air_date": "2009-06-21",
+      "episode_number": 2,
+      "id": 430407,
+      "name": "Keep This Party Going",
+      "overview": "Sookie não vê outra saída a não ser aceitar as obrigações de Bill com relação a Jessica, mesmo com todos os problemas decorrentes da sua presença. Jason causa uma boa impressão aos líderes Steve e Sarah, mas Luke, seu companheiro de quarto, não pensa o mesmo.",
+      "production_code": "",
+      "season_number": 2,
+      "show_id": 10545,
+      "still_path": "/4XdNuPgWosS6xdaCsaPmIggVzFe.jpg",
+      "vote_average": 7.8,
+      "vote_count": 10,
+      "crew": [
+        {
+          "id": 7145,
+          "credit_id": "525803c119c29531db389e9a",
+          "name": "Michael Lehmann",
+          "department": "Directing",
+          "job": "Director",
+          "gender": 2,
+          "profile_path": null
+        },
+        {
+          "id": 1215784,
+          "credit_id": "525803c119c29531db389e6e",
+          "name": "Brian Buckner",
+          "department": "Writing",
+          "job": "Writer",
+          "gender": 2,
+          "profile_path": null
+        }
+      ],
+      "guest_stars": [
+        {
+          "id": 180132,
+          "name": "Tara Buck",
+          "credit_id": "533d6e43c3a36879120031fd",
+          "character": "Ginger",
+          "order": 12,
+          "gender": 1,
+          "profile_path": "/inryUixQNcZsR6erJTAKAP1QozS.jpg"
+        },
+        {
+          "id": 221098,
+          "name": "Anna Camp",
+          "credit_id": "52ca0c1f19c2956d1f01702e",
+          "character": "Sarah Newlin",
+          "order": 15,
+          "gender": 1,
+          "profile_path": "/32H0SJbTK3tvLVgf3X1aiaUdcxe.jpg"
+        },
+        {
+          "id": 90658,
+          "name": "Kristin Bauer van Straten",
+          "credit_id": "525803d819c29531db38bb88",
+          "character": "Pam",
+          "order": 52,
+          "gender": 1,
+          "profile_path": "/15hNUdK2yHGyK6gFWPWdyoijZiu.jpg"
+        },
+        {
+          "id": 101416,
+          "name": "Michael McMillian",
+          "credit_id": "5423d95b0e0a263b6e00321e",
+          "character": "Steve Newlin",
+          "order": 53,
+          "gender": 2,
+          "profile_path": "/8uS5Mi7aIVuF5XWARbX9EeBRQZN.jpg"
+        },
+        {
+          "id": 169585,
+          "name": "Patricia Bethune",
+          "credit_id": "5423d816c3a36808830031f4",
+          "character": "Jane Bodehouse",
+          "order": 93,
+          "gender": 1,
+          "profile_path": "/qAzLLrlh9vd2VerZS9rkftvPMjV.jpg"
+        },
+        {
+          "id": 17837,
+          "name": "Patrick Gallagher",
+          "credit_id": "5423e2efc3a3680876003207",
+          "character": "Chow",
+          "order": 100,
+          "gender": 2,
+          "profile_path": "/8ZWcp7kRwoh5cGZFByDQdhTODw9.jpg"
+        },
+        {
+          "id": 86342,
+          "name": "Preston Jones",
+          "credit_id": "5423f0b80e0a263b7400346c",
+          "character": "Dirk",
+          "order": 115,
+          "gender": 2,
+          "profile_path": null
+        },
+        {
+          "id": 112464,
+          "name": "Ashley Jones",
+          "credit_id": "5423edd30e0a263b77003462",
+          "character": "Daphne Landry",
+          "order": 115,
+          "gender": 1,
+          "profile_path": null
+        },
+        {
+          "id": 589182,
+          "name": "Wes Brown",
+          "credit_id": "5423f0e8c3a3680872003a55",
+          "character": "Luke McDonald",
+          "order": 117,
+          "gender": 2,
+          "profile_path": "/5mX3L5App6qeSfBn70Pszdv4qAn.jpg"
+        },
+        {
+          "id": 967818,
+          "name": "Molly Burnett",
+          "credit_id": "5423f115c3a368087a003438",
+          "character": "Amanda",
+          "order": 120,
+          "gender": 1,
+          "profile_path": "/vI2NJuAbChA4GiUvnG3j5MddZ2n.jpg"
+        },
+        {
+          "id": 133289,
+          "name": "Cheryl White",
+          "credit_id": "5423f1780e0a263b7e00351c",
+          "character": "Mrs. Hamby",
+          "order": 122,
+          "gender": 0,
+          "profile_path": null
+        },
+        {
+          "id": 174894,
+          "name": "Ben Lemon",
+          "credit_id": "5423f18ec3a3680883003463",
+          "character": "Jordan Hamby",
+          "order": 123,
+          "gender": 2,
+          "profile_path": null
+        },
+        {
+          "id": 1024722,
+          "name": "Annalise Basso",
+          "credit_id": "5423f1af0e0a263b8100351f",
+          "character": "Eden Hamby",
+          "order": 124,
+          "gender": 1,
+          "profile_path": "/42AgzcbVBh72j0OwP04SkA4MBz2.jpg"
+        },
+        {
+          "id": 1367473,
+          "name": "Marcia De Rousse",
+          "credit_id": "5423f1c20e0a263b6e003499",
+          "character": "Dr. Ludwig",
+          "order": 125,
+          "gender": 0,
+          "profile_path": null
+        },
+        {
+          "id": 1562235,
+          "name": "Jennifer Hamilton",
+          "credit_id": "5af8b98f92514139c3002b97",
+          "character": "Dancer",
+          "order": 341,
+          "gender": 1,
+          "profile_path": "/QI4M22al93T2eZmrUx5M41b54Y.jpg"
+        }
+      ]
+    },
+    {
+      "air_date": "2009-06-28",
+      "episode_number": 3,
+      "id": 430408,
+      "name": "Scratches",
+      "overview": "Quando Sookie é atacada por uma misteriosa criatura, Bill pede ajuda a Eric para salvá-la. Jason tem dúvidas sobre a seita de vampiros, mas Sarah e Steve respondem com adulações e promessas. Sam, após tentar morder Tara e Daphne, decide fugir.",
+      "production_code": "",
+      "season_number": 2,
+      "show_id": 10545,
+      "still_path": "/u93YRXJJEUN5CBziR2iIb4Ut5N4.jpg",
+      "vote_average": 7.4,
+      "vote_count": 10,
+      "crew": [
+        {
+          "id": 1214396,
+          "credit_id": "525803c319c29531db38a1a4",
+          "name": "Scott Winant",
+          "department": "Directing",
+          "job": "Director",
+          "gender": 2,
+          "profile_path": null
+        },
+        {
+          "id": 1225902,
+          "credit_id": "525803c019c29531db389c7a",
+          "name": "Raelle Tucker",
+          "department": "Writing",
+          "job": "Writer",
+          "gender": 1,
+          "profile_path": null
+        }
+      ],
+      "guest_stars": [
+        {
+          "id": 180132,
+          "name": "Tara Buck",
+          "credit_id": "533d6e43c3a36879120031fd",
+          "character": "Ginger",
+          "order": 12,
+          "gender": 1,
+          "profile_path": "/inryUixQNcZsR6erJTAKAP1QozS.jpg"
+        },
+        {
+          "id": 221098,
+          "name": "Anna Camp",
+          "credit_id": "52ca0c1f19c2956d1f01702e",
+          "character": "Sarah Newlin",
+          "order": 15,
+          "gender": 1,
+          "profile_path": "/32H0SJbTK3tvLVgf3X1aiaUdcxe.jpg"
+        },
+        {
+          "id": 90658,
+          "name": "Kristin Bauer van Straten",
+          "credit_id": "525803d819c29531db38bb88",
+          "character": "Pam",
+          "order": 52,
+          "gender": 1,
+          "profile_path": "/15hNUdK2yHGyK6gFWPWdyoijZiu.jpg"
+        },
+        {
+          "id": 101416,
+          "name": "Michael McMillian",
+          "credit_id": "5423d95b0e0a263b6e00321e",
+          "character": "Steve Newlin",
+          "order": 53,
+          "gender": 2,
+          "profile_path": "/8uS5Mi7aIVuF5XWARbX9EeBRQZN.jpg"
+        },
+        {
+          "id": 21722,
+          "name": "John Billingsley",
+          "credit_id": "5423d77cc3a36808800031c3",
+          "character": "Mike Spencer",
+          "order": 84,
+          "gender": 2,
+          "profile_path": "/uQzAvv4LUt57GBrYzDj5Ao1vhUT.jpg"
+        },
+        {
+          "id": 169585,
+          "name": "Patricia Bethune",
+          "credit_id": "5423d816c3a36808830031f4",
+          "character": "Jane Bodehouse",
+          "order": 93,
+          "gender": 1,
+          "profile_path": "/qAzLLrlh9vd2VerZS9rkftvPMjV.jpg"
+        },
+        {
+          "id": 17401,
+          "name": "Stephen Root",
+          "credit_id": "5423ddee0e0a263b7a003240",
+          "character": "Eddie",
+          "order": 99,
+          "gender": 2,
+          "profile_path": "/jibbLPNtseUTMwlupwRTtQU1By1.jpg"
+        },
+        {
+          "id": 17837,
+          "name": "Patrick Gallagher",
+          "credit_id": "5423e2efc3a3680876003207",
+          "character": "Chow",
+          "order": 100,
+          "gender": 2,
+          "profile_path": "/8ZWcp7kRwoh5cGZFByDQdhTODw9.jpg"
+        },
+        {
+          "id": 85416,
+          "name": "Adam Leadbeater",
+          "credit_id": "5423e91bc3a368088000338f",
+          "character": "Karl",
+          "order": 106,
+          "gender": 2,
+          "profile_path": null
+        },
+        {
+          "id": 112464,
+          "name": "Ashley Jones",
+          "credit_id": "5423edd30e0a263b77003462",
+          "character": "Daphne Landry",
+          "order": 115,
+          "gender": 1,
+          "profile_path": null
+        },
+        {
+          "id": 589182,
+          "name": "Wes Brown",
+          "credit_id": "5423f0e8c3a3680872003a55",
+          "character": "Luke McDonald",
+          "order": 117,
+          "gender": 2,
+          "profile_path": "/5mX3L5App6qeSfBn70Pszdv4qAn.jpg"
+        },
+        {
+          "id": 1367473,
+          "name": "Marcia De Rousse",
+          "credit_id": "5423f1c20e0a263b6e003499",
+          "character": "Dr. Ludwig",
+          "order": 125,
+          "gender": 0,
+          "profile_path": null
+        },
+        {
+          "id": 1367474,
+          "name": "Jennifer Wenger",
+          "credit_id": "5423f268c3a368088700313d",
+          "character": "Lindsey",
+          "order": 126,
+          "gender": 0,
+          "profile_path": null
+        },
+        {
+          "id": 1328693,
+          "name": "Heather Foxworth",
+          "credit_id": "5423f274c3a3680887003141",
+          "character": "Missy",
+          "order": 127,
+          "gender": 0,
+          "profile_path": null
+        }
+      ]
+    },
+    {
+      "air_date": "2009-07-12",
+      "episode_number": 4,
+      "id": 430409,
+      "name": "Shake and Fingerpop",
+      "overview": "Com Jessica a tiracolo, Bill e Sookie vão a Dallas, mas uma surpresa os espera no aeroporto. Jason é promovido e Maryann prepara uma festa de aniversário para Tara na casa de Sookie.",
+      "production_code": "",
+      "season_number": 2,
+      "show_id": 10545,
+      "still_path": "/zXN88xYeDUKIEBbftUPHVdiZFAV.jpg",
+      "vote_average": 7.6,
+      "vote_count": 10,
+      "crew": [
+        {
+          "id": 2152,
+          "credit_id": "525803c319c29531db38a2b2",
+          "name": "Alan Ball",
+          "department": "Writing",
+          "job": "Writer",
+          "gender": 2,
+          "profile_path": null
+        },
+        {
+          "id": 7145,
+          "credit_id": "525803c119c29531db389e9a",
+          "name": "Michael Lehmann",
+          "department": "Directing",
+          "job": "Director",
+          "gender": 2,
+          "profile_path": null
+        }
+      ],
+      "guest_stars": [
+        {
+          "id": 14329,
+          "name": "Dean Norris",
+          "credit_id": "525803c819c29531db38a914",
+          "character": "Leon",
+          "order": 0,
+          "gender": 2,
+          "profile_path": "/fXbHgZxCEclcTxV8MpeBXhe2OJS.jpg"
+        },
+        {
+          "id": 118546,
+          "name": "Adina Porter",
+          "credit_id": "533d6e2fc3a36879120031fb",
+          "character": "Lettie Mae Thornton",
+          "order": 11,
+          "gender": 1,
+          "profile_path": "/2mXvJkXGVCoqyV1Gxmki9WrkRke.jpg"
+        },
+        {
+          "id": 221098,
+          "name": "Anna Camp",
+          "credit_id": "52ca0c1f19c2956d1f01702e",
+          "character": "Sarah Newlin",
+          "order": 15,
+          "gender": 1,
+          "profile_path": "/32H0SJbTK3tvLVgf3X1aiaUdcxe.jpg"
+        },
+        {
+          "id": 101416,
+          "name": "Michael McMillian",
+          "credit_id": "5423d95b0e0a263b6e00321e",
+          "character": "Steve Newlin",
+          "order": 53,
+          "gender": 2,
+          "profile_path": "/8uS5Mi7aIVuF5XWARbX9EeBRQZN.jpg"
+        },
+        {
+          "id": 21722,
+          "name": "John Billingsley",
+          "credit_id": "5423d77cc3a36808800031c3",
+          "character": "Mike Spencer",
+          "order": 84,
+          "gender": 2,
+          "profile_path": "/uQzAvv4LUt57GBrYzDj5Ao1vhUT.jpg"
+        },
+        {
+          "id": 1192492,
+          "name": "Aisha Hinds",
+          "credit_id": "5423dd0e0e0a263b710033ae",
+          "character": "Miss Jeanette",
+          "order": 98,
+          "gender": 1,
+          "profile_path": "/zk59cqqDmJMFjnjYSC2xOqwp91r.jpg"
+        },
+        {
+          "id": 85416,
+          "name": "Adam Leadbeater",
+          "credit_id": "5423e91bc3a368088000338f",
+          "character": "Karl",
+          "order": 106,
+          "gender": 2,
+          "profile_path": null
+        },
+        {
+          "id": 161875,
+          "name": "Tanya Wright",
+          "credit_id": "5423ed9c0e0a263b8400345d",
+          "character": "Kenya",
+          "order": 114,
+          "gender": 1,
+          "profile_path": "/AjF29SrFm2RxNTpUhMzvlwHG9dY.jpg"
+        },
+        {
+          "id": 86342,
+          "name": "Preston Jones",
+          "credit_id": "5423f0b80e0a263b7400346c",
+          "character": "Dirk",
+          "order": 115,
+          "gender": 2,
+          "profile_path": null
+        },
+        {
+          "id": 112464,
+          "name": "Ashley Jones",
+          "credit_id": "5423edd30e0a263b77003462",
+          "character": "Daphne Landry",
+          "order": 115,
+          "gender": 1,
+          "profile_path": null
+        },
+        {
+          "id": 589182,
+          "name": "Wes Brown",
+          "credit_id": "5423f0e8c3a3680872003a55",
+          "character": "Luke McDonald",
+          "order": 117,
+          "gender": 2,
+          "profile_path": "/5mX3L5App6qeSfBn70Pszdv4qAn.jpg"
+        },
+        {
+          "id": 66678,
+          "name": "Carson Aune",
+          "credit_id": "5423f360c3a368087600339f",
+          "character": "Travis",
+          "order": 127,
+          "gender": 0,
+          "profile_path": null
+        },
+        {
+          "id": 587438,
+          "name": "Chris Coy",
+          "credit_id": "5423f43ec3a36808830034b8",
+          "character": "Barry",
+          "order": 131,
+          "gender": 2,
+          "profile_path": "/rJUYhNO6GDMCxj26ZnfelmQiHXV.jpg"
+        }
+      ]
+    },
+    {
+      "air_date": "2009-07-19",
+      "episode_number": 5,
+      "id": 430410,
+      "name": "Never Let Me Go",
+      "overview": "Em Dallas, Sookie bola um plano para encontrar Godric, o vampiro desaparecido, e Eric revela um segredo de seu passado. Jason mostra seu templo no acampamento da Luz do Dia, enquanto Maryann avalia suas opções.",
+      "production_code": "",
+      "season_number": 2,
+      "show_id": 10545,
+      "still_path": "/dTxiPdWwj8G42hdZZIxIi5olONs.jpg",
+      "vote_average": 7.2,
+      "vote_count": 10,
+      "crew": [
+        {
+          "id": 21053,
+          "credit_id": "525803c319c29531db38a2de",
+          "name": "John Dahl",
+          "department": "Directing",
+          "job": "Director",
+          "gender": 2,
+          "profile_path": null
+        },
+        {
+          "id": 50768,
+          "credit_id": "525803c419c29531db38a33e",
+          "name": "Nancy Oliver",
+          "department": "Writing",
+          "job": "Writer",
+          "gender": 1,
+          "profile_path": null
+        }
+      ],
+      "guest_stars": [
+        {
+          "id": 221098,
+          "name": "Anna Camp",
+          "credit_id": "52ca0c1f19c2956d1f01702e",
+          "character": "Sarah Newlin",
+          "order": 15,
+          "gender": 1,
+          "profile_path": "/32H0SJbTK3tvLVgf3X1aiaUdcxe.jpg"
+        },
+        {
+          "id": 101416,
+          "name": "Michael McMillian",
+          "credit_id": "5423d95b0e0a263b6e00321e",
+          "character": "Steve Newlin",
+          "order": 53,
+          "gender": 2,
+          "profile_path": "/8uS5Mi7aIVuF5XWARbX9EeBRQZN.jpg"
+        },
+        {
+          "id": 203516,
+          "name": "Mariana Klaveno",
+          "credit_id": "5423daa3c3a3681eca001a63",
+          "character": "Lorena Krasiki",
+          "order": 98,
+          "gender": 1,
+          "profile_path": null
+        },
+        {
+          "id": 174600,
+          "name": "Dale Raoul",
+          "credit_id": "5423d9ee0e0a263b7e0032ad",
+          "character": "Maxine Fortenberry",
+          "order": 99,
+          "gender": 1,
+          "profile_path": "/sfFnK9ukMxGFRriVNoXlXOc9hEI.jpg"
+        },
+        {
+          "id": 85416,
+          "name": "Adam Leadbeater",
+          "credit_id": "5423e91bc3a368088000338f",
+          "character": "Karl",
+          "order": 106,
+          "gender": 2,
+          "profile_path": null
+        },
+        {
+          "id": 112464,
+          "name": "Ashley Jones",
+          "credit_id": "5423edd30e0a263b77003462",
+          "character": "Daphne Landry",
+          "order": 115,
+          "gender": 1,
+          "profile_path": null
+        },
+        {
+          "id": 589182,
+          "name": "Wes Brown",
+          "credit_id": "5423f0e8c3a3680872003a55",
+          "character": "Luke McDonald",
+          "order": 117,
+          "gender": 2,
+          "profile_path": "/5mX3L5App6qeSfBn70Pszdv4qAn.jpg"
+        },
+        {
+          "id": 121719,
+          "name": "Ailsa Marshall",
+          "credit_id": "5423f3820e0a263b6e0034d1",
+          "character": "Employée de bureau",
+          "order": 128,
+          "gender": 1,
+          "profile_path": null
+        },
+        {
+          "id": 587438,
+          "name": "Chris Coy",
+          "credit_id": "5423f43ec3a36808830034b8",
+          "character": "Barry",
+          "order": 131,
+          "gender": 2,
+          "profile_path": "/rJUYhNO6GDMCxj26ZnfelmQiHXV.jpg"
+        },
+        {
+          "id": 1367485,
+          "name": "Fredrik Ejemo",
+          "credit_id": "5423f4ba0e0a263b8400353b",
+          "character": "Gunnar",
+          "order": 132,
+          "gender": 0,
+          "profile_path": null
+        },
+        {
+          "id": 11263,
+          "name": "Peter Franzén",
+          "credit_id": "5423f4c90e0a263b740034e6",
+          "character": "Hrolf",
+          "order": 133,
+          "gender": 2,
+          "profile_path": "/oyOHvNdJcOTQGZuAimene2Wlghw.jpg"
+        },
+        {
+          "id": 1367489,
+          "name": "Michael Scott Brennan",
+          "credit_id": "5423f4e60e0a263b7700351d",
+          "character": "Mec",
+          "order": 134,
+          "gender": 0,
+          "profile_path": null
+        },
+        {
+          "id": 181355,
+          "name": "Keith Oney",
+          "credit_id": "5423f72bc3a36808830034fb",
+          "character": "Homme dans le bar",
+          "order": 135,
+          "gender": 0,
+          "profile_path": null
+        },
+        {
+          "id": 1367500,
+          "name": "Jen Ray",
+          "credit_id": "5423f73e0e0a263b7a0034f9",
+          "character": "Femme dans le bar",
+          "order": 136,
+          "gender": 0,
+          "profile_path": null
+        },
+        {
+          "id": 1367501,
+          "name": "Kim Swennen",
+          "credit_id": "5423f74fc3a3680876003419",
+          "character": "Femme bien habillée",
+          "order": 137,
+          "gender": 0,
+          "profile_path": null
+        },
+        {
+          "id": 121618,
+          "name": "Allan Hyde",
+          "credit_id": "5423f77a0e0a263b77003553",
+          "character": "Godric",
+          "order": 138,
+          "gender": 2,
+          "profile_path": "/rmvQGaVGaJDZE1xHHx41x4M0Wmh.jpg"
+        },
+        {
+          "id": 43232,
+          "name": "Valerie Cruz",
+          "credit_id": "5423f799c3a368086e0033eb",
+          "character": "Isabel",
+          "order": 139,
+          "gender": 1,
+          "profile_path": "/rZxfXxcjxvxquQWFaWvmIbsY9ng.jpg"
+        },
+        {
+          "id": 53922,
+          "name": "Ed Quinn",
+          "credit_id": "5423f7a9c3a368088000352f",
+          "character": "Stan",
+          "order": 140,
+          "gender": 2,
+          "profile_path": "/duD7CfT7MJHThz4zwpLPzgICqxZ.jpg"
+        },
+        {
+          "id": 58950,
+          "name": "Greg Collins",
+          "credit_id": "5423f7b6c3a3681eca001d72",
+          "character": "Gabe",
+          "order": 141,
+          "gender": 2,
+          "profile_path": "/42p7hsOck2OzIkr4b9Wtp0HckkG.jpg"
+        }
+      ]
+    },
+    {
+      "air_date": "2009-07-26",
+      "episode_number": 6,
+      "id": 430411,
+      "name": "Hard-Hearted Hannah",
+      "overview": "Acompanhada de Hugo, o namorado humano de Isabel, Sookie embarca em uma perigosa missão para falar com Godric. Por outro lado, Bill deve enfrentar seu violento passado. Sam segue Daphne e Jason enfrenta difíceis opções emocionais e físicas.",
+      "production_code": "",
+      "season_number": 2,
+      "show_id": 10545,
+      "still_path": "/qopNFfX2coI2VwnXqqbKQPeiO8w.jpg",
+      "vote_average": 7.8,
+      "vote_count": 10,
+      "crew": [
+        {
+          "id": 7145,
+          "credit_id": "525803c119c29531db389e9a",
+          "name": "Michael Lehmann",
+          "department": "Directing",
+          "job": "Director",
+          "gender": 2,
+          "profile_path": null
+        },
+        {
+          "id": 1215784,
+          "credit_id": "525803c119c29531db389e6e",
+          "name": "Brian Buckner",
+          "department": "Writing",
+          "job": "Writer",
+          "gender": 2,
+          "profile_path": null
+        }
+      ],
+      "guest_stars": [
+        {
+          "id": 221098,
+          "name": "Anna Camp",
+          "credit_id": "52ca0c1f19c2956d1f01702e",
+          "character": "Sarah Newlin",
+          "order": 15,
+          "gender": 1,
+          "profile_path": "/32H0SJbTK3tvLVgf3X1aiaUdcxe.jpg"
+        },
+        {
+          "id": 90658,
+          "name": "Kristin Bauer van Straten",
+          "credit_id": "525803d819c29531db38bb88",
+          "character": "Pam",
+          "order": 52,
+          "gender": 1,
+          "profile_path": "/15hNUdK2yHGyK6gFWPWdyoijZiu.jpg"
+        },
+        {
+          "id": 101416,
+          "name": "Michael McMillian",
+          "credit_id": "5423d95b0e0a263b6e00321e",
+          "character": "Steve Newlin",
+          "order": 53,
+          "gender": 2,
+          "profile_path": "/8uS5Mi7aIVuF5XWARbX9EeBRQZN.jpg"
+        },
+        {
+          "id": 21722,
+          "name": "John Billingsley",
+          "credit_id": "5423d77cc3a36808800031c3",
+          "character": "Mike Spencer",
+          "order": 84,
+          "gender": 2,
+          "profile_path": "/uQzAvv4LUt57GBrYzDj5Ao1vhUT.jpg"
+        },
+        {
+          "id": 169585,
+          "name": "Patricia Bethune",
+          "credit_id": "5423d816c3a36808830031f4",
+          "character": "Jane Bodehouse",
+          "order": 93,
+          "gender": 1,
+          "profile_path": "/qAzLLrlh9vd2VerZS9rkftvPMjV.jpg"
+        },
+        {
+          "id": 203516,
+          "name": "Mariana Klaveno",
+          "credit_id": "5423daa3c3a3681eca001a63",
+          "character": "Lorena Krasiki",
+          "order": 98,
+          "gender": 1,
+          "profile_path": null
+        },
+        {
+          "id": 174600,
+          "name": "Dale Raoul",
+          "credit_id": "5423d9ee0e0a263b7e0032ad",
+          "character": "Maxine Fortenberry",
+          "order": 99,
+          "gender": 1,
+          "profile_path": "/sfFnK9ukMxGFRriVNoXlXOc9hEI.jpg"
+        },
+        {
+          "id": 85416,
+          "name": "Adam Leadbeater",
+          "credit_id": "5423e91bc3a368088000338f",
+          "character": "Karl",
+          "order": 106,
+          "gender": 2,
+          "profile_path": null
+        },
+        {
+          "id": 112464,
+          "name": "Ashley Jones",
+          "credit_id": "5423edd30e0a263b77003462",
+          "character": "Daphne Landry",
+          "order": 115,
+          "gender": 1,
+          "profile_path": null
+        },
+        {
+          "id": 589182,
+          "name": "Wes Brown",
+          "credit_id": "5423f0e8c3a3680872003a55",
+          "character": "Luke McDonald",
+          "order": 117,
+          "gender": 2,
+          "profile_path": "/5mX3L5App6qeSfBn70Pszdv4qAn.jpg"
+        },
+        {
+          "id": 43232,
+          "name": "Valerie Cruz",
+          "credit_id": "5423f799c3a368086e0033eb",
+          "character": "Isabel",
+          "order": 139,
+          "gender": 1,
+          "profile_path": "/rZxfXxcjxvxquQWFaWvmIbsY9ng.jpg"
+        },
+        {
+          "id": 58950,
+          "name": "Greg Collins",
+          "credit_id": "5423f7b6c3a3681eca001d72",
+          "character": "Gabe",
+          "order": 141,
+          "gender": 2,
+          "profile_path": "/42p7hsOck2OzIkr4b9Wtp0HckkG.jpg"
+        },
+        {
+          "id": 1222584,
+          "name": "Camille Langfield",
+          "credit_id": "5423f845c3a3680883003519",
+          "character": "Blood Hooker",
+          "order": 142,
+          "gender": 1,
+          "profile_path": null
+        },
+        {
+          "id": 58354,
+          "name": "Mary Portser",
+          "credit_id": "5423fb920e0a263b7e00365c",
+          "character": "Bonita Lou Morris",
+          "order": 143,
+          "gender": 1,
+          "profile_path": "/cdvLW75rV6RYuSM6TD4hWrRV7Qa.jpg"
+        },
+        {
+          "id": 1367511,
+          "name": "Lenny Schmidt",
+          "credit_id": "5423fbaf0e0a263b7400359a",
+          "character": "Sidney",
+          "order": 144,
+          "gender": 0,
+          "profile_path": null
+        },
+        {
+          "id": 1367512,
+          "name": "Kim McKean",
+          "credit_id": "5423fbc0c3a3680883003568",
+          "character": "Younger Woman",
+          "order": 145,
+          "gender": 0,
+          "profile_path": null
+        },
+        {
+          "id": 68108,
+          "name": "Chris Gartin",
+          "credit_id": "5423fbeac3a36808760034a2",
+          "character": "Hugo",
+          "order": 146,
+          "gender": 2,
+          "profile_path": "/6Oy9QRX9BjMc7rHFC0ttaI778i0.jpg"
+        }
+      ]
+    },
+    {
+      "air_date": "2009-08-02",
+      "episode_number": 7,
+      "id": 430412,
+      "name": "Release Me",
+      "overview": "Traído por Daphne, Sam entra em apuros com Maryann. Sookie usa seus poderes telepáticos para encontrar Bill, preso no hotel por Lorena. Jason tenta romper sua relação com a Comunidade do Sol.",
+      "production_code": "",
+      "season_number": 2,
+      "show_id": 10545,
+      "still_path": "/l7FDUsmIpiUJ6EkETZlD51YLIjx.jpg",
+      "vote_average": 7.3,
+      "vote_count": 10,
+      "crew": [
+        {
+          "id": 1225902,
+          "credit_id": "525803c019c29531db389c7a",
+          "name": "Raelle Tucker",
+          "department": "Writing",
+          "job": "Writer",
+          "gender": 1,
+          "profile_path": null
+        },
+        {
+          "id": 212501,
+          "credit_id": "525803ca19c29531db38ab13",
+          "name": "Michael Ruscio",
+          "department": "Directing",
+          "job": "Director",
+          "gender": 2,
+          "profile_path": null
+        }
+      ],
+      "guest_stars": [
+        {
+          "id": 221098,
+          "name": "Anna Camp",
+          "credit_id": "52ca0c1f19c2956d1f01702e",
+          "character": "Sarah Newlin",
+          "order": 15,
+          "gender": 1,
+          "profile_path": "/32H0SJbTK3tvLVgf3X1aiaUdcxe.jpg"
+        },
+        {
+          "id": 101416,
+          "name": "Michael McMillian",
+          "credit_id": "5423d95b0e0a263b6e00321e",
+          "character": "Steve Newlin",
+          "order": 53,
+          "gender": 2,
+          "profile_path": "/8uS5Mi7aIVuF5XWARbX9EeBRQZN.jpg"
+        },
+        {
+          "id": 169585,
+          "name": "Patricia Bethune",
+          "credit_id": "5423d816c3a36808830031f4",
+          "character": "Jane Bodehouse",
+          "order": 93,
+          "gender": 1,
+          "profile_path": "/qAzLLrlh9vd2VerZS9rkftvPMjV.jpg"
+        },
+        {
+          "id": 203516,
+          "name": "Mariana Klaveno",
+          "credit_id": "5423daa3c3a3681eca001a63",
+          "character": "Lorena Krasiki",
+          "order": 98,
+          "gender": 1,
+          "profile_path": null
+        },
+        {
+          "id": 85416,
+          "name": "Adam Leadbeater",
+          "credit_id": "5423e91bc3a368088000338f",
+          "character": "Karl",
+          "order": 106,
+          "gender": 2,
+          "profile_path": null
+        },
+        {
+          "id": 112464,
+          "name": "Ashley Jones",
+          "credit_id": "5423edd30e0a263b77003462",
+          "character": "Daphne Landry",
+          "order": 115,
+          "gender": 1,
+          "profile_path": null
+        },
+        {
+          "id": 587438,
+          "name": "Chris Coy",
+          "credit_id": "5423f43ec3a36808830034b8",
+          "character": "Barry",
+          "order": 131,
+          "gender": 2,
+          "profile_path": "/rJUYhNO6GDMCxj26ZnfelmQiHXV.jpg"
+        },
+        {
+          "id": 121618,
+          "name": "Allan Hyde",
+          "credit_id": "5423f77a0e0a263b77003553",
+          "character": "Godric",
+          "order": 138,
+          "gender": 2,
+          "profile_path": "/rmvQGaVGaJDZE1xHHx41x4M0Wmh.jpg"
+        },
+        {
+          "id": 43232,
+          "name": "Valerie Cruz",
+          "credit_id": "5423f799c3a368086e0033eb",
+          "character": "Isabel",
+          "order": 139,
+          "gender": 1,
+          "profile_path": "/rZxfXxcjxvxquQWFaWvmIbsY9ng.jpg"
+        },
+        {
+          "id": 53922,
+          "name": "Ed Quinn",
+          "credit_id": "5423f7a9c3a368088000352f",
+          "character": "Stan",
+          "order": 140,
+          "gender": 2,
+          "profile_path": "/duD7CfT7MJHThz4zwpLPzgICqxZ.jpg"
+        },
+        {
+          "id": 58950,
+          "name": "Greg Collins",
+          "credit_id": "5423f7b6c3a3681eca001d72",
+          "character": "Gabe",
+          "order": 141,
+          "gender": 2,
+          "profile_path": "/42p7hsOck2OzIkr4b9Wtp0HckkG.jpg"
+        },
+        {
+          "id": 68108,
+          "name": "Chris Gartin",
+          "credit_id": "5423fbeac3a36808760034a2",
+          "character": "Hugo",
+          "order": 146,
+          "gender": 2,
+          "profile_path": "/6Oy9QRX9BjMc7rHFC0ttaI778i0.jpg"
+        },
+        {
+          "id": 98664,
+          "name": "Sarah Scott",
+          "credit_id": "5423fca50e0a263b740035b8",
+          "character": "Frances",
+          "order": 148,
+          "gender": 1,
+          "profile_path": "/y31s1T72B6LNTwArkhed4i9l5RT.jpg"
+        }
+      ]
+    },
+    {
+      "air_date": "2009-08-09",
+      "episode_number": 8,
+      "id": 430413,
+      "name": "Timebomb",
+      "overview": "Sookie encontra um surpreendente salvador em Eric. Entretanto, Sam descobre algo terrível no Merlotte que poderia causar problemas. Jessica e Hoyt têm um encontro íntimo e Jason finalmente salda sua dívida com os vampiros.",
+      "production_code": "",
+      "season_number": 2,
+      "show_id": 10545,
+      "still_path": "/wzYWXoq7vkWSU5JCyXJ8WbLFZm1.jpg",
+      "vote_average": 7.7,
+      "vote_count": 10,
+      "crew": [
+        {
+          "id": 1228520,
+          "credit_id": "525803c219c29531db38a0c8",
+          "name": "Alexander Woo",
+          "department": "Writing",
+          "job": "Writer",
+          "gender": 2,
+          "profile_path": null
+        },
+        {
+          "id": 21053,
+          "credit_id": "525803c319c29531db38a2de",
+          "name": "John Dahl",
+          "department": "Directing",
+          "job": "Director",
+          "gender": 2,
+          "profile_path": null
+        }
+      ],
+      "guest_stars": [
+        {
+          "id": 221098,
+          "name": "Anna Camp",
+          "credit_id": "52ca0c1f19c2956d1f01702e",
+          "character": "Sarah Newlin",
+          "order": 15,
+          "gender": 1,
+          "profile_path": "/32H0SJbTK3tvLVgf3X1aiaUdcxe.jpg"
+        },
+        {
+          "id": 101416,
+          "name": "Michael McMillian",
+          "credit_id": "5423d95b0e0a263b6e00321e",
+          "character": "Steve Newlin",
+          "order": 53,
+          "gender": 2,
+          "profile_path": "/8uS5Mi7aIVuF5XWARbX9EeBRQZN.jpg"
+        },
+        {
+          "id": 21722,
+          "name": "John Billingsley",
+          "credit_id": "5423d77cc3a36808800031c3",
+          "character": "Mike Spencer",
+          "order": 84,
+          "gender": 2,
+          "profile_path": "/uQzAvv4LUt57GBrYzDj5Ao1vhUT.jpg"
+        },
+        {
+          "id": 169585,
+          "name": "Patricia Bethune",
+          "credit_id": "5423d816c3a36808830031f4",
+          "character": "Jane Bodehouse",
+          "order": 93,
+          "gender": 1,
+          "profile_path": "/qAzLLrlh9vd2VerZS9rkftvPMjV.jpg"
+        },
+        {
+          "id": 203516,
+          "name": "Mariana Klaveno",
+          "credit_id": "5423daa3c3a3681eca001a63",
+          "character": "Lorena Krasiki",
+          "order": 98,
+          "gender": 1,
+          "profile_path": null
+        },
+        {
+          "id": 161875,
+          "name": "Tanya Wright",
+          "credit_id": "5423ed9c0e0a263b8400345d",
+          "character": "Kenya",
+          "order": 114,
+          "gender": 1,
+          "profile_path": "/AjF29SrFm2RxNTpUhMzvlwHG9dY.jpg"
+        },
+        {
+          "id": 112464,
+          "name": "Ashley Jones",
+          "credit_id": "5423edd30e0a263b77003462",
+          "character": "Daphne Landry",
+          "order": 115,
+          "gender": 1,
+          "profile_path": null
+        },
+        {
+          "id": 589182,
+          "name": "Wes Brown",
+          "credit_id": "5423f0e8c3a3680872003a55",
+          "character": "Luke McDonald",
+          "order": 117,
+          "gender": 2,
+          "profile_path": "/5mX3L5App6qeSfBn70Pszdv4qAn.jpg"
+        },
+        {
+          "id": 587438,
+          "name": "Chris Coy",
+          "credit_id": "5423f43ec3a36808830034b8",
+          "character": "Barry",
+          "order": 131,
+          "gender": 2,
+          "profile_path": "/rJUYhNO6GDMCxj26ZnfelmQiHXV.jpg"
+        },
+        {
+          "id": 121618,
+          "name": "Allan Hyde",
+          "credit_id": "5423f77a0e0a263b77003553",
+          "character": "Godric",
+          "order": 138,
+          "gender": 2,
+          "profile_path": "/rmvQGaVGaJDZE1xHHx41x4M0Wmh.jpg"
+        },
+        {
+          "id": 43232,
+          "name": "Valerie Cruz",
+          "credit_id": "5423f799c3a368086e0033eb",
+          "character": "Isabel",
+          "order": 139,
+          "gender": 1,
+          "profile_path": "/rZxfXxcjxvxquQWFaWvmIbsY9ng.jpg"
+        },
+        {
+          "id": 53922,
+          "name": "Ed Quinn",
+          "credit_id": "5423f7a9c3a368088000352f",
+          "character": "Stan",
+          "order": 140,
+          "gender": 2,
+          "profile_path": "/duD7CfT7MJHThz4zwpLPzgICqxZ.jpg"
+        },
+        {
+          "id": 58950,
+          "name": "Greg Collins",
+          "credit_id": "5423f7b6c3a3681eca001d72",
+          "character": "Gabe",
+          "order": 141,
+          "gender": 2,
+          "profile_path": "/42p7hsOck2OzIkr4b9Wtp0HckkG.jpg"
+        },
+        {
+          "id": 155018,
+          "name": "Colby French",
+          "credit_id": "5423fe29c3a36808760034e4",
+          "character": "Frank",
+          "order": 144,
+          "gender": 2,
+          "profile_path": null
+        },
+        {
+          "id": 68108,
+          "name": "Chris Gartin",
+          "credit_id": "5423fbeac3a36808760034a2",
+          "character": "Hugo",
+          "order": 146,
+          "gender": 2,
+          "profile_path": "/6Oy9QRX9BjMc7rHFC0ttaI778i0.jpg"
+        },
+        {
+          "id": 20582,
+          "name": "Michael Papajohn",
+          "credit_id": "5423fe67c3a3680872003bb0",
+          "character": "Kyle",
+          "order": 146,
+          "gender": 2,
+          "profile_path": "/9nVHCoYxCpGh9pO00xp7SybWd7b.jpg"
+        },
+        {
+          "id": 1367516,
+          "name": "Timothy Eulich",
+          "credit_id": "5423fe83c3a36808830035ac",
+          "character": "Rich",
+          "order": 147,
+          "gender": 2,
+          "profile_path": "/xIfRmiBGtWogkRYAjbgIX7i4cuv.jpg"
+        },
+        {
+          "id": 1367517,
+          "name": "Evans Brown",
+          "credit_id": "5423fea90e0a263b7a0035a3",
+          "character": "Doug",
+          "order": 148,
+          "gender": 0,
+          "profile_path": null
+        },
+        {
+          "id": 188349,
+          "name": "Derek Ray",
+          "credit_id": "56018720c3a3685614001c28",
+          "character": "Brent",
+          "order": 356,
+          "gender": 0,
+          "profile_path": null
+        }
+      ]
+    },
+    {
+      "air_date": "2009-08-16",
+      "episode_number": 9,
+      "id": 430414,
+      "name": "I Will Rise Up",
+      "overview": "Eric engana Sookie e Bill fica consternado. Mais tarde, Sookie e Jason refletem sobre suas aventuras recentes. Lafayette e Lettie Mae buscam uma maneira de liberar Tara do controle de Maryann e Sam consegue escapar de sua prisão.",
+      "production_code": "",
+      "season_number": 2,
+      "show_id": 10545,
+      "still_path": "/eYHYZiFbTMYK7b9SiS2dnXhwII4.jpg",
+      "vote_average": 8.1,
+      "vote_count": 10,
+      "crew": [
+        {
+          "id": 50768,
+          "credit_id": "525803c419c29531db38a33e",
+          "name": "Nancy Oliver",
+          "department": "Writing",
+          "job": "Writer",
+          "gender": 1,
+          "profile_path": null
+        },
+        {
+          "id": 1214396,
+          "credit_id": "525803c319c29531db38a1a4",
+          "name": "Scott Winant",
+          "department": "Directing",
+          "job": "Director",
+          "gender": 2,
+          "profile_path": null
+        }
+      ],
+      "guest_stars": [
+        {
+          "id": 118546,
+          "name": "Adina Porter",
+          "credit_id": "533d6e2fc3a36879120031fb",
+          "character": "Lettie Mae Thornton",
+          "order": 11,
+          "gender": 1,
+          "profile_path": "/2mXvJkXGVCoqyV1Gxmki9WrkRke.jpg"
+        },
+        {
+          "id": 221098,
+          "name": "Anna Camp",
+          "credit_id": "52ca0c1f19c2956d1f01702e",
+          "character": "Sarah Newlin",
+          "order": 15,
+          "gender": 1,
+          "profile_path": "/32H0SJbTK3tvLVgf3X1aiaUdcxe.jpg"
+        },
+        {
+          "id": 101416,
+          "name": "Michael McMillian",
+          "credit_id": "5423d95b0e0a263b6e00321e",
+          "character": "Steve Newlin",
+          "order": 53,
+          "gender": 2,
+          "profile_path": "/8uS5Mi7aIVuF5XWARbX9EeBRQZN.jpg"
+        },
+        {
+          "id": 21722,
+          "name": "John Billingsley",
+          "credit_id": "5423d77cc3a36808800031c3",
+          "character": "Mike Spencer",
+          "order": 84,
+          "gender": 2,
+          "profile_path": "/uQzAvv4LUt57GBrYzDj5Ao1vhUT.jpg"
+        },
+        {
+          "id": 169585,
+          "name": "Patricia Bethune",
+          "credit_id": "5423d816c3a36808830031f4",
+          "character": "Jane Bodehouse",
+          "order": 93,
+          "gender": 1,
+          "profile_path": "/qAzLLrlh9vd2VerZS9rkftvPMjV.jpg"
+        },
+        {
+          "id": 203516,
+          "name": "Mariana Klaveno",
+          "credit_id": "5423daa3c3a3681eca001a63",
+          "character": "Lorena Krasiki",
+          "order": 98,
+          "gender": 1,
+          "profile_path": null
+        },
+        {
+          "id": 174600,
+          "name": "Dale Raoul",
+          "credit_id": "5423d9ee0e0a263b7e0032ad",
+          "character": "Maxine Fortenberry",
+          "order": 99,
+          "gender": 1,
+          "profile_path": "/sfFnK9ukMxGFRriVNoXlXOc9hEI.jpg"
+        },
+        {
+          "id": 589182,
+          "name": "Wes Brown",
+          "credit_id": "5423f0e8c3a3680872003a55",
+          "character": "Luke McDonald",
+          "order": 117,
+          "gender": 2,
+          "profile_path": "/5mX3L5App6qeSfBn70Pszdv4qAn.jpg"
+        },
+        {
+          "id": 121618,
+          "name": "Allan Hyde",
+          "credit_id": "5423f77a0e0a263b77003553",
+          "character": "Godric",
+          "order": 138,
+          "gender": 2,
+          "profile_path": "/rmvQGaVGaJDZE1xHHx41x4M0Wmh.jpg"
+        },
+        {
+          "id": 43232,
+          "name": "Valerie Cruz",
+          "credit_id": "5423f799c3a368086e0033eb",
+          "character": "Isabel",
+          "order": 139,
+          "gender": 1,
+          "profile_path": "/rZxfXxcjxvxquQWFaWvmIbsY9ng.jpg"
+        },
+        {
+          "id": 113009,
+          "name": "Alice Ensor",
+          "credit_id": "5423ff9a0e0a263b7a0035c5",
+          "character": "Client #1",
+          "order": 147,
+          "gender": 0,
+          "profile_path": null
+        },
+        {
+          "id": 1356753,
+          "name": "Duane R. Shepard Sr.",
+          "credit_id": "5423ffb50e0a263b71003708",
+          "character": "Client #2",
+          "order": 148,
+          "gender": 0,
+          "profile_path": "/jSde1OY1EVDivOlAs7sJHqiBlkL.jpg"
+        },
+        {
+          "id": 36060,
+          "name": "Price Carson",
+          "credit_id": "5423ffd20e0a263b7100370d",
+          "character": "Mean Looking Frenzier",
+          "order": 149,
+          "gender": 2,
+          "profile_path": "/7ChPwx8czQcWaBAfou0bCnF5AO5.jpg"
+        },
+        {
+          "id": 77347,
+          "name": "Christopher Shand",
+          "credit_id": "54240050c3a3680872003bdb",
+          "character": "Soldier of the Sun",
+          "order": 150,
+          "gender": 2,
+          "profile_path": "/fp6uYzzdKUmwUGpOKWDJN6WRDHg.jpg"
+        },
+        {
+          "id": 95044,
+          "name": "Valorie Hubbard",
+          "credit_id": "5424005f0e0a263b7a0035d7",
+          "character": "Random Frenzier",
+          "order": 151,
+          "gender": 1,
+          "profile_path": null
+        },
+        {
+          "id": 156689,
+          "name": "Jessica Tuck",
+          "credit_id": "5423d4bdc3a3681eca0019cf",
+          "character": "Nan Flanagan",
+          "order": 347,
+          "gender": 1,
+          "profile_path": "/jxBUK4AO2CAJs1WmVERHUnP8gE1.jpg"
+        }
+      ]
+    },
+    {
+      "air_date": "2009-08-23",
+      "episode_number": 10,
+      "id": 430415,
+      "name": "New World In My View",
+      "overview": "Sookie, Bill e Jason voltam a Bon Temps e tudo está de ponta-cabeça. Bill descobre que as técnicas tradicionais dos vampiros não funcionam com Maryann. Sookie tenta tirar Tara da escuridão, enquanto Jason quer resgatar Sam.",
+      "production_code": "",
+      "season_number": 2,
+      "show_id": 10545,
+      "still_path": "/57HqR3BBu6TXYZLBKtMfkjZE76k.jpg",
+      "vote_average": 8.5,
+      "vote_count": 10,
+      "crew": [
+        {
+          "id": 160177,
+          "credit_id": "525803cc19c29531db38ac69",
+          "name": "Adam Davidson",
+          "department": "Directing",
+          "job": "Director",
+          "gender": 2,
+          "profile_path": null
+        },
+        {
+          "id": 1242777,
+          "credit_id": "525803de19c29531db38c26d",
+          "name": "Elisabeth R. Finch",
+          "department": "Writing",
+          "job": "Writer",
+          "gender": 1,
+          "profile_path": null
+        },
+        {
+          "id": 1224259,
+          "credit_id": "525803dd19c29531db38c238",
+          "name": "Kate Barnow",
+          "department": "Writing",
+          "job": "Writer",
+          "gender": 1,
+          "profile_path": null
+        }
+      ],
+      "guest_stars": [
+        {
+          "id": 118546,
+          "name": "Adina Porter",
+          "credit_id": "533d6e2fc3a36879120031fb",
+          "character": "Lettie Mae Thornton",
+          "order": 11,
+          "gender": 1,
+          "profile_path": "/2mXvJkXGVCoqyV1Gxmki9WrkRke.jpg"
+        },
+        {
+          "id": 21722,
+          "name": "John Billingsley",
+          "credit_id": "5423d77cc3a36808800031c3",
+          "character": "Mike Spencer",
+          "order": 84,
+          "gender": 2,
+          "profile_path": "/uQzAvv4LUt57GBrYzDj5Ao1vhUT.jpg"
+        },
+        {
+          "id": 169585,
+          "name": "Patricia Bethune",
+          "credit_id": "5423d816c3a36808830031f4",
+          "character": "Jane Bodehouse",
+          "order": 93,
+          "gender": 1,
+          "profile_path": "/qAzLLrlh9vd2VerZS9rkftvPMjV.jpg"
+        },
+        {
+          "id": 174600,
+          "name": "Dale Raoul",
+          "credit_id": "5423d9ee0e0a263b7e0032ad",
+          "character": "Maxine Fortenberry",
+          "order": 99,
+          "gender": 1,
+          "profile_path": "/sfFnK9ukMxGFRriVNoXlXOc9hEI.jpg"
+        },
+        {
+          "id": 85416,
+          "name": "Adam Leadbeater",
+          "credit_id": "5423e91bc3a368088000338f",
+          "character": "Karl",
+          "order": 106,
+          "gender": 2,
+          "profile_path": null
+        },
+        {
+          "id": 36060,
+          "name": "Price Carson",
+          "credit_id": "5423ffd20e0a263b7100370d",
+          "character": "Mean Looking Frenzier",
+          "order": 149,
+          "gender": 2,
+          "profile_path": "/7ChPwx8czQcWaBAfou0bCnF5AO5.jpg"
+        },
+        {
+          "id": 95044,
+          "name": "Valorie Hubbard",
+          "credit_id": "5424005f0e0a263b7a0035d7",
+          "character": "Random Frenzier",
+          "order": 151,
+          "gender": 1,
+          "profile_path": null
+        },
+        {
+          "id": 1023732,
+          "name": "Sienna Farall",
+          "credit_id": "5424014cc3a368087a0035f9",
+          "character": "Nikki",
+          "order": 152,
+          "gender": 0,
+          "profile_path": "/2UHSEJ3E5C8QsFejW5YcPvTQvdT.jpg"
+        },
+        {
+          "id": 160342,
+          "name": "Merritt Yohnka",
+          "credit_id": "5424015c0e0a263b7e00370c",
+          "character": "Chauffeur",
+          "order": 153,
+          "gender": 0,
+          "profile_path": null
+        },
+        {
+          "id": 92611,
+          "name": "Antonio D. Charity",
+          "credit_id": "5424017ac3a3681eca001e68",
+          "character": "Secret Service Man",
+          "order": 154,
+          "gender": 2,
+          "profile_path": "/S8T0ABox1qJYbl84GWkQNU7wvZ.jpg"
+        }
+      ]
+    },
+    {
+      "air_date": "2009-08-30",
+      "episode_number": 11,
+      "id": 430416,
+      "name": "Frenzy",
+      "overview": "Após a crise em Bon Temps, Bill busca a colaboração d a rainha vampira da Louisiana. Enquanto Sookie e Lafayette têm dificuldades para proteger Tara, Sam pede ajuda a alguém inesperado, e a lealdade de Hoyt será testada.",
+      "production_code": "",
+      "season_number": 2,
+      "show_id": 10545,
+      "still_path": "/7oXJe8XOzzFs6ddaw3oyGjbzQkH.jpg",
+      "vote_average": 8,
+      "vote_count": 10,
+      "crew": [
+        {
+          "id": 2152,
+          "credit_id": "525803c319c29531db38a2b2",
+          "name": "Alan Ball",
+          "department": "Writing",
+          "job": "Writer",
+          "gender": 2,
+          "profile_path": null
+        },
+        {
+          "id": 88743,
+          "credit_id": "525803c219c29531db38a0f4",
+          "name": "Daniel Minahan",
+          "department": "Directing",
+          "job": "Director",
+          "gender": 2,
+          "profile_path": "/zBRWTVYdZ77HT1zWpZtLXZ8AW1F.jpg"
+        }
+      ],
+      "guest_stars": [
+        {
+          "id": 38940,
+          "name": "Evan Rachel Wood",
+          "credit_id": "525803cc19c29531db38ad0b",
+          "character": "Sophie-Anne Leclerq",
+          "order": 1,
+          "gender": 1,
+          "profile_path": "/g6XBBmsEd9fqP0gc4RuHsX0MXNl.jpg"
+        },
+        {
+          "id": 118546,
+          "name": "Adina Porter",
+          "credit_id": "533d6e2fc3a36879120031fb",
+          "character": "Lettie Mae Thornton",
+          "order": 11,
+          "gender": 1,
+          "profile_path": "/2mXvJkXGVCoqyV1Gxmki9WrkRke.jpg"
+        },
+        {
+          "id": 180132,
+          "name": "Tara Buck",
+          "credit_id": "533d6e43c3a36879120031fd",
+          "character": "Ginger",
+          "order": 12,
+          "gender": 1,
+          "profile_path": "/inryUixQNcZsR6erJTAKAP1QozS.jpg"
+        },
+        {
+          "id": 90658,
+          "name": "Kristin Bauer van Straten",
+          "credit_id": "525803d819c29531db38bb88",
+          "character": "Pam",
+          "order": 52,
+          "gender": 1,
+          "profile_path": "/15hNUdK2yHGyK6gFWPWdyoijZiu.jpg"
+        },
+        {
+          "id": 21722,
+          "name": "John Billingsley",
+          "credit_id": "5423d77cc3a36808800031c3",
+          "character": "Mike Spencer",
+          "order": 84,
+          "gender": 2,
+          "profile_path": "/uQzAvv4LUt57GBrYzDj5Ao1vhUT.jpg"
+        },
+        {
+          "id": 169585,
+          "name": "Patricia Bethune",
+          "credit_id": "5423d816c3a36808830031f4",
+          "character": "Jane Bodehouse",
+          "order": 93,
+          "gender": 1,
+          "profile_path": "/qAzLLrlh9vd2VerZS9rkftvPMjV.jpg"
+        },
+        {
+          "id": 174600,
+          "name": "Dale Raoul",
+          "credit_id": "5423d9ee0e0a263b7e0032ad",
+          "character": "Maxine Fortenberry",
+          "order": 99,
+          "gender": 1,
+          "profile_path": "/sfFnK9ukMxGFRriVNoXlXOc9hEI.jpg"
+        },
+        {
+          "id": 85416,
+          "name": "Adam Leadbeater",
+          "credit_id": "5423e91bc3a368088000338f",
+          "character": "Karl",
+          "order": 106,
+          "gender": 2,
+          "profile_path": null
+        },
+        {
+          "id": 1217895,
+          "name": "Tess Parker",
+          "credit_id": "5423e7d10e0a263b7a003340",
+          "character": "Rosie",
+          "order": 108,
+          "gender": 0,
+          "profile_path": null
+        },
+        {
+          "id": 78229,
+          "name": "Lindsey Haun",
+          "credit_id": "542404f40e0a263b810036ea",
+          "character": "Hadley Hale",
+          "order": 155,
+          "gender": 1,
+          "profile_path": null
+        },
+        {
+          "id": 60574,
+          "name": "Jack Krizmanich",
+          "credit_id": "5424051dc3a368087a003649",
+          "character": "Ludis",
+          "order": 157,
+          "gender": 0,
+          "profile_path": null
+        },
+        {
+          "id": 1296585,
+          "name": "Alec Gray",
+          "credit_id": "5424052cc3a3680876003575",
+          "character": "Coby Fowler",
+          "order": 158,
+          "gender": 0,
+          "profile_path": null
+        },
+        {
+          "id": 1367519,
+          "name": "Laurel Weber",
+          "credit_id": "5424053a0e0a263b810036f8",
+          "character": "Lisa Fowler",
+          "order": 159,
+          "gender": 0,
+          "profile_path": null
+        },
+        {
+          "id": 1367520,
+          "name": "Leonardo Sciacci",
+          "credit_id": "54240549c3a368087600357d",
+          "character": "Frenzy Man in Dress",
+          "order": 160,
+          "gender": 0,
+          "profile_path": null
+        },
+        {
+          "id": 1367465,
+          "name": "John Rezig",
+          "credit_id": "5423e7e5c3a3681eca001bde",
+          "character": "Kevin Ellis",
+          "order": 342,
+          "gender": 0,
+          "profile_path": null
+        },
+        {
+          "id": 1763429,
+          "name": "Amber Hay",
+          "credit_id": "58ad07c792514107dd0005fb",
+          "character": "Sophie-Anne's Slave",
+          "order": 343,
+          "gender": 1,
+          "profile_path": "/lLka2Jxre2vaZyiBEWglblZPpX1.jpg"
+        },
+        {
+          "id": 1227594,
+          "name": "Avion Baker",
+          "credit_id": "5423d9880e0a263b840031f0",
+          "character": "Young Tara",
+          "order": 345,
+          "gender": 0,
+          "profile_path": null
+        }
+      ]
+    },
+    {
+      "air_date": "2009-09-13",
+      "episode_number": 12,
+      "id": 430417,
+      "name": "Beyond Here Lies Nothin'",
+      "overview": "Finalmente, Maryann recruta Sookie para um cruel sacrifício. Enquanto Sophie-Anne adverte Eric sobre Bill, Jason leva Andy a um abismo heróico e Sam deverá confiar em um inesperado aliado para salvar Sookie.",
+      "production_code": "",
+      "season_number": 2,
+      "show_id": 10545,
+      "still_path": "/nExAhAFG1XTDtNZ9yyEzgKFqq0M.jpg",
+      "vote_average": 7.4,
+      "vote_count": 10,
+      "crew": [
+        {
+          "id": 1228520,
+          "credit_id": "525803c219c29531db38a0c8",
+          "name": "Alexander Woo",
+          "department": "Writing",
+          "job": "Writer",
+          "gender": 2,
+          "profile_path": null
+        },
+        {
+          "id": 84931,
+          "credit_id": "525803ce19c29531db38ade4",
+          "name": "Michael Cuesta",
+          "department": "Directing",
+          "job": "Director",
+          "gender": 2,
+          "profile_path": null
+        }
+      ],
+      "guest_stars": [
+        {
+          "id": 38940,
+          "name": "Evan Rachel Wood",
+          "credit_id": "525803cc19c29531db38ad0b",
+          "character": "Sophie-Anne Leclerq",
+          "order": 1,
+          "gender": 1,
+          "profile_path": "/g6XBBmsEd9fqP0gc4RuHsX0MXNl.jpg"
+        },
+        {
+          "id": 21722,
+          "name": "John Billingsley",
+          "credit_id": "5423d77cc3a36808800031c3",
+          "character": "Mike Spencer",
+          "order": 84,
+          "gender": 2,
+          "profile_path": "/uQzAvv4LUt57GBrYzDj5Ao1vhUT.jpg"
+        },
+        {
+          "id": 169585,
+          "name": "Patricia Bethune",
+          "credit_id": "5423d816c3a36808830031f4",
+          "character": "Jane Bodehouse",
+          "order": 93,
+          "gender": 1,
+          "profile_path": "/qAzLLrlh9vd2VerZS9rkftvPMjV.jpg"
+        },
+        {
+          "id": 1192492,
+          "name": "Aisha Hinds",
+          "credit_id": "5423dd0e0e0a263b710033ae",
+          "character": "Miss Jeanette",
+          "order": 98,
+          "gender": 1,
+          "profile_path": "/zk59cqqDmJMFjnjYSC2xOqwp91r.jpg"
+        },
+        {
+          "id": 174600,
+          "name": "Dale Raoul",
+          "credit_id": "5423d9ee0e0a263b7e0032ad",
+          "character": "Maxine Fortenberry",
+          "order": 99,
+          "gender": 1,
+          "profile_path": "/sfFnK9ukMxGFRriVNoXlXOc9hEI.jpg"
+        },
+        {
+          "id": 1217895,
+          "name": "Tess Parker",
+          "credit_id": "5423e7d10e0a263b7a003340",
+          "character": "Rosie",
+          "order": 108,
+          "gender": 0,
+          "profile_path": null
+        },
+        {
+          "id": 1231273,
+          "name": "Lauren Pritchard",
+          "credit_id": "5423ed5d0e0a263b71003533",
+          "character": "Coralee",
+          "order": 111,
+          "gender": 1,
+          "profile_path": "/q7ZDvRKW6ZAoimkOb6fR6nmgKy7.jpg"
+        },
+        {
+          "id": 1223003,
+          "name": "Missy Doty",
+          "credit_id": "5423ed8e0e0a263b6e003416",
+          "character": "Vonetta",
+          "order": 113,
+          "gender": 1,
+          "profile_path": "/jvMhNAU4pec6z3R39HTZK3IAKpI.jpg"
+        },
+        {
+          "id": 95044,
+          "name": "Valorie Hubbard",
+          "credit_id": "5424005f0e0a263b7a0035d7",
+          "character": "Random Frenzier",
+          "order": 151,
+          "gender": 1,
+          "profile_path": null
+        },
+        {
+          "id": 78229,
+          "name": "Lindsey Haun",
+          "credit_id": "542404f40e0a263b810036ea",
+          "character": "Hadley Hale",
+          "order": 155,
+          "gender": 1,
+          "profile_path": null
+        },
+        {
+          "id": 60574,
+          "name": "Jack Krizmanich",
+          "credit_id": "5424051dc3a368087a003649",
+          "character": "Ludis",
+          "order": 157,
+          "gender": 0,
+          "profile_path": null
+        },
+        {
+          "id": 1296585,
+          "name": "Alec Gray",
+          "credit_id": "5424052cc3a3680876003575",
+          "character": "Coby Fowler",
+          "order": 158,
+          "gender": 0,
+          "profile_path": null
+        },
+        {
+          "id": 1367519,
+          "name": "Laurel Weber",
+          "credit_id": "5424053a0e0a263b810036f8",
+          "character": "Lisa Fowler",
+          "order": 159,
+          "gender": 0,
+          "profile_path": null
+        },
+        {
+          "id": 1367521,
+          "name": "Alisha Snider",
+          "credit_id": "542406f9c3a368086e003563",
+          "character": "Autumn",
+          "order": 160,
+          "gender": 0,
+          "profile_path": null
+        },
+        {
+          "id": 86986,
+          "name": "John Hillard",
+          "credit_id": "542407050e0a263b770036b7",
+          "character": "Hank",
+          "order": 161,
+          "gender": 2,
+          "profile_path": null
+        },
+        {
+          "id": 1367522,
+          "name": "Jeanne Baron",
+          "credit_id": "5424073f0e0a263b710037d9",
+          "character": "Hostess",
+          "order": 162,
+          "gender": 0,
+          "profile_path": null
+        },
+        {
+          "id": 1367523,
+          "name": "Bernard Eichholz",
+          "credit_id": "5424074f0e0a263b81003733",
+          "character": "Puppeteer",
+          "order": 163,
+          "gender": 0,
+          "profile_path": null
+        },
+        {
+          "id": 78117,
+          "name": "Cullen Douglas",
+          "credit_id": "5424067cc3a368087600359e",
+          "character": "Mitch Merlotte",
+          "order": 163,
+          "gender": 2,
+          "profile_path": "/kvLrnUvvSvEqe71GJaknrNvqIGc.jpg"
+        },
+        {
+          "id": 1367524,
+          "name": "Dan Rebert",
+          "credit_id": "5424075e0e0a263b710037e0",
+          "character": "Puppeteer",
+          "order": 164,
+          "gender": 0,
+          "profile_path": null
+        },
+        {
+          "id": 152937,
+          "name": "Judy Prescott",
+          "credit_id": "5424068c0e0a263b7e003797",
+          "character": "Sue Ann Merlotte",
+          "order": 164,
+          "gender": 1,
+          "profile_path": null
+        },
+        {
+          "id": 1242773,
+          "name": "Charlaine Harris",
+          "credit_id": "542407710e0a263b81003738",
+          "character": "Woman at Merlotte's",
+          "order": 165,
+          "gender": 1,
+          "profile_path": "/erOYbjLavXLlCnfJYF877jRrh5J.jpg"
+        }
+      ]
+    }
+  ],
+  "name": "Temporada 2",
+  "overview": "Na segunda temporada da série é fácil perceber que o conflito entre vampiros e humanos só aumenta. A trama deixa a cidade de Bon Temps e vai a outros lugares, como o Texas, onde a protagonista Sookie investiga o desaparecimento de um vampiro de dois mil anos de idade. Bill é sequestrado, adicionando ainda mais suspense aos episódios.",
+  "id": 20778,
+  "poster_path": "/mzSuElDGm2mIT2Pc5IT3UTD31Xc.jpg",
+  "season_number": 2
+}

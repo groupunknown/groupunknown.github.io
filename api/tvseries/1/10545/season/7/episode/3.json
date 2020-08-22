@@ -1,0 +1,33 @@
+{
+  "air_date": "2014-07-06",
+  "crew": [
+    {
+      "id": 202122,
+      "credit_id": "5443f2eac3a3683dfb0054c8",
+      "name": "Lee Rose",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 1,
+      "profile_path": null
+    },
+    {
+      "id": 1215784,
+      "credit_id": "525803c119c29531db389e6e",
+      "name": "Brian Buckner",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 2,
+      "profile_path": null
+    }
+  ],
+  "episode_number": 3,
+  "guest_stars": [],
+  "name": "Fire in the Hole",
+  "overview": "Sookie elabora um plano para prender vampiros infectados, enquanto Vince e seus seguidores armados se transformam em ameaça para ela. No entanto, Pam oferece a Eric uma persuasiva razão para voltar a Bon Temps.",
+  "id": 988122,
+  "production_code": "",
+  "season_number": 7,
+  "still_path": "/n6ahygN6niErcIsc2Usv6YIlZS5.jpg",
+  "vote_average": 5.143,
+  "vote_count": 7
+}

@@ -1,0 +1,178 @@
+{
+  "air_date": "2011-08-21",
+  "crew": [
+    {
+      "id": 63270,
+      "credit_id": "525803d419c29531db38b529",
+      "name": "Romeo Tirone",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1215784,
+      "credit_id": "525803c119c29531db389e6e",
+      "name": "Brian Buckner",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 2,
+      "profile_path": null
+    }
+  ],
+  "episode_number": 9,
+  "guest_stars": [
+    {
+      "id": 10981,
+      "name": "Fiona Shaw",
+      "credit_id": "525803d919c29531db38be8e",
+      "character": "Marnie Stonebrook",
+      "order": 15,
+      "gender": 1,
+      "profile_path": "/tjM74LcxwnYM77Csg1EtlXb1F9a.jpg"
+    },
+    {
+      "id": 168326,
+      "name": "Lauren Bowles",
+      "credit_id": "525803d919c29531db38bd94",
+      "character": "Holly Cleary",
+      "order": 53,
+      "gender": 1,
+      "profile_path": "/9RbnJB97B95Tp3HTm95PntjyVcv.jpg"
+    },
+    {
+      "id": 116474,
+      "name": "Kevin Alejandro",
+      "credit_id": "542569120e0a264576001710",
+      "character": "Jesus Velasquez",
+      "order": 178,
+      "gender": 2,
+      "profile_path": "/16WhElhjn3irGqQuMS8Z7L0ixit.jpg"
+    },
+    {
+      "id": 212938,
+      "name": "Brit Morgan",
+      "credit_id": "54255eca0e0a2645760015ef",
+      "character": "Debbie Pelt",
+      "order": 182,
+      "gender": 1,
+      "profile_path": "/wbvokHuEX42Zv7euxhW3yo6sJ76.jpg"
+    },
+    {
+      "id": 209573,
+      "name": "Dean Chekvala",
+      "credit_id": "542573e3c3a36869290009aa",
+      "character": "Roy",
+      "order": 196,
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 204468,
+      "name": "Fiona Dourif",
+      "credit_id": "542574230e0a263b7a005ced",
+      "character": "Casey",
+      "order": 198,
+      "gender": 1,
+      "profile_path": "/gKn9lBZLuNHACQhZJUkSIZzUQN5.jpg"
+    },
+    {
+      "id": 558918,
+      "name": "Daniel Buran",
+      "credit_id": "542585a1c3a3681eca004708",
+      "character": "Marcus Bozeman",
+      "order": 210,
+      "gender": 2,
+      "profile_path": "/lcjwXzxYU0XhulW54g59J5evES7.jpg"
+    },
+    {
+      "id": 1367842,
+      "name": "Annie Fitzgerald",
+      "credit_id": "542585de0e0a264576001a00",
+      "character": "Kirsch",
+      "order": 212,
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 1367843,
+      "name": "Nondumiso Tembe",
+      "credit_id": "542587180e0a263b7e005f54",
+      "character": "Mavis",
+      "order": 213,
+      "gender": 0,
+      "profile_path": "/fGsRGfY4Vf0d1y51cbIgz2zicNE.jpg"
+    },
+    {
+      "id": 154993,
+      "name": "Stephanie Erb",
+      "credit_id": "54258a070e0a263b7e005fca",
+      "character": "Luellen",
+      "order": 214,
+      "gender": 1,
+      "profile_path": "/23LNWyM29Q3jwb0qcsQfyT5oACl.jpg"
+    },
+    {
+      "id": 150194,
+      "name": "Damion Poitier",
+      "credit_id": "54258a420e0a264576001aa6",
+      "character": "Duprez",
+      "order": 215,
+      "gender": 2,
+      "profile_path": "/3BqfT7OMuAhLklO6TzBnhWoIZSA.jpg"
+    },
+    {
+      "id": 205114,
+      "name": "Aaron Perilo",
+      "credit_id": "54258a740e0a26178a000cb0",
+      "character": "Blackburn",
+      "order": 218,
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1216156,
+      "name": "Chad Todhunter",
+      "credit_id": "54258a87c3a36808870059bd",
+      "character": "Trevor",
+      "order": 219,
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 1155474,
+      "name": "Brendan McCarthy",
+      "credit_id": "54258aafc3a3686976000c63",
+      "character": "Nate",
+      "order": 221,
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1302065,
+      "name": "Chloe Noelle",
+      "credit_id": "54258d0b0e0a263b7e00603b",
+      "character": "Emma Garza",
+      "order": 226,
+      "gender": 1,
+      "profile_path": "/c7RmxtFb7dedJFBeuCPgsmKXWPE.jpg"
+    },
+    {
+      "id": 134396,
+      "name": "Galadriel Stineman",
+      "credit_id": "54259ee9c3a3686929000e5b",
+      "character": "Joyce Watney",
+      "order": 228,
+      "gender": 1,
+      "profile_path": "/yMBAvpQ1hr99tRcMcn6qPOUjNh7.jpg"
+    }
+  ],
+  "name": "Let's Get Out of Here",
+  "overview": "Sookie pensa em um mundo onde Bill e Eric podem conviver. Marcus chama Alcide para ajudá-lo a cuidar da situação com Sam; Marnie dá o próximo passo contra os vampiros, durante o Festival da Tolerância em Shrevenport.",
+  "id": 430437,
+  "production_code": "",
+  "season_number": 4,
+  "still_path": "/nobLGlroalJSHFuNrr3HGi3R8oK.jpg",
+  "vote_average": 7.625,
+  "vote_count": 8
+}

@@ -1,0 +1,196 @@
+{
+  "air_date": "2013-07-28",
+  "crew": [
+    {
+      "id": 1214396,
+      "credit_id": "525803c319c29531db38a1a4",
+      "name": "Scott Winant",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1224259,
+      "credit_id": "525803dd19c29531db38c238",
+      "name": "Kate Barnow",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 1,
+      "profile_path": null
+    }
+  ],
+  "episode_number": 7,
+  "guest_stars": [
+    {
+      "id": 1242775,
+      "name": "Amelia Rose Blaire",
+      "credit_id": "525803dc19c29531db38c121",
+      "character": "Willa Burrell",
+      "order": 18,
+      "gender": 1,
+      "profile_path": null
+    },
+    {
+      "id": 1296585,
+      "name": "Alec Gray",
+      "credit_id": "5424052cc3a3680876003575",
+      "character": "Coby Fowler",
+      "order": 158,
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 1367519,
+      "name": "Laurel Weber",
+      "credit_id": "5424053a0e0a263b810036f8",
+      "character": "Lisa Fowler",
+      "order": 159,
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 76536,
+      "name": "Courtney Ford",
+      "credit_id": "54256f320e0a263b81005e71",
+      "character": "Portia Bellefleur",
+      "order": 187,
+      "gender": 1,
+      "profile_path": "/9I8xtjfkSKEvrMg3E0wCosa5UkT.jpg"
+    },
+    {
+      "id": 1095608,
+      "name": "Marque Richardson",
+      "credit_id": "5425b3490e0a263b8100660f",
+      "character": "Kenneth",
+      "order": 238,
+      "gender": 2,
+      "profile_path": "/1TsiMsTDPbCX3IhmlcmdejuRlmS.jpg"
+    },
+    {
+      "id": 42724,
+      "name": "John Prosky",
+      "credit_id": "5425cc59c3a36848d000010c",
+      "character": "David Finch",
+      "order": 303,
+      "gender": 2,
+      "profile_path": "/zinfZ6InYtlnXnwl4UwKEITP1xf.jpg"
+    },
+    {
+      "id": 141415,
+      "name": "Noah Matthews",
+      "credit_id": "5425cde0c3a36848c4000141",
+      "character": "Wade Cleary",
+      "order": 309,
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1242464,
+      "name": "Aaron Christian Howles",
+      "credit_id": "5425ce13c3a36848c1000166",
+      "character": "Rocky Cleary",
+      "order": 311,
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 210829,
+      "name": "Karolina Wydra",
+      "credit_id": "542654670e0a265a08000e71",
+      "character": "Violet",
+      "order": 317,
+      "gender": 1,
+      "profile_path": "/3JHvlz5pTSaeuDBX8pMN1Kxj6as.jpg"
+    },
+    {
+      "id": 3201,
+      "name": "Pruitt Taylor Vince",
+      "credit_id": "54265c3cc3a3681c2b000f66",
+      "character": "Finn",
+      "order": 333,
+      "gender": 2,
+      "profile_path": "/jqC1v8tF92QcmkQycnaLSuJiQfl.jpg"
+    },
+    {
+      "id": 1218790,
+      "name": "Michael Maize",
+      "credit_id": "54265d1e0e0a265a05000f5c",
+      "character": "Guard",
+      "order": 340,
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1242776,
+      "name": "Bailey Noble",
+      "credit_id": "54265e20c3a3681c22000f12",
+      "character": "Adilyn Bellefleur",
+      "order": 342,
+      "gender": 1,
+      "profile_path": "/83OOqpbafbMW0mTieXY30LNqJYD.jpg"
+    },
+    {
+      "id": 61829,
+      "name": "Kelly Overton",
+      "credit_id": "542653490e0a265a08000e56",
+      "character": "Rikki Naylor",
+      "order": 343,
+      "gender": 1,
+      "profile_path": "/u1KnPtnHfdLCrImtONXCYwJDqZk.jpg"
+    },
+    {
+      "id": 121575,
+      "name": "Ashlynn Yennie",
+      "credit_id": "591a0ff3c3a36842d6060c7f",
+      "character": "Lady Courtesan (uncredited)",
+      "order": 343,
+      "gender": 1,
+      "profile_path": "/8GIgCCdqxFfSeNEagpvKPBjSWDm.jpg"
+    },
+    {
+      "id": 160351,
+      "name": "Mark Withers",
+      "credit_id": "54265e6c0e0a265a08000f95",
+      "character": "Morris",
+      "order": 345,
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 137750,
+      "name": "Hal Ozsan",
+      "credit_id": "5426601dc3a3681c1a000fb8",
+      "character": "King Charles II",
+      "order": 348,
+      "gender": 2,
+      "profile_path": "/A7OwOraJuVNaCt4MHvslH5n6rK.jpg"
+    },
+    {
+      "id": 31138,
+      "name": "Valarie Pettiford",
+      "credit_id": "5426603b0e0a265a05000fb7",
+      "character": "Mary Wright",
+      "order": 349,
+      "gender": 1,
+      "profile_path": "/m4EmwtK3YROcmjAQSyHNa1BIg8d.jpg"
+    },
+    {
+      "id": 1286739,
+      "name": "Jeanine Anderson",
+      "credit_id": "542660a4c3a3681c28000fd6",
+      "character": "Bank Employee",
+      "order": 350,
+      "gender": 0,
+      "profile_path": null
+    }
+  ],
+  "name": "In the Evening",
+  "overview": "Eric propõe uma aliança com Bill em um último esforço para salvar Nora. Uma tragédia perto de casa força Sam a ignorar as advertências de Alcide e volta a Bon Temps. Jessica mostra sua gratidão por James, um amigo vampiro que está preso.",
+  "id": 430470,
+  "production_code": "",
+  "season_number": 6,
+  "still_path": "/p60Rcd0TfLN53bOMyxzGTyCHFaX.jpg",
+  "vote_average": 6.556,
+  "vote_count": 9
+}

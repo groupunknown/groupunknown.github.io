@@ -1,0 +1,33 @@
+{
+  "air_date": "2014-08-03",
+  "crew": [
+    {
+      "id": 1102816,
+      "credit_id": "544c01600e0a2608d40007d6",
+      "name": "Simon Jayes",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": "/yfSdlgjL0q3B0it71JETV4r6UBA.jpg"
+    },
+    {
+      "id": 82769,
+      "credit_id": "544c00fcc3a36872d2000853",
+      "name": "Craig Chester",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 2,
+      "profile_path": "/ptcsPmaDWzKuO7KfCWCY4lqjKMc.jpg"
+    }
+  ],
+  "episode_number": 7,
+  "guest_stars": [],
+  "name": "May Be The Last Time",
+  "overview": "Eric e Pam estão cada vez mais próximos de Sarah. Sookie procura Ludwig por informações sobre seus antepassados. Bill relembra seu casamento, ocorrido 170 anos atrás. Hoyt está de volta a Bon Temps, com a Enamorada.",
+  "id": 989978,
+  "production_code": "",
+  "season_number": 7,
+  "still_path": "/2xPFiZA7qRBRY4UDYw7tGmdHgad.jpg",
+  "vote_average": 5.833,
+  "vote_count": 6
+}

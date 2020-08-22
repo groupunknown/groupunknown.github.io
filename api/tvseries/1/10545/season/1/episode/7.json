@@ -1,0 +1,205 @@
+{
+  "air_date": "2008-10-19",
+  "crew": [
+    {
+      "id": 74062,
+      "credit_id": "525803c419c29531db38a3fc",
+      "name": "Marcos Siega",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1242778,
+      "credit_id": "525803e019c29531db38c2a0",
+      "name": "Chris Offutt",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1399292,
+      "credit_id": "5675fd98c3a368168b003c20",
+      "name": "William J. Law III",
+      "department": "Art",
+      "job": "Set Designer",
+      "gender": 2,
+      "profile_path": null
+    }
+  ],
+  "episode_number": 7,
+  "guest_stars": [
+    {
+      "id": 83968,
+      "name": "Jim Parrack",
+      "credit_id": "525803d819c29531db38bae8",
+      "character": "Hoyt Fortenberry",
+      "order": 7,
+      "gender": 2,
+      "profile_path": "/zj3qGmlPQtzAeDRrOPN7iZIXzmF.jpg"
+    },
+    {
+      "id": 118546,
+      "name": "Adina Porter",
+      "credit_id": "533d6e2fc3a36879120031fb",
+      "character": "Lettie Mae Thornton",
+      "order": 11,
+      "gender": 1,
+      "profile_path": "/2mXvJkXGVCoqyV1Gxmki9WrkRke.jpg"
+    },
+    {
+      "id": 53259,
+      "name": "Michael Raymond-James",
+      "credit_id": "525803da19c29531db38bf02",
+      "character": "Rene Lenier",
+      "order": 17,
+      "gender": 2,
+      "profile_path": "/gIj1VOLIVpaZ607ml28fNS0lmmw.jpg"
+    },
+    {
+      "id": 191277,
+      "name": "Todd Lowe",
+      "credit_id": "5423d7db0e0a263b6e0031f7",
+      "character": "Terry Bellefleur",
+      "order": 44,
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 90658,
+      "name": "Kristin Bauer van Straten",
+      "credit_id": "525803d819c29531db38bb88",
+      "character": "Pam",
+      "order": 52,
+      "gender": 1,
+      "profile_path": "/15hNUdK2yHGyK6gFWPWdyoijZiu.jpg"
+    },
+    {
+      "id": 59581,
+      "name": "Andrew Rothenberg",
+      "credit_id": "5423d7a6c3a36808800031c8",
+      "character": "Malcolm",
+      "order": 87,
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1367424,
+      "name": "Zenali Turner",
+      "credit_id": "5423d807c3a36808800031cd",
+      "character": "Young Sookie",
+      "order": 92,
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 53923,
+      "name": "Aunjanue Ellis",
+      "credit_id": "5423d9290e0a263b6e003216",
+      "character": "Diane",
+      "order": 92,
+      "gender": 1,
+      "profile_path": "/2D6pjfVK8yTkoPIerDUVgiWs5cl.jpg"
+    },
+    {
+      "id": 1192492,
+      "name": "Aisha Hinds",
+      "credit_id": "5423dd0e0e0a263b710033ae",
+      "character": "Miss Jeanette",
+      "order": 98,
+      "gender": 1,
+      "profile_path": "/zk59cqqDmJMFjnjYSC2xOqwp91r.jpg"
+    },
+    {
+      "id": 116567,
+      "name": "Danielle James",
+      "credit_id": "5423dae00e0a263b6e00323e",
+      "character": "Randi Sue",
+      "order": 100,
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 1005140,
+      "name": "Caleb Moody",
+      "credit_id": "5423daeac3a3680887002efd",
+      "character": "Royce",
+      "order": 101,
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 1367428,
+      "name": "Jeremy Denzlinger",
+      "credit_id": "5423daf70e0a263b810032b0",
+      "character": "Wayne",
+      "order": 102,
+      "gender": 2,
+      "profile_path": "/cRtjlobg0LcVQp7Sa9PlqCUMf6a.jpg"
+    },
+    {
+      "id": 1219564,
+      "name": "Cheyenne Wilbur",
+      "credit_id": "5423dbb20e0a263b7e0032e1",
+      "character": "Oncle Bartlett",
+      "order": 103,
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 179851,
+      "name": "Kanin Howell",
+      "credit_id": "5423db08c3a3680887002f01",
+      "character": "Chuck",
+      "order": 103,
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 51988,
+      "name": "Lizzy Caplan",
+      "credit_id": "5423dcc90e0a263b710033ac",
+      "character": "Amy",
+      "order": 341,
+      "gender": 1,
+      "profile_path": "/7MzkcgNKM3o3EPCMEDi4uLcfQHP.jpg"
+    },
+    {
+      "id": 17688,
+      "name": "Raoul Max Trujillo",
+      "credit_id": "5758742cc3a3685fbd00031a",
+      "character": "Longshadow",
+      "order": 344,
+      "gender": 2,
+      "profile_path": "/dIfHIt1pgnYW9oCksc0DdoY5Mt5.jpg"
+    },
+    {
+      "id": 590,
+      "name": "William Sanderson",
+      "credit_id": "525803d819c29531db38ba7e",
+      "character": "Bud Dearborne",
+      "order": 348,
+      "gender": 2,
+      "profile_path": "/i3JfaavAFq9ayeJ4doUaOGjHMMW.jpg"
+    },
+    {
+      "id": 92615,
+      "name": "Graham Shiels",
+      "credit_id": "550a83779251414693000fc4",
+      "character": "Liam",
+      "order": 361,
+      "gender": 2,
+      "profile_path": "/o0NobGOdnc6LtBo2AjLYUTdby4Q.jpg"
+    }
+  ],
+  "name": "Burning House of Love",
+  "overview": "Bill entra em ação depois de escutar sobre o doloroso passado de Sookie. Jason estabelece uma conexão com Amy no Fangtasia, enquanto ambos procuravam por um tipo de bebida. Três homens misteriosos chegam procurando um velho amigo, Bill, e querem justiça.",
+  "id": 430400,
+  "production_code": "",
+  "season_number": 1,
+  "still_path": "/mdAvASHpuWKhrOu9KiFjLTIRIdo.jpg",
+  "vote_average": 7.8,
+  "vote_count": 10
+}

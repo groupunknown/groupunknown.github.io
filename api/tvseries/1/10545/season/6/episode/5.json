@@ -1,0 +1,178 @@
+{
+  "air_date": "2013-07-14",
+  "crew": [
+    {
+      "id": 212501,
+      "credit_id": "525803ca19c29531db38ab13",
+      "name": "Michael Ruscio",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 7312,
+      "credit_id": "525803d519c29531db38b677",
+      "name": "Angela Robinson",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 1,
+      "profile_path": "/j6ymx8zGC9OGQ8CUeIoJ3D0RpMU.jpg"
+    }
+  ],
+  "episode_number": 5,
+  "guest_stars": [
+    {
+      "id": 221098,
+      "name": "Anna Camp",
+      "credit_id": "52ca0c1f19c2956d1f01702e",
+      "character": "Sarah Newlin",
+      "order": 15,
+      "gender": 1,
+      "profile_path": "/32H0SJbTK3tvLVgf3X1aiaUdcxe.jpg"
+    },
+    {
+      "id": 1242775,
+      "name": "Amelia Rose Blaire",
+      "credit_id": "525803dc19c29531db38c121",
+      "character": "Willa Burrell",
+      "order": 18,
+      "gender": 1,
+      "profile_path": null
+    },
+    {
+      "id": 208383,
+      "name": "Jeffrey Nicholas Brown",
+      "credit_id": "5423d769c3a368086e003093",
+      "character": "Corbett Stackhouse",
+      "order": 83,
+      "gender": 2,
+      "profile_path": "/85Ddkthb39Mrf0MmLy8HmPsBPKc.jpg"
+    },
+    {
+      "id": 1365681,
+      "name": "Jenni Blong",
+      "credit_id": "5423d7ea0e0a263b7e00327b",
+      "character": "Michelle Stackhouse",
+      "order": 90,
+      "gender": 1,
+      "profile_path": null
+    },
+    {
+      "id": 138690,
+      "name": "Jessica Clark",
+      "credit_id": "5425ca38c3a36848be0000e9",
+      "character": "Lilith",
+      "order": 298,
+      "gender": 1,
+      "profile_path": "/o0qh9Nct5pKnl1EzGqUHPRFpz1b.jpg"
+    },
+    {
+      "id": 210829,
+      "name": "Karolina Wydra",
+      "credit_id": "542654670e0a265a08000e71",
+      "character": "Violet",
+      "order": 317,
+      "gender": 1,
+      "profile_path": "/3JHvlz5pTSaeuDBX8pMN1Kxj6as.jpg"
+    },
+    {
+      "id": 84312,
+      "name": "John Fleck",
+      "credit_id": "54265862c3a3681c30000dca",
+      "character": "Dr. Overlark",
+      "order": 326,
+      "gender": 2,
+      "profile_path": "/yA0dLIhTdm1YtD45uK4c43uyJKR.jpg"
+    },
+    {
+      "id": 91387,
+      "name": "Keone Young",
+      "credit_id": "542658740e0a265a08000ee6",
+      "character": "Hido Takahashi",
+      "order": 327,
+      "gender": 2,
+      "profile_path": "/nDTQe7D7NmbzAryfKQKx2NALmid.jpg"
+    },
+    {
+      "id": 3201,
+      "name": "Pruitt Taylor Vince",
+      "credit_id": "54265c3cc3a3681c2b000f66",
+      "character": "Finn",
+      "order": 333,
+      "gender": 2,
+      "profile_path": "/jqC1v8tF92QcmkQycnaLSuJiQfl.jpg"
+    },
+    {
+      "id": 154491,
+      "name": "Stacy Haiduk",
+      "credit_id": "54265c9a0e0a2659f3000f27",
+      "character": "Jenny",
+      "order": 334,
+      "gender": 1,
+      "profile_path": "/niEWzoiuO3GEQI278mq2ADZaoQU.jpg"
+    },
+    {
+      "id": 35981,
+      "name": "Gideon Emery",
+      "credit_id": "54265cd30e0a2659fd000f3d",
+      "character": "Justin",
+      "order": 335,
+      "gender": 2,
+      "profile_path": "/o7BHjTmmZ9D5tEK33JHKfB2FQqD.jpg"
+    },
+    {
+      "id": 1047654,
+      "name": "Britt George",
+      "credit_id": "54265ce4c3a3681c2b000f79",
+      "character": "Warlow's Father",
+      "order": 336,
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 163013,
+      "name": "Cathryn de Prume",
+      "credit_id": "54265cf4c3a3681c16000f8c",
+      "character": "Warlow's Mother",
+      "order": 337,
+      "gender": 1,
+      "profile_path": "/l8PsbpEbhYGxw5ovOrttiVUjOEy.jpg"
+    },
+    {
+      "id": 1368009,
+      "name": "Linn Bjornland",
+      "credit_id": "54265d02c3a3681c1a000f66",
+      "character": "Niall's Mother",
+      "order": 338,
+      "gender": 1,
+      "profile_path": "/ag4FXyl7wUqVh3JyVO7KEcNFkpy.jpg"
+    },
+    {
+      "id": 1368010,
+      "name": "Jack Patrick Metcalf",
+      "credit_id": "54265d120e0a265a05000f59",
+      "character": "Young Niall",
+      "order": 339,
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 1218790,
+      "name": "Michael Maize",
+      "credit_id": "54265d1e0e0a265a05000f5c",
+      "character": "Guard",
+      "order": 340,
+      "gender": 2,
+      "profile_path": null
+    }
+  ],
+  "name": "F**k the Pain Away",
+  "overview": "Esperando finalmente conhecer a verdade sobre seu passado, Sookie recruta Lafayette para invocar seus pais. Enquanto isso, Warlow revive os feitos que levaram Lilith de volta a milhares de anos. Eric e Tara devem resgatar Pam.",
+  "id": 430469,
+  "production_code": "",
+  "season_number": 6,
+  "still_path": "/exCUsFpquPkDIi8Z4b8v45zBdSs.jpg",
+  "vote_average": 7.75,
+  "vote_count": 8
+}

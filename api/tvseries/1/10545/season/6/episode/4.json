@@ -1,0 +1,160 @@
+{
+  "air_date": "2013-07-07",
+  "crew": [
+    {
+      "id": 1228520,
+      "credit_id": "525803c219c29531db38a0c8",
+      "name": "Alexander Woo",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1216147,
+      "credit_id": "525803c519c29531db38a59a",
+      "name": "Anthony Hemingway",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": "/3npAesb4X5yvxPlUWRHTOFz9RCi.jpg"
+    }
+  ],
+  "episode_number": 4,
+  "guest_stars": [
+    {
+      "id": 180132,
+      "name": "Tara Buck",
+      "credit_id": "533d6e43c3a36879120031fd",
+      "character": "Ginger",
+      "order": 12,
+      "gender": 1,
+      "profile_path": "/inryUixQNcZsR6erJTAKAP1QozS.jpg"
+    },
+    {
+      "id": 221098,
+      "name": "Anna Camp",
+      "credit_id": "52ca0c1f19c2956d1f01702e",
+      "character": "Sarah Newlin",
+      "order": 15,
+      "gender": 1,
+      "profile_path": "/32H0SJbTK3tvLVgf3X1aiaUdcxe.jpg"
+    },
+    {
+      "id": 1242775,
+      "name": "Amelia Rose Blaire",
+      "credit_id": "525803dc19c29531db38c121",
+      "character": "Willa Burrell",
+      "order": 18,
+      "gender": 1,
+      "profile_path": null
+    },
+    {
+      "id": 1302065,
+      "name": "Chloe Noelle",
+      "credit_id": "54258d0b0e0a263b7e00603b",
+      "character": "Emma Garza",
+      "order": 226,
+      "gender": 1,
+      "profile_path": "/c7RmxtFb7dedJFBeuCPgsmKXWPE.jpg"
+    },
+    {
+      "id": 46814,
+      "name": "Dale Dickey",
+      "credit_id": "5425b2a10e0a263b810065f3",
+      "character": "Martha Bozeman",
+      "order": 232,
+      "gender": 1,
+      "profile_path": "/588WXHw17JYi2rAqIVQXzgYENu3.jpg"
+    },
+    {
+      "id": 1095608,
+      "name": "Marque Richardson",
+      "credit_id": "5425b3490e0a263b8100660f",
+      "character": "Kenneth",
+      "order": 238,
+      "gender": 2,
+      "profile_path": "/1TsiMsTDPbCX3IhmlcmdejuRlmS.jpg"
+    },
+    {
+      "id": 1367620,
+      "name": "Jamie Gray Hyder",
+      "credit_id": "5425bbed0e0a264576001fc4",
+      "character": "Danielle",
+      "order": 256,
+      "gender": 1,
+      "profile_path": "/xVg5JQTEsdTw9IVen33g3GkisLg.jpg"
+    },
+    {
+      "id": 949241,
+      "name": "Matt Cook",
+      "credit_id": "542654c10e0a2659fd000e42",
+      "character": "Jessie",
+      "order": 320,
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 91387,
+      "name": "Keone Young",
+      "credit_id": "542658740e0a265a08000ee6",
+      "character": "Hido Takahashi",
+      "order": 327,
+      "gender": 2,
+      "profile_path": "/nDTQe7D7NmbzAryfKQKx2NALmid.jpg"
+    },
+    {
+      "id": 1215395,
+      "name": "Scott Klace",
+      "credit_id": "54265b8cc3a3681c2b000f55",
+      "character": "Jimmy",
+      "order": 331,
+      "gender": 2,
+      "profile_path": "/zrfQrnsYVRNiJa3s4gGqZH3PSPZ.jpg"
+    },
+    {
+      "id": 154922,
+      "name": "Lorin McCraley",
+      "credit_id": "54265bbdc3a3681c28000f53",
+      "character": "F.W.",
+      "order": 332,
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1367465,
+      "name": "John Rezig",
+      "credit_id": "5423e7e5c3a3681eca001bde",
+      "character": "Kevin Ellis",
+      "order": 342,
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 61829,
+      "name": "Kelly Overton",
+      "credit_id": "542653490e0a265a08000e56",
+      "character": "Rikki Naylor",
+      "order": 343,
+      "gender": 1,
+      "profile_path": "/u1KnPtnHfdLCrImtONXCYwJDqZk.jpg"
+    },
+    {
+      "id": 1512280,
+      "name": "Chloe East",
+      "credit_id": "5cb3b1780e0a2626c5c92aa7",
+      "character": "11 Year Old Faerie Girl #3",
+      "order": 344,
+      "gender": 1,
+      "profile_path": "/9WiNsZmANielO3vYIIkOXBptvlw.jpg"
+    }
+  ],
+  "name": "At Last",
+  "overview": "Sookie encara sua atração pelo misterioso Ben. Eric responde ao ataque brutal de Burrell contra os vampiros em seu ponto fraco. Crescendo rapidamente, as filhas fadas de Andy terminam em má companhia.",
+  "id": 430468,
+  "production_code": "",
+  "season_number": 6,
+  "still_path": "/1IvBKNxrE40XUetOLdtczGvzhom.jpg",
+  "vote_average": 7.5,
+  "vote_count": 8
+}

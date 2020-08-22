@@ -1,0 +1,33 @@
+{
+  "air_date": "2014-07-13",
+  "crew": [
+    {
+      "id": 108160,
+      "credit_id": "54265d590e0a265a0b000ec3",
+      "name": "Kenneth Daniel",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 15802,
+      "credit_id": "5443f2c40e0a266336005699",
+      "name": "Gregg Fienberg",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": null
+    }
+  ],
+  "episode_number": 4,
+  "guest_stars": [],
+  "name": "Death Is Not the End",
+  "overview": "Depois do último banho de sangue, Sookie recruta um grupo de vampiros e humanos para acompanhar os vampiros infectados. Enquanto isso, Pam recorda os acontecimentos que levaram ela e Eric até Shreveport e Fangtasia.",
+  "id": 988123,
+  "production_code": "",
+  "season_number": 7,
+  "still_path": "/3q9Z6pOXULrxKOGrST0UKrSJruZ.jpg",
+  "vote_average": 7.833,
+  "vote_count": 6
+}

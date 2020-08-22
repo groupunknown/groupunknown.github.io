@@ -1,0 +1,196 @@
+{
+  "air_date": "2008-11-09",
+  "crew": [
+    {
+      "id": 1214396,
+      "credit_id": "525803c319c29531db38a1a4",
+      "name": "Scott Winant",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1242778,
+      "credit_id": "525803e019c29531db38c2a0",
+      "name": "Chris Offutt",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 2,
+      "profile_path": null
+    }
+  ],
+  "episode_number": 10,
+  "guest_stars": [
+    {
+      "id": 83968,
+      "name": "Jim Parrack",
+      "credit_id": "525803d819c29531db38bae8",
+      "character": "Hoyt Fortenberry",
+      "order": 7,
+      "gender": 2,
+      "profile_path": "/zj3qGmlPQtzAeDRrOPN7iZIXzmF.jpg"
+    },
+    {
+      "id": 118546,
+      "name": "Adina Porter",
+      "credit_id": "533d6e2fc3a36879120031fb",
+      "character": "Lettie Mae Thornton",
+      "order": 11,
+      "gender": 1,
+      "profile_path": "/2mXvJkXGVCoqyV1Gxmki9WrkRke.jpg"
+    },
+    {
+      "id": 53259,
+      "name": "Michael Raymond-James",
+      "credit_id": "525803da19c29531db38bf02",
+      "character": "Rene Lenier",
+      "order": 17,
+      "gender": 2,
+      "profile_path": "/gIj1VOLIVpaZ607ml28fNS0lmmw.jpg"
+    },
+    {
+      "id": 41820,
+      "name": "Michelle Forbes",
+      "credit_id": "525803da19c29531db38c028",
+      "character": "Maryann Forrester",
+      "order": 22,
+      "gender": 1,
+      "profile_path": "/6xjsXKZs23a1Vzdw4uSUiV64BFS.jpg"
+    },
+    {
+      "id": 191277,
+      "name": "Todd Lowe",
+      "credit_id": "5423d7db0e0a263b6e0031f7",
+      "character": "Terry Bellefleur",
+      "order": 44,
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 90658,
+      "name": "Kristin Bauer van Straten",
+      "credit_id": "525803d819c29531db38bb88",
+      "character": "Pam",
+      "order": 52,
+      "gender": 1,
+      "profile_path": "/15hNUdK2yHGyK6gFWPWdyoijZiu.jpg"
+    },
+    {
+      "id": 212154,
+      "name": "Deborah Ann Woll",
+      "credit_id": "525803d819c29531db38bbf2",
+      "character": "Jessica Hamby",
+      "order": 52,
+      "gender": 1,
+      "profile_path": "/yKhny4ZkLmAGlrp37mWzzkvGApb.jpg"
+    },
+    {
+      "id": 42724,
+      "name": "John Prosky",
+      "credit_id": "5423d90b0e0a263b81003272",
+      "character": "Duke Smith",
+      "order": 90,
+      "gender": 2,
+      "profile_path": "/zinfZ6InYtlnXnwl4UwKEITP1xf.jpg"
+    },
+    {
+      "id": 1192492,
+      "name": "Aisha Hinds",
+      "credit_id": "5423dd0e0e0a263b710033ae",
+      "character": "Miss Jeanette",
+      "order": 98,
+      "gender": 1,
+      "profile_path": "/zk59cqqDmJMFjnjYSC2xOqwp91r.jpg"
+    },
+    {
+      "id": 17401,
+      "name": "Stephen Root",
+      "credit_id": "5423ddee0e0a263b7a003240",
+      "character": "Eddie",
+      "order": 99,
+      "gender": 2,
+      "profile_path": "/jibbLPNtseUTMwlupwRTtQU1By1.jpg"
+    },
+    {
+      "id": 174600,
+      "name": "Dale Raoul",
+      "credit_id": "5423d9ee0e0a263b7e0032ad",
+      "character": "Maxine Fortenberry",
+      "order": 99,
+      "gender": 1,
+      "profile_path": "/sfFnK9ukMxGFRriVNoXlXOc9hEI.jpg"
+    },
+    {
+      "id": 17837,
+      "name": "Patrick Gallagher",
+      "credit_id": "5423e2efc3a3680876003207",
+      "character": "Chow",
+      "order": 100,
+      "gender": 2,
+      "profile_path": "/8ZWcp7kRwoh5cGZFByDQdhTODw9.jpg"
+    },
+    {
+      "id": 152937,
+      "name": "Judy Prescott",
+      "credit_id": "5424068c0e0a263b7e003797",
+      "character": "Sue Ann Merlotte",
+      "order": 164,
+      "gender": 1,
+      "profile_path": null
+    },
+    {
+      "id": 66527,
+      "name": "Martin Spanjers",
+      "credit_id": "5423e6afc3a368087200395b",
+      "character": "Young Sam",
+      "order": 341,
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 51988,
+      "name": "Lizzy Caplan",
+      "credit_id": "5423dcc90e0a263b710033ac",
+      "character": "Amy",
+      "order": 341,
+      "gender": 1,
+      "profile_path": "/7MzkcgNKM3o3EPCMEDi4uLcfQHP.jpg"
+    },
+    {
+      "id": 1227594,
+      "name": "Avion Baker",
+      "credit_id": "5423d9880e0a263b840031f0",
+      "character": "Young Tara",
+      "order": 345,
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 590,
+      "name": "William Sanderson",
+      "credit_id": "525803d819c29531db38ba7e",
+      "character": "Bud Dearborne",
+      "order": 348,
+      "gender": 2,
+      "profile_path": "/i3JfaavAFq9ayeJ4doUaOGjHMMW.jpg"
+    },
+    {
+      "id": 204819,
+      "name": "Stacie Rippy",
+      "credit_id": "5657902792514159b0000016",
+      "character": "Cindy Marshall",
+      "order": 356,
+      "gender": 1,
+      "profile_path": null
+    }
+  ],
+  "name": "I Don't Wanna Know",
+  "overview": "Flagrado em uma situação comprometedora, Sam conta um segredo a Sookie, que hesita em acreditar. Achando que tinha se livrado do seu demônio, Tara comemora com Lettie Mae - mas fica fora de si quando descobre as verdadeiras intenções de Miss Jeanette.",
+  "id": 430397,
+  "production_code": "",
+  "season_number": 1,
+  "still_path": "/rWuPC6bKLhxCOdlXVgCv9KnSgKm.jpg",
+  "vote_average": 7.3,
+  "vote_count": 10
+}

@@ -1,0 +1,259 @@
+{
+  "air_date": "2012-07-29",
+  "crew": [
+    {
+      "id": 1212430,
+      "credit_id": "525803d319c29531db38b459",
+      "name": "Mark Hudis",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 32203,
+      "credit_id": "525803d519c29531db38b6fd",
+      "name": "Stephen Moyer",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": "/rQDODAKYgDGSXAShNHMmGGOJI35.jpg"
+    }
+  ],
+  "episode_number": 8,
+  "guest_stars": [
+    {
+      "id": 208383,
+      "name": "Jeffrey Nicholas Brown",
+      "credit_id": "5423d769c3a368086e003093",
+      "character": "Corbett Stackhouse",
+      "order": 83,
+      "gender": 2,
+      "profile_path": "/85Ddkthb39Mrf0MmLy8HmPsBPKc.jpg"
+    },
+    {
+      "id": 1365681,
+      "name": "Jenni Blong",
+      "credit_id": "5423d7ea0e0a263b7e00327b",
+      "character": "Michelle Stackhouse",
+      "order": 90,
+      "gender": 1,
+      "profile_path": null
+    },
+    {
+      "id": 116474,
+      "name": "Kevin Alejandro",
+      "credit_id": "542569120e0a264576001710",
+      "character": "Jesus Velasquez",
+      "order": 178,
+      "gender": 2,
+      "profile_path": "/16WhElhjn3irGqQuMS8Z7L0ixit.jpg"
+    },
+    {
+      "id": 213083,
+      "name": "Lara Pulver",
+      "credit_id": "54256f40c3a3680872006293",
+      "character": "Claudine Crane",
+      "order": 188,
+      "gender": 1,
+      "profile_path": "/cJxfjquWo9p03Y27gEDUHD8QUPC.jpg"
+    },
+    {
+      "id": 46814,
+      "name": "Dale Dickey",
+      "credit_id": "5425b2a10e0a263b810065f3",
+      "character": "Martha Bozeman",
+      "order": 232,
+      "gender": 1,
+      "profile_path": "/588WXHw17JYi2rAqIVQXzgYENu3.jpg"
+    },
+    {
+      "id": 93228,
+      "name": "Louis Herthum",
+      "credit_id": "5425b2ddc3a3681eca004bdb",
+      "character": "JD",
+      "order": 235,
+      "gender": 2,
+      "profile_path": "/7QarKov7OLIKKv6m152rnEyOnfq.jpg"
+    },
+    {
+      "id": 1095608,
+      "name": "Marque Richardson",
+      "credit_id": "5425b3490e0a263b8100660f",
+      "character": "Kenneth",
+      "order": 238,
+      "gender": 2,
+      "profile_path": "/1TsiMsTDPbCX3IhmlcmdejuRlmS.jpg"
+    },
+    {
+      "id": 74285,
+      "name": "Carolyn Hennesy",
+      "credit_id": "5425b4530e0a264576001efa",
+      "character": "Rosalyn Harris",
+      "order": 243,
+      "gender": 1,
+      "profile_path": "/7bQvRDhBrokCMCQBQDKRYsYqItq.jpg"
+    },
+    {
+      "id": 68278,
+      "name": "Peter Mensah",
+      "credit_id": "5425b4640e0a263b6e006420",
+      "character": "Kibwe",
+      "order": 244,
+      "gender": 2,
+      "profile_path": "/t94TFc6f71AUmZFqdaQfjr7LTRp.jpg"
+    },
+    {
+      "id": 1175389,
+      "name": "Anastasia Ganias",
+      "credit_id": "5425b5f40e0a263b7700653c",
+      "character": "Tracy",
+      "order": 252,
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 1367620,
+      "name": "Jamie Gray Hyder",
+      "credit_id": "5425bbed0e0a264576001fc4",
+      "character": "Danielle",
+      "order": 256,
+      "gender": 1,
+      "profile_path": "/xVg5JQTEsdTw9IVen33g3GkisLg.jpg"
+    },
+    {
+      "id": 236021,
+      "name": "Camilla Luddington",
+      "credit_id": "5425c3f2c3a36848c1000043",
+      "character": "Claudette",
+      "order": 275,
+      "gender": 1,
+      "profile_path": "/eKF5lSEdEtOCbsgb5mKjd8vYLck.jpg"
+    },
+    {
+      "id": 1155473,
+      "name": "Emma Greenwell",
+      "credit_id": "5425c4380e0a2616ef000034",
+      "character": "Claudia",
+      "order": 278,
+      "gender": 1,
+      "profile_path": "/3c7zvchL0X6i3ptUgQk7WnJnZQQ.jpg"
+    },
+    {
+      "id": 1367901,
+      "name": "Ted Welch",
+      "credit_id": "5425c4800e0a2616d900003a",
+      "character": "Joe Bob",
+      "order": 280,
+      "gender": 2,
+      "profile_path": "/hse128bUrAVE2Uo61uJBKAkP8T0.jpg"
+    },
+    {
+      "id": 1106865,
+      "name": "Johnny Ray Gill",
+      "credit_id": "5425c7580e0a2616d900008b",
+      "character": "Tyrese",
+      "order": 288,
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1040368,
+      "name": "Giles Matthey",
+      "credit_id": "5425c887c3a36848be0000c3",
+      "character": "Claude Crane",
+      "order": 289,
+      "gender": 2,
+      "profile_path": "/aoVphKnWthaRKJRrpqOPS1LmUeW.jpg"
+    },
+    {
+      "id": 1224342,
+      "name": "James Jordan",
+      "credit_id": "5425c8bac3a36848ca0000d1",
+      "character": "Ray",
+      "order": 290,
+      "gender": 2,
+      "profile_path": "/5Bs7uPG7j1AHxdKnFIXJvCOQQ2j.jpg"
+    },
+    {
+      "id": 1215365,
+      "name": "Henri Lubatti",
+      "credit_id": "5425c8cd0e0a2616df0000d1",
+      "character": "Nigel Beckford",
+      "order": 291,
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 173995,
+      "name": "Drew Powell",
+      "credit_id": "5425c8ea0e0a2616eb0000de",
+      "character": "Ryder",
+      "order": 292,
+      "gender": 2,
+      "profile_path": "/v3iLHQYKDdd7AI8GOqMwqxhzeMH.jpg"
+    },
+    {
+      "id": 1367929,
+      "name": "Deborah Puette",
+      "credit_id": "5425c8fdc3a36848be0000d1",
+      "character": "Sarah Compton-Harris",
+      "order": 293,
+      "gender": 1,
+      "profile_path": null
+    },
+    {
+      "id": 135852,
+      "name": "Patrick Mapel",
+      "credit_id": "5425c91cc3a36848be0000d5",
+      "character": "Sean",
+      "order": 294,
+      "gender": 2,
+      "profile_path": "/6ft6eTNQdvNWM8Xm8o8JJZtmekF.jpg"
+    },
+    {
+      "id": 113567,
+      "name": "Anna Khaja",
+      "credit_id": "5425c940c3a36848c40000be",
+      "character": "Zaafira",
+      "order": 295,
+      "gender": 1,
+      "profile_path": "/Ys2OGtrsX8X9d4rfdUMMATOUa0.jpg"
+    },
+    {
+      "id": 1367930,
+      "name": "Spencer Hill",
+      "credit_id": "5425c94e0e0a2616df0000dd",
+      "character": "Reggie",
+      "order": 296,
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 1367465,
+      "name": "John Rezig",
+      "credit_id": "5423e7e5c3a3681eca001bde",
+      "character": "Kevin Ellis",
+      "order": 342,
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 61829,
+      "name": "Kelly Overton",
+      "credit_id": "542653490e0a265a08000e56",
+      "character": "Rikki Naylor",
+      "order": 343,
+      "gender": 1,
+      "profile_path": "/u1KnPtnHfdLCrImtONXCYwJDqZk.jpg"
+    }
+  ],
+  "name": "Somebody That I Used to Know",
+  "overview": "Na sede da Autoridade, os Chanceleres se deleitam com o resplendor de Lilith; Eric recebe uma mensagem de Godric, Bill se vê mexido por uma memória distante. Sookie e Jason visitam o lugar onde morreram seus pais.",
+  "id": 430449,
+  "production_code": "",
+  "season_number": 5,
+  "still_path": "/4Cn2TDrKr5nFt8MNT0V23bm1TzK.jpg",
+  "vote_average": 6.571,
+  "vote_count": 7
+}

@@ -1,0 +1,70 @@
+{
+  "air_date": "2010-08-29",
+  "crew": [
+    {
+      "id": 50768,
+      "credit_id": "525803c419c29531db38a33e",
+      "name": "Nancy Oliver",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 1,
+      "profile_path": null
+    },
+    {
+      "id": 88743,
+      "credit_id": "525803c219c29531db38a0f4",
+      "name": "Daniel Minahan",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": "/zBRWTVYdZ77HT1zWpZtLXZ8AW1F.jpg"
+    }
+  ],
+  "episode_number": 11,
+  "guest_stars": [
+    {
+      "id": 101624,
+      "name": "Natasha Alam",
+      "credit_id": "542489dcc3a368086e0041c0",
+      "character": "Yvetta",
+      "order": 167,
+      "gender": 1,
+      "profile_path": "/ggG6h2fpTGaSKkSCCd6ruHFDJLK.jpg"
+    },
+    {
+      "id": 1367682,
+      "name": "Lil Mirkk",
+      "credit_id": "54248f670e0a263b6e004382",
+      "character": "Trey",
+      "order": 176,
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 115240,
+      "name": "Lindsay Pulsipher",
+      "credit_id": "54255e6fc3a3681eca0042b2",
+      "character": "Crystal Norris",
+      "order": 178,
+      "gender": 1,
+      "profile_path": "/87tRNSIGJtSpmXEz5iutmDOgWkf.jpg"
+    },
+    {
+      "id": 1221716,
+      "name": "Melissa Rauch",
+      "credit_id": "5425602a0e0a263b6e005a5d",
+      "character": "Summer",
+      "order": 184,
+      "gender": 1,
+      "profile_path": "/pYcQdUodRdZLpDM2FA0LhW5KhkF.jpg"
+    }
+  ],
+  "name": "Fresh Blood",
+  "overview": "Bill tenta reconquistar a confiança de Sookie, mas acaba colocando-a em perigo. Eric oferece a Russel o sonho máximo de qualquer vampiro. Enquanto isso, Hoyt e Jessica dão um novo passo em sua relação e Sam abraça seu lado mais negro.",
+  "id": 430427,
+  "production_code": "",
+  "season_number": 3,
+  "still_path": "/wy76kpI2LzGC6rlPKhEpURVwtg5.jpg",
+  "vote_average": 7.667,
+  "vote_count": 9
+}

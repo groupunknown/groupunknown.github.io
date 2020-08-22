@@ -1,0 +1,106 @@
+{
+  "air_date": "2010-08-08",
+  "crew": [
+    {
+      "id": 15798,
+      "credit_id": "5425641f0e0a263b81005d40",
+      "name": "Lesli Linka Glatter",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 1,
+      "profile_path": "/8F13UPsRnXWTDcp8iA3ZXMtfJa3.jpg"
+    },
+    {
+      "id": 1225902,
+      "credit_id": "525803c019c29531db389c7a",
+      "name": "Raelle Tucker",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 1,
+      "profile_path": null
+    }
+  ],
+  "episode_number": 8,
+  "guest_stars": [
+    {
+      "id": 38940,
+      "name": "Evan Rachel Wood",
+      "credit_id": "525803cc19c29531db38ad0b",
+      "character": "Sophie-Anne Leclerq",
+      "order": 1,
+      "gender": 1,
+      "profile_path": "/g6XBBmsEd9fqP0gc4RuHsX0MXNl.jpg"
+    },
+    {
+      "id": 20580,
+      "name": "Joe Manganiello",
+      "credit_id": "525803da19c29531db38bf84",
+      "character": "Alcide Herveaux",
+      "order": 52,
+      "gender": 2,
+      "profile_path": "/mTdACmitdrwor0Nrv5sr0u123vZ.jpg"
+    },
+    {
+      "id": 119757,
+      "name": "Kate Luyben",
+      "credit_id": "542564580e0a263b6e005b33",
+      "character": "Natalie",
+      "order": 175,
+      "gender": 1,
+      "profile_path": "/vHYbzLNyFFGW5WRRHcJwn1GSP2X.jpg"
+    },
+    {
+      "id": 81690,
+      "name": "Don Swayze",
+      "credit_id": "54248f74c3a36808760041df",
+      "character": "Gus",
+      "order": 177,
+      "gender": 2,
+      "profile_path": "/lewJdPYpyb8sacBQWLAJFNhpeAU.jpg"
+    },
+    {
+      "id": 115240,
+      "name": "Lindsay Pulsipher",
+      "credit_id": "54255e6fc3a3681eca0042b2",
+      "character": "Crystal Norris",
+      "order": 178,
+      "gender": 1,
+      "profile_path": "/87tRNSIGJtSpmXEz5iutmDOgWkf.jpg"
+    },
+    {
+      "id": 1367836,
+      "name": "Shaun Guttridge",
+      "credit_id": "542561fc0e0a263b6e005ae3",
+      "character": "Vampire Guard",
+      "order": 180,
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 1218818,
+      "name": "James Harvey Ward",
+      "credit_id": "54255e9e0e0a263b6e005a22",
+      "character": "Felton Norris",
+      "order": 180,
+      "gender": 2,
+      "profile_path": "/r9jPtdmOmDol2DK8kI26DvOHgoV.jpg"
+    },
+    {
+      "id": 212938,
+      "name": "Brit Morgan",
+      "credit_id": "54255eca0e0a2645760015ef",
+      "character": "Debbie Pelt",
+      "order": 182,
+      "gender": 1,
+      "profile_path": "/wbvokHuEX42Zv7euxhW3yo6sJ76.jpg"
+    }
+  ],
+  "name": "Night on the Sun",
+  "overview": "Desiludida, Sookie questiona seu relacionamento com Bill. Enquanto isso, Jason entra em um duelo na esperança de salvar Crystal. Eric deve provar sua lealdade a Russel e Alcide sai para resolver uma emergência familiar, deixando Sookie sozinha.",
+  "id": 430422,
+  "production_code": "",
+  "season_number": 3,
+  "still_path": "/nHLEx6Z1QmVCrWAkrpl4EEFwi6f.jpg",
+  "vote_average": 8.111,
+  "vote_count": 9
+}
