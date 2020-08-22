@@ -29,34 +29,22 @@
   "languages": [
     "en"
   ],
-  "last_air_date": "2019-05-08",
+  "last_air_date": "2020-08-21",
   "last_episode_to_air": {
-    "air_date": "2019-05-08",
-    "episode_number": 10,
-    "id": 1683392,
-    "name": "Quem é o novo rei do inferno?",
-    "overview": "Com demônios assassinos à solta em Los Angeles, Lucifer tem que reinar no caos e proteger as pessoas que mais ama.",
-    "production_code": "",
-    "season_number": 4,
-    "show_id": 63174,
-    "still_path": "/wyipOHD8GRrVK3ECP4GiN9anvm5.jpg",
-    "vote_average": 8.857,
-    "vote_count": 7
-  },
-  "name": "Lúcifer",
-  "next_episode_to_air": {
     "air_date": "2020-08-21",
-    "episode_number": 1,
-    "id": 2316999,
-    "name": "Episódio 1",
+    "episode_number": 8,
+    "id": 2397418,
+    "name": "Episódio 8",
     "overview": "",
     "production_code": "",
     "season_number": 5,
     "show_id": 63174,
-    "still_path": "/zJ0nWGmE1V0IDSkf5g6lHod70Kp.jpg",
-    "vote_average": 10,
-    "vote_count": 2
+    "still_path": "/w1fVmFBTVhLkHXPD75I7FGtBzvk.jpg",
+    "vote_average": 0,
+    "vote_count": 0
   },
+  "name": "Lúcifer",
+  "next_episode_to_air": null,
   "networks": [
     {
       "name": "FOX",
@@ -79,7 +67,7 @@
   "original_language": "en",
   "original_name": "Lucifer",
   "overview": "Entediado com a vida nas trevas, o diabo se muda para Los Angeles, abre um piano-bar e empresta sua sabedoria a uma investigadora de assassinatos.",
-  "popularity": 179.102,
+  "popularity": 250.743,
   "poster_path": "/vn4K3hgtoDV2rIK6FfYK8ejn1tW.jpg",
   "production_companies": [
     {
@@ -172,5 +160,5 @@
   "status": "Returning Series",
   "type": "Scripted",
   "vote_average": 8.4,
-  "vote_count": 3798
+  "vote_count": 3853
 }

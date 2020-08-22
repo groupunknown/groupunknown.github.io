@@ -1201,24 +1201,6 @@
           "profile_path": "/8W8RAuPhywkh1eglkOqwUDVzH47.jpg"
         },
         {
-          "id": 2648252,
-          "name": "Tina Pham",
-          "credit_id": "5ec7124a0fb17f001d7b3c1f",
-          "character": "Brittany #1",
-          "order": 194,
-          "gender": 1,
-          "profile_path": "/sn7ycikKtANMU4TKJq98oHxNYpi.jpg"
-        },
-        {
-          "id": 1516211,
-          "name": "Emily Maddison",
-          "credit_id": "5ec715013d3557001eeebd5b",
-          "character": "Brittany #2",
-          "order": 195,
-          "gender": 1,
-          "profile_path": "/ivFo3HmLKDmXtIf1YG3V7CsuzH7.jpg"
-        },
-        {
           "id": 1874345,
           "name": "Lee Shan Gibson",
           "credit_id": "5ec7152eae2811001f3c4bdb",
@@ -1226,6 +1208,24 @@
           "order": 196,
           "gender": 0,
           "profile_path": "/jU9lEXTYwgFScS9spsTn4izanyI.jpg"
+        },
+        {
+          "id": 1516211,
+          "name": "Emily Maddison",
+          "credit_id": "5ec738bf8e2e0000201f4175",
+          "character": "Brittanie #2",
+          "order": 732,
+          "gender": 1,
+          "profile_path": "/ivFo3HmLKDmXtIf1YG3V7CsuzH7.jpg"
+        },
+        {
+          "id": 2648252,
+          "name": "Tina Pham",
+          "credit_id": "5ec7390e3d3557001ce8e5f6",
+          "character": "Brittanie #1",
+          "order": 733,
+          "gender": 1,
+          "profile_path": "/sn7ycikKtANMU4TKJq98oHxNYpi.jpg"
         }
       ]
     },
@@ -1630,24 +1630,6 @@
           "profile_path": "/doX8E3XiNYOqDBUqUqBPCDShiCy.jpg"
         },
         {
-          "id": 1516211,
-          "name": "Emily Maddison",
-          "credit_id": "5ec738bf8e2e0000201f4175",
-          "character": "Brittanie #2",
-          "order": 214,
-          "gender": 1,
-          "profile_path": "/ivFo3HmLKDmXtIf1YG3V7CsuzH7.jpg"
-        },
-        {
-          "id": 2648252,
-          "name": "Tina Pham",
-          "credit_id": "5ec7390e3d3557001ce8e5f6",
-          "character": "Brittanie #1",
-          "order": 215,
-          "gender": 1,
-          "profile_path": "/sn7ycikKtANMU4TKJq98oHxNYpi.jpg"
-        },
-        {
           "id": 2648412,
           "name": "Jared Outten",
           "credit_id": "5ec7391e8e2e00002124f185",
@@ -1664,6 +1646,24 @@
           "order": 246,
           "gender": 2,
           "profile_path": "/fOW5R6BSgRvMrt2R7KAxSk7L4H2.jpg"
+        },
+        {
+          "id": 1516211,
+          "name": "Emily Maddison",
+          "credit_id": "5ec738bf8e2e0000201f4175",
+          "character": "Brittanie #2",
+          "order": 732,
+          "gender": 1,
+          "profile_path": "/ivFo3HmLKDmXtIf1YG3V7CsuzH7.jpg"
+        },
+        {
+          "id": 2648252,
+          "name": "Tina Pham",
+          "credit_id": "5ec7390e3d3557001ce8e5f6",
+          "character": "Brittanie #1",
+          "order": 733,
+          "gender": 1,
+          "profile_path": "/sn7ycikKtANMU4TKJq98oHxNYpi.jpg"
         }
       ]
     },
