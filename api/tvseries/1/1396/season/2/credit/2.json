@@ -1,0 +1,126 @@
+{
+  "cast": [
+    {
+      "character": "Walter White",
+      "credit_id": "52542282760ee313280017f9",
+      "gender": 2,
+      "id": 17419,
+      "name": "Bryan Cranston",
+      "order": 0,
+      "profile_path": "/7Jahy5LZX2Fo8fGJltMreAI49hC.jpg"
+    },
+    {
+      "character": "Skyler White",
+      "credit_id": "52542282760ee3132800181b",
+      "gender": 1,
+      "id": 134531,
+      "name": "Anna Gunn",
+      "order": 2,
+      "profile_path": "/adppyeu1a4REN3khtgmXusrapFi.jpg"
+    },
+    {
+      "character": "Jesse Pinkman",
+      "credit_id": "52542282760ee31328001845",
+      "gender": 2,
+      "id": 84497,
+      "name": "Aaron Paul",
+      "order": 1,
+      "profile_path": "/u8UdsB9yenM4uHEjmce4nkBn48X.jpg"
+    },
+    {
+      "character": "Hank Schrader",
+      "credit_id": "52542283760ee3132800187b",
+      "gender": 2,
+      "id": 14329,
+      "name": "Dean Norris",
+      "order": 3,
+      "profile_path": "/fXbHgZxCEclcTxV8MpeBXhe2OJS.jpg"
+    },
+    {
+      "character": "Marie Schrader",
+      "credit_id": "52542283760ee31328001891",
+      "gender": 1,
+      "id": 1217934,
+      "name": "Betsy Brandt",
+      "order": 4,
+      "profile_path": "/zmhhPmXnwjSzVyoTVL93i1EkLRK.jpg"
+    },
+    {
+      "character": "Walter White Jr.",
+      "credit_id": "52542284760ee313280018a9",
+      "gender": 2,
+      "id": 209674,
+      "name": "RJ Mitte",
+      "order": 5,
+      "profile_path": "/aG6NYV2EgzBFLRIl7vvbtd7go1j.jpg"
+    }
+  ],
+  "crew": [
+    {
+      "id": 1223193,
+      "credit_id": "52542279760ee31328000b45",
+      "name": "George Mastras",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 69791,
+      "credit_id": "5254227b760ee31328000e92",
+      "name": "Charles Haid",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": "/39kBH9dpc1pwer9Ra1gOKSvbX4W.jpg"
+    }
+  ],
+  "guest_stars": [
+    {
+      "id": 61535,
+      "name": "Steven Michael Quezada",
+      "credit_id": "56caf4439251414b400002dc",
+      "character": "",
+      "order": 181,
+      "gender": 2,
+      "profile_path": "/4BRo6oc26kePVYxgNzYwUrDagVO.jpg"
+    },
+    {
+      "id": 58650,
+      "name": "Raymond Cruz",
+      "credit_id": "56caf457c3a368408700b164",
+      "character": "",
+      "order": 182,
+      "gender": 2,
+      "profile_path": "/1a0GyTD2v2HSDUGlGf69IGKdFmJ.jpg"
+    },
+    {
+      "id": 11915,
+      "name": "Nigel Gibbs",
+      "credit_id": "56caf4659251415bcc000e33",
+      "character": "",
+      "order": 183,
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 41249,
+      "name": "Tess Harper",
+      "credit_id": "56caf483c3a368409c00a5e5",
+      "character": "",
+      "order": 184,
+      "gender": 1,
+      "profile_path": "/8Z770Kk13MK1NP7skWmTxvRGx3V.jpg"
+    },
+    {
+      "id": 1173,
+      "name": "Mark Margolis",
+      "credit_id": "56caf49d9251414b400002e2",
+      "character": "",
+      "order": 185,
+      "gender": 2,
+      "profile_path": "/rT5TYJIPLBkTqsrUs00AixGeaMM.jpg"
+    }
+  ],
+  "id": 972874
+}

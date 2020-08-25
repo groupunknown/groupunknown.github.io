@@ -1,0 +1,70 @@
+{
+  "air_date": "2009-05-24",
+  "crew": [
+    {
+      "id": 29924,
+      "credit_id": "5254227f760ee313280011f5",
+      "name": "John Shiban",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1212287,
+      "credit_id": "52542281760ee31328001550",
+      "name": "Colin Bucksey",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": null
+    }
+  ],
+  "episode_number": 12,
+  "guest_stars": [
+    {
+      "id": 78080,
+      "name": "Krysten Ritter",
+      "credit_id": "5254227e760ee31328001037",
+      "character": "Jane Margolis",
+      "order": 2,
+      "gender": 1,
+      "profile_path": "/bII7CIrRAc7JdDSfG8oDIbRPQCx.jpg"
+    },
+    {
+      "id": 59410,
+      "name": "Bob Odenkirk",
+      "credit_id": "5271b180760ee35afc09bb8d",
+      "character": "Saul Goodman",
+      "order": 6,
+      "gender": 2,
+      "profile_path": "/nJLcRRqq9JTQTgVYrFn7vPDgAsK.jpg"
+    },
+    {
+      "id": 11077,
+      "name": "John de Lancie",
+      "credit_id": "52542280760ee31328001390",
+      "character": "Donald Margolis",
+      "order": 73,
+      "gender": 2,
+      "profile_path": "/e9GsjWaW9fabT22ceLzesJhUgzd.jpg"
+    },
+    {
+      "id": 20379,
+      "name": "Christopher Cousins",
+      "credit_id": "527504f6760ee347c912980c",
+      "character": "Ted Beneke",
+      "order": 136,
+      "gender": 2,
+      "profile_path": "/9fmoeZLGbJfiYU6mIbrUkjF9wsR.jpg"
+    }
+  ],
+  "name": "Phoenix",
+  "overview": "Por conta de uma grande entrega, Walt não aparece no hospital para o nascimento da filha, e segue direto para acertar as contas com a namorada de Jesse.",
+  "id": 62103,
+  "production_code": "",
+  "season_number": 2,
+  "still_path": "/m2fzm9JKgaLPL2U01xROTpBXE4m.jpg",
+  "vote_average": 8.386,
+  "vote_count": 57
+}

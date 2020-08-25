@@ -1,0 +1,133 @@
+{
+  "air_date": "2013-09-08",
+  "crew": [
+    {
+      "id": 1223193,
+      "credit_id": "52542279760ee31328000b45",
+      "name": "George Mastras",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 29779,
+      "credit_id": "52542280760ee31328001325",
+      "name": "Michelle MacLaren",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 1,
+      "profile_path": null
+    }
+  ],
+  "episode_number": 13,
+  "guest_stars": [
+    {
+      "id": 564348,
+      "name": "Lavell Crawford",
+      "credit_id": "52763ec8760ee35a9a0f7511",
+      "character": "Huell",
+      "order": 171,
+      "gender": 0,
+      "profile_path": "/dXAb3xJ9rXGNxCSvQIjWkMbfHpW.jpg"
+    },
+    {
+      "id": 1145262,
+      "name": "Phil Duran",
+      "credit_id": "52783046760ee3046f01bc36",
+      "character": "Van Oster",
+      "order": 171,
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1102383,
+      "name": "Merritt Glover",
+      "credit_id": "52783068760ee3046f01bf54",
+      "character": "Customer",
+      "order": 172,
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 61535,
+      "name": "Steven Michael Quezada",
+      "credit_id": "5271b489760ee35b3e0881a7",
+      "character": "Steven Gomez",
+      "order": 173,
+      "gender": 2,
+      "profile_path": "/4BRo6oc26kePVYxgNzYwUrDagVO.jpg"
+    },
+    {
+      "id": 211474,
+      "name": "Emily Rios",
+      "credit_id": "5276391d760ee33e440250f4",
+      "character": "Andrea Cantillo",
+      "order": 176,
+      "gender": 1,
+      "profile_path": "/hwJd91tvfkscI8ViEkaqkW3NVnG.jpg"
+    },
+    {
+      "id": 1268114,
+      "name": "Patrick Sane",
+      "credit_id": "527811bc760ee35e8e226e09",
+      "character": "Frankie",
+      "order": 182,
+      "gender": 0,
+      "profile_path": "/AnT9tInB0UNpZszdUiT5wT1AzpI.jpg"
+    },
+    {
+      "id": 42279,
+      "name": "Laura Fraser",
+      "credit_id": "5277018a760ee3215f0120a4",
+      "character": "Lydia Rodarte-Quayle",
+      "order": 182,
+      "gender": 1,
+      "profile_path": "/hOgkyPtP5WOjcQjc7RmmKJl3OGE.jpg"
+    },
+    {
+      "id": 88124,
+      "name": "Jesse Plemons",
+      "credit_id": "5277f086760ee33970368804",
+      "character": "Todd",
+      "order": 182,
+      "gender": 2,
+      "profile_path": "/edKyn7RDsuM6dJ7r9QMbb5ourmT.jpg"
+    },
+    {
+      "id": 2234,
+      "name": "Michael Bowen",
+      "credit_id": "52780156760ee3397038de79",
+      "character": "Uncle Jack",
+      "order": 182,
+      "gender": 2,
+      "profile_path": "/vRksdXlhcjOMFRD3szytf74am1f.jpg"
+    },
+    {
+      "id": 114000,
+      "name": "Kevin Rankin",
+      "credit_id": "527801a9760ee331ce03af8a",
+      "character": "Kenny",
+      "order": 182,
+      "gender": 2,
+      "profile_path": "/fOW5R6BSgRvMrt2R7KAxSk7L4H2.jpg"
+    },
+    {
+      "id": 1105706,
+      "name": "Tait Fletcher",
+      "credit_id": "52782a42760ee375d4023968",
+      "character": "Lester",
+      "order": 182,
+      "gender": 2,
+      "profile_path": "/zAVsHT2GBLPaQ4RpTopnHvIrCbv.jpg"
+    }
+  ],
+  "name": "To'hajiilee",
+  "overview": "Acontecimentos inesperados dificultam a vida de Walt.",
+  "id": 62157,
+  "production_code": "",
+  "season_number": 5,
+  "still_path": "/z2E4Rq7D5TmAdzS9D6Wije3sGI3.jpg",
+  "vote_average": 9.286,
+  "vote_count": 63
+}

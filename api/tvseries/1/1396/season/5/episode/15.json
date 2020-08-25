@@ -1,0 +1,187 @@
+{
+  "air_date": "2013-09-22",
+  "crew": [
+    {
+      "id": 24951,
+      "credit_id": "527685f3760ee360330b9ed3",
+      "name": "Peter Gould",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 24951,
+      "credit_id": "52542286760ee31328001ab9",
+      "name": "Peter Gould",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 2,
+      "profile_path": null
+    }
+  ],
+  "episode_number": 15,
+  "guest_stars": [
+    {
+      "id": 115688,
+      "name": "Carmen Serano",
+      "credit_id": "52542273760ee31328000676",
+      "character": "Carmen Molina",
+      "order": 176,
+      "gender": 1,
+      "profile_path": "/nzJEe2UqvvMIBJZP1aeFEj4EunN.jpg"
+    },
+    {
+      "id": 1218149,
+      "name": "Brennan Brown",
+      "credit_id": "527832b6760ee3757e0437cf",
+      "character": "US Attorney",
+      "order": 176,
+      "gender": 2,
+      "profile_path": "/7H0dam6ZmwTDJz7KjI1O6G4q1RF.jpg"
+    },
+    {
+      "id": 211474,
+      "name": "Emily Rios",
+      "credit_id": "5276391d760ee33e440250f4",
+      "character": "Andrea Cantillo",
+      "order": 176,
+      "gender": 1,
+      "profile_path": "/hwJd91tvfkscI8ViEkaqkW3NVnG.jpg"
+    },
+    {
+      "id": 1063149,
+      "name": "Eric Price",
+      "credit_id": "52783571760ee3046f026795",
+      "character": "Public Defender",
+      "order": 177,
+      "gender": 2,
+      "profile_path": "/ubz1x3b3osigzaaitLuGnofDE.jpg"
+    },
+    {
+      "id": 5694,
+      "name": "Robert Forster",
+      "credit_id": "527835f4760ee37572044673",
+      "character": "Ed",
+      "order": 178,
+      "gender": 2,
+      "profile_path": "/vGDifxN2PnO69rnpg6FoWkocFCD.jpg"
+    },
+    {
+      "id": 1178637,
+      "name": "Todd Terry",
+      "credit_id": "52745106760ee3570909e16b",
+      "character": "SAC Ramey",
+      "order": 179,
+      "gender": 2,
+      "profile_path": "/vB9zZNg8qZPlSijYs84F4LpwVpo.jpg"
+    },
+    {
+      "id": 110999,
+      "name": "Joe Nemmers",
+      "credit_id": "52781aa7760ee36324007300",
+      "character": "DEA Agent Scott",
+      "order": 179,
+      "gender": 2,
+      "profile_path": "/9Pd12b0Ii8Qio0Gyprwuu62UUQi.jpg"
+    },
+    {
+      "id": 173129,
+      "name": "Kurt Soderstrom",
+      "credit_id": "527836c3760ee375a605416f",
+      "character": "Bartender",
+      "order": 179,
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 208060,
+      "name": "Deborah Martinez",
+      "credit_id": "527836e6760ee375b3044064",
+      "character": "School Office Worker",
+      "order": 180,
+      "gender": 1,
+      "profile_path": null
+    },
+    {
+      "id": 70177,
+      "name": "Charlie Rose",
+      "credit_id": "5278372e760ee37c54032bbf",
+      "character": "Himself",
+      "order": 181,
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 14984,
+      "name": "Jessica Hecht",
+      "credit_id": "52542275760ee31328000768",
+      "character": "Gretchen Schwartz",
+      "order": 182,
+      "gender": 1,
+      "profile_path": "/icLFpyGlarQNUuwRvcY6xwSXT0p.jpg"
+    },
+    {
+      "id": 23429,
+      "name": "Adam Godley",
+      "credit_id": "527444c1760ee3572208fbc2",
+      "character": "Elliott Schwartz",
+      "order": 182,
+      "gender": 2,
+      "profile_path": "/xOM0zOb2KZ2q8M6lRrDo9bEBeJE.jpg"
+    },
+    {
+      "id": 1268114,
+      "name": "Patrick Sane",
+      "credit_id": "527811bc760ee35e8e226e09",
+      "character": "Frankie",
+      "order": 182,
+      "gender": 0,
+      "profile_path": "/AnT9tInB0UNpZszdUiT5wT1AzpI.jpg"
+    },
+    {
+      "id": 88124,
+      "name": "Jesse Plemons",
+      "credit_id": "5277f086760ee33970368804",
+      "character": "Todd",
+      "order": 182,
+      "gender": 2,
+      "profile_path": "/edKyn7RDsuM6dJ7r9QMbb5ourmT.jpg"
+    },
+    {
+      "id": 2234,
+      "name": "Michael Bowen",
+      "credit_id": "52780156760ee3397038de79",
+      "character": "Uncle Jack",
+      "order": 182,
+      "gender": 2,
+      "profile_path": "/vRksdXlhcjOMFRD3szytf74am1f.jpg"
+    },
+    {
+      "id": 114000,
+      "name": "Kevin Rankin",
+      "credit_id": "527801a9760ee331ce03af8a",
+      "character": "Kenny",
+      "order": 182,
+      "gender": 2,
+      "profile_path": "/fOW5R6BSgRvMrt2R7KAxSk7L4H2.jpg"
+    },
+    {
+      "id": 1105706,
+      "name": "Tait Fletcher",
+      "credit_id": "52782a42760ee375d4023968",
+      "character": "Lester",
+      "order": 182,
+      "gender": 2,
+      "profile_path": "/zAVsHT2GBLPaQ4RpTopnHvIrCbv.jpg"
+    }
+  ],
+  "name": "Estado granito",
+  "overview": "Acontecimentos iniciados muito tempo atrás estão chegando à conclusão.",
+  "id": 62160,
+  "production_code": "",
+  "season_number": 5,
+  "still_path": "/yxldDE4a2NZa9vrBWvTa9OAZpVc.jpg",
+  "vote_average": 8.883,
+  "vote_count": 60
+}

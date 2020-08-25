@@ -1,0 +1,106 @@
+{
+  "air_date": "2012-07-15",
+  "crew": [
+    {
+      "id": 66633,
+      "credit_id": "52542275760ee313280006ce",
+      "name": "Vince Gilligan",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 2,
+      "profile_path": "/uFh3OrBvkwKSU3N5y0XnXOhqBJz.jpg"
+    },
+    {
+      "id": 52034,
+      "credit_id": "525423cb760ee3132800238d",
+      "name": "Michael Slovis",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1123195,
+      "credit_id": "52b705e619c2955a1f0c895b",
+      "name": "Skip MacDonald",
+      "department": "Editing",
+      "job": "Editor",
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 1543194,
+      "credit_id": "565e263fc3a3687cff00374b",
+      "name": "Marshall Adams",
+      "department": "Camera",
+      "job": "Director of Photography",
+      "gender": 0,
+      "profile_path": null
+    }
+  ],
+  "episode_number": 1,
+  "guest_stars": [
+    {
+      "id": 1264845,
+      "name": "Monique Candelaria",
+      "credit_id": "5277000c760ee34f980dca0c",
+      "character": "Lucy",
+      "order": 136,
+      "gender": 1,
+      "profile_path": "/jndsq3PlaIGmRExZHKrfvrMS3Uj.jpg"
+    },
+    {
+      "id": 11519,
+      "name": "Larry Hankin",
+      "credit_id": "5276312a760ee33e4400b8c7",
+      "character": "Old Joe",
+      "order": 136,
+      "gender": 2,
+      "profile_path": "/2uR8SZ9geiSQOpBhKrerh9qY7CX.jpg"
+    },
+    {
+      "id": 29862,
+      "name": "Jim Beaver",
+      "credit_id": "5276518e760ee36036009db6",
+      "character": "Lawson",
+      "order": 136,
+      "gender": 2,
+      "profile_path": "/c3Cqp1XAdcyeUZKkcrdQsPwb010.jpg"
+    },
+    {
+      "id": 20379,
+      "name": "Christopher Cousins",
+      "credit_id": "527504f6760ee347c912980c",
+      "character": "Ted Beneke",
+      "order": 136,
+      "gender": 2,
+      "profile_path": "/9fmoeZLGbJfiYU6mIbrUkjF9wsR.jpg"
+    },
+    {
+      "id": 136152,
+      "name": "J. B. Blanc",
+      "credit_id": "5276f211760ee34f980bdc6a",
+      "character": "Dr. Barry Goodman",
+      "order": 136,
+      "gender": 2,
+      "profile_path": "/5c0FSFRTfB6Ejtu7Sa0jmhDShfL.jpg"
+    },
+    {
+      "id": 61535,
+      "name": "Steven Michael Quezada",
+      "credit_id": "5271b489760ee35b3e0881a7",
+      "character": "Steven Gomez",
+      "order": 173,
+      "gender": 2,
+      "profile_path": "/4BRo6oc26kePVYxgNzYwUrDagVO.jpg"
+    }
+  ],
+  "name": "Viva livre ou morra",
+  "overview": "Walter vai visitar a família, que ainda está sob proteção policial, enquanto lida com as consequências da explosão na Casa Tranquila.",
+  "id": 62147,
+  "production_code": "",
+  "season_number": 5,
+  "still_path": "/uShB5dWoA3xIivZ9jvwWnGCVvt4.jpg",
+  "vote_average": 8.22,
+  "vote_count": 59
+}

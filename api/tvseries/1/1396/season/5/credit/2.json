@@ -1,0 +1,162 @@
+{
+  "cast": [
+    {
+      "character": "Walter White",
+      "credit_id": "52542282760ee313280017f9",
+      "gender": 2,
+      "id": 17419,
+      "name": "Bryan Cranston",
+      "order": 0,
+      "profile_path": "/7Jahy5LZX2Fo8fGJltMreAI49hC.jpg"
+    },
+    {
+      "character": "Skyler White",
+      "credit_id": "52542282760ee3132800181b",
+      "gender": 1,
+      "id": 134531,
+      "name": "Anna Gunn",
+      "order": 2,
+      "profile_path": "/adppyeu1a4REN3khtgmXusrapFi.jpg"
+    },
+    {
+      "character": "Jesse Pinkman",
+      "credit_id": "52542282760ee31328001845",
+      "gender": 2,
+      "id": 84497,
+      "name": "Aaron Paul",
+      "order": 1,
+      "profile_path": "/u8UdsB9yenM4uHEjmce4nkBn48X.jpg"
+    },
+    {
+      "character": "Hank Schrader",
+      "credit_id": "52542283760ee3132800187b",
+      "gender": 2,
+      "id": 14329,
+      "name": "Dean Norris",
+      "order": 3,
+      "profile_path": "/fXbHgZxCEclcTxV8MpeBXhe2OJS.jpg"
+    },
+    {
+      "character": "Marie Schrader",
+      "credit_id": "52542283760ee31328001891",
+      "gender": 1,
+      "id": 1217934,
+      "name": "Betsy Brandt",
+      "order": 4,
+      "profile_path": "/zmhhPmXnwjSzVyoTVL93i1EkLRK.jpg"
+    },
+    {
+      "character": "Walter White Jr.",
+      "credit_id": "52542284760ee313280018a9",
+      "gender": 2,
+      "id": 209674,
+      "name": "RJ Mitte",
+      "order": 5,
+      "profile_path": "/aG6NYV2EgzBFLRIl7vvbtd7go1j.jpg"
+    },
+    {
+      "character": "Saul Goodman",
+      "credit_id": "5271b180760ee35afc09bb8d",
+      "gender": 2,
+      "id": 59410,
+      "name": "Bob Odenkirk",
+      "order": 6,
+      "profile_path": "/nJLcRRqq9JTQTgVYrFn7vPDgAsK.jpg"
+    },
+    {
+      "character": "Mike Ehrmantraut",
+      "credit_id": "5271b1e6760ee35af60941ad",
+      "gender": 2,
+      "id": 783,
+      "name": "Jonathan Banks",
+      "order": 7,
+      "profile_path": "/va6APAzwv68YxvYQkB3lHhpccCi.jpg"
+    }
+  ],
+  "crew": [
+    {
+      "id": 66633,
+      "credit_id": "52542275760ee313280006ce",
+      "name": "Vince Gilligan",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 2,
+      "profile_path": "/uFh3OrBvkwKSU3N5y0XnXOhqBJz.jpg"
+    },
+    {
+      "id": 29779,
+      "credit_id": "52542280760ee31328001325",
+      "name": "Michelle MacLaren",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 1,
+      "profile_path": null
+    }
+  ],
+  "guest_stars": [
+    {
+      "id": 9291,
+      "name": "Michael Shamus Wiles",
+      "credit_id": "5271b622760ee35b0709869c",
+      "character": "ASAC George Merkert",
+      "order": 138,
+      "gender": 2,
+      "profile_path": "/niY4gYqAUjmnU4KRiguxpsKliWA.jpg"
+    },
+    {
+      "id": 6701,
+      "name": "Norbert Weisser",
+      "credit_id": "527702a7760ee3215f01527d",
+      "character": "Peter Schuler",
+      "order": 138,
+      "gender": 2,
+      "profile_path": "/m5vgCCT8vlp1yTS9BEbLQTFfrmx.jpg"
+    },
+    {
+      "id": 1219524,
+      "name": "Wolf Muser",
+      "credit_id": "5277038c760ee34f980e4bd6",
+      "character": "Herr Herzog",
+      "order": 139,
+      "gender": 2,
+      "profile_path": "/pjtffZMshARfyYvFdFJrPqykkXl.jpg"
+    },
+    {
+      "id": 121277,
+      "name": "Norma Maldonado",
+      "credit_id": "52770445760ee339701307f0",
+      "character": "Delores",
+      "order": 140,
+      "gender": 1,
+      "profile_path": "/vu6EY6TSXofu0Xx1Mganr22T7ry.jpg"
+    },
+    {
+      "id": 239997,
+      "name": "Debrianna Mansini",
+      "credit_id": "5277046e760ee3215f018e69",
+      "character": "Fran",
+      "order": 141,
+      "gender": 1,
+      "profile_path": null
+    },
+    {
+      "id": 61535,
+      "name": "Steven Michael Quezada",
+      "credit_id": "5271b489760ee35b3e0881a7",
+      "character": "Steven Gomez",
+      "order": 173,
+      "gender": 2,
+      "profile_path": "/4BRo6oc26kePVYxgNzYwUrDagVO.jpg"
+    },
+    {
+      "id": 42279,
+      "name": "Laura Fraser",
+      "credit_id": "5277018a760ee3215f0120a4",
+      "character": "Lydia Rodarte-Quayle",
+      "order": 182,
+      "gender": 1,
+      "profile_path": "/hOgkyPtP5WOjcQjc7RmmKJl3OGE.jpg"
+    }
+  ],
+  "id": 62148
+}

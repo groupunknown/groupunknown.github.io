@@ -1,0 +1,97 @@
+{
+  "air_date": "2010-06-06",
+  "crew": [
+    {
+      "id": 1223194,
+      "credit_id": "5254227d760ee31328000fb2",
+      "name": "Sam Catlin",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 2,
+      "profile_path": "/5Xt7ONeJpF3x2XZ9JwQO9vGDuJ1.jpg"
+    },
+    {
+      "id": 111338,
+      "credit_id": "52542275760ee31328000725",
+      "name": "Adam Bernstein",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 52034,
+      "credit_id": "53998110c3a3681d02001489",
+      "name": "Michael Slovis",
+      "department": "Camera",
+      "job": "Director of Photography",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1280074,
+      "credit_id": "52b7051619c29533d00e8c79",
+      "name": "Kelley Dixon",
+      "department": "Editing",
+      "job": "Editor",
+      "gender": 1,
+      "profile_path": "/gPlAQoRbQZp4ZYAY4GsBPpznolt.jpg"
+    },
+    {
+      "id": 24951,
+      "credit_id": "52542286760ee31328001ab9",
+      "name": "Peter Gould",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 2,
+      "profile_path": null
+    }
+  ],
+  "episode_number": 12,
+  "guest_stars": [
+    {
+      "id": 1123871,
+      "name": "Mike Seal",
+      "credit_id": "52754578760ee33562013f99",
+      "character": "Rival Dealer #1",
+      "order": 96,
+      "gender": 2,
+      "profile_path": "/qUja8e2k4XMWWV3k4ocMCZb4HBl.jpg"
+    },
+    {
+      "id": 582668,
+      "name": "Jeremiah Bitsui",
+      "credit_id": "5275464a760ee33556010f2a",
+      "character": "Victor",
+      "order": 101,
+      "gender": 0,
+      "profile_path": "/jB4u8jekprqQeB0xhdB4YSgO8FG.jpg"
+    },
+    {
+      "id": 211474,
+      "name": "Emily Rios",
+      "credit_id": "5276391d760ee33e440250f4",
+      "character": "Andrea Cantillo",
+      "order": 176,
+      "gender": 1,
+      "profile_path": "/hwJd91tvfkscI8ViEkaqkW3NVnG.jpg"
+    },
+    {
+      "id": 1834391,
+      "name": "Julia Minesci",
+      "credit_id": "5943e0e19251417f60024b4d",
+      "character": "Wendi",
+      "order": 186,
+      "gender": 0,
+      "profile_path": null
+    }
+  ],
+  "name": "Medida pela metade",
+  "overview": "Ignorando Walt, Jesse vai atrás dos responsáveis pela morte de Combo. Hank não quer sair do hospital. Skyler pressiona Walt a aceitar seu esquema de lavagem de dinheiro.",
+  "id": 62116,
+  "production_code": "",
+  "season_number": 3,
+  "still_path": "/eO3zAuQzIU6yCLrr2GUh8943jyr.jpg",
+  "vote_average": 8.737,
+  "vote_count": 57
+}

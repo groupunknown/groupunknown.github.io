@@ -1,0 +1,142 @@
+{
+  "air_date": "2010-05-09",
+  "crew": [
+    {
+      "id": 1212287,
+      "credit_id": "52542281760ee31328001550",
+      "name": "Colin Bucksey",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1223203,
+      "credit_id": "525423ce760ee3132800261a",
+      "name": "Gennifer Hutchison",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 1,
+      "profile_path": null
+    },
+    {
+      "id": 1330080,
+      "credit_id": "539982d8c3a3681d0a0014f5",
+      "name": "Peter Reniers",
+      "department": "Camera",
+      "job": "Director of Photography",
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 52034,
+      "credit_id": "53998110c3a3681d02001489",
+      "name": "Michael Slovis",
+      "department": "Camera",
+      "job": "Director of Photography",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1280074,
+      "credit_id": "52b7051619c29533d00e8c79",
+      "name": "Kelley Dixon",
+      "department": "Editing",
+      "job": "Editor",
+      "gender": 1,
+      "profile_path": "/gPlAQoRbQZp4ZYAY4GsBPpznolt.jpg"
+    }
+  ],
+  "episode_number": 8,
+  "guest_stars": [
+    {
+      "id": 1224374,
+      "name": "Michael Bryan French",
+      "credit_id": "527634ab760ee3354c290334",
+      "character": "Doctor",
+      "order": 90,
+      "gender": 0,
+      "profile_path": "/pWPCAhPpmFAIKzybnmIWTDyPqWp.jpg"
+    },
+    {
+      "id": 36135,
+      "name": "Christopher Dempsey",
+      "credit_id": "5276352e760ee35aa00c9c27",
+      "character": "ER Doctor #1",
+      "order": 91,
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1151637,
+      "name": "Lora Martinez-Cunningham",
+      "credit_id": "5276354f760ee33e44017683",
+      "character": "ER Doctor #2",
+      "order": 92,
+      "gender": 1,
+      "profile_path": "/gjbnJZCzNkshj2bKEe51sEcnPOV.jpg"
+    },
+    {
+      "id": 582668,
+      "name": "Jeremiah Bitsui",
+      "credit_id": "5275464a760ee33556010f2a",
+      "character": "Victor",
+      "order": 101,
+      "gender": 0,
+      "profile_path": "/jB4u8jekprqQeB0xhdB4YSgO8FG.jpg"
+    },
+    {
+      "id": 82167,
+      "name": "David Costabile",
+      "credit_id": "527630ad760ee3353f281211",
+      "character": "Gale Boetticher",
+      "order": 120,
+      "gender": 2,
+      "profile_path": "/nLlPiOgJuyONZBlbuqxzJNUpgo7.jpg"
+    },
+    {
+      "id": 66148,
+      "name": "Javier Grajeda",
+      "credit_id": "5275a26a760ee3352b11a79f",
+      "character": "Juan Bolsa",
+      "order": 123,
+      "gender": 2,
+      "profile_path": "/dDwwaq4vy5cJfIlrKgnEDyNnV2i.jpg"
+    },
+    {
+      "id": 9291,
+      "name": "Michael Shamus Wiles",
+      "credit_id": "5271b622760ee35b0709869c",
+      "character": "ASAC George Merkert",
+      "order": 138,
+      "gender": 2,
+      "profile_path": "/niY4gYqAUjmnU4KRiguxpsKliWA.jpg"
+    },
+    {
+      "id": 61535,
+      "name": "Steven Michael Quezada",
+      "credit_id": "5271b489760ee35b3e0881a7",
+      "character": "Steven Gomez",
+      "order": 173,
+      "gender": 2,
+      "profile_path": "/4BRo6oc26kePVYxgNzYwUrDagVO.jpg"
+    },
+    {
+      "id": 82945,
+      "name": "Charles Baker",
+      "credit_id": "52744007760ee356f6076365",
+      "character": "Skinny Pete",
+      "order": 182,
+      "gender": 2,
+      "profile_path": "/yuRBqdgCh4OgTsfl2Xs4mC6PpnZ.jpg"
+    }
+  ],
+  "name": "Eu vejo você",
+  "overview": "Hank se apega à vida depois que o cartel de drogas tenta matá-lo. Walt tenta ficar longe de problemas ao associar-se a Jesse quando percebe que também pode ser alvo.",
+  "id": 62112,
+  "production_code": "",
+  "season_number": 3,
+  "still_path": "/edBDR59bzVWdMtCawimRzOMgrlW.jpg",
+  "vote_average": 8,
+  "vote_count": 52
+}

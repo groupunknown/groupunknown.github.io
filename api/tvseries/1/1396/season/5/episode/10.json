@@ -1,0 +1,169 @@
+{
+  "air_date": "2013-08-18",
+  "crew": [
+    {
+      "id": 103009,
+      "credit_id": "52542286760ee31328001a8b",
+      "name": "Thomas Schnauz",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 29779,
+      "credit_id": "52542280760ee31328001325",
+      "name": "Michelle MacLaren",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 1,
+      "profile_path": null
+    }
+  ],
+  "episode_number": 10,
+  "guest_stars": [
+    {
+      "id": 1077794,
+      "name": "Pedro García",
+      "credit_id": "5278133f760ee35e8e22b180",
+      "character": "Mariano",
+      "order": 165,
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 51036,
+      "name": "Louis Ferreira",
+      "credit_id": "5277fe02760ee331cb02f9f3",
+      "character": "Declan",
+      "order": 165,
+      "gender": 2,
+      "profile_path": "/7xUTd7N6XbB3uWvob12qpmGzPzA.jpg"
+    },
+    {
+      "id": 223395,
+      "name": "Morse Bicknell",
+      "credit_id": "5277fe8e760ee331ce03390f",
+      "character": "Declan's Driver",
+      "order": 165,
+      "gender": 0,
+      "profile_path": "/14z7m7PpgLpNWN5EShCmKmm12zb.jpg"
+    },
+    {
+      "id": 191132,
+      "name": "Mark Vasconcellos",
+      "credit_id": "52782a7c760ee375d40245c0",
+      "character": "Jack's Henchman",
+      "order": 166,
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 84754,
+      "name": "Gonzalo Menendez",
+      "credit_id": "5276f551760ee34f980c7576",
+      "character": "Detective Kalanchoe",
+      "order": 167,
+      "gender": 2,
+      "profile_path": "/nRDNqfwJLN1y7DV91fiscHlNCEt.jpg"
+    },
+    {
+      "id": 20496,
+      "name": "Jason Douglas",
+      "credit_id": "5276f5c9760ee34ca70c6628",
+      "character": "Detective Munn",
+      "order": 168,
+      "gender": 0,
+      "profile_path": "/9vvygaziqPt23AafWHJY8TlUK8d.jpg"
+    },
+    {
+      "id": 109708,
+      "name": "Bill Burr",
+      "credit_id": "52765756760ee3603601643b",
+      "character": "Kuby",
+      "order": 168,
+      "gender": 2,
+      "profile_path": "/cyFQA495CDNwKc8UeIz9qwiGpAH.jpg"
+    },
+    {
+      "id": 564348,
+      "name": "Lavell Crawford",
+      "credit_id": "52763ec8760ee35a9a0f7511",
+      "character": "Huell",
+      "order": 171,
+      "gender": 0,
+      "profile_path": "/dXAb3xJ9rXGNxCSvQIjWkMbfHpW.jpg"
+    },
+    {
+      "id": 61535,
+      "name": "Steven Michael Quezada",
+      "credit_id": "5271b489760ee35b3e0881a7",
+      "character": "Steven Gomez",
+      "order": 173,
+      "gender": 2,
+      "profile_path": "/4BRo6oc26kePVYxgNzYwUrDagVO.jpg"
+    },
+    {
+      "id": 1268114,
+      "name": "Patrick Sane",
+      "credit_id": "527811bc760ee35e8e226e09",
+      "character": "Frankie",
+      "order": 182,
+      "gender": 0,
+      "profile_path": "/AnT9tInB0UNpZszdUiT5wT1AzpI.jpg"
+    },
+    {
+      "id": 42279,
+      "name": "Laura Fraser",
+      "credit_id": "5277018a760ee3215f0120a4",
+      "character": "Lydia Rodarte-Quayle",
+      "order": 182,
+      "gender": 1,
+      "profile_path": "/hOgkyPtP5WOjcQjc7RmmKJl3OGE.jpg"
+    },
+    {
+      "id": 88124,
+      "name": "Jesse Plemons",
+      "credit_id": "5277f086760ee33970368804",
+      "character": "Todd",
+      "order": 182,
+      "gender": 2,
+      "profile_path": "/edKyn7RDsuM6dJ7r9QMbb5ourmT.jpg"
+    },
+    {
+      "id": 2234,
+      "name": "Michael Bowen",
+      "credit_id": "52780156760ee3397038de79",
+      "character": "Uncle Jack",
+      "order": 182,
+      "gender": 2,
+      "profile_path": "/vRksdXlhcjOMFRD3szytf74am1f.jpg"
+    },
+    {
+      "id": 114000,
+      "name": "Kevin Rankin",
+      "credit_id": "527801a9760ee331ce03af8a",
+      "character": "Kenny",
+      "order": 182,
+      "gender": 2,
+      "profile_path": "/fOW5R6BSgRvMrt2R7KAxSk7L4H2.jpg"
+    },
+    {
+      "id": 1105706,
+      "name": "Tait Fletcher",
+      "credit_id": "52782a42760ee375d4023968",
+      "character": "Lester",
+      "order": 182,
+      "gender": 2,
+      "profile_path": "/zAVsHT2GBLPaQ4RpTopnHvIrCbv.jpg"
+    }
+  ],
+  "name": "Enterrado",
+  "overview": "Enquanto o passado de Skyler vem à tona, Walt tenta encobrir seus próprios rastros e Jesse tenta lidar com o sentimento de culpa.",
+  "id": 62156,
+  "production_code": "",
+  "season_number": 5,
+  "still_path": "/b0aRvTXslQgJpCmmcmoYqS9MsIB.jpg",
+  "vote_average": 8.519,
+  "vote_count": 54
+}

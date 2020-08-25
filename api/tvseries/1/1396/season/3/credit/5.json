@@ -1,0 +1,189 @@
+{
+  "cast": [
+    {
+      "character": "Walter White",
+      "credit_id": "52542282760ee313280017f9",
+      "gender": 2,
+      "id": 17419,
+      "name": "Bryan Cranston",
+      "order": 0,
+      "profile_path": "/7Jahy5LZX2Fo8fGJltMreAI49hC.jpg"
+    },
+    {
+      "character": "Jesse Pinkman",
+      "credit_id": "52542282760ee31328001845",
+      "gender": 2,
+      "id": 84497,
+      "name": "Aaron Paul",
+      "order": 1,
+      "profile_path": "/u8UdsB9yenM4uHEjmce4nkBn48X.jpg"
+    },
+    {
+      "character": "Skyler White",
+      "credit_id": "52542282760ee3132800181b",
+      "gender": 1,
+      "id": 134531,
+      "name": "Anna Gunn",
+      "order": 2,
+      "profile_path": "/adppyeu1a4REN3khtgmXusrapFi.jpg"
+    },
+    {
+      "character": "Hank Schrader",
+      "credit_id": "52542283760ee3132800187b",
+      "gender": 2,
+      "id": 14329,
+      "name": "Dean Norris",
+      "order": 3,
+      "profile_path": "/fXbHgZxCEclcTxV8MpeBXhe2OJS.jpg"
+    },
+    {
+      "character": "Marie Schrader",
+      "credit_id": "52542283760ee31328001891",
+      "gender": 1,
+      "id": 1217934,
+      "name": "Betsy Brandt",
+      "order": 4,
+      "profile_path": "/zmhhPmXnwjSzVyoTVL93i1EkLRK.jpg"
+    },
+    {
+      "character": "Walter White Jr.",
+      "credit_id": "52542284760ee313280018a9",
+      "gender": 2,
+      "id": 209674,
+      "name": "RJ Mitte",
+      "order": 5,
+      "profile_path": "/aG6NYV2EgzBFLRIl7vvbtd7go1j.jpg"
+    },
+    {
+      "character": "Saul Goodman",
+      "credit_id": "5271b180760ee35afc09bb8d",
+      "gender": 2,
+      "id": 59410,
+      "name": "Bob Odenkirk",
+      "order": 6,
+      "profile_path": "/nJLcRRqq9JTQTgVYrFn7vPDgAsK.jpg"
+    },
+    {
+      "character": "Mike Ehrmantraut",
+      "credit_id": "5271b1e6760ee35af60941ad",
+      "gender": 2,
+      "id": 783,
+      "name": "Jonathan Banks",
+      "order": 7,
+      "profile_path": "/va6APAzwv68YxvYQkB3lHhpccCi.jpg"
+    },
+    {
+      "character": "Gustavo \"Gus\" Fring",
+      "credit_id": "5271b1a7760ee35afc09c4e5",
+      "gender": 2,
+      "id": 4808,
+      "name": "Giancarlo Esposito",
+      "order": 71,
+      "profile_path": "/9TnBZoJchBufSi0WaooA3ZuhrGp.jpg"
+    }
+  ],
+  "crew": [
+    {
+      "id": 212408,
+      "credit_id": "5274fa85760ee343c00f6cb7",
+      "name": "Johan Renck",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": "/pkPO6RhVFcKDiEUtbHjTkq4JjYi.jpg"
+    },
+    {
+      "id": 1223198,
+      "credit_id": "52542287760ee31328001ad1",
+      "name": "Moira Walley-Beckett",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 1,
+      "profile_path": "/nysIQz4lEMqar1Bd3gBaCzuwSde.jpg"
+    },
+    {
+      "id": 52034,
+      "credit_id": "53998110c3a3681d02001489",
+      "name": "Michael Slovis",
+      "department": "Camera",
+      "job": "Director of Photography",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1123195,
+      "credit_id": "52b705e619c2955a1f0c895b",
+      "name": "Skip MacDonald",
+      "department": "Editing",
+      "job": "Editor",
+      "gender": 0,
+      "profile_path": null
+    }
+  ],
+  "guest_stars": [
+    {
+      "id": 167759,
+      "name": "Carole Gutierrez",
+      "credit_id": "52762e0a760ee36b3709ce03",
+      "character": "Mrs. Ortega",
+      "order": 80,
+      "gender": 1,
+      "profile_path": null
+    },
+    {
+      "id": 156990,
+      "name": "Julie Dretzin",
+      "credit_id": "52754a72760ee33556019f36",
+      "character": "Pamela",
+      "order": 80,
+      "gender": 1,
+      "profile_path": "/fba0rgwlp1iwDdmuLU0PiCOdi4R.jpg"
+    },
+    {
+      "id": 163839,
+      "name": "Michael McCormick",
+      "credit_id": "52762f65760ee3354c281454",
+      "character": "Pa Kettle",
+      "order": 81,
+      "gender": 2,
+      "profile_path": "/pU1eUrtD2SNt3PDz8jvHawOxxSb.jpg"
+    },
+    {
+      "id": 138266,
+      "name": "Kathy Rose Center",
+      "credit_id": "52762f9f760ee35a9d0d7351",
+      "character": "Ma Kettle",
+      "order": 82,
+      "gender": 0,
+      "profile_path": "/qp2kddgWdNBBDHqpIvArE6qwvDe.jpg"
+    },
+    {
+      "id": 20379,
+      "name": "Christopher Cousins",
+      "credit_id": "527504f6760ee347c912980c",
+      "character": "Ted Beneke",
+      "order": 136,
+      "gender": 2,
+      "profile_path": "/9fmoeZLGbJfiYU6mIbrUkjF9wsR.jpg"
+    },
+    {
+      "id": 61535,
+      "name": "Steven Michael Quezada",
+      "credit_id": "5271b489760ee35b3e0881a7",
+      "character": "Steven Gomez",
+      "order": 173,
+      "gender": 2,
+      "profile_path": "/4BRo6oc26kePVYxgNzYwUrDagVO.jpg"
+    },
+    {
+      "id": 82945,
+      "name": "Charles Baker",
+      "credit_id": "52744007760ee356f6076365",
+      "character": "Skinny Pete",
+      "order": 182,
+      "gender": 2,
+      "profile_path": "/yuRBqdgCh4OgTsfl2Xs4mC6PpnZ.jpg"
+    }
+  ],
+  "id": 62109
+}

@@ -1,0 +1,180 @@
+{
+  "cast": [
+    {
+      "character": "Walter White",
+      "credit_id": "52542282760ee313280017f9",
+      "gender": 2,
+      "id": 17419,
+      "name": "Bryan Cranston",
+      "order": 0,
+      "profile_path": "/7Jahy5LZX2Fo8fGJltMreAI49hC.jpg"
+    },
+    {
+      "character": "Skyler White",
+      "credit_id": "52542282760ee3132800181b",
+      "gender": 1,
+      "id": 134531,
+      "name": "Anna Gunn",
+      "order": 2,
+      "profile_path": "/adppyeu1a4REN3khtgmXusrapFi.jpg"
+    },
+    {
+      "character": "Jesse Pinkman",
+      "credit_id": "52542282760ee31328001845",
+      "gender": 2,
+      "id": 84497,
+      "name": "Aaron Paul",
+      "order": 1,
+      "profile_path": "/u8UdsB9yenM4uHEjmce4nkBn48X.jpg"
+    },
+    {
+      "character": "Hank Schrader",
+      "credit_id": "52542283760ee3132800187b",
+      "gender": 2,
+      "id": 14329,
+      "name": "Dean Norris",
+      "order": 3,
+      "profile_path": "/fXbHgZxCEclcTxV8MpeBXhe2OJS.jpg"
+    },
+    {
+      "character": "Marie Schrader",
+      "credit_id": "52542283760ee31328001891",
+      "gender": 1,
+      "id": 1217934,
+      "name": "Betsy Brandt",
+      "order": 4,
+      "profile_path": "/zmhhPmXnwjSzVyoTVL93i1EkLRK.jpg"
+    },
+    {
+      "character": "Walter White Jr.",
+      "credit_id": "52542284760ee313280018a9",
+      "gender": 2,
+      "id": 209674,
+      "name": "RJ Mitte",
+      "order": 5,
+      "profile_path": "/aG6NYV2EgzBFLRIl7vvbtd7go1j.jpg"
+    }
+  ],
+  "crew": [
+    {
+      "id": 212408,
+      "credit_id": "5274fa85760ee343c00f6cb7",
+      "name": "Johan Renck",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": "/pkPO6RhVFcKDiEUtbHjTkq4JjYi.jpg"
+    },
+    {
+      "id": 1223198,
+      "credit_id": "52542287760ee31328001ad1",
+      "name": "Moira Walley-Beckett",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 1,
+      "profile_path": "/nysIQz4lEMqar1Bd3gBaCzuwSde.jpg"
+    }
+  ],
+  "guest_stars": [
+    {
+      "id": 78080,
+      "name": "Krysten Ritter",
+      "credit_id": "5254227e760ee31328001037",
+      "character": "Jane Margolis",
+      "order": 2,
+      "gender": 1,
+      "profile_path": "/bII7CIrRAc7JdDSfG8oDIbRPQCx.jpg"
+    },
+    {
+      "id": 210057,
+      "name": "Judith Rane",
+      "credit_id": "52744834760ee37c3e010cc7",
+      "character": "Office Manager",
+      "order": 61,
+      "gender": 0,
+      "profile_path": "/yY8fuyFCaXSjBRtDXaF178AwVqq.jpg"
+    },
+    {
+      "id": 61566,
+      "name": "Lawrence Varnado",
+      "credit_id": "5274f786760ee347c91056ff",
+      "character": "Agent Buddy",
+      "order": 61,
+      "gender": 2,
+      "profile_path": "/kb2N69SDXXAEfIlhOi3ULrUic81.jpg"
+    },
+    {
+      "id": 1237876,
+      "name": "David Ury",
+      "credit_id": "5274ef24760ee343700ef4dd",
+      "character": "Spooge",
+      "order": 62,
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 46814,
+      "name": "Dale Dickey",
+      "credit_id": "5274ee2e760ee345a90f7240",
+      "character": "Spooge's Woman",
+      "order": 62,
+      "gender": 1,
+      "profile_path": "/588WXHw17JYi2rAqIVQXzgYENu3.jpg"
+    },
+    {
+      "id": 79211,
+      "name": "David House",
+      "credit_id": "5271b65b760ee35b0c090f74",
+      "character": "Dr. Delcavoli",
+      "order": 71,
+      "gender": 0,
+      "profile_path": "/t67HnLsCMecFLMdhtJQbkiQiyXq.jpg"
+    },
+    {
+      "id": 76537,
+      "name": "Tom Kiesche",
+      "credit_id": "52745042760ee3570909ac98",
+      "character": "Clovis",
+      "order": 84,
+      "gender": 2,
+      "profile_path": "/wYYHv0ThAV12wmwM0dQve68614S.jpg"
+    },
+    {
+      "id": 9291,
+      "name": "Michael Shamus Wiles",
+      "credit_id": "5271b622760ee35b0709869c",
+      "character": "ASAC George Merkert",
+      "order": 138,
+      "gender": 2,
+      "profile_path": "/niY4gYqAUjmnU4KRiguxpsKliWA.jpg"
+    },
+    {
+      "id": 61535,
+      "name": "Steven Michael Quezada",
+      "credit_id": "5271b489760ee35b3e0881a7",
+      "character": "Steven Gomez",
+      "order": 173,
+      "gender": 2,
+      "profile_path": "/4BRo6oc26kePVYxgNzYwUrDagVO.jpg"
+    },
+    {
+      "id": 191202,
+      "name": "Matt Jones",
+      "credit_id": "52744535760ee3572209100e",
+      "character": "Badger",
+      "order": 182,
+      "gender": 2,
+      "profile_path": "/x13vFDaJHY1CxNvSPWujYe12bMc.jpg"
+    },
+    {
+      "id": 82945,
+      "name": "Charles Baker",
+      "credit_id": "52744007760ee356f6076365",
+      "character": "Skinny Pete",
+      "order": 182,
+      "gender": 2,
+      "profile_path": "/yuRBqdgCh4OgTsfl2Xs4mC6PpnZ.jpg"
+    }
+  ],
+  "id": 62096
+}

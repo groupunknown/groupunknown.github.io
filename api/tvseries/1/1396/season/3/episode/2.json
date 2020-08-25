@@ -1,0 +1,124 @@
+{
+  "air_date": "2010-03-28",
+  "crew": [
+    {
+      "id": 111338,
+      "credit_id": "52542275760ee31328000725",
+      "name": "Adam Bernstein",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 52034,
+      "credit_id": "53998110c3a3681d02001489",
+      "name": "Michael Slovis",
+      "department": "Camera",
+      "job": "Director of Photography",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1280074,
+      "credit_id": "52b7051619c29533d00e8c79",
+      "name": "Kelley Dixon",
+      "department": "Editing",
+      "job": "Editor",
+      "gender": 1,
+      "profile_path": "/gPlAQoRbQZp4ZYAY4GsBPpznolt.jpg"
+    },
+    {
+      "id": 24951,
+      "credit_id": "52542286760ee31328001ab9",
+      "name": "Peter Gould",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 2,
+      "profile_path": null
+    }
+  ],
+  "episode_number": 2,
+  "guest_stars": [
+    {
+      "id": 41249,
+      "name": "Tess Harper",
+      "credit_id": "52542277760ee31328000a61",
+      "character": "Mrs. Pinkman",
+      "order": 75,
+      "gender": 1,
+      "profile_path": "/8Z770Kk13MK1NP7skWmTxvRGx3V.jpg"
+    },
+    {
+      "id": 95195,
+      "name": "Michael Bofshever",
+      "credit_id": "527440ce760ee3570906ada3",
+      "character": "Mr. Pinkman",
+      "order": 75,
+      "gender": 2,
+      "profile_path": "/v0StOMYNP2HIGjfGBQJIcn6OcBY.jpg"
+    },
+    {
+      "id": 1217972,
+      "name": "Dan Desmond",
+      "credit_id": "5274e93e760ee37c93080336",
+      "character": "Mr. Gardiner",
+      "order": 75,
+      "gender": 2,
+      "profile_path": "/pPxBi3J0N7UBGv7N8gKowUunjGQ.jpg"
+    },
+    {
+      "id": 945491,
+      "name": "Luis Moncada",
+      "credit_id": "52754b23760ee3353f017890",
+      "character": "Marco Salamanca",
+      "order": 87,
+      "gender": 2,
+      "profile_path": "/t3H7bTAu3lYKvHAEYtevOd91kzx.jpg"
+    },
+    {
+      "id": 582668,
+      "name": "Jeremiah Bitsui",
+      "credit_id": "5275464a760ee33556010f2a",
+      "character": "Victor",
+      "order": 101,
+      "gender": 0,
+      "profile_path": "/jB4u8jekprqQeB0xhdB4YSgO8FG.jpg"
+    },
+    {
+      "id": 1173,
+      "name": "Mark Margolis",
+      "credit_id": "5254227b760ee31328000e52",
+      "character": "Tio Salamanca",
+      "order": 132,
+      "gender": 2,
+      "profile_path": "/rT5TYJIPLBkTqsrUs00AixGeaMM.jpg"
+    },
+    {
+      "id": 20379,
+      "name": "Christopher Cousins",
+      "credit_id": "527504f6760ee347c912980c",
+      "character": "Ted Beneke",
+      "order": 136,
+      "gender": 2,
+      "profile_path": "/9fmoeZLGbJfiYU6mIbrUkjF9wsR.jpg"
+    },
+    {
+      "id": 61535,
+      "name": "Steven Michael Quezada",
+      "credit_id": "5271b489760ee35b3e0881a7",
+      "character": "Steven Gomez",
+      "order": 173,
+      "gender": 2,
+      "profile_path": "/4BRo6oc26kePVYxgNzYwUrDagVO.jpg"
+    }
+  ],
+  "name": "Cavalo sem nome",
+  "overview": "Quando sabe que Skyler está determinada a pedir o divórcio, Walt, inconsciente, cai na mira de um par de traficantes mexicanos com sede de vingança.",
+  "id": 62106,
+  "production_code": "",
+  "season_number": 3,
+  "still_path": "/h3k5PoJ0RuKBH7OLnT8IbcFWz80.jpg",
+  "vote_average": 8.053,
+  "vote_count": 57
+}

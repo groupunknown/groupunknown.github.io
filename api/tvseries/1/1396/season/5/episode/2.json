@@ -1,0 +1,97 @@
+{
+  "air_date": "2012-07-22",
+  "crew": [
+    {
+      "id": 66633,
+      "credit_id": "52542275760ee313280006ce",
+      "name": "Vince Gilligan",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 2,
+      "profile_path": "/uFh3OrBvkwKSU3N5y0XnXOhqBJz.jpg"
+    },
+    {
+      "id": 29779,
+      "credit_id": "52542280760ee31328001325",
+      "name": "Michelle MacLaren",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 1,
+      "profile_path": null
+    }
+  ],
+  "episode_number": 2,
+  "guest_stars": [
+    {
+      "id": 9291,
+      "name": "Michael Shamus Wiles",
+      "credit_id": "5271b622760ee35b0709869c",
+      "character": "ASAC George Merkert",
+      "order": 138,
+      "gender": 2,
+      "profile_path": "/niY4gYqAUjmnU4KRiguxpsKliWA.jpg"
+    },
+    {
+      "id": 6701,
+      "name": "Norbert Weisser",
+      "credit_id": "527702a7760ee3215f01527d",
+      "character": "Peter Schuler",
+      "order": 138,
+      "gender": 2,
+      "profile_path": "/m5vgCCT8vlp1yTS9BEbLQTFfrmx.jpg"
+    },
+    {
+      "id": 1219524,
+      "name": "Wolf Muser",
+      "credit_id": "5277038c760ee34f980e4bd6",
+      "character": "Herr Herzog",
+      "order": 139,
+      "gender": 2,
+      "profile_path": "/pjtffZMshARfyYvFdFJrPqykkXl.jpg"
+    },
+    {
+      "id": 121277,
+      "name": "Norma Maldonado",
+      "credit_id": "52770445760ee339701307f0",
+      "character": "Delores",
+      "order": 140,
+      "gender": 1,
+      "profile_path": "/vu6EY6TSXofu0Xx1Mganr22T7ry.jpg"
+    },
+    {
+      "id": 239997,
+      "name": "Debrianna Mansini",
+      "credit_id": "5277046e760ee3215f018e69",
+      "character": "Fran",
+      "order": 141,
+      "gender": 1,
+      "profile_path": null
+    },
+    {
+      "id": 61535,
+      "name": "Steven Michael Quezada",
+      "credit_id": "5271b489760ee35b3e0881a7",
+      "character": "Steven Gomez",
+      "order": 173,
+      "gender": 2,
+      "profile_path": "/4BRo6oc26kePVYxgNzYwUrDagVO.jpg"
+    },
+    {
+      "id": 42279,
+      "name": "Laura Fraser",
+      "credit_id": "5277018a760ee3215f0120a4",
+      "character": "Lydia Rodarte-Quayle",
+      "order": 182,
+      "gender": 1,
+      "profile_path": "/hOgkyPtP5WOjcQjc7RmmKJl3OGE.jpg"
+    }
+  ],
+  "name": "Madrigal",
+  "overview": "Walt e Jesse decidem procurar um novo parceiro para a próxima empreitada e a polícia investiga várias pistas na tentativa de descobrir algo.",
+  "id": 62148,
+  "production_code": "",
+  "season_number": 5,
+  "still_path": "/9WIzJqqUthdASBRE1Ts8ymrDhIv.jpg",
+  "vote_average": 7.955,
+  "vote_count": 55
+}

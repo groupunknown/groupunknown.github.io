@@ -1,0 +1,106 @@
+{
+  "air_date": "2012-08-12",
+  "crew": [
+    {
+      "id": 1223193,
+      "credit_id": "5277f415760ee331cb01760b",
+      "name": "George Mastras",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1223193,
+      "credit_id": "52542279760ee31328000b45",
+      "name": "George Mastras",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 2,
+      "profile_path": null
+    }
+  ],
+  "episode_number": 5,
+  "guest_stars": [
+    {
+      "id": 79079,
+      "name": "Jamie McShane",
+      "credit_id": "5277f521760ee331cb019d13",
+      "character": "Conductor",
+      "order": 147,
+      "gender": 2,
+      "profile_path": "/wojvRZMpAwytyoFTMFOpvZ26qJq.jpg"
+    },
+    {
+      "id": 84955,
+      "name": "Myk Watford",
+      "credit_id": "5277f920760ee3397037ab99",
+      "character": "Engineer",
+      "order": 148,
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1007881,
+      "name": "Miguel Martinez",
+      "credit_id": "5277f9a8760ee35ba20de492",
+      "character": "Fernando",
+      "order": 150,
+      "gender": 0,
+      "profile_path": "/3khjt3XRFhqFJUFdeQMYtQbLpkn.jpg"
+    },
+    {
+      "id": 1194992,
+      "name": "Ryan Begay",
+      "credit_id": "5277faee760ee331ce02b84e",
+      "character": "Good Samaritan",
+      "order": 150,
+      "gender": 2,
+      "profile_path": "/oIzcJxPs0gcW5Ne6beuwaXKTZrJ.jpg"
+    },
+    {
+      "id": 109708,
+      "name": "Bill Burr",
+      "credit_id": "52765756760ee3603601643b",
+      "character": "Kuby",
+      "order": 168,
+      "gender": 2,
+      "profile_path": "/cyFQA495CDNwKc8UeIz9qwiGpAH.jpg"
+    },
+    {
+      "id": 61535,
+      "name": "Steven Michael Quezada",
+      "credit_id": "5271b489760ee35b3e0881a7",
+      "character": "Steven Gomez",
+      "order": 173,
+      "gender": 2,
+      "profile_path": "/4BRo6oc26kePVYxgNzYwUrDagVO.jpg"
+    },
+    {
+      "id": 42279,
+      "name": "Laura Fraser",
+      "credit_id": "5277018a760ee3215f0120a4",
+      "character": "Lydia Rodarte-Quayle",
+      "order": 182,
+      "gender": 1,
+      "profile_path": "/hOgkyPtP5WOjcQjc7RmmKJl3OGE.jpg"
+    },
+    {
+      "id": 88124,
+      "name": "Jesse Plemons",
+      "credit_id": "5277f086760ee33970368804",
+      "character": "Todd",
+      "order": 182,
+      "gender": 2,
+      "profile_path": "/edKyn7RDsuM6dJ7r9QMbb5ourmT.jpg"
+    }
+  ],
+  "name": "Evoluir",
+  "overview": "Mike e Lydia estudam uma maneira de transportar a metilamina para a nova operação e Walt e Jesse tentam bolar um plano que não estrague seu disfarce.",
+  "id": 62151,
+  "production_code": "",
+  "season_number": 5,
+  "still_path": "/plpcwk5rmet1G0mL3z3HkeKl5JX.jpg",
+  "vote_average": 8.737,
+  "vote_count": 57
+}

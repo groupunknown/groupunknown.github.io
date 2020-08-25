@@ -1,0 +1,133 @@
+{
+  "air_date": "2010-05-30",
+  "crew": [
+    {
+      "id": 29924,
+      "credit_id": "5254227f760ee313280011f5",
+      "name": "John Shiban",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 103009,
+      "credit_id": "52542286760ee31328001a8b",
+      "name": "Thomas Schnauz",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 29779,
+      "credit_id": "52542280760ee31328001325",
+      "name": "Michelle MacLaren",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 1,
+      "profile_path": null
+    },
+    {
+      "id": 52034,
+      "credit_id": "53998110c3a3681d02001489",
+      "name": "Michael Slovis",
+      "department": "Camera",
+      "job": "Director of Photography",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1123195,
+      "credit_id": "52b705e619c2955a1f0c895b",
+      "name": "Skip MacDonald",
+      "department": "Editing",
+      "job": "Editor",
+      "gender": 0,
+      "profile_path": null
+    }
+  ],
+  "episode_number": 11,
+  "guest_stars": [
+    {
+      "id": 78080,
+      "name": "Krysten Ritter",
+      "credit_id": "5254227e760ee31328001037",
+      "character": "Jane Margolis",
+      "order": 2,
+      "gender": 1,
+      "profile_path": "/bII7CIrRAc7JdDSfG8oDIbRPQCx.jpg"
+    },
+    {
+      "id": 1123871,
+      "name": "Mike Seal",
+      "credit_id": "52754578760ee33562013f99",
+      "character": "Rival Dealer #1",
+      "order": 96,
+      "gender": 2,
+      "profile_path": "/qUja8e2k4XMWWV3k4ocMCZb4HBl.jpg"
+    },
+    {
+      "id": 1223197,
+      "name": "Marius Stan",
+      "credit_id": "5272587a760ee3045009ddec",
+      "character": "Bogdan Wolynetz",
+      "order": 112,
+      "gender": 0,
+      "profile_path": "/wSIrKmUXbohaRGORr0CTTTSGctK.jpg"
+    },
+    {
+      "id": 57167,
+      "name": "Jere Burns",
+      "credit_id": "525423ca760ee3132800202b",
+      "character": "Group Leader",
+      "order": 120,
+      "gender": 2,
+      "profile_path": "/ok265IAb5lNPmI3Ulb4KRC5nwjK.jpg"
+    },
+    {
+      "id": 927801,
+      "name": "Virginia Montero",
+      "credit_id": "52763984760ee33e44026131",
+      "character": "Grandma",
+      "order": 131,
+      "gender": 1,
+      "profile_path": "/d50XON0JDKCFpJAbpF1GsttrQaO.jpg"
+    },
+    {
+      "id": 211474,
+      "name": "Emily Rios",
+      "credit_id": "5276391d760ee33e440250f4",
+      "character": "Andrea Cantillo",
+      "order": 176,
+      "gender": 1,
+      "profile_path": "/hwJd91tvfkscI8ViEkaqkW3NVnG.jpg"
+    },
+    {
+      "id": 191202,
+      "name": "Matt Jones",
+      "credit_id": "52744535760ee3572209100e",
+      "character": "Badger",
+      "order": 182,
+      "gender": 2,
+      "profile_path": "/x13vFDaJHY1CxNvSPWujYe12bMc.jpg"
+    },
+    {
+      "id": 82945,
+      "name": "Charles Baker",
+      "credit_id": "52744007760ee356f6076365",
+      "character": "Skinny Pete",
+      "order": 182,
+      "gender": 2,
+      "profile_path": "/yuRBqdgCh4OgTsfl2Xs4mC6PpnZ.jpg"
+    }
+  ],
+  "name": "Abiquiu",
+  "overview": "Hank está descontente com a recuperação. Skyler questiona esquema de lavagem de dinheiro. Jesse se apaixona por paciente de reabilitação ligada à morte do amigo Combo.",
+  "id": 62115,
+  "production_code": "",
+  "season_number": 3,
+  "still_path": "/llw7fwOmOMs6OSqwK96XrPPQZD3.jpg",
+  "vote_average": 7.708,
+  "vote_count": 53
+}

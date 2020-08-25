@@ -1,0 +1,142 @@
+{
+  "air_date": "2010-04-25",
+  "crew": [
+    {
+      "id": 29924,
+      "credit_id": "5254227f760ee313280011f5",
+      "name": "John Shiban",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 29924,
+      "credit_id": "525423cb760ee3132800227c",
+      "name": "John Shiban",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 52034,
+      "credit_id": "53998110c3a3681d02001489",
+      "name": "Michael Slovis",
+      "department": "Camera",
+      "job": "Director of Photography",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1280074,
+      "credit_id": "52b7051619c29533d00e8c79",
+      "name": "Kelley Dixon",
+      "department": "Editing",
+      "job": "Editor",
+      "gender": 1,
+      "profile_path": "/gPlAQoRbQZp4ZYAY4GsBPpznolt.jpg"
+    }
+  ],
+  "episode_number": 6,
+  "guest_stars": [
+    {
+      "id": 76537,
+      "name": "Tom Kiesche",
+      "credit_id": "52745042760ee3570909ac98",
+      "character": "Clovis",
+      "order": 84,
+      "gender": 2,
+      "profile_path": "/wYYHv0ThAV12wmwM0dQve68614S.jpg"
+    },
+    {
+      "id": 210697,
+      "name": "Frank Bond",
+      "credit_id": "527631bb760ee3354c287607",
+      "character": "Realtor",
+      "order": 85,
+      "gender": 2,
+      "profile_path": "/5EyqkOeNDzksCPgvZCwvPyujPbz.jpg"
+    },
+    {
+      "id": 223397,
+      "name": "Jiji Hise",
+      "credit_id": "52763214760ee36b370aa6a1",
+      "character": "Mother",
+      "order": 86,
+      "gender": 0,
+      "profile_path": "/ttGiAfKXVjNNdKfNhFxxCibQ1QJ.jpg"
+    },
+    {
+      "id": 945491,
+      "name": "Luis Moncada",
+      "credit_id": "52754b23760ee3353f017890",
+      "character": "Marco Salamanca",
+      "order": 87,
+      "gender": 2,
+      "profile_path": "/t3H7bTAu3lYKvHAEYtevOd91kzx.jpg"
+    },
+    {
+      "id": 82167,
+      "name": "David Costabile",
+      "credit_id": "527630ad760ee3353f281211",
+      "character": "Gale Boetticher",
+      "order": 120,
+      "gender": 2,
+      "profile_path": "/nLlPiOgJuyONZBlbuqxzJNUpgo7.jpg"
+    },
+    {
+      "id": 11519,
+      "name": "Larry Hankin",
+      "credit_id": "5276312a760ee33e4400b8c7",
+      "character": "Old Joe",
+      "order": 136,
+      "gender": 2,
+      "profile_path": "/2uR8SZ9geiSQOpBhKrerh9qY7CX.jpg"
+    },
+    {
+      "id": 9291,
+      "name": "Michael Shamus Wiles",
+      "credit_id": "5271b622760ee35b0709869c",
+      "character": "ASAC George Merkert",
+      "order": 138,
+      "gender": 2,
+      "profile_path": "/niY4gYqAUjmnU4KRiguxpsKliWA.jpg"
+    },
+    {
+      "id": 147085,
+      "name": "Tina Parker",
+      "credit_id": "52753cc8760ee3157002006b",
+      "character": "Francesca",
+      "order": 168,
+      "gender": 1,
+      "profile_path": "/5xN19jxFb7MQM8dvnqfaeAdyMD2.jpg"
+    },
+    {
+      "id": 191202,
+      "name": "Matt Jones",
+      "credit_id": "52744535760ee3572209100e",
+      "character": "Badger",
+      "order": 182,
+      "gender": 2,
+      "profile_path": "/x13vFDaJHY1CxNvSPWujYe12bMc.jpg"
+    },
+    {
+      "id": 82945,
+      "name": "Charles Baker",
+      "credit_id": "52744007760ee356f6076365",
+      "character": "Skinny Pete",
+      "order": 182,
+      "gender": 2,
+      "profile_path": "/yuRBqdgCh4OgTsfl2Xs4mC6PpnZ.jpg"
+    }
+  ],
+  "name": "Ao pôr do sol",
+  "overview": "Enquanto Walt volta a trabalhar no laboratório de metanfetamina de Gus, a descoberta do antigo RV força ele e Jesse a agirem rápido para não serem presos por Hank.",
+  "id": 62110,
+  "production_code": "",
+  "season_number": 3,
+  "still_path": "/sl5zRr0u0kYcIyCdQjOTsexq4bL.jpg",
+  "vote_average": 8.417,
+  "vote_count": 60
+}

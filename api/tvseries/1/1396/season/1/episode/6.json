@@ -1,0 +1,151 @@
+{
+  "air_date": "2008-03-02",
+  "crew": [
+    {
+      "id": 1223193,
+      "credit_id": "52542279760ee31328000b45",
+      "name": "George Mastras",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 18320,
+      "credit_id": "52542279760ee31328000b61",
+      "name": "Bronwen Hughes",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 1,
+      "profile_path": null
+    },
+    {
+      "id": 17948,
+      "credit_id": "52b7049c19c2953b63015013",
+      "name": "Reynaldo Villalobos",
+      "department": "Camera",
+      "job": "Director of Photography",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1123195,
+      "credit_id": "52b705e619c2955a1f0c895b",
+      "name": "Skip MacDonald",
+      "department": "Editing",
+      "job": "Editor",
+      "gender": 0,
+      "profile_path": null
+    }
+  ],
+  "episode_number": 6,
+  "guest_stars": [
+    {
+      "id": 58650,
+      "name": "Raymond Cruz",
+      "credit_id": "5254227b760ee31328000cd6",
+      "character": "Tuco Salamanca",
+      "order": 44,
+      "gender": 2,
+      "profile_path": "/1a0GyTD2v2HSDUGlGf69IGKdFmJ.jpg"
+    },
+    {
+      "id": 210056,
+      "name": "Pierre Barrera",
+      "credit_id": "52744776760ee356ea0892f3",
+      "character": "Hugo Archuleta",
+      "order": 44,
+      "gender": 0,
+      "profile_path": "/4JHYsaULy3LwSHig94olNyuYkx5.jpg"
+    },
+    {
+      "id": 187505,
+      "name": "Vivian Nesbitt",
+      "credit_id": "527447f4760ee37c3e00f81f",
+      "character": "Mrs. Pope",
+      "order": 47,
+      "gender": 0,
+      "profile_path": "/9ox3VUolTMVCvHHsxkY2DfGPRFa.jpg"
+    },
+    {
+      "id": 1089016,
+      "name": "Seri DeYoung",
+      "credit_id": "52744908760ee35a690730ed",
+      "character": "Student",
+      "order": 49,
+      "gender": 1,
+      "profile_path": null
+    },
+    {
+      "id": 1221121,
+      "name": "Dennis Keiffer",
+      "credit_id": "52744a4a760ee35a69077c8c",
+      "character": "Lookout",
+      "order": 50,
+      "gender": 2,
+      "profile_path": "/bmLkNcO8emp17vTMKaRUBHYE15j.jpg"
+    },
+    {
+      "id": 53255,
+      "name": "Cesar Garcia",
+      "credit_id": "527447ca760ee356ea08e165",
+      "character": "Gonzo",
+      "order": 52,
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 1260529,
+      "name": "Jesus Jr.",
+      "credit_id": "527447b3760ee3571308a638",
+      "character": "No-Doze",
+      "order": 52,
+      "gender": 2,
+      "profile_path": "/g9FFHKY95LLALg7DuqeX6akAJSG.jpg"
+    },
+    {
+      "id": 210057,
+      "name": "Judith Rane",
+      "credit_id": "52744834760ee37c3e010cc7",
+      "character": "Office Manager",
+      "order": 61,
+      "gender": 0,
+      "profile_path": "/yY8fuyFCaXSjBRtDXaF178AwVqq.jpg"
+    },
+    {
+      "id": 61535,
+      "name": "Steven Michael Quezada",
+      "credit_id": "5271b489760ee35b3e0881a7",
+      "character": "Steven Gomez",
+      "order": 173,
+      "gender": 2,
+      "profile_path": "/4BRo6oc26kePVYxgNzYwUrDagVO.jpg"
+    },
+    {
+      "id": 115688,
+      "name": "Carmen Serano",
+      "credit_id": "52542273760ee31328000676",
+      "character": "Carmen Molina",
+      "order": 176,
+      "gender": 1,
+      "profile_path": "/nzJEe2UqvvMIBJZP1aeFEj4EunN.jpg"
+    },
+    {
+      "id": 82945,
+      "name": "Charles Baker",
+      "credit_id": "52744007760ee356f6076365",
+      "character": "Skinny Pete",
+      "order": 182,
+      "gender": 2,
+      "profile_path": "/yuRBqdgCh4OgTsfl2Xs4mC6PpnZ.jpg"
+    }
+  ],
+  "name": "Crazy Handful of Nothin'",
+  "overview": "Conforme os efeitos colaterais e os custos do seu tratamento aumentam rapidamente, Walt exige que Jesse encontre um grande comprador para suas drogas, deixando Jesse encrencado com um perigoso ex-presidiário.",
+  "id": 62090,
+  "production_code": "",
+  "season_number": 1,
+  "still_path": "/hyYwqbmcHn3fuxWE3h4IhZZbkU3.jpg",
+  "vote_average": 8.738,
+  "vote_count": 65
+}

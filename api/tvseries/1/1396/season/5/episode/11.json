@@ -1,0 +1,124 @@
+{
+  "air_date": "2013-08-25",
+  "crew": [
+    {
+      "id": 52034,
+      "credit_id": "525423cb760ee3132800238d",
+      "name": "Michael Slovis",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1223203,
+      "credit_id": "525423ce760ee3132800261a",
+      "name": "Gennifer Hutchison",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 1,
+      "profile_path": null
+    }
+  ],
+  "episode_number": 11,
+  "guest_stars": [
+    {
+      "id": 84754,
+      "name": "Gonzalo Menendez",
+      "credit_id": "5276f551760ee34f980c7576",
+      "character": "Detective Kalanchoe",
+      "order": 167,
+      "gender": 2,
+      "profile_path": "/nRDNqfwJLN1y7DV91fiscHlNCEt.jpg"
+    },
+    {
+      "id": 947609,
+      "name": "Guy Wilson",
+      "credit_id": "52782bd9760ee375d4028fff",
+      "character": "Trent",
+      "order": 167,
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 147085,
+      "name": "Tina Parker",
+      "credit_id": "52753cc8760ee3157002006b",
+      "character": "Francesca",
+      "order": 168,
+      "gender": 1,
+      "profile_path": "/5xN19jxFb7MQM8dvnqfaeAdyMD2.jpg"
+    },
+    {
+      "id": 20496,
+      "name": "Jason Douglas",
+      "credit_id": "5276f5c9760ee34ca70c6628",
+      "character": "Detective Munn",
+      "order": 168,
+      "gender": 0,
+      "profile_path": "/9vvygaziqPt23AafWHJY8TlUK8d.jpg"
+    },
+    {
+      "id": 564348,
+      "name": "Lavell Crawford",
+      "credit_id": "52763ec8760ee35a9a0f7511",
+      "character": "Huell",
+      "order": 171,
+      "gender": 0,
+      "profile_path": "/dXAb3xJ9rXGNxCSvQIjWkMbfHpW.jpg"
+    },
+    {
+      "id": 61535,
+      "name": "Steven Michael Quezada",
+      "credit_id": "5271b489760ee35b3e0881a7",
+      "character": "Steven Gomez",
+      "order": 173,
+      "gender": 2,
+      "profile_path": "/4BRo6oc26kePVYxgNzYwUrDagVO.jpg"
+    },
+    {
+      "id": 88124,
+      "name": "Jesse Plemons",
+      "credit_id": "5277f086760ee33970368804",
+      "character": "Todd",
+      "order": 182,
+      "gender": 2,
+      "profile_path": "/edKyn7RDsuM6dJ7r9QMbb5ourmT.jpg"
+    },
+    {
+      "id": 2234,
+      "name": "Michael Bowen",
+      "credit_id": "52780156760ee3397038de79",
+      "character": "Uncle Jack",
+      "order": 182,
+      "gender": 2,
+      "profile_path": "/vRksdXlhcjOMFRD3szytf74am1f.jpg"
+    },
+    {
+      "id": 114000,
+      "name": "Kevin Rankin",
+      "credit_id": "527801a9760ee331ce03af8a",
+      "character": "Kenny",
+      "order": 182,
+      "gender": 2,
+      "profile_path": "/fOW5R6BSgRvMrt2R7KAxSk7L4H2.jpg"
+    },
+    {
+      "id": 1313823,
+      "name": "Guy Wilson",
+      "credit_id": "5ef3bae59661fc003625f338",
+      "character": "Trent",
+      "order": 187,
+      "gender": 2,
+      "profile_path": "/qoBVJOg8yYo5UpZoyrAV0jhhl0n.jpg"
+    }
+  ],
+  "name": "Confissões",
+  "overview": "Jesse decide mudar de vida e Walt e Skyler tentam lidar com um problema inesperado.",
+  "id": 62159,
+  "production_code": "",
+  "season_number": 5,
+  "still_path": "/75lrTEzbUh4iZlMs0aN4mKisD4C.jpg",
+  "vote_average": 8.825,
+  "vote_count": 57
+}

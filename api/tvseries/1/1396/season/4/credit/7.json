@@ -1,0 +1,207 @@
+{
+  "cast": [
+    {
+      "character": "Walter White",
+      "credit_id": "52542282760ee313280017f9",
+      "gender": 2,
+      "id": 17419,
+      "name": "Bryan Cranston",
+      "order": 0,
+      "profile_path": "/7Jahy5LZX2Fo8fGJltMreAI49hC.jpg"
+    },
+    {
+      "character": "Jesse Pinkman",
+      "credit_id": "52542282760ee31328001845",
+      "gender": 2,
+      "id": 84497,
+      "name": "Aaron Paul",
+      "order": 1,
+      "profile_path": "/u8UdsB9yenM4uHEjmce4nkBn48X.jpg"
+    },
+    {
+      "character": "Skyler White",
+      "credit_id": "52542282760ee3132800181b",
+      "gender": 1,
+      "id": 134531,
+      "name": "Anna Gunn",
+      "order": 2,
+      "profile_path": "/adppyeu1a4REN3khtgmXusrapFi.jpg"
+    },
+    {
+      "character": "Hank Schrader",
+      "credit_id": "52542283760ee3132800187b",
+      "gender": 2,
+      "id": 14329,
+      "name": "Dean Norris",
+      "order": 3,
+      "profile_path": "/fXbHgZxCEclcTxV8MpeBXhe2OJS.jpg"
+    },
+    {
+      "character": "Marie Schrader",
+      "credit_id": "52542283760ee31328001891",
+      "gender": 1,
+      "id": 1217934,
+      "name": "Betsy Brandt",
+      "order": 4,
+      "profile_path": "/zmhhPmXnwjSzVyoTVL93i1EkLRK.jpg"
+    },
+    {
+      "character": "Walter White Jr.",
+      "credit_id": "52542284760ee313280018a9",
+      "gender": 2,
+      "id": 209674,
+      "name": "RJ Mitte",
+      "order": 5,
+      "profile_path": "/aG6NYV2EgzBFLRIl7vvbtd7go1j.jpg"
+    },
+    {
+      "character": "Saul Goodman",
+      "credit_id": "5271b180760ee35afc09bb8d",
+      "gender": 2,
+      "id": 59410,
+      "name": "Bob Odenkirk",
+      "order": 6,
+      "profile_path": "/nJLcRRqq9JTQTgVYrFn7vPDgAsK.jpg"
+    },
+    {
+      "character": "Mike Ehrmantraut",
+      "credit_id": "5271b1e6760ee35af60941ad",
+      "gender": 2,
+      "id": 783,
+      "name": "Jonathan Banks",
+      "order": 7,
+      "profile_path": "/va6APAzwv68YxvYQkB3lHhpccCi.jpg"
+    },
+    {
+      "character": "Gustavo \"Gus\" Fring",
+      "credit_id": "5271b1a7760ee35afc09c4e5",
+      "gender": 2,
+      "id": 4808,
+      "name": "Giancarlo Esposito",
+      "order": 71,
+      "profile_path": "/9TnBZoJchBufSi0WaooA3ZuhrGp.jpg"
+    }
+  ],
+  "crew": [
+    {
+      "id": 24951,
+      "credit_id": "527685f3760ee360330b9ed3",
+      "name": "Peter Gould",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 52034,
+      "credit_id": "53998110c3a3681d02001489",
+      "name": "Michael Slovis",
+      "department": "Camera",
+      "job": "Director of Photography",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1123195,
+      "credit_id": "52b705e619c2955a1f0c895b",
+      "name": "Skip MacDonald",
+      "department": "Editing",
+      "job": "Editor",
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 24951,
+      "credit_id": "52542286760ee31328001ab9",
+      "name": "Peter Gould",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 2,
+      "profile_path": null
+    }
+  ],
+  "guest_stars": [
+    {
+      "id": 57167,
+      "name": "Jere Burns",
+      "credit_id": "525423ca760ee3132800202b",
+      "character": "Group Leader",
+      "order": 120,
+      "gender": 2,
+      "profile_path": "/ok265IAb5lNPmI3Ulb4KRC5nwjK.jpg"
+    },
+    {
+      "id": 82167,
+      "name": "David Costabile",
+      "credit_id": "527630ad760ee3353f281211",
+      "character": "Gale Boetticher",
+      "order": 120,
+      "gender": 2,
+      "profile_path": "/nLlPiOgJuyONZBlbuqxzJNUpgo7.jpg"
+    },
+    {
+      "id": 1054505,
+      "name": "Fran Martone",
+      "credit_id": "527686b8760ee360330bcc44",
+      "character": "Colleen",
+      "order": 120,
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 982297,
+      "name": "J. Michael Oliva",
+      "credit_id": "527686d2760ee35a9a1dce65",
+      "character": "Support Group Member (as Michael 'Yak' Oliva)",
+      "order": 121,
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1155333,
+      "name": "Keith Meriweather",
+      "credit_id": "527686fd760ee33449146bab",
+      "character": "Mike's Security Team 1",
+      "order": 122,
+      "gender": 0,
+      "profile_path": "/9piO8NoPCQzOB189KM4terAhoF.jpg"
+    },
+    {
+      "id": 1069550,
+      "name": "Lou Pimber",
+      "credit_id": "52768549760ee37a9307a96e",
+      "character": "Cartel Henchman (as Luis Pimber)",
+      "order": 123,
+      "gender": 0,
+      "profile_path": "/oEWHQjHjnGcNlFC1pi7KWMRe2oW.jpg"
+    },
+    {
+      "id": 48530,
+      "name": "Maurice Compte",
+      "credit_id": "527682ea760ee37a9307494c",
+      "character": "Gaff",
+      "order": 126,
+      "gender": 2,
+      "profile_path": "/dOB9nwdVsJezrLAJu1WSTVigFsY.jpg"
+    },
+    {
+      "id": 9291,
+      "name": "Michael Shamus Wiles",
+      "credit_id": "5271b622760ee35b0709869c",
+      "character": "ASAC George Merkert",
+      "order": 138,
+      "gender": 2,
+      "profile_path": "/niY4gYqAUjmnU4KRiguxpsKliWA.jpg"
+    },
+    {
+      "id": 61535,
+      "name": "Steven Michael Quezada",
+      "credit_id": "5271b489760ee35b3e0881a7",
+      "character": "Steven Gomez",
+      "order": 173,
+      "gender": 2,
+      "profile_path": "/4BRo6oc26kePVYxgNzYwUrDagVO.jpg"
+    }
+  ],
+  "id": 62121
+}

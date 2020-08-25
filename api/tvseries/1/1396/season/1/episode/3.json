@@ -1,0 +1,88 @@
+{
+  "air_date": "2008-02-10",
+  "crew": [
+    {
+      "id": 66633,
+      "credit_id": "52542275760ee313280006ce",
+      "name": "Vince Gilligan",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 2,
+      "profile_path": "/uFh3OrBvkwKSU3N5y0XnXOhqBJz.jpg"
+    },
+    {
+      "id": 111338,
+      "credit_id": "52542275760ee31328000725",
+      "name": "Adam Bernstein",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 17948,
+      "credit_id": "52b7049c19c2953b63015013",
+      "name": "Reynaldo Villalobos",
+      "department": "Camera",
+      "job": "Director of Photography",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1280074,
+      "credit_id": "52b7051619c29533d00e8c79",
+      "name": "Kelley Dixon",
+      "department": "Editing",
+      "job": "Editor",
+      "gender": 1,
+      "profile_path": "/gPlAQoRbQZp4ZYAY4GsBPpznolt.jpg"
+    }
+  ],
+  "episode_number": 3,
+  "guest_stars": [
+    {
+      "id": 1046460,
+      "name": "Max Arciniega",
+      "credit_id": "52725845760ee3046b09426e",
+      "character": "Krazy-8",
+      "order": 38,
+      "gender": 0,
+      "profile_path": "/eqKAJKPpt41KpsLIkkBnAY4HMAL.jpg"
+    },
+    {
+      "id": 61535,
+      "name": "Steven Michael Quezada",
+      "credit_id": "5271b489760ee35b3e0881a7",
+      "character": "Steven Gomez",
+      "order": 173,
+      "gender": 2,
+      "profile_path": "/4BRo6oc26kePVYxgNzYwUrDagVO.jpg"
+    },
+    {
+      "id": 115688,
+      "name": "Carmen Serano",
+      "credit_id": "52542273760ee31328000676",
+      "character": "Carmen Molina",
+      "order": 176,
+      "gender": 1,
+      "profile_path": "/nzJEe2UqvvMIBJZP1aeFEj4EunN.jpg"
+    },
+    {
+      "id": 14984,
+      "name": "Jessica Hecht",
+      "credit_id": "52542275760ee31328000768",
+      "character": "Gretchen Schwartz",
+      "order": 182,
+      "gender": 1,
+      "profile_path": "/icLFpyGlarQNUuwRvcY6xwSXT0p.jpg"
+    }
+  ],
+  "name": "And the Bag's in the River",
+  "overview": "Enquanto Walt limpa a bagunça que foi deixada após a primeira venda de drogas, ele pensa em contar a Skyler o segredo sobre a sua doença.",
+  "id": 62087,
+  "production_code": "",
+  "season_number": 1,
+  "still_path": "/2kBeBlxGqBOdWlKwzAxiwkfU5on.jpg",
+  "vote_average": 7.921,
+  "vote_count": 70
+}

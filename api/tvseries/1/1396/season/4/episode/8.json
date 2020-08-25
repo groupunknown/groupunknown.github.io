@@ -1,0 +1,142 @@
+{
+  "air_date": "2011-09-04",
+  "crew": [
+    {
+      "id": 212408,
+      "credit_id": "5274fa85760ee343c00f6cb7",
+      "name": "Johan Renck",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": "/pkPO6RhVFcKDiEUtbHjTkq4JjYi.jpg"
+    },
+    {
+      "id": 1223194,
+      "credit_id": "5254227d760ee31328000fb2",
+      "name": "Sam Catlin",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 2,
+      "profile_path": "/5Xt7ONeJpF3x2XZ9JwQO9vGDuJ1.jpg"
+    },
+    {
+      "id": 1223193,
+      "credit_id": "52542279760ee31328000b45",
+      "name": "George Mastras",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 52034,
+      "credit_id": "53998110c3a3681d02001489",
+      "name": "Michael Slovis",
+      "department": "Camera",
+      "job": "Director of Photography",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1280074,
+      "credit_id": "52b7051619c29533d00e8c79",
+      "name": "Kelley Dixon",
+      "department": "Editing",
+      "job": "Editor",
+      "gender": 1,
+      "profile_path": "/gPlAQoRbQZp4ZYAY4GsBPpznolt.jpg"
+    }
+  ],
+  "episode_number": 8,
+  "guest_stars": [
+    {
+      "id": 66148,
+      "name": "Javier Grajeda",
+      "credit_id": "5275a26a760ee3352b11a79f",
+      "character": "Juan Bolsa",
+      "order": 123,
+      "gender": 2,
+      "profile_path": "/dDwwaq4vy5cJfIlrKgnEDyNnV2i.jpg"
+    },
+    {
+      "id": 11915,
+      "name": "Nigel Gibbs",
+      "credit_id": "52744e08760ee356ea0a5260",
+      "character": "APD Detective Tim Roberts",
+      "order": 123,
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1159,
+      "name": "Steven Bauer",
+      "credit_id": "527688d9760ee360330c59fd",
+      "character": "Don Eladio",
+      "order": 127,
+      "gender": 2,
+      "profile_path": "/iBeruDkd1Z3xxUjrgz2YeNjB3q8.jpg"
+    },
+    {
+      "id": 1173,
+      "name": "Mark Margolis",
+      "credit_id": "5254227b760ee31328000e52",
+      "character": "Tio Salamanca",
+      "order": 132,
+      "gender": 2,
+      "profile_path": "/rT5TYJIPLBkTqsrUs00AixGeaMM.jpg"
+    },
+    {
+      "id": 9291,
+      "name": "Michael Shamus Wiles",
+      "credit_id": "5271b622760ee35b0709869c",
+      "character": "ASAC George Merkert",
+      "order": 138,
+      "gender": 2,
+      "profile_path": "/niY4gYqAUjmnU4KRiguxpsKliWA.jpg"
+    },
+    {
+      "id": 564348,
+      "name": "Lavell Crawford",
+      "credit_id": "52763ec8760ee35a9a0f7511",
+      "character": "Huell",
+      "order": 171,
+      "gender": 0,
+      "profile_path": "/dXAb3xJ9rXGNxCSvQIjWkMbfHpW.jpg"
+    },
+    {
+      "id": 61535,
+      "name": "Steven Michael Quezada",
+      "credit_id": "5271b489760ee35b3e0881a7",
+      "character": "Steven Gomez",
+      "order": 173,
+      "gender": 2,
+      "profile_path": "/4BRo6oc26kePVYxgNzYwUrDagVO.jpg"
+    },
+    {
+      "id": 211474,
+      "name": "Emily Rios",
+      "credit_id": "5276391d760ee33e440250f4",
+      "character": "Andrea Cantillo",
+      "order": 176,
+      "gender": 1,
+      "profile_path": "/hwJd91tvfkscI8ViEkaqkW3NVnG.jpg"
+    },
+    {
+      "id": 104482,
+      "name": "James Martinez",
+      "credit_id": "527a42d8760ee3483017f5a3",
+      "character": "Max Arsiniega",
+      "order": 183,
+      "gender": 2,
+      "profile_path": "/nD2Alcz1mjb5hpvNKPZqYiqmZBI.jpg"
+    }
+  ],
+  "name": "Hermanos",
+  "overview": "Quando Hank descobre provas de que Gus é o barão da metanfetamina de Albuquerque, Walt acha que ele e Jesse serão mortos enquanto protegem o chefe.",
+  "id": 62127,
+  "production_code": "",
+  "season_number": 4,
+  "still_path": "/kWtsoaPAdfPXEfqufwA44tr9bp6.jpg",
+  "vote_average": 8.5,
+  "vote_count": 54
+}

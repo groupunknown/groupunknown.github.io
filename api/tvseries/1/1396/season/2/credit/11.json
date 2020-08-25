@@ -1,0 +1,162 @@
+{
+  "cast": [
+    {
+      "character": "Walter White",
+      "credit_id": "52542282760ee313280017f9",
+      "gender": 2,
+      "id": 17419,
+      "name": "Bryan Cranston",
+      "order": 0,
+      "profile_path": "/7Jahy5LZX2Fo8fGJltMreAI49hC.jpg"
+    },
+    {
+      "character": "Skyler White",
+      "credit_id": "52542282760ee3132800181b",
+      "gender": 1,
+      "id": 134531,
+      "name": "Anna Gunn",
+      "order": 2,
+      "profile_path": "/adppyeu1a4REN3khtgmXusrapFi.jpg"
+    },
+    {
+      "character": "Jesse Pinkman",
+      "credit_id": "52542282760ee31328001845",
+      "gender": 2,
+      "id": 84497,
+      "name": "Aaron Paul",
+      "order": 1,
+      "profile_path": "/u8UdsB9yenM4uHEjmce4nkBn48X.jpg"
+    },
+    {
+      "character": "Hank Schrader",
+      "credit_id": "52542283760ee3132800187b",
+      "gender": 2,
+      "id": 14329,
+      "name": "Dean Norris",
+      "order": 3,
+      "profile_path": "/fXbHgZxCEclcTxV8MpeBXhe2OJS.jpg"
+    },
+    {
+      "character": "Marie Schrader",
+      "credit_id": "52542283760ee31328001891",
+      "gender": 1,
+      "id": 1217934,
+      "name": "Betsy Brandt",
+      "order": 4,
+      "profile_path": "/zmhhPmXnwjSzVyoTVL93i1EkLRK.jpg"
+    },
+    {
+      "character": "Walter White Jr.",
+      "credit_id": "52542284760ee313280018a9",
+      "gender": 2,
+      "id": 209674,
+      "name": "RJ Mitte",
+      "order": 5,
+      "profile_path": "/aG6NYV2EgzBFLRIl7vvbtd7go1j.jpg"
+    }
+  ],
+  "crew": [
+    {
+      "id": 1223193,
+      "credit_id": "52542279760ee31328000b45",
+      "name": "George Mastras",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 111338,
+      "credit_id": "52542275760ee31328000725",
+      "name": "Adam Bernstein",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": null
+    }
+  ],
+  "guest_stars": [
+    {
+      "id": 78080,
+      "name": "Krysten Ritter",
+      "credit_id": "5254227e760ee31328001037",
+      "character": "Jane Margolis",
+      "order": 2,
+      "gender": 1,
+      "profile_path": "/bII7CIrRAc7JdDSfG8oDIbRPQCx.jpg"
+    },
+    {
+      "id": 59410,
+      "name": "Bob Odenkirk",
+      "credit_id": "5271b180760ee35afc09bb8d",
+      "character": "Saul Goodman",
+      "order": 6,
+      "gender": 2,
+      "profile_path": "/nJLcRRqq9JTQTgVYrFn7vPDgAsK.jpg"
+    },
+    {
+      "id": 4808,
+      "name": "Giancarlo Esposito",
+      "credit_id": "5271b1a7760ee35afc09c4e5",
+      "character": "Gustavo \"Gus\" Fring",
+      "order": 71,
+      "gender": 2,
+      "profile_path": "/9TnBZoJchBufSi0WaooA3ZuhrGp.jpg"
+    },
+    {
+      "id": 5176,
+      "name": "Sam McMurray",
+      "credit_id": "5271b55e760ee35b220a9959",
+      "character": "Dr. Victor Bravenec",
+      "order": 71,
+      "gender": 2,
+      "profile_path": "/svDj7TxErhLBfELDC3c2Ftz3jmK.jpg"
+    },
+    {
+      "id": 79211,
+      "name": "David House",
+      "credit_id": "5271b65b760ee35b0c090f74",
+      "character": "Dr. Delcavoli",
+      "order": 71,
+      "gender": 0,
+      "profile_path": "/t67HnLsCMecFLMdhtJQbkiQiyXq.jpg"
+    },
+    {
+      "id": 1123871,
+      "name": "Mike Seal",
+      "credit_id": "52754578760ee33562013f99",
+      "character": "Rival Dealer #1",
+      "order": 96,
+      "gender": 2,
+      "profile_path": "/qUja8e2k4XMWWV3k4ocMCZb4HBl.jpg"
+    },
+    {
+      "id": 582668,
+      "name": "Jeremiah Bitsui",
+      "credit_id": "5275464a760ee33556010f2a",
+      "character": "Victor",
+      "order": 101,
+      "gender": 0,
+      "profile_path": "/jB4u8jekprqQeB0xhdB4YSgO8FG.jpg"
+    },
+    {
+      "id": 20379,
+      "name": "Christopher Cousins",
+      "credit_id": "527504f6760ee347c912980c",
+      "character": "Ted Beneke",
+      "order": 136,
+      "gender": 2,
+      "profile_path": "/9fmoeZLGbJfiYU6mIbrUkjF9wsR.jpg"
+    },
+    {
+      "id": 82945,
+      "name": "Charles Baker",
+      "credit_id": "52744007760ee356f6076365",
+      "character": "Skinny Pete",
+      "order": 182,
+      "gender": 2,
+      "profile_path": "/yuRBqdgCh4OgTsfl2Xs4mC6PpnZ.jpg"
+    }
+  ],
+  "id": 62102
+}

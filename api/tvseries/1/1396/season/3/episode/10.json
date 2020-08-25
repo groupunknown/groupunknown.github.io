@@ -1,0 +1,60 @@
+{
+  "air_date": "2010-05-23",
+  "crew": [
+    {
+      "id": 1223194,
+      "credit_id": "5254227d760ee31328000fb2",
+      "name": "Sam Catlin",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 2,
+      "profile_path": "/5Xt7ONeJpF3x2XZ9JwQO9vGDuJ1.jpg"
+    },
+    {
+      "id": 1223198,
+      "credit_id": "52542287760ee31328001ad1",
+      "name": "Moira Walley-Beckett",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 1,
+      "profile_path": "/nysIQz4lEMqar1Bd3gBaCzuwSde.jpg"
+    },
+    {
+      "id": 67367,
+      "credit_id": "525423cb760ee313280023d8",
+      "name": "Rian Johnson",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": "/j7ACBDkCgMqf6sSz2XeCmfqGNd3.jpg"
+    },
+    {
+      "id": 52034,
+      "credit_id": "53998110c3a3681d02001489",
+      "name": "Michael Slovis",
+      "department": "Camera",
+      "job": "Director of Photography",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1280074,
+      "credit_id": "52b7051619c29533d00e8c79",
+      "name": "Kelley Dixon",
+      "department": "Editing",
+      "job": "Editor",
+      "gender": 1,
+      "profile_path": "/gPlAQoRbQZp4ZYAY4GsBPpznolt.jpg"
+    }
+  ],
+  "episode_number": 10,
+  "guest_stars": [],
+  "name": "A mosca",
+  "overview": "Uma longa noite no laboratório faz Walt e Jesse discutirem sobre uma mosca.",
+  "id": 62114,
+  "production_code": "",
+  "season_number": 3,
+  "still_path": "/gRLuy1Qd6RHxCTFxK2WBQwo5CGQ.jpg",
+  "vote_average": 7.655,
+  "vote_count": 58
+}

@@ -1,0 +1,207 @@
+{
+  "cast": [
+    {
+      "character": "Walter White",
+      "credit_id": "52542282760ee313280017f9",
+      "gender": 2,
+      "id": 17419,
+      "name": "Bryan Cranston",
+      "order": 0,
+      "profile_path": "/7Jahy5LZX2Fo8fGJltMreAI49hC.jpg"
+    },
+    {
+      "character": "Jesse Pinkman",
+      "credit_id": "52542282760ee31328001845",
+      "gender": 2,
+      "id": 84497,
+      "name": "Aaron Paul",
+      "order": 1,
+      "profile_path": "/u8UdsB9yenM4uHEjmce4nkBn48X.jpg"
+    },
+    {
+      "character": "Skyler White",
+      "credit_id": "52542282760ee3132800181b",
+      "gender": 1,
+      "id": 134531,
+      "name": "Anna Gunn",
+      "order": 2,
+      "profile_path": "/adppyeu1a4REN3khtgmXusrapFi.jpg"
+    },
+    {
+      "character": "Hank Schrader",
+      "credit_id": "52542283760ee3132800187b",
+      "gender": 2,
+      "id": 14329,
+      "name": "Dean Norris",
+      "order": 3,
+      "profile_path": "/fXbHgZxCEclcTxV8MpeBXhe2OJS.jpg"
+    },
+    {
+      "character": "Marie Schrader",
+      "credit_id": "52542283760ee31328001891",
+      "gender": 1,
+      "id": 1217934,
+      "name": "Betsy Brandt",
+      "order": 4,
+      "profile_path": "/zmhhPmXnwjSzVyoTVL93i1EkLRK.jpg"
+    },
+    {
+      "character": "Walter White Jr.",
+      "credit_id": "52542284760ee313280018a9",
+      "gender": 2,
+      "id": 209674,
+      "name": "RJ Mitte",
+      "order": 5,
+      "profile_path": "/aG6NYV2EgzBFLRIl7vvbtd7go1j.jpg"
+    },
+    {
+      "character": "Saul Goodman",
+      "credit_id": "5271b180760ee35afc09bb8d",
+      "gender": 2,
+      "id": 59410,
+      "name": "Bob Odenkirk",
+      "order": 6,
+      "profile_path": "/nJLcRRqq9JTQTgVYrFn7vPDgAsK.jpg"
+    },
+    {
+      "character": "Mike Ehrmantraut",
+      "credit_id": "5271b1e6760ee35af60941ad",
+      "gender": 2,
+      "id": 783,
+      "name": "Jonathan Banks",
+      "order": 7,
+      "profile_path": "/va6APAzwv68YxvYQkB3lHhpccCi.jpg"
+    },
+    {
+      "character": "Gustavo \"Gus\" Fring",
+      "credit_id": "5271b1a7760ee35afc09c4e5",
+      "gender": 2,
+      "id": 4808,
+      "name": "Giancarlo Esposito",
+      "order": 71,
+      "profile_path": "/9TnBZoJchBufSi0WaooA3ZuhrGp.jpg"
+    }
+  ],
+  "crew": [
+    {
+      "id": 29924,
+      "credit_id": "5254227f760ee313280011f5",
+      "name": "John Shiban",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 103009,
+      "credit_id": "52542286760ee31328001a8b",
+      "name": "Thomas Schnauz",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 29779,
+      "credit_id": "52542280760ee31328001325",
+      "name": "Michelle MacLaren",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 1,
+      "profile_path": null
+    },
+    {
+      "id": 52034,
+      "credit_id": "53998110c3a3681d02001489",
+      "name": "Michael Slovis",
+      "department": "Camera",
+      "job": "Director of Photography",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1123195,
+      "credit_id": "52b705e619c2955a1f0c895b",
+      "name": "Skip MacDonald",
+      "department": "Editing",
+      "job": "Editor",
+      "gender": 0,
+      "profile_path": null
+    }
+  ],
+  "guest_stars": [
+    {
+      "id": 78080,
+      "name": "Krysten Ritter",
+      "credit_id": "5254227e760ee31328001037",
+      "character": "Jane Margolis",
+      "order": 2,
+      "gender": 1,
+      "profile_path": "/bII7CIrRAc7JdDSfG8oDIbRPQCx.jpg"
+    },
+    {
+      "id": 1123871,
+      "name": "Mike Seal",
+      "credit_id": "52754578760ee33562013f99",
+      "character": "Rival Dealer #1",
+      "order": 96,
+      "gender": 2,
+      "profile_path": "/qUja8e2k4XMWWV3k4ocMCZb4HBl.jpg"
+    },
+    {
+      "id": 1223197,
+      "name": "Marius Stan",
+      "credit_id": "5272587a760ee3045009ddec",
+      "character": "Bogdan Wolynetz",
+      "order": 112,
+      "gender": 0,
+      "profile_path": "/wSIrKmUXbohaRGORr0CTTTSGctK.jpg"
+    },
+    {
+      "id": 57167,
+      "name": "Jere Burns",
+      "credit_id": "525423ca760ee3132800202b",
+      "character": "Group Leader",
+      "order": 120,
+      "gender": 2,
+      "profile_path": "/ok265IAb5lNPmI3Ulb4KRC5nwjK.jpg"
+    },
+    {
+      "id": 927801,
+      "name": "Virginia Montero",
+      "credit_id": "52763984760ee33e44026131",
+      "character": "Grandma",
+      "order": 131,
+      "gender": 1,
+      "profile_path": "/d50XON0JDKCFpJAbpF1GsttrQaO.jpg"
+    },
+    {
+      "id": 211474,
+      "name": "Emily Rios",
+      "credit_id": "5276391d760ee33e440250f4",
+      "character": "Andrea Cantillo",
+      "order": 176,
+      "gender": 1,
+      "profile_path": "/hwJd91tvfkscI8ViEkaqkW3NVnG.jpg"
+    },
+    {
+      "id": 191202,
+      "name": "Matt Jones",
+      "credit_id": "52744535760ee3572209100e",
+      "character": "Badger",
+      "order": 182,
+      "gender": 2,
+      "profile_path": "/x13vFDaJHY1CxNvSPWujYe12bMc.jpg"
+    },
+    {
+      "id": 82945,
+      "name": "Charles Baker",
+      "credit_id": "52744007760ee356f6076365",
+      "character": "Skinny Pete",
+      "order": 182,
+      "gender": 2,
+      "profile_path": "/yuRBqdgCh4OgTsfl2Xs4mC6PpnZ.jpg"
+    }
+  ],
+  "id": 62115
+}
