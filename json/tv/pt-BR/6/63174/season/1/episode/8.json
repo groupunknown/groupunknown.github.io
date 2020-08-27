@@ -1,0 +1,375 @@
+{
+  "air_date": "2016-03-14",
+  "crew": [
+    {
+      "id": 1407158,
+      "credit_id": "56c0b6abc3a36817fd00be48",
+      "name": "Jenn Kao",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 205641,
+      "credit_id": "56ff97a09251416783001aa1",
+      "name": "Eagle Egilsson",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": null
+    }
+  ],
+  "episode_number": 8,
+  "guest_stars": [
+    {
+      "id": 58058,
+      "name": "Lochlyn Munro",
+      "credit_id": "56f28434c3a368077500125d",
+      "character": "Anthony Paolucci",
+      "order": 28,
+      "gender": 2,
+      "profile_path": "/bOJ03k0oe2R6snRgzV8M4Qtoo4O.jpg"
+    },
+    {
+      "id": 161932,
+      "name": "Jim Rash",
+      "credit_id": "56ff96bf925141677a001a11",
+      "character": "Richard Kester",
+      "order": 40,
+      "gender": 2,
+      "profile_path": "/cXat9HZ5ajQZsrAZ8xE4zIEVEcb.jpg"
+    },
+    {
+      "id": 90534,
+      "name": "Al Madrigal",
+      "credit_id": "56ff96d79251416776001b0f",
+      "character": "Dr. Jonathan Medina",
+      "order": 41,
+      "gender": 2,
+      "profile_path": "/p4vN80EGGlzLb5J7G8Ss3n9K2pc.jpg"
+    },
+    {
+      "id": 185504,
+      "name": "Joy Osmanski",
+      "credit_id": "56ff9706c3a3686e88001b80",
+      "character": "Sandy Shaw",
+      "order": 42,
+      "gender": 1,
+      "profile_path": "/xoRSO5b7hWN9i42fFEswHwStLEI.jpg"
+    },
+    {
+      "id": 1884551,
+      "name": "Ese Atawo",
+      "credit_id": "5ec72eee6c8492001f29b218",
+      "character": "Bystander",
+      "order": 203,
+      "gender": 1,
+      "profile_path": "/5rxs3gKeNgMbHfB0xjhSfWBuI4a.jpg"
+    },
+    {
+      "id": 2639816,
+      "name": "Lia Farrelly-Hodge",
+      "credit_id": "5ec72f0aae2811001f3c7ea4",
+      "character": "Sexy Girl",
+      "order": 204,
+      "gender": 1,
+      "profile_path": "/hSFu915cNsw6WEQIrpxTlgc3WhE.jpg"
+    },
+    {
+      "id": 2300489,
+      "name": "Jasmine Lukuku",
+      "credit_id": "5ec72f2bd2147c0022b9a206",
+      "character": "Grieving Woman",
+      "order": 205,
+      "gender": 1,
+      "profile_path": "/9vA2dqq6vkmHDFTtaOgPuMbqgeF.jpg"
+    },
+    {
+      "id": 1882898,
+      "name": "James Paladino",
+      "credit_id": "5ec72f48ae281100203b052d",
+      "character": "Hipster",
+      "order": 206,
+      "gender": 0,
+      "profile_path": "/kaga96aDpAMuInkhJOLGPJXcvEf.jpg"
+    },
+    {
+      "id": 2648374,
+      "name": "Marisa Emma Smith",
+      "credit_id": "5ec72f72e635710020cd49f4",
+      "character": "Tiffany",
+      "order": 208,
+      "gender": 1,
+      "profile_path": "/awGxfrDcRh3d03PINjJs8QliR8o.jpg"
+    },
+    {
+      "id": 65807,
+      "name": "Ingrid Tesch",
+      "credit_id": "5ec72f8b140bad001b1876c9",
+      "character": "Judge",
+      "order": 209,
+      "gender": 1,
+      "profile_path": "/qO8I8Xf0z9Vq21R0kvw7mDdRHSL.jpg"
+    },
+    {
+      "id": 1727683,
+      "name": "Adil Zaidi",
+      "credit_id": "5ec72fda0fb17f001c7a4c36",
+      "character": "Grieving Man",
+      "order": 210,
+      "gender": 2,
+      "profile_path": "/ky0qSPdZzYdaThKgC8gE9YlINa5.jpg"
+    },
+    {
+      "id": 1615066,
+      "name": "Debs Howard",
+      "credit_id": "5ec72ff70fb17f001d7b7f8e",
+      "character": "Party Girl",
+      "order": 211,
+      "gender": 1,
+      "profile_path": "/98Q0ZFr7MfgDWJr0aTD5M7Gb6MD.jpg"
+    },
+    {
+      "id": 114000,
+      "name": "Kevin Rankin",
+      "credit_id": "5ec7e7df0fb17f001d7ca915",
+      "character": "Malcolm Graham",
+      "order": 246,
+      "gender": 2,
+      "profile_path": "/fOW5R6BSgRvMrt2R7KAxSk7L4H2.jpg"
+    },
+    {
+      "id": 2648373,
+      "name": "Todd Simmons",
+      "credit_id": "5ec72f60d2147c0023be77e8",
+      "character": "Uni Cop",
+      "order": 457,
+      "gender": 2,
+      "profile_path": null
+    }
+  ],
+  "name": "Até tu, Doutora?",
+  "overview": "Lucifer comemora seu \"renascimento\" e ajuda Chloe e a Dra. Martin a investigarem o assassinato de um terapeuta pouco convencional.",
+  "id": 1165518,
+  "production_code": "4X6507",
+  "season_number": 1,
+  "still_path": "/kCvPxVQ0OLyQG7VwPOzHTHGsbKV.jpg",
+  "vote_average": 6.865,
+  "vote_count": 26,
+  "credits": {
+    "cast": [
+      {
+        "character": "Lucifer Morningstar",
+        "credit_id": "559cb1f1c3a3681be4000bec",
+        "gender": 2,
+        "id": 192944,
+        "name": "Tom Ellis",
+        "order": 0,
+        "profile_path": "/sJkxqJfSgcwussMeywxyrnYxVX.jpg"
+      },
+      {
+        "character": "Chloe Decker",
+        "credit_id": "559cb21f9251414206000bef",
+        "gender": 1,
+        "id": 37014,
+        "name": "Lauren German",
+        "order": 1,
+        "profile_path": "/if1TbO8dSfPiDCMfy52nH7A2D7.jpg"
+      },
+      {
+        "character": "Daniel \"Dan\" Espinoza",
+        "credit_id": "559cb261c3a3681be4000bfa",
+        "gender": 2,
+        "id": 116474,
+        "name": "Kevin Alejandro",
+        "order": 2,
+        "profile_path": "/16WhElhjn3irGqQuMS8Z7L0ixit.jpg"
+      },
+      {
+        "character": "Amenadiel",
+        "credit_id": "55fdc6ed92514152b10018cd",
+        "gender": 2,
+        "id": 21356,
+        "name": "D.B. Woodside",
+        "order": 3,
+        "profile_path": "/eb4NCvnZeA4yCIcIip5tYwX07Fo.jpg"
+      },
+      {
+        "character": "Mazikeen \"Maze\"",
+        "credit_id": "559cb2529251414204000af7",
+        "gender": 1,
+        "id": 515875,
+        "name": "Lesley-Ann Brandt",
+        "order": 4,
+        "profile_path": "/13V0F74e350RDA2U7YJ14Wpgp73.jpg"
+      },
+      {
+        "character": "Linda Martin",
+        "credit_id": "559cb272c3a3681bdd000abb",
+        "gender": 1,
+        "id": 46074,
+        "name": "Rachael Harris",
+        "order": 9,
+        "profile_path": "/39RYYTxxHaJKDXFTabjAPH8z5r6.jpg"
+      },
+      {
+        "character": "Beatrice \"Trixie\" Espinoza",
+        "credit_id": "55fdc74392514152a80017a4",
+        "gender": 1,
+        "id": 1512021,
+        "name": "Scarlett Estevez",
+        "order": 698,
+        "profile_path": "/3vZJxaHFC1bMuXd4a3tSrYhAffz.jpg"
+      }
+    ],
+    "crew": [
+      {
+        "id": 1407158,
+        "credit_id": "56c0b6abc3a36817fd00be48",
+        "name": "Jenn Kao",
+        "department": "Writing",
+        "job": "Writer",
+        "gender": 0,
+        "profile_path": null
+      },
+      {
+        "id": 205641,
+        "credit_id": "56ff97a09251416783001aa1",
+        "name": "Eagle Egilsson",
+        "department": "Directing",
+        "job": "Director",
+        "gender": 2,
+        "profile_path": null
+      }
+    ],
+    "guest_stars": [
+      {
+        "id": 58058,
+        "name": "Lochlyn Munro",
+        "credit_id": "56f28434c3a368077500125d",
+        "character": "Anthony Paolucci",
+        "order": 28,
+        "gender": 2,
+        "profile_path": "/bOJ03k0oe2R6snRgzV8M4Qtoo4O.jpg"
+      },
+      {
+        "id": 161932,
+        "name": "Jim Rash",
+        "credit_id": "56ff96bf925141677a001a11",
+        "character": "Richard Kester",
+        "order": 40,
+        "gender": 2,
+        "profile_path": "/cXat9HZ5ajQZsrAZ8xE4zIEVEcb.jpg"
+      },
+      {
+        "id": 90534,
+        "name": "Al Madrigal",
+        "credit_id": "56ff96d79251416776001b0f",
+        "character": "Dr. Jonathan Medina",
+        "order": 41,
+        "gender": 2,
+        "profile_path": "/p4vN80EGGlzLb5J7G8Ss3n9K2pc.jpg"
+      },
+      {
+        "id": 185504,
+        "name": "Joy Osmanski",
+        "credit_id": "56ff9706c3a3686e88001b80",
+        "character": "Sandy Shaw",
+        "order": 42,
+        "gender": 1,
+        "profile_path": "/xoRSO5b7hWN9i42fFEswHwStLEI.jpg"
+      },
+      {
+        "id": 1884551,
+        "name": "Ese Atawo",
+        "credit_id": "5ec72eee6c8492001f29b218",
+        "character": "Bystander",
+        "order": 203,
+        "gender": 1,
+        "profile_path": "/5rxs3gKeNgMbHfB0xjhSfWBuI4a.jpg"
+      },
+      {
+        "id": 2639816,
+        "name": "Lia Farrelly-Hodge",
+        "credit_id": "5ec72f0aae2811001f3c7ea4",
+        "character": "Sexy Girl",
+        "order": 204,
+        "gender": 1,
+        "profile_path": "/hSFu915cNsw6WEQIrpxTlgc3WhE.jpg"
+      },
+      {
+        "id": 2300489,
+        "name": "Jasmine Lukuku",
+        "credit_id": "5ec72f2bd2147c0022b9a206",
+        "character": "Grieving Woman",
+        "order": 205,
+        "gender": 1,
+        "profile_path": "/9vA2dqq6vkmHDFTtaOgPuMbqgeF.jpg"
+      },
+      {
+        "id": 1882898,
+        "name": "James Paladino",
+        "credit_id": "5ec72f48ae281100203b052d",
+        "character": "Hipster",
+        "order": 206,
+        "gender": 0,
+        "profile_path": "/kaga96aDpAMuInkhJOLGPJXcvEf.jpg"
+      },
+      {
+        "id": 2648374,
+        "name": "Marisa Emma Smith",
+        "credit_id": "5ec72f72e635710020cd49f4",
+        "character": "Tiffany",
+        "order": 208,
+        "gender": 1,
+        "profile_path": "/awGxfrDcRh3d03PINjJs8QliR8o.jpg"
+      },
+      {
+        "id": 65807,
+        "name": "Ingrid Tesch",
+        "credit_id": "5ec72f8b140bad001b1876c9",
+        "character": "Judge",
+        "order": 209,
+        "gender": 1,
+        "profile_path": "/qO8I8Xf0z9Vq21R0kvw7mDdRHSL.jpg"
+      },
+      {
+        "id": 1727683,
+        "name": "Adil Zaidi",
+        "credit_id": "5ec72fda0fb17f001c7a4c36",
+        "character": "Grieving Man",
+        "order": 210,
+        "gender": 2,
+        "profile_path": "/ky0qSPdZzYdaThKgC8gE9YlINa5.jpg"
+      },
+      {
+        "id": 1615066,
+        "name": "Debs Howard",
+        "credit_id": "5ec72ff70fb17f001d7b7f8e",
+        "character": "Party Girl",
+        "order": 211,
+        "gender": 1,
+        "profile_path": "/98Q0ZFr7MfgDWJr0aTD5M7Gb6MD.jpg"
+      },
+      {
+        "id": 114000,
+        "name": "Kevin Rankin",
+        "credit_id": "5ec7e7df0fb17f001d7ca915",
+        "character": "Malcolm Graham",
+        "order": 246,
+        "gender": 2,
+        "profile_path": "/fOW5R6BSgRvMrt2R7KAxSk7L4H2.jpg"
+      },
+      {
+        "id": 2648373,
+        "name": "Todd Simmons",
+        "credit_id": "5ec72f60d2147c0023be77e8",
+        "character": "Uni Cop",
+        "order": 457,
+        "gender": 2,
+        "profile_path": null
+      }
+    ]
+  }
+}

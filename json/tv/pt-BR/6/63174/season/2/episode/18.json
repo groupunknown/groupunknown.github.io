@@ -1,0 +1,249 @@
+{
+  "air_date": "2017-05-29",
+  "crew": [
+    {
+      "id": 1222590,
+      "credit_id": "56f16d58c3a36850a700002b",
+      "name": "Ildy Modrovich",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 1,
+      "profile_path": null
+    },
+    {
+      "id": 1215703,
+      "credit_id": "59c266a8925141768a00ed00",
+      "name": "Karen Gaviola",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 1,
+      "profile_path": null
+    }
+  ],
+  "episode_number": 18,
+  "guest_stars": [
+    {
+      "id": 63731,
+      "name": "Marcus Coloma",
+      "credit_id": "5ec94d058e2e00002128b388",
+      "character": "Hector Ruiz",
+      "order": 398,
+      "gender": 2,
+      "profile_path": "/qWU2GwmNrUyruJHEnTcXwzgmlwN.jpg"
+    },
+    {
+      "id": 221843,
+      "name": "Shannon Chan-Kent",
+      "credit_id": "5ec94d78e635710022d219bc",
+      "character": "Kathleen Lyon",
+      "order": 399,
+      "gender": 1,
+      "profile_path": "/pt8rq0yQXPHxXBDi1xbeVBjfqiD.jpg"
+    },
+    {
+      "id": 2650674,
+      "name": "Nicole Brown",
+      "credit_id": "5ec94ddae635710020cfb575",
+      "character": "Nurse",
+      "order": 400,
+      "gender": 1,
+      "profile_path": null
+    },
+    {
+      "id": 1764610,
+      "name": "Stephi Chin-Salvo",
+      "credit_id": "5ec950487f1d83001fdd2047",
+      "character": "Ava Lyon",
+      "order": 401,
+      "gender": 1,
+      "profile_path": "/smDXSynHmxPhJwvcSR1o0nA7y3P.jpg"
+    },
+    {
+      "id": 1724095,
+      "name": "Daniel Letto",
+      "credit_id": "5ec95065e635710021cde07f",
+      "character": "Surly Improv Partner",
+      "order": 402,
+      "gender": 0,
+      "profile_path": "/tm52aDnM4UverUvUL45SuUFVQLe.jpg"
+    },
+    {
+      "id": 1196474,
+      "name": "Caitlin Howden",
+      "credit_id": "5ec95122e635710020cfb78a",
+      "character": "Improv Chick",
+      "order": 403,
+      "gender": 0,
+      "profile_path": "/55Z7kaLvkU4v9ZQf4wgRyLnjhYW.jpg"
+    }
+  ],
+  "name": "O bom, o mau e o torrado",
+  "overview": "A mãe de Lucifer conta um segredo importante. Dra. Linda improvisa. Lucifer pensa em se abrir com Chloe.",
+  "id": 1315168,
+  "production_code": "T13.20068",
+  "season_number": 2,
+  "still_path": "/ndpTp1akAYGkJ7ZqGKQ6Ns6IRtj.jpg",
+  "vote_average": 8.353,
+  "vote_count": 17,
+  "credits": {
+    "cast": [
+      {
+        "character": "Lucifer Morningstar",
+        "credit_id": "559cb1f1c3a3681be4000bec",
+        "gender": 2,
+        "id": 192944,
+        "name": "Tom Ellis",
+        "order": 0,
+        "profile_path": "/sJkxqJfSgcwussMeywxyrnYxVX.jpg"
+      },
+      {
+        "character": "Chloe Decker",
+        "credit_id": "559cb21f9251414206000bef",
+        "gender": 1,
+        "id": 37014,
+        "name": "Lauren German",
+        "order": 1,
+        "profile_path": "/if1TbO8dSfPiDCMfy52nH7A2D7.jpg"
+      },
+      {
+        "character": "Daniel \"Dan\" Espinoza",
+        "credit_id": "559cb261c3a3681be4000bfa",
+        "gender": 2,
+        "id": 116474,
+        "name": "Kevin Alejandro",
+        "order": 2,
+        "profile_path": "/16WhElhjn3irGqQuMS8Z7L0ixit.jpg"
+      },
+      {
+        "character": "Amenadiel",
+        "credit_id": "55fdc6ed92514152b10018cd",
+        "gender": 2,
+        "id": 21356,
+        "name": "D.B. Woodside",
+        "order": 3,
+        "profile_path": "/eb4NCvnZeA4yCIcIip5tYwX07Fo.jpg"
+      },
+      {
+        "character": "Mazikeen \"Maze\"",
+        "credit_id": "559cb2529251414204000af7",
+        "gender": 1,
+        "id": 515875,
+        "name": "Lesley-Ann Brandt",
+        "order": 4,
+        "profile_path": "/13V0F74e350RDA2U7YJ14Wpgp73.jpg"
+      },
+      {
+        "character": "Ella Lopez",
+        "credit_id": "57e09a81c3a36853f2001780",
+        "gender": 1,
+        "id": 56457,
+        "name": "Aimee Garcia",
+        "order": 7,
+        "profile_path": "/n0hKZHujbdzjkti2y4s7w48boTB.jpg"
+      },
+      {
+        "character": "Linda Martin",
+        "credit_id": "559cb272c3a3681bdd000abb",
+        "gender": 1,
+        "id": 46074,
+        "name": "Rachael Harris",
+        "order": 9,
+        "profile_path": "/39RYYTxxHaJKDXFTabjAPH8z5r6.jpg"
+      },
+      {
+        "character": "Beatrice \"Trixie\" Espinoza",
+        "credit_id": "55fdc74392514152a80017a4",
+        "gender": 1,
+        "id": 1512021,
+        "name": "Scarlett Estevez",
+        "order": 698,
+        "profile_path": "/3vZJxaHFC1bMuXd4a3tSrYhAffz.jpg"
+      },
+      {
+        "character": "Charlotte Richards",
+        "credit_id": "57a5d4909251410eb100429e",
+        "gender": 1,
+        "id": 74423,
+        "name": "Tricia Helfer",
+        "order": 699,
+        "profile_path": "/9LaGlfE5TeNnk1UZHFZPB9uy65q.jpg"
+      }
+    ],
+    "crew": [
+      {
+        "id": 1222590,
+        "credit_id": "56f16d58c3a36850a700002b",
+        "name": "Ildy Modrovich",
+        "department": "Writing",
+        "job": "Writer",
+        "gender": 1,
+        "profile_path": null
+      },
+      {
+        "id": 1215703,
+        "credit_id": "59c266a8925141768a00ed00",
+        "name": "Karen Gaviola",
+        "department": "Directing",
+        "job": "Director",
+        "gender": 1,
+        "profile_path": null
+      }
+    ],
+    "guest_stars": [
+      {
+        "id": 63731,
+        "name": "Marcus Coloma",
+        "credit_id": "5ec94d058e2e00002128b388",
+        "character": "Hector Ruiz",
+        "order": 398,
+        "gender": 2,
+        "profile_path": "/qWU2GwmNrUyruJHEnTcXwzgmlwN.jpg"
+      },
+      {
+        "id": 221843,
+        "name": "Shannon Chan-Kent",
+        "credit_id": "5ec94d78e635710022d219bc",
+        "character": "Kathleen Lyon",
+        "order": 399,
+        "gender": 1,
+        "profile_path": "/pt8rq0yQXPHxXBDi1xbeVBjfqiD.jpg"
+      },
+      {
+        "id": 2650674,
+        "name": "Nicole Brown",
+        "credit_id": "5ec94ddae635710020cfb575",
+        "character": "Nurse",
+        "order": 400,
+        "gender": 1,
+        "profile_path": null
+      },
+      {
+        "id": 1764610,
+        "name": "Stephi Chin-Salvo",
+        "credit_id": "5ec950487f1d83001fdd2047",
+        "character": "Ava Lyon",
+        "order": 401,
+        "gender": 1,
+        "profile_path": "/smDXSynHmxPhJwvcSR1o0nA7y3P.jpg"
+      },
+      {
+        "id": 1724095,
+        "name": "Daniel Letto",
+        "credit_id": "5ec95065e635710021cde07f",
+        "character": "Surly Improv Partner",
+        "order": 402,
+        "gender": 0,
+        "profile_path": "/tm52aDnM4UverUvUL45SuUFVQLe.jpg"
+      },
+      {
+        "id": 1196474,
+        "name": "Caitlin Howden",
+        "credit_id": "5ec95122e635710020cfb78a",
+        "character": "Improv Chick",
+        "order": 403,
+        "gender": 0,
+        "profile_path": "/55Z7kaLvkU4v9ZQf4wgRyLnjhYW.jpg"
+      }
+    ]
+  }
+}

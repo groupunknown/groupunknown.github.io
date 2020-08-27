@@ -1,0 +1,207 @@
+{
+  "cast": [
+    {
+      "character": "Lucifer Morningstar",
+      "credit_id": "559cb1f1c3a3681be4000bec",
+      "gender": 2,
+      "id": 192944,
+      "name": "Tom Ellis",
+      "order": 0,
+      "profile_path": "/sJkxqJfSgcwussMeywxyrnYxVX.jpg"
+    },
+    {
+      "character": "Chloe Decker",
+      "credit_id": "559cb21f9251414206000bef",
+      "gender": 1,
+      "id": 37014,
+      "name": "Lauren German",
+      "order": 1,
+      "profile_path": "/if1TbO8dSfPiDCMfy52nH7A2D7.jpg"
+    },
+    {
+      "character": "Daniel \"Dan\" Espinoza",
+      "credit_id": "559cb261c3a3681be4000bfa",
+      "gender": 2,
+      "id": 116474,
+      "name": "Kevin Alejandro",
+      "order": 2,
+      "profile_path": "/16WhElhjn3irGqQuMS8Z7L0ixit.jpg"
+    },
+    {
+      "character": "Amenadiel",
+      "credit_id": "55fdc6ed92514152b10018cd",
+      "gender": 2,
+      "id": 21356,
+      "name": "D.B. Woodside",
+      "order": 3,
+      "profile_path": "/eb4NCvnZeA4yCIcIip5tYwX07Fo.jpg"
+    },
+    {
+      "character": "Mazikeen \"Maze\"",
+      "credit_id": "559cb2529251414204000af7",
+      "gender": 1,
+      "id": 515875,
+      "name": "Lesley-Ann Brandt",
+      "order": 4,
+      "profile_path": "/13V0F74e350RDA2U7YJ14Wpgp73.jpg"
+    },
+    {
+      "character": "Ella Lopez",
+      "credit_id": "57e09a81c3a36853f2001780",
+      "gender": 1,
+      "id": 56457,
+      "name": "Aimee Garcia",
+      "order": 7,
+      "profile_path": "/n0hKZHujbdzjkti2y4s7w48boTB.jpg"
+    },
+    {
+      "character": "Linda Martin",
+      "credit_id": "559cb272c3a3681bdd000abb",
+      "gender": 1,
+      "id": 46074,
+      "name": "Rachael Harris",
+      "order": 9,
+      "profile_path": "/39RYYTxxHaJKDXFTabjAPH8z5r6.jpg"
+    },
+    {
+      "character": "Beatrice \"Trixie\" Espinoza",
+      "credit_id": "55fdc74392514152a80017a4",
+      "gender": 1,
+      "id": 1512021,
+      "name": "Scarlett Estevez",
+      "order": 698,
+      "profile_path": "/3vZJxaHFC1bMuXd4a3tSrYhAffz.jpg"
+    },
+    {
+      "character": "Charlotte Richards",
+      "credit_id": "57a5d4909251410eb100429e",
+      "gender": 1,
+      "id": 74423,
+      "name": "Tricia Helfer",
+      "order": 699,
+      "profile_path": "/9LaGlfE5TeNnk1UZHFZPB9uy65q.jpg"
+    }
+  ],
+  "crew": [
+    {
+      "id": 205641,
+      "credit_id": "56ff97a09251416783001aa1",
+      "name": "Eagle Egilsson",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1490537,
+      "credit_id": "5700432ec3a3686e9200370c",
+      "name": "Chris Rafferty",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 0,
+      "profile_path": null
+    }
+  ],
+  "guest_stars": [
+    {
+      "id": 1710661,
+      "name": "Liam Hall",
+      "credit_id": "5991923e92514143ad00ea22",
+      "character": "Edgar Romero",
+      "order": 81,
+      "gender": 2,
+      "profile_path": "/wyt24ecMpaBpCuSYVi5IIf5e24D.jpg"
+    },
+    {
+      "id": 943154,
+      "name": "Joshua Bitton",
+      "credit_id": "5ec831ceae2811001f3e230f",
+      "character": "Wes Williams",
+      "order": 281,
+      "gender": 2,
+      "profile_path": "/d5N7kvWXwmQctqmVNvdOB6UxYsK.jpg"
+    },
+    {
+      "id": 1449094,
+      "name": "Amad Jackson",
+      "credit_id": "5ec832796c8492001f2a65be",
+      "character": "Freddy Loomis",
+      "order": 282,
+      "gender": 2,
+      "profile_path": "/ij3FpXfmLym50f5kPZl5Pr1Wlhu.jpg"
+    },
+    {
+      "id": 175234,
+      "name": "Nicole LaPlaca",
+      "credit_id": "5ec83384140bad001d1ba764",
+      "character": "Shauna",
+      "order": 283,
+      "gender": 1,
+      "profile_path": "/wgH9GTUASKZGnpYjeg4pxFmH9RV.jpg"
+    },
+    {
+      "id": 1884548,
+      "name": "Joel Cottingham",
+      "credit_id": "5ec8350cae281100203bcae6",
+      "character": "Zombie Priest",
+      "order": 284,
+      "gender": 2,
+      "profile_path": "/jwYrNTzcVEsulpH4mbOkpmZxgiz.jpg"
+    },
+    {
+      "id": 236839,
+      "name": "AnnaMaria Demara",
+      "credit_id": "5ec836579979d2001f35e1d9",
+      "character": "Peggy Russo",
+      "order": 285,
+      "gender": 1,
+      "profile_path": "/6uwR4zJMDSC1W4Gr0hCn5rsv6xJ.jpg"
+    },
+    {
+      "id": 2458601,
+      "name": "Tina Georgieva",
+      "credit_id": "5ec836b0d2147c0021b70c90",
+      "character": "Club Goer",
+      "order": 286,
+      "gender": 1,
+      "profile_path": "/vtyOaQwez0mJ2CGlBjhTFmlrNJZ.jpg"
+    },
+    {
+      "id": 80405,
+      "name": "Karen Holness",
+      "credit_id": "5ec837a9595a56001cb94e1e",
+      "character": "Sidney Loomis",
+      "order": 287,
+      "gender": 1,
+      "profile_path": "/mKyNgWJMLA3dKRNHyAU0qaZWSRY.jpg"
+    },
+    {
+      "id": 2649581,
+      "name": "Sean Hunter",
+      "credit_id": "5ec837cfa3d027002178b414",
+      "character": "Jason Myers",
+      "order": 288,
+      "gender": 2,
+      "profile_path": "/tE3mfEXbnZbeBvN0YP7B5T75Ugu.jpg"
+    },
+    {
+      "id": 1487353,
+      "name": "Victoria Ortiz",
+      "credit_id": "5ec83b649979d2001f35e612",
+      "character": "Teenage Employee",
+      "order": 289,
+      "gender": 3,
+      "profile_path": "/2uzdj4Ni4TF6nIalBhjfanoeD5c.jpg"
+    },
+    {
+      "id": 1476335,
+      "name": "David Pérez",
+      "credit_id": "5ec83c2de635710022d03eac",
+      "character": "Neighbor",
+      "order": 290,
+      "gender": 0,
+      "profile_path": "/wwD3mUVTxeO1iozfmO1Xs8kamBG.jpg"
+    }
+  ],
+  "id": 1227225
+}

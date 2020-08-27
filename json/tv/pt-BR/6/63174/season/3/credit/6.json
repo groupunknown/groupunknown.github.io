@@ -1,0 +1,225 @@
+{
+  "cast": [
+    {
+      "character": "Lucifer Morningstar",
+      "credit_id": "559cb1f1c3a3681be4000bec",
+      "gender": 2,
+      "id": 192944,
+      "name": "Tom Ellis",
+      "order": 0,
+      "profile_path": "/sJkxqJfSgcwussMeywxyrnYxVX.jpg"
+    },
+    {
+      "character": "Chloe Decker",
+      "credit_id": "559cb21f9251414206000bef",
+      "gender": 1,
+      "id": 37014,
+      "name": "Lauren German",
+      "order": 1,
+      "profile_path": "/if1TbO8dSfPiDCMfy52nH7A2D7.jpg"
+    },
+    {
+      "character": "Daniel \"Dan\" Espinoza",
+      "credit_id": "559cb261c3a3681be4000bfa",
+      "gender": 2,
+      "id": 116474,
+      "name": "Kevin Alejandro",
+      "order": 2,
+      "profile_path": "/16WhElhjn3irGqQuMS8Z7L0ixit.jpg"
+    },
+    {
+      "character": "Amenadiel",
+      "credit_id": "55fdc6ed92514152b10018cd",
+      "gender": 2,
+      "id": 21356,
+      "name": "D.B. Woodside",
+      "order": 3,
+      "profile_path": "/eb4NCvnZeA4yCIcIip5tYwX07Fo.jpg"
+    },
+    {
+      "character": "Mazikeen \"Maze\"",
+      "credit_id": "559cb2529251414204000af7",
+      "gender": 1,
+      "id": 515875,
+      "name": "Lesley-Ann Brandt",
+      "order": 4,
+      "profile_path": "/13V0F74e350RDA2U7YJ14Wpgp73.jpg"
+    },
+    {
+      "character": "Marcus Pierce",
+      "credit_id": "59c2476f925141768a00c978",
+      "gender": 2,
+      "id": 11824,
+      "name": "Tom Welling",
+      "order": 5,
+      "profile_path": "/tkwREdAuj33kNTG7O8niRQMxepy.jpg"
+    },
+    {
+      "character": "Ella Lopez",
+      "credit_id": "57e09a81c3a36853f2001780",
+      "gender": 1,
+      "id": 56457,
+      "name": "Aimee Garcia",
+      "order": 7,
+      "profile_path": "/n0hKZHujbdzjkti2y4s7w48boTB.jpg"
+    },
+    {
+      "character": "Linda Martin",
+      "credit_id": "559cb272c3a3681bdd000abb",
+      "gender": 1,
+      "id": 46074,
+      "name": "Rachael Harris",
+      "order": 9,
+      "profile_path": "/39RYYTxxHaJKDXFTabjAPH8z5r6.jpg"
+    },
+    {
+      "character": "Beatrice \"Trixie\" Espinoza",
+      "credit_id": "55fdc74392514152a80017a4",
+      "gender": 1,
+      "id": 1512021,
+      "name": "Scarlett Estevez",
+      "order": 698,
+      "profile_path": "/3vZJxaHFC1bMuXd4a3tSrYhAffz.jpg"
+    },
+    {
+      "character": "Charlotte Richards",
+      "credit_id": "57a5d4909251410eb100429e",
+      "gender": 1,
+      "id": 74423,
+      "name": "Tricia Helfer",
+      "order": 699,
+      "profile_path": "/9LaGlfE5TeNnk1UZHFZPB9uy65q.jpg"
+    }
+  ],
+  "crew": [
+    {
+      "id": 139853,
+      "credit_id": "56f285139251415548001218",
+      "name": "Sheri Elwood",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 1,
+      "profile_path": null
+    },
+    {
+      "id": 1222590,
+      "credit_id": "56f16d58c3a36850a700002b",
+      "name": "Ildy Modrovich",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 1,
+      "profile_path": null
+    },
+    {
+      "id": 1215703,
+      "credit_id": "59c266a8925141768a00ed00",
+      "name": "Karen Gaviola",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 1,
+      "profile_path": null
+    }
+  ],
+  "guest_stars": [
+    {
+      "id": 1474965,
+      "name": "Lindsey Gort",
+      "credit_id": "591793ad92514156f503a393",
+      "character": "Candy Morningstar",
+      "order": 449,
+      "gender": 1,
+      "profile_path": "/cP3hEUh5CZlLiS6qVq1plJbDs69.jpg"
+    },
+    {
+      "id": 34485,
+      "name": "Lauren Holly",
+      "credit_id": "5ec977916c849200212d7e0b",
+      "character": "Roxie Pagliani",
+      "order": 449,
+      "gender": 1,
+      "profile_path": "/uJoOKPd6resnq9qA0ChbiNIk7ob.jpg"
+    },
+    {
+      "id": 1043304,
+      "name": "Andy Milder",
+      "credit_id": "5ec977c86c849200212d7e4c",
+      "character": "Judd",
+      "order": 450,
+      "gender": 2,
+      "profile_path": "/z7sCgA9TiyVuBosmgBJbAxgm05K.jpg"
+    },
+    {
+      "id": 1450815,
+      "name": "Jack Yang",
+      "credit_id": "5ec978d06c84920020303f34",
+      "character": "Det. Jay Wong",
+      "order": 451,
+      "gender": 2,
+      "profile_path": "/fXtryM5nuXeaoIUB590wRSe0Z0A.jpg"
+    },
+    {
+      "id": 1476624,
+      "name": "Jaime M. Callica",
+      "credit_id": "5ec978f3a35c8e0021e2e912",
+      "character": "Hot Cop",
+      "order": 452,
+      "gender": 2,
+      "profile_path": "/irbuV9hTiYTNc0a032dLwN4XgaK.jpg"
+    },
+    {
+      "id": 1252319,
+      "name": "Leo Chiang",
+      "credit_id": "5ec9791a0fb17f001d7f3066",
+      "character": "Thug #1",
+      "order": 453,
+      "gender": 2,
+      "profile_path": "/tuMNenYBajmM4YHxzhvBnm7ZQ6V.jpg"
+    },
+    {
+      "id": 1884541,
+      "name": "Naiah Cummins",
+      "credit_id": "5ec979380fb17f001b7d6643",
+      "character": "Dealer",
+      "order": 454,
+      "gender": 1,
+      "profile_path": "/s3QcrDRkiwjyD9OLvBCiFgLHBn2.jpg"
+    },
+    {
+      "id": 2650848,
+      "name": "Sam Juergens",
+      "credit_id": "5ec97953d2147c0023c24353",
+      "character": "Crab Cracker",
+      "order": 455,
+      "gender": 2,
+      "profile_path": "/o027hwQ6xQMLn360uOYO3mygyPY.jpg"
+    },
+    {
+      "id": 2650864,
+      "name": "Maurice Mulligan",
+      "credit_id": "5ec97c50a35c8e0021e2ecad",
+      "character": "Dealer #2",
+      "order": 456,
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 2648373,
+      "name": "Todd Simmons",
+      "credit_id": "5ec72f60d2147c0023be77e8",
+      "character": "Uni Cop",
+      "order": 457,
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 2650896,
+      "name": "Tony Cipriano",
+      "credit_id": "5ec985c90fb17f001d7f4213",
+      "character": "Louie Pagliani",
+      "order": 457,
+      "gender": 2,
+      "profile_path": null
+    }
+  ],
+  "id": 1387161
+}

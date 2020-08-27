@@ -1,0 +1,339 @@
+{
+  "air_date": "2016-04-11",
+  "crew": [
+    {
+      "id": 139853,
+      "credit_id": "56f285139251415548001218",
+      "name": "Sheri Elwood",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 1,
+      "profile_path": null
+    },
+    {
+      "id": 303599,
+      "credit_id": "5725317dc3a368423a002c03",
+      "name": "David McMillan",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1400942,
+      "credit_id": "5725323f9251417782000220",
+      "name": "Mairzee Almas",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 0,
+      "profile_path": "/wGOEgnJZtELk4SQpQEVFoMChAyl.jpg"
+    }
+  ],
+  "episode_number": 11,
+  "guest_stars": [
+    {
+      "id": 1215689,
+      "name": "Christina Chang",
+      "credit_id": "56f7c11d9251412cc00034b3",
+      "character": "Vanessa Dunlear",
+      "order": 36,
+      "gender": 1,
+      "profile_path": "/p1m4Da7ZOt6BOcXy4T58Mu3jAY3.jpg"
+    },
+    {
+      "id": 26718,
+      "name": "Dorian Missick",
+      "credit_id": "57251970c3a36836a9000722",
+      "character": "Will Flemming",
+      "order": 49,
+      "gender": 2,
+      "profile_path": "/n1Wsh7AZjsWcanQrTLwjZvGKw66.jpg"
+    },
+    {
+      "id": 543524,
+      "name": "Carlos Knight",
+      "credit_id": "57252fdfc3a3682d2400739d",
+      "character": "Emmet Toussaint",
+      "order": 50,
+      "gender": 2,
+      "profile_path": "/1ng8JRbsv4RL2d8eXCShHG4qoYS.jpg"
+    },
+    {
+      "id": 56676,
+      "name": "Michael Welch",
+      "credit_id": "57253023c3a368423a002bdd",
+      "character": "Kyle Erikson",
+      "order": 51,
+      "gender": 2,
+      "profile_path": "/zx5GKHpBxYHY09ik818HTcJhu.jpg"
+    },
+    {
+      "id": 64670,
+      "name": "Philip Granger",
+      "credit_id": "572530439251411e9f000b6a",
+      "character": "Louie Delgado",
+      "order": 52,
+      "gender": 2,
+      "profile_path": "/yUo0EbJlWnEl56cYXXkITVFbcVU.jpg"
+    },
+    {
+      "id": 1237734,
+      "name": "Michasha Armstrong",
+      "credit_id": "5ec74e738e2e0000201f6108",
+      "character": "Tim Dunlear",
+      "order": 221,
+      "gender": 2,
+      "profile_path": "/1nuX1dAXKer4F4k297yRaRGSw9H.jpg"
+    },
+    {
+      "id": 157836,
+      "name": "Julianne Christie",
+      "credit_id": "5ec74e93140bad001b189e84",
+      "character": "Gayle Sherman",
+      "order": 222,
+      "gender": 1,
+      "profile_path": "/hEiV9H8LIHe8VDqeTT8lqNs8awV.jpg"
+    },
+    {
+      "id": 1615071,
+      "name": "Behtash Fazlali",
+      "credit_id": "5ec751179979d2001f34f7a4",
+      "character": "Maitre D'",
+      "order": 223,
+      "gender": 2,
+      "profile_path": "/9A4sL503QrcnNA3vpurnXoBeabG.jpg"
+    },
+    {
+      "id": 1988806,
+      "name": "Giovanna Lin",
+      "credit_id": "5ec751eae635710022cecf55",
+      "character": "Pianist (Musician)",
+      "order": 224,
+      "gender": 1,
+      "profile_path": "/4bgd3F9YAFtcCxz6m2kHf7dofBt.jpg"
+    },
+    {
+      "id": 46902,
+      "name": "Kirsten Robek",
+      "credit_id": "5ec75221d2147c0021b6724c",
+      "character": "Hot Lonely / Kelly Dolman",
+      "order": 225,
+      "gender": 1,
+      "profile_path": "/iqcerFwPYnWjoTu3jgs38PDUuqJ.jpg"
+    },
+    {
+      "id": 114000,
+      "name": "Kevin Rankin",
+      "credit_id": "5ec7e7df0fb17f001d7ca915",
+      "character": "Malcolm Graham",
+      "order": 246,
+      "gender": 2,
+      "profile_path": "/fOW5R6BSgRvMrt2R7KAxSk7L4H2.jpg"
+    }
+  ],
+  "name": "Santo Lucifer",
+  "overview": "Lucifer faz uma estranha descoberta: ele adora fazer trabalho voluntário. Chloe tenta encontrar o assassino de um filantropo.",
+  "id": 1165521,
+  "production_code": "4X6511",
+  "season_number": 1,
+  "still_path": "/kXmtIabvZ9bj9yDbiLsRLeCbxGa.jpg",
+  "vote_average": 7.476,
+  "vote_count": 21,
+  "credits": {
+    "cast": [
+      {
+        "character": "Lucifer Morningstar",
+        "credit_id": "559cb1f1c3a3681be4000bec",
+        "gender": 2,
+        "id": 192944,
+        "name": "Tom Ellis",
+        "order": 0,
+        "profile_path": "/sJkxqJfSgcwussMeywxyrnYxVX.jpg"
+      },
+      {
+        "character": "Chloe Decker",
+        "credit_id": "559cb21f9251414206000bef",
+        "gender": 1,
+        "id": 37014,
+        "name": "Lauren German",
+        "order": 1,
+        "profile_path": "/if1TbO8dSfPiDCMfy52nH7A2D7.jpg"
+      },
+      {
+        "character": "Daniel \"Dan\" Espinoza",
+        "credit_id": "559cb261c3a3681be4000bfa",
+        "gender": 2,
+        "id": 116474,
+        "name": "Kevin Alejandro",
+        "order": 2,
+        "profile_path": "/16WhElhjn3irGqQuMS8Z7L0ixit.jpg"
+      },
+      {
+        "character": "Amenadiel",
+        "credit_id": "55fdc6ed92514152b10018cd",
+        "gender": 2,
+        "id": 21356,
+        "name": "D.B. Woodside",
+        "order": 3,
+        "profile_path": "/eb4NCvnZeA4yCIcIip5tYwX07Fo.jpg"
+      },
+      {
+        "character": "Mazikeen \"Maze\"",
+        "credit_id": "559cb2529251414204000af7",
+        "gender": 1,
+        "id": 515875,
+        "name": "Lesley-Ann Brandt",
+        "order": 4,
+        "profile_path": "/13V0F74e350RDA2U7YJ14Wpgp73.jpg"
+      },
+      {
+        "character": "Linda Martin",
+        "credit_id": "559cb272c3a3681bdd000abb",
+        "gender": 1,
+        "id": 46074,
+        "name": "Rachael Harris",
+        "order": 9,
+        "profile_path": "/39RYYTxxHaJKDXFTabjAPH8z5r6.jpg"
+      },
+      {
+        "character": "Beatrice \"Trixie\" Espinoza",
+        "credit_id": "55fdc74392514152a80017a4",
+        "gender": 1,
+        "id": 1512021,
+        "name": "Scarlett Estevez",
+        "order": 698,
+        "profile_path": "/3vZJxaHFC1bMuXd4a3tSrYhAffz.jpg"
+      }
+    ],
+    "crew": [
+      {
+        "id": 139853,
+        "credit_id": "56f285139251415548001218",
+        "name": "Sheri Elwood",
+        "department": "Writing",
+        "job": "Writer",
+        "gender": 1,
+        "profile_path": null
+      },
+      {
+        "id": 303599,
+        "credit_id": "5725317dc3a368423a002c03",
+        "name": "David McMillan",
+        "department": "Writing",
+        "job": "Writer",
+        "gender": 2,
+        "profile_path": null
+      },
+      {
+        "id": 1400942,
+        "credit_id": "5725323f9251417782000220",
+        "name": "Mairzee Almas",
+        "department": "Directing",
+        "job": "Director",
+        "gender": 0,
+        "profile_path": "/wGOEgnJZtELk4SQpQEVFoMChAyl.jpg"
+      }
+    ],
+    "guest_stars": [
+      {
+        "id": 1215689,
+        "name": "Christina Chang",
+        "credit_id": "56f7c11d9251412cc00034b3",
+        "character": "Vanessa Dunlear",
+        "order": 36,
+        "gender": 1,
+        "profile_path": "/p1m4Da7ZOt6BOcXy4T58Mu3jAY3.jpg"
+      },
+      {
+        "id": 26718,
+        "name": "Dorian Missick",
+        "credit_id": "57251970c3a36836a9000722",
+        "character": "Will Flemming",
+        "order": 49,
+        "gender": 2,
+        "profile_path": "/n1Wsh7AZjsWcanQrTLwjZvGKw66.jpg"
+      },
+      {
+        "id": 543524,
+        "name": "Carlos Knight",
+        "credit_id": "57252fdfc3a3682d2400739d",
+        "character": "Emmet Toussaint",
+        "order": 50,
+        "gender": 2,
+        "profile_path": "/1ng8JRbsv4RL2d8eXCShHG4qoYS.jpg"
+      },
+      {
+        "id": 56676,
+        "name": "Michael Welch",
+        "credit_id": "57253023c3a368423a002bdd",
+        "character": "Kyle Erikson",
+        "order": 51,
+        "gender": 2,
+        "profile_path": "/zx5GKHpBxYHY09ik818HTcJhu.jpg"
+      },
+      {
+        "id": 64670,
+        "name": "Philip Granger",
+        "credit_id": "572530439251411e9f000b6a",
+        "character": "Louie Delgado",
+        "order": 52,
+        "gender": 2,
+        "profile_path": "/yUo0EbJlWnEl56cYXXkITVFbcVU.jpg"
+      },
+      {
+        "id": 1237734,
+        "name": "Michasha Armstrong",
+        "credit_id": "5ec74e738e2e0000201f6108",
+        "character": "Tim Dunlear",
+        "order": 221,
+        "gender": 2,
+        "profile_path": "/1nuX1dAXKer4F4k297yRaRGSw9H.jpg"
+      },
+      {
+        "id": 157836,
+        "name": "Julianne Christie",
+        "credit_id": "5ec74e93140bad001b189e84",
+        "character": "Gayle Sherman",
+        "order": 222,
+        "gender": 1,
+        "profile_path": "/hEiV9H8LIHe8VDqeTT8lqNs8awV.jpg"
+      },
+      {
+        "id": 1615071,
+        "name": "Behtash Fazlali",
+        "credit_id": "5ec751179979d2001f34f7a4",
+        "character": "Maitre D'",
+        "order": 223,
+        "gender": 2,
+        "profile_path": "/9A4sL503QrcnNA3vpurnXoBeabG.jpg"
+      },
+      {
+        "id": 1988806,
+        "name": "Giovanna Lin",
+        "credit_id": "5ec751eae635710022cecf55",
+        "character": "Pianist (Musician)",
+        "order": 224,
+        "gender": 1,
+        "profile_path": "/4bgd3F9YAFtcCxz6m2kHf7dofBt.jpg"
+      },
+      {
+        "id": 46902,
+        "name": "Kirsten Robek",
+        "credit_id": "5ec75221d2147c0021b6724c",
+        "character": "Hot Lonely / Kelly Dolman",
+        "order": 225,
+        "gender": 1,
+        "profile_path": "/iqcerFwPYnWjoTu3jgs38PDUuqJ.jpg"
+      },
+      {
+        "id": 114000,
+        "name": "Kevin Rankin",
+        "credit_id": "5ec7e7df0fb17f001d7ca915",
+        "character": "Malcolm Graham",
+        "order": 246,
+        "gender": 2,
+        "profile_path": "/fOW5R6BSgRvMrt2R7KAxSk7L4H2.jpg"
+      }
+    ]
+  }
+}

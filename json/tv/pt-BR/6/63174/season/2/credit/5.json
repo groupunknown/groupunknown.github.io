@@ -1,0 +1,207 @@
+{
+  "cast": [
+    {
+      "character": "Lucifer Morningstar",
+      "credit_id": "559cb1f1c3a3681be4000bec",
+      "gender": 2,
+      "id": 192944,
+      "name": "Tom Ellis",
+      "order": 0,
+      "profile_path": "/sJkxqJfSgcwussMeywxyrnYxVX.jpg"
+    },
+    {
+      "character": "Chloe Decker",
+      "credit_id": "559cb21f9251414206000bef",
+      "gender": 1,
+      "id": 37014,
+      "name": "Lauren German",
+      "order": 1,
+      "profile_path": "/if1TbO8dSfPiDCMfy52nH7A2D7.jpg"
+    },
+    {
+      "character": "Daniel \"Dan\" Espinoza",
+      "credit_id": "559cb261c3a3681be4000bfa",
+      "gender": 2,
+      "id": 116474,
+      "name": "Kevin Alejandro",
+      "order": 2,
+      "profile_path": "/16WhElhjn3irGqQuMS8Z7L0ixit.jpg"
+    },
+    {
+      "character": "Amenadiel",
+      "credit_id": "55fdc6ed92514152b10018cd",
+      "gender": 2,
+      "id": 21356,
+      "name": "D.B. Woodside",
+      "order": 3,
+      "profile_path": "/eb4NCvnZeA4yCIcIip5tYwX07Fo.jpg"
+    },
+    {
+      "character": "Mazikeen \"Maze\"",
+      "credit_id": "559cb2529251414204000af7",
+      "gender": 1,
+      "id": 515875,
+      "name": "Lesley-Ann Brandt",
+      "order": 4,
+      "profile_path": "/13V0F74e350RDA2U7YJ14Wpgp73.jpg"
+    },
+    {
+      "character": "Ella Lopez",
+      "credit_id": "57e09a81c3a36853f2001780",
+      "gender": 1,
+      "id": 56457,
+      "name": "Aimee Garcia",
+      "order": 7,
+      "profile_path": "/n0hKZHujbdzjkti2y4s7w48boTB.jpg"
+    },
+    {
+      "character": "Linda Martin",
+      "credit_id": "559cb272c3a3681bdd000abb",
+      "gender": 1,
+      "id": 46074,
+      "name": "Rachael Harris",
+      "order": 9,
+      "profile_path": "/39RYYTxxHaJKDXFTabjAPH8z5r6.jpg"
+    },
+    {
+      "character": "Beatrice \"Trixie\" Espinoza",
+      "credit_id": "55fdc74392514152a80017a4",
+      "gender": 1,
+      "id": 1512021,
+      "name": "Scarlett Estevez",
+      "order": 698,
+      "profile_path": "/3vZJxaHFC1bMuXd4a3tSrYhAffz.jpg"
+    },
+    {
+      "character": "Charlotte Richards",
+      "credit_id": "57a5d4909251410eb100429e",
+      "gender": 1,
+      "id": 74423,
+      "name": "Tricia Helfer",
+      "order": 699,
+      "profile_path": "/9LaGlfE5TeNnk1UZHFZPB9uy65q.jpg"
+    }
+  ],
+  "crew": [
+    {
+      "id": 207074,
+      "credit_id": "56c0b6a2c3a368180a00d499",
+      "name": "Jason Ning",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1215703,
+      "credit_id": "59c266a8925141768a00ed00",
+      "name": "Karen Gaviola",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 1,
+      "profile_path": null
+    }
+  ],
+  "guest_stars": [
+    {
+      "id": 18702,
+      "name": "Mark Dacascos",
+      "credit_id": "58022111c3a36879bb0005a9",
+      "character": "Rolf Van Zandt",
+      "order": 66,
+      "gender": 2,
+      "profile_path": "/trOACuJz1KzhB51qe6asaxRuxrh.jpg"
+    },
+    {
+      "id": 31549,
+      "name": "Phil LaMarr",
+      "credit_id": "580271bf9251415da2004359",
+      "character": "Rudy Goldburg",
+      "order": 71,
+      "gender": 2,
+      "profile_path": "/l5w0qABfsFBxjfWNnpFiaXnh4Nm.jpg"
+    },
+    {
+      "id": 1459111,
+      "name": "Chris McNally",
+      "credit_id": "59919522925141438100f4a8",
+      "character": "Hipster Guy",
+      "order": 82,
+      "gender": 2,
+      "profile_path": "/jxG676nsMm9Vn594O1rJUIJ2LKU.jpg"
+    },
+    {
+      "id": 126502,
+      "name": "Charisma Carpenter",
+      "credit_id": "5ec824416c8492001f2a5da4",
+      "character": "Jamie Lee Adrienne",
+      "order": 274,
+      "gender": 1,
+      "profile_path": "/4KtGNoEHj0igFTLVgxoGXhDKNu.jpg"
+    },
+    {
+      "id": 79152,
+      "name": "Enid-Raye Adams",
+      "credit_id": "5ec8246a140bad001c182000",
+      "character": "Frazzled Mom",
+      "order": 275,
+      "gender": 1,
+      "profile_path": "/xxkIcv3oCz9HOGC8YWFIupi0l1k.jpg"
+    },
+    {
+      "id": 1884577,
+      "name": "Eric Gibson",
+      "credit_id": "5ec824976b5fc2001f419254",
+      "character": "Son (Dylan)",
+      "order": 276,
+      "gender": 2,
+      "profile_path": "/AtsZAiUgBheam37qSGIK1rHtIul.jpg"
+    },
+    {
+      "id": 2649491,
+      "name": "Todd Mason",
+      "credit_id": "5ec825b9595a56001cb93392",
+      "character": "Officer Todd",
+      "order": 277,
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1224874,
+      "name": "Sean Millington",
+      "credit_id": "5ec826d18e2e000020206e38",
+      "character": "Wesley Cabot",
+      "order": 278,
+      "gender": 2,
+      "profile_path": "/m0e3zGUGEEz61ASy7UZFFOwxDvs.jpg"
+    },
+    {
+      "id": 2649501,
+      "name": "Jordan Robinson",
+      "credit_id": "5ec828416c849200212c1188",
+      "character": "11 Year Old Boy",
+      "order": 279,
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 2649506,
+      "name": "Thomas Toulgoet",
+      "credit_id": "5ec829938e2e00002020708c",
+      "character": "Micah Richards",
+      "order": 280,
+      "gender": 0,
+      "profile_path": "/gmklagazeQ9fAhSFjsqi4j6NBpd.jpg"
+    },
+    {
+      "id": 11486,
+      "name": "Michael Imperioli",
+      "credit_id": "580221009251415da20010b4",
+      "character": "Uriel",
+      "order": 346,
+      "gender": 2,
+      "profile_path": "/jfoEHR6BRMg8emtujXdM3G4JHIm.jpg"
+    }
+  ],
+  "id": 1227224
+}

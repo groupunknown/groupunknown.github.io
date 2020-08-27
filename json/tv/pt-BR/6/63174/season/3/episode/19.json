@@ -1,0 +1,312 @@
+{
+  "air_date": "2018-03-26",
+  "crew": [
+    {
+      "id": 11817,
+      "credit_id": "56be64919251417344004abb",
+      "name": "Nathan Hope",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1407158,
+      "credit_id": "56c0b6abc3a36817fd00be48",
+      "name": "Jenn Kao",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 0,
+      "profile_path": null
+    }
+  ],
+  "episode_number": 19,
+  "guest_stars": [
+    {
+      "id": 148632,
+      "name": "McNally Sagal",
+      "credit_id": "5ada43d1c3a3686a2000089a",
+      "character": "Margo Channing",
+      "order": 126,
+      "gender": 1,
+      "profile_path": "/idUmB4tXOOjnXB4avefOUi343DB.jpg"
+    },
+    {
+      "id": 2035830,
+      "name": "Doug Hurley",
+      "credit_id": "5aec142e0e0a266e0d003f0b",
+      "character": "Ned",
+      "order": 133,
+      "gender": 0,
+      "profile_path": "/gb71ggh7ARTu7AvkHzF8aVME51t.jpg"
+    },
+    {
+      "id": 2048064,
+      "name": "Fred Mancuso",
+      "credit_id": "5b03eb1c0e0a2623d102a190",
+      "character": "Bounty #1",
+      "order": 136,
+      "gender": 0,
+      "profile_path": "/6GmRrhGVs98YCrULyY8bFvGdU6L.jpg"
+    },
+    {
+      "id": 17837,
+      "name": "Patrick Gallagher",
+      "credit_id": "5eca78ca8e2e00002024b487",
+      "character": "Barry Hill",
+      "order": 529,
+      "gender": 2,
+      "profile_path": "/8ZWcp7kRwoh5cGZFByDQdhTODw9.jpg"
+    },
+    {
+      "id": 1330895,
+      "name": "Adam Gifford",
+      "credit_id": "5eca7903b3e627002230a062",
+      "character": "Ruben Silva",
+      "order": 530,
+      "gender": 2,
+      "profile_path": "/xKxNqO3LMdbpXFyxPsAR42BaDMP.jpg"
+    },
+    {
+      "id": 1463073,
+      "name": "Dutch Johnson",
+      "credit_id": "5eca7a308e2e00002024b8eb",
+      "character": "Zack Moore",
+      "order": 531,
+      "gender": 2,
+      "profile_path": "/cnIEvPX2GjAN0HwgAcC4yvPzyID.jpg"
+    },
+    {
+      "id": 1186482,
+      "name": "Becky Wu",
+      "credit_id": "5eca7a4d6c8492001f2c2692",
+      "character": "Yvonne Gwo",
+      "order": 532,
+      "gender": 1,
+      "profile_path": "/eWRWEXrpApCKNgIpcNoAc5OJKwR.jpg"
+    },
+    {
+      "id": 1233515,
+      "name": "Daniel Lue",
+      "credit_id": "5eca7a946c84920020321010",
+      "character": "Bounty #2",
+      "order": 533,
+      "gender": 2,
+      "profile_path": "/cuPw20hMSvXswfOsbnw26qIO4mP.jpg"
+    },
+    {
+      "id": 1450544,
+      "name": "Thai Edwards",
+      "credit_id": "5eca7c49e635710021cecd91",
+      "character": "Bounty #3",
+      "order": 534,
+      "gender": 2,
+      "profile_path": "/dEfneNEZN6cUyHL6Q0kbaZO7OVH.jpg"
+    }
+  ],
+  "name": "A cor laranja lhe cai bem",
+  "overview": "Lúcifer e Chloe investigam um assassinato que tem um suspeito conhecido. Maze decide fazer uma mudança, e Charlotte faz uma descoberta importante.",
+  "id": 1448671,
+  "production_code": "",
+  "season_number": 3,
+  "still_path": "/vZzsNxVAZ2dZ2Kh1mGctYg2nzuC.jpg",
+  "vote_average": 8,
+  "vote_count": 8,
+  "credits": {
+    "cast": [
+      {
+        "character": "Lucifer Morningstar",
+        "credit_id": "559cb1f1c3a3681be4000bec",
+        "gender": 2,
+        "id": 192944,
+        "name": "Tom Ellis",
+        "order": 0,
+        "profile_path": "/sJkxqJfSgcwussMeywxyrnYxVX.jpg"
+      },
+      {
+        "character": "Chloe Decker",
+        "credit_id": "559cb21f9251414206000bef",
+        "gender": 1,
+        "id": 37014,
+        "name": "Lauren German",
+        "order": 1,
+        "profile_path": "/if1TbO8dSfPiDCMfy52nH7A2D7.jpg"
+      },
+      {
+        "character": "Daniel \"Dan\" Espinoza",
+        "credit_id": "559cb261c3a3681be4000bfa",
+        "gender": 2,
+        "id": 116474,
+        "name": "Kevin Alejandro",
+        "order": 2,
+        "profile_path": "/16WhElhjn3irGqQuMS8Z7L0ixit.jpg"
+      },
+      {
+        "character": "Amenadiel",
+        "credit_id": "55fdc6ed92514152b10018cd",
+        "gender": 2,
+        "id": 21356,
+        "name": "D.B. Woodside",
+        "order": 3,
+        "profile_path": "/eb4NCvnZeA4yCIcIip5tYwX07Fo.jpg"
+      },
+      {
+        "character": "Mazikeen \"Maze\"",
+        "credit_id": "559cb2529251414204000af7",
+        "gender": 1,
+        "id": 515875,
+        "name": "Lesley-Ann Brandt",
+        "order": 4,
+        "profile_path": "/13V0F74e350RDA2U7YJ14Wpgp73.jpg"
+      },
+      {
+        "character": "Marcus Pierce",
+        "credit_id": "59c2476f925141768a00c978",
+        "gender": 2,
+        "id": 11824,
+        "name": "Tom Welling",
+        "order": 5,
+        "profile_path": "/tkwREdAuj33kNTG7O8niRQMxepy.jpg"
+      },
+      {
+        "character": "Ella Lopez",
+        "credit_id": "57e09a81c3a36853f2001780",
+        "gender": 1,
+        "id": 56457,
+        "name": "Aimee Garcia",
+        "order": 7,
+        "profile_path": "/n0hKZHujbdzjkti2y4s7w48boTB.jpg"
+      },
+      {
+        "character": "Linda Martin",
+        "credit_id": "559cb272c3a3681bdd000abb",
+        "gender": 1,
+        "id": 46074,
+        "name": "Rachael Harris",
+        "order": 9,
+        "profile_path": "/39RYYTxxHaJKDXFTabjAPH8z5r6.jpg"
+      },
+      {
+        "character": "Beatrice \"Trixie\" Espinoza",
+        "credit_id": "55fdc74392514152a80017a4",
+        "gender": 1,
+        "id": 1512021,
+        "name": "Scarlett Estevez",
+        "order": 698,
+        "profile_path": "/3vZJxaHFC1bMuXd4a3tSrYhAffz.jpg"
+      },
+      {
+        "character": "Charlotte Richards",
+        "credit_id": "57a5d4909251410eb100429e",
+        "gender": 1,
+        "id": 74423,
+        "name": "Tricia Helfer",
+        "order": 699,
+        "profile_path": "/9LaGlfE5TeNnk1UZHFZPB9uy65q.jpg"
+      }
+    ],
+    "crew": [
+      {
+        "id": 11817,
+        "credit_id": "56be64919251417344004abb",
+        "name": "Nathan Hope",
+        "department": "Directing",
+        "job": "Director",
+        "gender": 2,
+        "profile_path": null
+      },
+      {
+        "id": 1407158,
+        "credit_id": "56c0b6abc3a36817fd00be48",
+        "name": "Jenn Kao",
+        "department": "Writing",
+        "job": "Writer",
+        "gender": 0,
+        "profile_path": null
+      }
+    ],
+    "guest_stars": [
+      {
+        "id": 148632,
+        "name": "McNally Sagal",
+        "credit_id": "5ada43d1c3a3686a2000089a",
+        "character": "Margo Channing",
+        "order": 126,
+        "gender": 1,
+        "profile_path": "/idUmB4tXOOjnXB4avefOUi343DB.jpg"
+      },
+      {
+        "id": 2035830,
+        "name": "Doug Hurley",
+        "credit_id": "5aec142e0e0a266e0d003f0b",
+        "character": "Ned",
+        "order": 133,
+        "gender": 0,
+        "profile_path": "/gb71ggh7ARTu7AvkHzF8aVME51t.jpg"
+      },
+      {
+        "id": 2048064,
+        "name": "Fred Mancuso",
+        "credit_id": "5b03eb1c0e0a2623d102a190",
+        "character": "Bounty #1",
+        "order": 136,
+        "gender": 0,
+        "profile_path": "/6GmRrhGVs98YCrULyY8bFvGdU6L.jpg"
+      },
+      {
+        "id": 17837,
+        "name": "Patrick Gallagher",
+        "credit_id": "5eca78ca8e2e00002024b487",
+        "character": "Barry Hill",
+        "order": 529,
+        "gender": 2,
+        "profile_path": "/8ZWcp7kRwoh5cGZFByDQdhTODw9.jpg"
+      },
+      {
+        "id": 1330895,
+        "name": "Adam Gifford",
+        "credit_id": "5eca7903b3e627002230a062",
+        "character": "Ruben Silva",
+        "order": 530,
+        "gender": 2,
+        "profile_path": "/xKxNqO3LMdbpXFyxPsAR42BaDMP.jpg"
+      },
+      {
+        "id": 1463073,
+        "name": "Dutch Johnson",
+        "credit_id": "5eca7a308e2e00002024b8eb",
+        "character": "Zack Moore",
+        "order": 531,
+        "gender": 2,
+        "profile_path": "/cnIEvPX2GjAN0HwgAcC4yvPzyID.jpg"
+      },
+      {
+        "id": 1186482,
+        "name": "Becky Wu",
+        "credit_id": "5eca7a4d6c8492001f2c2692",
+        "character": "Yvonne Gwo",
+        "order": 532,
+        "gender": 1,
+        "profile_path": "/eWRWEXrpApCKNgIpcNoAc5OJKwR.jpg"
+      },
+      {
+        "id": 1233515,
+        "name": "Daniel Lue",
+        "credit_id": "5eca7a946c84920020321010",
+        "character": "Bounty #2",
+        "order": 533,
+        "gender": 2,
+        "profile_path": "/cuPw20hMSvXswfOsbnw26qIO4mP.jpg"
+      },
+      {
+        "id": 1450544,
+        "name": "Thai Edwards",
+        "credit_id": "5eca7c49e635710021cecd91",
+        "character": "Bounty #3",
+        "order": 534,
+        "gender": 2,
+        "profile_path": "/dEfneNEZN6cUyHL6Q0kbaZO7OVH.jpg"
+      }
+    ]
+  }
+}

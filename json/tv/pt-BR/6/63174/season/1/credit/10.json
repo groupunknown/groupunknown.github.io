@@ -1,0 +1,189 @@
+{
+  "cast": [
+    {
+      "character": "Lucifer Morningstar",
+      "credit_id": "559cb1f1c3a3681be4000bec",
+      "gender": 2,
+      "id": 192944,
+      "name": "Tom Ellis",
+      "order": 0,
+      "profile_path": "/sJkxqJfSgcwussMeywxyrnYxVX.jpg"
+    },
+    {
+      "character": "Chloe Decker",
+      "credit_id": "559cb21f9251414206000bef",
+      "gender": 1,
+      "id": 37014,
+      "name": "Lauren German",
+      "order": 1,
+      "profile_path": "/if1TbO8dSfPiDCMfy52nH7A2D7.jpg"
+    },
+    {
+      "character": "Daniel \"Dan\" Espinoza",
+      "credit_id": "559cb261c3a3681be4000bfa",
+      "gender": 2,
+      "id": 116474,
+      "name": "Kevin Alejandro",
+      "order": 2,
+      "profile_path": "/16WhElhjn3irGqQuMS8Z7L0ixit.jpg"
+    },
+    {
+      "character": "Amenadiel",
+      "credit_id": "55fdc6ed92514152b10018cd",
+      "gender": 2,
+      "id": 21356,
+      "name": "D.B. Woodside",
+      "order": 3,
+      "profile_path": "/eb4NCvnZeA4yCIcIip5tYwX07Fo.jpg"
+    },
+    {
+      "character": "Mazikeen \"Maze\"",
+      "credit_id": "559cb2529251414204000af7",
+      "gender": 1,
+      "id": 515875,
+      "name": "Lesley-Ann Brandt",
+      "order": 4,
+      "profile_path": "/13V0F74e350RDA2U7YJ14Wpgp73.jpg"
+    },
+    {
+      "character": "Linda Martin",
+      "credit_id": "559cb272c3a3681bdd000abb",
+      "gender": 1,
+      "id": 46074,
+      "name": "Rachael Harris",
+      "order": 9,
+      "profile_path": "/39RYYTxxHaJKDXFTabjAPH8z5r6.jpg"
+    },
+    {
+      "character": "Beatrice \"Trixie\" Espinoza",
+      "credit_id": "55fdc74392514152a80017a4",
+      "gender": 1,
+      "id": 1512021,
+      "name": "Scarlett Estevez",
+      "order": 698,
+      "profile_path": "/3vZJxaHFC1bMuXd4a3tSrYhAffz.jpg"
+    }
+  ],
+  "crew": [
+    {
+      "id": 1382168,
+      "credit_id": "56f41101925141769e001e90",
+      "name": "Alex Katsnelson",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 1579755,
+      "credit_id": "5724ebc39251411d090002b0",
+      "name": "Mike Costa",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 1613214,
+      "credit_id": "5724ebfdc3a3685ac10008eb",
+      "name": "Tara Nicole Weyr",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 1,
+      "profile_path": null
+    }
+  ],
+  "guest_stars": [
+    {
+      "id": 1182725,
+      "name": "Manny Montana",
+      "credit_id": "56fb0af49251412883000145",
+      "character": "Junior Arias",
+      "order": 39,
+      "gender": 0,
+      "profile_path": "/seDWjQKEJx8fdOBgmMUw4TSyyTK.jpg"
+    },
+    {
+      "id": 72003,
+      "name": "Tara Summers",
+      "credit_id": "5724ea9d92514119ed002344",
+      "character": "Anne Martin",
+      "order": 47,
+      "gender": 1,
+      "profile_path": "/4ZcoDTgcJWItPBkNAySyIfkAhCI.jpg"
+    },
+    {
+      "id": 209038,
+      "name": "Alessandra Torresani",
+      "credit_id": "5724eae9c3a368423a002385",
+      "character": "Naomi Austen",
+      "order": 48,
+      "gender": 1,
+      "profile_path": "/5fa0pBwZA5DW3F9XVlD6nsgXPIA.jpg"
+    },
+    {
+      "id": 1836857,
+      "name": "Beatriz Brenes",
+      "credit_id": "594a80f192514145b900eb49",
+      "character": "Young Hostess",
+      "order": 77,
+      "gender": 0,
+      "profile_path": "/cs9oqkqsosuGhTEKPPIRDEGvBL2.jpg"
+    },
+    {
+      "id": 1776683,
+      "name": "David Chin",
+      "credit_id": "5ec74b92e635710021cc67d0",
+      "character": "Officer",
+      "order": 217,
+      "gender": 2,
+      "profile_path": "/1mMTMkuLeKbGVufj3jSVsx4mvU0.jpg"
+    },
+    {
+      "id": 1705590,
+      "name": "Stefania Indelicato",
+      "credit_id": "5ec74bc6d2147c0022b9c70c",
+      "character": "Cute Woman",
+      "order": 218,
+      "gender": 0,
+      "profile_path": "/fHRNBd0XMPRyAnVlJvMGrBJXSv6.jpg"
+    },
+    {
+      "id": 1475808,
+      "name": "Maddie Phillips",
+      "credit_id": "5ec74bf3ae2811001f3cb799",
+      "character": "Waitress",
+      "order": 219,
+      "gender": 1,
+      "profile_path": "/uuQBuEdkhgDSJ2wnE5N4tyryl4t.jpg"
+    },
+    {
+      "id": 2366819,
+      "name": "Jeff Reyes",
+      "credit_id": "5ec74c4fae281100203b1cfd",
+      "character": "Dishwasher",
+      "order": 220,
+      "gender": 0,
+      "profile_path": "/pypE4ekPiI9qKOXchqR6EfLg0eK.jpg"
+    },
+    {
+      "id": 114000,
+      "name": "Kevin Rankin",
+      "credit_id": "5ec7e7df0fb17f001d7ca915",
+      "character": "Malcolm Graham",
+      "order": 246,
+      "gender": 2,
+      "profile_path": "/fOW5R6BSgRvMrt2R7KAxSk7L4H2.jpg"
+    },
+    {
+      "id": 28412,
+      "name": "Rebecca De Mornay",
+      "credit_id": "56f7c36bc3a3686a6e006bc8",
+      "character": "Penelope Decker",
+      "order": 667,
+      "gender": 1,
+      "profile_path": "/bGSvflCmfywasc3U8QAsJPaAek4.jpg"
+    }
+  ],
+  "id": 1165520
+}

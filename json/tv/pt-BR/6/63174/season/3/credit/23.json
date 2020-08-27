@@ -1,0 +1,179 @@
+{
+  "cast": [
+    {
+      "character": "Lucifer Morningstar",
+      "credit_id": "559cb1f1c3a3681be4000bec",
+      "gender": 2,
+      "id": 192944,
+      "name": "Tom Ellis",
+      "order": 0,
+      "profile_path": "/sJkxqJfSgcwussMeywxyrnYxVX.jpg"
+    },
+    {
+      "character": "Chloe Decker",
+      "credit_id": "559cb21f9251414206000bef",
+      "gender": 1,
+      "id": 37014,
+      "name": "Lauren German",
+      "order": 1,
+      "profile_path": "/if1TbO8dSfPiDCMfy52nH7A2D7.jpg"
+    },
+    {
+      "character": "Daniel \"Dan\" Espinoza",
+      "credit_id": "559cb261c3a3681be4000bfa",
+      "gender": 2,
+      "id": 116474,
+      "name": "Kevin Alejandro",
+      "order": 2,
+      "profile_path": "/16WhElhjn3irGqQuMS8Z7L0ixit.jpg"
+    },
+    {
+      "character": "Amenadiel",
+      "credit_id": "55fdc6ed92514152b10018cd",
+      "gender": 2,
+      "id": 21356,
+      "name": "D.B. Woodside",
+      "order": 3,
+      "profile_path": "/eb4NCvnZeA4yCIcIip5tYwX07Fo.jpg"
+    },
+    {
+      "character": "Mazikeen \"Maze\"",
+      "credit_id": "559cb2529251414204000af7",
+      "gender": 1,
+      "id": 515875,
+      "name": "Lesley-Ann Brandt",
+      "order": 4,
+      "profile_path": "/13V0F74e350RDA2U7YJ14Wpgp73.jpg"
+    },
+    {
+      "character": "Marcus Pierce",
+      "credit_id": "59c2476f925141768a00c978",
+      "gender": 2,
+      "id": 11824,
+      "name": "Tom Welling",
+      "order": 5,
+      "profile_path": "/tkwREdAuj33kNTG7O8niRQMxepy.jpg"
+    },
+    {
+      "character": "Ella Lopez",
+      "credit_id": "57e09a81c3a36853f2001780",
+      "gender": 1,
+      "id": 56457,
+      "name": "Aimee Garcia",
+      "order": 7,
+      "profile_path": "/n0hKZHujbdzjkti2y4s7w48boTB.jpg"
+    },
+    {
+      "character": "Linda Martin",
+      "credit_id": "559cb272c3a3681bdd000abb",
+      "gender": 1,
+      "id": 46074,
+      "name": "Rachael Harris",
+      "order": 9,
+      "profile_path": "/39RYYTxxHaJKDXFTabjAPH8z5r6.jpg"
+    },
+    {
+      "character": "Beatrice \"Trixie\" Espinoza",
+      "credit_id": "55fdc74392514152a80017a4",
+      "gender": 1,
+      "id": 1512021,
+      "name": "Scarlett Estevez",
+      "order": 698,
+      "profile_path": "/3vZJxaHFC1bMuXd4a3tSrYhAffz.jpg"
+    },
+    {
+      "character": "Charlotte Richards",
+      "credit_id": "57a5d4909251410eb100429e",
+      "gender": 1,
+      "id": 74423,
+      "name": "Tricia Helfer",
+      "order": 699,
+      "profile_path": "/9LaGlfE5TeNnk1UZHFZPB9uy65q.jpg"
+    }
+  ],
+  "crew": [],
+  "guest_stars": [
+    {
+      "id": 14737,
+      "name": "Doug Savant",
+      "credit_id": "5ada444f92514123c9000810",
+      "character": "Forest Clay",
+      "order": 129,
+      "gender": 2,
+      "profile_path": "/fvbOI31a6KM37M0buVE8wW2HObx.jpg"
+    },
+    {
+      "id": 83225,
+      "name": "Colin Egglesfield",
+      "credit_id": "57eaeff392514150090000d3",
+      "character": "Ben Wheeler",
+      "order": 130,
+      "gender": 2,
+      "profile_path": "/qFbtolbvCE0JK5pHxz777rPNh6Z.jpg"
+    },
+    {
+      "id": 167316,
+      "name": "J. Anthony Pena",
+      "credit_id": "5e8bef784b0c6300162be90b",
+      "character": "A.J. Agholor",
+      "order": 152,
+      "gender": 2,
+      "profile_path": "/73687WPnjxzpbuVyQXk5cLOmNBp.jpg"
+    },
+    {
+      "id": 80446,
+      "name": "Terrell Tilford",
+      "credit_id": "5ecaaa336c8492001f2c4aa9",
+      "character": "Robert Ertz",
+      "order": 554,
+      "gender": 2,
+      "profile_path": "/8jCXQSWLYDJU3WqIBzfX7GsMZTN.jpg"
+    },
+    {
+      "id": 131820,
+      "name": "Emma Bell",
+      "credit_id": "5ecaaacc8e2e000020253eb0",
+      "character": "Mia Hytner",
+      "order": 555,
+      "gender": 1,
+      "profile_path": "/44pK49GPg93it63ALnw91Z0waK2.jpg"
+    },
+    {
+      "id": 2652082,
+      "name": "Alice Kwong-Van Dusen",
+      "credit_id": "5ecaab41d2147c0021b9005e",
+      "character": "Carly",
+      "order": 556,
+      "gender": 1,
+      "profile_path": "/mmORoN4S470esQnpzFxKAFDUncQ.jpg"
+    },
+    {
+      "id": 1489417,
+      "name": "Aidan Gail",
+      "credit_id": "5ecaad0ae635710020d16534",
+      "character": "Micah Richards",
+      "order": 557,
+      "gender": 0,
+      "profile_path": "/t6Dp8HOUVuy7mK3zg7yfvhmgfqu.jpg"
+    },
+    {
+      "id": 2652089,
+      "name": "Amelie Leviant",
+      "credit_id": "5ecaad39b3e627002130c0e0",
+      "character": "Ivy Richards",
+      "order": 558,
+      "gender": 1,
+      "profile_path": "/s53rbFFvAPoI9aoPpBxmcETvSxj.jpg"
+    },
+    {
+      "id": 118895,
+      "name": "Tory N. Thompson",
+      "credit_id": "5ecaaee98e2e003dd613ceb9",
+      "character": "Delivery Guy",
+      "order": 559,
+      "gender": 2,
+      "profile_path": "/bA5XgQBhWzzRZfRHFDjAUWSjX0W.jpg"
+    }
+  ],
+  "id": 1455089
+}

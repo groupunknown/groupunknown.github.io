@@ -1,0 +1,207 @@
+{
+  "cast": [
+    {
+      "character": "Lucifer Morningstar",
+      "credit_id": "559cb1f1c3a3681be4000bec",
+      "gender": 2,
+      "id": 192944,
+      "name": "Tom Ellis",
+      "order": 0,
+      "profile_path": "/sJkxqJfSgcwussMeywxyrnYxVX.jpg"
+    },
+    {
+      "character": "Chloe Decker",
+      "credit_id": "559cb21f9251414206000bef",
+      "gender": 1,
+      "id": 37014,
+      "name": "Lauren German",
+      "order": 1,
+      "profile_path": "/if1TbO8dSfPiDCMfy52nH7A2D7.jpg"
+    },
+    {
+      "character": "Daniel \"Dan\" Espinoza",
+      "credit_id": "559cb261c3a3681be4000bfa",
+      "gender": 2,
+      "id": 116474,
+      "name": "Kevin Alejandro",
+      "order": 2,
+      "profile_path": "/16WhElhjn3irGqQuMS8Z7L0ixit.jpg"
+    },
+    {
+      "character": "Amenadiel",
+      "credit_id": "55fdc6ed92514152b10018cd",
+      "gender": 2,
+      "id": 21356,
+      "name": "D.B. Woodside",
+      "order": 3,
+      "profile_path": "/eb4NCvnZeA4yCIcIip5tYwX07Fo.jpg"
+    },
+    {
+      "character": "Mazikeen \"Maze\"",
+      "credit_id": "559cb2529251414204000af7",
+      "gender": 1,
+      "id": 515875,
+      "name": "Lesley-Ann Brandt",
+      "order": 4,
+      "profile_path": "/13V0F74e350RDA2U7YJ14Wpgp73.jpg"
+    },
+    {
+      "character": "Ella Lopez",
+      "credit_id": "57e09a81c3a36853f2001780",
+      "gender": 1,
+      "id": 56457,
+      "name": "Aimee Garcia",
+      "order": 7,
+      "profile_path": "/n0hKZHujbdzjkti2y4s7w48boTB.jpg"
+    },
+    {
+      "character": "Linda Martin",
+      "credit_id": "559cb272c3a3681bdd000abb",
+      "gender": 1,
+      "id": 46074,
+      "name": "Rachael Harris",
+      "order": 9,
+      "profile_path": "/39RYYTxxHaJKDXFTabjAPH8z5r6.jpg"
+    },
+    {
+      "character": "Beatrice \"Trixie\" Espinoza",
+      "credit_id": "55fdc74392514152a80017a4",
+      "gender": 1,
+      "id": 1512021,
+      "name": "Scarlett Estevez",
+      "order": 698,
+      "profile_path": "/3vZJxaHFC1bMuXd4a3tSrYhAffz.jpg"
+    },
+    {
+      "character": "Charlotte Richards",
+      "credit_id": "57a5d4909251410eb100429e",
+      "gender": 1,
+      "id": 74423,
+      "name": "Tricia Helfer",
+      "order": 699,
+      "profile_path": "/9LaGlfE5TeNnk1UZHFZPB9uy65q.jpg"
+    }
+  ],
+  "crew": [
+    {
+      "id": 1382168,
+      "credit_id": "56f41101925141769e001e90",
+      "name": "Alex Katsnelson",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 1400942,
+      "credit_id": "5725323f9251417782000220",
+      "name": "Mairzee Almas",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 0,
+      "profile_path": "/wGOEgnJZtELk4SQpQEVFoMChAyl.jpg"
+    }
+  ],
+  "guest_stars": [
+    {
+      "id": 59153,
+      "name": "Robin Givens",
+      "credit_id": "57eaf02b92514150160000d1",
+      "character": "Leila Simms",
+      "order": 63,
+      "gender": 1,
+      "profile_path": "/iF7JVhxEcDqXEVBKNdSK9Bfwz6W.jpg"
+    },
+    {
+      "id": 6623,
+      "name": "Vik Sahay",
+      "credit_id": "57eaf03ac3a36868ba0000f2",
+      "character": "Ray Codfree",
+      "order": 64,
+      "gender": 2,
+      "profile_path": "/690bPfmzaXsrZ1eDcUOCDT5TPpq.jpg"
+    },
+    {
+      "id": 1590318,
+      "name": "Harry Katzman",
+      "credit_id": "5ec7f6f30fb17f001b7baca6",
+      "character": "",
+      "order": 255,
+      "gender": 2,
+      "profile_path": "/8VxFniJMmC7vIomzgULDAKwEbWc.jpg"
+    },
+    {
+      "id": 1799830,
+      "name": "Michael Kruse-Dahl",
+      "credit_id": "5ec7fe05ae2811001e3c9103",
+      "character": "Man Bun",
+      "order": 257,
+      "gender": 0,
+      "profile_path": "/ypneO1iJpovYU6LVohD2BUlTrRa.jpg"
+    },
+    {
+      "id": 2300491,
+      "name": "Veronika London",
+      "credit_id": "5ec7fedce635710022cfe189",
+      "character": "Woman",
+      "order": 258,
+      "gender": 1,
+      "profile_path": "/9tsUuhl53lkVtP7KVctYIMnCRsP.jpg"
+    },
+    {
+      "id": 140182,
+      "name": "Matthew MacCaull",
+      "credit_id": "5ec80d6eae2811001f3df44c",
+      "character": "Nicholas Sands",
+      "order": 259,
+      "gender": 2,
+      "profile_path": "/1kVpqH3ak5VlCfCRMxizhn0kI7P.jpg"
+    },
+    {
+      "id": 1685448,
+      "name": "Teana-Marie Smith",
+      "credit_id": "5ec80dc4d2147c0022ba9af7",
+      "character": "Tech",
+      "order": 260,
+      "gender": 0,
+      "profile_path": "/fcQjfVZjqUbIubL23bPPht1XVAm.jpg"
+    },
+    {
+      "id": 530733,
+      "name": "Barry Nerling",
+      "credit_id": "5ec80edd0fb17f001d7ce4c6",
+      "character": "Mugger",
+      "order": 261,
+      "gender": 2,
+      "profile_path": "/vCpD9rhOrKSPtMd27EnI2qbaGOu.jpg"
+    },
+    {
+      "id": 1802806,
+      "name": "Adam Pateman",
+      "credit_id": "5ec80f078e2e000021266592",
+      "character": "Tim",
+      "order": 262,
+      "gender": 0,
+      "profile_path": "/6N9rz11fKWfk8hQsy8ytl6OX0M5.jpg"
+    },
+    {
+      "id": 1907541,
+      "name": "Bree Woodill",
+      "credit_id": "5ec80f4d6c849200202dd444",
+      "character": "Sarah Aiken",
+      "order": 263,
+      "gender": 1,
+      "profile_path": "/kmRGKG7AaOCZH1CTcOseweA646x.jpg"
+    },
+    {
+      "id": 1558026,
+      "name": "Antonio Cayonne",
+      "credit_id": "5ec7fcc9e635710020ce3b05",
+      "character": "Uniformed Officer",
+      "order": 691,
+      "gender": 2,
+      "profile_path": "/bCAxx1cNHsidOLwZys2FJEhsdrd.jpg"
+    }
+  ],
+  "id": 1226109
+}

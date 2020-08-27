@@ -1,0 +1,384 @@
+{
+  "air_date": "2017-10-23",
+  "crew": [
+    {
+      "id": 207074,
+      "credit_id": "56c0b6a2c3a368180a00d499",
+      "name": "Jason Ning",
+      "department": "Writing",
+      "job": "Writer",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 205641,
+      "credit_id": "56ff97a09251416783001aa1",
+      "name": "Eagle Egilsson",
+      "department": "Directing",
+      "job": "Director",
+      "gender": 2,
+      "profile_path": null
+    }
+  ],
+  "episode_number": 4,
+  "guest_stars": [
+    {
+      "id": 44060,
+      "name": "John Posey",
+      "credit_id": "5ec962db6c849200212d6b51",
+      "character": "Judge",
+      "order": 427,
+      "gender": 2,
+      "profile_path": "/sUk2tKOWTAkYAxMZ0QfhxdzboJf.jpg"
+    },
+    {
+      "id": 180306,
+      "name": "Antonio Jaramillo",
+      "credit_id": "5ec9659f0fb17f001d7f160f",
+      "character": "Jerry Blackcrow",
+      "order": 428,
+      "gender": 2,
+      "profile_path": "/6xLThPXEOLPGxZ7Szi1X3cGRZ8g.jpg"
+    },
+    {
+      "id": 1079805,
+      "name": "Saxon Sharbino",
+      "credit_id": "5ec96665d2147c0021b7f1da",
+      "character": "Carly Glantz",
+      "order": 429,
+      "gender": 1,
+      "profile_path": "/9TDfSiqCJyEutjxQLQqi2Sj97M.jpg"
+    },
+    {
+      "id": 1285756,
+      "name": "Rickey Brown",
+      "credit_id": "5ec967a3d2147c0023c227c8",
+      "character": "Tyson Chase",
+      "order": 430,
+      "gender": 2,
+      "profile_path": "/fiC7eStqH8zVm6sanMaf7IqWZdx.jpg"
+    },
+    {
+      "id": 1131208,
+      "name": "Kelly Dowdle",
+      "credit_id": "5ec9684fd2147c0022bc2f95",
+      "character": "Lexy",
+      "order": 431,
+      "gender": 1,
+      "profile_path": "/3sCtbxP79cdjZBskqanPqSXz8wW.jpg"
+    },
+    {
+      "id": 2024927,
+      "name": "Michelly Farias",
+      "credit_id": "5ec968f36c84920020302d3d",
+      "character": "Natalie",
+      "order": 432,
+      "gender": 1,
+      "profile_path": "/ckH0MWGKvLoSJxlYi1kyEczUtBg.jpg"
+    },
+    {
+      "id": 1696082,
+      "name": "Ronak Gandhi",
+      "credit_id": "5ec96a1e8e2e0000202212fb",
+      "character": "Colin",
+      "order": 433,
+      "gender": 2,
+      "profile_path": "/iDntYBN9dwfTkysXinsiacgOwty.jpg"
+    },
+    {
+      "id": 2037077,
+      "name": "Rachelle Goulding",
+      "credit_id": "5ec96ae9a35c8e0020e293c2",
+      "character": "Blair",
+      "order": 434,
+      "gender": 1,
+      "profile_path": "/djN2kg59GmfLJNGJxDQLLsgVkcP.jpg"
+    },
+    {
+      "id": 1718895,
+      "name": "Chris Lamica",
+      "credit_id": "5ec96b38a35c8e0021e2d4b3",
+      "character": "Bonehead Bobby",
+      "order": 435,
+      "gender": 2,
+      "profile_path": "/sFyvZEO7pIIIhtniJwJpB1pWmsJ.jpg"
+    },
+    {
+      "id": 1212619,
+      "name": "Robert Merrill",
+      "credit_id": "5ec96bf4140bad001b1af9e8",
+      "character": "Mr. Glantz",
+      "order": 436,
+      "gender": 2,
+      "profile_path": "/5fP8V90fTxLLeMj1Q7Nva7ke4Ro.jpg"
+    },
+    {
+      "id": 1559540,
+      "name": "Katelyn Statton",
+      "credit_id": "5ec96da0e635710021cdf4f7",
+      "character": "Tootie",
+      "order": 437,
+      "gender": 0,
+      "profile_path": "/pFFQaHo1f0oJTfkot3LAAza30ej.jpg"
+    },
+    {
+      "id": 2567429,
+      "name": "Stephanie C. Allen",
+      "credit_id": "5ec96eaaeb79c2001ea295af",
+      "character": "Firehawk Girl #1",
+      "order": 438,
+      "gender": 1,
+      "profile_path": "/7MWAk2xD37U2k5inUcuVFkSuL3v.jpg"
+    },
+    {
+      "id": 2650825,
+      "name": "Tatiana Aarons",
+      "credit_id": "5ec96f0f6c8492002030348b",
+      "character": "Firehawk Girl #2",
+      "order": 439,
+      "gender": 1,
+      "profile_path": "/vKfyCaj0yt09wDbG06qfuagILUg.jpg"
+    }
+  ],
+  "name": "O que Lúcifer faria?",
+  "overview": "Chloe tenta decifrar os sentimentos de Pierce. Junto com Lúcifer, ela investiga o assassinato de uma conselheira de um programa de reabilitação.",
+  "id": 1375778,
+  "production_code": "T13.20753",
+  "season_number": 3,
+  "still_path": "/75ibCXvPllicf80JEXWMvZmseJM.jpg",
+  "vote_average": 7.3,
+  "vote_count": 10,
+  "credits": {
+    "cast": [
+      {
+        "character": "Lucifer Morningstar",
+        "credit_id": "559cb1f1c3a3681be4000bec",
+        "gender": 2,
+        "id": 192944,
+        "name": "Tom Ellis",
+        "order": 0,
+        "profile_path": "/sJkxqJfSgcwussMeywxyrnYxVX.jpg"
+      },
+      {
+        "character": "Chloe Decker",
+        "credit_id": "559cb21f9251414206000bef",
+        "gender": 1,
+        "id": 37014,
+        "name": "Lauren German",
+        "order": 1,
+        "profile_path": "/if1TbO8dSfPiDCMfy52nH7A2D7.jpg"
+      },
+      {
+        "character": "Daniel \"Dan\" Espinoza",
+        "credit_id": "559cb261c3a3681be4000bfa",
+        "gender": 2,
+        "id": 116474,
+        "name": "Kevin Alejandro",
+        "order": 2,
+        "profile_path": "/16WhElhjn3irGqQuMS8Z7L0ixit.jpg"
+      },
+      {
+        "character": "Amenadiel",
+        "credit_id": "55fdc6ed92514152b10018cd",
+        "gender": 2,
+        "id": 21356,
+        "name": "D.B. Woodside",
+        "order": 3,
+        "profile_path": "/eb4NCvnZeA4yCIcIip5tYwX07Fo.jpg"
+      },
+      {
+        "character": "Mazikeen \"Maze\"",
+        "credit_id": "559cb2529251414204000af7",
+        "gender": 1,
+        "id": 515875,
+        "name": "Lesley-Ann Brandt",
+        "order": 4,
+        "profile_path": "/13V0F74e350RDA2U7YJ14Wpgp73.jpg"
+      },
+      {
+        "character": "Marcus Pierce",
+        "credit_id": "59c2476f925141768a00c978",
+        "gender": 2,
+        "id": 11824,
+        "name": "Tom Welling",
+        "order": 5,
+        "profile_path": "/tkwREdAuj33kNTG7O8niRQMxepy.jpg"
+      },
+      {
+        "character": "Ella Lopez",
+        "credit_id": "57e09a81c3a36853f2001780",
+        "gender": 1,
+        "id": 56457,
+        "name": "Aimee Garcia",
+        "order": 7,
+        "profile_path": "/n0hKZHujbdzjkti2y4s7w48boTB.jpg"
+      },
+      {
+        "character": "Linda Martin",
+        "credit_id": "559cb272c3a3681bdd000abb",
+        "gender": 1,
+        "id": 46074,
+        "name": "Rachael Harris",
+        "order": 9,
+        "profile_path": "/39RYYTxxHaJKDXFTabjAPH8z5r6.jpg"
+      },
+      {
+        "character": "Beatrice \"Trixie\" Espinoza",
+        "credit_id": "55fdc74392514152a80017a4",
+        "gender": 1,
+        "id": 1512021,
+        "name": "Scarlett Estevez",
+        "order": 698,
+        "profile_path": "/3vZJxaHFC1bMuXd4a3tSrYhAffz.jpg"
+      },
+      {
+        "character": "Charlotte Richards",
+        "credit_id": "57a5d4909251410eb100429e",
+        "gender": 1,
+        "id": 74423,
+        "name": "Tricia Helfer",
+        "order": 699,
+        "profile_path": "/9LaGlfE5TeNnk1UZHFZPB9uy65q.jpg"
+      }
+    ],
+    "crew": [
+      {
+        "id": 207074,
+        "credit_id": "56c0b6a2c3a368180a00d499",
+        "name": "Jason Ning",
+        "department": "Writing",
+        "job": "Writer",
+        "gender": 2,
+        "profile_path": null
+      },
+      {
+        "id": 205641,
+        "credit_id": "56ff97a09251416783001aa1",
+        "name": "Eagle Egilsson",
+        "department": "Directing",
+        "job": "Director",
+        "gender": 2,
+        "profile_path": null
+      }
+    ],
+    "guest_stars": [
+      {
+        "id": 44060,
+        "name": "John Posey",
+        "credit_id": "5ec962db6c849200212d6b51",
+        "character": "Judge",
+        "order": 427,
+        "gender": 2,
+        "profile_path": "/sUk2tKOWTAkYAxMZ0QfhxdzboJf.jpg"
+      },
+      {
+        "id": 180306,
+        "name": "Antonio Jaramillo",
+        "credit_id": "5ec9659f0fb17f001d7f160f",
+        "character": "Jerry Blackcrow",
+        "order": 428,
+        "gender": 2,
+        "profile_path": "/6xLThPXEOLPGxZ7Szi1X3cGRZ8g.jpg"
+      },
+      {
+        "id": 1079805,
+        "name": "Saxon Sharbino",
+        "credit_id": "5ec96665d2147c0021b7f1da",
+        "character": "Carly Glantz",
+        "order": 429,
+        "gender": 1,
+        "profile_path": "/9TDfSiqCJyEutjxQLQqi2Sj97M.jpg"
+      },
+      {
+        "id": 1285756,
+        "name": "Rickey Brown",
+        "credit_id": "5ec967a3d2147c0023c227c8",
+        "character": "Tyson Chase",
+        "order": 430,
+        "gender": 2,
+        "profile_path": "/fiC7eStqH8zVm6sanMaf7IqWZdx.jpg"
+      },
+      {
+        "id": 1131208,
+        "name": "Kelly Dowdle",
+        "credit_id": "5ec9684fd2147c0022bc2f95",
+        "character": "Lexy",
+        "order": 431,
+        "gender": 1,
+        "profile_path": "/3sCtbxP79cdjZBskqanPqSXz8wW.jpg"
+      },
+      {
+        "id": 2024927,
+        "name": "Michelly Farias",
+        "credit_id": "5ec968f36c84920020302d3d",
+        "character": "Natalie",
+        "order": 432,
+        "gender": 1,
+        "profile_path": "/ckH0MWGKvLoSJxlYi1kyEczUtBg.jpg"
+      },
+      {
+        "id": 1696082,
+        "name": "Ronak Gandhi",
+        "credit_id": "5ec96a1e8e2e0000202212fb",
+        "character": "Colin",
+        "order": 433,
+        "gender": 2,
+        "profile_path": "/iDntYBN9dwfTkysXinsiacgOwty.jpg"
+      },
+      {
+        "id": 2037077,
+        "name": "Rachelle Goulding",
+        "credit_id": "5ec96ae9a35c8e0020e293c2",
+        "character": "Blair",
+        "order": 434,
+        "gender": 1,
+        "profile_path": "/djN2kg59GmfLJNGJxDQLLsgVkcP.jpg"
+      },
+      {
+        "id": 1718895,
+        "name": "Chris Lamica",
+        "credit_id": "5ec96b38a35c8e0021e2d4b3",
+        "character": "Bonehead Bobby",
+        "order": 435,
+        "gender": 2,
+        "profile_path": "/sFyvZEO7pIIIhtniJwJpB1pWmsJ.jpg"
+      },
+      {
+        "id": 1212619,
+        "name": "Robert Merrill",
+        "credit_id": "5ec96bf4140bad001b1af9e8",
+        "character": "Mr. Glantz",
+        "order": 436,
+        "gender": 2,
+        "profile_path": "/5fP8V90fTxLLeMj1Q7Nva7ke4Ro.jpg"
+      },
+      {
+        "id": 1559540,
+        "name": "Katelyn Statton",
+        "credit_id": "5ec96da0e635710021cdf4f7",
+        "character": "Tootie",
+        "order": 437,
+        "gender": 0,
+        "profile_path": "/pFFQaHo1f0oJTfkot3LAAza30ej.jpg"
+      },
+      {
+        "id": 2567429,
+        "name": "Stephanie C. Allen",
+        "credit_id": "5ec96eaaeb79c2001ea295af",
+        "character": "Firehawk Girl #1",
+        "order": 438,
+        "gender": 1,
+        "profile_path": "/7MWAk2xD37U2k5inUcuVFkSuL3v.jpg"
+      },
+      {
+        "id": 2650825,
+        "name": "Tatiana Aarons",
+        "credit_id": "5ec96f0f6c8492002030348b",
+        "character": "Firehawk Girl #2",
+        "order": 439,
+        "gender": 1,
+        "profile_path": "/vKfyCaj0yt09wDbG06qfuagILUg.jpg"
+      }
+    ]
+  }
+}
