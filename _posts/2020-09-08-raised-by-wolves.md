@@ -57,7 +57,7 @@ seasons:
         air_date: 2020-09-03T00:00:00.000Z
         vote_average: 9
         vote_count: 1.135
-        options:
+        downloads:
           - quality: 1080p
             audio: Dual Àudio
             size: 5GB
@@ -76,7 +76,7 @@ seasons:
         air_date: 2020-09-03T00:00:00.000Z
         vote_average: 8
         vote_count: 805
-        options:
+        downloads:
           - quality: 720p
             audio: Dual Àudio
             size: 3GB
