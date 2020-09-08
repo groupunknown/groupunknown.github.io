@@ -91,13 +91,13 @@ layout: default
 							{% capture status %}
 								{% if average == 0 %}
 									Nenhum
-								{% elsif average < 20 %}
+								{% elsif average <= 20 %}
 									Péssimo
-								{% elsif average < 40 %}
+								{% elsif average <= 40 %}
 									Ruim
-								{% elsif average < 60 %}
+								{% elsif average <= 60 %}
 									Aceitável
-								{% elsif average < 80 %}
+								{% elsif average <= 80 %}
 									Ótimo
 								{% elsif average >= 80 %}
 									Excelente
