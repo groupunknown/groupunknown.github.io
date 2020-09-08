@@ -82,30 +82,15 @@ layout: default
 		                <div class="episodio-main-overview">{{ episode.overview }}</div>
 		            </div>
 		            <div class="episodio-main-rating">
-		            	{% assign average = episode.vote_average | remove:  "." %}
-						{% capture status %}
-							{% if average == "0" %}
-								Nenhum
-							{% elsif average <= "20" %}
-								Péssimo
-							{% elsif average <= "40" %}
-								Ruim
-							{% elsif average <= "60" %}
-								Aceitável
-							{% elsif average <= "80" %}
-								Ótimo
-							{% elsif average => "81" %}
-								Excelente
-							{% endif %}
-						{% endcapture %}
-		                <div class="rating {{ status | slugify }}">
-		                    <svg viewBox="-1 -1 38 38" data-status="{{status | strip }}">
+						
+		                <div class="rating otimo">
+		                    <svg viewBox="-1 -1 38 38" data-status="Ótimo">
 		                        <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
-		                        <path stroke-dasharray="{{ average }}, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
-		                        <text x="18" y="24.35">{{ episode.vote_average }}</text>
+		                        <path stroke-dasharray="80, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+		                        <text x="18" y="24.35">{% episode.vote_average | remove:  "." %}</text>
 		                    </svg>
 		                </div>
-		                <span class="status-{{ status | slugify }}">{{ status | strip }}</span>
+		                <span class="status-otimo">{{ status | strip }}</span>
 		                <div class="rating-text">{{ episode.vote_count }} avaliações</div>
 		            </div>
 		        </div>
