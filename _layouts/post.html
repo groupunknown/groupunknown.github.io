@@ -44,7 +44,7 @@ layout: default
 									INDISPONÍVEL
 								{% endif %}
 							{% endcapture %}
-							<div class="certification age-{{ page.certification }}" aria-label="{{ crtfctn_text }}" data-tooltipped="top-right">{{ page.certification }}</div>
+							<div class="certification age-{{ page.certification | strip }}" aria-label="{{ crtfctn_text | strip }}" data-tooltipped="top-right">{{ page.certification }}</div>
 						</div>
 	{% include suggestion.html %}
 	{% include related.html %}
