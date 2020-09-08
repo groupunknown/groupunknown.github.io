@@ -31,7 +31,7 @@ layout: default
 	{% include related.html %}
 </section>
 
-
+{% comment %}
 {% for season in page.seasons %}
 	<div>Temporada: {{ season.season_number }}</div>
 	<div>Nome: {{ season.name }}</div>
@@ -54,6 +54,7 @@ layout: default
 		{% endfor %}
 	{% endfor %}
 {% endfor %}
+{% endcomment %}
 
 
 
