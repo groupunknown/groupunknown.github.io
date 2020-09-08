@@ -27,36 +27,6 @@ layout: default
 		{% endif %}
 	</article>
 
-	{% include suggestion.html %}
-	{% include related.html %}
-</section>
-
-{% comment %}
-{% for season in page.seasons %}
-<div>Temporada: {{ season.season_number }}</div>
-<div>Nome: {{ season.name }}</div>
-<div>Descrição: {{ season.overview }}</div>
-
-{% for episode in season.episodes %}
-<div>Episódio: {{ episode.episode_number }}</div>
-<div>Nome: {{ episode.name }}</div>
-<div>Descrição: {{ episode.overview }}</div>
-
-{% for download in episode.downloads %}
-<div>Qualidade: {{ download.quality }}</div>
-<div>Áudio: {{ download.audio }}</div>
-<div>Tamanho: {{ download.size }}</div>
-
-{% for link in download.urls %}
-<div>Link: {{ link }}</div>
-
-{% endfor %}
-{% endfor %}
-{% endfor %}
-{% endfor %}
-{% endcomment %}
-
-
 
 <div class="tvserie-downloads downloads">
 
@@ -125,3 +95,12 @@ layout: default
 	</div>
 	{% endfor %}
 </div>
+
+
+
+
+	
+
+	{% include suggestion.html %}
+	{% include related.html %}
+</section>

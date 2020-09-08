@@ -64,14 +64,21 @@ seasons:
             server: null
             urls:
               - https://twitter.com/
-              - https://google.com/
+              - https://youtube.com/
           - quality: 720p
             audio: Dual Àudio
             size: 3GB
             server: null
             urls:
-              - https://g1.com/
-              - https://gmail.com/
+              - https://twitter.com/
+              - https://youtube.com/
+          - quality: 480p
+            audio: Dual Àudio
+            size: 400MB
+            server: null
+            urls:
+              - https://twitter.com/
+              - https://youtube.com/
       - episode_number: 2
         name: Pentagram
         overview: >-
@@ -84,9 +91,23 @@ seasons:
         vote_average: 8
         vote_count: 805
         downloads:
+          - quality: 1080p
+            audio: Dual Àudio
+            size: 5GB
+            server: null
+            urls:
+              - https://facebook.com/
+              - https://instagram.com/
           - quality: 720p
             audio: Dual Àudio
             size: 3GB
+            server: null
+            urls:
+              - https://facebook.com/
+              - https://instagram.com/
+          - quality: 480p
+            audio: Dual Àudio
+            size: 400MB
             server: null
             urls:
               - https://facebook.com/
