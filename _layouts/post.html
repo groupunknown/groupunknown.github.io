@@ -30,3 +30,10 @@ layout: default
 	{% include suggestion.html %}
 	{% include related.html %}
 </section>
+
+
+{% for product in page.seasons %}
+
+  <div>{{ product.season_number }}</div>
+
+{% endfor %}
