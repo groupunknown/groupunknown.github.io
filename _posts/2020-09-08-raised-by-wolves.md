@@ -1,3 +1,4 @@
+---
 layout: post
 type: tvserie
 title: Raised by Wolves
@@ -83,3 +84,4 @@ seasons:
             urls:
               - https://facebook.com/
               - https://instagram.com/
+---
