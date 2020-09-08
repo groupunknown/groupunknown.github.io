@@ -65,6 +65,13 @@ seasons:
             urls:
               - https://twitter.com/
               - https://google.com/
+          - quality: 720p
+            audio: Dual Àudio
+            size: 3GB
+            server: null
+            urls:
+              - https://g1.com/
+              - https://gmail.com/
       - episode_number: 2
         name: Pentagram
         overview: >-
