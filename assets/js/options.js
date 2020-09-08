@@ -90,3 +90,15 @@ $(document).on('click', '.feed__btn-download', function(e) {
 $(document).on('click', '.feed__download-modal-content', function(e) {
     e.stopPropagation();
 });
+
+jQuery(document).ready(function(){
+        $('.temporada-main').click(function() {
+            $(this).toggleClass('active').next('.episodios-content').toggleClass('active');
+        });
+        $('.episodio-main').click(function() {
+            $(this).toggleClass('active').next('.episodio-content').toggleClass('active');
+        });
+        $('.episodio-main-download').click(function() {
+            $(this).next('.episodio-content-download').toggleClass('active');
+        });
+    });
