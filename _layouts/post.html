@@ -27,15 +27,15 @@ layout: default
 		{% endif %}
 	</article>
 	{% capture rating %}
-								{% if page.vote_count == 0 %}
-									Nenhuma avaliação
-								{% elsif page.vote_count == 1 %}
-									page.vote_count avaliação
-								{% else %}
-									page.vote_count avaliações
-								{% endif %}
-							{% endcapture %}
-							<div class="rating-text">{{ rating }}</div>
+		{% if page.vote_count == 0 %}
+			Nenhuma avaliação
+		{% elsif page.vote_count == 1 %}
+			{{page.vote_count}} avaliação
+		{% else %}
+			{{page.vote_count}} avaliações
+		{% endif %}
+	{% endcapture %}
+	<div class="rating-text">{{ rating }}</div>
 	{% include suggestion.html %}
 	{% include related.html %}
 </section>
