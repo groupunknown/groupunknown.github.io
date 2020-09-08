@@ -61,3 +61,32 @@ $(document).ready(function() {
     options.addEventListener('click', menu_options, false);
     navbarmenu.addEventListener('click', menu_navbar, false);
 });
+
+
+var base_url = window.location.href;
+
+// https://www.w3schools.com/howto/howto_css_modals.asp
+$('.feed__btn-download').click(function() {
+    let id = $(this).data('key'),
+        slug = $(this).data('post-slug');
+
+    $(this).parent().parent().next('.feed__download-modal').toggleClass('active');
+    window.history.replaceState('', '', base_url + slug);
+});
+
+// DETECTA O CLICK FORA DO MODAL
+$(window).click(function() {
+    $('.feed__btn-download').removeClass('active');
+    $('.feed__download-modal').removeClass('active');
+    window.history.pushState('', '', base_url);
+
+});
+
+// IGNORA O CLICK NO BOTÃO E DENTRO DO MODAL
+$(document).on('click', '.feed__btn-download', function(e) {
+    e.stopPropagation();
+});
+
+$(document).on('click', '.feed__download-modal-content', function(e) {
+    e.stopPropagation();
+});
