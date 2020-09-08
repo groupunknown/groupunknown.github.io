@@ -109,7 +109,7 @@ seasons:
           - quality: 720p
             audio: Dual Àudio
             size: 3GB
-            server: null
+            server: instagram
             urls:
              - hostname: facebook.com
                url: https://facebook.com/
