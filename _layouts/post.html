@@ -82,9 +82,9 @@ layout: default
 				</div>
 				<div class="episodio-content-download">
 					{% for link in download.urls %}
-					<a href="{{ link }}">
-						<span><img src="https://s2.googleusercontent.com/s2/favicons?domain={{ link }}" /></span>
-						<span>DOWNLOAD</span>
+					<a href="{{ link.url }}">
+						<span><img src="https://s2.googleusercontent.com/s2/favicons?domain={{ link.hostname }}" /></span>
+						<span>{{ link.hostname }}</span>
 					</a>
 					{% endfor %}
 				</div>

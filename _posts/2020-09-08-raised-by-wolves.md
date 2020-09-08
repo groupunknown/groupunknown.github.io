@@ -63,22 +63,28 @@ seasons:
             size: 5GB
             server: null
             urls:
-              - https://twitter.com/
-              - https://youtube.com/
+             - hostname: twitter.com
+               url: https://twitter.com/
+             - hostname: youtube.com
+               url: https://youtube.com/
           - quality: 720p
             audio: Dual Àudio
             size: 3GB
             server: null
             urls:
-              - https://twitter.com/
-              - https://youtube.com/
+             - hostname: twitter.com
+               url: https://twitter.com/
+             - hostname: youtube.com
+               url: https://youtube.com/
           - quality: 480p
             audio: Dual Àudio
             size: 400MB
             server: null
             urls:
-              - https://twitter.com/
-              - https://youtube.com/
+             - hostname: twitter.com
+               url: https://twitter.com/
+             - hostname: youtube.com
+               url: https://youtube.com/
       - episode_number: 2
         name: Pentagram
         overview: >-
@@ -96,20 +102,26 @@ seasons:
             size: 5GB
             server: null
             urls:
-              - https://facebook.com/
-              - https://instagram.com/
+             - hostname: facebook.com
+               url: https://facebook.com/
+             - hostname: instagram.com
+               url: https://instagram.com/
           - quality: 720p
             audio: Dual Àudio
             size: 3GB
             server: null
             urls:
-              - https://facebook.com/
-              - https://instagram.com/
+             - hostname: facebook.com
+               url: https://facebook.com/
+             - hostname: instagram.com
+               url: https://instagram.com/
           - quality: 480p
             audio: Dual Àudio
             size: 400MB
             server: null
             urls:
-              - https://facebook.com/
-              - https://instagram.com/
+             - hostname: facebook.com
+               url: https://facebook.com/
+             - hostname: instagram.com
+               url: https://instagram.com/
 ---
