@@ -82,7 +82,11 @@ layout: default
 												<span>{{ download.quality }}</span>
 												<span>{{ download.audio }}</span>
 												<span>{{ download.size }}</span>
-												<span>Diversos</span>
+												{% if download.server == "null" %}
+													<span>Diversos</span>
+												{% else %}
+													<span>{{ download.server }}</span>
+												{% endif %}
 												<span>Opções</span>
 											</div>
 											<div class="episodio-content-download">
