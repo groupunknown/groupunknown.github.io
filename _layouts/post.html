@@ -105,17 +105,8 @@ layout: default
 		                        <text x="18" y="24.35">{{ episode.vote_average }}</text>
 		                    </svg>
 		                </div>
-		                <span class="status-{{ status | slugify}}">{{ status | strip }}</span>
-		                {% capture rating %}
-							{% if episode.vote_count == "0" %}
-								Nenhuma avaliação
-							{% elsif episode.vote_count == "1" %}
-								{{episode.vote_count}} avaliação
-							{% else %}
-								{{episode.vote_count}} avaliações
-							{% endif %}
-						{% endcapture %}
-		                <div class="rating-text">{{ rating }}</div>
+		                <span class="status-{{ status | slugify }}">{{ status | strip }}</span>
+		                <div class="rating-text">{{ episode.vote_count }} avaliações</div>
 		            </div>
 		        </div>
 		        <div class="episodio-content">
