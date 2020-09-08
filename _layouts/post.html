@@ -20,6 +20,11 @@ layout: default
 					<a class="tag" href="/tags#{{tag}}">#{{tag}}</a>
 				{% endfor %}
 			</div>
+			<div class="post-genre">
+				{% for genre in page.genres %}
+					<a class="genre" href="/genres#{{genre}}">#{{genre}}</a>
+				{% endfor %}
+			</div>
 		</div>
 		{% assign author = site.data.authors[page.author] %}
 		{% if author.bio %}
