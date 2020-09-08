@@ -26,26 +26,7 @@ layout: default
 	    	{% include author_bio.html %}
 		{% endif %}
 	</article>
-	<div class="feed__article-certification">
-							{% capture crtfctn_text %}
-								{% if page.certification == "L" %}
-									LIVRE PARA TODOS OS PÚBLICOS
-								{% elsif page.certification == 10 %}
-									NÃO RECOMENDADO PARA MENORES DE DEZ ANOS
-								{% elsif page.certification == 12 %}
-									NÃO RECOMENDADO PARA MENORES DE DOZE ANOS
-								{% elsif page.certification == 14 %}
-									NÃO RECOMENDADO PARA MENORES DE CATORZE ANOS
-								{% elsif page.certification == 16 %}
-									NÃO RECOMENDADO PARA MENORES DE DEZESSEIS ANOS
-								{% elsif page.certification == 18 %}
-									NÃO RECOMENDADO PARA MENORES DE DEZOITO ANOS
-								{% else %}
-									INDISPONÍVEL
-								{% endif %}
-							{% endcapture %}
-							<div class="certification age-{{ page.certification | strip }}" aria-label="{{ crtfctn_text | strip }}" data-tooltipped="top-right">{{ page.certification }}</div>
-						</div>
+
 	{% include suggestion.html %}
 	{% include related.html %}
 </section>
