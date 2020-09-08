@@ -54,3 +54,103 @@ layout: default
 		{% endfor %}
 	{% endfor %}
 {% endfor %}
+
+
+
+<div class="tvserie-downloads downloads">
+
+	{% for season in page.seasons %}
+	    <div class="temporada-main" data-season="{{ season.season_number }}">
+	        <div class="temporada-main-poster">
+	            <img src="#" data-src="#" alt="{{ season.name }}" class="lazyloaded" />
+	        </div>
+	        <div class="temporada-main-card">
+	            <div class="temporada-main-title">{{ season.name }}</div>
+	            <div class="temporada-main-overview">{{ season.overview }}</div>
+	        </div>
+	    </div>
+
+	    {% for episode in season.episodes %}
+		    <div class="episodios-content">
+		        <div class="episodio-main">
+		            <div class="episodio-main-poster">
+		            	<img src="#" />
+		            </div>
+		            <div class="episodio-main-card">
+		                <div class="episodio-main-title"><span>{{ episode.episode_number }}</span>{{ episode.name }}</div>
+		                <div class="episodio-main-overview">{{ episode.overview }}</div>
+		            </div>
+		            <div class="episodio-main-rating">
+		            	{% assign average = episode.vote_average | remove:  "." %}
+						{% capture status %}
+							{% if average == "0" %}
+								Nenhum
+							{% elsif average <= "20" %}
+								Péssimo
+							{% elsif average <= "40" %}
+								Ruim
+							{% elsif average <= "60" %}
+								Aceitável
+							{% elsif average <= "80" %}
+								Ótimo
+							{% elsif average => "81" %}
+								Excelente
+							{% endif %}
+						{% endcapture %}
+		                <div class="rating {{ status | slugify }}">
+		                    <svg viewBox="-1 -1 38 38" data-status="{{status | strip }}">
+		                        <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+		                        <path stroke-dasharray="{{ average }}, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+		                        <text x="18" y="24.35">{{ episode.vote_average }}</text>
+		                    </svg>
+		                </div>
+		                <span class="status-{{ status | slugify}}">{{ status | strip }}</span>
+		                {% capture rating %}
+							{% if episode.vote_count == "0" %}
+								Nenhuma avaliação
+							{% elsif episode.vote_count == "1" %}
+								{{episode.vote_count}} avaliação
+							{% else %}
+								{{episode.vote_count}} avaliações
+							{% endif %}
+						{% endcapture %}
+		                <div class="rating-text">{{ rating }}</div>
+		            </div>
+		        </div>
+		        <div class="episodio-content">
+		            <div class="episodio-main-menu">
+		            	<span>Qualidade</span>
+		            	<span>Áudio</span>
+		            	<span>Tamanho</span>
+		            	<span>Servidor</span>
+		            	<span>Download</span>
+		            </div>
+
+		            {% for download in episode.downloads %}
+			            <div class="episodio-content-options">
+			                <div class="episodio-main-download">
+			                    <span>{{ download.quality }}</span>
+			                    <span>{{ download.audio }}</span>
+			                    <span>{{ download.size }}</span>
+			                    <span>Diversos</span>
+			                    <span>Opções</span>
+			                </div>
+			                <div class="episodio-content-download">
+
+			                {% for link in download.urls %}
+				                <a href="{{ link }}">
+				                    <span><img src="https://s2.googleusercontent.com/s2/favicons?domain={{ link }}" /></span>
+				                    <span>DOWNLOAD</span>
+				                </a>
+			                {% endfor %}
+
+			                </div>
+			            </div>
+		            {% endfor %}
+
+		        </div>
+		    </div>
+	    {% endfor %}
+	{% endfor %}
+
+</div>
