@@ -5,35 +5,36 @@ overview: >-
   Dois androides tem como missão de cuidar de crianças em um misterioso planeta.
   Enquanto a colônia dos humanos se divide por questões religiosas, esses
   androides aprendem de uma maneira difícil como lidar e controlar as pessoas.
+img_path: https://m.media-amazon.com/images/M/MV5BYWUzMGZjNjgtMzkwYS00MTdhLTlhYzItYTEzMjRjMjkzZmM3XkEyXkFqcGdeQXVyMTE5MzYzMDE5._V1_UX720_.jpg
 tmdb_id: 85723
 imdb_id: tt9170108
-runtime: 60
+runtime: 60m
 release_date: 2020-09-03T00:00:00.000Z
 genres:
   - Sci-Fi
   - Fantasy
   - Drama
-cast:
+casts:
   - Travis Fimmel
   - Amanda Collin
   - Abubakar Salim
   - Ethan Hazzard
   - Aasiya Shah
   - Ivy Wong
-crew:
+crews:
   - Aaron Guzikowski
 trailer: nAg6RTQEfeM
 parental: 16
-adult: 'false,'
+adult: false
 vote_average: 7.2
 vote_count: 95
-quality:
+qualitys:
   - 1080p
   - 720p
   - 480p
-audio:
+audios:
   - Dual Áudio
-extension:
+extensions:
   - mkv
   - mp4
 seasons:
@@ -61,8 +62,8 @@ seasons:
             size: 5GB
             server: null
             urls:
-              - 'https://twitter.com/'
-              - 'https://google.com/'
+              - https://twitter.com/
+              - https://google.com/
       - episode_number: 2
         name: Pentagram
         overview: >-
@@ -80,5 +81,5 @@ seasons:
             size: 3GB
             server: null
             urls:
-              - 'https://facebook.com/'
-              - 'https://instagram.com/'
+              - https://facebook.com/
+              - https://instagram.com/

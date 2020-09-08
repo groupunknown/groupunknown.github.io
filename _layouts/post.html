@@ -20,11 +20,6 @@ layout: default
 					<a class="tag" href="/tags#{{tag}}">#{{tag}}</a>
 				{% endfor %}
 			</div>
-			<div class="post-genre">
-				{% for genre in page.genres %}
-					<a class="genre" href="/genres#{{genre}}">#{{genre}}</a>
-				{% endfor %}
-			</div>
 		</div>
 		{% assign author = site.data.authors[page.author] %}
 		{% if author.bio %}
@@ -33,6 +28,106 @@ layout: default
 	</article>
 	{% include suggestion.html %}
 	{% include related.html %}
+			<article class="feed__article">
+			<div class="feed__article-header">
+				<div class="feed__article-heade-column">{% include date_formatting.html date=page.release_date %}</div>
+				<div class="feed__article-heade-column">
+					<div class="feed__article-ribbon badge-3">{{ page.type }}</div>
+				</div>
+			</div>
+			<div class="feed__article-column">
+				<div class="feed__article-row poster">
+					<div class="backdrop">
+						<img src="https://asahxjaqgo.cloudimg.io/v7/{{ page.img_path }}?force_format=webp&org_if_sml=1&q=90&sharp=3&w=140" alt="{{ page.title }}">
+						<div class="feed__download-show">
+							<button class="feed__btn-download" data-key="{{ page.tmdb_id }}" data-post-slug="{{ page.title | slugify }}"><svg width="38" height="38" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 3H9V5H6.46173L11.3047 9.84298L9.8905 11.2572L5 6.3667V9H3V3Z" fill="currentColor"></path><path d="M3 21H9V19H6.3764L11.3046 14.0718L9.89038 12.6576L5 17.548V15H3V21Z" fill="currentColor"></path><path d="M15 21H21V15H19V17.5244L14.1332 12.6576L12.719 14.0718L17.6472 19H15V21Z" fill="currentColor"></path><path d="M21 3H15V5H17.5619L12.7189 9.84301L14.1331 11.2572L19 6.39032V9H21V3Z" fill="currentColor"></path></svg></button>
+						</div>
+					</div>
+					
+					<div class="feed__download-modal">
+						<div class="feed__download-modal-content">{{ page.title }}</div>
+					</div>
+				</div>
+				<div class="feed__article-row plot-summary">
+					<div class="feed__article-sub-row">
+						<h2>
+							<a href="#">{{ page.title }}</a>
+						</h2>
+						<div class="feed__plot">{{ page.overview }}</div>
+						<div class="feed__crew">
+							<div>Diretor:</div>
+							<div class="comma">
+								{% for crew in page.crews %}
+									<a href="#{{crew}}">{{crew}}</a>
+								{% endfor %}
+							</div>
+						</div>
+						<div class="feed__cast">
+							<div>Elenco:</div>
+							<div class="comma">
+								{% for cast in page.casts %}
+									<a href="#{{cast}}">{{cast}}</a>
+								{% endfor %}
+							</div>
+						</div>
+						<div class="feed__genre">
+							<div>Gênero:</div>
+							<div class="comma">
+								{% for genre in page.genres %}
+									<a href="#{{genre}}">{{genre}}</a>
+								{% endfor %}
+							</div>
+						</div>
+						<div class="feed__run-time">
+							<div>Duração:</div>
+							<div>{{ page.runtime }}</div>
+						</div>
+					</div>
+					<div class="feed__article-sub-row feed__article-sub-column">
+						<div class="feed__article-rating">
+							<div class="rating excelente">
+								<svg viewBox="-1 -1 38 38" data-status="Excelente">
+									<path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+									<path stroke-dasharray="80, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+									<text x="18" y="24.35">8.0</text>
+								</svg>
+							</div>
+							<span class="status-excelente">Excelente</span>
+							<div class="rating-text">736 avaliações</div>
+						</div>
+						<div class="feed__article-certification">
+							<div class="certification age-16" aria-label="NÃO RECOMENDADO PARA MENORES DE DEZESSEIS ANOS" data-tooltipped="top-right">16</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="feed__article-footer">
+				<div class="feed__article-footer-column">
+					<div>Qualidade:</div>
+					<div class="comma">
+						{% for quality in page.qualitys %}
+							<a href="#{{quality}}">{{quality}}</a>
+						{% endfor %}
+					</div>
+				</div>
+				<div class="feed__article-footer-column">
+					<div>Áudio:</div>
+					<div class="comma">
+						{% for audio in page.audios %}
+							<a href="#{{audio}}">{{audio}}</a>
+						{% endfor %}
+					</div>
+				</div>
+				<div class="feed__article-footer-column">
+					<div>Extensão:</div>
+					<div class="comma">
+						{% for extension in page.extensions %}
+							<a href="#{{extension}}">{{extension}}</a>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</article>
 </section>
 
 
