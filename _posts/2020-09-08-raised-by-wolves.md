@@ -1,4 +1,3 @@
----
 layout: post
 type: tvserie
 title: Raised by Wolves
@@ -38,32 +37,48 @@ extension:
   - mkv
   - mp4
 seasons:
-  - name: 1 temporada
-    overview: À medida que Walter constrói seu império...
-    air_date: 2008-01-20T00:00:00.000Z
+  - season_number: 1
+    name: 1 temporada
+    overview: >-
+      A 1ª temporada de Raised by Wolves começou a ser exibida em 3 de setembro
+      de 2020.
+    air_date: 2020-09-03T00:00:00.000Z
     episodes:
-      - name: Episódio 1
-        overview: Depois que um velho conhecido...
-        air_date: 2008-01-20T00:00:00.000Z
-        vote_average: 7.914
-        vote_count: 8369
-      - name: Episódio 2
-        overview: Depois que um velho conhecido...
-        air_date: 2008-02-05T00:00:00.000Z
-        vote_average: 8.514
-        vote_count: 5669
-  - name: 2 temporada
-    overview: À medida que Walter constrói seu império...
-    air_date: 2008-01-20T00:00:00.000Z
-    episodes:
-      - name: Episódio 1
-        overview: Depois que um velho conhecido...
-        air_date: 2008-01-20T00:00:00.000Z
-        vote_average: 7.914
-        vote_count: 8369
-      - name: Episódio 2
-        overview: Depois que um velho conhecido...
-        air_date: 2008-02-05T00:00:00.000Z
-        vote_average: 8.514
-        vote_count: 5669
----
+      - episode_number: 1
+        name: Raised by Wolves
+        overview: >-
+          After Earth is rendered uninhabitable, Androids Mother and Father
+          start a new settlement and family with human embryos on the planet
+          Kepler-22b. Twelve years later, only one child, Campion, remains, and
+          the arrival of an Ark of surviving humans called the Mithraic presents
+          a threat that Mother has no choice but to confront.
+        air_date: 2020-09-03T00:00:00.000Z
+        vote_average: 9
+        vote_count: 1.135
+        options:
+          - quality: 1080p
+            audio: Dual Àudio
+            size: 5GB
+            server: null
+            urls:
+              - 'https://twitter.com/'
+              - 'https://google.com/'
+      - episode_number: 2
+        name: Pentagram
+        overview: >-
+          After a confrontation with Marcus, Mother discovers and takes five
+          Mithraic children (Hunter, Tempest, Paul, Holly and Vita) back to her
+          settlement. While Mother, Father and Campion, adjust to living with a
+          new group of Earth-born children, Marcus struggles to survive alone on
+          Kepler-22b.
+        air_date: 2020-09-03T00:00:00.000Z
+        vote_average: 8
+        vote_count: 805
+        options:
+          - quality: 720p
+            audio: Dual Àudio
+            size: 3GB
+            server: null
+            urls:
+              - 'https://facebook.com/'
+              - 'https://instagram.com/'
