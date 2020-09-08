@@ -4,6 +4,28 @@ layout: default
 
 <section class="content">
 	{% include ads-top.html %}
+	<article class="post">
+		{% if page.image != "/assets/images/default-card.webp" %}
+		<div class="post-imagem">
+			<img src="{{ page.image }}" alt="{{ page.title }}" />
+		</div>
+		{% endif %}
+		<h3 class="post-title">{{ page.title }}</h3>
+		<hr data-content="{% include date_formatting.html date=page.date %}">
+		{{ content }}
+		<div class="meta">
+			{% comment %}<time datetime="{{ page.date | date_to_xmlschema }}">{% include date_formatting.html date=page.date %}</time>{% endcomment %}
+			<div class="post-tags">
+				{% for tag in page.tags %}
+				<a class="tag" href="/tags#{{tag}}">#{{tag}}</a>
+				{% endfor %}
+			</div>
+		</div>
+		{% assign author = site.data.authors[page.author] %}
+		{% if author.bio %}
+		{% include author_bio.html %}
+		{% endif %}
+	</article>
 
 
 		<article class="feed__article">
@@ -21,67 +43,7 @@ layout: default
 							<button class="feed__btn-download" data-key="{{ page.tmdb_id }}" data-post-slug="{{ page.title | slugify }}"><svg width="38" height="38" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 3H9V5H6.46173L11.3047 9.84298L9.8905 11.2572L5 6.3667V9H3V3Z" fill="currentColor"></path><path d="M3 21H9V19H6.3764L11.3046 14.0718L9.89038 12.6576L5 17.548V15H3V21Z" fill="currentColor"></path><path d="M15 21H21V15H19V17.5244L14.1332 12.6576L12.719 14.0718L17.6472 19H15V21Z" fill="currentColor"></path><path d="M21 3H15V5H17.5619L12.7189 9.84301L14.1331 11.2572L19 6.39032V9H21V3Z" fill="currentColor"></path></svg></button>
 						</div>
 					</div>
-					
-					<div class="feed__download-modal">
-						<div class="feed__download-modal-content">
-
-
-							<div class="tvserie-downloads downloads">
-								{% for season in page.seasons %}
-								<div class="temporada-main" data-season="{{ season.season_number }}">
-									<div class="temporada-main-poster">
-										<img src="#" data-src="#" alt="{{ season.name }}" class="lazyloaded" />
-									</div>
-									<div class="temporada-main-card">
-										<div class="temporada-main-title">{{ season.name }}</div>
-										<div class="temporada-main-overview">{{ season.overview }}</div>
-									</div>
-								</div>
-								<div class="episodios-content">
-									{% for episode in season.episodes %}
-									<div class="episodio-main">
-										<div class="episodio-main-poster">
-											<img src="#" />
-										</div>
-										<div class="episodio-main-card">
-											<div class="episodio-main-title"><span>{{ episode.episode_number }}</span>{{ episode.name }}</div>
-											<div class="episodio-main-overview">{{ episode.overview }}</div>
-										</div>
-									</div>
-									<div class="episodio-content">
-										<div class="episodio-main-menu">
-											<span>Qualidade</span>
-											<span>Áudio</span>
-											<span>Tamanho</span>
-											<span>Servidor</span>
-											<span>Download</span>
-										</div>
-										<div class="episodio-content-options">
-											{% for download in episode.downloads %}
-											<div class="episodio-main-download">
-												<span>{{ download.quality }}</span>
-												<span>{{ download.audio }}</span>
-												<span>{{ download.size }}</span>
-												<span>Diversos</span>
-												<span>Opções</span>
-											</div>
-											<div class="episodio-content-download">
-												{% for link in download.urls %}
-												<a href="{{ link.url }}">
-													<span><img src="https://s2.googleusercontent.com/s2/favicons?domain={{ link.hostname }}" /></span>
-													<span>{{ link.hostname }}</span>
-												</a>
-												{% endfor %}
-											</div>
-											{% endfor %}
-										</div>
-									</div>
-									{% endfor %}
-								</div>
-								{% endfor %}
-							</div>
-						</div>
-					</div>
+	
 				</div>
 				<div class="feed__article-row plot-summary">
 					<div class="feed__article-sub-row">
