@@ -100,13 +100,13 @@ layout: default
 								{% endif %}
 							{% endcapture %}
 							<div class="rating {{ status | slugify }}">
-								<svg viewBox="-1 -1 38 38" data-status="{{status}}">
+								<svg viewBox="-1 -1 38 38" data-status="{{ status }}">
 									<path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
 									<path stroke-dasharray="{{ average }}, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
 									<text x="18" y="24.35">{{ page.vote_average }}</text>
 								</svg>
 							</div>
-							<span class="status-{{ status | slugify}}">{{status}}</span>
+							<span class="status-{{ status | slugify}}">{{ status }}</span>
 							<div class="rating-text">{{ page.vote_count }} avaliações</div>
 						</div>
 						<div class="feed__article-certification">
