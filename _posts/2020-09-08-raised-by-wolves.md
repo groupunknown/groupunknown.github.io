@@ -27,7 +27,7 @@ crews:
 trailer: nAg6RTQEfeM
 parental: 16
 adult: false
-vote_average: 7.2
+vote_average: 0
 vote_count: 95
 qualitys:
   - 1080p

@@ -26,10 +26,7 @@ layout: default
 	    	{% include author_bio.html %}
 		{% endif %}
 	</article>
-	{% include suggestion.html %}
-	{% include related.html %}
-</section>
-		<article class="feed__article">
+			<article class="feed__article">
 			<div class="feed__article-header">
 				<div class="feed__article-heade-column">{% include date_formatting.html date=page.release_date %}</div>
 				<div class="feed__article-heade-column">
@@ -102,14 +99,14 @@ layout: default
 									Excelente
 								{% endif %}
 							{% endcapture %}
-							<=div class="rating {{ status }}">
+							<div class="rating {{ status | slugify }}">
 								<svg viewBox="-1 -1 38 38" data-status="{{ status }}">
 									<path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
 									<path stroke-dasharray="{{ average }}, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
 									<text x="18" y="24.35">{{ page.vote_average }}</text>
 								</svg>
 							</div>
-							<span class="status-{{ status }}">{{ status }}</span>
+							<span class="status-{{ status | slugify}}">{{ status }}</span>
 							<div class="rating-text">{{ page.vote_count }} avaliações</div>
 						</div>
 						<div class="feed__article-certification">
@@ -145,3 +142,6 @@ layout: default
 				</div>
 			</div>
 		</article>
+	{% include suggestion.html %}
+	{% include related.html %}
+</section>
