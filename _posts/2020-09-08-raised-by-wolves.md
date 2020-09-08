@@ -28,7 +28,7 @@ trailer: nAg6RTQEfeM
 parental: 16
 adult: false
 vote_average: 8.2
-vote_count: 1
+vote_count: 0
 qualitys:
   - 1080p
   - 720p
