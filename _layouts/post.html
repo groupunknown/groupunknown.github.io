@@ -84,7 +84,7 @@ layout: default
 												<span>{{ download.quality }}</span>
 												<span>{{ download.audio }}</span>
 												<span>{{ download.size }}</span>
-												{% if download.server == nil %}
+												{% if download.server == "null" %}
 													<span>Diversos</span>
 												{% else %}
 													<span>{{ download.server }}</span>
