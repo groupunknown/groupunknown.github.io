@@ -126,29 +126,25 @@ layout: default
 		            	<span>Servidor</span>
 		            	<span>Download</span>
 		            </div>
-
-		            {% for download in episode.downloads %}
-			            <div class="episodio-content-options">
-			                <div class="episodio-main-download">
-			                    <span>{{ download.quality }}</span>
-			                    <span>{{ download.audio }}</span>
-			                    <span>{{ download.size }}</span>
-			                    <span>Diversos</span>
-			                    <span>Opções</span>
-			                </div>
-			                <div class="episodio-content-download">
-
-			                {% for link in download.urls %}
-				                <a href="{{ link }}">
-				                    <span><img src="https://s2.googleusercontent.com/s2/favicons?domain={{ link }}" /></span>
-				                    <span>DOWNLOAD</span>
-				                </a>
-			                {% endfor %}
-
-			                </div>
-			            </div>
-		            {% endfor %}
-
+		            <div class="episodio-content-options">
+			            {% for download in episode.downloads %}
+				            <div class="episodio-main-download">
+				                <span>{{ download.quality }}</span>
+				                <span>{{ download.audio }}</span>
+				                <span>{{ download.size }}</span>
+				                <span>Diversos</span>
+				                <span>Opções</span>
+				            </div>
+				            <div class="episodio-content-download">
+					            {% for link in download.urls %}
+						            <a href="{{ link }}">
+						                <span><img src="https://s2.googleusercontent.com/s2/favicons?domain={{ link }}" /></span>
+						                <span>DOWNLOAD</span>
+						            </a>
+					            {% endfor %}
+				            </div>
+			            {% endfor %}
+		            </div>
 		        </div>
 		    </div>
 	    {% endfor %}
