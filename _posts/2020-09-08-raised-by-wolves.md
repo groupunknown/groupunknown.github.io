@@ -61,7 +61,7 @@ seasons:
           - quality: 1080p
             audio: Dual Àudio
             size: 5GB
-            server: null
+            server: Diversos
             urls:
              - hostname: twitter.com
                url: https://twitter.com/
@@ -70,7 +70,7 @@ seasons:
           - quality: 720p
             audio: Dual Àudio
             size: 3GB
-            server: null
+            server: Diversos
             urls:
              - hostname: twitter.com
                url: https://twitter.com/
@@ -79,7 +79,7 @@ seasons:
           - quality: 480p
             audio: Dual Àudio
             size: 400MB
-            server: null
+            server: Diversos
             urls:
              - hostname: twitter.com
                url: https://twitter.com/
@@ -100,7 +100,7 @@ seasons:
           - quality: 1080p
             audio: Dual Àudio
             size: 5GB
-            server: null
+            server: Diversos
             urls:
              - hostname: facebook.com
                url: https://facebook.com/
@@ -109,7 +109,7 @@ seasons:
           - quality: 720p
             audio: Dual Àudio
             size: 3GB
-            server: instagram
+            server: Diversos
             urls:
              - hostname: facebook.com
                url: https://facebook.com/
@@ -118,7 +118,7 @@ seasons:
           - quality: 480p
             audio: Dual Àudio
             size: 400MB
-            server: null
+            server: Diversos
             urls:
              - hostname: facebook.com
                url: https://facebook.com/
