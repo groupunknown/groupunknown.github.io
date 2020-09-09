@@ -21,12 +21,9 @@ layout: null
                 "imdb_id": {{ post.imdb_id | jsonify }},
                 "runtime": {{ post.runtime | jsonify }},
                 "release_date": {{ post.release_date | jsonify }},
-                "genres": [
-                    {% for genre in post.genres %}{{ genre | jsonify }}{% endfor %}
-                ],
 
                 "genres": [{% for genre in post.genres %}
-                        {{ genre | jsonify }},
+                        {{ genre | jsonify }}
                     {% unless forloop.last %},{% endunless %}{% endfor %}
                 ],
 
