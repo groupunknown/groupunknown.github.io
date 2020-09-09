@@ -1,0 +1,56 @@
+{
+    "items": [
+        {
+            "title": "Raised by Wolves",
+            "genres": ["Sci-Fi","Fantasy","Drama"]
+        },
+        {
+            "title": "The Boys",
+            "genres": ["Action","Comedy","Crime"]
+        },
+        {
+            "title": "Dr. House",
+            "genres": ["Drama","Mystery"]
+        },
+        {
+            "title": "The Witcher",
+            "genres": ["Action","Adventure","Fantasy"]
+        },
+        {
+            "title": "Woke",
+            "genres": ["Comedy"]
+        },
+        {
+            "title": "Biohackers",
+            "genres": ["Drama","Sci-Fi","Thriller"]
+        },
+        {
+            "title": "Gossip Girl",
+            "genres": ["Drama","Romance"]
+        },
+        {
+            "title": "Away",
+            "genres": ["Drama","Romance","Sci-Fi"]
+        },
+        {
+            "title": "Lovecraft Country",
+            "genres": ["Drama","Fantasy","Horror"]
+        },
+        {
+            "title": "Apocalypse Now",
+            "genres": ["Drama","Mystery","War"]
+        },
+        {
+            "title": "Steven Universo",
+            "genres": ["Animation","Short","Adventure"]
+        },
+        {
+            "title": "Harley Quinn",
+            "genres": ["Animation","Action","Adventure"]
+        },
+        {
+            "title": "Dior: I'm your Man - Dior Homme",
+            "genres": [" Short","Music"]
+        }
+    ]
+}
