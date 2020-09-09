@@ -22,9 +22,7 @@ layout: null
                 "runtime": {{ post.runtime | jsonify }},
                 "release_date": {{ post.release_date | jsonify }},
                 "genres": [
-                    {% for genre in post.genres %}
-                        {{ genre | jsonify }}
-                    {% endfor %}
+                    {% for genre in post.genres %}{{ genre | jsonify }}{% endfor %}
                 ],
                 "casts": [
                     {% for cast in post.casts %}
