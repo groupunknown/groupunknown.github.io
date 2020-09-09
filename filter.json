@@ -2,19 +2,19 @@
     "items": [
         {
             "title": "Raised by Wolves",
-            "genres": ["Sci-Fi","Fantasy","Drama"]
+            "genres": ["Sci-Fi", "Fantasy", "Drama"]
         },
         {
             "title": "The Boys",
-            "genres": ["Action","Comedy","Crime"]
+            "genres": ["Action", "Comedy", "Crime"]
         },
         {
             "title": "Dr. House",
-            "genres": ["Drama","Mystery"]
+            "genres": ["Drama", "Mystery"]
         },
         {
             "title": "The Witcher",
-            "genres": ["Action","Adventure","Fantasy"]
+            "genres": ["Action", "Adventure", "Fantasy"]
         },
         {
             "title": "Woke",
@@ -22,35 +22,35 @@
         },
         {
             "title": "Biohackers",
-            "genres": ["Drama","Sci-Fi","Thriller"]
+            "genres": ["Drama", "Sci-Fi", "Thriller"]
         },
         {
             "title": "Gossip Girl",
-            "genres": ["Drama","Romance"]
+            "genres": ["Drama", "Romance"]
         },
         {
             "title": "Away",
-            "genres": ["Drama","Romance","Sci-Fi"]
+            "genres": ["Drama", "Romance", "Sci-Fi"]
         },
         {
             "title": "Lovecraft Country",
-            "genres": ["Drama","Fantasy","Horror"]
+            "genres": ["Drama", "Fantasy", "Horror"]
         },
         {
             "title": "Apocalypse Now",
-            "genres": ["Drama","Mystery","War"]
+            "genres": ["Drama", "Mystery", "War"]
         },
         {
             "title": "Steven Universo",
-            "genres": ["Animation","Short","Adventure"]
+            "genres": ["Animation", "Short", "Adventure"]
         },
         {
             "title": "Harley Quinn",
-            "genres": ["Animation","Action","Adventure"]
+            "genres": ["Animation", "Action", "Adventure"]
         },
         {
             "title": "Dior: I'm your Man - Dior Homme",
-            "genres": [" Short","Music"]
+            "genres": ["Short", "Music"]
         }
     ]
 }
