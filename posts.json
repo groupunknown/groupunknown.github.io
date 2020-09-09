@@ -12,67 +12,67 @@ layout: null
     "expired": false,
     "items": [
         {% for post in site.posts limit:100 %}
-            {
-                "type": "tvserie",
-                "title": {{ post.title | jsonify }},
-                "overview": {{ post.overview | jsonify }},
-                "img_path": {{ post.img_path | jsonify }},
-                "tmdb_id": {{ post.tmdb_id | jsonify }},
-                "imdb_id": {{ post.imdb_id | jsonify }},
-                "runtime": {{ post.runtime | jsonify }},
-                "release_date": {{ post.release_date | jsonify }},
-                "genres": [{% for genre in post.genres %}{{ genre | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}],
-                "casts": [{% for cast in post.casts %}{{ cast | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}],
-                "crews": [{% for crew in post.crews %}{{ crew | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}],
-                "trailer": {{ post.trailer | jsonify }},
-                "certification": {{ post.certification | jsonify }},
-                "adult": {{ post.adult | jsonify }},
-                "vote_average": {{ post.vote_average | jsonify }},
-                "vote_count": {{ post.vote_count | jsonify }},
-                "qualitys": [{% for quality in post.qualitys %}{{ quality | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}],
-                "audios": [{% for audio in post.audios %}{{ audio | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}],
-                "extensions": [{% for extension in post.extensions %}{{ extension | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}],
-                "seasons": [
-                    {% for season in post.seasons %}
-                    {
-                        "season_number": {{ season.season_number | jsonify }},
-                        "name": {{ season.name | jsonify }},
-                        "overview": {{ season.overview | jsonify }},
-                        "air_date": {{ season.air_date | jsonify }},
-                        "episodes": [
-                            {% for episode in season.episodes %}
-                            {
-                                "episode_number": {{ episode.episode_number | jsonify }},
-                                "name": {{ episode.name | jsonify }},
-                                "overview": {{ episode.overview | jsonify }},
-                                "air_date": {{ episode.air_date | jsonify }},
-                                "vote_average": {{ episode.vote_average | jsonify }},
-                                "vote_count": {{ episode.vote_count | jsonify }},
-                                "downloads": [
-                                    {% for download in episode.downloads %}
-                                    {
-                                        "quality": {{ download.quality | jsonify }},
-                                        "audio": {{ download.audio | jsonify }},
-                                        "size": {{ download.size | jsonify }},
-                                        "server": {{ download.server | jsonify }},
-                                        "urls": [
-                                            {% for link in download.urls %}
-                                            {
-                                                "hostname": {{ link.hostname | jsonify }},
-                                                "url": {{ link.url | jsonify }}
-                                            }{% unless forloop.last %},{% endunless %}
-                                            {% endfor %}
-                                        ]
-                                    }{% unless forloop.last %},{% endunless %}
-                                    {% endfor %}
-                                ]
-                            }{% unless forloop.last %},{% endunless %}
-                            {% endfor %}
-                        ]
-                    }{% unless forloop.last %},{% endunless %}
-                    {% endfor %}
-                ]
-            }{% if forloop.last == false %},{% endif %}
+        {
+            "type": "tvserie",
+            "title": {{ post.title | jsonify }},
+            "overview": {{ post.overview | jsonify }},
+            "img_path": {{ post.img_path | jsonify }},
+            "tmdb_id": {{ post.tmdb_id | jsonify }},
+            "imdb_id": {{ post.imdb_id | jsonify }},
+            "runtime": {{ post.runtime | jsonify }},
+            "release_date": {{ post.release_date | jsonify }},
+            "genres": [{% for genre in post.genres %}{{ genre | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}],
+            "casts": [{% for cast in post.casts %}{{ cast | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}],
+            "crews": [{% for crew in post.crews %}{{ crew | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}],
+            "trailer": {{ post.trailer | jsonify }},
+            "certification": {{ post.certification | jsonify }},
+            "adult": {{ post.adult | jsonify }},
+            "vote_average": {{ post.vote_average | jsonify }},
+            "vote_count": {{ post.vote_count | jsonify }},
+            "qualitys": [{% for quality in post.qualitys %}{{ quality | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}],
+            "audios": [{% for audio in post.audios %}{{ audio | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}],
+            "extensions": [{% for extension in post.extensions %}{{ extension | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}],
+            "seasons": [
+                {% for season in post.seasons %}
+                {
+                    "season_number": {{ season.season_number | jsonify }},
+                    "name": {{ season.name | jsonify }},
+                    "overview": {{ season.overview | jsonify }},
+                    "air_date": {{ season.air_date | jsonify }},
+                    "episodes": [
+                        {% for episode in season.episodes %}
+                        {
+                            "episode_number": {{ episode.episode_number | jsonify }},
+                            "name": {{ episode.name | jsonify }},
+                            "overview": {{ episode.overview | jsonify }},
+                            "air_date": {{ episode.air_date | jsonify }},
+                            "vote_average": {{ episode.vote_average | jsonify }},
+                            "vote_count": {{ episode.vote_count | jsonify }},
+                            "downloads": [
+                                {% for download in episode.downloads %}
+                                {
+                                    "quality": {{ download.quality | jsonify }},
+                                    "audio": {{ download.audio | jsonify }},
+                                    "size": {{ download.size | jsonify }},
+                                    "server": {{ download.server | jsonify }},
+                                    "urls": [
+                                        {% for link in download.urls %}
+                                        {
+                                            "hostname": {{ link.hostname | jsonify }},
+                                            "url": {{ link.url | jsonify }}
+                                        }{% unless forloop.last %},{% endunless %}
+                                        {% endfor %}
+                                    ]
+                                }{% unless forloop.last %},{% endunless %}
+                                {% endfor %}
+                            ]
+                        }{% unless forloop.last %},{% endunless %}
+                        {% endfor %}
+                    ]
+                }{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+            ]
+        }{% if forloop.last == false %},{% endif %}
         {% endfor %}
-        ]
+    ]
 }
