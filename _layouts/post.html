@@ -46,12 +46,10 @@ layout: default
 					
 					<div class="feed__download-modal">
 						<div class="feed__download-modal-content">
-							<div class="tvserie-downloads downloads">
+							
 								{% for season in page.seasons %}
 								<div class="temporada-main" data-season="{{ season.season_number }}">
-									<div class="temporada-main-poster">
-										<img src="#" data-src="#" alt="{{ season.name }}" class="lazyloaded" />
-									</div>
+									<div class="temporada-main-poster">{{ season.season_number }}</div>
 									<div class="temporada-main-card">
 										<div class="temporada-main-title">{{ season.name }}</div>
 										<div class="temporada-main-overview">{{ season.overview }}</div>
@@ -59,12 +57,10 @@ layout: default
 								</div>
 								<div class="episodios-content">
 									{% for episode in season.episodes %}
-									<div class="episodio-main">
-										<div class="episodio-main-poster">
-											<img src="#" />
-										</div>
+									<div class="episodio-main" data-episode="{{ episode.episode_number }}">
+										<div class="episodio-main-poster">{{ episode.episode_number }}</div>
 										<div class="episodio-main-card">
-											<div class="episodio-main-title"><span>{{ episode.episode_number }}</span>{{ episode.name }}</div>
+											<div class="episodio-main-title">{{ episode.name }}</div>
 											<div class="episodio-main-overview">{{ episode.overview }}</div>
 										</div>
 									</div>
@@ -99,7 +95,7 @@ layout: default
 									{% endfor %}
 								</div>
 								{% endfor %}
-							</div>
+							
 						</div>
 					</div>
 
