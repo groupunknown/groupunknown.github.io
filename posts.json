@@ -24,6 +24,12 @@ layout: null
                 "genres": [
                     {% for genre in post.genres %}{{ genre | jsonify }}{% endfor %}
                 ],
+
+                "genres": [{% for genre in post.genres %}
+                        {{ genre | jsonify }}
+                    {% unless forloop.last %},{% endunless %}{% endfor %}
+                ],
+
                 "casts": [
                     {% for cast in post.casts %}
                         {{ cast | jsonify }}
