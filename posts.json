@@ -10,7 +10,7 @@ layout: null
     "icon": "{{ "/apple-touch-icon.png" | absolute_url }}",
     "favicon": "{{ "/favicon.ico" | absolute_url }}",
     "expired": false,
-    "items": [{% for post in site.posts limit:100 %}
+    "items": [{% for post in site.posts limit: 100 %}
         {
             "type": "tvserie",
             "title": {{ post.title | jsonify }},
