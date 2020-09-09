@@ -32,6 +32,29 @@ layout: null
                 "qualitys": [{% for quality in post.qualitys %}{{ quality | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}],
                 "audios": [{% for audio in post.audios %}{{ audio | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}],
                 "extensions": [{% for extension in post.extensions %}{{ extension | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}],
+                "seasons": [
+                    {% for season in post.seasons %}
+                    {
+                        "season_number": {{ season.season_number | jsonify }},
+                        "name": {{ season.name | jsonify }},
+                        "overview": {{ season.overview | jsonify }},
+                        "air_date": {{ season.air_date | jsonify }},
+                        "episodes": [
+                            {% for episode in post.episodes %}
+                            {
+                                "episode_number": {{ episode.episode_number | jsonify }},
+                                "name": {{ episode.name | jsonify }},
+                                "overview": {{ episode.overview | jsonify }},
+                                "air_date": {{ episode.air_date | jsonify }},
+                                "vote_average": {{ episode.vote_average | jsonify }},
+                                "vote_count": {{ episode.vote_count | jsonify }}
+
+                            },{% unless forloop.last %},{% endunless %}
+                            {% endfor %}
+                        ]
+                    },{% unless forloop.last %},{% endunless %}
+                    {% endfor %}
+                ],
 
             }{% if forloop.last == false %},{% endif %}
         {% endfor %}
