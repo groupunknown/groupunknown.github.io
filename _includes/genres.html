@@ -1,5 +1,5 @@
 <div class="filter__items">
 	{% for item in site.data.genres.genres %}
-		<button class="filter__item" data-term="genres" data-query="{{ item.slug }}">{{ item.name | strip }}</button>
+		<button class="filter__item" data-term="genres" data-query="{{ item.name | slugify }}">{{ item.name | strip }}</button>
 	{% endfor %}
 </div>
