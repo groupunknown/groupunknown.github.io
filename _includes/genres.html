@@ -1,5 +1,5 @@
 <div class="filter__items">
-	{% for genre in genres.genres %}
+	{% for genre in genres.items %}
 		<button class="filter__item" data-term="genres" data-query="{{ genre.slug }}">{{ genre.name | strip }}</button>
 	{% endfor %}
 </div>
