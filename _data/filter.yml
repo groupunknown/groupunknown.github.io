@@ -1,25 +1,25 @@
 genres:
-  - item: Ação
-  - item: Animação
-  - item: Aventura
-  - item: Comédia
-  - item: Crime
-  - item: Drama
-  - item: Família
-  - item: Fantasia
-  - item: Ficção Científica
-  - item: Guerra
-  - item: História
-  - item: Mistério
-  - item: Música
-  - item: Romance
-  - item: Suspense
-  - item: Terror
+- item: Ação
+- item: Animação
+- item: Aventura
+- item: Comédia
+- item: Crime
+- item: Drama
+- item: Família
+- item: Fantasia
+- item: Ficção Científica
+- item: Guerra
+- item: História
+- item: Mistério
+- item: Música
+- item: Romance
+- item: Suspense
+- item: Terror
 
 certification:
-  - item: L
-  - item: 10
-  - item: 12
-  - item: 14
-  - item: 16
-  - item: 18
+- item: L
+- item: 10
+- item: 12
+- item: 14
+- item: 16
+- item: 18
