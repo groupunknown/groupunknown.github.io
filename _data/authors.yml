@@ -13,3 +13,8 @@ heisenberg:
     role: 3
     bio: >
         Say my name
+necromante:
+    name: Necromante
+    role: 3
+    bio: >
+        O futuro é invisível, mesmo para androides.

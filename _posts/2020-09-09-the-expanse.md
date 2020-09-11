@@ -2,9 +2,10 @@
 layout: post
 type: tvserie
 title: The Expanse
-overview: >-
-  Duzentos anos no futuro, um detetive interespacial, o capitão de uma nave e uma diplomata antiguerra cruzam seus caminhos após uma jovem desaparecer misteriosamente.
 description: >-
+  Duzentos anos no futuro, um detetive interespacial, o capitão de uma nave e uma diplomata antiguerra cruzam seus caminhos após uma jovem desaparecer misteriosamente.
+author: necromante
+overview: >-
   Duzentos anos no futuro, um detetive interespacial, o capitão de uma nave e uma diplomata antiguerra cruzam seus caminhos após uma jovem desaparecer misteriosamente.
 img_path: https://m.media-amazon.com/images/M/MV5BNGJlNzU1OTEtZDRmNy00YTM3LTgxNDgtMWEwNTg2OGI1YzYwXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX1200_.jpg
 tmdb_id: 63639
