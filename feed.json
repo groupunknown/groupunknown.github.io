@@ -23,24 +23,16 @@ layout: null
             "content_text": {{ post.overview | strip_html | strip_newlines | jsonify }},
             "content_html": {{ post.content | strip_newlines | jsonify }},
             "url": "{{ post.url | absolute_url }}",
-            {% if post.image.size > 1 %}"image": {{ post.image | jsonify }},{% endif %}
-            {% if post.link.size > 1 %}"external_url": "{{ post.link }}",{% endif %}
-            {% if post.banner.size > 1 %}"banner_image": "{{ post.banner }}",{% endif %}
-            {% if post.tags.size > 1 %}"tags": {{ post.tags | jsonify }},{% endif %}
-            {% if post.enclosure.size > 1 %}"attachments": [ {
-              "url": "{{ post.enclosure }}",
-              "mime_type": "{{ post.enclosure_type }}",
-              "size_in_bytes": "{{ post.enclosure_length }}"
-            },{% endif %}
             "date_published": "{{ post.date | date_to_xmlschema }}",
-            "date_modified": "{{ post.date | date_to_xmlschema }}",
-            {% if post.author %}
-                "author": {% if post.author.name %} {
-                "name": "{{ post.author.name }}",
-                "url": {% if post.author.url %}"{{ post.author.url }}"{% else %}null{% endif %},
-                "avatar": {% if post.author.avatar %}"{{ post.author.avatar }}"{% else %}null{% endif %}
+            "date_modified": "{{ post.date | date_to_xmlschema }}",{% if post.author %}
+            "author": {% if post.author.name %}
+                {
+                    "name": "{{ post.author.name }}",
+                    "url": {% if post.author.url %}"{{ post.author.url }}"{% else %}null{% endif %},
+                    "avatar": {% if post.author.avatar %}"{{ post.author.avatar }}"{% else %}null{% endif %}
                 }
-                {% else %}"{{ post.author }}"{% endif %}
+            {% else %}
+            "{{ post.author }}"{% endif %}
             {% else %}
                 "author": {% if site.author.name %} {
                 "name": "{{ site.author.name }}",
@@ -48,10 +40,7 @@ layout: null
                 "avatar": {% if site.author.avatar %}"{{ site.author.avatar }}"{% else %}null{% endif %}
                 }
                 {% else %}
-                "{{ site.author }}"
-                {% endif %}
-            {% endif %}
-        }{% if forloop.last == false %},{% endif %}
-    {% endfor %}
+                "{{ site.author }}"{% endif %}{% endif %}
+        }{% if forloop.last == false %},{% endif %}{% endfor %}
     ]
 }
