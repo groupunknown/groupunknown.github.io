@@ -75,10 +75,10 @@ layout: default
 			<div class="feed__article-row plot-summary">
 				<div class="feed__article-sub-row">
 					<h2>
-						<a href="{{post.url | prepend: site.baseurl}}" data-placeholder>{{ post.title }}</a>
+						<a href="{{post.url | prepend: site.baseurl}}">{{ post.title }}</a>
 					</h2>
-					<div class="feed__plot" data-placeholder>{{ post.overview }}</div>
-					<div class="feed__crew" data-placeholder>
+					<div class="feed__plot">{{ post.overview }}</div>
+					<div class="feed__crew">
 						<div>Diretor:</div>
 						<div class="comma">
 							{% for crew in post.crews %}
@@ -86,7 +86,7 @@ layout: default
 							{% endfor %}
 						</div>
 					</div>
-					<div class="feed__cast" data-placeholder>
+					<div class="feed__cast">
 						<div>Elenco:</div>
 						<div class="comma">
 							{% for cast in post.casts %}
@@ -94,7 +94,7 @@ layout: default
 							{% endfor %}
 						</div>
 					</div>
-					<div class="feed__genre" data-placeholder>
+					<div class="feed__genre">
 						<div>Gênero:</div>
 						<div class="comma">
 							{% for genre in post.genres %}
@@ -102,7 +102,7 @@ layout: default
 							{% endfor %}
 						</div>
 					</div>
-					<div class="feed__run-time" data-placeholder>
+					<div class="feed__run-time">
 						<div>Duração:</div>
 						<div>{{ post.runtime }}</div>
 					</div>
