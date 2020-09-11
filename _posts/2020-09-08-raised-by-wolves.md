@@ -2,6 +2,11 @@
 layout: post
 type: tvserie
 title: Raised by Wolves
+description: >-
+  Dois androides tem como missão de cuidar de crianças em um misterioso planeta.
+  Enquanto a colônia dos humanos se divide por questões religiosas, esses
+  androides aprendem de uma maneira difícil como lidar e controlar as pessoas.
+author: heisenberg
 overview: >-
   Dois androides tem como missão de cuidar de crianças em um misterioso planeta.
   Enquanto a colônia dos humanos se divide por questões religiosas, esses
