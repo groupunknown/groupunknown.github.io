@@ -70,7 +70,7 @@ jQuery(document).ready(function(){
 
     search_query_itens = (term, query) => {
         const itens = new Promise((resolve, reject) => {
-            const url = 'https://groupunknown.com/filter.json';
+            const url = 'https://groupunknown.com/posts.json';
             $.getJSON(url, data => { resolve(data); })
         })
         itens.then(data => {
@@ -83,13 +83,13 @@ jQuery(document).ready(function(){
                     }
                 }
             }
-            $('#demo').pagination({
+            $('.filter__items-content').pagination({
                 dataSource: result,
                 locator: 'items',
                 pageSize: 2,
                 callback: function(data, pagination) {
                     var html = filter_template(data)
-                    $('.data-container').html(html)
+                    $('.filter__items-content').html(html)
                 }
             })
         })
