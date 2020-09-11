@@ -27,5 +27,4 @@ compress_html:
   comments: ["<!-- ", " -->"]
 
 sass:
-  sass_dir: _sass
   style: compressed
