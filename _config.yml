@@ -58,10 +58,10 @@ collections:
     #permalink: /:slug #/:year/:month/:day/:slug
   movie:
     output: true
-    permalink: /:slug
+    permalink: /movie/:slug
   tvserie:
     output: true
-    #permalink: /:slug
+    permalink: /tvserie/:slug
   
 defaults:
   -
