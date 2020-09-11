@@ -3,12 +3,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
     <title>
-        {% if page.tag or page.title %}
-            {% if page.tag %}
-                {{ page.tag | escape }}
-            {% else %}
-                {{ page.title | escape }}
-            {% endif %}
+        {% if page.title %}
+            {{ page.title | escape }}
         –
         {% endif %}
         {% if paginator and paginator.page and paginator.total_pages > 1 and paginator.page > 1 %}

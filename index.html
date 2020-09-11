@@ -3,9 +3,7 @@ layout: default
 ---
 
 <section class="feed__articles">
-
 	{% for post in paginator.posts %}
-
 	<article class="feed__article">
 		<div class="feed__article-header">
 			<div class="feed__article-heade-column">{% include date_formatting.html date=post.release_date %}</div>
@@ -202,9 +200,6 @@ layout: default
 			</div>
 		</div>
 	</article>
-
 	{% endfor %}
-
 	{% include pagination.html %}
-
 </section>
