@@ -1,0 +1,11 @@
+<div class="filter__items">
+	{% for items in site.data.filter.genres %}
+		<button class="filter__item" data-term="genres" data-query="{{ items.item }}">{{ items.item | strip }}</button>
+	{% endfor %}
+</div>
+
+<div class="filter__items">
+	{% for items in site.data.filter.certification %}
+		<button class="filter__item" data-term="certification" data-query="{{ items.item }}">{{ items.item | strip }}</button>
+	{% endfor %}
+</div>
