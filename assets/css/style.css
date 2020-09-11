@@ -828,3 +828,26 @@ div[data-placeholder] {
     width: 768px;
     margin: auto;
 }
+
+.filter__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20%, auto));
+    place-items: center;
+    grid-gap: .5rem;
+    padding: .5rem;
+}
+
+.filter__items .filter__item {
+    color: #fff;
+    background: #263238;
+    padding: .5rem 0;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.filter__items .filter__item.active {
+    background: #78909C;
+}
