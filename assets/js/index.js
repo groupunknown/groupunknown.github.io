@@ -89,7 +89,7 @@ jQuery(document).ready(function(){
                 pageSize: 2,
                 callback: function(data, pagination) {
                     var html = filter_template(data)
-                    $('.filter__items-content').html(html)
+                    $('.filter__items-content-results').html(html)
                 }
             })
         })
