@@ -854,3 +854,55 @@ div[data-placeholder] {
 .filter__items .filter__item.active {
     background: #78909C;
 }
+
+.paginationjs {
+    font-size: 14px;
+    box-sizing: initial;
+    padding: 1rem;
+}
+.paginationjs .paginationjs-pages ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paginationjs .paginationjs-pages li {
+    border: 1px solid var(--grey);
+    border-right: none;
+    list-style: none;
+}
+
+.paginationjs .paginationjs-pages li:first-child,
+.paginationjs .paginationjs-pages li:first-child > a {
+    border-radius: 3px 0 0 3px;
+}
+
+.paginationjs .paginationjs-pages li > a {
+    display: flex;
+    padding: .5rem 1rem;
+}
+
+.paginationjs .paginationjs-pages li.active > a {
+    background: var(--grey);
+}
+
+.paginationjs .paginationjs-pages li.disabled > a {
+    opacity: 0.3;
+}
+
+.paginationjs .paginationjs-pages li > a:hover {
+    background: var(--grey);
+}
+
+.paginationjs .paginationjs-pages li.paginationjs-next {
+    border-right: 1px solid var(--grey);
+}
+
+.paginationjs .paginationjs-pages li:last-child {
+    border-right: 1px solid var(--grey);
+    border-radius: 0 3px 3px 0;
+}
+
+.paginationjs .paginationjs-pages li:last-child > a {
+    border-radius: 0 3px 3px 0;
+}
