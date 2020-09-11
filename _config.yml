@@ -26,7 +26,7 @@ collections:
 #permalink: /:title/
 
 # The release of Jekyll Now that you're using
-version: v1.2.0
+version: v1.17.2
 
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
