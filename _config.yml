@@ -26,4 +26,9 @@ compress_html:
   clippings: all
   comments: ["<!-- ", " -->"]
 
-  
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+paginate: 10
+paginate_path: /page:num/
