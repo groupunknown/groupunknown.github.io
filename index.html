@@ -132,7 +132,7 @@ layout: default
 								<text x="18" y="24.35">{{ post.vote_average }}</text>
 							</svg>
 						</div>
-						<span class="status-{{ status | slugify }}">{{ status | strip }}</span>
+						<span class="status-{{ status | slugify}}">{{ status | strip }}</span>
 						{% capture rating %}
 						{% if post.vote_count == "0" %}
 						Nenhuma avaliação
