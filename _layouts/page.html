@@ -2,32 +2,10 @@
 layout: default
 ---
 
-<section class="content">
-	{% include ads-top.html %}
-	<article class="post">
-		{% if page.image != "/assets/images/default-card.webp" %}
-			<div class="post-imagem">
-				<img src="{{ page.image }}" alt="{{ page.title }}" />
-			</div>
-		{% endif %}
-		<h3 class="post-title">{{ page.title }}</h3>
-		<hr data-content="{% include date_formatting.html date=page.date %}">
-		{{ content }}
-		<div class="meta">
-			{% comment %}<time datetime="{{ page.date | date_to_xmlschema }}">{% include date_formatting.html date=page.date %}</time>{% endcomment %}
-			<div class="post-tags">
-				{% for tag in page.tags %}
-					<a class="tag" href="/tags#{{tag}}">#{{tag}}</a>
-				{% endfor %}
-			</div>
-		</div>
-		{% assign author = site.data.authors[page.author] %}
-		{% if author.bio %}
-	    	{% include author_bio.html %}
-		{% endif %}
+<section class="page__content">
+	<article class="page">
+		<h3 class="page-title">{{ page.title }}</h3>
 	</article>
-	{% include suggestion.html %}
 </section>
-
 
 

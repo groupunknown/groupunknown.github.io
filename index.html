@@ -2,41 +2,213 @@
 layout: default
 ---
 
-<section class="posts">
-	{% include ads-top.html %}
-	<div class="posts-article">
-	{% for post in paginator.posts %}
-		<article class="post-article">
-			{% if post.image != "/assets/images/default-card.webp" %}
-				<div class="post-imagem" style="background-image: url({{ post.image }})" data-placeholder></div>
-			{% endif %}
-			<div class="post-date">
-				<time datetime="{{ post.date | date_to_xmlschema }}" data-placeholder>{% include date_formatting.html date=post.date %}</time>
-			</div>
-			<div class="post-title">
-				<a href="{{post.url | prepend: site.baseurl}}" data-placeholder>{{post.title}}</a>
-			</div>
-			<div class="post-tags">
-				{% for tag in post.tags %}
-					<a href="/tags#{{tag}}" class="tag" data-placeholder>#{{tag}}</a>
-				{% endfor %}
-			</div>
-		</article>
+<section class="feed__articles">
 
-		{% if forloop.index0 == 4 %}
-			{% include ads-center.html %}
-		{% endif %}
+	{% for post in paginator.posts %}
+
+	<article class="feed__article">
+		<div class="feed__article-header">
+			<div class="feed__article-heade-column">{% include date_formatting.html date=post.release_date %}</div>
+			<div class="feed__article-heade-column">
+				<div class="feed__article-ribbon badge-3">{{ post.type }}</div>
+			</div>
+		</div>
+		<div class="feed__article-column">
+			<div class="feed__article-row poster">
+				<div class="backdrop">
+					<img src="https://asahxjaqgo.cloudimg.io/v7/{{ post.img_path }}?force_format=webp&org_if_sml=1&q=90&sharp=3&w=140" alt="{{ post.title }}">
+					<div class="feed__download-show">
+						<button class="feed__btn-download" data-key="{{ post.tmdb_id }}" data-post-slug="{{ post.title | slugify }}"><svg width="38" height="38" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 3H9V5H6.46173L11.3047 9.84298L9.8905 11.2572L5 6.3667V9H3V3Z" fill="currentColor"></path><path d="M3 21H9V19H6.3764L11.3046 14.0718L9.89038 12.6576L5 17.548V15H3V21Z" fill="currentColor"></path><path d="M15 21H21V15H19V17.5244L14.1332 12.6576L12.719 14.0718L17.6472 19H15V21Z" fill="currentColor"></path><path d="M21 3H15V5H17.5619L12.7189 9.84301L14.1331 11.2572L19 6.39032V9H21V3Z" fill="currentColor"></path></svg></button>
+					</div>
+				</div>
+				<div class="feed__download-modal">
+					<div class="feed__download-modal-content">
+						<div class="tvserie-downloads downloads">
+							{% for season in post.seasons %}
+							<div class="temporada-main" data-season="{{ season.season_number }}">
+								<div class="temporada-main-poster">
+									<img src="#" data-src="#" alt="{{ season.name }}" class="lazyloaded" />
+								</div>
+								<div class="temporada-main-card">
+									<div class="temporada-main-title">{{ season.name }}</div>
+									<div class="temporada-main-overview">{{ season.overview }}</div>
+								</div>
+							</div>
+							<div class="episodios-content">
+								{% for episode in season.episodes %}
+								<div class="episodio-main">
+									<div class="episodio-main-poster">
+										<img src="#" />
+									</div>
+									<div class="episodio-main-card">
+										<div class="episodio-main-title"><span>{{ episode.episode_number }}</span>{{ episode.name }}</div>
+										<div class="episodio-main-overview">{{ episode.overview }}</div>
+									</div>
+								</div>
+								<div class="episodio-content">
+									<div class="episodio-main-menu">
+										<span>Qualidade</span>
+										<span>Áudio</span>
+										<span>Tamanho</span>
+										<span>Servidor</span>
+										<span>Download</span>
+									</div>
+									<div class="episodio-content-options">
+										{% for download in episode.downloads %}
+										<div class="episodio-main-download">
+											<span>{{ download.quality }}</span>
+											<span>{{ download.audio }}</span>
+											<span>{{ download.size }}</span>
+											<span>{{ download.server }}</span>
+											<span>Opções</span>
+										</div>
+										<div class="episodio-content-download">
+											{% for link in download.urls %}
+											<a href="{{ link.url }}">
+												<span><img src="https://s2.googleusercontent.com/s2/favicons?domain={{ link.hostname }}" /></span>
+												<span>{{ link.hostname }}</span>
+											</a>
+											{% endfor %}
+										</div>
+										{% endfor %}
+									</div>
+								</div>
+								{% endfor %}
+							</div>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="feed__article-row plot-summary">
+				<div class="feed__article-sub-row">
+					<h2>
+						<a href="#">{{ post.title }}</a>
+					</h2>
+					<div class="feed__plot">{{ post.overview }}</div>
+					<div class="feed__crew">
+						<div>Diretor:</div>
+						<div class="comma">
+							{% for crew in post.crews %}
+							<a href="#{{crew}}">{{crew}}</a>
+							{% endfor %}
+						</div>
+					</div>
+					<div class="feed__cast">
+						<div>Elenco:</div>
+						<div class="comma">
+							{% for cast in post.casts %}
+							<a href="#{{cast}}">{{cast}}</a>
+							{% endfor %}
+						</div>
+					</div>
+					<div class="feed__genre">
+						<div>Gênero:</div>
+						<div class="comma">
+							{% for genre in post.genres %}
+							<a href="#{{genre}}">{{genre}}</a>
+							{% endfor %}
+						</div>
+					</div>
+					<div class="feed__run-time">
+						<div>Duração:</div>
+						<div>{{ post.runtime }}</div>
+					</div>
+				</div>
+				<div class="feed__article-sub-row feed__article-sub-column">
+					<div class="feed__article-rating">
+						{% assign average = post.vote_average | remove:  "." %}
+						{% capture status %}
+						{% if average == "0" %}
+						Nenhum
+						{% elsif average <= "20" %}
+						Péssimo
+						{% elsif average <= "40" %}
+						Ruim
+						{% elsif average <= "60" %}
+						Aceitável
+						{% elsif average <= "80" %}
+						Ótimo
+						{% elsif average >= "81" %}
+						Excelente
+						{% endif %}
+						{% endcapture %}
+						<div class="rating {{ status | slugify }}">
+							<svg viewBox="-1 -1 38 38" data-status="{{status | strip }}">
+								<path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+								<path stroke-dasharray="{{ average }}, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+								<text x="18" y="24.35">{{ post.vote_average }}</text>
+							</svg>
+						</div>
+						<span class="status-{{ status | slugify}}">{{ status | strip }}</span>
+						{% capture rating %}
+						{% if post.vote_count == "0" %}
+						Nenhuma avaliação
+						{% elsif post.vote_count == "1" %}
+						{{post.vote_count}} avaliação
+						{% else %}
+						{{post.vote_count}} avaliações
+						{% endif %}
+						{% endcapture %}
+						<div class="rating-text">{{ rating }}</div>
+					</div>
+					<div class="feed__article-certification">
+						{% capture crtfctn_text %}
+						{% if post.certification == "L" %}
+						LIVRE PARA TODOS OS PÚBLICOS
+						{% elsif post.certification == 10 %}
+						NÃO RECOMENDADO PARA MENORES DE DEZ ANOS
+						{% elsif post.certification == 12 %}
+						NÃO RECOMENDADO PARA MENORES DE DOZE ANOS
+						{% elsif post.certification == 14 %}
+						NÃO RECOMENDADO PARA MENORES DE CATORZE ANOS
+						{% elsif post.certification == 16 %}
+						NÃO RECOMENDADO PARA MENORES DE DEZESSEIS ANOS
+						{% elsif post.certification == 18 %}
+						NÃO RECOMENDADO PARA MENORES DE DEZOITO ANOS
+						{% else %}
+						INDISPONÍVEL
+						{% endif %}
+						{% endcapture %}
+						<div class="certification age-{{ post.certification | strip }}" aria-label="{{ crtfctn_text | strip }}" data-tooltipped="top-right">{{ post.certification | strip }}</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="feed__article-footer">
+			<div class="feed__article-footer-column">
+				<div>Qualidade:</div>
+				<div class="comma">
+					{% for quality in post.qualitys %}
+					<a href="#{{quality}}">{{quality}}</a>
+					{% endfor %}
+				</div>
+			</div>
+			<div class="feed__article-footer-column">
+				<div>Áudio:</div>
+				<div class="comma">
+					{% for audio in post.audios %}
+					<a href="#{{audio}}">{{audio}}</a>
+					{% endfor %}
+				</div>
+			</div>
+			<div class="feed__article-footer-column">
+				<div>Extensão:</div>
+				<div class="comma">
+					{% for extension in post.extensions %}
+					<a href="#{{extension}}">{{extension}}</a>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</article>
+
+	{% if forloop.index0 == 4 %}
+		<article class="feed__article">Aguarde!</article>
+	{% endif %}
 
 	{% endfor %}
-	</div>
-
-	{% comment %}
-		{% if paginator and paginator.page and paginator.total_pages > 1 and paginator.page > 1 %}
-			<hr data-content="{{ paginator.page }} de {{ paginator.total_pages }}">
-		{% else %}
-			<hr data-content="1 de {{ paginator.total_pages }}">
-	    {% endif %}
-    {% endcomment %}
 
 	{% include pagination.html %}
+
 </section>

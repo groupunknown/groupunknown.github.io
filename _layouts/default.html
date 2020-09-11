@@ -9,14 +9,9 @@ layout: compress
 
 	{% include header.html %}
 
-    <main class="boxed" role="main">
-    <script>var layout = JSON.parse(localStorage.getItem('theme')).layout;if (layout === 'full'){$('main').removeClass('boxed').addClass('full');}</script>
-
-		{% include laside.html %}
+    <main class="main__content" role="main">
 
     	{{ content }}
-
-        {% include raside.html %}
 
     </main>
 
