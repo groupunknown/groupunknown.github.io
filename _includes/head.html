@@ -9,7 +9,7 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <style type="text/css">
         {% capture sass_file %}
-        {% include _main.scss %}
+        {% include inline.scss %}
         {% endcapture %}
         {{ sass_file | scssify }}
     </style>
