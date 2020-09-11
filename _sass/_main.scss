@@ -134,10 +134,6 @@ svg:not(:root) {
     content: ", ";
 }
 
-
-
-
-
 .header {
     box-shadow: 0 10px 5px 10px #f8f9fa;
 }
@@ -203,10 +199,6 @@ svg:not(:root) {
 .nav__btn-menu.active span:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
 }
-
-
-
-
 
 .feed__articles {
     display: grid;
@@ -558,18 +550,6 @@ svg:not(:root) {
     bottom: 100%;
     right: 50%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .feed__btn-download {
     display: grid;
