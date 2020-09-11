@@ -827,6 +827,9 @@ div[data-placeholder] {
     grid-gap: 1rem;
     width: 768px;
     margin: auto;
+    border: 1px solid #efefef;
+    box-shadow: 0 4px 6px -1px var(--light), 0 2px 4px -1px var(--light);
+    border-radius: 3px;
 }
 
 .filter__items {
