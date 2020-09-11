@@ -23,15 +23,6 @@ collections:
     output: true
     permalink: /:slug #/:year/:month/:day/:slug
 
-#permalink: /:title/
-
-# The release of Jekyll Now that you're using
-version: v1.17.2
-
-gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-
 # Exclude these files from your production _site
 exclude:
   - Gemfile
