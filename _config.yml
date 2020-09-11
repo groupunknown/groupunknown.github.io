@@ -1,23 +1,7 @@
-site: GroupUnknown™
 url: https://groupunknown.com
+name: groupunknown
 title: GroupUnknown™
 description: Network S.A.
-tagline: Downloads de filmes e séries em 1080p e 720p
-lang: pt_BR
-
-social_facebook: groupunknown
-social_twitter: 
-social_instagram: 
-#twitter:
-  #username: 
-  #card: summary
-#facebook:
-  #app_id: 
-  #publisher: 
-  #admins:
-
-permalink: pretty
-baseurl: ""
 
 google_analytics: UA-120280297-1
 
@@ -28,27 +12,8 @@ webmaster_verifications:
   #yandex: 
   #baidu: 
 
-highlighter: rouge
-markdown: kramdown
-kramdown:
-  html_to_native: true
-  auto_ids: false
-
-exclude:
-  - .jekyll-cache
-  
-compress_html:
-  clippings: all
-  comments: ["<!-- ", " -->"]
-
-sass:
-  sass_dir: _sass
-  style: :compressed
-
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-seo-tag
+baseurl: ""
+permalink: pretty
 
 collections:
   pages:
@@ -57,28 +22,20 @@ collections:
   posts:
     output: true
     permalink: /:slug #/:year/:month/:day/:slug
-  
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: "default"
-      image: /assets/images/default-card.webp
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
-      image: /assets/images/default-card.webp
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      image: /assets/images/default-card.webp
 
-paginate: 10
-paginate_path: /page:num/
+#permalink: /:title/
+
+# The release of Jekyll Now that you're using
+version: v1.2.0
+
+gems:
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+
+# Exclude these files from your production _site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME

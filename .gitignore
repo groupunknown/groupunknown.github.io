@@ -1,7 +1,10 @@
-tmp
-*.rdb
-.env
-.sass-cache
+_site
 .DS_Store
-.jekyll-cache
-.git
+.jekyll
+.jekyll-metadata
+.bundle
+.sass-cache
+Gemfile
+Gemfile.lock
+node_modules
+package.json
