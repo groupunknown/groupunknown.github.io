@@ -125,7 +125,7 @@ layout: default
 						Excelente
 						{% endif %}
 						{% endcapture %}
-						<div class="rating {{ status | slugify }} {{ post.title | slugify }}">
+						<div class="rating {{ status | slugify }}">
 							<svg viewBox="-1 -1 38 38" data-status="{{status | strip }}">
 								<path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
 								<path stroke-dasharray="{{ average }}, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
