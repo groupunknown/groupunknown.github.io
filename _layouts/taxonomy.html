@@ -3,5 +3,9 @@ layout: default
 ---
 
 <section class="feed__articles">
-	Taxonomy
+	<div class="filter__items">
+		{% for items in site.data.filter.genres %}
+			<button class="filter__item" data-term="{{ page.taxonomy }}" data-query="{{ items.item }}">{{ items.item | strip }}</button>
+		{% endfor %}
+	</div>
 </section>
