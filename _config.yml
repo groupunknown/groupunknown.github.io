@@ -25,7 +25,3 @@ collections:
 compress_html:
   clippings: all
   comments: ["<!-- ", " -->"]
-
-sass:
-  sass_dir: _sass
-  style: :compressed
