@@ -68,6 +68,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   jekyll-paginate
+  jekyll-seo-tag
   jekyll-sitemap
 
 BUNDLED WITH
