@@ -125,14 +125,14 @@ layout: default
 						Excelente
 						{% endif %}
 						{% endcapture %}
-						<div class="rating {{ status | slugify: "pretty" }}">
+						<div class="rating {{ status | slugify: "latin" }}">
 							<svg viewBox="-1 -1 38 38" data-status="{{status | strip }}">
 								<path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
 								<path stroke-dasharray="{{ average }}, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
 								<text x="18" y="24.35">{{ post.vote_average }}</text>
 							</svg>
 						</div>
-						<span class="status-{{ status | slugify: "pretty" }}">{{ status | strip }}</span>
+						<span class="status-{{ status | slugify: "latin" }}">{{ status | strip }}</span>
 						{% capture rating %}
 						{% if post.vote_count == "0" %}
 						Nenhuma avaliação
