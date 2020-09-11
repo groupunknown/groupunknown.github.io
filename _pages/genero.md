@@ -1,0 +1,4 @@
+---
+layout: taxonomy
+title: Gêneros
+---
