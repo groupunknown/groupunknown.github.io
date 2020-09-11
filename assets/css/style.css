@@ -817,3 +817,14 @@ div[data-placeholder] {
 .ecd-sorry {
     text-align: center;
 }
+
+
+
+
+.filter__taxonomy {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    width: 768px;
+    margin: auto;
+}
