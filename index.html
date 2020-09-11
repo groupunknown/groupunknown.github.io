@@ -21,56 +21,54 @@ layout: default
 				</div>
 				<div class="feed__download-modal">
 					<div class="feed__download-modal-content">
-						<div class="tvserie-downloads downloads">
-							{% for season in post.seasons %}
-							<div class="temporada-main" data-season="{{ season.season_number }}">
-								<div class="temporada-main-poster">{{ season.season_number }}</div>
-								<div class="temporada-main-card">
-									<div class="temporada-main-title">{{ season.name }}</div>
-									<div class="temporada-main-overview">{{ season.overview }}</div>
+						{% for season in post.seasons %}
+						<div class="temporada-main" data-season="{{ season.season_number }}">
+							<div class="temporada-main-poster">{{ season.season_number }}</div>
+							<div class="temporada-main-card">
+								<div class="temporada-main-title">{{ season.name }}</div>
+								<div class="temporada-main-overview">{{ season.overview }}</div>
+							</div>
+						</div>
+						<div class="episodios-content">
+							{% for episode in season.episodes %}
+							<div class="episodio-main">
+								<div class="episodio-main-poster">{{ episode.episode_number }}</div>
+								<div class="episodio-main-card">
+									<div class="episodio-main-title"><span>{{ episode.episode_number }}</span>{{ episode.name }}</div>
+									<div class="episodio-main-overview">{{ episode.overview }}</div>
 								</div>
 							</div>
-							<div class="episodios-content">
-								{% for episode in season.episodes %}
-								<div class="episodio-main">
-									<div class="episodio-main-poster">{{ episode.episode_number }}</div>
-									<div class="episodio-main-card">
-										<div class="episodio-main-title"><span>{{ episode.episode_number }}</span>{{ episode.name }}</div>
-										<div class="episodio-main-overview">{{ episode.overview }}</div>
-									</div>
+							<div class="episodio-content">
+								<div class="episodio-main-menu">
+									<span>Qualidade</span>
+									<span>Áudio</span>
+									<span>Tamanho</span>
+									<span>Servidor</span>
+									<span>Download</span>
 								</div>
-								<div class="episodio-content">
-									<div class="episodio-main-menu">
-										<span>Qualidade</span>
-										<span>Áudio</span>
-										<span>Tamanho</span>
-										<span>Servidor</span>
-										<span>Download</span>
+								<div class="episodio-content-options">
+									{% for download in episode.downloads %}
+									<div class="episodio-main-download">
+										<span>{{ download.quality }}</span>
+										<span>{{ download.audio }}</span>
+										<span>{{ download.size }}</span>
+										<span>{{ download.server }}</span>
+										<span>Opções</span>
 									</div>
-									<div class="episodio-content-options">
-										{% for download in episode.downloads %}
-										<div class="episodio-main-download">
-											<span>{{ download.quality }}</span>
-											<span>{{ download.audio }}</span>
-											<span>{{ download.size }}</span>
-											<span>{{ download.server }}</span>
-											<span>Opções</span>
-										</div>
-										<div class="episodio-content-download">
-											{% for link in download.urls %}
-											<a href="{{ link.url }}">
-												<span><img src="https://s2.googleusercontent.com/s2/favicons?domain={{ link.hostname }}" /></span>
-												<span>{{ link.hostname }}</span>
-											</a>
-											{% endfor %}
-										</div>
+									<div class="episodio-content-download">
+										{% for link in download.urls %}
+										<a href="{{ link.url }}">
+											<span><img src="https://s2.googleusercontent.com/s2/favicons?domain={{ link.hostname }}" /></span>
+											<span>{{ link.hostname }}</span>
+										</a>
 										{% endfor %}
 									</div>
+									{% endfor %}
 								</div>
-								{% endfor %}
 							</div>
 							{% endfor %}
 						</div>
+						{% endfor %}
 					</div>
 				</div>
 			</div>
