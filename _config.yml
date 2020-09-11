@@ -55,13 +55,7 @@ collections:
     permalink: /:name #/:categories/:name
   posts:
     output: true
-    #permalink: /:slug #/:year/:month/:day/:slug
-  movie:
-    output: true
-    permalink: /movie/:slug
-  tvserie:
-    output: true
-    permalink: /tvserie/:slug
+    permalink: /:slug #/:year/:month/:day/:slug
   
 defaults:
   -
