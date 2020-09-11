@@ -75,7 +75,7 @@ layout: default
 			<div class="feed__article-row plot-summary">
 				<div class="feed__article-sub-row">
 					<h2>
-						<a href="#">{{ post.title }}</a>
+						<a href="{{post.url | prepend: site.baseurl}}">{{ post.title }}</a>
 					</h2>
 					<div class="feed__plot">{{ post.overview }}</div>
 					<div class="feed__crew">
