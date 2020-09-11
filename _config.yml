@@ -23,10 +23,3 @@ collections:
     output: true
     permalink: /:slug #/:year/:month/:day/:slug
 
-# Exclude these files from your production _site
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - CNAME
