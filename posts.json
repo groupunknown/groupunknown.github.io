@@ -15,6 +15,7 @@ layout: null
             "type": "tvserie",
             "title": {{ post.title | jsonify }},
             "overview": {{ post.overview | jsonify }},
+            "author": {{ post.author | jsonify }},
             "img_path": {{ post.img_path | jsonify }},
             "tmdb_id": {{ post.tmdb_id | jsonify }},
             "imdb_id": {{ post.imdb_id | jsonify }},
