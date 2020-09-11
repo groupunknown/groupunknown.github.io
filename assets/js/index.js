@@ -95,7 +95,7 @@ jQuery(document).ready(function(){
         })
     }
 
-    $('.btn-filter').click(function() {
+    $('.filter__items button').click(function() {
         let term = $(this).data('term')     // CAPTURA O ATRIBUTO DATA-QUERY
             query = $(this).data('query')   // CAPTURA O ATRIBUTO DATA-QUERY
         $(this).addClass('active')      // ADD A CLASS NO BUTTON QUE FOI CLICADO
