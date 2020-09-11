@@ -142,7 +142,7 @@ layout: default
 						{{post.vote_count}} avaliações
 						{% endif %}
 						{% endcapture %}
-						<div class="rating-text">{{ rating }}</div>
+						<div class="rating-text">{{ rating | strip }}</div>
 					</div>
 					<div class="feed__article-certification">
 						{% capture crtfctn_text %}
