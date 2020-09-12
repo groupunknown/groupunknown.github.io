@@ -102,10 +102,10 @@ jQuery(document).ready(function(){
     }
 
     // CAPTURA A QUERY E EXECUTA A BUSCA
-    var query = Object.fromEntries(new URLSearchParams(window.location.search))
+    var query = Object.fromEntries(new URLSearchParams(window.location.search)), history = new URL(base_url);
     if (Object.keys(query)[0]) {
         search_query_itens(Object.keys(query)[0], Object.values(query)[0])
-        window.history.replaceState({}, document.title, new URL(window.location).pathname)
+        window.location.replace(history.origin + history.pathname)
     }
 
     $('.filter__items button').click(function() {
