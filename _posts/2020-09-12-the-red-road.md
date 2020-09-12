@@ -1,0 +1,40 @@
+---
+layout: post
+type: tvserie
+title: The Red Road
+description: >-
+  As linhas serão cruzadas quando a tragédia forçar dois homens, um ex-presidiário hipnotizante e um policial local em apuros, a enfrentar os segredos de seu passado. À medida que esses dois homens se veem cada vez mais comprometidos um com o outro, a vida de ambos rapidamente se desfaz.
+author: heisenberg
+overview: >-
+  As linhas serão cruzadas quando a tragédia forçar dois homens, um ex-presidiário hipnotizante e um policial local em apuros, a enfrentar os segredos de seu passado. À medida que esses dois homens se veem cada vez mais comprometidos um com o outro, a vida de ambos rapidamente se desfaz.
+img_path: https://m.media-amazon.com/images/M/MV5BMjE2MDY1NjU4MV5BMl5BanBnXkFtZTgwMjQ4NzQxMTE@._V1_.jpg
+tmdb_id: 57273
+imdb_id: tt2505072
+runtime: 1h
+release_date: 2014-02-27T00:00:00.000Z
+genres:
+  - Drama
+casts:
+  - Martin Henderson
+  - Jason Momoa
+  - Julianne Nicholson
+  - Tamara Tunie
+  - Kiowa Gordon
+  - Allie Gonino
+crews:
+  - Aaron Guzikowski
+trailer: qt9dUBKOLHM
+certification: 16
+adult: false
+vote_average: 6.9
+vote_count: 25
+qualitys:
+  - 1080p
+  - 720p
+audios:
+  - Português
+  - Inglês
+extensions:
+  - mkv
+  - mp4
+---
