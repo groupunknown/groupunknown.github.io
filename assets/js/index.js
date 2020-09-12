@@ -72,21 +72,21 @@ filter_template = (data) => {
                             <div>Diretor:</div>
                             <div class="comma">`;
                             item.crews.forEach((crew) => {
-                                resultado += `<a href="#">`+ crew +`</a>`;
+                                resultado += `<a href="/diretor?crews=`+ crew +`">`+ crew +`</a>`;
                             });
                resultado += `</div></div>
                         <div class="feed__cast">
                             <div>Elenco:</div>
                             <div class="comma">`;
                             item.casts.forEach((cast) => {
-                                resultado += `<a href="#">`+ cast +`</a>`;
+                                resultado += `<a href="/elenco?casts=`+ cast +`">`+ cast +`</a>`;
                             });
                 resultado += `</div></div>
                         <div class="feed__genre">
                             <div>Gênero:</div>
                             <div class="comma">`;
                             item.genres.forEach((genre) => {
-                                resultado += `<a href="#">`+ genre +`</a>`;
+                                resultado += `<a href="/genero?genres=`+ genre +`">`+ genre +`</a>`;
                             });
                 resultado += `</div></div>
                         <div class="feed__run-time">
@@ -106,7 +106,8 @@ filter_template = (data) => {
                             <div class="rating-text">`+rating_vote_cont(item.vote_count)+`</div>
                         </div>
                         <div class="feed__article-certification">
-                            <div class="certification age-`+ item.certification +`" aria-label="`+ certification_text(item.certification) +`" data-tooltipped="top-right"><a href="/classificacao?certification=`+ item.certification +`">`+ item.certification +`</a></div>
+                            <div class="certification age-`+ item.certification +`" aria-label="`+ certification_text(item.certification) +`" data-tooltipped="top-right">
+                            <a href="/classificacao?certification=`+ item.certification +`">`+ item.certification +`</a></div>
                         </div>
                     </div>
                     </div>
@@ -117,21 +118,21 @@ filter_template = (data) => {
                     <div>Qualidade:</div>
                     <div class="comma">`;
                         item.qualitys.forEach((quality) => {
-                            resultado += `<a href="#">`+ quality +`</a>`;
+                            resultado += `<a href="/qualidade?qualitys=`+ quality +`">`+ quality +`</a>`;
                         });
         resultado += `</div></div>
                 <div class="feed__article-footer-column">
                     <div>Áudio:</div>
                     <div class="comma">`;
                         item.audios.forEach((audio) => {
-                            resultado += `<a href="#">`+ audio +`</a>`;
+                            resultado += `<a href="/audio?audios=`+ audio +`">`+ audio +`</a>`;
                         });
         resultado += `</div></div>
                 <div class="feed__article-footer-column">
                     <div>Extensão:</div>
                     <div class="comma">`;
                         item.extensions.forEach((extension) => {
-                            resultado += `<a href="#">`+ extension +`</a>`;
+                            resultado += `<a href="/extensao?extensions=`+ extension +`">`+ extension +`</a>`;
                         });
         resultado += `</div></div></article>`;
     });
