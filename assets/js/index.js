@@ -77,10 +77,15 @@ jQuery(document).ready(function(){
             let item = data.items, result = {"items": []};
             for (var x = 0; x < item.length; x++) {
                 const items = item[x][term]
-                console.log(items)
-                for (var y = 0; y < items.length; y++) {
-                    if (items[y] == query) {
+                if (typeof items.length === 'undefined') {
+                    if (items == query) {
                         result.items.push(item[x])
+                    }
+                } else {
+                    for (var y = 0; y < items.length; y++) {
+                        if (items[y] == query) {
+                            result.items.push(item[x])
+                        }
                     }
                 }
             }
