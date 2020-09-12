@@ -162,7 +162,7 @@ layout: default
 						INDISPONÍVEL
 						{% endif %}
 						{% endcapture %}
-						<div class="certification age-{{ post.certification | strip }}" aria-label="{{ crtfctn_text | strip }}" data-tooltipped="top-right">{{ post.certification | strip }}</div>
+						<div class="certification age-{{ post.certification | strip }}" aria-label="{{ crtfctn_text | strip }}" data-tooltipped="top-right"><a href="/classificacao?q={{ post.certification | strip }}">{{ post.certification | strip }}</a></div>
 					</div>
 				</div>
 			</div>
