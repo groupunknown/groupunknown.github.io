@@ -23,7 +23,7 @@ collections:
     permalink: /:name #/:categories/:name
   posts:
     output: true
-    permalink: /:slug #/:year/:month/:day/:slug
+    permalink: /:tvserie/:slug #/:year/:month/:day/:slug
 
 compress_html:
   clippings: all
