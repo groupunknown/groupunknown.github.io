@@ -840,7 +840,7 @@ div[data-placeholder] {
     border-radius: 3px;
 }
 
-.filter__items-content {
+.filter__items-content-results {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
