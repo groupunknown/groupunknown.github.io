@@ -106,7 +106,7 @@ filter_template = (data) => {
                             <div class="rating-text">`+rating_vote_cont(item.vote_count)+`</div>
                         </div>
                         <div class="feed__article-certification">
-                            <div class="certification age-`+ item.certification +`" aria-label="`+ certification_text(item.certification) +`" data-tooltipped="top-right">`+ item.certification +`</div>
+                            <div class="certification age-`+ item.certification +`" aria-label="`+ certification_text(item.certification) +`" data-tooltipped="top-right"><a href="/classificacao?certification=`+ item.certification +`">`+ item.certification +`</a></div>
                         </div>
                     </div>
                     </div>
