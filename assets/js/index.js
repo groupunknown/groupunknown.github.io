@@ -165,9 +165,9 @@ $(document).on('click', '.feed__download-modal-content', function(e) {
 });
 
 jQuery(document).ready(function(){
-    $('.nav__btn-menu').click(function() {
+    $('.nav__btn').click(function() {
         $(this).toggleClass('active');
-        $('.nav__itens').toggleClass('active');
+        $('.nav__items-content').toggleClass('active');
     });
 
     $('.feed__content-btn').click(function() {
