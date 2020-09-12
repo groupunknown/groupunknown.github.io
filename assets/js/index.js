@@ -1,6 +1,143 @@
 var page_url = window.location.href,
     base_url = new URL(page_url).origin + new URL(page_url).pathname;
 
+
+stringtoslug = (text) => {
+    return text.toString().toLowerCase().normalize('NFD').trim().replace(/\s+/g, '-').replace(/[^\w\-]+/g, '').replace(/\-\-+/g, '-');
+}
+
+rating_int = (average) => {
+    return (average === 0) ? average : (average === 10) ? 100 : (average.toString().length >= 3) ? String(average).substr(0, 3).replace(/\./g, '') : average + '0';
+}
+
+rating_string = (val) => {
+    let average = rating_int(val);
+    return (average === 0) ? 'Nenhum' : (average < 20) ? 'Péssimo' : (average < 40) ? 'Ruim' : (average < 60) ? 'Aceitável' : (average < 80) ? 'Ótimo' : 'Excelente';
+}
+
+rating_decimal = (average) => {
+    return (average === 0) ? 'N/A' : (average === 10) ? 10 : (average.toString().length >= 3) ? String(average).substr(0, 3) : average + '.0';
+}
+
+rating_vote_cont = (votes = 0) => {
+    return (votes === 0) ? 'Nenhuma avaliação' : Number(votes).toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,") + ' avaliações';
+}
+
+certification_text = (age) => {
+    if (age === "L") {
+        text = 'LIVRE PARA TODOS OS PÚBLICOS';
+    } else if (age === 10) {
+        text = 'NÃO RECOMENDADO PARA MENORES DE DEZ ANOS';
+    } else if (age === 12) {
+        text = 'NÃO RECOMENDADO PARA MENORES DE DOZE ANOS';
+    } else if (age === 14) {
+        text = 'NÃO RECOMENDADO PARA MENORES DE CATORZE ANOS';
+    } else if (age === 16) {
+        text = 'NÃO RECOMENDADO PARA MENORES DE DEZESSEIS ANOS';
+    } else if (age === 18) {
+        text = 'NÃO RECOMENDADO PARA MENORES DE DEZOITO ANOS';
+    } else {
+        text = 'INDISPONÍVEL';
+    }
+    return text;
+}
+
+filter_template = (data) => {
+    let resultado = '';
+
+    if (Object.keys(data).length === 0) {
+        return '<ul><li><div>Não encontramos nenhum filme nessa categoria :(</div></li></ul>';
+    }
+
+    data.forEach(function(item) {
+        resultado += `
+        <article class="feed__article">
+            <div class="feed__article-header">
+                <div class="feed__article-heade-column">`+ item.release_date +`</div>
+                <div class="feed__article-heade-column">
+                    <div class="feed__article-ribbon badge-4">`+ item.type +`</div>
+                </div>
+            </div>
+            <div class="feed__article-column">
+                <div class="feed__article-row poster">
+                    <div class="backdrop">
+                         <img src="https://asahxjaqgo.cloudimg.io/v7/`+ item.img_path +`?force_format=webp&&q=90&sharp=3&w=140&h=210" alt="`+ item.title +`">
+                    </div>
+                </div>
+                <div class="feed__article-row plot-summary">
+                    <div class="feed__article-sub-row">
+                        <h2><a href="`+ item.title +`">`+ item.title +`</a></h2>
+                        <div class="feed__plot">`+ item.overview +`</div>
+                        <div class="feed__crew">
+                            <div>Diretor:</div>
+                            <div class="comma">`;
+                            item.crews.forEach((crew) => {
+                                resultado += `<a href="#">`+ crew +`</a>`;
+                            });
+               resultado += `</div></div>
+                        <div class="feed__cast">
+                            <div>Elenco:</div>
+                            <div class="comma">`;
+                            item.casts.forEach((cast) => {
+                                resultado += `<a href="#">`+ cast +`</a>`;
+                            });
+                resultado += `</div></div>
+                        <div class="feed__genre">
+                            <div>Gênero:</div>
+                            <div class="comma">`;
+                            item.genres.forEach((genre) => {
+                                resultado += `<a href="#">`+ genre +`</a>`;
+                            });
+                resultado += `</div></div>
+                        <div class="feed__run-time">
+                            <div>Duração:</div>
+                            <div>`+ item.runtime +`</div>
+                        </div>
+                        <div class="feed__article-sub-row feed__article-sub-column">
+                        <div class="feed__article-rating">
+                            <div class="rating `+stringtoslug(rating_string(item.vote_average))+`">
+                                <svg viewBox="-1 -1 38 38" data-status="Ótimo">
+                                    <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                                    <path stroke-dasharray="`+rating_int(item.vote_average)+`, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                                    <text x="18" y="24.35">`+rating_decimal(item.vote_average)+`</text>
+                                </svg>
+                            </div>
+                            <span class="status-`+stringtoslug(rating_string(item.vote_average))+`">`+rating_string(item.vote_average)+`</span>
+                            <div class="rating-text">`+rating_vote_cont(item.vote_count)+`</div>
+                        </div>
+                        <div class="feed__article-certification">
+                            <div class="certification age-`+ item.certification +`" aria-label="`+ certification_text(item.certification) +`" data-tooltipped="top-right">`+ item.certification +`</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feed__article-footer">
+                <div class="feed__article-footer-column">
+                    <div>Qualidade:</div>
+                    <div class="comma">`;
+                        item.qualitys.forEach((quality) => {
+                            resultado += `<a href="#">`+ quality +`</a>`;
+                        });
+        resultado += `</div></div>
+                <div class="feed__article-footer-column">
+                    <div>Áudio:</div>
+                    <div class="comma">`;
+                        item.audios.forEach((audio) => {
+                            resultado += `<a href="#">`+ audio +`</a>`;
+                        });
+        resultado += `</div></div>
+                <div class="feed__article-footer-column">
+                    <div>Extensão:</div>
+                    <div class="comma">`;
+                        item.extensions.forEach((extension) => {
+                            resultado += `<a href="#">`+ extension +`</a>`;
+                        });
+        resultado += `</div></div></article>`;
+    });
+    return resultado;
+}
+
 // https://www.w3schools.com/howto/howto_css_modals.asp
 $('.feed__btn-download').click(function() {
     let id = $(this).data('key'),
@@ -49,7 +186,7 @@ jQuery(document).ready(function(){
     });
 
 
-    filter_template = (data) => {
+    /*filter_template = (data) => {
         let result = '';
 
         if (Object.keys(data).length === 0) {
@@ -66,7 +203,7 @@ jQuery(document).ready(function(){
         });
         result += '</ul>';
         return result;
-    }
+    }*/
 
     search_query_itens = (term, query) => {
         const itens = new Promise((resolve, reject) => {

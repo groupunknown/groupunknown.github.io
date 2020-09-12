@@ -827,9 +827,6 @@ div[data-placeholder] {
     grid-gap: 1rem;
     width: 768px;
     margin: auto;
-    border: 1px solid #efefef;
-    box-shadow: 0 4px 6px -1px var(--light), 0 2px 4px -1px var(--light);
-    border-radius: 3px;
 }
 
 .filter__items {
@@ -838,6 +835,15 @@ div[data-placeholder] {
     place-items: center;
     grid-gap: .5rem;
     padding: .5rem;
+    border: 1px solid #efefef;
+    box-shadow: 0 4px 6px -1px var(--light), 0 2px 4px -1px var(--light);
+    border-radius: 3px;
+}
+
+.filter__items-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
 }
 
 .filter__items .filter__item {
