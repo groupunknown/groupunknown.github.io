@@ -244,6 +244,7 @@ jQuery(document).ready(function(){
     if (Object.keys(query)[0]) {
         search_query_itens(Object.keys(query)[0], Object.values(query)[0])
         window.history.pushState('', '', base_url)
+        $('.filter__items button[data-query="'+Object.values(query)[0]+'"]').addClass('active')
     }
 
     $('.filter__items button').click(function() {
