@@ -4,10 +4,7 @@ layout: default
 
 <section class="filter__taxonomy">
 	<div class="filter__items">
-		{% capture taxonomy %}
-			{{ page.taxonomy }}
-		{% endcapture %}
-		{% for items in site.data.filter.taxonomy %}
+		{% for items in site.data.filter.page.taxonomy %}
 			<button class="filter__item" data-term="{{ page.taxonomy }}" data-query="{{ items.item }}">{{ items.item | strip }}</button>
 		{% endfor %}
 	</div>
