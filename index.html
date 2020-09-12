@@ -98,7 +98,7 @@ layout: default
 						<div>Gênero:</div>
 						<div class="comma">
 							{% for genre in post.genres %}
-							<a href="#{{genre}}">{{genre}}</a>
+							<a href="/genero?q={{genre}}">{{genre}}</a>
 							{% endfor %}
 						</div>
 					</div>
@@ -172,7 +172,7 @@ layout: default
 				<div>Qualidade:</div>
 				<div class="comma">
 					{% for quality in post.qualitys %}
-					<a href="#{{quality}}">{{quality}}</a>
+					<a href="/qualidade?q={{quality}}">{{quality}}</a>
 					{% endfor %}
 				</div>
 			</div>
@@ -180,7 +180,7 @@ layout: default
 				<div>Áudio:</div>
 				<div class="comma">
 					{% for audio in post.audios %}
-					<a href="#{{audio}}">{{audio}}</a>
+					<a href="/audio?q={{audio}}">{{audio}}</a>
 					{% endfor %}
 				</div>
 			</div>
@@ -188,7 +188,7 @@ layout: default
 				<div>Extensão:</div>
 				<div class="comma">
 					{% for extension in post.extensions %}
-					<a href="#{{extension}}">{{extension}}</a>
+					<a href="/extensao?q={{extension}}">{{extension}}</a>
 					{% endfor %}
 				</div>
 			</div>
