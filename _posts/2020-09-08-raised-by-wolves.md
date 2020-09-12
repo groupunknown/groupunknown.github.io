@@ -17,8 +17,8 @@ imdb_id: tt9170108
 runtime: 60m
 release_date: 2020-09-03T00:00:00.000Z
 genres:
-  - Sci-Fi
-  - Fantasy
+  - Ficção científica
+  - Fantasia
   - Drama
 casts:
   - Travis Fimmel

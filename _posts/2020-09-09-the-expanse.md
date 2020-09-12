@@ -13,8 +13,8 @@ imdb_id: tt3230854
 runtime: 1h
 release_date: 2015-12-14T00:00:00.000Z
 genres:
-  - Sci-Fi
-  - Fantasy
+  - Ficção científica
+  - Fantasia
   - Drama
 casts:
   - Steven Strait
