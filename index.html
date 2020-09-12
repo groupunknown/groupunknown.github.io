@@ -82,7 +82,7 @@ layout: default
 						<div>Diretor:</div>
 						<div class="comma">
 							{% for crew in post.crews %}
-							<a href="#{{crew}}">{{crew}}</a>
+							<a href="/diretor?crews={{crew}}">{{crew}}</a>
 							{% endfor %}
 						</div>
 					</div>
@@ -90,7 +90,7 @@ layout: default
 						<div>Elenco:</div>
 						<div class="comma">
 							{% for cast in post.casts %}
-							<a href="#{{cast}}">{{cast}}</a>
+							<a href="/elenco?casts={{cast}}">{{cast}}</a>
 							{% endfor %}
 						</div>
 					</div>
