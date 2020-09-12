@@ -32,7 +32,6 @@ adult: false
 vote_average: 7.8
 vote_count: 1053
 qualitys:
-  - 1080p
   - 720p
   - 480p
 audios:
