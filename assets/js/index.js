@@ -42,6 +42,10 @@ certification_text = (age) => {
     return text;
 }
 
+date_format = (date) => {
+    return moment(date).format('LL').toLowerCase();
+}
+
 filter_template = (data) => {
     let resultado = '';
 
@@ -53,7 +57,7 @@ filter_template = (data) => {
         resultado += `
         <article class="feed__article">
             <div class="feed__article-header">
-                <div class="feed__article-heade-column">`+ item.release_date +`</div>
+                <div class="feed__article-heade-column">`+ moment(item.release_date).format('LL').toLowerCase() +`</div>
                 <div class="feed__article-heade-column">
                     <div class="feed__article-ribbon badge-4">`+ item.type +`</div>
                 </div>
