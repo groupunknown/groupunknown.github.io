@@ -1,4 +1,5 @@
 var base_url = window.location.href;
+var query = new URLSearchParams(window.location.search).get('q');
 
 // https://www.w3schools.com/howto/howto_css_modals.asp
 $('.feed__btn-download').click(function() {
@@ -99,6 +100,12 @@ jQuery(document).ready(function(){
                 }
             })
         })
+    }
+
+    // CAPTURA A QUERY E EXECUTA A BUSCA
+    var query = Object.fromEntries(new URLSearchParams(window.location.search))
+    if (Object.keys(query)[0]) {
+        search_query_itens(Object.keys(query)[0], Object.values(query)[0])
     }
 
     $('.filter__items button').click(function() {

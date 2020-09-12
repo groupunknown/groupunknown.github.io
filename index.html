@@ -98,7 +98,7 @@ layout: default
 						<div>Gênero:</div>
 						<div class="comma">
 							{% for genre in post.genres %}
-							<a href="/genero?q={{genre}}">{{genre}}</a>
+							<a href="/genero?genres={{genre}}">{{genre}}</a>
 							{% endfor %}
 						</div>
 					</div>
@@ -162,7 +162,7 @@ layout: default
 						INDISPONÍVEL
 						{% endif %}
 						{% endcapture %}
-						<div class="certification age-{{ post.certification | strip }}" aria-label="{{ crtfctn_text | strip }}" data-tooltipped="top-right"><a href="/classificacao?q={{ post.certification | strip }}">{{ post.certification | strip }}</a></div>
+						<div class="certification age-{{ post.certification | strip }}" aria-label="{{ crtfctn_text | strip }}" data-tooltipped="top-right"><a href="/classificacao?certification={{ post.certification | strip }}">{{ post.certification | strip }}</a></div>
 					</div>
 				</div>
 			</div>
@@ -172,7 +172,7 @@ layout: default
 				<div>Qualidade:</div>
 				<div class="comma">
 					{% for quality in post.qualitys %}
-					<a href="/qualidade?q={{quality}}">{{quality}}</a>
+					<a href="/qualidade?qualitys={{quality}}">{{quality}}</a>
 					{% endfor %}
 				</div>
 			</div>
@@ -180,7 +180,7 @@ layout: default
 				<div>Áudio:</div>
 				<div class="comma">
 					{% for audio in post.audios %}
-					<a href="/audio?q={{audio}}">{{audio}}</a>
+					<a href="/audio?audios={{audio}}">{{audio}}</a>
 					{% endfor %}
 				</div>
 			</div>
@@ -188,7 +188,7 @@ layout: default
 				<div>Extensão:</div>
 				<div class="comma">
 					{% for extension in post.extensions %}
-					<a href="/extensao?q={{extension}}">{{extension}}</a>
+					<a href="/extensao?extensions={{extension}}">{{extension}}</a>
 					{% endfor %}
 				</div>
 			</div>
