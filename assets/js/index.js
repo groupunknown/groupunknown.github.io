@@ -1,4 +1,5 @@
-var base_url = window.location.href;
+var page_url = window.location.href,
+    base_url = new URL(page_url).origin + new URL(page_url).pathname;
 
 // https://www.w3schools.com/howto/howto_css_modals.asp
 $('.feed__btn-download').click(function() {
@@ -102,10 +103,10 @@ jQuery(document).ready(function(){
     }
 
     // CAPTURA A QUERY E EXECUTA A BUSCA
-    var query = Object.fromEntries(new URLSearchParams(window.location.search)), history = new URL(base_url);
+    var query = Object.fromEntries(new URLSearchParams(window.location.search));
     if (Object.keys(query)[0]) {
         search_query_itens(Object.keys(query)[0], Object.values(query)[0])
-        window.location.replace(history.origin + history.pathname)
+        window.history.pushState('', '', base_url)
     }
 
     $('.filter__items button').click(function() {
