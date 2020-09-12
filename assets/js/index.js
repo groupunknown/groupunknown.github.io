@@ -42,15 +42,11 @@ certification_text = (age) => {
     return text;
 }
 
-date_format = (date) => {
-    return moment(date).format('LL').toLowerCase();
-}
-
 filter_template = (data) => {
     let resultado = '';
 
     if (Object.keys(data).length === 0) {
-        return '<ul><li><div>Não encontramos nenhum filme nessa categoria :(</div></li></ul>';
+        return '<article class="feed__article">Não encontramos nenhum filme nessa categoria :(</div>';
     }
 
     data.forEach(function(item) {
