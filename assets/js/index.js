@@ -105,7 +105,7 @@ jQuery(document).ready(function(){
     var query = Object.fromEntries(new URLSearchParams(window.location.search))
     if (Object.keys(query)[0]) {
         search_query_itens(Object.keys(query)[0], Object.values(query)[0])
-        window.history.replaceState({}, document.title, "/" + 'genero')
+        window.history.replaceState({}, document.title, '/' + new URL(window.location).pathname)
     }
 
     $('.filter__items button').click(function() {
