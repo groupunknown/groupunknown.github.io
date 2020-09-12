@@ -5,7 +5,6 @@ var page_url = window.location.href,
 $('.feed__btn-download').click(function() {
     let id = $(this).data('key'),
         slug = $(this).data('post-slug');
-
     $(this).parent().parent().next('.feed__download-modal').toggleClass('active');
     window.history.replaceState('', '', base_url + slug);
 });
