@@ -272,19 +272,11 @@ body.header__content-show header {
     transform: translateY(-10px) rotate(-45deg);
 }
 
-
-
-
-
-
-
 .feed__articles {
     display: grid;
-    grid-template-columns: 1fr;
     grid-gap: 1rem;
-    width: 1024px;
-    width: 768px;
-    margin: auto;
+    width: var(--breakpoint-md);
+    margin: 0 auto;
 }
 
 .feed__article {
