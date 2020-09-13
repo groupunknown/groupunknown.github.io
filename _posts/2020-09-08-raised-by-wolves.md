@@ -11,7 +11,7 @@ overview: >-
   Dois androides tem como missão de cuidar de crianças em um misterioso planeta.
   Enquanto a colônia dos humanos se divide por questões religiosas, esses
   androides aprendem de uma maneira difícil como lidar e controlar as pessoas.
-img_path: https://m.media-amazon.com/images/M/MV5BYWUzMGZjNjgtMzkwYS00MTdhLTlhYzItYTEzMjRjMjkzZmM3XkEyXkFqcGdeQXVyMTE5MzYzMDE5._V1_UX720_.jpg
+backdrop_path: /na2xUduK8HviOFT97TiFG2MkJmY.jpg
 tmdb_id: 85723
 imdb_id: tt9170108
 runtime: 60m
