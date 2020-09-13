@@ -216,6 +216,8 @@ body.header__content-show header {
 
 .nav__items-content {
     grid-column: 1 / -1;
+    place-items: center;
+    grid-gap: .5rem;
     padding: 1rem;
 }
 
@@ -984,8 +986,8 @@ body.header__content-show header {
     height: 40px;
     transition: .2s ease-in-out;
     transition-property: max-width;
-    background: var(--background);
-    border: 1px solid var(--menu-hover);
+    background: var(--light);
+    border: 1px solid var(--grey);
     border-radius: 3px;
 }
 
@@ -1007,22 +1009,22 @@ body.header__content-show header {
     border: 0;
     padding: .5rem 1rem;
     background: transparent;
-    color: var(--color);
+    color: var(--black);
 }
 
 .search-console input::placeholder,
 .search-console input::-webkit-input-placeholder {
-    color: var(--color);
+    color: var(--black);
 }
 
 .search-console input:focus-within::placeholder,
 .search-console input:focus::-webkit-input-placeholder {
-    color: var(--color);
+    color: var(--black);
 }
 
 .search-console button {
     background: transparent;
-    color: var(--color);
+    color: var(--black);
     background-position: center;
     border: none;
     cursor: pointer;
@@ -1058,13 +1060,13 @@ body.header__content-show header {
 
 .suggest-item:hover {
     border-radius: 3px;
-    background-color: var(--color-light);
+    background-color: var(--light);
 }
 
 .suggest-item a {
     display: flex;
     width: 100%;
-    color: var(--color);
+    color: var(--black);
     padding: 0.5rem 1rem;
     line-height: 1.8rem;
 }
