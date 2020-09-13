@@ -280,9 +280,9 @@ body.header__content-show header {
 }
 
 .feed__article {
-    display: grid;
+    /*display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(auto-fit, minmax(20px, auto));
+    grid-template-rows: repeat(auto-fit, minmax(20px, auto));*/
     border: 1px solid #efefef;
     box-shadow: 0 4px 6px -1px var(--light), 0 2px 4px -1px var(--light);
     border-radius: 3px;
@@ -290,7 +290,8 @@ body.header__content-show header {
 
 .feed__article-column {
     display: grid;
-    grid-template-columns: 140px repeat(auto-fit, minmax(140px, 1fr));
+    /*grid-template-columns: 140px repeat(auto-fit, minmax(140px, 1fr));*/
+    grid-template-columns: auto 1fr;
     grid-gap: 1rem;
     padding: 1rem;
     box-shadow: inset 0px 0px 10px 0px rgb(0 0 0 / 5%);
