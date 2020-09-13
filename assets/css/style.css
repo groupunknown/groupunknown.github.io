@@ -218,9 +218,15 @@ body.header__content-show header {
 
 .nav__items-content {
     grid-column: 1 / -1;
-    place-items: start center;
-    grid-gap: .5rem;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
     padding-top: 3rem;
+}
+
+.nav__items-content.show {
+    display: flex!important;
 }
 
 .nav__btn {

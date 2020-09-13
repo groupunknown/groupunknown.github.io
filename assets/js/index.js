@@ -171,7 +171,7 @@ jQuery(document).ready(function(){
         $(this).toggleClass('active');
         $('body').toggleClass('header__content-show');
         $('.header__content').toggleClass('fixed');
-        $('.nav__items-content').toggleClass('active');
+        $('.nav__items-content').toggleClass('show');
     });
 
     $('.feed__content-btn').click(function() {
