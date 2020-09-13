@@ -189,7 +189,7 @@ div[data-placeholder] {
 
 .nav__items {
     display: grid;
-    grid-template-columns: 10% 1fr 10%;
+    grid-template-columns: minmax(99px, 10%) 1fr minmax(99px, 10%);
     max-width: var(--breakpoint-lg);
     margin: 0 auto;
 }
