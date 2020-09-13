@@ -7,6 +7,7 @@ description: >-
 author: necromante
 overview: >-
   Elena tenta sobreviver entre os seres sobrenaturais que vivem em segredo. Ela se apaixona pelo misterioso Stefan, mas o retorno do seu irmão, Damon, ameaça essa paixão.
+poster_path: /b3vl6wV1W8PBezFfntKTrhrehCY.jpg
 backdrop_path: /k7T9xRyzP41wBVNyNeLmh8Ch7gD.jpg
 tmdb_id: 18165
 imdb_id: tt1405406

@@ -7,6 +7,7 @@ description: >-
 author: necromante
 overview: >-
   Duzentos anos no futuro, um detetive interespacial, o capitão de uma nave e uma diplomata antiguerra cruzam seus caminhos após uma jovem desaparecer misteriosamente.
+poster_path: /wikmaI7OVqmq2O9HfknkzxX6Ygu.jpg
 backdrop_path: /uUwnClwdMA12bpHgeKgkQrbu5Oe.jpg
 tmdb_id: 63639
 imdb_id: tt3230854
