@@ -952,3 +952,119 @@ body.header__content-show header {
         padding: 1rem;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.search-console {
+    display: flex;
+    width: 100%;
+    max-width: 380px;
+    height: 40px;
+    transition: .2s ease-in-out;
+    transition-property: max-width;
+    background: var(--background);
+    border: 1px solid var(--menu-hover);
+    border-radius: 3px;
+}
+
+@media (min-width:768px) {
+    .search-console:focus-within {
+        max-width: 100%;
+        max-width: calc(100% / 2);
+    }
+    .search-console:focus-within ~ .search-suggest-results {
+        max-width: 100%;
+        max-width: calc(100% / 2);
+    }
+}
+
+.search-console input {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    border: 0;
+    padding: .5rem 1rem;
+    background: transparent;
+    color: var(--color);
+}
+
+.search-console input::placeholder,
+.search-console input::-webkit-input-placeholder {
+    color: var(--color);
+}
+
+.search-console input:focus-within::placeholder,
+.search-console input:focus::-webkit-input-placeholder {
+    color: var(--color);
+}
+
+.search-console button {
+    background: transparent;
+    color: var(--color);
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    padding: .5rem;
+}
+
+.search-console button:active {
+    border-top-right-radius: 2px!important;
+    border-bottom-right-radius: 2px!important;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1) !important;
+    -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.search-suggest-results {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 380px;
+    padding-top: .5rem;
+    transition: .2s ease-in-out;
+    transition-property: max-width;
+}
+
+.suggest-item,
+.suggest-empty {
+    display: flex;
+    width: 100%;
+}
+
+.suggest-empty {
+    cursor: default;
+}
+
+.suggest-item:hover {
+    border-radius: 3px;
+    background-color: var(--color-light);
+}
+
+.suggest-item a {
+    display: flex;
+    width: 100%;
+    color: var(--color);
+    padding: 0.5rem 1rem;
+    line-height: 1.8rem;
+}
