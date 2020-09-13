@@ -234,7 +234,6 @@ div[data-placeholder] {
     transition-duration: 86ms;
     transition-property: background-color, opacity, transform;
     transition-timing-function: ease-out;
-    
 }
 
 .nav__btn span:nth-child(1) {
