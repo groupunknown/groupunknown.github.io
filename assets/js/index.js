@@ -167,6 +167,7 @@ $(document).on('click', '.feed__download-modal-content', function(e) {
 jQuery(document).ready(function(){
     $('.nav__btn').click(function() {
         $(this).toggleClass('active');
+        $('body').toggleClass('header__content-show');
         $('.nav__items-content').toggleClass('active');
     });
 

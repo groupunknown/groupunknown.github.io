@@ -191,6 +191,12 @@ div[data-placeholder] {
     padding-top: 6rem;
 }
 
+body.header__content-show header {
+    height: 100%;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+
 .nav__items {
     display: grid;
     grid-template-columns: minmax(99px, 10%) 1fr minmax(99px, 10%);
