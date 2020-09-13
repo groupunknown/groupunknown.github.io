@@ -227,13 +227,14 @@ div[data-placeholder] {
 }
 
 .nav__btn span {
-    background: var(--dark);
+    width: 25%;
     height: 2px;
+    background: var(--dark);
     transform-origin: center;
     transition-duration: 86ms;
     transition-property: background-color, opacity, transform;
     transition-timing-function: ease-out;
-    width: 25%;
+    
 }
 
 .nav__btn span:nth-child(1) {
