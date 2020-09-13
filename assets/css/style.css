@@ -194,7 +194,7 @@ div[data-placeholder] {
 body.header__content-show header {
     height: 100%;
     background: transparent;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
 }
 
 .nav__items {
