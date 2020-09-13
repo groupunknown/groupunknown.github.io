@@ -61,7 +61,7 @@ filter_template = (data) => {
             <div class="feed__article-column">
                 <div class="feed__article-row poster">
                     <div class="backdrop">
-                         <img src="https://image.tmdb.org/t/p/w220_and_h330_face`+ item.backdrop_path +`" alt="`+ item.title +`">
+                         <img src="https://image.tmdb.org/t/p/w220_and_h330_face`+ item.poster_path +`" alt="`+ item.title +`">
                     </div>
                 </div>
                 <div class="feed__article-row plot-summary">

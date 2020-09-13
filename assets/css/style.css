@@ -328,6 +328,8 @@ div[data-placeholder] {
 }
 
 .feed__article-row .backdrop img {
+    width: 140px;
+    height: 210px;
     border-radius: 3px;
 }
 

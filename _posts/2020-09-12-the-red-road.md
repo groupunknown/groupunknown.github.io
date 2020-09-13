@@ -7,7 +7,7 @@ description: >-
 author: heisenberg
 overview: >-
   As linhas serão cruzadas quando a tragédia forçar dois homens, um ex-presidiário hipnotizante e um policial local em apuros, a enfrentar os segredos de seu passado. À medida que esses dois homens se veem cada vez mais comprometidos um com o outro, a vida de ambos rapidamente se desfaz.
-backdrop_path: /85bNkVEMByn0mkUfRCGvfLlnUVL.jpg
+poster_path: /hlUbfYYGmWfLwdCh2H78nRomSg1.jpg
 tmdb_id: 57273
 imdb_id: tt2505072
 runtime: 1h
