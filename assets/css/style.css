@@ -187,6 +187,10 @@ div[data-placeholder] {
     z-index: 999;
 }
 
+.header__content.fixed ~ main {
+    padding-top: 6rem;
+}
+
 .nav__items {
     display: grid;
     grid-template-columns: minmax(99px, 10%) 1fr minmax(99px, 10%);
