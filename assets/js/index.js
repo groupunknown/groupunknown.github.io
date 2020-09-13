@@ -168,6 +168,7 @@ jQuery(document).ready(function(){
     $('.nav__btn').click(function() {
         $(this).toggleClass('active');
         $('body').toggleClass('header__content-show');
+        $('.header__content').toggleClass('fixed');
         $('.nav__items-content').toggleClass('active');
     });
 
