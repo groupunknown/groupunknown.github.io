@@ -132,17 +132,19 @@ layout: default
 								<text x="18" y="24.35">{{ post.vote_average }}</text>
 							</svg>
 						</div>
-						<span class="status-{{ status | slugify: "latin" }}">{{ status | strip }}</span>
-						{% capture rating %}
-						{% if post.vote_count == "0" %}
-						Nenhuma avaliação
-						{% elsif post.vote_count == "1" %}
-						{{post.vote_count}} avaliação
-						{% else %}
-						{{post.vote_count}} avaliações
-						{% endif %}
-						{% endcapture %}
-						<div class="rating-text">{{ rating | strip }}</div>
+						<div class="rating-content">
+							<span class="status-{{ status | slugify: "latin" }}">{{ status | strip }}</span>
+							{% capture rating %}
+							{% if post.vote_count == "0" %}
+							Nenhuma avaliação
+							{% elsif post.vote_count == "1" %}
+							{{post.vote_count}} avaliação
+							{% else %}
+							{{post.vote_count}} avaliações
+							{% endif %}
+							{% endcapture %}
+							<span class="rating-text">{{ rating | strip }}</span>
+						</div>
 					</div>
 					<div class="feed__article-certification">
 						{% capture crtfctn_text %}

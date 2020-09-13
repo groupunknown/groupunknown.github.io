@@ -102,8 +102,10 @@ filter_template = (data) => {
                                     <text x="18" y="24.35">`+rating_decimal(item.vote_average)+`</text>
                                 </svg>
                             </div>
-                            <span class="status-`+stringtoslug(rating_string(item.vote_average))+`">`+rating_string(item.vote_average)+`</span>
-                            <div class="rating-text">`+rating_vote_cont(item.vote_count)+`</div>
+                            <div class="rating-content">
+                                <span class="status-`+stringtoslug(rating_string(item.vote_average))+`">`+rating_string(item.vote_average)+`</span>
+                                <span class="rating-text">`+rating_vote_cont(item.vote_count)+`</span>
+                            </div>
                         </div>
                         <div class="feed__article-certification">
                             <div class="certification age-`+ item.certification +`" aria-label="`+ certification_text(item.certification) +`" data-tooltipped="top-right">
