@@ -192,14 +192,16 @@ div[data-placeholder] {
 
 body.header__content-show header {
     height: 100%;
-    background: transparent;
+    background: #fff;
     backdrop-filter: blur(5px);
 }
 
 .nav__items {
     display: grid;
     grid-template-columns: minmax(99px, 10%) 1fr minmax(99px, 10%);
+    grid-template-rows: auto 1fr;
     max-width: var(--breakpoint-lg);
+    height: 100%;
     margin: 0 auto;
 }
 
@@ -216,9 +218,9 @@ body.header__content-show header {
 
 .nav__items-content {
     grid-column: 1 / -1;
-    place-items: center;
+    place-items: start center;
     grid-gap: .5rem;
-    padding: 1rem;
+    padding-top: 3rem;
 }
 
 .nav__btn {
