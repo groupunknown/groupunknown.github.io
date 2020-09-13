@@ -936,6 +936,10 @@ body.header__content-show header {
         justify-content: center;
     }
 
+    .feed__article-sub-row:first-child {
+        padding-bottom: .5rem;
+    }
+
     .feed__article-sub-column {
         display: flex;
         flex-direction: row;
