@@ -236,6 +236,10 @@ div[data-placeholder] {
     transition-timing-function: ease-out;
 }
 
+.nav__btn.active:hover span {
+    background: #E53935;
+}
+
 .nav__btn span:nth-child(1) {
     position: relative;
     top: 10px;
