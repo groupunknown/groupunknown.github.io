@@ -12,7 +12,7 @@ backdrop_path: /uUwnClwdMA12bpHgeKgkQrbu5Oe.jpg
 tmdb_id: 63639
 imdb_id: tt3230854
 runtime: 1h
-release_date: 2015-12-14T00:00:00
+release_date: 2015-12-14
 genres:
   - Ficção científica
   - Fantasia
