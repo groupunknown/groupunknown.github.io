@@ -16,7 +16,7 @@ backdrop_path: /na2xUduK8HviOFT97TiFG2MkJmY.jpg
 tmdb_id: 85723
 imdb_id: tt9170108
 runtime: 60m
-release_date: 2020-09-03T00:00:00.000Z
+release_date: 2020-09-03T00:00:00
 genres:
   - Ficção científica
   - Fantasia
