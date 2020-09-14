@@ -153,7 +153,7 @@ $('.feed__btn-trailer').click(function() {
 $(window).click(function() {
     $('.feed__btn-trailer').removeClass('active');
     $('.feed__trailer-modal').removeClass('active');
-    $('.feed__trailer-iframe-stop').stopVideo();
+    $('.feed__trailer-iframe-stop').contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
     window.history.pushState('', '', base_url);
 });
 
