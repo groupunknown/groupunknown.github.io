@@ -55,8 +55,8 @@ layout: null
                                     "server": {{ download.server | jsonify }},
                                     "urls": [{% for link in download.urls %}
                                         {
-                                            "hostname": {{ link.hostname | jsonify }},
-                                            "url": {{ link.url | jsonify }}
+                                            "hostname": null,
+                                            "url": null
                                         }{% unless forloop.last %},{% endunless %}{% endfor %}
                                     ]
                                 }{% unless forloop.last %},{% endunless %}{% endfor %}
