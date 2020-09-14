@@ -153,8 +153,8 @@ $('.feed__btn-trailer').click(function() {
 $(window).click(function() {
     $('.feed__btn-trailer').removeClass('active');
     $('.feed__trailer-modal').removeClass('active');
+    $('.feed__trailer-iframe-stop').attr('src', $('.feed__trailer-iframe-stop').attr('src'));
     window.history.pushState('', '', base_url);
-
 });
 
 // IGNORA O CLICK NO BOTÃO E DENTRO DO MODAL
