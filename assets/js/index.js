@@ -153,7 +153,6 @@ $('.feed__btn-trailer').click(function() {
 $(window).click(function() {
     $('.feed__btn-trailer').removeClass('active');
     $('.feed__trailer-modal').removeClass('active');
-    $('.feed__trailer-iframe-stop').detach();
     window.history.pushState('', '', base_url);
 });
 
