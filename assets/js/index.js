@@ -42,8 +42,8 @@ certification_text = (age) => {
     return text;
 }
 
-date_format = (date) => {
-    nd = new Date(date).toLocaleString('pt-BR', { year: 'numeric', month: '2-digit', day: '2-digit' });
+date_format = (str) => {
+    nd = new Date(str).toLocaleString('pt-BR', { year: 'numeric', month: '2-digit', day: '2-digit' });
     var day = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'][nd.getDay()],
         date = nd.getDate(),
         month = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'][nd.getMonth()],
