@@ -601,7 +601,7 @@ body.header__content-show header {
     right: 50%;
 }
 
-.feed__btn-download {
+.feed__btn-trailer {
     display: grid;
     place-items: center;
     min-width: 100%;
@@ -609,11 +609,11 @@ body.header__content-show header {
     cursor: pointer;
 }
 
-.feed__btn-download svg {
+.feed__btn-trailer svg {
     color: var(--white);
 }
 
-.feed__download-modal {
+.feed__trailer-modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -626,7 +626,7 @@ body.header__content-show header {
     backdrop-filter: blur(3px);
 }
 
-.feed__download-modal-content {
+.feed__trailer-modal-content {
     width: 50%;
     height: 50%;
     margin: 15% auto;
@@ -635,6 +635,7 @@ body.header__content-show header {
     border-radius: 3px;
 }
 
+/* DOWNLOAD START */
 .temporada-main {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -830,7 +831,7 @@ body.header__content-show header {
 .ecd-sorry {
     text-align: center;
 }
-
+/* DOWNLOAD END */
 
 
 
