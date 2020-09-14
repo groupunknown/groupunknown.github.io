@@ -142,27 +142,27 @@ filter_template = (data) => {
 }
 
 // https://www.w3schools.com/howto/howto_css_modals.asp
-$('.feed__btn-download').click(function() {
+$('.feed__btn-trailer').click(function() {
     let id = $(this).data('key'),
         slug = $(this).data('post-slug');
-    $(this).parent().parent().next('.feed__download-modal').toggleClass('active');
+    $(this).parent().parent().next('.feed__trailer-modal').toggleClass('active');
     window.history.replaceState('', '', base_url + slug);
 });
 
 // DETECTA O CLICK FORA DO MODAL
 $(window).click(function() {
-    $('.feed__btn-download').removeClass('active');
-    $('.feed__download-modal').removeClass('active');
+    $('.feed__btn-trailer').removeClass('active');
+    $('.feed__trailer-modal').removeClass('active');
     window.history.pushState('', '', base_url);
 
 });
 
 // IGNORA O CLICK NO BOTÃO E DENTRO DO MODAL
-$(document).on('click', '.feed__btn-download', function(e) {
+$(document).on('click', '.feed__btn-trailer', function(e) {
     e.stopPropagation();
 });
 
-$(document).on('click', '.feed__download-modal-content', function(e) {
+$(document).on('click', '.feed__trailer-modal-content', function(e) {
     e.stopPropagation();
 });
 
