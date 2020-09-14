@@ -12,7 +12,7 @@ backdrop_path: /k7T9xRyzP41wBVNyNeLmh8Ch7gD.jpg
 tmdb_id: 18165
 imdb_id: tt1405406
 runtime: 43m
-release_date: 2009-09-10T00:00:00
+release_date: 2009-09-10
 genres:
   - Drama
   - Fantasia

@@ -12,7 +12,7 @@ backdrop_path: /85bNkVEMByn0mkUfRCGvfLlnUVL.jpg
 tmdb_id: 57273
 imdb_id: tt2505072
 runtime: 1h
-release_date: 2014-02-27T00:00:00
+release_date: 2014-02-27
 genres:
   - Drama
 casts:
