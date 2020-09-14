@@ -631,7 +631,7 @@ body.header__content-show header {
     height: 50%;
     margin: 15% auto;
     padding: 1rem;
-    background-color: var(--white);
+    background-color: var(--gray-dark);
     border-radius: 3px;
 }
 
