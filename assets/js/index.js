@@ -62,7 +62,7 @@ filter_template = (data) => {
         resultado += `
         <article class="feed__article">
             <div class="feed__article-header">
-                <div class="feed__article-heade-column">`+ date_format(item.release_date) +`</div>
+                <div class="feed__article-heade-column">`+ new Date(item.release_date.replace(/-/g,'/')).toLocaleString('pt-BR', { year: 'numeric', month: '2-digit', day: '2-digit' }) +`</div>
                 <div class="feed__article-heade-column">
                     <div class="feed__article-ribbon badge-4">`+ item.type +`</div>
                 </div>
