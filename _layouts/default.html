@@ -7,15 +7,18 @@ layout: compress
 {% include head.html %}
 <body>
 
-  {% include header.html %}
+	<div class="page_content">
 
-    <main class="main__content" role="main">
+		{% include header.html %}
 
-      {{ content }}
+		<main class="main__content" role="main">
 
-    </main>
+			{{ content }}
 
-  {% include footer.html %}
+		</main>
+	</div>
+
+	{% include footer.html %}
 
 </body>
 </html>

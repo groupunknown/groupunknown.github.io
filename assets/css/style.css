@@ -127,6 +127,35 @@ svg:not(:root) {
     overflow: hidden;
 }
 
+
+::selection {
+    background: #E5E5E5
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    height: 5px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    -webkit-border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05), inset 1px 1px 0px rgba(0, 0, 0, 0.05);
+}
+
+::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
 .comma a {
     text-decoration: none;
 }
@@ -171,15 +200,22 @@ div[data-placeholder] {
     }
 }
 
-.header__content {
+.page_content {
     position: relative;
-    width: 100%;
-    height: 65px;
-    border-bottom: 1px solid #e8e8e8;
-    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.05);
-    box-shadow: 0 1px 1px 0 rgba(0,0,0,.05);
+    display: flex;
+    justify-content: space-between;
 }
 
+.header__content {
+    position: fixed;
+    min-width: 20%;
+    min-height: 100vh;
+    border-right: 1px solid #e8e8e8;
+    -webkit-box-shadow: 5px 0px 8px 0 rgba(0,0,0,.05);
+    box-shadow: 5px 0px 8px 0 rgba(0,0,0,.05);
+    z-index: 1;
+}
+/*
 .header__content.fixed {
     position: fixed;
     margin-bottom: 0;
@@ -195,6 +231,7 @@ body.header__content-show header {
     background: #fff;
     backdrop-filter: blur(5px);
 }
+*/
 
 .nav__items {
     display: grid;
@@ -282,8 +319,18 @@ body.header__content-show header {
 }
 
 .main__content {
-    padding: 2rem 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 3rem 0;
     background: #f3f3f3;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 20%;
 }
 
 .feed__articles {
@@ -291,7 +338,6 @@ body.header__content-show header {
     flex-direction: column;
     gap: 1rem;
     max-width: var(--breakpoint-md);
-    margin: 0 auto;
 }
 
 .feed__article {
