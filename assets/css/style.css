@@ -174,10 +174,10 @@ div[data-placeholder] {
 .header__content {
     position: relative;
     width: 100%;
-    height: auto;
-    margin-bottom: 2rem;
-    background: #fff;
-    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 5%);
+    height: 65px;
+    border-bottom: 1px solid #e8e8e8;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.05);
 }
 
 .header__content.fixed {
@@ -281,6 +281,11 @@ body.header__content-show header {
     transform: translateY(-10px) rotate(-45deg);
 }
 
+.main__content {
+    padding: 2rem 0;
+    background: #f3f3f3;
+}
+
 .feed__articles {
     display: flex;
     flex-direction: column;
@@ -292,9 +297,8 @@ body.header__content-show header {
 .feed__article {
     display: flex;
     flex-direction: column;
-    border: 1px solid #efefef;
-    box-shadow: 0 4px 6px -1px var(--light), 0 2px 4px -1px var(--light);
-    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
 }
 
 .feed__article-column {
@@ -302,6 +306,7 @@ body.header__content-show header {
     justify-content: space-between;
     gap: 1rem;
     padding: 1rem;
+    background: var(--white);
     box-shadow: inset 0px 0px 10px 0px rgb(0 0 0 / 5%);
 }
 
