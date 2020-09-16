@@ -208,8 +208,9 @@ div[data-placeholder] {
 
 .header__content {
     position: fixed;
-    min-width: 20%;
+    min-width: 250px;
     min-height: 100vh;
+    background: var(--white);
     border-right: 1px solid #e8e8e8;
     -webkit-box-shadow: 5px 0px 8px 0 rgba(0,0,0,.05);
     box-shadow: 5px 0px 8px 0 rgba(0,0,0,.05);
@@ -322,7 +323,7 @@ body.header__content-show header {
     position: relative;
     display: flex;
     justify-content: center;
-    width: 80%;
+    width: calc(100% - 250px);
     height: 100%;
     min-height: 100vh;
     padding: 3rem 0;
@@ -330,7 +331,7 @@ body.header__content-show header {
     top: 0;
     right: 0;
     bottom: 0;
-    left: 20%;
+    left: 250px;
 }
 
 .feed__articles {
