@@ -2,7 +2,29 @@
 layout: default
 ---
 
+<div class="alert alert-success" role="alert">
+    <span class="alert-close">
+        <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+                <path d="M8.03 6.84L5.65 4.46a.841.841 0 1 0-1.19 1.19l2.38 2.38-2.38 2.38a.841.841 0 1 0 1.19 1.19l2.38-2.379 2.38 2.38a.841.841 0 1 0 1.19-1.19L9.223 8.03l2.38-2.381a.841.841 0 1 0-1.19-1.19L8.03 6.84z" id="b"></path>
+                <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="a">
+                    <feOffset in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                    <feGaussianBlur stdDeviation=".5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.200000003 0" in="shadowBlurOuter1"></feColorMatrix>
+                </filter>
+            </defs>
+            <g fill="none" fill-rule="evenodd">
+                <rect fill="#999" width="16" height="16" rx="8"></rect>
+                <use fill="#000" filter="url(#a)" xlink:href="#b"></use>
+                <use fill="#FFF" xlink:href="#b"></use>
+            </g>
+        </svg>
+    </span>
+    <span>Somos um agregador de links, não hospedamos arquivos em nosso servidor e não somos reponsaveis pelo uploader em outros servidores, apenas organizamos os links e as informações encontradas na própria internet.</span>
+</div>
+
 <section class="feed__articles">
+	<h2 class="feed__title-articles">Últimos lançamentos</h2>
 	{% for post in paginator.posts %}
 	<article class="feed__article">
 		<div class="feed__article-header">
