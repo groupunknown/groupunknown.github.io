@@ -188,6 +188,9 @@ jQuery(document).ready(function(){
     $('.episodio-main-download').click(function() {
         $(this).next('.episodio-content-download').toggleClass('active');
     });
+    $('.alert-close').click(function() {
+        $(this).parent('.alert').remove();
+    });
 
 
     /*filter_template = (data) => {
