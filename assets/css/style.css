@@ -328,7 +328,7 @@ body.header__content-show header {
     height: 100%;
     min-height: 100vh;
     padding: 3rem 0;
-    background: #f3f3f3;
+    background: var(--white);
     top: 0;
     right: 0;
     bottom: 0;
