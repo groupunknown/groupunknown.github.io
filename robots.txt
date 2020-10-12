@@ -1,12 +1,1 @@
----
-layout: none
----
 User-agent: *
-Sitemap: {{ site.url }}/sitemap.xml
-Disallow: /audio
-Disallow: /classificacao
-Disallow: /diretor
-Disallow: /elenco
-Disallow: /extensao
-Disallow: /genero
-Disallow: /qualidade

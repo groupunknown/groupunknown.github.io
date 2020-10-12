@@ -1,7 +1,0 @@
-tmp
-*.rdb
-.env
-.sass-cache
-.DS_Store
-.jekyll-cache
-.git
