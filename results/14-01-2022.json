@@ -1,7 +1,7 @@
 [{
-	"PTM": ["5614", "7518", "4646", "7670", "9947", "5395", "206"],
-	"PT": ["5806", "4620", "8908", "0214", "2219", "1767", "823"],
-	"PTV": [null, null, null, null, null, null, null],
-	"PTN": [null, null, null, null, null, null, null],
-	"CORUJA": [null, null, null, null, null, null, null]
+	"0": ["5614", "7518", "4646", "7670", "9947", "5395", "206"],
+	"1": ["5806", "4620", "8908", "0214", "2219", "1767", "823"],
+	"2": ["9449", "7333", "6067", "4103", "8841", "5793", "289"],
+	"3": [null, null, null, null, null, null, null],
+	"4": [null, null, null, null, null, null, null]
 }]
