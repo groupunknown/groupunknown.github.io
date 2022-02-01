@@ -1,0 +1,37 @@
+site: GroupUnknown™
+url: https://groupunknown.com
+title: GroupUnknown™
+description: Network S.A.
+tagline: Blog dedicado à assuntos diversos
+lang: pt_BR
+author: groupunknown
+google_analytics: UA-120280297-1
+
+webmaster_verifications:
+  google: BHhjherZoAFIqjGDO05JmCzgLmKjOIr-pD8N7TYvkg8
+  #bing: 
+  #alexa: 
+  #yandex: 
+  #baidu: 
+
+baseurl: ""
+permalink: pretty
+
+collections:
+  pages:
+    output: true
+    permalink: /:name #/:categories/:name
+  posts:
+    output: true
+    permalink: /:slug #/:year/:month/:day/:slug
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+paginate: 10
+paginate_path: /page:num/
