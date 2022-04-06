@@ -26,7 +26,7 @@ layout: default
 <section class="feed__articles">
 	<h2 class="feed__title-articles">Últimos lançamentos</h2>
 	{% for post in paginator.posts %}
-	<article class="feed__article">
+	<!--<article class="feed__article">
 		<div class="feed__article-header">
 			<div class="feed__article-heade-column">{% include article-date-formatting.html date=post.release_date %}</div>
 			<div class="feed__article-heade-column">
@@ -170,7 +170,11 @@ layout: default
 				</div>
 			</div>
 		</div>
-	</article>
+	</article>-->
+
+	{% include article-author.html %}
+
+
 	{% endfor %}
 	{% include pagination.html %}
 </section>
