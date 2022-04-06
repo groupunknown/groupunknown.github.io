@@ -1,12 +1,8 @@
 <article class="row article">
-	
 	{% include article_author.html %}
-
 	<div class="column posting">
 		<div class="row full-width justify-between article-header">
-
 			{% include article_date_formatting.html %}
-
 			{% assign min = 0 %}
 			{% assign max = 10 %}
 			{% assign diff = max | minus: min %}
@@ -55,11 +51,8 @@
 					</div>
 				</div>
 				<div class="row full-width justify-between">
-									
 					{% include article_average.html %}
-
 					{% include article_certification.html %}
-
 				</div>
 			</div>
 		</div>

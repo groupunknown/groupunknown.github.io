@@ -6,19 +6,10 @@ layout: compress
 <html lang="pt-BR">
 {% include head.html %}
 <body>
+	{% include header.html %}
 
-	<div class="page_content">
-
-		{% include header.html %}
-
-		<main class="main__content" role="main">
-
-			{{ content }}
-
-		</main>
-	</div>
+	{{ content }}
 
 	{% include footer.html %}
-
 </body>
 </html>

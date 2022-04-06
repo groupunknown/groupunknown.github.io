@@ -14,7 +14,6 @@ Aceitável
 Excelente
 {% endif %}
 {% endcapture %}
-
 {% capture rating %}
 {% if post.vote_count == "0" %}
 Nenhuma avaliação
@@ -24,7 +23,6 @@ Nenhuma avaliação
 {{post.vote_count}} avaliações
 {% endif %}
 {% endcapture %}
-
 <div class="article-rating">
 	<div class="rating {{ status | slugify: "latin" }}">
 		<svg viewBox="0 0 36 36" data-status="{{ status | strip }}">
