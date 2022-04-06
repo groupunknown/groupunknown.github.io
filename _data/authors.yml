@@ -3,23 +3,28 @@ heisenberg:
     name: Heisenberg
     joined: 2018
     role: 1
+    img: #release future
 hannibal_lecter:
     id: 222
     name: Hannibal Lecter
     joined: 2019
     role: 2
+    img: #release future
 pennywise:
     id: 333
     name: Pennywise
     joined: 2020
     role: 3
+    img: #release future
 voldemort:
     id: 444
     name: Voldemort
     joined: 2021
     role: 4
+    img: #release future
 dr_octopus:
     id: 555
     name: Dr. Octopus
     joined: 2022
     role: 5
+    img: #release future

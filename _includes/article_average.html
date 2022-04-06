@@ -32,5 +32,5 @@ Nenhuma avaliação
 		</svg>
 	</div>
 	<span class="status-{{ status | slugify: "latin" }}">{{ status | strip }}</span>
-	<div class="rating-text">{{ rating | strip }}</div>
+	<div class="rating-text">{{ post.vote_count | pluralize: 'avaliação', 'avaliações' }}</div>
 </div>
