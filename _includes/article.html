@@ -1,0 +1,93 @@
+<article class="row article">
+	
+	{% include article-author.html author=post.author %}
+
+	<div class="column posting">
+		<div class="row full-width justify-between article-header">
+
+			{% include article-date-formatting.html date=post.release_date %}
+
+			{% assign min = 0 %}
+			{% assign max = 10 %}
+			{% assign diff = max | minus: min %}
+			{% assign randomNumber = site.time | date: "%s" | modulo: diff | plus: min %}
+			<div class="badge badge-{{ randomNumber }}">#{{ post.category }}</div>
+		</div>
+		<div class="row article-content">
+			<div class="row poster">
+				<div class="backdrop">
+					<img src="https://image.tmdb.org/t/p/w154{{ post.poster_path }}" alt="{{ post.title }}">
+				</div>
+			</div>
+			<div class="article-summary">
+				<div class="column">
+					<h2 class="title">
+						<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+					</h2>
+					<div class="synopsis scroll">{{ post.overview }}</div>
+					<div class="crew">
+						<div>Diretor:</div>
+						<div class="comma">
+							{% for crew in post.crews %}
+							<span>{{ crew }}</span>
+							{% endfor %}
+						</div>
+					</div>
+					<div class="cast">
+						<div>Elenco:</div>
+						<div class="comma">
+							{% for cast in post.casts %}
+							<span>{{ cast }}</span>
+							{% endfor %}
+						</div>
+					</div>
+					<div class="genre">
+						<div>Gênero:</div>
+						<div class="comma">
+							{% for genre in post.genres %}
+							<span>{{ genre }}</span>
+							{% endfor %}
+						</div>
+					</div>
+					<div class="runtime">
+						<div>Duração:</div>
+						<div>{{ post.runtime }}</div>
+					</div>
+				</div>
+				<div class="row full-width justify-between">
+									
+					{% include article-average.html vote_average=post.vote_average vote_count=post.vote_count %}
+
+					{% include article-certification.html certification=post.certification %}
+
+				</div>
+			</div>
+		</div>
+		<div class="row article-footer">
+			<div class="row">
+				<div>Qualidade:</div>
+				<div class="comma">
+					{% for quality in post.qualitys %}
+					<span>{{ quality }}</span>
+					{% endfor %}
+				</div>
+			</div>
+			<div class="row">
+				<div>Áudio:</div>
+				<div class="comma">
+					{% for audio in post.audios %}
+					<span>{{ audio }}</span>
+					{% endfor %}
+				</div>
+			</div>
+			<div class="row">
+				<div>Extensão:</div>
+				<div class="comma">
+					{% for extension in post.extensions %}
+					<span>{{ extension }}</span>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</article>

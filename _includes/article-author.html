@@ -1,0 +1,31 @@
+{% assign rank = site.data.authors[include.author].role | remove: "." %}
+{% capture role %}
+{% if rank == "0" %}
+assinante
+{% elsif rank == "1" %}
+administrador
+{% elsif rank == "2" %}
+autor
+{% elsif rank == "3" %}
+editor
+{% elsif rank == "4" %}
+contribuinte
+{% elsif rank == "5" %}
+premium
+{% endif %}
+{% endcapture %}
+<div class="author">
+	<div class="author-image">
+		<div class="author-letter">{{ site.data.authors[include.author].name | slice: 0 }}</div>
+	</div>
+	<div class="author-role {{ role | slugify: "latin" }}">{{ role | slugify: "latin" }}</div>
+	<div class="author-name">{{ site.data.authors[include.author].name }}</div>
+	<div class="author-infor">
+		<div class="infor-posts">
+			<span>Juntou-se:</span>
+			<span>{{ site.data.authors[include.author].joined }}</span>
+		</div>
+	</div>
+</div>
+</div>
+<!-- {% include article-author.html author=  %} -->

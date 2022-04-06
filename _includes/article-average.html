@@ -1,0 +1,40 @@
+{% assign average = include.vote_average | remove: "." %}
+{% capture status %}
+{% if average == "0" %}
+Nenhum
+{% elsif average <= "20" %}
+Péssimo
+{% elsif average <= "40" %}
+Ruim
+{% elsif average <= "60" %}
+Aceitável
+{% elsif average <= "80" %}
+Ótimo
+{% elsif average >= "81" %}
+Excelente
+{% endif %}
+{% endcapture %}
+
+{% capture rating %}
+{% if include.vote_count == "0" %}
+Nenhuma avaliação
+{% elsif include.vote_count == "1" %}
+{{include.vote_count}} avaliação
+{% else %}
+{{include.vote_count}} avaliações
+{% endif %}
+{% endcapture %}
+
+<div class="article-rating">
+	<div class="rating {{ status | slugify: "latin" }}">
+		<svg viewBox="0 0 36 36" data-status="{{ status | strip }}">
+			<path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+			<path stroke-dasharray="{{ average }}, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+			<text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle">{{ include.vote_average }}</text>
+		</svg>
+	</div>
+	<span class="status-{{ status | slugify: "latin" }}">{{ status | strip }}</span>
+	<div class="rating-text">{{ rating | strip }}</div>
+</div>
+
+<!-- {% include article-average.html vote_average= vote_count= %} -->
