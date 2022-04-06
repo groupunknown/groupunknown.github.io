@@ -1,4 +1,4 @@
-{% assign average = include.vote_average | remove: "." %}
+{% assign average = post.vote_average | remove: "." %}
 {% capture status %}
 {% if average == "0" %}
 Nenhum
@@ -16,12 +16,12 @@ Excelente
 {% endcapture %}
 
 {% capture rating %}
-{% if include.vote_count == "0" %}
+{% if post.vote_count == "0" %}
 Nenhuma avaliação
-{% elsif include.vote_count == "1" %}
-{{include.vote_count}} avaliação
+{% elsif post.vote_count == "1" %}
+{{post.vote_count}} avaliação
 {% else %}
-{{include.vote_count}} avaliações
+{{post.vote_count}} avaliações
 {% endif %}
 {% endcapture %}
 
@@ -30,11 +30,9 @@ Nenhuma avaliação
 		<svg viewBox="0 0 36 36" data-status="{{ status | strip }}">
 			<path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
 			<path stroke-dasharray="{{ average }}, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
-			<text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle">{{ include.vote_average }}</text>
+			<text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle">{{ post.vote_average }}</text>
 		</svg>
 	</div>
 	<span class="status-{{ status | slugify: "latin" }}">{{ status | strip }}</span>
 	<div class="rating-text">{{ rating | strip }}</div>
 </div>
-
-<!-- {% include article-average.html vote_average= vote_count= %} -->

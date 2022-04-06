@@ -1,15 +1,15 @@
 {% capture crtfctn_text %}
-{% if include.certification == "L" %}
+{% if post.certification == "L" %}
 LIVRE PARA TODOS OS PÚBLICOS
-{% elsif include.certification == 10 %}
+{% elsif post.certification == 10 %}
 NÃO RECOMENDADO PARA MENORES DE DEZ ANOS
-{% elsif include.certification == 12 %}
+{% elsif post.certification == 12 %}
 NÃO RECOMENDADO PARA MENORES DE DOZE ANOS
-{% elsif include.certification == 14 %}
+{% elsif post.certification == 14 %}
 NÃO RECOMENDADO PARA MENORES DE CATORZE ANOS
-{% elsif include.certification == 16 %}
+{% elsif post.certification == 16 %}
 NÃO RECOMENDADO PARA MENORES DE DEZESSEIS ANOS
-{% elsif include.certification == 18 %}
+{% elsif post.certification == 18 %}
 NÃO RECOMENDADO PARA MENORES DE DEZOITO ANOS
 {% else %}
 INDISPONÍVEL
@@ -17,7 +17,5 @@ INDISPONÍVEL
 {% endcapture %}
 
 <div class="article-certification">
-	<div class="certification age-{{ include.certification | strip }}" aria-label="{{ crtfctn_text | strip }}" data-tooltipped="top-right">{{ include.certification | strip }}</div>
+	<div class="certification age-{{ post.certification | strip }}" aria-label="{{ crtfctn_text | strip }}" data-tooltipped="top-right">{{ post.certification | strip }}</div>
 </div>
-
-<!-- {% include article-certification.html certification= %} -->
