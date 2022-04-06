@@ -1,5 +1,10 @@
-{% assign months = "janeiro, fevereiro, março, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro" | split: "," %}
-{% assign month_number = post.post_modified | date: "%-m" | minus: 1 %}
 <div class="article-date">
-{{ post.post_modified | date: "%-d" }} de {{ months[month_number] }} de {{ post.post_modified | date: "%Y" }}
+{% assign months = "janeiro, fevereiro, março, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro" | split: "," %}
+{% if post.post_date == post.post_modified %}
+{% assign month_number = post.post_date | date: "%-m" | minus: 1 %}
+Adicionado em {{ post.post_date | date: "%-d" }} de {{ months[month_number] }} de {{ post.post_date | date: "%Y" }}
+{% else %}
+{% assign month_number = post.post_modified | date: "%-m" | minus: 1 %}
+Atualizado em {{ post.post_modified | date: "%-d" }} de {{ months[month_number] }} de {{ post.post_modified | date: "%Y" }}
+{% endif %}
 </div>
