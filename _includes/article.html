@@ -1,11 +1,11 @@
 <article class="row article">
 	
-	{% include article-author.html author=post.author %}
+	{% include article_author.html author=post.author %}
 
 	<div class="column posting">
 		<div class="row full-width justify-between article-header">
 
-			{% include article-date-formatting.html date=post.release_date %}
+			{% include article_date-formatting.html date=post.release_date %}
 
 			{% assign min = 0 %}
 			{% assign max = 10 %}
@@ -56,9 +56,9 @@
 				</div>
 				<div class="row full-width justify-between">
 									
-					{% include article-average.html vote_average=post.vote_average vote_count=post.vote_count %}
+					{% include article_average.html vote_average=post.vote_average vote_count=post.vote_count %}
 
-					{% include article-certification.html certification=post.certification %}
+					{% include article_certification.html certification=post.certification %}
 
 				</div>
 			</div>
