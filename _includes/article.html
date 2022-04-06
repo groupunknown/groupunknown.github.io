@@ -1,6 +1,7 @@
 <article class="row article">
 	
-	{% include article_author.html author={{post.author}} %}
+	{% assign author = post.author %}
+	{% include article_author.html author=author %}
 
 	<div class="column posting">
 		<div class="row full-width justify-between article-header">
