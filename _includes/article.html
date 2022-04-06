@@ -6,7 +6,7 @@
 			{% assign min = 0 %}
 			{% assign max = 10 %}
 			{% assign diff = max | minus: min %}
-			{% assign randomNumber = site.time | date: "%s" | modulo: diff | plus: min %}
+			{% assign randomNumber = post.overview | size | modulo: diff | plus: min %}
 			<div class="badge badge-{{ randomNumber }}">#{{ post.category }}</div>
 		</div>
 		<div class="row article-content">
