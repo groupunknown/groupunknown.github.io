@@ -1,4 +1,4 @@
-{% assign rank = site.data.authors[include.author].role | remove: "." %}
+{% assign rank = site.data.authors[post.author].role | remove: "." %}
 {% capture role %}
 {% if rank == "0" %}
 assinante
@@ -16,16 +16,15 @@ premium
 {% endcapture %}
 <div class="author">
 	<div class="author-image">
-		<div class="author-letter">{{ site.data.authors[include.author].name | slice: 0 }}</div>
+		<div class="author-letter">{{ site.data.authors[post.author].name | slice: 0 }}</div>
 	</div>
 	<div class="author-role {{ role | slugify: "latin" }}">{{ role | slugify: "latin" }}</div>
-	<div class="author-name">{{ site.data.authors[include.author].name }}</div>
+	<div class="author-name">{{ site.data.authors[post.author].name }}</div>
 	<div class="author-infor">
 		<div class="infor-posts">
 			<span>Juntou-se:</span>
-			<span>{{ site.data.authors[include.author].joined }}</span>
+			<span>{{ site.data.authors[post.author].joined }}</span>
 		</div>
 	</div>
 </div>
 </div>
-<!-- {% include article-author.html author=  %} -->
