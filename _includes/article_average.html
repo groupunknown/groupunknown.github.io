@@ -1,27 +1,25 @@
 {% capture zero_a_cem %}
-{% if post.vote_average | size >= "3" %}
+{% if post.vote_average | size == "3" %}
 {{ post.vote_average | remove: "." }}
 {% elsif post.vote_average == "0" %}
 {{ post.vote_average }}
-{% elsif post.vote_average == "10" %}
-{{ post.vote_average }} 0
-{% else %}
-{{ post.vote_average }} 0
+{% elsif post.vote_average | size == "1" or post.vote_average == "10" %}
+{{ post.vote_average | append: "0" | strip }}
 {% endif %}
 {% endcapture %}
 
 {% capture status_text %}
 {% if zero_a_cem == "0" %}
 Nenhum
-{% elsif zero_a_cem | strip <= "20" %}
+{% elsif zero_a_cem <= "20" %}
 Péssimo
-{% elsif zero_a_cem | strip <= "40" %}
+{% elsif zero_a_cem <= "40" %}
 Ruim
-{% elsif zero_a_cem | strip <= "60" %}
+{% elsif zero_a_cem <= "60" %}
 Aceitável
-{% elsif zero_a_cem | strip <= "80" %}
+{% elsif zero_a_cem <= "80" %}
 Ótimo
-{% elsif zero_a_cem | strip >= "81" %}
+{% elsif zero_a_cem >= "81" %}
 Excelente
 {% endif %}
 {% endcapture %}
