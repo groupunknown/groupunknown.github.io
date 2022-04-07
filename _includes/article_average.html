@@ -1,28 +1,31 @@
 {% assign vote_average = post.vote_average | remove: "." %}
 
 {% capture zero_a_cem %}
-{% if vote_average == "0" %}
-0
-{% elsif vote_average | size == "1" or vote_average == "10" %}
+{% if vote_average | size == "1" or vote_average == "10" %}
 {{ vote_average | append: "0" }}
 {% else %}
 {{ vote_average }}
 {% endif %}
 {% endcapture %}
 
-
+{% assign degrees = vote_average | plus: 0 %}
 {% capture status_text %}
 {% if zero_a_cem <= "20" %}
 Péssimo
-{% elsif zero_a_cem <= "40" %}
+{% endif %}
+{% if degrees <= "40" %}
 Ruim
-{% elsif zero_a_cem <= "60" %}
+{% endif %}
+{% if degrees <= "60" %}
 Aceitável
-{% elsif zero_a_cem <= "80" %}
+{% endif %}
+{% if degrees <= "80" %}
 Ótimo
-{% elsif zero_a_cem => "81" %}
+{% endif %}
+{% if degrees => "81" %}
 Excelente
-{% else %}
+{% endif %}
+{% if degrees == "0" %}
 Nenhum
 {% endif %}
 {% endcapture %}
