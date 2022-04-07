@@ -2,9 +2,9 @@
 {% if post.vote_average | size == "3" %}
 {{ post.vote_average | remove: "." }}
 {% elsif post.vote_average == "0" %}
-{{ post.vote_average }}
+{{ post.vote_average | remove: " " }}
 {% else %}
-{{ post.vote_average | append: "0" }}
+{{ post.vote_average | append: "0" | remove: " " }}
 {% endif %}
 {% endcapture %}
 
