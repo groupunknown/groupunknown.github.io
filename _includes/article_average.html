@@ -25,7 +25,7 @@ Excelente
 {% endcapture %}
 
 {% capture status_num %}
-{% if zero_a_cem == "0" %}
+{% if post.vote_average == "0" %}
 N/A
 {% elsif zero_a_cem | size == "2" %}
 {{ post.vote_average }}
@@ -43,7 +43,7 @@ Nenhuma avaliação
 {{post.vote_count}} avaliações
 {% endif %}
 {% endcapture %}
-<div class="article-rating"> {{ zero_a_cem }}
+<div class="article-rating">
 	<div class="rating {{ status_text | slugify: "latin" }}">
 		<svg viewBox="0 0 36 36" data-status="{{ status_text | strip }}">
 			<path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
