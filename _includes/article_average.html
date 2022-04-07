@@ -9,7 +9,6 @@
 {% endcapture %}
 
 
-{% assign degrees = vote_average | plus: 0 %}
 {% capture status_text %}
 
 {% assign pessimo = "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20" | split: ',' %}
@@ -18,15 +17,15 @@
 {% assign otimo = "61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80" | split: ',' %}
 {% assign execelente = "81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100" | split: ',' %}
 
-{% if pessimo contains degrees %}
+{% if pessimo contains vote_average %}
 Péssimo
-{% elsif ruim contains degrees %}
+{% elsif ruim contains vote_average %}
 Ruim
-{% elsif aceitavel contains degrees %}
+{% elsif aceitavel contains vote_average %}
 Aceitável
-{% elsif otimo contains degrees %}
+{% elsif otimo contains vote_average %}
 Ótimo
-{% elsif execelente contains degrees %}
+{% elsif execelente contains vote_average %}
 Excelente
 {% else %}
 Nenhum
