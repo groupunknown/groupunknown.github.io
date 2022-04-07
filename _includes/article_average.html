@@ -7,7 +7,6 @@
 {{ post.vote_average | append: "0" | remove: " " }}
 {% endif %}
 {% endcapture %}
-
 {% capture status_text %}
 {% if post.vote_average == "0" %}
 Nenhum
@@ -23,7 +22,6 @@ Aceitável
 Excelente
 {% endif %}
 {% endcapture %}
-
 {% capture status_num %}
 {% if post.vote_average == "0" %}
 N/A
@@ -33,7 +31,6 @@ N/A
 10
 {% endif %}
 {% endcapture %}
-
 {% capture rating %}
 {% if post.vote_count == "0" %}
 Nenhuma avaliação
