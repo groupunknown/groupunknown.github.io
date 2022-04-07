@@ -10,7 +10,7 @@
 
 {% assign degrees = vote_average | plus: 0 %}
 {% capture status_text %}
-{% if zero_a_cem <= 20 %}
+{% if degrees <= 20 %}
 Péssimo
 {% endif %}
 {% if degrees <= 40 %}
