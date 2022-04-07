@@ -10,22 +10,22 @@
 
 {% assign degrees = vote_average | plus: 0 %}
 {% capture status_text %}
-{% if zero_a_cem <= "20" %}
+{% if zero_a_cem <= 20 %}
 Péssimo
 {% endif %}
-{% if degrees <= "40" %}
+{% if degrees <= 40 %}
 Ruim
 {% endif %}
-{% if degrees <= "60" %}
+{% if degrees <= 60 %}
 Aceitável
 {% endif %}
-{% if degrees <= "80" %}
+{% if degrees <= 80 %}
 Ótimo
 {% endif %}
-{% if degrees => "81" %}
+{% if degrees => 81 %}
 Excelente
 {% endif %}
-{% if degrees == "0" %}
+{% if degrees == 0 %}
 Nenhum
 {% endif %}
 {% endcapture %}
