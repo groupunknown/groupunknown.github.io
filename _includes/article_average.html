@@ -12,9 +12,7 @@
 
 
 {% capture status_text %}
-{% if zero_a_cem == "0" %}
-Nenhum
-{% elsif zero_a_cem < "20" %}
+{% if zero_a_cem < "20" %}
 Péssimo
 {% elsif zero_a_cem < "40" %}
 Ruim
@@ -24,27 +22,29 @@ Aceitável
 Ótimo
 {% elsif zero_a_cem > "81" %}
 Excelente
+{% else %}
+Nenhum
 {% endif %}
 {% endcapture %}
 
 
 {% capture status_num %}
-{% if zero_a_cem == "0" %}
-N/A
-{% elsif zero_a_cem | size == "2" %}
+{% if zero_a_cem | size == "2" %}
 {{ post.vote_average }}
 {% elsif zero_a_cem | size == "3" %}
 10
+{% else %}
+N/A
 {% endif %}
 {% endcapture %}
 
 {% capture rating %}
-{% if post.vote_count == "0" %}
-Nenhuma avaliação
-{% elsif post.vote_count == "1" %}
+{% if post.vote_count == "1" %}
 {{post.vote_count}} avaliação
 {% else %}
 {{post.vote_count}} avaliações
+{% else %}
+Nenhuma avaliação
 {% endif %}
 {% endcapture %}
 <div class="article-rating">
