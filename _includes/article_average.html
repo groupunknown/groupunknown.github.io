@@ -1,9 +1,9 @@
 {% capture zero_a_cem %}
 {% if post.vote_average | size == "3" %}
 {{ post.vote_average | remove: "." }}
-{% elsif average == "0" %}
+{% elsif post.vote_average == "0" %}
 {{ post.vote_average }}
-{% elsif post.vote_average | size == "1" or average == "10" %}
+{% elsif post.vote_average | size == "1" or post.vote_average == "10" %}
 {{ post.vote_average | append: "0" | strip }}
 {% endif %}
 {% endcapture %}
@@ -29,7 +29,7 @@ Excelente
 N/A
 {% elsif zero_a_cem | size == "2" %}
 {{ post.vote_average }}
-{% elsif average | size == "3" %}
+{% elsif zero_a_cem | size == "3" %}
 10
 {% endif %}
 {% endcapture %}
