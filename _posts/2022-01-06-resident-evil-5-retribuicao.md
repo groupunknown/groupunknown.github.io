@@ -43,7 +43,7 @@ trailer: azUOoB7WBmk
 certification: 16
 adult: 'false'
 vote_average: 0
-vote_count: 2821
+vote_count: 0
 qualitys:
   - 1080p
   - 720p
