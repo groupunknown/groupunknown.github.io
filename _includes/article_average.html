@@ -12,23 +12,17 @@
 
 {% assign degrees = vote_average | plus: 0 %}
 {% capture status_text %}
-
 {% if site.data.average[pessimo].array contains degrees %}
 Péssimo
-{% endif %}
-{% if site.data.average[ruim].array contains degrees %}
+{% elsif site.data.average[ruim].array contains degrees %}
 Ruim
-{% endif %}
-{% if site.data.average[aceitavel].array contains degrees %}
+{% elsif site.data.average[aceitavel].array contains degrees %}
 Aceitável
-{% endif %}
-{% if site.data.average[otimo].array contains degrees %}
+{% elsif site.data.average[otimo].array contains degrees %}
 Ótimo
-{% endif %}
-{% if site.data.average[execelente].array contains degrees %}
+{% elsif site.data.average[execelente].array contains degrees %}
 Excelente
-{% endif %}
-{% if site.data.average[nenhum].array contains degrees %}
+{% elsif site.data.average[nenhum].array contains degrees %}
 Nenhum
 {% endif %}
 {% endcapture %}
