@@ -23,14 +23,26 @@ Nenhuma avaliação
 {{post.vote_count}} avaliações
 {% endif %}
 {% endcapture %}
+{% capture status_num %}
+{% if average == "0" %}
+N/A
+{% elsif average == "10" %}
+10
+{% elsif average | size >= "3" %}
+{{ average | slice: 0, 3 }}
+{% elsif average | size <= 1 %}
+{{ average }} .0
+{% endif %}
+{% endcapture %}
 <div class="article-rating">
 	<div class="rating {{ status | slugify: "latin" }}">
 		<svg viewBox="0 0 36 36" data-status="{{ status | strip }}">
 			<path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
 			<path stroke-dasharray="{{ average }}, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
-			<text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle">{{ post.vote_average }}</text>
+			<text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle">{{ status_num }}</text>
 		</svg>
 	</div>
 	<span class="status-{{ status | slugify: "latin" }}">{{ status | strip }}</span>
 	<div class="rating-text">{{ rating | strip }}</div>
 </div>
+
