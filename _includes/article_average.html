@@ -29,7 +29,7 @@ N/A
 {% elsif average == "10" %}
 10
 {% elsif average | size >= "3" %}
-{{ average | slice: 0, 3 }}
+{{ average }}
 {% elsif average | size == 1 %}
 {{ average }} .0
 {% endif %}
