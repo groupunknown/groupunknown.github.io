@@ -2,7 +2,7 @@
 
 {% capture zero_a_cem %}
 {% if vote_average == 0 %}
-{{ post.vote_average }}
+{{ vote_average }}
 {% elsif vote_average | size == 1 or vote_average == 10 %}
 {{ vote_average | append: "0" }}
 {% endif %}
@@ -34,11 +34,11 @@ Nenhum
 {% capture status_num %}
 {% if post.vote_average == 0 %}
 N/A
-{% elsif post.vote_average | size <= 1 %}
-{{ zero_a_cem }}
-{% elsif post.vote_average | remove: "." | size <= 2 %}
+{% elsif post.vote_average | size == 1 %}
+{{ vote_average }}.0
+{% elsif vote_average | size == 2 %}
 {{ post.vote_average }}
-{% elsif post.vote_average | remove: "." | size >= 3 %}
+{% elsif vote_average | size >= 3 %}
 10
 {% endif %}
 {% endcapture %}
