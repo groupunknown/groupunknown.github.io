@@ -28,9 +28,9 @@
 {% if vote_average == 00 %}
 {% assign status_num = "N/A" %}
 {% endif %}
-{% if vote_average != "00" and vote_average != "100" %}
+{% unless vote_average contains "00" %}
 {% assign status_num = post.vote_average %}
-{% endif %}
+{% endunless %}
 {% capture rating %}
 {% if post.vote_count == 0 %}
 Nenhuma avaliação
