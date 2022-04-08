@@ -36,7 +36,7 @@ crews:
 trailer: Itc3k-Fc9Ls
 certification: 14
 adult: 'false'
-vote_average: 6.8
+vote_average: 3.8
 vote_count: 11452
 qualitys:
   - 1080p
