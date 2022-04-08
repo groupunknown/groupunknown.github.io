@@ -25,8 +25,12 @@ premium
 			<span>Juntou-se:</span>
 			<span>{{ site.data.authors[post.author].joined }}</span>
 		</div>
-		{% assign author_posts = site.posts | where: "author", post.author %}
 
+
+		{% assign results = site.posts | where: "author", post.author | map: "category" | join: "," %}
+		{{ results }}
+
+		{% assign author_posts = site.posts | where: "author", post.author %}
 		{% for post in author_posts %}
 			{% if post.category contains "Filmes" %}
 				{% assign total_filmes = author_posts.size %}
@@ -44,18 +48,6 @@ premium
 		<div class="infor-posts">
 			<span>Séries:</span>
 			<span>{{ total_series }}</span>
-		</div>
-
-
-		<div class="infor-posts">
-			<span>Postagens:</span>
-			<span>{{ total }}</span>
-			<span>
-				{{ assign teste = site.posts | where: "author", "post.author contains 'category'" }}
-				{% for post in teste %}
-				{{ teste.size }}
-				{% endfor %}
-			</span>
 		</div>
 	</div>
 </div>
