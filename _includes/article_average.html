@@ -34,12 +34,12 @@ Nenhum
 {% capture status_num %}
 {% if post.vote_average == 0 %}
 N/A
-{% elsif post.vote_average | remove: "." | size == 3 %}
-10
-{% elsif post.vote_average | remove: "." | size == 2 %}
-{{ post.vote_average }}
-{% elsif post.vote_average | size == 1 %}
+{% elsif post.vote_average | size <= 1 %}
 {{ zero_a_cem }}
+{% elsif post.vote_average | remove: "." | size <= 2 %}
+{{ post.vote_average }}
+{% elsif post.vote_average | remove: "." | size >= 3 %}
+10
 {% endif %}
 {% endcapture %}
 
