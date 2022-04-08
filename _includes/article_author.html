@@ -25,29 +25,24 @@ premium
 			<span>Juntou-se:</span>
 			<span>{{ site.data.authors[post.author].joined }}</span>
 		</div>
-
-
-		{% assign results = site.posts | where: "author", post.author | map: "category" | join: "," %}
-		{{ results }}
-
-		{% assign author_posts = site.posts | where: "author", post.author %}
-		{% for post in author_posts %}
-			{% if post.category contains "Filmes" %}
-				{% assign total_filmes = author_posts.size %}
-			{% endif %}
-		{% endfor %}
+		{% assign part_global = site.posts | where: "author", post.author | map: "category" | join: "," %}
 		<div class="infor-posts">
 			<span>Filmes:</span>
-			<span>{{ total_filmes }}</span>
+			{% assign part_filmes = part_global contains "Filmes" %}
+			<span>{{ part_filmes | size }}</span>
 		</div>
-		{% for post in author_posts %}
-			{% if post.category contains "Séries" %}
-				{% assign total_series = author_posts.size %}
-			{% endif %}
-		{% endfor %}
 		<div class="infor-posts">
 			<span>Séries:</span>
-			<span>{{ total_series }}</span>
+			{% assign part_series = part_global contains "Séries" %}
+			<span>{{ part_series | size }}</span>
+		</div>
+		{% assign author_posts = site.posts | where: "author", post.author %}
+		{% for post in author_posts %}
+			{% assign total_posts = author_posts.size %}
+		{% endfor %}
+		<div class="infor-posts">
+			<span>Publicações:</span>
+			<span>{{ total_posts }}</span>
 		</div>
 	</div>
 </div>
