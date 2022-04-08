@@ -28,7 +28,7 @@
 
 
 
-{% if zero_a_cem == 0 %}
+{% if zero_a_cem == 00 %}
 {% assign status_num = "N/A" %}
 {% elsif vote_average == 100 %}
 {% assign status_num = "10" %}
@@ -52,7 +52,7 @@ Nenhuma avaliação
 		<svg viewBox="0 0 36 36" data-status="{{ status_text | strip }}">
 			<path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
 			<path stroke-dasharray="{{ zero_a_cem | strip }}, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
-			<text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle">{{ status_num | strip }} {{ zero_a_cem }}</text>
+			<text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle">{{ status_num | strip }}</text>
 		</svg>
 	</div>
 	<span class="status-{{ status_text | slugify: "latin" }}">{{ status_text | strip }}</span>
