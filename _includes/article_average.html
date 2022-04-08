@@ -28,7 +28,7 @@
 
 
 
-{% if vote_average contains "00" %}
+{% if post.vote_average == "0.0" %}
 {% assign status_num = "N/A" %}
 {% elsif post.vote_average contains "10.0" %}
 {% assign status_num = "10" %}
