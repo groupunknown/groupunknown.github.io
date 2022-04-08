@@ -16,6 +16,14 @@ genres:
 - item: Suspense
 - item: Terror
 
+avaliacoes:
+- item: Nenhum
+- item: Péssimo
+- item: Ruim
+- item: Aceitável
+- item: Ótimo
+- item: Excelente
+
 certification:
 - item: L
 - item: 10
