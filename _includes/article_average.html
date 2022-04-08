@@ -27,7 +27,7 @@
 {% assign status_num = "N/A" %}
 {% endif %}
 
-{% if vote_average != 00 and vote_average != 100 %}
+{% if vote_average != "00" and vote_average != "100" %}
 {% assign status_num = post.vote_average %}
 {% endif %}
 
