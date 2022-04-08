@@ -28,10 +28,10 @@ premium
 		<div class="infor-posts">
 			{% assign author_posts = site.posts | where: "author", "[post.author]" %}
 			{% for post in author_posts %}
-			{% assign total = author_posts.size %}
+			{% assign total = author_posts.size | plus: 1 %}
 			{% endfor %}
 			<span>Postagens</span>
-			<span>{{ total }}}</span>
+			<span>{{ total }}</span>
 		</div>
 	</div>
 </div>
