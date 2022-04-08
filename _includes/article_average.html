@@ -1,4 +1,5 @@
 {% assign vote_average = post.vote_average | remove: "." %}
+
 {% capture zero_a_cem %}
 {% if post.vote_average == 0 %}
 {{ post.vote_average }}
@@ -29,17 +30,19 @@ Nenhum
 {% endif %}
 {% endcapture %}
 
+
 {% capture status_num %}
 {% if post.vote_average == 0 %}
 N/A
-{% elsif post.vote_average | remove: "." | size == 1 %}
-{{ zero_a_cem }}
-{% elsif post.vote_average | remove: "." | size == 2 %}
-{{ post.vote_average }}
 {% elsif post.vote_average | remove: "." | size == 3 %}
 10
+{% elsif post.vote_average | remove: "." | size == 2 %}
+{{ post.vote_average }}
+{% elsif post.vote_average | size == 1 %}
+{{ zero_a_cem }}
 {% endif %}
 {% endcapture %}
+
 
 {% capture rating %}
 {% if post.vote_count == 0 %}
