@@ -28,7 +28,7 @@
 {% if vote_average == 00 %}
 {% assign status_num = "N/A" %}
 {% endif %}
-{% if vote_average != 100 or vote_average != 00 %}
+{% if vote_average != "100" or vote_average != "00" %}
 {% assign status_num = post.vote_average %}
 {% endif %}
 {% capture rating %}
