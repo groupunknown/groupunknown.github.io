@@ -1,10 +1,10 @@
 {% assign vote_average = post.vote_average | remove: "." %}
 
 {% capture zero_a_cem %}
-{% if vote_average | size == 1 or vote_average == 10 %}
-{{ vote_average | append: "0" }}
-{% else %}
+{% if vote_average == 0 %}
 {{ vote_average }}
+{% elsif vote_average | size == 1 or vote_average == 10 %}
+{{ vote_average | append: "0" }}
 {% endif %}
 {% endcapture %}
 
@@ -31,7 +31,7 @@ Nenhum
 {% endcapture %}
 
 {% capture status_num %}
-{% if zero_a_cem == "00" %}
+{% if zero_a_cem == 0 %}
 N/A
 {% elsif zero_a_cem | size == 1 %}
 {{ zero_a_cem }}
