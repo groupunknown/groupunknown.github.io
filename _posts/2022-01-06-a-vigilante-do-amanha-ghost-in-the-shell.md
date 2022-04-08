@@ -35,7 +35,7 @@ crews:
 trailer: SClWt9_ns6Y
 certification: 14
 adult: 'false'
-vote_average: 6
+vote_average: 6.0
 vote_count: 6181
 qualitys:
   - 1080p

@@ -39,7 +39,7 @@ crews:
 trailer: aMTDShCb4f4
 certification: 14
 adult: 'false'
-vote_average: 10
+vote_average: 10.0
 vote_count: 10040
 qualitys:
   - 1080p
