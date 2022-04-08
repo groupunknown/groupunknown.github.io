@@ -1,9 +1,9 @@
 {% assign vote_average = post.vote_average | remove: "." %}
 {% capture zero_a_cem %}
 {% if post.vote_average == 0 %}
-{{ post.vote_average | strip }}
+{{ post.vote_average }}
 {% elsif vote_average | size == 1 or vote_average == 10 %}
-{{ vote_average | append: "0" | strip }}
+{{ vote_average | append: "0" }}
 {% endif %}
 {% endcapture %}
 
@@ -30,13 +30,13 @@ Nenhum
 {% endcapture %}
 
 {% capture status_num %}
-{% if zero_a_cem == 0 %}
+{% if post.vote_average == 0 %}
 N/A
-{% elsif zero_a_cem | size == 1 %}
+{% elsif post.vote_average | remove: "." | size == 1 %}
 {{ zero_a_cem }}
-{% elsif zero_a_cem | size == 2 %}
+{% elsif post.vote_average | remove: "." | size == 2 %}
 {{ post.vote_average }}
-{% elsif zero_a_cem | size == 3 %}
+{% elsif post.vote_average | remove: "." | size == 3 %}
 10
 {% endif %}
 {% endcapture %}
@@ -55,7 +55,7 @@ Nenhuma avaliação
 		<svg viewBox="0 0 36 36" data-status="{{ status_text | strip }}">
 			<path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
 			<path stroke-dasharray="{{ zero_a_cem | strip }}, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
-			<text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle">{{ status_num }}</text>
+			<text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle">{{ status_num | strip }}</text>
 		</svg>
 	</div>
 	<span class="status-{{ status_text | slugify: "latin" }}">{{ status_text | strip }}</span>
