@@ -16,7 +16,7 @@ overview: >-
 poster_path: /vqzNJRH4YyquRiWxCCOH0aXggHI.jpg
 tmdb_id: 290859
 imdb_id: tt6450804
-runtime: 128
+runtime: 60
 release_date: '2019-10-23'
 genres:
   - Ação
