@@ -28,7 +28,7 @@ premium
 		{% assign part_global = site.posts | where: "author", post.author | map: "category: 'Filmes'" | join: "," %}
 		<div class="infor-posts">
 			<span>Filmes:</span>
-			{% assign part_filmes = part_global contains "Filmes" %}
+			{% assign part_filmes = part_global %}
 			<span>{{ part_filmes.size }}</span>
 		</div>
 		<div class="infor-posts">
