@@ -1,8 +1,7 @@
 {% assign vote_average = post.vote_average | remove: "." %}
-
 {% capture zero_a_cem %}
 {% if vote_average == 0 %}
-{{ vote_average }}
+{{ post.vote_average }}
 {% elsif vote_average | size == 1 or vote_average == 10 %}
 {{ vote_average | append: "0" }}
 {% endif %}
