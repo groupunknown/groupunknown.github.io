@@ -15,15 +15,15 @@
 {% assign aceitavel = "41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60" | split: ',' %}
 {% assign otimo = "61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80" | split: ',' %}
 {% assign execelente = "81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100" | split: ',' %}
-{% if pessimo contains vote_average %}
+{% if pessimo contains zero_a_cem %}
 Péssimo
-{% elsif ruim contains vote_average %}
+{% elsif ruim contains zero_a_cem %}
 Ruim
-{% elsif aceitavel contains vote_average %}
+{% elsif aceitavel contains zero_a_cem %}
 Aceitável
-{% elsif otimo contains vote_average %}
+{% elsif otimo contains zero_a_cem %}
 Ótimo
-{% elsif execelente contains vote_average %}
+{% elsif execelente contains zero_a_cem %}
 Excelente
 {% else %}
 Nenhum
