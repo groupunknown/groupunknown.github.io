@@ -47,7 +47,11 @@
 					</div>
 					<div class="runtime">
 						<div>Duração:</div>
+						{% if post.runtime <= "60" %}
+						<div>{{ post.runtime }}min</div>
+						{% else %}
 						<div>{{ post.runtime | divided_by: 60 | floor }}h {{ post.runtime | modulo: 60 }}min</div>
+						{% endif %}
 					</div>
 				</div>
 				<div class="row full-width justify-between">
