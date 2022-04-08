@@ -22,16 +22,18 @@
 {% else %}
 {% assign status_text = "Nenhum" %}
 {% endif %}
+
 {% if vote_average contains "100" %}
 {% assign status_num = "10" %}
 {% endif %}
-{% if vote_average == "00" %}
+{% if zero_a_cem == 0 %}
 {% assign status_num = "N/A" %}
 {% endif %}
-{% if vote_average contains "00" %}
+{% if zero_a_cem != 0 or zero_a_cem != 100 %}
 {% else %}
 {% assign status_num = post.vote_average %}
 {% endif %}
+
 {% capture rating %}
 {% if post.vote_count == 0 %}
 Nenhuma avaliação
