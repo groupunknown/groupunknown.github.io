@@ -1,23 +1,19 @@
 {% assign vote_average = post.vote_average | remove: "." %}
-{% if vote_average == 00 %}
-{% assign zero_a_cem = "0" %}
-{% else %}
-{% assign zero_a_cem = vote_average %}
-{% endif %}
+
 {% assign pessimo = "10,11,12,13,14,15,16,17,18,19,20" | split: ',' %}
 {% assign ruim = "21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40" | split: ',' %}
 {% assign aceitavel = "41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60" | split: ',' %}
 {% assign otimo = "61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80" | split: ',' %}
 {% assign execelente = "81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100" | split: ',' %}
-{% if pessimo contains zero_a_cem %}
+{% if pessimo contains vote_average %}
 {% assign status_text = "Péssimo" %}
-{% elsif ruim contains zero_a_cem %}
+{% elsif ruim contains vote_average %}
 {% assign status_text = "Ruim" %}
-{% elsif aceitavel contains zero_a_cem %}
+{% elsif aceitavel contains vote_average %}
 {% assign status_text = "Aceitável" %}
-{% elsif otimo contains zero_a_cem %}
+{% elsif otimo contains vote_average %}
 {% assign status_text = "Ótimo" %}
-{% elsif execelente contains zero_a_cem %}
+{% elsif execelente contains vote_average %}
 {% assign status_text = "Excelente" %}
 {% else %}
 {% assign status_text = "Nenhum" %}
@@ -26,11 +22,12 @@
 {% if vote_average contains "100" %}
 {% assign status_num = "10" %}
 {% endif %}
-{% if zero_a_cem == 0 %}
+
+{% if vote_average == "00" %}
 {% assign status_num = "N/A" %}
 {% endif %}
-{% if zero_a_cem != 0 or zero_a_cem != 100 %}
-{% else %}
+
+{% if vote_average != 0 or vote_average != 100 %}
 {% assign status_num = post.vote_average %}
 {% endif %}
 
@@ -47,8 +44,8 @@ Nenhuma avaliação
 	<div class="rating {{ status_text | slugify: "latin" }}">
 		<svg viewBox="0 0 36 36" data-status="{{ status_text | strip }}">
 			<path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
-			<path stroke-dasharray="{{ zero_a_cem | strip }}, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
-			<text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle">{{ status_num | strip }} {{ zero_a_cem }}</text>
+			<path stroke-dasharray="{{ vote_average | strip }}, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+			<text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle">{{ status_num | strip }}</text>
 		</svg>
 	</div>
 	<span class="status-{{ status_text | slugify: "latin" }}">{{ status_text | strip }}</span>
