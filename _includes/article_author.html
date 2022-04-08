@@ -28,7 +28,7 @@ premium
 		{% assign author_posts_filmes = site.posts | where: "author", post.author %}
 		{% for post in author_posts_filmes %}
 			{% if post.category == "Filmes" %}
-				{% assign total_filmes = author_posts_filmes.size | plus: 0 %}
+				{% assign total_filmes = author_posts_filmes.size %}
 			{% endif %}
 		{% endfor %}
 		<div class="infor-posts">
@@ -38,7 +38,7 @@ premium
 		{% assign author_posts_series = site.posts | where: "author", post.author %}
 		{% for post in author_posts_series %}
 			{% if post.category == "Séries" %}
-				{% assign total_series = author_posts_series.size | plus: 0 %}
+				{% assign total_series = author_posts_series.size %}
 			{% endif %}
 		{% endfor %}
 		<div class="infor-posts">
@@ -48,12 +48,16 @@ premium
 		<div class="infor-posts">
 			{% assign author_posts = site.posts | where: "author", post.author %}
 			{% for post in author_posts %}
-			{% assign total = author_posts.size | plus: 0 %}
+			{% assign total = author_posts.size %}
 			{% endfor %}
 			<span>Postagens:</span>
 			<span>{{ total }}</span>
+			<span>
+				{{ assign teste = site.posts | where: "author", "post.author contains 'category'" }}
+				{% for post in teste %}
+				{{ teste.size }}
+				{% endfor %}
+			</span>
 		</div>
 	</div>
 </div>
-
-		
