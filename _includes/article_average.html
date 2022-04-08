@@ -28,9 +28,9 @@
 
 
 
-{% if zero_a_cem == 00 %}
+{% if zero_a_cem contains "00" %}
 {% assign status_num = "N/A" %}
-{% elsif vote_average == 100 %}
+{% elsif vote_average contains "10" %}
 {% assign status_num = "10" %}
 {% else %}
 {% assign status_num = post.vote_average %}
