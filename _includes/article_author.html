@@ -25,7 +25,7 @@ premium
 			<span>Juntou-se:</span>
 			<span>{{ site.data.authors[post.author].joined }}</span>
 		</div>
-		<div>
+		<div class="infor-posts">
 			{% assign author_posts = site.posts | where: "author", "[post.author]" %}
 			{% for post in author_posts %}
 			{% assign total = author_posts.size %}
