@@ -1,12 +1,9 @@
 {% assign vote_average = post.vote_average | remove: "." %}
-
 {% if vote_average == 00 %}
 {% assign zero_a_cem = "0" %}
 {% else %}
 {% assign zero_a_cem = vote_average %}
 {% endif %}
-
-
 {% assign pessimo = "10,11,12,13,14,15,16,17,18,19,20" | split: ',' %}
 {% assign ruim = "21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40" | split: ',' %}
 {% assign aceitavel = "41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60" | split: ',' %}
@@ -25,23 +22,15 @@
 {% else %}
 {% assign status_text = "Nenhum" %}
 {% endif %}
-
-
-
 {% if vote_average contains "100" %}
 {% assign status_num = "10" %}
 {% endif %}
-
 {% if vote_average == 00 %}
 {% assign status_num = "N/A" %}
 {% endif %}
-
 {% vote_average != 100 and vote_average != 00 %}
 {% assign status_num = post.vote_average %}
 {% endif %}
-
-
-
 {% capture rating %}
 {% if post.vote_count == 0 %}
 Nenhuma avaliação

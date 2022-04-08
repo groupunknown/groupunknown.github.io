@@ -3,7 +3,7 @@ layout: post
 author: voldemort
 category: Filmes
 post_date: '2020-12-06T18:31:49.994Z'
-post_modified: '2020-12-06T18:31:49.994Z'
+post_modified: '2022-04-08T18:31:49.994Z'
 title: 'O Exterminador do Futuro: Destino Sombrio'
 description: >-
   A guerreira Sarah Connor se une a Grace, um híbrido entre ciborgue e humano, e
