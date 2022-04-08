@@ -25,7 +25,7 @@
 						<div>Diretor:</div>
 						<div class="comma">
 							{% for crew in post.crews %}
-							<span>{{ crew }}</span>
+							<a href="/diretor?crews={{crew}}">{{ crew }}</a>
 							{% endfor %}
 						</div>
 					</div>
@@ -33,7 +33,7 @@
 						<div>Elenco:</div>
 						<div class="comma">
 							{% for cast in post.casts %}
-							<span>{{ cast }}</span>
+							<a href="/elenco?casts={{cast}}">{{ cast }}</a>
 							{% endfor %}
 						</div>
 					</div>
@@ -41,7 +41,7 @@
 						<div>Gênero:</div>
 						<div class="comma">
 							{% for genre in post.genres %}
-							<span>{{ genre }}</span>
+							<a href="/genero?genres={{genre}}">{{ genre }}</a>
 							{% endfor %}
 						</div>
 					</div>
@@ -65,7 +65,7 @@
 				<div>Qualidade:</div>
 				<div class="comma">
 					{% for quality in post.qualitys %}
-					<span>{{ quality }}</span>
+					<a href="/qualidade?qualitys={{quality}}">{{ quality }}</a>
 					{% endfor %}
 				</div>
 			</div>
@@ -73,7 +73,7 @@
 				<div>Áudio:</div>
 				<div class="comma">
 					{% for audio in post.audios %}
-					<span>{{ audio }}</span>
+					<a href="/audio?audios={{audio}}">{{ audio }}</a>
 					{% endfor %}
 				</div>
 			</div>
@@ -81,7 +81,7 @@
 				<div>Extensão:</div>
 				<div class="comma">
 					{% for extension in post.extensions %}
-					<span>{{ extension }}</span>
+					<a href="/extensao?extensions={{extension}}">{{ extension }}</a>
 					{% endfor %}
 				</div>
 			</div>

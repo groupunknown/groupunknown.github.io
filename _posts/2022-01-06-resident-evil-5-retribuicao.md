@@ -24,7 +24,7 @@ overview: >-
 poster_path: /ohdUDWVlcbuWphaLu6wS91xdJ73.jpg
 tmdb_id: 71679
 imdb_id: tt1855325
-runtime: 59
+runtime: 95
 release_date: '2012-09-12'
 genres:
   - Ação

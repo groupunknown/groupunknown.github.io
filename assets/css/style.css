@@ -104,11 +104,11 @@ svg:not(:root) {
    border-radius: 0px;
 }
 
-.comma span {
+.comma a {
     text-decoration: none;
 }
 
-.comma span:not(:last-child)::after {
+.comma a:not(:last-child)::after {
     content: ", ";
 }
 
