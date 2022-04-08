@@ -27,12 +27,12 @@ premium
 		</div>
 		<div class="infor-posts">
 			<span>Filmes:</span>
-			{% assign part_filmes = site.posts | where: "author", post.author | map: "category: 'Filmes'" | join: "," %}
+			{% assign part_filmes = site.posts | where: "author", post.author | map: "category", "Filmes" | join: "," %}
 			<span>{{ part_filmes.size }}</span>
 		</div>
 		<div class="infor-posts">
 			<span>Séries:</span>
-			{% assign part_series = site.posts | where: "author", post.author | map: "category: 'Séries'" | join: "," %}
+			{% assign part_series = site.posts | where: "author", post.author | map: "category", "Séries" | join: "," %}
 			<span>{{ part_series.size }}</span>
 		</div>
 		{% assign author_posts = site.posts | where: "author", post.author %}
