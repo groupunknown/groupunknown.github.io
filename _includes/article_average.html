@@ -28,9 +28,9 @@
 
 
 
-{% if vote_average contains "100" %}
+{% if vote_average contains 100 %}
 {% assign status_num = "10" %}
-{% elsif vote_average contains "00" %}
+{% elsif vote_average contains 00 %}
 {% assign status_num = "N/A" %}
 {% else %}
 {% assign status_num = post.vote_average %}
