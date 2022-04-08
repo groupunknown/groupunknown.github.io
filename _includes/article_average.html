@@ -31,12 +31,14 @@ Nenhum
 {% endcapture %}
 
 {% capture status_num %}
-{% if zero_a_cem | size == 2 %}
+{% if zero_a_cem == 0 %}
+N/A
+{% elsif zero_a_cem | size == 1 %}
 {{ zero_a_cem }}
+{% elsif zero_a_cem | size == 2 %}
+{{ post.vote_average }}
 {% elsif zero_a_cem | size == 3 %}
 10
-{% else %}
-N/A
 {% endif %}
 {% endcapture %}
 
