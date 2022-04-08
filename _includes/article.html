@@ -47,7 +47,7 @@
 					</div>
 					<div class="runtime">
 						<div>Duração:</div>
-						<div>{{ post.runtime }}</div>
+						<div>{{ post.runtime | floor }}h {{ post.runtime | modulo: 60 }}min</div>
 					</div>
 				</div>
 				<div class="row full-width justify-between">
