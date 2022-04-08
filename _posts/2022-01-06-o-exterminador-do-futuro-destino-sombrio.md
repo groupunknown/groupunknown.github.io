@@ -35,7 +35,7 @@ trailer: XZXufNKqJJI
 certification: 16
 adult: 'false'
 vote_average: 6
-vote_count: 3041
+vote_count: 1
 qualitys:
   - 1080p
   - 720p
