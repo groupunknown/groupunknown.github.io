@@ -30,7 +30,7 @@
 
 {% if vote_average contains "100" %}
 {% assign status_num = "10" %}
-{% elsif zero_a_cem == 0 %}
+{% elsif post.vote_average | remove: "." == 00 %}
 {% assign status_num = "N/A" %}
 {% else %}
 {% assign status_num = post.vote_average %}
