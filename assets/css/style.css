@@ -868,6 +868,10 @@ div[data-placeholder] svg {
     user-select: none;
 }
 
+.certification a {
+    color: #fff;
+}
+
 .certification.age-L {
     background-color: #00a651
 }
