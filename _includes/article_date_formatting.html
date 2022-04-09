@@ -1,4 +1,4 @@
-<div class="article-date">
+<div class="article-date" data-placeholder>
 {% assign months = "janeiro, fevereiro, março, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro" | split: "," %}
 {% if post.post_date == post.post_modified %}
 {% assign month_number = post.post_date | date: "%-m" | minus: 1 %}
