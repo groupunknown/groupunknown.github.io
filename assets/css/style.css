@@ -113,9 +113,9 @@ span[data-placeholder],
 div[data-placeholder] {
     color: transparent !important;
     border-color: transparent !important;
-    box-shadow: none !important;
     border-radius: 3px;
 }
+
 div[data-placeholder] img,
 div[data-placeholder] svg {
     opacity: 0;
