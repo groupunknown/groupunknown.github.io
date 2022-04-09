@@ -1,5 +1,5 @@
 <script>
-	document.addEventListener("DOMContentLoaded", function(event) { 
+	document.addEventListener("unload", function(event) { 
 		var remove = document.querySelectorAll('a, span, div, time');
 		Array.prototype.forEach.call(remove, (item) => item.removeAttribute('data-placeholder'));
 	});
