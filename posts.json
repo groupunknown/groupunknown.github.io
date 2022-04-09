@@ -17,7 +17,7 @@ layout: null
             "post_date": {{ post.post_date | jsonify }},
             "post_modified": {{ post.post_modified | jsonify }},
             "title": {{ post.title | jsonify }},
-            "overview": {{ post.overview | jsonify }},
+            "description": {{ post.overview | jsonify }},
             "poster_path": {{ post.poster_path | jsonify }},
             "tmdb_id": {{ post.tmdb_id | jsonify }},
             "imdb_id": {{ post.imdb_id | jsonify }},
