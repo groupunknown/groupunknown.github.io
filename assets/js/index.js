@@ -67,7 +67,7 @@ filter_template = (data) => {
                 <div class="feed__article-row plot-summary">
                     <div class="feed__article-sub-row">
                         <h2><a href="`+ stringtoslug(item.title) +`">`+ item.title +`</a></h2>
-                        <div class="feed__plot">`+ item.overview +`</div>
+                        <div class="feed__plot">`+ item.description +`</div>
                         <div class="feed__crew">
                             <div>Diretor:</div>
                             <div class="comma">`;

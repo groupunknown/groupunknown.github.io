@@ -6,7 +6,7 @@
 			{% assign min = 0 %}
 			{% assign max = 10 %}
 			{% assign diff = max | minus: min %}
-			{% assign randomNumber = post.overview | size | modulo: diff | plus: min %}
+			{% assign randomNumber = post.description | size | modulo: diff | plus: min %}
 			<div class="badge badge-{{ randomNumber }}">#{{ post.category }}</div>
 		</div>
 		<div class="row article-content">
@@ -20,7 +20,7 @@
 					<h2 class="title">
 						<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 					</h2>
-					<div class="synopsis scroll">{{ post.overview }}</div>
+					<div class="synopsis scroll">{{ post.description }}</div>
 					<div class="crew">
 						<div>Diretor:</div>
 						<div class="comma">

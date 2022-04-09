@@ -15,16 +15,6 @@ description: >-
   pequenos gestos, ela passa a ajudar as pessoas que a rodeiam, vendo nisto um
   novo sentido para sua existência. Contudo, ainda sente falta de um grande
   amor.
-overview: >-
-  Após deixar a vida de subúrbio que levava com a família, a inocente Amélie
-  muda-se para o bairro parisiense de Montmartre, onde começa a trabalhar como
-  garçonete. Certo dia encontra uma caixa escondida no banheiro de sua casa e,
-  pensando que pertencesse ao antigo morador, decide procurá-lo e é assim que
-  encontra Dominique. Ao ver que ele chora de alegria ao reaver o seu objeto, a
-  moça fica impressionada e adquire uma nova visão do mundo. Então, a partir de
-  pequenos gestos, ela passa a ajudar as pessoas que a rodeiam, vendo nisto um
-  novo sentido para sua existência. Contudo, ainda sente falta de um grande
-  amor.
 poster_path: /xU7E72Bq8drUKtcW3xCwaC5EeBV.jpg
 tmdb_id: 194
 imdb_id: tt0211915

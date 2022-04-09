@@ -12,13 +12,6 @@ description: >-
   pela imperatriz Furiosa que tenta salvar um grupo de garotas. Também tentando
   fugir, Max aceita ajudar Furiosa. Dessa vez, o tirano Joe está ainda mais
   implacável pois teve algo insubstituível roubado.
-overview: >-
-  Em um mundo apocalíptico, Max Rockatansky acredita que a melhor forma de
-  sobreviver é não depender de ninguém. Porém, após ser capturado pelo tirano
-  Immortan Joe e seus rebeldes, Max se vê no meio de uma guerra mortal, iniciada
-  pela imperatriz Furiosa que tenta salvar um grupo de garotas. Também tentando
-  fugir, Max aceita ajudar Furiosa. Dessa vez, o tirano Joe está ainda mais
-  implacável pois teve algo insubstituível roubado.
 poster_path: /8tZYtuWezp8JbcsvHYO0O46tFbo.jpg
 tmdb_id: 76341
 imdb_id: tt1392190

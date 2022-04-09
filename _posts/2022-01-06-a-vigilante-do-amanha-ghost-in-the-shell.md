@@ -10,11 +10,6 @@ description: >-
   tecnologia está em todos os lugares. Motoko Kusanagi é uma ciborgue com
   experiência militar que comanda um esquadrão de elite especializado em
   combater crimes cibernéticos.
-overview: >-
-  Num mundo pós 2029, cérebros se fundem facilmente a computadores e a
-  tecnologia está em todos os lugares. Motoko Kusanagi é uma ciborgue com
-  experiência militar que comanda um esquadrão de elite especializado em
-  combater crimes cibernéticos.
 poster_path: /2h4yO3vRxGcVhG9SJSMnRIQpFFP.jpg
 tmdb_id: 315837
 imdb_id: tt1219827

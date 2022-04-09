@@ -9,10 +9,6 @@ description: >-
   A guerreira Sarah Connor se une a Grace, um híbrido entre ciborgue e humano, e
   ao T-800 para proteger a jovem Dani Ramos de um novo tipo de exterminador que
   chega do futuro à Cidade do México.
-overview: >-
-  A guerreira Sarah Connor se une a Grace, um híbrido entre ciborgue e humano, e
-  ao T-800 para proteger a jovem Dani Ramos de um novo tipo de exterminador que
-  chega do futuro à Cidade do México.
 poster_path: /vqzNJRH4YyquRiWxCCOH0aXggHI.jpg
 tmdb_id: 290859
 imdb_id: tt6450804

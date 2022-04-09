@@ -10,11 +10,6 @@ description: >-
   por Jeanine Matthews (Kate Winslet), líder da Erudição. Em busca de respostas
   e assombrados por prévias escolhas, o casal enfrentará inimagináveis desafios
   enquanto tentam descobrir a verdade sobre o mundo em que vivem.
-overview: >-
-  Tris (Shailene Woodley) e Quatro (Theo James) agora são fugitivos e procurados
-  por Jeanine Matthews (Kate Winslet), líder da Erudição. Em busca de respostas
-  e assombrados por prévias escolhas, o casal enfrentará inimagináveis desafios
-  enquanto tentam descobrir a verdade sobre o mundo em que vivem.
 poster_path: /voSF5nL95xJMI30XGksghnvpGWd.jpg
 tmdb_id: 262500
 imdb_id: tt2908446

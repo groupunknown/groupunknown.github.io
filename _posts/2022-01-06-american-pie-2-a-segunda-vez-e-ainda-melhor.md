@@ -11,12 +11,6 @@ description: >-
   Thomas) mais uma vez se reencontram. Mas agora Nadia (Shannon Elizabeth) está
   prestes a vir visitar Jim, que ainda não se sente preparado sexualmente para
   encontrá-la e receberá a ajuda dos amigos.
-overview: >-
-  Ao término do primeiro ano da faculdade, Jim (Jason Biggs), Oz (Chris Klein),
-  Kevin (Thomas Ian Nicholas), Stifler (Seann William Scott) e Finch (Eddie Kaye
-  Thomas) mais uma vez se reencontram. Mas agora Nadia (Shannon Elizabeth) está
-  prestes a vir visitar Jim, que ainda não se sente preparado sexualmente para
-  encontrá-la e receberá a ajuda dos amigos.
 poster_path: /wa3vePBNEfAJtzXs8WFTyD7bliD.jpg
 tmdb_id: 2770
 imdb_id: tt0252866

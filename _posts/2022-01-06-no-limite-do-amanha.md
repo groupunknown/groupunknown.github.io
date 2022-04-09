@@ -12,13 +12,6 @@ description: >-
   repetidamente sua última batalha. No entanto, quanto mais vezes ele luta, suas
   habilidades de guerreiro melhoram e ele fica mais perto de descobrir como
   derrotar o inimigo.
-overview: >-
-  A Terra está dominada por alienígenas e o major Bill Cage, um relações
-  públicas das Forças Armadas dos Estados Unidos, é obrigado a ir para a linha
-  de frente. Inexplicavelmente, ele acaba preso em um ciclo do tempo, revivendo
-  repetidamente sua última batalha. No entanto, quanto mais vezes ele luta, suas
-  habilidades de guerreiro melhoram e ele fica mais perto de descobrir como
-  derrotar o inimigo.
 poster_path: /xjw5trHV7Mwo61P0kCTy8paEkgO.jpg
 tmdb_id: 137113
 imdb_id: tt1631867

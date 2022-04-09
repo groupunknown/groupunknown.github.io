@@ -9,10 +9,6 @@ description: >-
   Um vírus letal se espalha rapidamente e transforma seres humanos em zumbis. O
   ex-agente da ONU Gerry Lane é chamado para investigar a epidemia que está
   acabando com a humanidade, iniciando uma verdadeira corrida contra o tempo.
-overview: >-
-  Um vírus letal se espalha rapidamente e transforma seres humanos em zumbis. O
-  ex-agente da ONU Gerry Lane é chamado para investigar a epidemia que está
-  acabando com a humanidade, iniciando uma verdadeira corrida contra o tempo.
 poster_path: /1SWBSYJsnyhdNRfLI1T6RsCxAQ4.jpg
 tmdb_id: 72190
 imdb_id: tt0816711

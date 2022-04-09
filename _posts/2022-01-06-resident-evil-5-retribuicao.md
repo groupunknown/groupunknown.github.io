@@ -13,14 +13,6 @@ description: >-
   Corporação Umbrella. Velhos amigos se tornam novos inimigos, enquanto ela
   batalha para se libertar e descobre que tudo em que acreditou pode nem ser
   verdade.
-overview: >-
-  O vírus-T fatal da Corporação Umbrella está se espalhando pelo mundo,
-  transformando pessoas comuns em legiões de zumbis. Prestes à extinção, a raça
-  humana só tem uma esperança: Alice. Ela tem uma missão, lutando pelas cidades
-  e através de continentes, sempre dentro da principal instalação de pesquisa da
-  Corporação Umbrella. Velhos amigos se tornam novos inimigos, enquanto ela
-  batalha para se libertar e descobre que tudo em que acreditou pode nem ser
-  verdade.
 poster_path: /ohdUDWVlcbuWphaLu6wS91xdJ73.jpg
 tmdb_id: 71679
 imdb_id: tt1855325

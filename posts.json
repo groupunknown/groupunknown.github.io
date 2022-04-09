@@ -10,14 +10,15 @@ layout: null
     "icon": "{{ "/apple-touch-icon.png" | absolute_url }}",
     "favicon": "{{ "/favicon.ico" | absolute_url }}",
     "expired": false,
-    "items": [{% for post in site.posts limit: 100 %}
+    "items": [{% for post in site.posts limit: 1000 %}
         {
-            "type": "tvserie",
+            "author": {{ post.author | jsonify }},
+            "category": {{ post.category | jsonify }},
+            "post_date": {{ post.post_date | jsonify }},
+            "post_modified": {{ post.post_modified | jsonify }},
             "title": {{ post.title | jsonify }},
             "overview": {{ post.overview | jsonify }},
-            "author": {{ post.author | jsonify }},
             "poster_path": {{ post.poster_path | jsonify }},
-            "backdrop_path": {{ post.backdrop_path | jsonify }},
             "tmdb_id": {{ post.tmdb_id | jsonify }},
             "imdb_id": {{ post.imdb_id | jsonify }},
             "runtime": {{ post.runtime | jsonify }},
