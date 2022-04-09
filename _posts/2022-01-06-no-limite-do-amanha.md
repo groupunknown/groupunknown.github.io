@@ -1,6 +1,6 @@
 ---
 layout: post
-author: heisenberg
+author: rick_grimes
 category: Filmes
 post_date: '2020-12-06T18:33:14.178Z'
 post_modified: '2020-12-06T18:33:14.178Z'

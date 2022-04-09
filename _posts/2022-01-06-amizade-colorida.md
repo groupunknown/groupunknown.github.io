@@ -1,6 +1,6 @@
 ---
 layout: post
-author: dr_octopus
+author: rick_grimes
 category: Filmes
 post_date: '2020-12-06T18:35:59.731Z'
 post_modified: '2020-12-06T18:35:59.731Z'
