@@ -1407,3 +1407,80 @@ div[data-placeholder] svg {
     transform: translate3d(0, 0, 0);
   }
 }
+
+/* Search Console */
+.menu-items .menu-item:active,
+.menu-items .menu-item:focus,
+.menu-items .menu-item:hover {
+    text-shadow: 0 0 2px rgb(220 255 255 / 30%);
+}
+
+.menu-items .menu-item:nth-child(1) {
+    color: #ad3;
+}
+.menu-items .menu-item:nth-child(1):active,
+.menu-items .menu-item:nth-child(1):focus,
+.menu-items .menu-item:nth-child(1):hover {
+    border-bottom: 1px solid #ad3;
+    background-color: rgba(170,221,51,.1);
+}
+
+.menu-items .menu-item:nth-child(2) {
+    color: #f43;
+}
+.menu-items .menu-item:nth-child(2):active,
+.menu-items .menu-item:nth-child(2):focus,
+.menu-items .menu-item:nth-child(2):hover {
+    border-bottom: 1px solid #f43;
+    background-color: rgba(255,68,51,.1);
+}
+
+.menu-items .menu-item:nth-child(3) {
+    color: #b760f0;
+}
+.menu-items .menu-item:nth-child(3):active,
+.menu-items .menu-item:nth-child(3):focus,
+.menu-items .menu-item:nth-child(3):hover {
+    border-bottom: 1px solid #b760f0;
+    background-color: rgba(183,96,240,.1);
+}
+
+.menu-items .menu-item:nth-child(4) {
+    color: #e73;
+}
+.menu-items .menu-item:nth-child(4):active,
+.menu-items .menu-item:nth-child(4):focus,
+.menu-items .menu-item:nth-child(4):hover {
+    border-bottom: 1px solid #e73;
+    background-color: rgba(238,119,51,.1);
+}
+
+.menu-items .menu-item:nth-child(5) {
+    color: #d55;
+}
+.menu-items .menu-item:nth-child(5):active,
+.menu-items .menu-item:nth-child(5):focus,
+.menu-items .menu-item:nth-child(5):hover {
+    border-bottom: 1px solid #d55;
+    background-color: rgba(221,85,85,.1);
+}
+
+.menu-items .menu-item:nth-child(6) {
+    color: #fb3;
+}
+.menu-items .menu-item:nth-child(6):active,
+.menu-items .menu-item:nth-child(6):focus,
+.menu-items .menu-item:nth-child(6):hover {
+    border-bottom: 1px solid #fb3;
+    background-color: rgba(255,187,51,.1);
+}
+
+.menu-items .menu-item:nth-child(7) {
+    color: #49f;
+}
+.menu-items .menu-item:nth-child(7):active,
+.menu-items .menu-item:nth-child(7):focus,
+.menu-items .menu-item:nth-child(7):hover {
+    border-bottom: 1px solid #49f;
+    background-color: rgba(68,153,255,.1);
+}
