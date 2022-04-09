@@ -1131,6 +1131,29 @@ svg:not(:root) {
 }
 
 
+
+.pagination {
+    display: flex;
+    margin-bottom: 5rem;
+}
+.pagination a {
+    padding: .5rem 1rem;
+    border: 1px solid #eeeeee;
+    border-left: 0;
+}
+.pagination a:first-child {
+    border: 1px solid #eeeeee;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.pagination a:last-child {
+    border: 1px solid #eeeeee;
+    border-left: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+
 /* Arrow */
 .fadeInRight {
   -webkit-animation: fadeInRight .5s ease .4s both;
