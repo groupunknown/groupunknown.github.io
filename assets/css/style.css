@@ -1150,6 +1150,9 @@ svg:not(:root) {
     background: #efefef;
     cursor: pointer;
 }
+.pagination a.active:hover {
+    cursor: default;
+}
 .pagination a:first-child {
     border: 1px solid #efefef;
     border-top-left-radius: 3px;
