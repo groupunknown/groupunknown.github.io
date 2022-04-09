@@ -273,14 +273,6 @@ div[data-placeholder] svg {
     gap: 1rem;
 }
 
-.content {
-    width: 100%;
-}
-
-.content {
-    gap: 1rem;
-}
-
 /* BANNER */
 @keyframes xfade {
     25% {opacity: 1;}
@@ -389,12 +381,6 @@ div[data-placeholder] svg {
     padding: 5px;
     background: #efefef;
     border-radius: 2px;
-}
-
-.posts-results {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
 }
 
 .articles {
