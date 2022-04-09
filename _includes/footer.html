@@ -1,6 +1,6 @@
 <script>
 	document.addEventListener("DOMContentLoaded", function(event) { 
-		document.querySelector('a, span, div, time').removeAttr('data-placeholder');
+		document.querySelectorAll('a, span, div, time').removeAttr('data-placeholder');
 	});
 </script>
 {% if page.layout == "taxonomy" %}
