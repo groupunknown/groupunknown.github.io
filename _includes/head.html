@@ -13,5 +13,8 @@
     <link rel="sitemap" type="application/xml" title="sitemap" href="{{ site.baseurl }}/sitemap.xml" />
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" media="all">
     {% include analytics.html %}
+
+    {% if page.url == "/genero" %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    {% endif %}
 </head>

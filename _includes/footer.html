@@ -1,3 +1,4 @@
+{% if page.url == "/genero" %}
 <script>
 	jQuery(window).bind('load', function() {
 		$('a, span, div, time').removeAttr('data-placeholder');
@@ -5,3 +6,4 @@
 </script>
 <script src="{{ site.baseurl }}/assets/js/pagination.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/index.js"></script>
+{% endif %}
