@@ -7,6 +7,11 @@ layout: default
 			<div class="column articles">
 			{% for post in paginator.posts %}
 			{% include article.html %}
+			{% if forloop.index == 5 %}
+				<div class="article-banner">
+					<img src="https://images.fanart.tv/fanart/halo-6228faf4a32f1.jpg">
+				</div>
+			{% endif %}
 			{% endfor %}
 			{% include pagination.html %}
 			</div>
