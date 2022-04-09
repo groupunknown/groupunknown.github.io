@@ -513,6 +513,12 @@ div[data-placeholder] svg {
     user-select: none;
 }
 
+.author-image .author-avatar img {
+    border-radius: 3px;
+    user-select: none;
+    pointer-events: none;
+}
+
 .article .author .author-letter {
     color: #eee;
     /*background-image: url(../img/sparkles.gif), linear-gradient(210deg,#fc0 0%,#00ff0a 100%,#fff);

@@ -9,7 +9,7 @@ hannibal_lecter:
     name: Hannibal Lecter
     joined: 2019
     role: 2
-    avatar: /assets/img/authors/hannibal_lecter.png
+    avatar: #/assets/img/authors/hannibal_lecter.png
 pennywise:
     id: 333
     name: Pennywise
