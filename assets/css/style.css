@@ -87,22 +87,13 @@ img {
 svg:not(:root) {
     overflow: hidden;
 }
-/*
-[data-placeholder] {
-    -webkit-animation-duration: 1.25s;
-    animation-duration: 1.25s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-name: placeholder;
-    animation-name: placeholder;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    background: linear-gradient(to right, rgba(255,255,255,0.1) 10%, rgba(0,0,0,0.05) 25%, rgba(255,255,255,0.1) 40%) !important;
-    box-shadow: inset 0 0 0 200px rgba(0,0,0,0.025);
+
+/*[data-placeholder] {
+    background: linear-gradient(to right, #f9fafa 10%, #e5e6e7 25%, #f9fafa 40%);
+    animation: placeholder 1.5s infinite forwards linear;
+    box-shadow: inset 0 0 0 200px rgb(0 0 0 / 0%);
     background-color: transparent !important;
-    background-size: 800px 100px;
+    background-size: 1000px 100px;
     position: relative;
     pointer-events: none;
     user-select: none;
@@ -115,7 +106,14 @@ div[data-placeholder] {
     border-color: transparent !important;
     border-radius: 3px;
 }
-
+.author-role[data-placeholder] {
+    box-shadow: inset 0 0 0px 200px rgb(0 0 0 / 5%) !important;
+}
+.author-role[data-placeholder]:before,
+.author-role[data-placeholder]:after,
+.author-name[data-placeholder] {
+    opacity: 0 !important;
+}
 div[data-placeholder] img,
 div[data-placeholder] svg {
     opacity: 0;
@@ -123,10 +121,10 @@ div[data-placeholder] svg {
 
 @keyframes placeholder{
     0% {
-        background-position: -468px 0;
+        background-position: -500px 0;
     }
     100% {
-        background-position: 468px 0;
+        background-position: 500px 0;
     }
 }*/
 
@@ -532,8 +530,8 @@ div[data-placeholder] svg {
 .article .author .author-letter {
     color: #eee;
     /*background-image: url(../img/sparkles.gif), linear-gradient(210deg,#fc0 0%,#00ff0a 100%,#fff);
-    background-image: linear-gradient(210deg,#fc0 0%,#00ff0a 100%,#fff);*/
-    animation: royal 15s infinite linear;
+    background-image: linear-gradient(210deg,#fc0 0%,#00ff0a 100%,#fff);
+    animation: royal 15s infinite linear;*/
 }
 
 .article .author .author-name {
@@ -555,10 +553,8 @@ div[data-placeholder] svg {
 @keyframes royal {
     from {
         filter: hue-rotate(-360deg)
-
     }
     to {
-
         filter: hue-rotate(360deg)
     }
 }
