@@ -1716,6 +1716,7 @@ div[data-placeholder] svg {
     box-shadow: 0 2px 5px 0px rgb(64 60 67 / 16%);
 }
 
+/*
 .search-suggest-category {
     display: flex;
     flex-direction: column;
@@ -1724,7 +1725,18 @@ div[data-placeholder] svg {
     position: relative;
 }
 
-.search-suggest-category a:hover {
+.search-suggest-category:before {
+    position: absolute;
+    content: attr(data-category);
+    right: 0.5rem;
+    font-size: 12px;
+    background: #e0e0e0;
+    padding: 0 5px;
+    border-radius: 3px;
+}
+*/
+
+.search-suggest-results a:hover {
     background: #efefef;
 }
 
@@ -1759,14 +1771,4 @@ div[data-placeholder] svg {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-}
-
-.search-suggest-category:before {
-    position: absolute;
-    content: attr(data-category);
-    right: 0.5rem;
-    font-size: 12px;
-    background: #e0e0e0;
-    padding: 0 5px;
-    border-radius: 3px;
 }

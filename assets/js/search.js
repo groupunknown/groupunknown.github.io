@@ -2,15 +2,12 @@ var json_posts = [];
 $.getJSON('/search.json').then(function(data) { json_posts = data });
 $("#search").keyup(function(){
     var input = $(this).val(), regex = new RegExp(input, "i"), results = '';
-    if(input.length <= 2) {
-        $(".search-suggest-results").html("");
+    if(input.length <= 1) {
+        $(".search-suggest-results").html("").addClass("search-suggest-result-empty");
         return;
     }
     FilterQuerySearchByCategory = (postings, category) => {
-        postings.forEach((posting, id) => {
-            if (id === 0) {
-                results += `<div class="search-suggest-category" data-category="`+ category +`">`;
-            }
+        postings.forEach((posting, key, last) => {
             if (posting.title.search(regex) != -1) {
                 results += `<a class="search-suggest-result" href="`+ posting.url +`">
                 <div class="search-suggest-poster">
@@ -22,16 +19,13 @@ $("#search").keyup(function(){
                 </div>
                 </a>`;
             }
-            if (id === id - 1) {
-                results += `</div>`;
-            }
         });
         return results;
     }
     var search = FilterQuerySearchByCategory(json_posts, "Filmes");
     if (search.length === 75) {
-        $(".search-suggest-results").html('<div class="search-suggest-result-empty">Nenhum resultado encontrado.</div>');
+        $(".search-suggest-results").html('<div class="search-suggest-no-results">Nenhum resultado encontrado.</div>');
     } else {
-        $(".search-suggest-results").html(search);
+        $(".search-suggest-results").html(search).removeClass("search-suggest-result-empty");
     }
 });
