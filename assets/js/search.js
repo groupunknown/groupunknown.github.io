@@ -1,13 +1,11 @@
 var json_posts = [];
 $.getJSON('/search.json').then(function(data) { json_posts = data });
-
 $("#search").keyup(function(){
-    var input = $(this).val();
+    var input = $(this).val(), regex = new RegExp(input, "i"), results = '';
     if(input.length <= 2) {
         $(".search-suggest-results").html("");
-        return
+        return;
     }
-    var regex = new RegExp(input, "i"), results;
     FilterQuerySearchByCategory = (postings, category) => {
         results += `<div class="search-suggest-category" data-category="`+ category +`">`;
         postings.forEach((posting, id) => {
@@ -28,9 +26,8 @@ $("#search").keyup(function(){
     }
     var search = FilterQuerySearchByCategory(json_posts, "Filmes");
     if (search.length === 75) {
-        var html = `<div class="search-suggest-result-empty">Nenhum resultado encontrado.</div>`;
+        $(".search-suggest-results").html('<div class="search-suggest-result-empty">Nenhum resultado encontrado.</div>');
     } else {
-        var html = search
+        $(".search-suggest-results").html(search);
     }
-    $(".search-suggest-results").html(html);
 });
