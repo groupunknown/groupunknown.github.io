@@ -1,3 +1,4 @@
+var json_posts;
 $.getJSON('/search.json', function(data) {
     var json_posts = JSON.stringify(data)
 });
