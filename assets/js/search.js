@@ -1,7 +1,6 @@
 var json_posts;
-$.getJSON('/search.json', function(data) {
-    var json_posts = data
-});
+$.getJSON('/search.json').then(function(data) { json_posts = data });
+
 $("#search").keyup(function(){
     var input = $(this).val();
     if(input === '')  {
