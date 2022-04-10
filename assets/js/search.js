@@ -9,6 +9,7 @@ $("#search").keyup(function(){
     }
     var regex = new RegExp(input, "i"), results;
     FilterQuerySearchByCategory = (postings, category) => {
+        var count = 1;
         results += `<div class="search-suggest-category" data-category="`+ category +`">`;
         postings.forEach((posting, id) => {
             if (posting.title.search(regex) != -1) {
@@ -21,9 +22,12 @@ $("#search").keyup(function(){
                 <div class="search-suggest-synopsis">`+ posting.description +`</div>
                 </div>
                 </a>`;
-            } else {
-                results += `<div class="search-suggest-result-empty">Nenhum resultado encontrado.</div>`;
             }
+
+            if(count%2 == 0){
+                 results += `<div class="search-suggest-result-empty">Nenhum resultado encontrado.</div>`;
+            }
+            count++;
         });
         results += `</div>`;
         return results
