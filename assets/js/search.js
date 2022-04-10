@@ -1,13 +1,12 @@
-var json_posts;
+var json_posts = [];
 $.getJSON('/search.json').then(function(data) { json_posts = data });
 
 $("#search").keyup(function(){
     var input = $(this).val();
     if(input.length <= 2) {
-        $(".search-suggest-results").html('').addClass("search-suggest-empty");
+        $(".search-suggest-results").html("");
         return
     }
-
     var regex = new RegExp(input, "i"), results;
     FilterQuerySearchByCategory = (postings, category) => {
         results += `<div class="search-suggest-category" data-category="`+ category +`">`;
@@ -25,14 +24,13 @@ $("#search").keyup(function(){
             }
         });
         results += `</div>`;
-        return results
+        return results;
     }
-    var search = FilterQuerySearchByCategory(json_posts, "Filmes")
+    var search = FilterQuerySearchByCategory(json_posts, "Filmes");
     if (search.length === 75) {
         var html = `<div class="search-suggest-result-empty">Nenhum resultado encontrado.</div>`;
     } else {
         var html = search
     }
     $(".search-suggest-results").html(html);
-    $(".search-suggest-results").removeClass("search-suggest-empty");
 });
