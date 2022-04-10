@@ -3,13 +3,13 @@ $.getJSON('/search.json').then(function(data) { json_posts = data });
 
 $("#search").keyup(function(){
     var input = $(this).val();
-    if(input === '')  {
+    if(input.length <= 2) {
         $(".search-suggest-results").html('').addClass("search-suggest-empty");
-        return;
+        return
     }
+
     var regex = new RegExp(input, "i"), results;
     FilterQuerySearchByCategory = (postings, category) => {
-        var count = 1;
         results += `<div class="search-suggest-category" data-category="`+ category +`">`;
         postings.forEach((posting, id) => {
             if (posting.title.search(regex) != -1) {
@@ -23,18 +23,16 @@ $("#search").keyup(function(){
                 </div>
                 </a>`;
             }
-
-            if(count%2 == 0){
-                 results += `<div class="search-suggest-result-empty">Nenhum resultado encontrado.</div>`;
-            }
-            count++;
         });
         results += `</div>`;
         return results
     }
-
-    var html_filmes = FilterQuerySearchByCategory(json_posts, "Filmes")
-
-    $(".search-suggest-results").html(html_filmes);
+    var search = FilterQuerySearchByCategory(json_posts, "Filmes")
+    if (search.length === 75) {
+        var html = `<div class="search-suggest-result-empty">Nenhum resultado encontrado.</div>`;
+    } else {
+        var html = search
+    }
+    $(".search-suggest-results").html(html);
     $(".search-suggest-results").removeClass("search-suggest-empty");
 });
