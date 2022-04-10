@@ -21,6 +21,8 @@ $("#search").keyup(function(){
                 <div class="search-suggest-synopsis">`+ posting.description +`</div>
                 </div>
                 </a>`;
+            } else {
+                results += `<div class="search-suggest-result-empty">Nenhum resultado encontrado.</div>`;
             }
         });
         results += `</div>`;
