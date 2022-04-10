@@ -7,8 +7,10 @@ $("#search").keyup(function(){
         return;
     }
     FilterQuerySearchByCategory = (postings, category) => {
-        results += `<div class="search-suggest-category" data-category="`+ category +`">`;
         postings.forEach((posting, id) => {
+            if (id === 0) {
+                results += `<div class="search-suggest-category" data-category="`+ category +`">`;
+            }
             if (posting.title.search(regex) != -1) {
                 results += `<a class="search-suggest-result" href="`+ posting.url +`">
                 <div class="search-suggest-poster">
@@ -20,8 +22,10 @@ $("#search").keyup(function(){
                 </div>
                 </a>`;
             }
+            if (id === id - 1) {
+                results += `</div>`;
+            }
         });
-        results += `</div>`;
         return results;
     }
     var search = FilterQuerySearchByCategory(json_posts, "Filmes");
