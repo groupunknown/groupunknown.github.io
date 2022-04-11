@@ -35,7 +35,8 @@ $("#search").keyup(function(){
         $(".search-suggest-results").html(search).removeClass("search-suggest-result-empty");
     }
 });
-$(window).click(function() {
+var win = $(window);
+win.click(function() {
     $("#search").removeClass("search-suggest-input-active");
     $(".search-suggest-results").addClass("search-suggest-result-empty");
 });
@@ -47,8 +48,8 @@ $(document).on("click", "#search", function(e) {
     }
     e.stopPropagation();
 });
-$(window).scroll(function() {    
-    var scroll = $(window).scrollTop(); 
+win.scroll(function() {    
+    var scroll = win.scrollTop(); 
     $(".header_sticky").toggleClass("scroll-active", scroll >= 200);
     $(".search-suggest-text").toggleClass("scroll-hidden", scroll >= 200);
 });
