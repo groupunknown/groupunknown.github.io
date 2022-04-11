@@ -12,8 +12,21 @@
 <div class="search__suggest">
 	<form role="form">
 		<div class="search-suggest-input">
-			<input type="text" id="search" placeholder="O que você procura?" autocomplete="off" spellcheck="false">
+			<input type="text" id="search" placeholder="Procure por um filme, uma série, uma personalidade..." autocomplete="off" spellcheck="false">
 		</div>
 	</form>
 	<div class="search-suggest-results search-suggest-result-empty"></div>
+	{% assign total_filmes = 0 %}
+	{% for post in site.posts %}
+	{% if post.category == "Filmes" %}
+	{% assign total_filmes = total_filmes | plus: 1 %}
+	{% endif %}
+	{% endfor %}
+	{% assign total_series = 0 %}
+	{% for post in site.posts %}
+	{% if post.category == "Séries" %}
+	{% assign total_series = total_series | plus: 1 %}
+	{% endif %}
+	{% endfor %}
+	<div class="search-suggest-text">{{ total_filmes }} filmes e {{ total_series }} séries disponíveis no site.</div>
 </div>
