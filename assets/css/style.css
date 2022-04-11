@@ -1616,9 +1616,14 @@ div[data-placeholder] svg {
     gap: 0.75rem;
 }
 
+.search-suggest-poster {
+    position: relative;
+}
+
 .search-suggest-poster img {
     border-radius: 3px;
     width: 45px;
+    height: 68px;
 }
 
 .search-suggest-category {
@@ -1631,8 +1636,8 @@ div[data-placeholder] svg {
     text-transform: uppercase;
     background: #fc0;
     font-size: 10px;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
 }
 
 .search-suggest-summary {
