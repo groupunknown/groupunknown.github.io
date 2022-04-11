@@ -1694,8 +1694,8 @@ div[data-placeholder] svg {
 }
 
 .search-suggest-input-active {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0!important;
+    border-bottom-right-radius: 0!important;
 }
 
 .search-suggest-results {
@@ -1714,6 +1714,17 @@ div[data-placeholder] svg {
     border-radius: 3px;
     background: #fff;
     box-shadow: 0 2px 5px 0px rgb(64 60 67 / 16%);
+}
+
+.search-suggest-no-results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    font-weight: 400;
+    text-align: center;
 }
 
 .search-suggest-result-empty {

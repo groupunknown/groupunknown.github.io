@@ -2,7 +2,7 @@ var json_posts = [];
 $.getJSON('/search.json').then(function(data) { json_posts = data });
 $("#search").keyup(function(){
     var input = $(this).val(), regex = new RegExp(input, "i"), results = '';
-    if (input.length >= 2) {
+    if (input.length > 2) {
         $(this).addClass("search-suggest-input-active");
     } else {
         $(this).removeClass("search-suggest-input-active");
@@ -28,8 +28,8 @@ $("#search").keyup(function(){
         return results;
     }
     var search = FilterQuerySearchByCategory(json_posts, "Filmes");
-    if (search.length === 75) {
-        $(".search-suggest-results").html('<div class="search-suggest-no-results">Nenhum resultado encontrado.</div>');
+    if (search.length === 0) {
+        $(".search-suggest-results").html('<div class="search-suggest-no-results">Nenhum resultado encontrado, tente procurar com o título em outra língua. Caso ainda não encontre faça um pedido na nossa página do Facebook.</div>');
     } else {
         $(".search-suggest-results").html(search).removeClass("search-suggest-result-empty");
     }
