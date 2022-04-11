@@ -10,7 +10,7 @@ layout: null
     "icon": "{{ "/apple-touch-icon.png" | absolute_url }}",
     "favicon": "{{ "/favicon.ico" | absolute_url }}",
     "expired": false,
-    "items": [{% for post in site.posts limit: 1000 %}
+    "items": [{% for post in site.posts %}
         {
             "author": {{ post.author | jsonify }},
             "category": {{ post.category | jsonify }},
