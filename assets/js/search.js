@@ -48,7 +48,7 @@ $(document).on("click", "#search", function(e) {
     }
     e.stopPropagation();
 });
-win.scroll(function(e) {    
+/*win.scroll(function(e) {    
     var scroll = win.scrollTop(); 
     if (scroll >= 200) {
         $(".header_sticky").addClass("scroll-active");
@@ -59,3 +59,18 @@ win.scroll(function(e) {
     }
     e.stopPropagation();
 });
+*/
+
+var a = document.getElementById('header_sticky'),
+    b = document.getElementById('search-suggest-text');
+const onScroll = () => {
+    const scroll = document.documentElement.scrollTop
+    if (scroll > 200) {
+        a.classList.add("scroll-active");
+        a.classList.add("scroll-hidden");
+    } else {
+        a.classList.remove("scroll-active");
+        a.classList.remove("scroll-hidden");
+    }
+}
+window.addEventListener('scroll', onScroll);
