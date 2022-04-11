@@ -50,6 +50,6 @@ $(document).on("click", "#search", function(e) {
 });
 win.scroll(function() {    
     var scroll = win.scrollTop(); 
-    $(".header_sticky").toggleClass("scroll-active", scroll >= 199);
-    $(".search-suggest-text").toggleClass("scroll-hidden", scroll >= 199);
+    $(".header_sticky").toggleClass("scroll-active", scroll > 199);
+    $(".search-suggest-text").toggleClass("scroll-hidden", scroll > 199);
 });
