@@ -1,7 +1,7 @@
 var json_posts = [];
 $.getJSON('/search.json').then(function(data) { json_posts = data });
 $("#search").keyup(function(){
-    var input = $(this).val(), regex = new RegExp(input, "i"), results = '';
+    var input = $(this).val(), regex = new RegExp(input, "i"), regex_array = new RegExp(input, "gi"), results = '';
     if (input.length > 2) {
         $(this).addClass("search-suggest-input-active");
     } else {
@@ -13,7 +13,7 @@ $("#search").keyup(function(){
     }
     FilterQuerySearchByCategory = (postings, category) => {
         postings.forEach((posting, key, last) => {
-            if (posting.title.search(regex) != -1) {
+            if (posting.title.search(regex) != -1 || posting.imdb_id.search(regex) != -1 || posting.tmdb_id.search(regex) != -1) {
                 results += `<a class="search-suggest-result" href="`+ posting.url +`">
                 <div class="search-suggest-poster">
                 <div class="search-suggest-category">`+ posting.category +`</div>
@@ -25,6 +25,7 @@ $("#search").keyup(function(){
                 </div>
                 </a>`;
             }
+            console.log(posting.crews.filter((e, i) => regex_array.test(e)))
         });
         return results;
     }
