@@ -12,7 +12,7 @@
 <div class="search__suggest">
 	<form role="form">
 		<div class="search-suggest-input">
-			<input type="text" id="search" placeholder="Procure pelo nome do filme, série, ator ou atriz..." autocomplete="off" spellcheck="false">
+			<input type="text" id="search" placeholder="Procure pelo nome do filme, série, ator, atriz, ID do IMDb ou TMDb..." autocomplete="off" spellcheck="false">
 		</div>
 	</form>
 	<div class="search-suggest-results search-suggest-result-empty"></div>
@@ -28,5 +28,5 @@
 	{% assign total_series = total_series | plus: 1 %}
 	{% endif %}
 	{% endfor %}
-	<div class="search-suggest-text">{{ total_filmes }} filmes e {{ total_series }} séries disponíveis no site.</div>
+	<div class="search-suggest-text">Atualmente temos disponível {{ total_filmes }} filmes & {{ total_series }} séries.</div>
 </div>

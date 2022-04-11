@@ -1590,6 +1590,8 @@ div[data-placeholder] svg {
     margin: 0 auto;
     padding-top: 0.75rem;
     font-size: 13px;
+    font-style: italic;
+    color: #777;
 }
 
 .search-suggest-result-empty {
