@@ -2,7 +2,8 @@ var json_posts = [];
 $.getJSON('/search.json').then(function(data) { json_posts = data });
 $("#search").keyup(function(){
     var input = $(this).val(), regex = new RegExp(input, "i"), results = '';
-    if(input.length <= 1) {
+    input.length >= 2 ? $(this).addClass("search-suggest-input-active") : $(this).removeClass("search-suggest-input-active");
+    if(input.length <= 2) {
         $(".search-suggest-results").html("").addClass("search-suggest-result-empty");
         return;
     }

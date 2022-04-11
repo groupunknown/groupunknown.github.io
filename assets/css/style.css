@@ -1693,7 +1693,7 @@ div[data-placeholder] svg {
     box-shadow: 0 2px 5px 0px rgb(64 60 67 / 16%);
 }
 
-.search-suggest-input input:focus {
+.search-suggest-input-active {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
@@ -1714,6 +1714,10 @@ div[data-placeholder] svg {
     border-radius: 3px;
     background: #fff;
     box-shadow: 0 2px 5px 0px rgb(64 60 67 / 16%);
+}
+
+.search-suggest-result-empty {
+    display: none;
 }
 
 /*
