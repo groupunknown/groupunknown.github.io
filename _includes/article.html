@@ -7,7 +7,7 @@
 			{% assign max = 10 %}
 			{% assign diff = max | minus: min %}
 			{% assign randomNumber = post.description | size | modulo: diff | plus: min %}
-			<div class="badge badge-{{ randomNumber }}" data-placeholder>#{{ post.category }}</div>
+			<div class="badge badge-{{ randomNumber }}" data-placeholder>{{ post.category }}</div>
 		</div>
 		<div class="row article-content">
 			<div class="row poster">

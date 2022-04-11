@@ -35,3 +35,16 @@ $("#search").keyup(function(){
         $(".search-suggest-results").html(search).removeClass("search-suggest-result-empty");
     }
 });
+
+$(window).click(function() {
+    $("#search").removeClass("search-suggest-input-active");
+    $(".search-suggest-results").addClass("search-suggest-result-empty");
+});
+$(document).on("click", "#search", function(e) {
+    var size = $("#search").val();
+    if (size.length > 2) {
+        $("#search").addClass("search-suggest-input-active");
+        $(".search-suggest-results").removeClass("search-suggest-result-empty");
+    }
+    e.stopPropagation();
+});
