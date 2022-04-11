@@ -50,7 +50,7 @@ $(document).on("click", "#search", function(e) {
 });
 win.scroll(function(e) {    
     var scroll = win.scrollTop(); 
-    if (scroll >= 200) {
+    if (scroll >= 300) {
         $(".header_sticky").addClass("scroll-active");
         $(".search-suggest-text").addClass("scroll-hidden");
     } else {
