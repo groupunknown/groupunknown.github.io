@@ -16,6 +16,7 @@ $("#search").keyup(function(){
             if (posting.title.search(regex) != -1) {
                 results += `<a class="search-suggest-result" href="`+ posting.url +`">
                 <div class="search-suggest-poster">
+                <div class="search-suggest-category">`+ posting.category +`</div>
                 <img src="https://image.tmdb.org/t/p/w45`+ posting.poster +`" alt="`+ posting.title +`">
                 </div>
                 <div class="search-suggest-summary">
