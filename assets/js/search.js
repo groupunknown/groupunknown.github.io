@@ -49,7 +49,7 @@ $(document).on("click", "#search", function(e) {
 });
 
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 0) {
+    if ($(this).scrollTop() > 200) {
         $(".header_sticky").addClass("scroll-active");
         $(".search-suggest-text").addClass("scroll-hidden");
     } else {
