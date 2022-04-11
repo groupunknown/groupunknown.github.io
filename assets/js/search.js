@@ -13,9 +13,6 @@ $("#search").keyup(function(){
     }
     FilterQuerySearchByCategory = (postings, category) => {
         postings.forEach((posting, key, last) => {
-
-            console.log(posting.crews.findIndex(v => regex_array.test(v)))
-
             if ((posting.title.search(regex) != -1) || (posting.imdb_id.search(regex) != -1) || (posting.tmdb_id.search(regex) != -1) || (posting.crews.findIndex(v => regex_array.test(v)) != -1)) {
                 results += `<a class="search-suggest-result" href="`+ posting.url +`">
                 <div class="search-suggest-poster">
