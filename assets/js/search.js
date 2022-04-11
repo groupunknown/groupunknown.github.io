@@ -48,15 +48,16 @@ $(document).on("click", "#search", function(e) {
     }
     e.stopPropagation();
 });
-win.scroll(function() {    
+win.scroll(function(e) {    
     var scroll = win.scrollTop(); 
-    if (scroll >= 200) {
+    /*if (scroll >= 200) {
         $(".header_sticky").addClass("scroll-active");
         $(".search-suggest-text").addClass("scroll-hidden");
     } else {
         $(".header_sticky").removeClass("scroll-active");
         $(".search-suggest-text").removeClass("scroll-hidden");
-    }
-    //$(".header_sticky").toggleClass("scroll-active", scroll >= 199);
-    //$(".search-suggest-text").toggleClass("scroll-hidden", scroll >= 199);
+    }*/
+    $(".header_sticky").toggleClass("scroll-active", scroll >= 199);
+    $(".search-suggest-text").toggleClass("scroll-hidden", scroll >= 199);
+    e.stopPropagation();
 });
