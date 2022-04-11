@@ -48,7 +48,8 @@ $(document).on("click", "#search", function(e) {
     }
     e.stopPropagation();
 });
-win.scroll(function(e) {    
+/*
+win.scroll(function(e) {
     var scroll = win.scrollTop(); 
     if (scroll >= 300) {
         $(".header_sticky").addClass("scroll-active");
@@ -57,5 +58,5 @@ win.scroll(function(e) {
         $(".header_sticky").removeClass("scroll-active");
         $(".search-suggest-text").removeClass("scroll-hidden");
     }
-    e.stopPropagation();
 });
+*/
