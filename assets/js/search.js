@@ -67,10 +67,10 @@ const onScroll = () => {
     const scroll = document.documentElement.scrollTop
     if (scroll > 200) {
         a.classList.add("scroll-active");
-        a.classList.add("scroll-hidden");
+        b.classList.add("scroll-hidden");
     } else {
         a.classList.remove("scroll-active");
-        a.classList.remove("scroll-hidden");
+        b.classList.remove("scroll-hidden");
     }
 }
 window.addEventListener('scroll', onScroll);
