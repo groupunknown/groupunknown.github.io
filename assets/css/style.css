@@ -451,7 +451,7 @@ div[data-placeholder] svg {
 .article .author {
     position: sticky;
     top: 200px;
-    max-width: 120px;
+    width: 120px;
     height: min-content;
     height: fit-content;
     border-radius: 4px;
@@ -1437,7 +1437,6 @@ div[data-placeholder] svg {
     z-index: 100;
     -webkit-user-select: none;
     user-select: none;
-    transition: background .35s ease;
 }
 
 .header_sticky.scroll-active {

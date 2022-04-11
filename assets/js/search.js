@@ -47,17 +47,6 @@ $(document).on("click", "#search", function(e) {
     }
     e.stopPropagation();
 });
-
-/*$(window).scroll(function() {
-    if ($(this).scrollTop() > 200) {
-        $(".header_sticky").addClass("scroll-active");
-        $(".search-suggest-text").addClass("scroll-hidden");
-    } else {
-        $(".header_sticky").removeClass("scroll-active");
-        $(".search-suggest-text").removeClass("scroll-hidden");
-    }
-});*/
-
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop(); 
     $(".header_sticky").toggleClass("scroll-active", scroll >= 200);
