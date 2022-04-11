@@ -44,6 +44,22 @@ html, body {
    border-radius: 0px;
 }
 
+::-webkit-input-placeholder {
+   color: #777;
+}
+
+:-moz-placeholder {
+   color: #777; 
+}
+
+::-moz-placeholder {
+   color: #777; 
+}
+
+:-ms-input-placeholder {  
+   color: #777;
+}
+
 [hidden],
 .hidden {
     display: none!important;
