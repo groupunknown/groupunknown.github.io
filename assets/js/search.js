@@ -35,7 +35,6 @@ $("#search").keyup(function(){
         $(".search-suggest-results").html(search).removeClass("search-suggest-result-empty");
     }
 });
-
 $(window).click(function() {
     $("#search").removeClass("search-suggest-input-active");
     $(".search-suggest-results").addClass("search-suggest-result-empty");

@@ -1498,44 +1498,63 @@ div[data-placeholder] svg {
     background-color: rgba(183,96,240,.1);
 }
 
-.menu-items .menu-item:nth-child(4) {
-    color: #e73;
-}
-.menu-items .menu-item:nth-child(4):active,
-.menu-items .menu-item:nth-child(4):focus,
-.menu-items .menu-item:nth-child(4):hover {
-    border-bottom: 1px solid #e73;
-    background-color: rgba(238,119,51,.1);
-}
-
 .menu-items .menu-item:nth-child(5) {
-    color: #d55;
+    color: #e73;
 }
 .menu-items .menu-item:nth-child(5):active,
 .menu-items .menu-item:nth-child(5):focus,
 .menu-items .menu-item:nth-child(5):hover {
-    border-bottom: 1px solid #d55;
-    background-color: rgba(221,85,85,.1);
+    border-bottom: 1px solid #e73;
+    background-color: rgba(238,119,51,.1);
 }
 
 .menu-items .menu-item:nth-child(6) {
-    color: #fb3;
+    color: #d55;
 }
 .menu-items .menu-item:nth-child(6):active,
 .menu-items .menu-item:nth-child(6):focus,
 .menu-items .menu-item:nth-child(6):hover {
-    border-bottom: 1px solid #fb3;
-    background-color: rgba(255,187,51,.1);
+    border-bottom: 1px solid #d55;
+    background-color: rgba(221,85,85,.1);
 }
 
 .menu-items .menu-item:nth-child(7) {
-    color: #49f;
+    color: #fb3;
 }
 .menu-items .menu-item:nth-child(7):active,
 .menu-items .menu-item:nth-child(7):focus,
 .menu-items .menu-item:nth-child(7):hover {
+    border-bottom: 1px solid #fb3;
+    background-color: rgba(255,187,51,.1);
+}
+
+.menu-items .menu-item:nth-child(8) {
+    color: #49f;
+}
+.menu-items .menu-item:nth-child(8):active,
+.menu-items .menu-item:nth-child(8):focus,
+.menu-items .menu-item:nth-child(8):hover {
     border-bottom: 1px solid #49f;
     background-color: rgba(68,153,255,.1);
+}
+
+.header-logo-text {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: .2px;
+    color: #fff;
+    -webkit-animation: rainbow 10s infinite alternate;
+}
+
+@-webkit-keyframes rainbow {
+    0% {color: rgba(196,225,127,1);}
+    14% {color: rgba(247,253,202,1);}
+    28% {color: rgba(250,208,113,1);} 
+    42% {color: rgba(240,118,107,1);} 
+    56% {color: rgba(219,157,190,1);}
+    70% {color: rgba(196,156,223,1);}
+    84% {color: rgba(101,153,226,1);}
+    100% {color: rgba(97,194,228,1);}
 }
 
 
