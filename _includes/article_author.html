@@ -18,7 +18,7 @@ premium
 	<div class="author-image">
 		{% if site.data.authors[post.author].avatar %}
 		<div class="author-avatar" data-placeholder>
-			<img src="{{ site.baseurl }}{{ site.data.authors[post.author].avatar }}" alt="{{ site.data.authors[post.author].name }}">
+			<img src="{{ site.baseurl }}{{ site.data.authors[post.author].avatar }}" alt="{{ site.data.authors[post.author].name }}" loading="lazy">
 		</div>
 		{% else %}
 		<div class="author-letter" data-placeholder>{{ site.data.authors[post.author].name | slice: 0 }}</div>
