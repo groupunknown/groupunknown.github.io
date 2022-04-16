@@ -1435,7 +1435,6 @@ div[data-placeholder] svg {
 
 /* Search Console */
 .header_sticky {
-    max-width: 768px;
     margin: 5rem auto;
     -webkit-user-select: none;
     user-select: none;
