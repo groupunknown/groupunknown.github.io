@@ -12,7 +12,7 @@
 		<div class="row article-content">
 			<div class="row poster">
 				<div class="backdrop" data-placeholder>
-					<img src="https://image.tmdb.org/t/p/w154{{ post.poster_path }}" alt="{{ post.title }}" loading="lazy">
+					<img src="https://image.tmdb.org/t/p/w154{{ post.poster_path }}" alt="{{ post.title }}" {% forloop.first %}loading="lazy"{% endif %}>
 				</div>
 			</div>
 			<div class="article-summary">
