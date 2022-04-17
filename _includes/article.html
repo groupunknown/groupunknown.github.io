@@ -10,10 +10,8 @@
 			<div class="badge badge-{{ randomNumber }}" data-placeholder>{{ post.category }}</div>
 		</div>
 		<div class="row article-content">
-			<div class="row poster">
-				<div class="backdrop" data-placeholder>
-					<img src="https://image.tmdb.org/t/p/w154{{ post.poster_path }}" alt="{{ post.title }}" {% if forloop.first %}{% else %}loading="lazy"{% endif %}>
-				</div>
+			<div class="row poster" data-placeholder>
+				<img src="https://image.tmdb.org/t/p/w154{{ post.poster_path }}" alt="{{ post.title }}" {% if forloop.first %}{% else %}loading="lazy"{% endif %}>
 			</div>
 			<div class="article-summary">
 				<div class="column">

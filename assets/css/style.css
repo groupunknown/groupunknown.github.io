@@ -703,14 +703,16 @@ div[data-placeholder] svg {
     border-bottom-right-radius: 3px;
 }
 
-.article-content .poster .backdrop {
+.article-content .poster {
+    position: relative;
     width: 154px;
     height: 231px;
     border-radius: 3px;
     background-color: #efefef;
+    overflow: hidden;
 }
 
-.article-content .poster .backdrop img {
+.article-content .poster img {
     width: 154px;
     height: 231px;
     border-radius: 3px;
