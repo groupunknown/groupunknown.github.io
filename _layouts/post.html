@@ -4,10 +4,58 @@ layout: default
 
 <article class="post-main width-responsive">
     <div class="post-main-header">
-        <div class="back-to-home-page">
+        <div class="post-main-author">
             {% include article_author.html %}
         </div>
-        <div class="post-main-title">{{ page.title }}</div>
+        <div class="post-main-content">
+            <div class="row poster" data-placeholder>
+                <img src="https://image.tmdb.org/t/p/w154{{ page.poster_path }}" alt="{{ page.title }}" loading="lazy">
+            </div>
+            <div class="article-summary">
+                <div class="column">
+                    <h2 class="title">
+                        <a href="{{ page.url | prepend: site.baseurl }}" data-placeholder>{{ page.title }}</a>
+                    </h2>
+                    <div class="synopsis scroll" data-placeholder>{{ page.description }}</div>
+                    <div class="crew" data-placeholder>
+                        <div>Diretor:</div>
+                        <div class="comma">
+                            {% for crew in page.crews %}
+                            <a href="/diretor?crews={{crew}}">{{ crew }}</a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="cast" data-placeholder>
+                        <div>Elenco:</div>
+                        <div class="comma">
+                            {% for cast in page.casts %}
+                            <a href="/elenco?casts={{cast}}">{{ cast }}</a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="genre" data-placeholder>
+                        <div>Gênero:</div>
+                        <div class="comma">
+                            {% for genre in page.genres %}
+                            <a href="/genero?genres={{genre}}">{{ genre }}</a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="runtime" data-placeholder>
+                        <div>Duração:</div>
+                        {% if page.runtime <= 60 %}
+                        <div>{{ page.runtime }}min</div>
+                        {% else %}
+                        <div>{{ page.runtime | divided_by: 60 | floor }}h {{ page.runtime | modulo: 60 }}min</div>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="row full-width justify-between">
+                    {% include article_average.html %}
+                    {% include article_certification.html %}
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="post-main-content">123</div>
+    <div class="post-main-download">123</div>
 </article>

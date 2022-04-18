@@ -1693,11 +1693,3 @@ div[data-placeholder] svg {
 
 
 
-/* Post page */
-.post-main {
-    width: 100%;
-    margin: 0 auto;
-    background: #fcfcfc;
-    box-shadow: 0 0 10px #ddd;
-    border-radius: 4px;
-}
