@@ -1,4 +1,9 @@
-{% assign rank = site.data.authors[post.author].role | remove: "." %}
+{% if page.layout == "post" %}
+{% assign postings = post %}
+{% else %}
+{% assign postings = page %}
+{% endif %}
+{% assign rank = site.data.authors[postings.author].role | remove: "." %}
 {% capture role %}
 {% if rank == "0" %}
 assinante
@@ -16,22 +21,22 @@ premium
 {% endcapture %}
 <div class="author">
 	<div class="author-image">
-		{% if site.data.authors[post.author].avatar %}
+		{% if site.data.authors[postings.author].avatar %}
 		<div class="author-avatar" data-placeholder>
-			<img src="{{ site.baseurl }}{{ site.data.authors[post.author].avatar }}" alt="{{ site.data.authors[post.author].name }}" loading="lazy">
+			<img src="{{ site.baseurl }}{{ site.data.authors[postings.author].avatar }}" alt="{{ site.data.authors[postings.author].name }}" loading="lazy">
 		</div>
 		{% else %}
-		<div class="author-letter" data-placeholder>{{ site.data.authors[post.author].name | slice: 0 }}</div>
+		<div class="author-letter" data-placeholder>{{ site.data.authors[postings.author].name | slice: 0 }}</div>
 		{% endif %}
 	</div>
 	<div class="author-role {{ role | slugify: "latin" }}" data-placeholder>{{ role | slugify: "latin" }}</div>
-	<div class="author-name" data-placeholder>{{ site.data.authors[post.author].name }}</div>
+	<div class="author-name" data-placeholder>{{ site.data.authors[postings.author].name }}</div>
 	<div class="author-infor">
 		<div class="infor-posts" data-placeholder>
 			<span>Juntou-se:</span>
-			<span>{{ site.data.authors[post.author].joined }}</span>
+			<span>{{ site.data.authors[postings.author].joined }}</span>
 		</div>
-		{% assign author_posts = site.posts | where: "author", post.author %}
+		{% assign author_posts = site.posts | where: "author", postings.author %}
 		{% for post in author_posts %}
 		{% assign total_posts = author_posts.size %}
 		{% endfor %}
