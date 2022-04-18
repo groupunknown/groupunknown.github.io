@@ -446,7 +446,7 @@ div[data-placeholder] svg {
 .article:nth-child(even) {
   align-self: flex-end;
 }
-
+/*
 .article:nth-child(5):after,
 .article-banner:after {
     display: inline-block;
@@ -466,7 +466,7 @@ div[data-placeholder] svg {
     transform: rotateY(180deg);
     left: 50%;
 }
-
+*/
 .article .author {
     position: sticky;
     top: 200px;
