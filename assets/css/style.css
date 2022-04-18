@@ -1693,3 +1693,9 @@ div[data-placeholder] svg {
 
 
 
+/* Post page */
+.post-content {
+    background: #fcfcfc;
+    border: 1px solid #efefef;
+    border-radius: 3px;
+}
