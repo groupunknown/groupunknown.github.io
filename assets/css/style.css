@@ -709,7 +709,6 @@ div[data-placeholder] svg {
     height: 231px;
     border-radius: 3px;
     background-color: #efefef;
-    overflow: hidden;
 }
 
 .article-content .poster img {
