@@ -1,7 +1,7 @@
-{% if page.id %}
-{% assign postings = post %}
-{% else %}
+{% if page.category %}
 {% assign postings = page %}
+{% else %}
+{% assign postings = post %}
 {% endif %}
 {% assign rank = site.data.authors[postings.author].role | remove: "." %}
 {% capture role %}
