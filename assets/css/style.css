@@ -403,23 +403,14 @@ div[data-placeholder] svg {
 }
 
 .article-banner {
-    margin: 2rem 0;
     position: relative;
+    margin: 2rem 0;
 }
 
 .article-banner img {
     width: 100%;
     max-width: 768px;
     border-radius: 3px;
-}
-
-.article-banner {
-    list-style: none;  
-    position: relative; 
-    width: 800px;
-    height:300px;
-    margin:0 auto;
-    overflow: hidden;
 }
 
 .article-banner a {

@@ -262,14 +262,3 @@ jQuery(document).ready(function(){
     });
 
 });
-
-
-
-
-var sliders  = document.querySelectorAll(".article-banner a"), current  = 0, total    = sliders.length - 1;
-window.setInterval(function(){
-    var index =  current ? current - 1 : total;
-    sliders[index].className  = "";
-    sliders[current].className  = "slider-active";
-    current = current >= total ? 0 : current+1;     
-}, 4000);
