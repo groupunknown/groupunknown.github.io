@@ -1192,32 +1192,25 @@ div[data-placeholder] svg {
     justify-content: center;
     align-items: center;
     margin-bottom: 5rem;
+    gap: .5rem;
 }
 .pagination a {
     padding: .5rem 1rem;
     border: 1px solid #efefef;
-    border-left: 0;
+    border-radius: 3px;
 }
-.pagination .active {
+
+.pagination a.active {
     background: #efefef;
 }
+
 .pagination a:hover {
     background: #efefef;
     cursor: pointer;
 }
+
 .pagination a.active:hover {
     cursor: default;
-}
-.pagination a:first-child {
-    border: 1px solid #efefef;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-}
-.pagination a:last-child {
-    border: 1px solid #efefef;
-    border-left: 0;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
 }
 
 
