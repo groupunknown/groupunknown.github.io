@@ -3,6 +3,11 @@ layout: default
 ---
 
 <article class="post-main width-responsive">
-    <div class="back-to-home-page">Página inicial</div>
-    <div class="post-main-header">{{ page.title }}</div>
+    <div class="post-main-header">
+        <div class="back-to-home-page">
+            {% include article_author.html %}
+        </div>
+        <div class="post-main-title">{{ page.title }}</div>
+    </div>
+    <div class="post-main-content">123</div>
 </article>
