@@ -6,9 +6,7 @@ layout: default
 	{% for post in paginator.posts %}
 	{% include article.html %}
 		{% if forloop.index == 5 %}
-		<div class="article-banner">
-			<img src="{{ site.baseurl }}assets/img/banners/halo-banner-768x142.webp" loading="lazy">
-		</div>
+		{% include banner.html %}
 		{% endif %}
 	{% endfor %}
 	{% include pagination.html %}

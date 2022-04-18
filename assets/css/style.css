@@ -413,6 +413,31 @@ div[data-placeholder] svg {
     border-radius: 3px;
 }
 
+.article-banner {
+    list-style: none;  
+    position: relative; 
+    width: 800px;
+    height:300px;
+    margin:0 auto;
+    overflow: hidden;
+}
+
+.article-banner a {
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 0;
+    z-index: 0;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.article-banner a.slider-active{
+    z-index: 1;
+    opacity: 1;
+}
+
 .article {
     position: relative;
     gap: 1.5rem;
@@ -1670,3 +1695,8 @@ div[data-placeholder] svg {
         max-width: 768px;
     }
 }
+
+
+
+
+
