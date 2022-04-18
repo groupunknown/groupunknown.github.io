@@ -1,22 +1,27 @@
+{% if page.category %}
+{% assign postings = page %}
+{% else %}
+{% assign postings = post %}
+{% endif %}
 {% capture crtfctn_text %}
-{% if post.certification == "L" %}
+{% if postings.certification == "L" %}
 LIVRE PARA TODOS OS PÚBLICOS
-{% elsif post.certification == 10 %}
+{% elsif postings.certification == 10 %}
 NÃO RECOMENDADO PARA MENORES DE DEZ ANOS
-{% elsif post.certification == 12 %}
+{% elsif postings.certification == 12 %}
 NÃO RECOMENDADO PARA MENORES DE DOZE ANOS
-{% elsif post.certification == 14 %}
+{% elsif postings.certification == 14 %}
 NÃO RECOMENDADO PARA MENORES DE CATORZE ANOS
-{% elsif post.certification == 16 %}
+{% elsif postings.certification == 16 %}
 NÃO RECOMENDADO PARA MENORES DE DEZESSEIS ANOS
-{% elsif post.certification == 18 %}
+{% elsif postings.certification == 18 %}
 NÃO RECOMENDADO PARA MENORES DE DEZOITO ANOS
 {% else %}
 INDISPONÍVEL
 {% endif %}
 {% endcapture %}
 <div class="article-certification">
-	<div class="certification age-{{ post.certification | strip }}" aria-label="{{ crtfctn_text | strip }}" data-tooltipped="top-right" data-placeholder>
-		<a href="/classificacao?certification={{ post.certification | strip }}">{{ post.certification | strip }}</a>
+	<div class="certification age-{{ postings.certification | strip }}" aria-label="{{ crtfctn_text | strip }}" data-tooltipped="top-right" data-placeholder>
+		<a href="/classificacao?certification={{ postings.certification | strip }}">{{ postings.certification | strip }}</a>
 	</div>
 </div>

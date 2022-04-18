@@ -30,7 +30,8 @@
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 1rem 1.5rem;
+    padding: 1rem;
+    gap: 1rem;
     border: 1px solid #efefef;
     border-bottom: 0;
     border-top-left-radius: 4px;
