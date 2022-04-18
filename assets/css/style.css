@@ -1694,8 +1694,10 @@ div[data-placeholder] svg {
 
 
 /* Post page */
-.post-content {
+.post-main {
+    width: 100%;
+    margin: 0 auto;
     background: #fcfcfc;
-    border: 1px solid #efefef;
-    border-radius: 3px;
+    box-shadow: 0 0 10px #ddd;
+    border-radius: 4px;
 }
