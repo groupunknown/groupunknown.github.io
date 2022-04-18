@@ -404,6 +404,8 @@ div[data-placeholder] svg {
 
 .article-banner {
     position: relative;
+    width: 100%;
+    height: 142px;
     margin: 2rem 0;
 }
 
