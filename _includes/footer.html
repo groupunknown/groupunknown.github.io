@@ -4,7 +4,7 @@
 		Array.prototype.forEach.call(remove, (item) => item.removeAttribute('data-placeholder'));
 	});
 	var sliders  = document.querySelectorAll(".article-banner a"), current  = 0, total = sliders.length - 1;
-	if (typeof sliders[0] === "undefined") {
+	if (typeof sliders[0] !== "undefined") {
 		window.setInterval(function(){
 			var index =  current ? current - 1 : total;
 			sliders[index].className  = "";
