@@ -17,9 +17,10 @@
 </script>
 <script src="{{ site.baseurl }}/assets/js/search.js"></script>
 {% if page.category %}
+{% else %}
 <script>
 	document.addEventListener('DOMContentLoaded', function() {
-		document.querySelectorAll('.episodio-main-download').addEventListener("click", (event) => {
+		document.querySelector('.episodio-main-download').addEventListener("click", (event) => {
 			event.nextElementSibling.classList.toggle('active');
 		});
 	});
