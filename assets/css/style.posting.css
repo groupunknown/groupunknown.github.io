@@ -31,6 +31,7 @@
     align-items: center;
     width: 100%;
     padding: 1rem;
+    padding-bottom: 0;
     gap: 1rem;
     border: 1px solid #efefef;
     border-bottom: 0;
