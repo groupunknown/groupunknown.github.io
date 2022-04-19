@@ -42,7 +42,7 @@
 }
 
 .post-main-download {
-    padding: 1rem;
+    padding: 2rem 1rem 1rem 1rem;
     border: 1px solid #efefef;
     border-radius: 4px;
     border-top-right-radius: 0;
@@ -397,18 +397,9 @@
 }
 
 .episodio-content {
-    display: none;
+    display: grid;
     border: 1px solid #efefef;
     border-radius: 3px;
-}
-
-.episodio-content.active {
-    display: grid;
-}
-
-.episodio-main.active {
-    display: grid;
-    background: #f8f9fa;
 }
 
 .episodio-content-options {
