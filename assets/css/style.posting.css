@@ -267,6 +267,7 @@
 }
 
 /* Download */
+/*
 .temporada-main {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -383,6 +384,7 @@
     grid-column: 2 / 2;
     font-weight: 500;
 }
+*/
 
 .episodio-main-menu {
     display: grid;
@@ -465,8 +467,4 @@
 
 .episodio-content-download.active {
     display: grid;
-}
-
-.ecd-sorry {
-    text-align: center;
 }
