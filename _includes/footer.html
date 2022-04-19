@@ -14,6 +14,22 @@
 	}
 </script>
 <script src="{{ site.baseurl }}/assets/js/search.js"></script>
+
+{% if page.category %}
+<script>
+	$(document).ready(function(){
+		$('.temporada-main').click(function() {
+			$(this).toggleClass('active').next('.episodios-content').toggleClass('active');
+		});
+		$('.episodio-main').click(function() {
+			$(this).toggleClass('active').next('.episodio-content').toggleClass('active');
+		});
+		$('.episodio-main-download').click(function() {
+			$(this).next('.episodio-content-download').toggleClass('active');
+		});
+	});
+</script>
+{% endif %}
 {% if page.layout == "taxonomy" %}
 <script src="{{ site.baseurl }}/assets/js/pagination.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/index.js"></script>
