@@ -320,6 +320,10 @@
     grid-gap: .5rem;
 }
 
+.episodios-content.active {
+    display: grid
+}
+
 .episodio-main {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -401,6 +405,7 @@
 }
 
 .episodio-main.active {
+    display: grid;
     background: #f8f9fa;
 }
 
@@ -456,6 +461,10 @@
     padding: .5rem;
     word-wrap: break-word;
     word-break: break-all;
+}
+
+.episodio-content-download.active {
+    display: grid;
 }
 
 .ecd-sorry {
