@@ -2,7 +2,7 @@
 	window.addEventListener("load", function() { 
 		var remove = document.querySelectorAll('a, span, div, time');
 		Array.prototype.forEach.call(remove, (item) => item.removeAttribute('data-placeholder'));
-	});
+	});/*
 	try {
 		var sliders  = document.querySelectorAll(".article-banner a"), current  = 0, total = sliders.length - 1;
 		window.setInterval(function(){
@@ -13,7 +13,7 @@
 		}, 4000);
 	} catch (error) {
 
-	}
+	}*/
 </script>
 <script src="{{ site.baseurl }}/assets/js/search.js"></script>
 {% if page.category %}
