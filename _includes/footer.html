@@ -3,22 +3,24 @@
 		var remove = document.querySelectorAll('a, span, div, time');
 		Array.prototype.forEach.call(remove, (item) => item.removeAttribute('data-placeholder'));
 	});
-	var sliders  = document.querySelectorAll(".article-banner a"), current  = 0, total = sliders.length - 1;
-	if (!sliders) {
+	try {
+		var sliders  = document.querySelectorAll(".article-banner a"), current  = 0, total = sliders.length - 1;
 		window.setInterval(function(){
 			var index =  current ? current - 1 : total;
 			sliders[index].className  = "";
 			sliders[current].className  = "slider-active";
 			current = current >= total ? 0 : current+1;     
 		}, 4000);
+	} catch (error) {
+
 	}
 </script>
 <script src="{{ site.baseurl }}/assets/js/search.js"></script>
 {% if page.category %}
 <script>
-	$(document).ready(function(){
-		$('.episodio-main-download').click(function() {
-			$(this).next('.episodio-content-download').toggleClass('active');
+	document.addEventListener('DOMContentLoaded', function() {
+		document.querySelectorAll('.episodio-main-download').addEventListener("click", (event) => {
+			event.nextElementSibling.classList.toggle('active');
 		});
 	});
 </script>
