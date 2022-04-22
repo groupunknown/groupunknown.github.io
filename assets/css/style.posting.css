@@ -442,6 +442,10 @@
     display: grid;
 }
 
+.episodio-content-options div.active:last-child {
+    border-bottom: 0;
+}
+
 .episodio-content-options a {
     display: grid;
     grid-template-columns: auto auto;
