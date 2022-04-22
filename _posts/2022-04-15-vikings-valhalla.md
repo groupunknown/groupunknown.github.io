@@ -42,7 +42,7 @@ extensions:
   - mp4
 seasons:
   - season_number: 1
-    season_status: Completa
+    season_status: Completo
     episodes:
       - episode_number: 1
         downloads:
