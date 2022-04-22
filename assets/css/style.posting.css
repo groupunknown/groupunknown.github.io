@@ -386,6 +386,17 @@
 }
 */
 
+.season-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #efefef;
+    border-bottom: 0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
 .episodio-main-menu {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -399,7 +410,9 @@
 .episodio-content {
     display: grid;
     border: 1px solid #efefef;
-    border-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    margin-bottom: 1rem;
 }
 
 .episodio-content-options {
