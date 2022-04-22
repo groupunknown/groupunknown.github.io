@@ -51,28 +51,34 @@ seasons:
             size: 5GB
             server: Diversos
             urls:
-             - hostname: twitter.com
-               url: https://twitter.com/
-             - hostname: youtube.com
-               url: https://youtube.com/
+             - hostname: Uploaded
+               url: https://uploaded.net/
+             - hostname: 1fichier
+               url: https://1fichier.com/
+             - hostname: mega
+               url: https://mega.io/
           - quality: 720p
             audio: Dual Àudio
             size: 3GB
             server: Diversos
             urls:
-             - hostname: twitter.com
-               url: https://twitter.com/
-             - hostname: youtube.com
-               url: https://youtube.com/
+             - hostname: Uploaded
+               url: https://uploaded.net/
+             - hostname: 1fichier
+               url: https://1fichier.com/
+             - hostname: mega
+               url: https://mega.io/
           - quality: 480p
             audio: Dual Àudio
             size: 400MB
             server: Diversos
             urls:
-             - hostname: twitter.com
-               url: https://twitter.com/
-             - hostname: youtube.com
-               url: https://youtube.com/
+             - hostname: Uploaded
+               url: https://uploaded.net/
+             - hostname: 1fichier
+               url: https://1fichier.com/
+             - hostname: mega
+               url: https://mega.io/
       - episode_number: 2
         downloads:
           - quality: 1080p
@@ -80,28 +86,28 @@ seasons:
             size: 5GB
             server: Diversos
             urls:
-             - hostname: facebook.com
-               url: https://facebook.com/
-             - hostname: instagram.com
-               url: https://instagram.com/
+             - hostname: Uploaded
+               url: https://uploaded.net/
+             - hostname: 1fichier
+               url: https://1fichier.com/
           - quality: 720p
             audio: Dual Àudio
             size: 3GB
             server: Diversos
             urls:
-             - hostname: facebook.com
-               url: https://facebook.com/
-             - hostname: instagram.com
-               url: https://instagram.com/
+             - hostname: Uploaded
+               url: https://uploaded.net/
+             - hostname: 1fichier
+               url: https://1fichier.com/
           - quality: 480p
             audio: Dual Àudio
             size: 400MB
             server: Diversos
             urls:
-             - hostname: facebook.com
-               url: https://facebook.com/
-             - hostname: instagram.com
-               url: https://instagram.com/
+             - hostname: Uploaded
+               url: https://uploaded.net/
+             - hostname: 1fichier
+               url: https://1fichier.com/
   - season_number: 2
     season_status: Adicionando
     episodes:
@@ -112,28 +118,28 @@ seasons:
             size: 5GB
             server: Diversos
             urls:
-             - hostname: twitter.com
-               url: https://twitter.com/
-             - hostname: youtube.com
-               url: https://youtube.com/
+             - hostname: brfiles
+               url: https://brfiles.com/
+             - hostname: brupload
+               url: https://www.brupload.net/
           - quality: 720p
             audio: Dual Àudio
             size: 3GB
             server: Diversos
             urls:
-             - hostname: twitter.com
-               url: https://twitter.com/
-             - hostname: youtube.com
-               url: https://youtube.com/
+             - hostname: brfiles
+               url: https://brfiles.com/
+             - hostname: brupload
+               url: https://www.brupload.net/
           - quality: 480p
             audio: Dual Àudio
             size: 400MB
             server: Diversos
             urls:
-             - hostname: twitter.com
-               url: https://twitter.com/
-             - hostname: youtube.com
-               url: https://youtube.com/
+             - hostname: brfiles
+               url: https://brfiles.com/
+             - hostname: brupload
+               url: https://www.brupload.net/
       - episode_number: 2
         downloads:
           - quality: 1080p
@@ -141,26 +147,26 @@ seasons:
             size: 5GB
             server: Diversos
             urls:
-             - hostname: facebook.com
-               url: https://facebook.com/
-             - hostname: instagram.com
-               url: https://instagram.com/
+             - hostname: brfiles
+               url: https://brfiles.com/
+             - hostname: brupload
+               url: https://www.brupload.net/
           - quality: 720p
             audio: Dual Àudio
             size: 3GB
             server: Diversos
             urls:
-             - hostname: facebook.com
-               url: https://facebook.com/
-             - hostname: instagram.com
-               url: https://instagram.com/
+             - hostname: brfiles
+               url: https://brfiles.com/
+             - hostname: brupload
+               url: https://www.brupload.net/
           - quality: 480p
             audio: Dual Àudio
             size: 400MB
             server: Diversos
             urls:
-             - hostname: facebook.com
-               url: https://facebook.com/
-             - hostname: instagram.com
-               url: https://instagram.com/
+             - hostname: brfiles
+               url: https://brfiles.com/
+             - hostname: brupload
+               url: https://www.brupload.net/
 ---
