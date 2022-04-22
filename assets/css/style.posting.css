@@ -449,10 +449,6 @@
     border-bottom: 0;
 }
 
-.episode-content:last-child .episode-title {
-    border-bottom: 0;
-}
-
 .episode-content.active:last-child .episode-title {
     border-bottom: 1px solid #efefef;
 }
@@ -477,9 +473,9 @@
     border-top: 0;
 }
 
-/*.episode-content:last-child .episode-content-options.active {
-    border-top: 1px solid #efefef;
-}*/
+.episode-content:last-child .episode-content-options.active {
+    border-top: 0;
+}
 
 .episode-content-options a {
     display: grid;
