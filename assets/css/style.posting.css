@@ -387,15 +387,25 @@
 }
 */
 
+.feed__download-modal-content {
+    border: 1px solid #efefef;
+    border-radius: 3px;
+}
+
 .season-content {
     display: flex;
     align-items: center;
     gap: .5rem;
     padding: 1rem 2rem;
-    border: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+}
+
+.season-content:first-child {
+    border-top: 0;
+}
+
+.season-content:last-child {
     border-bottom: 0;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
 }
 
 .season-title {
@@ -411,7 +421,6 @@
 
 .episodio-title {
     padding: .5rem 2rem;
-    border-top: 1px solid #efefef;
     cursor: pointer;
 }
 
@@ -421,17 +430,14 @@
     place-items: center;
     padding: .5rem;
     font-size: .875rem;
-    border-top: 1px solid #efefef;
-    border-bottom: 1px solid #efefef;
 }
 
 .episodio-content {
     display: grid;
-    border: 1px solid #efefef;
-    border-top: 0;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    margin-bottom: 1rem;
+}
+
+.episodio-content > div {
+    border-bottom: 1px solid #efefef;
 }
 
 .episodio-content-options {
@@ -444,6 +450,14 @@
 
 .episodio-content-options div.active:last-child {
     border-bottom: 0;
+}
+
+.episodio-content-options.active > div {
+    border-top: 1px solid #efefef;
+}
+
+.episodio-content-options.active > div:first-child {
+    border-top: 0;
 }
 
 .episodio-content-options a {
