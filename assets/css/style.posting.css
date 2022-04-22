@@ -387,7 +387,7 @@
 }
 */
 
-.feed__download-modal-content {
+.download-content {
     border: 1px solid #efefef;
     border-radius: 3px;
 }
@@ -419,12 +419,12 @@
     text-transform: uppercase;
 }
 
-.episodio-title {
+.episode-title {
     padding: .5rem 2rem;
     cursor: pointer;
 }
 
-.episodio-main-menu {
+.episode-main-menu {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     place-items: center;
@@ -432,35 +432,42 @@
     font-size: .875rem;
 }
 
-.episodio-content {
+.episode-content {
     display: grid;
 }
 
-.episodio-content > div {
+.episode-content > div {
     border-bottom: 1px solid #efefef;
 }
-
-.episodio-content-options {
-    display: none;
-}
-
-.episodio-content-options.active {
-    display: grid;
-}
-
-.episodio-content-options div.active:last-child {
+.episodio-content:last-child > div:nth-last-child(2) {
     border-bottom: 0;
 }
 
-.episodio-content-options.active > div {
+.episode-content-options {
+    display: none;
+}
+
+.episode-content-options.active {
+    display: grid;
+}
+
+.episode-content-options div.active:last-child {
+    border-bottom: 0;
+}
+
+.episode-content-options.active > div {
     border-top: 1px solid #efefef;
 }
 
-.episodio-content-options.active > div:first-child {
+.episode-content-options.active > div:first-child {
     border-top: 0;
 }
 
-.episodio-content-options a {
+.episodio-content:last-child .episodio-content-options.active {
+    border-top: 1px solid #efefef;
+}
+
+.episode-content-options a {
     display: grid;
     grid-template-columns: auto auto;
     place-content: center;
@@ -471,28 +478,28 @@
     border-radius: 3px;
 }
 
-.episodio-content-options a:hover {
+.episode-content-options a:hover {
     background: #eeeeee;
 }
 
-.episodio-content-options a span {
+.episode-content-options a span {
     display: grid;
     place-items: center;
     padding: .25rem .5rem;
 }
 
-.episodio-main-download {
+.episode-main-download {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     place-items: center;
     padding: .5rem;
 }
 
-.episodio-main-download span:last-child {
+.episode-main-download span:last-child {
     cursor: pointer;
 }
 
-.episodio-content-download {
+.episode-content-download {
     display: none;
     grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
     grid-gap: .5rem;
@@ -501,7 +508,7 @@
     word-break: break-all;
 }
 
-.episodio-content-download.active {
+.episode-content-download.active {
     display: grid;
     box-shadow: inset 0px 0px 10px 0px rgb(100 100 100 / 10%);
 }
