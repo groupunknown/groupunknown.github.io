@@ -1,7 +1,7 @@
 {% if page.category == "Séries" %}
 <div class="feed__download-modal-content">
 {% for season in page.seasons %}
-    <div class="season-season-content">
+    <div class="season-content">
         <div class="season-title">{{ season.season_number }}ª Temporada</div>
         <div class="season-status {% if season.season_status == 'Completo' %}badge-3{% elsif season.season_status == 'Adicionando' %}badge-9{% endif %}">{{ season.season_status }}</div>
     </div>
