@@ -433,6 +433,10 @@
 }
 
 .episode-content {
+    display: none;
+}
+
+.episode-content.active {
     display: grid;
 }
 
@@ -441,6 +445,10 @@
 }
 
 .episode-content:last-child > div:nth-last-child(2) {
+    border-bottom: 0;
+}
+
+.episode-content:last-child .episode-title {
     border-bottom: 0;
 }
 
