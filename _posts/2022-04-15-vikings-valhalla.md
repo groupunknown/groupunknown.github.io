@@ -42,6 +42,7 @@ extensions:
   - mp4
 seasons:
   - season_number: 1
+    season_status: Completa
     episodes:
       - episode_number: 1
         downloads:
@@ -102,6 +103,7 @@ seasons:
              - hostname: instagram.com
                url: https://instagram.com/
   - season_number: 2
+    season_status: Adicionando
     episodes:
       - episode_number: 1
         downloads:

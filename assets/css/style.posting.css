@@ -386,21 +386,32 @@
 }
 */
 
-.season-title {
+.season-content {
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 1rem;
+    gap: .5rem;
+    padding: 1rem 2rem;
     border: 1px solid #efefef;
     border-bottom: 0;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
+}
+
+.season-title {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.season-status {
+    padding: 0 0.5rem;
+    border-radius: 3px;
     text-transform: uppercase;
 }
 
 .episodio-title {
     padding: .5rem 2rem;
     border-top: 1px solid #efefef;
+    cursor: pointer;
 }
 
 .episodio-main-menu {
