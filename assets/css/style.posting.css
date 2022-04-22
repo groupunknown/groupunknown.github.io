@@ -395,6 +395,12 @@
     border-bottom: 0;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
+    text-transform: uppercase;
+}
+
+.episodio-title {
+    padding: .5rem 2rem;
+    border-top: 1px solid #efefef;
 }
 
 .episodio-main-menu {
@@ -403,6 +409,7 @@
     place-items: center;
     padding: .5rem;
     font-size: .875rem;
+    border-top: 1px solid #efefef;
     border-bottom: 1px solid #efefef;
     box-shadow: 0 4px 6px -1px #f8f9fa, 0 2px 4px -1px #f8f9fa;
 }
@@ -410,14 +417,19 @@
 .episodio-content {
     display: grid;
     border: 1px solid #efefef;
+    border-top: 0;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     margin-bottom: 1rem;
 }
 
 .episodio-content-options {
-    display: grid;
+    display: none;
     box-shadow: inset 0px 0px 10px 0px rgb(0 0 0 / 5%);
+}
+
+.episodio-content-options.active {
+    display: grid;
 }
 
 .episodio-content-options a {
