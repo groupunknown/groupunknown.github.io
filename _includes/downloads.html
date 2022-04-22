@@ -1,5 +1,7 @@
 {% if page.category == "Séries" %}
 <div class="feed__download-modal-content">
+{% for season in page.seasons %}
+    <div class="season-title">{{ season.season_number }}</div>
     <div class="episodio-content">
         <div class="episodio-main-menu">
             <span>Qualidade</span>
@@ -8,72 +10,34 @@
             <span>Servidor</span>
             <span>Download</span>
         </div>
+        {% for episode in season.episodes %}
+        <div class="episodio-title">{{ episode.episode_number }} episódio</div>
         <div class="episodio-content-options">
+            {% for download in episode.downloads %}
             <div class="episodio-main-download">
-                <span>1080p</span>
-                <span>Dual Àudio</span>
-                <span>5GB</span>
-                <span>Diversos</span>
+                <span>{{ download.quality }}</span>
+                <span>{{ download.audio }}</span>
+                <span>{{ download.size }}</span>
+                <span>{{ download.server }}</span>
                 <span>Opções</span>
             </div>
+            {% endfor %}
             <div class="episodio-content-download">
-                <a href="https://twitter.com/">
-                    <span>
-                        <img src="https://s2.googleusercontent.com/s2/favicons?domain=twitter.com" />
-                    </span>
-                    <span>twitter.com</span>
-                </a>
-                <a href="https://youtube.com/">
-                    <span>
-                        <img src="https://s2.googleusercontent.com/s2/favicons?domain=youtube.com" />
-                    </span>
-                    <span>youtube.com</span>
-                </a>
-            </div>
-            <div class="episodio-main-download">
-                <span>720p</span>
-                <span>Dual Àudio</span>
-                <span>3GB</span>
-                <span>Diversos</span>
-                <span>Opções</span>
-            </div>
-            <div class="episodio-content-download">
-                <a href="https://twitter.com/">
-                    <span>
-                        <img src="https://s2.googleusercontent.com/s2/favicons?domain=twitter.com" />
-                    </span>
-                    <span>twitter.com</span>
-                </a>
-                <a href="https://youtube.com/">
-                    <span>
-                        <img src="https://s2.googleusercontent.com/s2/favicons?domain=youtube.com" />
-                    </span>
-                    <span>youtube.com</span>
-                </a>
-            </div>
-            <div class="episodio-main-download">
-                <span>480p</span>
-                <span>Dual Àudio</span>
-                <span>400MB</span>
-                <span>Diversos</span>
-                <span>Opções</span>
-            </div>
-            <div class="episodio-content-download">
-                <a href="https://twitter.com/">
-                    <span>
-                        <img src="https://s2.googleusercontent.com/s2/favicons?domain=twitter.com" />
-                    </span>
-                    <span>twitter.com</span>
-                </a>
-                <a href="https://youtube.com/">
-                    <span>
-                        <img src="https://s2.googleusercontent.com/s2/favicons?domain=youtube.com" />
-                    </span>
-                    <span>youtube.com</span>
-                </a>
+            {% for download in episode.downloads %}
+                {% for link in download.urls %}
+                    <a href="{{ link.url }}">
+                        <span>
+                            <img src="https://s2.googleusercontent.com/s2/favicons?domain={{ link.url }}" />
+                        </span>
+                        <span>{{ link.hostname }}</span>
+                    </a>                
+                {% endfor %}
+            {% endfor %}
             </div>
         </div>
+        {% endfor %}
     </div>
+{% endfor %}
 </div>
 {% else %}
 

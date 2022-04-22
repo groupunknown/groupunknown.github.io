@@ -40,4 +40,125 @@ audios:
 extensions:
   - mkv
   - mp4
+seasons:
+  - season_number: 1
+    episodes:
+      - episode_number: 1
+        downloads:
+          - quality: 1080p
+            audio: Dual Àudio
+            size: 5GB
+            server: Diversos
+            urls:
+             - hostname: twitter.com
+               url: https://twitter.com/
+             - hostname: youtube.com
+               url: https://youtube.com/
+          - quality: 720p
+            audio: Dual Àudio
+            size: 3GB
+            server: Diversos
+            urls:
+             - hostname: twitter.com
+               url: https://twitter.com/
+             - hostname: youtube.com
+               url: https://youtube.com/
+          - quality: 480p
+            audio: Dual Àudio
+            size: 400MB
+            server: Diversos
+            urls:
+             - hostname: twitter.com
+               url: https://twitter.com/
+             - hostname: youtube.com
+               url: https://youtube.com/
+      - episode_number: 2
+        downloads:
+          - quality: 1080p
+            audio: Dual Àudio
+            size: 5GB
+            server: Diversos
+            urls:
+             - hostname: facebook.com
+               url: https://facebook.com/
+             - hostname: instagram.com
+               url: https://instagram.com/
+          - quality: 720p
+            audio: Dual Àudio
+            size: 3GB
+            server: Diversos
+            urls:
+             - hostname: facebook.com
+               url: https://facebook.com/
+             - hostname: instagram.com
+               url: https://instagram.com/
+          - quality: 480p
+            audio: Dual Àudio
+            size: 400MB
+            server: Diversos
+            urls:
+             - hostname: facebook.com
+               url: https://facebook.com/
+             - hostname: instagram.com
+               url: https://instagram.com/
+  - season_number: 2
+    episodes:
+      - episode_number: 1
+        downloads:
+          - quality: 1080p
+            audio: Dual Àudio
+            size: 5GB
+            server: Diversos
+            urls:
+             - hostname: twitter.com
+               url: https://twitter.com/
+             - hostname: youtube.com
+               url: https://youtube.com/
+          - quality: 720p
+            audio: Dual Àudio
+            size: 3GB
+            server: Diversos
+            urls:
+             - hostname: twitter.com
+               url: https://twitter.com/
+             - hostname: youtube.com
+               url: https://youtube.com/
+          - quality: 480p
+            audio: Dual Àudio
+            size: 400MB
+            server: Diversos
+            urls:
+             - hostname: twitter.com
+               url: https://twitter.com/
+             - hostname: youtube.com
+               url: https://youtube.com/
+      - episode_number: 2
+        downloads:
+          - quality: 1080p
+            audio: Dual Àudio
+            size: 5GB
+            server: Diversos
+            urls:
+             - hostname: facebook.com
+               url: https://facebook.com/
+             - hostname: instagram.com
+               url: https://instagram.com/
+          - quality: 720p
+            audio: Dual Àudio
+            size: 3GB
+            server: Diversos
+            urls:
+             - hostname: facebook.com
+               url: https://facebook.com/
+             - hostname: instagram.com
+               url: https://instagram.com/
+          - quality: 480p
+            audio: Dual Àudio
+            size: 400MB
+            server: Diversos
+            urls:
+             - hostname: facebook.com
+               url: https://facebook.com/
+             - hostname: instagram.com
+               url: https://instagram.com/
 ---
