@@ -16,13 +16,13 @@
 <script src="{{ site.baseurl }}/assets/js/search.js"></script>
 {% if page.category %}
 <script>
-	var epdown = document.querySelectorAll(".episodio-main-download");
+	var epdown = document.querySelectorAll(".episode-main-download");
 	for (let i = 0; i < epdown.length; i++) {
 		epdown[i].addEventListener("click", function() {
 			epdown[i].nextElementSibling.classList.toggle("active");
 		});
 	}
-	var epshow = document.querySelectorAll(".episodio-title");
+	var epshow = document.querySelectorAll(".episode-title");
 	for (let i = 0; i < epshow.length; i++) {
 		epshow[i].addEventListener("click", function() {
 			epshow[i].nextElementSibling.classList.toggle("active");
