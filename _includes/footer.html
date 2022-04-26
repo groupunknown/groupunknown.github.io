@@ -25,7 +25,6 @@
 	}
 	var episode_show = document.querySelectorAll(".episode-title");
 	for (let i = 0; i < episode_show.length; i++) {
-		episode_show.classList.toggle("active");
 		episode_show[i].addEventListener("click", function() {
 			episode_show[i].classList.toggle("show");
 			episode_show[i].nextElementSibling.classList.toggle("active");
