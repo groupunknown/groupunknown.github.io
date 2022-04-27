@@ -16,7 +16,19 @@
 <script src="{{ site.baseurl }}/assets/js/search.js"></script>
 {% if page.category %}
 <script>
-	var season_show = document.querySelectorAll(".season-content");
+	const accordion = (a) => {
+		var show = document.querySelectorAll(a);
+		for (let i = 0; i < show.length; i++) {
+			show[i].addEventListener("click", function() {
+				show[i].classList.toggle("show");
+				show[i].nextElementSibling.classList.toggle("active");
+			});
+		}
+	};
+	accordion(".season-content");
+	accordion(".episode-title");
+	accordion(".episode-main-download");
+	/*var season_show = document.querySelectorAll(".season-content");
 	for (let i = 0; i < season_show.length; i++) {
 		season_show[i].addEventListener("click", function() {
 			season_show[i].classList.toggle("show");
@@ -36,7 +48,7 @@
 			download_show[i].classList.toggle("show");
 			download_show[i].nextElementSibling.classList.toggle("active");
 		});
-	}
+	}*/
 </script>
 {% if site.encrypt_status %}
 <script>
