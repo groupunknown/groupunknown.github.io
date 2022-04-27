@@ -50,7 +50,7 @@
 		var textToChars = (text) => text.split("").map((c) => c.charCodeAt(0)), applySaltToChar = (code) => textToChars(salt).reduce((a, b) => a ^ b, code);
 		return encoded.match(/.{1,2}/g).map((hex) => parseInt(hex, 16)).map(applySaltToChar).map((charCode) => String.fromCharCode(charCode)).join("");
 	}
-	var url_redirect = "https://groupunknown.com/?url=", urls_bases = [{{ site.encrypt_urls_bases | join: ", " }}];
+	var url_redirect = "https://groupunknown.com/?url=", urls_bases = {{ site.encrypt_urls_bases | jsonify }};
 	for (let url of urls_bases){
 		const all_urls = document.querySelectorAll("a[href*='" + url + "']");
 		all_urls.forEach(value => {
