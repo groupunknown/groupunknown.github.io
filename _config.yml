@@ -14,7 +14,7 @@ webmaster_verifications:
   #yandex: 
   #baidu: 
 
-encrypt_status: true
+encrypt_status: false
 encrypt_key: sua_chave
 encrypt_url_redirect: https://groupunknown.com/?url=
 encrypt_urls_bases:

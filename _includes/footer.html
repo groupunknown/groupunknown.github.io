@@ -40,24 +40,23 @@
 </script>
 {% if site.encrypt_status %}
 <script>
-	const encrypt = (salt, text) => {
-		const textToChars = (text) => text.split("").map((c) => c.charCodeAt(0)), byteHex = (n) => ("0" + Number(n).toString(16)).substr(-2), applySaltToChar = (code) => textToChars(salt).reduce((a, b) => a ^ b, code);
-		return text.split("").map(textToChars).map(applySaltToChar).map(byteHex).join("");
-	};
-	/* REMOVER O DECRYPT QUANDO FOR PARA PRODUÇÃO */
-	const decrypt = (salt, encoded) => {
-		const textToChars = (text) => text.split("").map((c) => c.charCodeAt(0)), applySaltToChar = (code) => textToChars(salt).reduce((a, b) => a ^ b, code);
-		return encoded.match(/.{1,2}/g).map((hex) => parseInt(hex, 16)).map(applySaltToChar).map((charCode) => String.fromCharCode(charCode)).join("");
-	};
-	const url_redirect = "{{ site.encrypt_url_redirect }}", urls_bases = {{ site.encrypt_urls_bases | jsonify }};
-	for (let url of urls_bases){
-		const all_urls = document.querySelectorAll("a[href*='" + url + "']");
-		all_urls.forEach(value => {
-			const url_encrypt = encrypt("{{ site.encrypt_key }}", value.getAttribute("href"));
-			value.setAttribute("href", url_redirect + url_encrypt);
-			value.setAttribute("target", "_blank");
-		});
-	}
+const encrypt = (salt, text) => {
+	const textToChars = (text) => text.split("").map((c) => c.charCodeAt(0)), byteHex = (n) => ("0" + Number(n).toString(16)).substr(-2), applySaltToChar = (code) => textToChars(salt).reduce((a, b) => a ^ b, code);
+	return text.split("").map(textToChars).map(applySaltToChar).map(byteHex).join("");
+};
+const decrypt = (salt, encoded) => {
+	const textToChars = (text) => text.split("").map((c) => c.charCodeAt(0)), applySaltToChar = (code) => textToChars(salt).reduce((a, b) => a ^ b, code);
+	return encoded.match(/.{1,2}/g).map((hex) => parseInt(hex, 16)).map(applySaltToChar).map((charCode) => String.fromCharCode(charCode)).join("");
+};
+const url_redirect = "{{ site.encrypt_url_redirect }}", urls_bases = {{ site.encrypt_urls_bases | jsonify }};
+for (let url of urls_bases){
+	const all_urls = document.querySelectorAll("a[href*='" + url + "']");
+	all_urls.forEach(value => {
+		const url_encrypt = encrypt("{{ site.encrypt_key }}", value.getAttribute("href"));
+		value.setAttribute("href", url_redirect + url_encrypt);
+		value.setAttribute("target", "_blank");
+	});
+}
 </script>
 {% endif %}
 {% endif %}
