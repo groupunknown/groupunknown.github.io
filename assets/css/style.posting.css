@@ -393,6 +393,10 @@
     border-radius: 3px;
 }
 
+.download-content .show {
+    background: #f3f3f3;
+}
+
 .season-content {
     display: flex;
     justify-content: space-between;
