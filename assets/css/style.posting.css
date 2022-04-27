@@ -503,6 +503,14 @@
     padding: .25rem .5rem;
 }
 
+.episode-content-options a span:last-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
 .episode-main-download {
     display: grid;
     grid-template-columns: repeat(5, 1fr);

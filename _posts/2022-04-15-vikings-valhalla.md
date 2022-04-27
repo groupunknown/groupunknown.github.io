@@ -51,18 +51,28 @@ seasons:
             size: 5GB
             extension: MKV
             urls:
-             - hostname: Uploaded
+             - hostname: uploaded
                url: https://uploaded.net/
              - hostname: 1fichier
                url: https://1fichier.com/
              - hostname: mega
                url: https://mega.io/
+             - hostname: brfiles
+               url: https://brfiles.com/
+             - hostname: brupload
+               url: https://www.brupload.net/
+             - hostname: dropbox
+               url: https://www.dropbox.com/
+             - hostname: pcloud
+               url: https://www.pcloud.com/
+             - hostname: box
+               url: https://www.box.com/
           - quality: 720p
             audio: Dual Àudio
             size: 5GB
             extension: MKV
             urls:
-             - hostname: Uploaded
+             - hostname: uploaded
                url: https://uploaded.net/
              - hostname: 1fichier
                url: https://1fichier.com/
@@ -73,7 +83,7 @@ seasons:
             size: 400MB
             extension: MKV
             urls:
-             - hostname: Uploaded
+             - hostname: uploaded
                url: https://uploaded.net/
              - hostname: 1fichier
                url: https://1fichier.com/
@@ -86,7 +96,7 @@ seasons:
             size: 5GB
             extension: MKV
             urls:
-             - hostname: Uploaded
+             - hostname: uploaded
                url: https://uploaded.net/
              - hostname: 1fichier
                url: https://1fichier.com/
@@ -95,7 +105,7 @@ seasons:
             size: 3GB
             extension: MKV
             urls:
-             - hostname: Uploaded
+             - hostname: uploaded
                url: https://uploaded.net/
              - hostname: 1fichier
                url: https://1fichier.com/
@@ -104,7 +114,7 @@ seasons:
             size: 400MB
             extension: MKV
             urls:
-             - hostname: Uploaded
+             - hostname: uploaded
                url: https://uploaded.net/
              - hostname: 1fichier
                url: https://1fichier.com/
