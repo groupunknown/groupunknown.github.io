@@ -13,7 +13,7 @@
                 <span>Qualidade</span>
                 <span>Áudio</span>
                 <span>Tamanho</span>
-                <span>Servidor</span>
+                <span>Extensão</span>
                 <span>Download</span>
             </div>
             {% for download in episode.downloads %}
@@ -21,7 +21,7 @@
                 <span>{{ download.quality }}</span>
                 <span>{{ download.audio }}</span>
                 <span>{{ download.size }}</span>
-                <span>{{ download.server }}</span>
+                <span>{{ download.extension }}</span>
                 <span>Opções</span>
             </div>
             <div class="episode-content-download">
@@ -30,8 +30,8 @@
                     <span>
                         <img src="https://s2.googleusercontent.com/s2/favicons?domain={{ link.url }}" />
                     </span>
-                    <span>{{ link.hostname }}</span>
-                </a>                
+                    <span>{{ link.hostname }} – {{ download.size }} / {{ download.extension }}</span>
+                </a>
                 {% endfor %}
             </div>
             {% endfor %}

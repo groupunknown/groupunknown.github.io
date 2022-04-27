@@ -49,7 +49,7 @@ seasons:
           - quality: 1080p
             audio: Dual Àudio
             size: 5GB
-            server: Diversos
+            extension: MKV
             urls:
              - hostname: Uploaded
                url: https://uploaded.net/
@@ -59,8 +59,8 @@ seasons:
                url: https://mega.io/
           - quality: 720p
             audio: Dual Àudio
-            size: 3GB
-            server: Diversos
+            size: 5GB
+            extension: MKV
             urls:
              - hostname: Uploaded
                url: https://uploaded.net/
@@ -71,7 +71,7 @@ seasons:
           - quality: 480p
             audio: Dual Àudio
             size: 400MB
-            server: Diversos
+            extension: MKV
             urls:
              - hostname: Uploaded
                url: https://uploaded.net/
@@ -84,7 +84,7 @@ seasons:
           - quality: 1080p
             audio: Dual Àudio
             size: 5GB
-            server: Diversos
+            extension: MKV
             urls:
              - hostname: Uploaded
                url: https://uploaded.net/
@@ -93,7 +93,7 @@ seasons:
           - quality: 720p
             audio: Dual Àudio
             size: 3GB
-            server: Diversos
+            extension: MKV
             urls:
              - hostname: Uploaded
                url: https://uploaded.net/
@@ -102,7 +102,7 @@ seasons:
           - quality: 480p
             audio: Dual Àudio
             size: 400MB
-            server: Diversos
+            extension: MKV
             urls:
              - hostname: Uploaded
                url: https://uploaded.net/
@@ -116,7 +116,7 @@ seasons:
           - quality: 1080p
             audio: Dual Àudio
             size: 5GB
-            server: Diversos
+            extension: MKV
             urls:
              - hostname: brfiles
                url: https://brfiles.com/
@@ -125,7 +125,7 @@ seasons:
           - quality: 720p
             audio: Dual Àudio
             size: 3GB
-            server: Diversos
+            extension: MKV
             urls:
              - hostname: brfiles
                url: https://brfiles.com/
@@ -134,7 +134,7 @@ seasons:
           - quality: 480p
             audio: Dual Àudio
             size: 400MB
-            server: Diversos
+            extension: MKV
             urls:
              - hostname: brfiles
                url: https://brfiles.com/
@@ -145,7 +145,7 @@ seasons:
           - quality: 1080p
             audio: Dual Àudio
             size: 5GB
-            server: Diversos
+            extension: MKV
             urls:
              - hostname: brfiles
                url: https://brfiles.com/
@@ -154,7 +154,7 @@ seasons:
           - quality: 720p
             audio: Dual Àudio
             size: 3GB
-            server: Diversos
+            extension: MKV
             urls:
              - hostname: brfiles
                url: https://brfiles.com/
@@ -163,7 +163,7 @@ seasons:
           - quality: 480p
             audio: Dual Àudio
             size: 400MB
-            server: Diversos
+            extension: MKV
             urls:
              - hostname: brfiles
                url: https://brfiles.com/
