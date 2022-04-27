@@ -16,6 +16,7 @@ webmaster_verifications:
 
 encrypt_status: true
 encrypt_key: sua_chave
+encrypt_url_redirect: https://groupunknown.com/?url=
 encrypt_urls_bases:
   - google.com
   - mega.nz
