@@ -14,6 +14,22 @@ webmaster_verifications:
   #yandex: 
   #baidu: 
 
+encrypt_status: true
+encrypt_key: sua_chave
+encrypt_urls_bases:
+  - google.com
+  - mega.nz
+  - mega.io
+  - 1fichier.com
+  - uptobox.com
+  - ul.to
+  - uploaded.net
+  - brupload.net
+  - brfiles.com
+  - magnet:?xt
+  - magnet:?xt=urn:btih
+  - magnet
+
 baseurl: ""
 permalink: pretty
 

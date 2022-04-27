@@ -38,6 +38,30 @@
 		});
 	}
 </script>
+{% if site.encrypt_status %}
+<script>
+(()=> {
+	var encrypt = (salt, text) => {
+		var textToChars = (text) => text.split("").map((c) => c.charCodeAt(0)), byteHex = (n) => ("0" + Number(n).toString(16)).substr(-2), applySaltToChar = (code) => textToChars(salt).reduce((a, b) => a ^ b, code);
+		return text.split("").map(textToChars).map(applySaltToChar).map(byteHex).join("");
+	}
+	/* REMOVER O DECRYPT QUANDO FOR PARA PRODUÇÃO */
+	var decrypt = (salt, encoded) => {
+		var textToChars = (text) => text.split("").map((c) => c.charCodeAt(0)), applySaltToChar = (code) => textToChars(salt).reduce((a, b) => a ^ b, code);
+		return encoded.match(/.{1,2}/g).map((hex) => parseInt(hex, 16)).map(applySaltToChar).map((charCode) => String.fromCharCode(charCode)).join("");
+	}
+	var url_redirect = "https://groupunknown.com/?url=", urls_bases = [{{ site.encrypt_urls_bases | join: ", " }}];
+	for (let url of urls_bases){
+		const all_urls = document.querySelectorAll("a[href*='" + url + "']");
+		all_urls.forEach(value => {
+			var url_encrypt = encrypt("{{ site.encrypt_key }}", value.getAttribute("href"));
+			value.setAttribute("href", url_redirect + url_encrypt)
+			value.setAttribute("target", "_blank")
+		});
+	}
+})();
+</script>
+{% endif %}
 {% endif %}
 {% if page.layout == "taxonomy" %}
 <script src="{{ site.baseurl }}/assets/js/pagination.min.js"></script>
