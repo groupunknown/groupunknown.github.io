@@ -37,23 +37,16 @@ layout: null
             "seasons": [{% for season in post.seasons %}
                 {
                     "season_number": {{ season.season_number | jsonify }},
-                    "name": {{ season.name | jsonify }},
-                    "overview": {{ season.overview | jsonify }},
-                    "air_date": {{ season.air_date | jsonify }},
+                    "season_status": {{ season.season_status | jsonify }},
                     "episodes": [{% for episode in season.episodes %}
                         {
                             "episode_number": {{ episode.episode_number | jsonify }},
-                            "name": {{ episode.name | jsonify }},
-                            "overview": {{ episode.overview | jsonify }},
-                            "air_date": {{ episode.air_date | jsonify }},
-                            "vote_average": {{ episode.vote_average | jsonify }},
-                            "vote_count": {{ episode.vote_count | jsonify }},
                             "downloads": [{% for download in episode.downloads %}
                                 {
                                     "quality": {{ download.quality | jsonify }},
                                     "audio": {{ download.audio | jsonify }},
                                     "size": {{ download.size | jsonify }},
-                                    "server": {{ download.server | jsonify }},
+                                    "extension": {{ download.extension | jsonify }},
                                     "urls": [{% for link in download.urls %}
                                         {
                                             "hostname": {{ link.hostname | jsonify }},

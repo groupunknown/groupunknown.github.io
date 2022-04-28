@@ -20,7 +20,7 @@ layout: null
             "id": "{{ post.url | absolute_url | sha1 }}",
             "title": {{ post.title | jsonify }},
             "summary": {{ post.description | jsonify }},
-            "content_html": {{ post.overview | strip_newlines | jsonify }},
+            "content_html": {{ post.description | strip_newlines | jsonify }},
             "url": "{{ post.url | absolute_url }}",
             "date_published": "{{ post.date | date_to_xmlschema }}",
             "date_modified": "{{ post.date | date_to_xmlschema }}",{% if post.author %}
