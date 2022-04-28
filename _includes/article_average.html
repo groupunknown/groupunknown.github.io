@@ -35,15 +35,9 @@
 {% if postings.vote_count == 0 %}
 Nenhuma avaliação
 {% elsif postings.vote_count <= 1 %}
-<<<<<<< HEAD
-	{% assign rating = {{postings.vote_count}} avaliação %}
-{% elsif postings.vote_count >= 2 %}
-	{% assign rating = {{postings.vote_count}} avaliações %}
-=======
 {{postings.vote_count}} avaliação
 {% elsif postings.vote_count >= 2 %}
 {{postings.vote_count}} avaliações
->>>>>>> parent of d8bcca6 (Update article_average.html)
 {% endif %}
 {% endcapture %}
 <div class="article-rating">
