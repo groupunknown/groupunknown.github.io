@@ -34,9 +34,9 @@
 {% if postings.vote_count == 0 %}
 	{% assign rating = "Nenhuma avaliação" %}
 {% elsif postings.vote_count <= 1 %}
-	{% assign rating = "{{postings.vote_count}} avaliação" %}
+	{% assign rating = {{postings.vote_count}} avaliação %}
 {% elsif postings.vote_count >= 2 %}
-	{% assign rating = "{{postings.vote_count}} avaliações" %}
+	{% assign rating = {{postings.vote_count}} avaliações %}
 {% endif %}
 
 <div class="article-rating">
