@@ -146,6 +146,9 @@ div[data-placeholder] svg {
 
 .alert {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
     width: 100%;
     height: auto;
     padding: 1rem;
@@ -156,10 +159,14 @@ div[data-placeholder] svg {
     border: 1px dashed #886701;
 }
 
+.alert div:first-child {
+    font-size: 2rem;
+}
+
 .alert span {
     color: #4caf50;
     font-weight: 500;
-    text-decoration: underline 2px #4caf50;
+    text-decoration: underline 3px #4caf50;
 }
 
 .alert a {
@@ -300,7 +307,7 @@ div[data-placeholder] svg {
 .main {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 5rem;
     width: 100%;
     min-height: 100%;
     margin: 0 auto;
