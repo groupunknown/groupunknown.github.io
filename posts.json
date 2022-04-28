@@ -17,7 +17,7 @@ layout: null
             "post_date": {{ post.post_date | jsonify }},
             "post_modified": {{ post.post_modified | jsonify }},
             "title": {{ post.title | jsonify }},
-            "description": {{ post.overview | jsonify }},
+            "description": {{ post.description | jsonify }},
             "poster_path": {{ post.poster_path | jsonify }},
             "tmdb_id": {{ post.tmdb_id | jsonify }},
             "imdb_id": {{ post.imdb_id | jsonify }},
@@ -47,12 +47,14 @@ layout: null
                                     "audio": {{ download.audio | jsonify }},
                                     "size": {{ download.size | jsonify }},
                                     "extension": {{ download.extension | jsonify }},
+                                    {% comment %}
                                     "urls": [{% for link in download.urls %}
                                         {
                                             "hostname": {{ link.hostname | jsonify }},
                                             "url": {{ link.url | jsonify }}
                                         }{% unless forloop.last %},{% endunless %}{% endfor %}
                                     ]
+                                    {% endcomment %}
                                 }{% unless forloop.last %},{% endunless %}{% endfor %}
                             ]
                         }{% unless forloop.last %},{% endunless %}{% endfor %}
