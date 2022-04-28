@@ -47,6 +47,7 @@ layout: null
                                     "audio": {{ download.audio | jsonify }},
                                     "size": {{ download.size | jsonify }},
                                     "extension": {{ download.extension | jsonify }},
+                                    "urls": null
                                     {% comment %}
                                     "urls": [{% for link in download.urls %}
                                         {
