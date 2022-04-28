@@ -3,7 +3,10 @@ layout: default
 ---
 <div class="main width-responsive">
 	<noscript>
-    	<div class="alert"></div>
+    	<div class="alert">
+    		<div>Olá <span>visitante</span>, parece que o javascript está desabilitado!</div>
+    		<div>Alguns recursos no site necessitam do javascript para funcionar corretamente, como, por exemplo, o buscador em tempo real e outras funcionalidades estéticas, mas não se preocupe, o site e <span>livre de popups irritantes ou anúncios invasivos</span>, entretanto você precisa <span>habilitar o javascript</span> para continuar.</div> Aqui estão as <a href="https://www.enable-javascript.com/pt/">instruções de como habilitar o JavaScript no seu navegador</a>.
+    	</div>
     </noscript>
 	<div class="column articles">
 	{% for post in paginator.posts %}
