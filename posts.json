@@ -49,8 +49,8 @@ layout: null
                                     "extension": {{ download.extension | jsonify }},
                                     "urls": [{% for link in download.urls %}
                                         {
-                                            "hostname": {% comment %}{{ link.hostname | jsonify }}{% endcomment %} null,
-                                            "url": {% comment %}{{ link.url | jsonify }}{% endcomment %} null
+                                            "hostname": {% comment %}{{ link.hostname | jsonify }}{% endcomment %}null,
+                                            "url": {% comment %}{{ link.url | jsonify }}{% endcomment %}null
                                         }{% unless forloop.last %},{% endunless %}{% endfor %}
                                     ]
                                 }{% unless forloop.last %},{% endunless %}{% endfor %}
