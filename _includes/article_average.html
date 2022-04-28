@@ -4,42 +4,41 @@
 {% assign postings = post %}
 {% endif %}
 {% assign vote_average = postings.vote_average | remove: "." %}
-{% assign pessimo = "10,11,12,13,14,15,16,17,18,19,20" | split: ',' %}
-{% assign ruim = "21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40" | split: ',' %}
-{% assign aceitavel = "41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60" | split: ',' %}
-{% assign otimo = "61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80" | split: ',' %}
-{% assign execelente = "81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100" | split: ',' %}
-{% if pessimo contains vote_average %}
-{% assign status_text = "Péssimo" %}
-{% elsif ruim contains vote_average %}
-{% assign status_text = "Ruim" %}
-{% elsif aceitavel contains vote_average %}
-{% assign status_text = "Aceitável" %}
-{% elsif otimo contains vote_average %}
-{% assign status_text = "Ótimo" %}
-{% elsif execelente contains vote_average %}
-{% assign status_text = "Excelente" %}
-{% else %}
-{% assign status_text = "Nenhum" %}
+{% if vote_average == "00" %}
+	{% assign status_text = "Nenhum" %}
 {% endif %}
+{% for vote_average in (1..20) %}
+	{% assign status_text = "Péssimo" %}
+{% endfor %}
+{% for vote_average in (21..40) %}
+	{% assign status_text = "Ruim" %}
+{% endfor %}
+{% for vote_average in (41..60) %}
+	{% assign status_text = "Aceitável" %}
+{% endfor %}
+{% for vote_average in (61..80) %}
+	{% assign status_text = "Ótimo" %}
+{% endfor %}
+{% for vote_average in (81..100) %}
+	{% assign status_text = "Excelente" %}
+{% endfor %}
 {% if vote_average contains "100" %}
-{% assign status_num = "10" %}
+	{% assign status_num = "10" %}
 {% endif %}
 {% if vote_average == "00" %}
-{% assign status_num = "N/A" %}
+	{% assign status_num = "N/A" %}
 {% endif %}
 {% if vote_average != "00" and vote_average != "100" %}
-{% assign status_num = postings.vote_average %}
+	{% assign status_num = postings.vote_average %}
 {% endif %}
-{% capture rating %}
 {% if postings.vote_count == 0 %}
-Nenhuma avaliação
+	{% assign rating = "Nenhuma avaliação" %}
 {% elsif postings.vote_count <= 1 %}
-{{postings.vote_count}} avaliação
+	{% assign rating = "{{postings.vote_count}} avaliação" %}
 {% elsif postings.vote_count >= 2 %}
-{{postings.vote_count}} avaliações
+	{% assign rating = "{{postings.vote_count}} avaliações" %}
 {% endif %}
-{% endcapture %}
+
 <div class="article-rating">
 	<div class="rating {{ status_text | slugify: "latin" }}" data-placeholder>
 		<svg viewBox="0 0 36 36" data-status="{{ status_text | strip }}">
