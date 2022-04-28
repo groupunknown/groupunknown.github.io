@@ -2,6 +2,9 @@
 layout: default
 ---
 <div class="main width-responsive">
+	<noscript>
+    	<div class="alert"></div>
+    </noscript>
 	<div class="column articles">
 	{% for post in paginator.posts %}
 	{% include article.html %}
