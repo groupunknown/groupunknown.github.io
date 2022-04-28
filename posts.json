@@ -47,15 +47,12 @@ layout: null
                                     "audio": {{ download.audio | jsonify }},
                                     "size": {{ download.size | jsonify }},
                                     "extension": {{ download.extension | jsonify }},
-                                    "urls": null
-                                    {% comment %}
                                     "urls": [{% for link in download.urls %}
                                         {
-                                            "hostname": {{ link.hostname | jsonify }},
-                                            "url": {{ link.url | jsonify }}
+                                            "hostname": {% comment %}{{ link.hostname | jsonify }}{% endcomment %} null,
+                                            "url": {% comment %}{{ link.url | jsonify }}{% endcomment %} null
                                         }{% unless forloop.last %},{% endunless %}{% endfor %}
                                     ]
-                                    {% endcomment %}
                                 }{% unless forloop.last %},{% endunless %}{% endfor %}
                             ]
                         }{% unless forloop.last %},{% endunless %}{% endfor %}
