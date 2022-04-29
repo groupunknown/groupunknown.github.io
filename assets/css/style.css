@@ -148,12 +148,14 @@ div[data-placeholder] svg {
     position: relative;
     display: flex;
     flex-direction: column;
+    align-content: center;
+    align-items: center;
     gap: 0.5rem;
     width: 100%;
     height: auto;
     padding: 1rem;
-    font-weight: 300;
     text-align: center;
+    font-weight: 300;
     color: #886701;
     background-color: rgba(255, 205, 58, 0.2);
     border: 1px dashed #886701;
@@ -161,6 +163,10 @@ div[data-placeholder] svg {
 
 .alert div:first-child {
     font-size: 2rem;
+}
+
+.alert div:nth-child(3) {
+    padding-bottom: 1.5rem;
 }
 
 .alert span {
@@ -174,6 +180,13 @@ div[data-placeholder] svg {
     font-style: italic;
     font-weight: 500;
     text-decoration: underline 2px #886701;
+}
+
+.alert em {
+    background: rgb(249 233 186 / 80%);
+    border-radius: 3px;
+    padding: 0.25rem 1rem;
+    font-weight: 500;
 }
 
 .scroll::-webkit-scrollbar {

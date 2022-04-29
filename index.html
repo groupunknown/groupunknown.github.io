@@ -2,17 +2,6 @@
 layout: default
 ---
 <div class="main width-responsive">
-	<noscript>
-    	<div class="alert">
-    		<div>Olá visitante, parece que o <span>javascript</span> está desabilitado!</div>
-    		<div>Alguns recursos no site necessitam do javascript para funcionar, como, por exemplo, o buscador em tempo real, funcionalidades estéticas da página e nosso protetor de links.</div>
-    		<div>Aqui estão as <a href="https://www.enable-javascript.com/pt/">instruções de como habilitar o JavaScript no seu navegador</a>.</div>
-    		<div>Caso você tenha desabilitado para burlar o protetor de links, peço encarecidamente que reconsidere e o habilite novamente, existe outra forma de conseguir os links sem precisar passar pelo protetor, basta fazer uma pequena doação e liberar o acesso vip para doadores.</div>
-    		<div>Considero isso apenas como um hobby, não faço para obter lucro pessoal, sua doação e exclusivamente para ajudar a custear e manter o site.</div>
-    		<div>Manter um site funcionando requer muito mais do que a maioria das pessoas imagina, por trás exitem serviços de terceiros que requer pagamentos mensais, como por ex.: o servidor do site, contas em sites de streaming, geradores de links, VPN, RDP, e outros).</div>
-    		<div>O protetor foi a forma que encontrei para conseguir manter toda a estrutura funcionando, eu sei, e chato, mas não se preocupe, o protetor não tem anúncios invasivos ou pop-ups irritantes.</div>
-    	</div>
-    </noscript>
 	<div class="column articles">
 	{% for post in paginator.posts %}
 	{% include article.html %}
@@ -22,4 +11,5 @@ layout: default
 	{% endfor %}
 	{% include pagination.html %}
 	</div>
+	{% include noscript.html %}
 </div>
