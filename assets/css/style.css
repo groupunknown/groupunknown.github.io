@@ -819,7 +819,7 @@ div[data-placeholder] svg {
     font-weight: 500;
 }
 
-/*** TMDB Rating 
+/* TMDB Rating */
 @-webkit-keyframes progress {
     0% {
         stroke-dasharray: 0 100;
@@ -924,8 +924,8 @@ div[data-placeholder] svg {
     color: #4aa757 !important;
     fill: #4aa757 !important;
     stroke: #4aa757 !important;
-}*/
-/* review users tmdb */
+}
+/* review users tmdb 
 @property --num {
     initial-value: 0;
     inherits: false;
@@ -1015,7 +1015,7 @@ div[data-placeholder] svg {
 
 .rating-0 .percentage::before {
     content: "N/A";
-}
+}*/
 
 .certification {
     display: flex;
