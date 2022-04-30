@@ -944,6 +944,15 @@ div[data-placeholder] svg {
     }
 }
 
+.article-rating {
+    display: flex;
+}
+
+.article-rating div {
+    display: flex;
+    flex-direction: column;
+}
+
 .circular-chart {
   max-width: 50px;
   max-height: 50px;

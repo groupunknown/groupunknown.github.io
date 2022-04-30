@@ -12,16 +12,22 @@
 
 {% if pessimo contains vote_average %}
 	{% assign status_class = "rating-1" %}
+	{% assign status_text = "Péssimo" %}
 {% elsif ruim contains vote_average %}
 	{% assign status_class = "rating-2" %}
+	{% assign status_text = "Ruim" %}
 {% elsif aceitavel contains vote_average %}
 	{% assign status_class = "rating-3" %}
+	{% assign status_text = "Aceitável" %}
 {% elsif otimo contains vote_average %}
 	{% assign status_class = "rating-4" %}
+	{% assign status_text = "Ótimo" %}
 {% elsif execelente contains vote_average %}
 	{% assign status_class = "rating-5" %}
+	{% assign status_text = "Excelente" %}
 {% else %}
 	{% assign status_class = "rating-0" %}
+	{% assign status_text = "Nenhum" %}
 {% endif %}
 
 {% capture rating %}
@@ -34,15 +40,15 @@ Nenhuma avaliação
 {% endif %}
 {% endcapture %}
 <div class="article-rating">
-	<div data-placeholder>
-		<svg viewBox="0 0 36 36" class="circular-chart {{ status_class }}">
-	        <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
-	        <path class="circle" stroke-dasharray="{{ vote_average }}, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
-	        <foreignObject x="0" y="0" width="36" height="36">
-	            <div class="percentage" style="--num: {{ vote_average }};"></div>
-	        </foreignObject >
-	    </svg>
+	<svg viewBox="0 0 36 36" class="circular-chart {{ status_class }}">
+		<path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+		<path class="circle" stroke-dasharray="{{ vote_average }}, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+		<foreignObject x="0" y="0" width="36" height="36">
+			<div class="percentage" style="--num: {{ vote_average }};"></div>
+		</foreignObject >
+	</svg>
+	<div>
+		<a href="/avaliacoes?vote_average={{status_text | slugify: "latin"}}" class="{{ status_class }}" data-placeholder>{{ status_text | strip }}</a>
+		<div class="rating-text" data-placeholder>{{ rating | strip }}</div>
 	</div>
-	<a href="/avaliacoes?vote_average={{status_text | slugify: "latin"}}" class="status-{{ status_text | slugify: "latin" }}" data-placeholder>{{ status_text | strip }}</a>
-	<div class="rating-text" data-placeholder>{{ rating | strip }}</div>
 </div>
