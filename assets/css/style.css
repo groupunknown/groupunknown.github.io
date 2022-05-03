@@ -316,6 +316,47 @@ div[data-placeholder] svg {
     top: 100%;
 }
 
+/* API */
+.donation-input {
+    display: flex;width: calc(100% - 24%);
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.donation-input input {
+    width: 30ch;
+    font: 4ch droid sans mono, consolas, monospace;
+    letter-spacing: 0.5ch;
+    color: #9e9e9e;
+    background: repeating-linear-gradient(90deg, #9e9e9e 0, #9e9e9e 1ch, transparent 0, transparent 1.5ch) 0 100%/40ch 1px no-repeat;
+}
+
+.donation-input input:focus:required:invalid {
+    color: hsl(0, 76%, 50%);
+    background: repeating-linear-gradient(90deg, hsl(0, 76%, 50%) 0, hsl(0, 76%, 50%) 1ch, transparent 0, transparent 1.5ch) 0 100%/40ch 1px no-repeat;
+}
+
+.donation-input input:focus:required:valid,
+.donation-input input:focus:required:placeholder-shown {
+
+}
+
+
+
+.donation-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 24%);
+    margin: 0 auto;
+    padding-top: 0.75rem;
+    font-size: 13px;
+    font-style: italic;
+    color: #777;
+}
+
+
 /*** Layout ***/
 .main {
     display: flex;
