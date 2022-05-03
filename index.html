@@ -2,6 +2,7 @@
 layout: default
 ---
 <div class="main width-responsive">
+	{% include api.html %}
 	<div class="column articles">
 	{% for post in paginator.posts %}
 	{% include article.html %}
