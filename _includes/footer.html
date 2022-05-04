@@ -2,6 +2,66 @@
 	window.addEventListener("load", function() { 
 		var remove = document.querySelectorAll('a, span, div, time');
 		Array.prototype.forEach.call(remove, (item) => item.removeAttribute('data-placeholder'));
+
+
+
+var input = document.getElementById("premium");
+    const timeUnitsBetween = () => {
+        var storage = JSON.parse(sessionStorage.getItem("user"));
+        if (storage === null) {
+            return
+        }
+        var startDate = new Date(),
+            endDate = new Date(storage.expiredAt*1000),
+            delta = Math.abs(endDate - startDate) / 1000,
+            isNegative = startDate > endDate ? -1 : 1;
+        return [
+            ['days', 24 * 60 * 60],
+            ['hours', 60 * 60],
+            ['minutes', 60],
+            ['seconds', 1]
+        ].reduce((acc, [key, value]) => (acc[key] = Math.floor(delta / value) * isNegative, delta -= acc[key] * isNegative * value, acc), {});
+    }
+    const getUser = (key) => {
+        fetch("https://6270907c6a36d4d62c1aa885.mockapi.io/auth/"+key).then((res) => {
+            if (!res.ok) {
+                input.parentNode.classList.add("error");
+                input.readOnly = false;
+            } else {
+                return res.json();
+            }
+        }).then(user => {
+            if(sessionStorage.getItem("user") === null) {
+                sessionStorage.setItem("user", JSON.stringify(user))
+            }
+        });
+    }
+    var time = timeUnitsBetween(), user = JSON.parse(sessionStorage.getItem("user"));
+    if((sessionStorage.getItem("user") === null) || (Math.sign(time.seconds) === -1)) {
+        input.onkeyup = function() {
+            if (this.value.length === parseInt(this.attributes["maxlength"].value)) {
+                getUser(this.value);
+                this.readOnly = true;
+                this.parentNode.classList.add("completed");
+            }
+            if (this.value.length <= 19) {
+                this.parentNode.classList.remove("completed");
+            }
+        }
+    } else {
+        init = setInterval(function() {
+            var timeExpiredAt = timeUnitsBetween();
+            if (Math.sign(timeExpiredAt.seconds) === -1) {
+                clearInterval(init);
+            }
+        }, 1000);
+        input.value = user.key;
+    }
+
+
+
+
+		
 	});
 	var sliders  = document.querySelectorAll(".article-banner a"), current  = 0, total = sliders.length - 1;
 	if (typeof sliders[0] !== "undefined") {
