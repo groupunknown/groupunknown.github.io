@@ -3,9 +3,7 @@
 		var remove = document.querySelectorAll('a, span, div, time');
 		Array.prototype.forEach.call(remove, (item) => item.removeAttribute('data-placeholder'));
 
-
-
-var input = document.getElementById("premium");
+	var input = document.getElementById("premium");
     const timeUnitsBetween = () => {
         var storage = JSON.parse(sessionStorage.getItem("user"));
         if (storage === null) {
@@ -21,7 +19,7 @@ var input = document.getElementById("premium");
             ['minutes', 60],
             ['seconds', 1]
         ].reduce((acc, [key, value]) => (acc[key] = Math.floor(delta / value) * isNegative, delta -= acc[key] * isNegative * value, acc), {});
-    }
+    };
     const getUser = (key) => {
         fetch("https://6270907c6a36d4d62c1aa885.mockapi.io/auth/"+key).then((res) => {
             if (!res.ok) {
@@ -35,7 +33,7 @@ var input = document.getElementById("premium");
                 sessionStorage.setItem("user", JSON.stringify(user))
             }
         });
-    }
+    };
     var time = timeUnitsBetween(), user = JSON.parse(sessionStorage.getItem("user"));
     if((sessionStorage.getItem("user") === null) || (Math.sign(time.seconds) === -1)) {
         input.onkeyup = function() {
@@ -58,10 +56,6 @@ var input = document.getElementById("premium");
         input.value = user.key;
     }
 
-
-
-
-		
 	});
 	var sliders  = document.querySelectorAll(".article-banner a"), current  = 0, total = sliders.length - 1;
 	if (typeof sliders[0] !== "undefined") {
