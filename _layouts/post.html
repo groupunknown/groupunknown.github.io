@@ -3,13 +3,13 @@ layout: default
 ---
 
 <article class="post-main width-responsive">
+    <div class="post-main-author">
+        {% include article_author.html %}
+    </div>
     <div class="post-main-header">
-        <div class="post-main-author">
-            {% include article_author.html %}
-        </div>
         <div class="post-main-content">
             <div class="row poster" data-placeholder>
-                <img src="https://image.tmdb.org/t/p/w154{{ page.poster_path }}" alt="{{ page.title }}" loading="lazy">
+                <img src="https://image.tmdb.org/t/p/w185{{ page.poster_path }}" alt="{{ page.title }}" loading="lazy">
             </div>
             <div class="article-summary">
                 <div class="column">
@@ -56,6 +56,13 @@ layout: default
                 </div>
             </div>
         </div>
+    </div>
+    <div class="post-main-donation">
+        <div class="donation-label">EXCLUSIVO PARA DOADORES</div>
+        <div class="donation-input">
+            <input type="text" id="premium" maxlength="20" autocomplete="off" spellcheck="false" required pattern="[\w,./_=?-]+">
+        </div>
+        <div class="donation-text">Você ainda não possui uma chave premium, faça uma doação e libere recursos premium.</div>
     </div>
     <div class="post-main-download">
         {% include downloads.html %}
