@@ -14,12 +14,11 @@
 	}
 	userRankClass = (level) => {
    		return level == 1 ? "donator-gold" : level == 2 ? "donator-silver" : "donator-bronzer";
-	}
+	};
 	userRankText = (level) => {
 	    return level == 1 ? "ouro" : level == 2 ? "prata" : "bronze";
-	}
-
-	var results = '', insert_result = "donator-track", donators = {{ site.data.donators | jsonify }};
+	};
+	var results = '', donators = {{ site.data.donators | jsonify }};
 	donators.forEach((donator, key, last) => {
 	    results += `<div class="donator-user `+ userRankClass(donator.level) +`">
 	            <div class="donator-rank">
