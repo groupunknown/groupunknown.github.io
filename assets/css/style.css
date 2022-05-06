@@ -1739,3 +1739,76 @@ div[data-placeholder] svg {
 
 
 
+
+
+/* slider nome de doadores */
+.donator-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 768px;
+    margin: 2rem auto;
+    overflow: hidden;
+}
+
+.donator-slider::before,
+.donator-slider::after {
+    position: absolute;
+    content: "";
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    width: 50px;
+    height: 100%;
+    z-index: 2;
+}
+
+.donator-slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.donator-slider::before {
+    left: 0;
+    top: 0;
+}
+
+.donator-track {
+    display: flex;
+    animation: donator_slider 20s linear infinite running;
+}
+
+.donator-track:hover {
+    animation-play-state: paused;
+}
+
+.donator-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    margin: 0 .5rem;
+    padding: .5rem;
+    background: rgb(0 0 0 / 10%);
+    border-radius: 3px;
+}
+
+.donator-user:hover {
+    background: rgb(0 0 0 / 15%);
+}
+
+@keyframes donator_slider {
+    0% {
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -o-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translate(-50%);
+        -moz-transform: translate(-50%);
+        -o-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+        transform: translate(-50%);
+    }
+}
