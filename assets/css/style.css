@@ -1747,7 +1747,8 @@ div[data-placeholder] svg {
     display: flex;
     align-items: center;
     width: 768px;
-    margin: 2rem auto;
+    margin: auto;
+    margin-bottom: 5rem;
     overflow: hidden;
 }
 
@@ -1774,6 +1775,7 @@ div[data-placeholder] svg {
 
 .donator-track {
     display: flex;
+    gap: 1rem;
     animation: donator_slider 30s linear infinite running;
 }
 
@@ -1784,28 +1786,50 @@ div[data-placeholder] svg {
 .donator-user {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 200px;
-    margin: 0 .5rem;
-    padding: .5rem;
-    background: rgb(0 0 0 / 10%);
+    width: 100%;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 3px;
+    background: #FEFCE8;
+    border: 1px dashed #FCE2B1;
 }
 
 .donator-user:hover {
-    background: rgb(0 0 0 / 15%);
+    background: #f9f5cd;
 }
 
-.donator-gold {
-    color: #cba98b !important;
+.donator-rank {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.donator-silver  {
-    color: #cba98b !important;
+.donator-gold .donator-rank svg {
+    fill: #ffcc00!important;
 }
 
-.donator-bronzer {
-    color: #cba98b !important;
+.donator-silver .donator-rank svg {
+    fill: #b3b8bc!important;
+}
+
+.donator-bronzer .donator-rank svg {
+    fill: #cba98b!important;
+}
+
+.donator-infor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    white-space: nowrap;
+}
+
+.donator-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.donator-rank-desc {
+    font-size: .75rem;
 }
 
 @keyframes donator_slider {
