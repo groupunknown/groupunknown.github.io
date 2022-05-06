@@ -2,8 +2,8 @@
 <div class="download-content">
 {% for season in page.seasons %}
     <div class="season-content">
-        <div class="season-title">{{ season.season_number }}ª Temporada</div>
-        <div class="season-status {% if season.season_status == 'Completo' %}badge-3{% else %}badge-9{% endif %}">{{ season.season_status }}</div>
+        <div class="season-title" data-placeholder>{{ season.season_number }}ª Temporada</div>
+        <div class="season-status {% if season.season_status == 'Completo' %}badge-3{% else %}badge-9{% endif %}" data-placeholder>{{ season.season_status }}</div>
     </div>
     <div class="episode-content">
         {% for episode in season.episodes %}
