@@ -1746,7 +1746,8 @@ div[data-placeholder] svg {
     position: relative;
     display: flex;
     align-items: center;
-    width: 768px;
+    width: 100%;
+    max-width: 768px;
     margin: auto;
     margin-bottom: 5rem;
     overflow: hidden;
@@ -1776,7 +1777,7 @@ div[data-placeholder] svg {
 .donator-track {
     display: flex;
     gap: 1rem;
-    animation: donator_slider 30s linear infinite running;
+    animation: donator_slider 40s linear infinite running;
 }
 
 .donator-track:hover {
