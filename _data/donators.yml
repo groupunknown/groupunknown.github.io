@@ -1,0 +1,25 @@
+heisenberg:
+    createdAt: 1651550400
+    expiredAt: 1683086400
+    name: Heisenberg
+    level: 3
+hannibal_lecter:
+    createdAt: 1651550400
+    expiredAt: 1683086400
+    name: Hannibal Lecter
+    level: 2
+pennywise:
+    createdAt: 1651550400
+    expiredAt: 1654228800
+    name: Pennywise
+    level: 1
+voldemort:
+    createdAt: 1651550400
+    expiredAt: 1656820800
+    name: Voldemort
+    level: 2
+rick_grimes:
+    createdAt: 1651550400
+    expiredAt: 1656820800
+    name: Rick Grimes
+    level: 1

@@ -1774,7 +1774,7 @@ div[data-placeholder] svg {
 
 .donator-track {
     display: flex;
-    animation: donator_slider 20s linear infinite running;
+    animation: donator_slider 30s linear infinite running;
 }
 
 .donator-track:hover {
