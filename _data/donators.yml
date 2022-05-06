@@ -1,21 +1,20 @@
-donators:
-  - name: Heisenberg
-    createdAt: 1651550400
-    expiredAt: 1683086400
-    level: 3
-  - name: Hannibal Lecter
-    createdAt: 1651550400
-    expiredAt: 1683086400
-    level: 2
-  - name: Pennywise
-    createdAt: 1651550400
-    expiredAt: 1654228800
-    level: 1
-  - name: Voldemort
-    createdAt: 1651550400
-    expiredAt: 1656820800
-    level: 2
-  - name: Rick Grimes
-    createdAt: 1651550400
-    expiredAt: 1656820800
-    level: 1
+- name: Heisenberg
+  createdAt: 1651550400
+  expiredAt: 1683086400
+  level: 3
+- name: Hannibal Lecter
+  createdAt: 1651550400
+  expiredAt: 1683086400
+  level: 2
+- name: Pennywise
+  createdAt: 1651550400
+  expiredAt: 1654228800
+  level: 1
+- name: Voldemort
+  createdAt: 1651550400
+  expiredAt: 1656820800
+  level: 2
+- name: Rick Grimes
+  createdAt: 1651550400
+  expiredAt: 1656820800
+  level: 1
