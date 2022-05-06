@@ -1796,6 +1796,18 @@ div[data-placeholder] svg {
     background: rgb(0 0 0 / 15%);
 }
 
+.donator-gold {
+    color: #cba98b !important;
+}
+
+.donator-silver  {
+    color: #cba98b !important;
+}
+
+.donator-bronzer {
+    color: #cba98b !important;
+}
+
 @keyframes donator_slider {
     0% {
         -webkit-transform: translateX(0);
