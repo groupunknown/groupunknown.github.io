@@ -366,33 +366,6 @@ svg:not(:root) {
     border-color: #efefef;
 }
 
-.donation-input {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem 0;
-}
-
-.donation-input input {
-    width: 30ch;
-    font: 5ch droid sans mono, consolas, monospace;
-    letter-spacing: 0.5ch;
-    font-weight: 600;
-    color: #e1ba83;
-    background: repeating-linear-gradient(90deg, #E1BA83 0, #E1BA83 1ch, transparent 0, transparent 1.5ch) 0 100%/30ch 1px no-repeat;
-}
-
-.donation-input input:focus:required:invalid {
-    color: #e01f1f;
-    background: repeating-linear-gradient(90deg, #e01f1f 0, #e01f1f 1ch, transparent 0, transparent 1.5ch) 0 100%/30ch 1px no-repeat;
-}
-
-.donation-input input:focus:required:valid,
-.donation-input input:focus:required:placeholder-shown {
-    color: #4aa757;
-    background: repeating-linear-gradient(90deg, #4aa757 0, #4aa757 1ch, transparent 0, transparent 1.5ch) 0 100%/30ch 1px no-repeat;
-}
-
 .donation-ribbon {
     position: relative;
     display: flex;
@@ -423,6 +396,7 @@ svg:not(:root) {
     border-top: 10px solid #FCE2B1;
     border-left: 10px solid transparent;
 }
+
 .donation-ribbon:after {
     height: 0;
     width: 0;

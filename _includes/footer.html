@@ -2,60 +2,6 @@
 	window.addEventListener("load", function() { 
 		var remove = document.querySelectorAll('a, span, div, time');
 		Array.prototype.forEach.call(remove, (item) => item.removeAttribute('data-placeholder'));
-
-	var input = document.getElementById("premium");
-    const timeUnitsBetween = () => {
-        var storage = JSON.parse(sessionStorage.getItem("user"));
-        if (storage === null) {
-            return
-        }
-        var startDate = new Date(),
-            endDate = new Date(storage.expiredAt*1000),
-            delta = Math.abs(endDate - startDate) / 1000,
-            isNegative = startDate > endDate ? -1 : 1;
-        return [
-            ['days', 24 * 60 * 60],
-            ['hours', 60 * 60],
-            ['minutes', 60],
-            ['seconds', 1]
-        ].reduce((acc, [key, value]) => (acc[key] = Math.floor(delta / value) * isNegative, delta -= acc[key] * isNegative * value, acc), {});
-    };
-    const getUser = (key) => {
-        fetch("https://6270907c6a36d4d62c1aa885.mockapi.io/auth/"+key).then((res) => {
-            if (!res.ok) {
-                input.parentNode.classList.add("error");
-                input.readOnly = false;
-            } else {
-                return res.json();
-            }
-        }).then(user => {
-            if(sessionStorage.getItem("user") === null) {
-                sessionStorage.setItem("user", JSON.stringify(user))
-            }
-        });
-    };
-    var time = timeUnitsBetween(), user = JSON.parse(sessionStorage.getItem("user"));
-    if((sessionStorage.getItem("user") === null) || (Math.sign(time.seconds) === -1)) {
-        input.onkeyup = function() {
-            if (this.value.length === parseInt(this.attributes["maxlength"].value)) {
-                getUser(this.value);
-                this.readOnly = true;
-                this.parentNode.classList.add("completed");
-            }
-            if (this.value.length <= 19) {
-                this.parentNode.classList.remove("completed");
-            }
-        }
-    } else {
-        init = setInterval(function() {
-            var timeExpiredAt = timeUnitsBetween();
-            if (Math.sign(timeExpiredAt.seconds) === -1) {
-                clearInterval(init);
-            }
-        }, 1000);
-        input.value = user.key;
-    }
-
 	});
 	var sliders  = document.querySelectorAll(".article-banner a"), current  = 0, total = sliders.length - 1;
 	if (typeof sliders[0] !== "undefined") {
@@ -68,45 +14,46 @@
 	}
 </script>
 <script src="{{ site.baseurl }}/assets/js/search.js"></script>
+
 {% if page.category %}
-<script>
-	const accordion = (a) => {
-		var show = document.querySelectorAll(a);
-		for (let i = 0; i < show.length; i++) {
-			show[i].addEventListener("click", function() {
-				show[i].classList.toggle("show");
-				show[i].nextElementSibling.classList.toggle("active");
-			});
-		}
-	};
-	accordion(".season-content");
-	accordion(".episode-title");
-	accordion(".episode-main-download");
-</script>
-<script>z=(e=>{if(null===sessionStorage.getItem(e)){import("https://fpcdn.io/v3/jHZ6Vpk0c5wOV5Ydc9et").then(e=>e.load()).then(e=>e.get({extendedResult:!0})).then(t=>{"object"==typeof t&&(t=JSON.stringify(t)),sessionStorage.setItem(e,t)})}}),z("z");</script>
-{% if site.encrypt_status %}
-<script>
-const encrypt = (salt, text) => {
-	const textToChars = (text) => text.split("").map((c) => c.charCodeAt(0)), byteHex = (n) => ("0" + Number(n).toString(16)).substr(-2), applySaltToChar = (code) => textToChars(salt).reduce((a, b) => a ^ b, code);
-	return text.split("").map(textToChars).map(applySaltToChar).map(byteHex).join("");
-};
-const decrypt = (salt, encoded) => {
-	const textToChars = (text) => text.split("").map((c) => c.charCodeAt(0)), applySaltToChar = (code) => textToChars(salt).reduce((a, b) => a ^ b, code);
-	return encoded.match(/.{1,2}/g).map((hex) => parseInt(hex, 16)).map(applySaltToChar).map((charCode) => String.fromCharCode(charCode)).join("");
-};
-const url_redirect = "{{ site.encrypt_url_redirect }}", urls_bases = {{ site.encrypt_urls_bases | jsonify }};
-for (let url of urls_bases){
-	const all_urls = document.querySelectorAll("a[href*='" + url + "']");
-	all_urls.forEach(value => {
-		const url_encrypt = encrypt("{{ site.encrypt_key }}", value.getAttribute("href"));
-		value.setAttribute("href", url_redirect + url_encrypt);
-		value.setAttribute("target", "_blank");
-	});
-}
-</script>
+    <script>
+    	const accordion = (a) => {
+    		var show = document.querySelectorAll(a);
+    		for (let i = 0; i < show.length; i++) {
+    			show[i].addEventListener("click", function() {
+    				show[i].classList.toggle("show");
+    				show[i].nextElementSibling.classList.toggle("active");
+    			});
+    		}
+    	};
+    	accordion(".season-content");
+    	accordion(".episode-title");
+    	accordion(".episode-main-download");
+    </script>
+    {% if site.encrypt_status %}
+    <script>
+        const encrypt = (salt, text) => {
+        	const textToChars = (text) => text.split("").map((c) => c.charCodeAt(0)), byteHex = (n) => ("0" + Number(n).toString(16)).substr(-2), applySaltToChar = (code) => textToChars(salt).reduce((a, b) => a ^ b, code);
+        	return text.split("").map(textToChars).map(applySaltToChar).map(byteHex).join("");
+        };
+        const decrypt = (salt, encoded) => {
+        	const textToChars = (text) => text.split("").map((c) => c.charCodeAt(0)), applySaltToChar = (code) => textToChars(salt).reduce((a, b) => a ^ b, code);
+        	return encoded.match(/.{1,2}/g).map((hex) => parseInt(hex, 16)).map(applySaltToChar).map((charCode) => String.fromCharCode(charCode)).join("");
+        };
+        const url_redirect = "{{ site.encrypt_url_redirect }}", urls_bases = {{ site.encrypt_urls_bases | jsonify }};
+        for (let url of urls_bases){
+        	const all_urls = document.querySelectorAll("a[href*='" + url + "']");
+        	all_urls.forEach(value => {
+        		const url_encrypt = encrypt("{{ site.encrypt_key }}", value.getAttribute("href"));
+        		value.setAttribute("href", url_redirect + url_encrypt);
+        		value.setAttribute("target", "_blank");
+        	});
+        }
+    </script>
+    {% endif %}
 {% endif %}
-{% endif %}
+
 {% if page.layout == "taxonomy" %}
-<script src="{{ site.baseurl }}/assets/js/pagination.min.js"></script>
-<script src="{{ site.baseurl }}/assets/js/index.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/pagination.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/index.js"></script>
 {% endif %}
