@@ -33,7 +33,8 @@
 	        </div>`;
 	    return results
 	});
-	document.getElementsByClassName("donator-track").innerHTML = results;
+	var elem = document.querySelector(".donator-track");
+	elem.innerHTML = results;
 </script>
 <script src="{{ site.baseurl }}/assets/js/search.js"></script>
 
