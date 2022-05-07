@@ -2,6 +2,34 @@
 	window.addEventListener("load", function() { 
 		var remove = document.querySelectorAll('a, span, div, time');
 		Array.prototype.forEach.call(remove, (item) => item.removeAttribute('data-placeholder'));
+
+		var toggleSwitch = document.querySelector('.theme-switch'),
+		currentTheme = localStorage.getItem('switch-theme-scheme')
+		if(currentTheme === null) {
+			var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)")
+			if (prefersDarkScheme.matches) {
+				document.documentElement.setAttribute('data-theme', 'dark')
+			} else {
+				document.documentElement.setAttribute('data-theme', 'light')
+			}
+		}
+		if (currentTheme) {
+			document.documentElement.setAttribute('data-theme', currentTheme)
+			if (currentTheme === 'dark') {
+				toggleSwitch.checked = true
+			}
+		}
+		switchTheme = (e) => {
+			if (e.target.checked) {
+				document.documentElement.setAttribute('data-theme', 'dark');
+				localStorage.setItem('switch-theme-scheme', 'dark');
+			} else {
+				document.documentElement.setAttribute('data-theme', 'light');
+				localStorage.setItem('switch-theme-scheme', 'light');
+			}    
+		}
+		toggleSwitch.addEventListener('change', switchTheme, false);
+		
 	});
 	var sliders  = document.querySelectorAll(".article-banner a"), current  = 0, total = sliders.length - 1;
 	if (typeof sliders[0] !== "undefined") {
