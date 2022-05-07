@@ -37,44 +37,33 @@
 	elem.innerHTML = results;
 	elem.innerHTML += results;
 
-	
-	document.addEventListener("readystatechange", event => { 
-	    if (event.target.readyState === "interactive") {
-			var toggleSwitch = document.querySelector(".theme-switch"),
-				currentTheme = localStorage.getItem("switch-theme-scheme");
-			if(currentTheme === null) {
-				var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-				if (prefersDarkScheme.matches) {
-					document.documentElement.setAttribute("data-theme", "dark");
-				} else {
-					document.documentElement.setAttribute("data-theme", "light");
-				}
-			}
-			if (currentTheme) {
-				document.documentElement.setAttribute("data-theme", currentTheme);
-				if (currentTheme === "dark") {
-					toggleSwitch.checked = true;
-				}
-			}
-			switchTheme = (e) => {
-				if (e.target.checked) {
-					document.documentElement.setAttribute("data-theme", "dark");
-					localStorage.setItem("switch-theme-scheme", "dark");
-				} else {
-					document.documentElement.setAttribute("data-theme", "light");
-					localStorage.setItem("switch-theme-scheme", "light");
-				}
-			}
-			toggleSwitch.addEventListener("change", switchTheme, false);
+	var toggleSwitch = document.querySelector(".theme-switch"),
+		currentTheme = localStorage.getItem("switch-theme-scheme");
+	if(currentTheme === null) {
+		var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+		if (prefersDarkScheme.matches) {
+			document.documentElement.setAttribute("data-theme", "dark");
+		} else {
+			document.documentElement.setAttribute("data-theme", "light");
 		}
-	    if (event.target.readyState === "complete") {
-	        
-	    }
-	});
-
+	}
+	if (currentTheme) {
+		document.documentElement.setAttribute("data-theme", currentTheme);
+		if (currentTheme === "dark") {
+			toggleSwitch.checked = true;
+		}
+	}
+	switchTheme = (e) => {
+		if (e.target.checked) {
+			document.documentElement.setAttribute("data-theme", "dark");
+			localStorage.setItem("switch-theme-scheme", "dark");
+		} else {
+			document.documentElement.setAttribute("data-theme", "light");
+			localStorage.setItem("switch-theme-scheme", "light");
+		}
+	}
+	window.addEventListener("load", switchTheme, false);
 </script>
-<script src="{{ site.baseurl }}/assets/js/search.js"></script>
-
 {% if page.category %}
     <script>
     	const accordion = (a) => {
@@ -112,7 +101,7 @@
     </script>
     {% endif %}
 {% endif %}
-
+<script src="{{ site.baseurl }}/assets/js/search.js"></script>
 {% if page.layout == "taxonomy" %}
     <script src="{{ site.baseurl }}/assets/js/pagination.min.js"></script>
     <script src="{{ site.baseurl }}/assets/js/index.js"></script>
