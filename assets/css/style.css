@@ -740,7 +740,7 @@ div[data-placeholder] svg {
 }
 
 .article .posting {
-    background: var(--color);
+    background: var(--background);
     box-shadow: 0 0 10px #ddd;
     border-radius: 4px;
 }
@@ -778,12 +778,6 @@ div[data-placeholder] svg {
 .article-header > div:last-child,
 .article-footer > div:last-child {
     place-self: flex-end;
-}
-
-.article-header,
-.article-footer {
-    background: var(--background);
-    
 }
 
 .article-header {
