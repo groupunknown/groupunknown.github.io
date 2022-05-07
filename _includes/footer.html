@@ -2,9 +2,7 @@
 	window.addEventListener("load", function() { 
 		var remove = document.querySelectorAll('a, span, div, time');
 		Array.prototype.forEach.call(remove, (item) => item.removeAttribute('data-placeholder'));
-
-		var toggleSwitch = document.querySelector('.theme-switch'),
-		currentTheme = localStorage.getItem('switch-theme-scheme');
+		var toggleSwitch = document.querySelector('.theme-switch'), currentTheme = localStorage.getItem('switch-theme-scheme');
 		if(currentTheme === null) {
 			var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 			if (prefersDarkScheme.matches) {
@@ -29,7 +27,6 @@
 			}    
 		}
 		toggleSwitch.addEventListener('change', switchTheme, false);
-
 	});
 	var sliders  = document.querySelectorAll(".article-banner a"), current  = 0, total = sliders.length - 1;
 	if (typeof sliders[0] !== "undefined") {
