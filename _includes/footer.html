@@ -36,31 +36,33 @@
 	var elem = document.querySelector(".donator-track");
 	elem.innerHTML = results;
 	elem.innerHTML += results;
-	var toggleSwitch = document.querySelector('.theme-switch'), currentTheme = localStorage.getItem('switch-theme-scheme');
-	if(currentTheme === null) {
-		var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-		if (prefersDarkScheme.matches) {
-			document.documentElement.setAttribute('data-theme', 'dark');
-		} else {
-			document.documentElement.setAttribute('data-theme', 'light');
+	$(document).ready(function() {
+		var toggleSwitch = document.querySelector('.theme-switch'), currentTheme = localStorage.getItem('switch-theme-scheme');
+		if(currentTheme === null) {
+			var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+			if (prefersDarkScheme.matches) {
+				document.documentElement.setAttribute('data-theme', 'dark');
+			} else {
+				document.documentElement.setAttribute('data-theme', 'light');
+			}
 		}
-	}
-	if (currentTheme) {
-		document.documentElement.setAttribute('data-theme', currentTheme);
-		if (currentTheme === 'dark') {
-			toggleSwitch.checked = true;
+		if (currentTheme) {
+			document.documentElement.setAttribute('data-theme', currentTheme);
+			if (currentTheme === 'dark') {
+				toggleSwitch.checked = true;
+			}
 		}
-	}
-	switchTheme = (e) => {
-		if (e.target.checked) {
-			document.documentElement.setAttribute('data-theme', 'dark');
-			localStorage.setItem('switch-theme-scheme', 'dark');
-		} else {
-			document.documentElement.setAttribute('data-theme', 'light');
-			localStorage.setItem('switch-theme-scheme', 'light');
-		}    
-	}
-	toggleSwitch.addEventListener('change', switchTheme, false);
+		switchTheme = (e) => {
+			if (e.target.checked) {
+				document.documentElement.setAttribute('data-theme', 'dark');
+				localStorage.setItem('switch-theme-scheme', 'dark');
+			} else {
+				document.documentElement.setAttribute('data-theme', 'light');
+				localStorage.setItem('switch-theme-scheme', 'light');
+			}
+		}
+		toggleSwitch.addEventListener('change', switchTheme, false);
+	});
 </script>
 <script src="{{ site.baseurl }}/assets/js/search.js"></script>
 
