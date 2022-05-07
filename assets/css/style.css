@@ -2,6 +2,7 @@
     --color: #000;
     --background: #fff;
     --border: #efefef;
+    --box-shadow: 0 0 10px #dcdcdc;
 
     --lazyload-1: #f3f3f6;
     --lazyload-2: #e6e6eb;
@@ -17,6 +18,7 @@
     --color: #fff;
     --background: #24292e;
     --border: #2e363c;
+    --box-shadow: 0 0 10px #131722;
 
     --lazyload-1: #212427;
     --lazyload-2: #18191A;
@@ -59,6 +61,7 @@ html, body {
 ::-moz-focus-inner {
     border: 0;
 }
+
 /*
 ::-webkit-scrollbar {
    width: 5px;
@@ -90,6 +93,60 @@ html, body {
 
 :-ms-input-placeholder {  
    color: #777;
+}
+
+/* theme switch */
+.theme-colors {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+.theme-switch {
+    position: absolute!important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.switch-label {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(1.5);
+    width: 24px;
+    height: 24px;
+    background: linear-gradient(to bottom, currentColor 4px,transparent 0) no-repeat 5px -6px/2px 6px, linear-gradient(to bottom, currentColor 4px,transparent 0) no-repeat 5px 14px/2px 6px, linear-gradient(to bottom, currentColor 4px,transparent 0) no-repeat -8px 5px/6px 2px, linear-gradient(to bottom, currentColor 4px,transparent 0) no-repeat 14px 5px/6px 2px;
+    border-radius: 100px;
+    box-shadow: inset 0 0 0 2px;
+    border: 6px solid transparent
+}
+
+.switch-label::after,
+.switch-label::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    border-right: 4px solid;
+    border-left: 4px solid;
+    left: -6px;
+    top: 5px
+}
+
+.switch-label::before {
+    transform: rotate(-45deg)
+}
+
+.switch-label::after {
+    transform: rotate(45deg)
+}
+
+.switch-label:hover {
+    transform: rotate(-25deg);
 }
 
 [hidden],
@@ -559,7 +616,8 @@ div[data-placeholder] svg {
 
 .article .author {
     background: var(--background);
-    box-shadow: 0 0 10px #ddd;
+    box-shadow: var(--box-shadow);
+    border: 1px solid var(--border);
 }
 
 .articles .article:nth-of-type(odd) .author:after,
@@ -681,12 +739,12 @@ div[data-placeholder] svg {
     user-select: none;
     padding: 5px 10px;
     margin-top: 10px;
-    margin-left: -15px;
-    margin-right: -15px;
+    margin-left: -16px;
+    margin-right: -16px;
     border-radius: 2px;
     font-size: 13px;
     text-align: center;
-    color: var(--color);
+    color: var(--white);
     text-transform: capitalize;
 }
 
@@ -742,7 +800,7 @@ div[data-placeholder] svg {
 
 .article .posting {
     background: var(--background);
-    box-shadow: 0 0 10px #ddd;
+    box-shadow: var(--box-shadow);
     border-radius: 4px;
 }
 
