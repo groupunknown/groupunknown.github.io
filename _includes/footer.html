@@ -62,7 +62,9 @@
 			localStorage.setItem("switch-theme-scheme", "light");
 		}
 	}
-	window.addEventListener("load", switchTheme, false);
+	document.querySelector(".theme-switch").addEventListener("click", (e) => {
+		switchTheme(e);
+	});
 </script>
 {% if page.category %}
     <script>
