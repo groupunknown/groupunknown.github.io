@@ -114,7 +114,7 @@ html, body {
     box-sizing: border-box;
     position: relative;
     display: block;
-    transform: scale(1.5);
+    transform: scale(1);
     width: 24px;
     height: 24px;
     background: linear-gradient(to bottom, currentColor 4px,transparent 0) no-repeat 5px -6px/2px 6px, linear-gradient(to bottom, currentColor 4px,transparent 0) no-repeat 5px 14px/2px 6px, linear-gradient(to bottom, currentColor 4px,transparent 0) no-repeat -8px 5px/6px 2px, linear-gradient(to bottom, currentColor 4px,transparent 0) no-repeat 14px 5px/6px 2px;
@@ -1048,7 +1048,9 @@ div[data-placeholder] svg {
     background-color: #eb1d1b;
 }
 
-.certification.age-18 {
+.certification.age-18,
+.certification.age-18 a {
+    color: var(--white)!important;
     background-color: #000000
 }
 
