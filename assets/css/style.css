@@ -12,6 +12,12 @@
 
     --white: #fff;
     --black: #000;
+
+    --donation-color: #E1BA83;
+    --donation-color-list: #8bc34a;
+    --donation-background: #FDF0C8;
+    --donation-background-light: #FEFCE8;
+    --donation-border: #FCE2B1;
 }
 
 [data-theme="dark"] {
