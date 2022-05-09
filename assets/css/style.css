@@ -4,11 +4,11 @@
     --border: #efefef;
     --box-shadow: 0 0 10px #dcdcdc;
 
-    --lazyload-1: #f3f3f6;
-    --lazyload-2: #e6e6eb;
+    --lazyload-1: #f9fafa;
+    --lazyload-2: #e5e6e7;
 
-    --hover: hsl(0, 0%, 96%);
-    --active: hsl(216, 14%, 93%);
+    --hover: #f3f3f3;
+    --active: #f3f3f3;
 
     --white: #fff;
     --black: #000;
@@ -26,8 +26,8 @@
     --border: #2e363c;
     --box-shadow: 0 0 10px #131722;
 
-    --lazyload-1: #212427;
-    --lazyload-2: #18191A;
+    --lazyload-1: #2f3234;
+    --lazyload-2: #2a2b2c;
 
     --hover: #2a2e39;
     --active: #131722;

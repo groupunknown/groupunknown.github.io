@@ -441,13 +441,13 @@ svg:not(:root) {
 
 /* Download content */
 .download-content {
-    border: 1px solid #efefef;
+    border: 1px solid var(--border);
     border-bottom: 0;
     border-radius: 3px;
 }
 
 .download-content .show {
-    background: #f3f3f3;
+    background: var(--active);
 }
 
 .season-content {
@@ -455,7 +455,7 @@ svg:not(:root) {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    border-bottom: 1px solid #efefef;
+    border-bottom: 1px solid var(--border);
     cursor: pointer;
 }
 
@@ -500,7 +500,7 @@ svg:not(:root) {
 }
 
 .episode-content > div {
-    border-bottom: 1px solid #efefef;
+    border-bottom: 1px solid var(--border);
 }
 
 .episode-content:last-child > div:nth-last-child(2) {
@@ -508,7 +508,7 @@ svg:not(:root) {
 }
 
 .episode-content.active:last-child .episode-title {
-    border-bottom: 1px solid #efefef;
+    border-bottom: 1px solid var(--border);
 }
 
 .episode-content-options {
@@ -524,7 +524,7 @@ svg:not(:root) {
 }
 
 .episode-content-options.active > div {
-    border-top: 1px solid #efefef;
+    border-top: 1px solid var(--border);
 }
 
 .episode-content-options.active > div:first-child {
@@ -541,13 +541,12 @@ svg:not(:root) {
     place-content: center;
     text-decoration: none;
     font-size: .875rem;
-    background: #f5f5f5;
-    border: 1px solid #efefef;
+    border: 1px solid var(--border);
     border-radius: 3px;
 }
 
 .episode-content-options a:hover {
-    background: #eeeeee;
+    background: var(--hover);
 }
 
 .episode-content-options a span {
