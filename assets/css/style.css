@@ -1,8 +1,9 @@
 :root {
     --color: #000;
     --background: #fff;
+    --sub-background: #fff;
     --border: #efefef;
-    --box-shadow: 0 0 10px #dcdcdc;
+    --box-shadow: none;
 
     --lazyload-1: #f9fafa;
     --lazyload-2: #e5e6e7;
@@ -22,9 +23,10 @@
 
 [data-theme="dark"] {
     --color: #fff;
-    --background: #24292e;
-    --border: #2e363c;
-    --box-shadow: 0 0 10px #131722;
+    --background: #2d333b;
+    --sub-background: #373e47;
+    --border: rgb(205 217 229 / 10%);
+    --box-shadow: 0 0 10px rgb(0 0 0 / 25%);
 
     --lazyload-1: #2f3234;
     --lazyload-2: #2a2b2c;
@@ -621,7 +623,7 @@ div[data-placeholder] svg {
 }
 
 .article .author {
-    background: var(--background);
+    background: var(--sub-background);
     box-shadow: var(--box-shadow);
     border: 1px solid var(--border);
 }
@@ -640,7 +642,7 @@ div[data-placeholder] svg {
 
 .articles .article:nth-of-type(odd) .author:after {
     border-color: transparent;
-    border-left-color: var(--background);
+    border-left-color: var(--sub-background);
     border-width: 10px;
     margin-top: -10px;
 }
@@ -667,7 +669,7 @@ div[data-placeholder] svg {
 
 .article:nth-of-type(even) .author:after {
     border-color: transparent;
-    border-right-color: var(--background);
+    border-right-color: var(--sub-background);
     border-width: 10px;
     margin-top: -10px;
 }
@@ -778,34 +780,29 @@ div[data-placeholder] svg {
 
 .article .author .author-role.administrador {
     background-color: #E53935;
-    box-shadow: 0px 3px 3px 0px #fe8b774d;
 }
 .article .author .author-role.editor {
     background-color: #2196F3;
-    box-shadow: 0px 3px 3px 0px #0063eb4d;
 }
 .article .author .author-role.autor {
     background-color: #8BC34A;
-    box-shadow: 0px 3px 3px 0px #8bc34a63
 }
 
 .article .author .author-role.contribuinte {
     background-color: #212121;
-    box-shadow: 0px 3px 3px 0px #2121214d;
 }
 
 .article .author .author-role.premium {
     background-color: #FFCA28;
-    box-shadow: 0px 3px 3px 0px #ffca284d;
 }
 
 .article .author .author-role.assinante {
     background-color: #BDBDBD;
-    box-shadow: 0px 3px 3px 0px #BDBDBD61;
 }
 
 .article .posting {
-    background: var(--background);
+    background: var(--sub-background);
+    border: 1px solid var(--border);
     box-shadow: var(--box-shadow);
     border-radius: 4px;
 }
@@ -1611,7 +1608,8 @@ div[data-placeholder] svg {
 
 .search-suggest-input input {
     height: 45px;
-    background: var(--background);
+    color: var(--color);
+    background: var(--sub-background);
     border: 1px solid var(--border);
     border-bottom: 0;
     border-radius: 5px;
@@ -1637,7 +1635,7 @@ div[data-placeholder] svg {
     border: 1px solid var(--border);
     border-top: 1px dashed var(--border);
     border-radius: 3px;
-    background: var(--background);
+    background: var(--sub-background);
     box-shadow: 0 2px 5px 0px rgb(64 60 67 / 16%);
 }
 
@@ -1863,12 +1861,11 @@ div[data-placeholder] svg {
     gap: 1rem;
     padding: 0.5rem 1rem;
     border-radius: 3px;
-    background: #FEFCE8;
-    border: 1px dashed #FCE2B1;
+    background: var(--sub-background);
 }
 
 .donator-user:hover {
-    background: #f9f5cd;
+    background: var(--active);
 }
 
 .donator-rank {
