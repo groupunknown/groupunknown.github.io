@@ -2,6 +2,7 @@
     --color: #000;
     --background: #fff;
     --sub-background: #fff;
+    --search-background: #fcfcfc;
     --border: #efefef;
     --box-shadow: none;
 
@@ -19,12 +20,17 @@
     --donation-background: #FDF0C8;
     --donation-background-light: #FEFCE8;
     --donation-border: #FCE2B1;
+
+    
+    --background: #282e33;
+    --background-black: #18191d;
 }
 
 [data-theme="dark"] {
     --color: #fff;
     --background: #2d333b;
     --sub-background: #373e47;
+    --search-background: #3d444b;
     --border: rgb(205 217 229 / 10%);
     --box-shadow: 0 0 10px rgb(0 0 0 / 25%);
 
@@ -88,19 +94,19 @@ html, body {
 }
 */
 ::-webkit-input-placeholder {
-   color: #777;
+   color: var(--color);
 }
 
 :-moz-placeholder {
-   color: #777; 
+   color: var(--color); 
 }
 
 ::-moz-placeholder {
-   color: #777; 
+   color: var(--color); 
 }
 
 :-ms-input-placeholder {  
-   color: #777;
+   color: var(--color);
 }
 
 /* theme switch */
@@ -1019,7 +1025,6 @@ div[data-placeholder] svg {
     justify-content: center;
     width: 42px;
     height: 42px;
-    color: var(--color);
     box-shadow: inset 0 0 1rem rgb(0 0 0 / 10%);
     font-size: 1.3rem;
     font-weight: 500;
@@ -1028,7 +1033,7 @@ div[data-placeholder] svg {
 }
 
 .certification a {
-    color: var(--color);
+    color: #fff!important;
 }
 
 .certification.age-L {
@@ -1609,8 +1614,7 @@ div[data-placeholder] svg {
 .search-suggest-input input {
     height: 45px;
     color: var(--color);
-    background: var(--sub-background);
-    border: 1px solid var(--border);
+    background: var(--search-background);
     border-bottom: 0;
     border-radius: 5px;
     width: 100%;
@@ -1632,10 +1636,9 @@ div[data-placeholder] svg {
     max-height: 248px;
     overflow-y: auto;
     left: 12%;
-    border: 1px solid var(--border);
-    border-top: 1px dashed var(--border);
-    border-radius: 3px;
-    background: var(--sub-background);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background: var(--search-background);
     box-shadow: 0 2px 5px 0px rgb(64 60 67 / 16%);
 }
 
@@ -1678,8 +1681,12 @@ div[data-placeholder] svg {
     display: flex;
     flex-direction: row;
     padding: 0.5rem;
-    border-radius: 3px;
     gap: 0.75rem;
+}
+
+.search-suggest-results a:last-child {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 
 .search-suggest-poster {
