@@ -4,12 +4,15 @@
 		var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 		if (prefersDarkScheme.matches) {
 			document.documentElement.setAttribute("data-theme", "dark");
+			toggleSwitch.setAttribute("aria-label", "dark");
 		} else {
 			document.documentElement.setAttribute("data-theme", "light");
+			toggleSwitch.setAttribute("aria-label", "light");
 		}
 	}
 	if (currentTheme) {
 		document.documentElement.setAttribute("data-theme", currentTheme);
+		toggleSwitch.setAttribute("aria-label", currentTheme);
 		if (currentTheme === "dark") {
 			toggleSwitch.checked = true;
 		}
@@ -17,9 +20,11 @@
 	switchTheme = (e) => {
 		if (e.target.checked) {
 			document.documentElement.setAttribute("data-theme", "dark");
+			e.setAttribute("aria-label", "dark");
 			localStorage.setItem("theme-preference", "dark");
 		} else {
 			document.documentElement.setAttribute("data-theme", "light");
+			e.setAttribute("aria-label", "light");
 			localStorage.setItem("theme-preference", "light");
 		}
 	};
