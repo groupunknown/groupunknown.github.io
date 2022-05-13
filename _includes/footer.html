@@ -13,23 +13,12 @@
 	if (currentTheme) {
 		document.documentElement.setAttribute("data-theme", currentTheme);
 		toggleSwitch.setAttribute("aria-label", currentTheme);
-		if (currentTheme === "dark") {
-			toggleSwitch.checked = true;
-		}
 	}
-	switchTheme = (e) => {
-		if (e.target.checked) {
-			document.documentElement.setAttribute("data-theme", "dark");
-			toggleSwitch.setAttribute("aria-label", "dark");
-			localStorage.setItem("theme-preference", "dark");
-		} else {
-			document.documentElement.setAttribute("data-theme", "light");
-			toggleSwitch.setAttribute("aria-label", "light");
-			localStorage.setItem("theme-preference", "light");
-		}
-	};
-	document.querySelector("#theme-toggle").addEventListener("click", (e) => {
-		switchTheme(e);
+	document.querySelector("#theme-toggle").addEventListener("click", (event) => {
+		const scheme = (event.target === "light") ? "dark" : "light";
+		document.documentElement.setAttribute("data-theme", scheme);
+		toggleSwitch.setAttribute("aria-label", scheme);
+		localStorage.setItem("theme-preference", scheme);
 	});
 	window.addEventListener("load", function() {
 		var remove = document.querySelectorAll('a, span, div, time');
