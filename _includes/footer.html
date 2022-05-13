@@ -73,9 +73,8 @@ window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", ({m
 });
 
 reflectPreference();
+window.onload = () => {reflectPreference();};
 document.querySelector("#theme-toggle").addEventListener("click", onClick);
-
-	
 </script>
 {% if page.category %}
     <script>
