@@ -1007,19 +1007,19 @@ svg:not(:root) {
 }
 
 .certification a {
-    color: #fff!important;
+    color: #fff;
 }
 
 .certification.age-L {
-    background-color: #00a651
+    background-color: #00a651;
 }
 
 .certification.age-10 {
-    background-color: #0094da
+    background-color: #0094da;
 }
 
 .certification.age-12 {
-    background-color: #ffca05
+    background-color: #ffca05;
 }
 
 .certification.age-14 {
@@ -1030,10 +1030,8 @@ svg:not(:root) {
     background-color: #eb1d1b;
 }
 
-.certification.age-18,
-.certification.age-18 a {
-    color: var(--white)!important;
-    background-color: #000000
+.certification.age-18 {
+    background-color: #000000;
 }
 
 .badge {
