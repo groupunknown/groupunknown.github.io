@@ -15,7 +15,7 @@
 		toggleSwitch.setAttribute("aria-label", currentTheme);
 	}
 	document.querySelector("#theme-toggle").addEventListener("click", () => {
-		const scheme = (toggleSwitch.getAttribute("aria-label") === "light") ? "dark" : "light";
+		var scheme = (document.documentElement.getAttribute("data-theme") === "light") ? "dark" : "light";
 		document.documentElement.setAttribute("data-theme", scheme);
 		toggleSwitch.setAttribute("aria-label", scheme);
 		localStorage.setItem("theme-preference", scheme);
