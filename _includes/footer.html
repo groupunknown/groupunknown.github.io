@@ -20,11 +20,11 @@
 	switchTheme = (e) => {
 		if (e.target.checked) {
 			document.documentElement.setAttribute("data-theme", "dark");
-			e.setAttribute("aria-label", "dark");
+			toggleSwitch.setAttribute("aria-label", "dark");
 			localStorage.setItem("theme-preference", "dark");
 		} else {
 			document.documentElement.setAttribute("data-theme", "light");
-			e.setAttribute("aria-label", "light");
+			toggleSwitch.setAttribute("aria-label", "light");
 			localStorage.setItem("theme-preference", "light");
 		}
 	};
