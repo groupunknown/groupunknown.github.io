@@ -41,8 +41,8 @@
 const storageKey = "theme-preference";
 
 const onClick = () => {
-  theme.value = theme.value === "light" ? "dark" : "light";
-  setPreference();
+	theme.value = theme.value === "light" ? "dark" : "light";
+	setPreference();
 };
 
 const getColorPreference = () => {
@@ -72,10 +72,7 @@ window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", ({m
     setPreference();
 });
 
-window.addEventListener("load", function() {
-	reflectPreference();
-	document.querySelector("#theme-toggle").addEventListener("click", onClick);
-});
+document.querySelector("#theme-toggle").addEventListener("click", onClick);
 
 </script>
 {% if page.category %}
