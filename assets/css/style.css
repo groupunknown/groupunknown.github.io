@@ -120,7 +120,80 @@ html, body {
 
 @media (hover: none) {
     .theme-toggle {
-        --size: 48px;
+        inline-size: 3rem;
+        block-size: 3rem;
+    }
+}
+
+.sun-and-moon > :is(.moon,.sun,.sun-beams) {
+    transform-origin: center center;
+}
+
+.sun-and-moon > :is(.moon,.sun) {
+    fill: var(--icon-fill);
+}
+
+.theme-toggle:is(:hover,:focus-visible) > .sun-and-moon > :is(.moon,.sun) {
+    fill: var(--icon-fill-hover);
+}
+
+.sun-and-moon > .sun-beams {
+    stroke: var(--icon-fill);
+    stroke-width: 2px;
+}
+
+.theme-toggle:is(:hover,:focus-visible) .sun-and-moon > .sun-beams {
+    stroke: var(--icon-fill-hover);
+}
+
+[data-theme=dark] .sun-and-moon > .sun {
+    transform: scale(1.75);
+}
+
+[data-theme=dark] .sun-and-moon > .sun-beams {
+    opacity: 0;
+}
+
+[data-theme=dark] .sun-and-moon > .moon > circle {
+    transform: translate(-7px);
+}
+
+@supports (cx: 1) {
+    [data-theme=dark] .sun-and-moon > .moon > circle {
+        transform: translate(0);
+        cx: 17;
+    }
+}
+@media (prefers-reduced-motion: no-preference) {
+    .sun-and-moon > .sun {
+        transition: transform 0.5s cubic-bezier(.5,1.25,.75,1.25);
+    }
+
+    .sun-and-moon > .sun-beams {
+        transition: transform 0.5s cubic-bezier(.5,1.5,.75,1.25), opacity 0.5s cubic-bezier(.25,0,.3,1);
+    }
+
+    .sun-and-moon .moon > circle {
+        transition: transform 0.25s cubic-bezier(0,0,0,1);
+    }
+
+    @supports (cx: 1) {
+        .sun-and-moon .moon > circle {
+            transition: cx 0.25s cubic-bezier(0,0,0,1);
+        }
+    }
+    [data-theme=dark] .sun-and-moon > .sun {
+        transform: scale(1.75);
+        transition-timing-function: cubic-bezier(.25,0,.3,1);
+        transition-duration: 0.25s;
+    }
+    [data-theme=dark] .sun-and-moon > .sun-beams {
+        transform: rotate(-25deg);
+        transition-duration: 0.15s;
+    }
+    [data-theme=dark] .sun-and-moon > .moon > circle {
+        transition-delay: 0.25s;
+        transition-duration: 0.5s;
     }
 }
 
@@ -167,46 +240,6 @@ img {
 svg:not(:root) {
     overflow: hidden;
 }
-
-/*[data-placeholder] {
-    background: linear-gradient(to right, #f9fafa 10%, #e5e6e7 25%, #f9fafa 40%);
-    animation: placeholder 1.5s infinite forwards linear;
-    box-shadow: inset 0 0 0 200px rgb(0 0 0 / 0%);
-    background-color: transparent !important;
-    background-size: 1000px 100px;
-    position: relative;
-    pointer-events: none;
-    user-select: none;
-}
-
-a[data-placeholder],
-span[data-placeholder],
-div[data-placeholder] {
-    color: transparent !important;
-    border-color: transparent !important;
-    border-radius: 3px;
-}
-.author-role[data-placeholder] {
-    box-shadow: inset 0 0 0px 200px rgb(0 0 0 / 5%) !important;
-}
-.author-role[data-placeholder]:before,
-.author-role[data-placeholder]:after,
-.author-name[data-placeholder] {
-    opacity: 0 !important;
-}
-div[data-placeholder] img,
-div[data-placeholder] svg {
-    opacity: 0;
-}
-
-@keyframes placeholder{
-    0% {
-        background-position: -500px 0;
-    }
-    100% {
-        background-position: 500px 0;
-    }
-}*/
 
 .alert {
     position: relative;
@@ -556,27 +589,7 @@ div[data-placeholder] svg {
 .article:nth-child(even) {
   align-self: flex-end;
 }
-/*
-.article:nth-child(5):after,
-.article-banner:after {
-    display: inline-block;
-    z-index: -1;
-    content: '';
-    position: absolute;
-    bottom: -150px;
-    left: 25%;
-    width: 200px;
-    height: 145px;
-    background: url('../img/arrow-left.svg');
-    background-size: cover;
-    opacity: .5;
-}
 
-.article-banner:after {
-    transform: rotateY(180deg);
-    left: 50%;
-}
-*/
 .article .author {
     position: sticky;
     top: 200px;
@@ -668,9 +681,6 @@ div[data-placeholder] svg {
 
 .article .author .author-letter {
     color: var(--color);
-    /*background-image: url(../img/sparkles.gif), linear-gradient(210deg,#fc0 0%,#00ff0a 100%,#fff);
-    background-image: linear-gradient(210deg,#fc0 0%,#00ff0a 100%,#fff);
-    animation: royal 15s infinite linear;*/
 }
 
 .article .author .author-name {
@@ -1197,59 +1207,6 @@ div[data-placeholder] svg {
 .hsf-certification .hsf-items-btn:nth-child(6) {
     background: #0000001a
 }
-
-/* PAGINAÃ‡ÃƒO 
-.paginationjs {
-    font-size: 13px;
-    cursor: default;
-}
-.paginationjs .paginationjs-pages ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.paginationjs .paginationjs-pages li {
-    border: 1px solid #f5f5f5;
-    border-right: none;
-    list-style: none;
-}
-
-.paginationjs .paginationjs-pages li:first-child {
-    border-radius: 3px 0 0 3px;
-}
-
-.paginationjs .paginationjs-pages li {
-    display: flex;
-    padding: .5rem 1rem;
-}
-
-.paginationjs .paginationjs-pages li.active {
-    background: #f5f5f5!important;
-}
-
-.paginationjs .paginationjs-pages li.disabled {
-    opacity: 0.3;
-}
-
-.paginationjs .paginationjs-pages li:hover {
-    background: #ebedf0;
-    cursor: pointer;
-}
-
-.paginationjs .paginationjs-pages li.disabled:hover {
-    background: transparent;
-}
-
-.paginationjs .paginationjs-pages li.paginationjs-next {
-    border-right: 1px solid #f5f5f5;
-}
-
-.paginationjs .paginationjs-pages li:last-child {
-    border-right: 1px solid #f5f5f5;
-    border-radius: 0 3px 3px 0;
-}
-*/
 
 .paginationjs {
     font-size: 13px;
