@@ -99,6 +99,9 @@ html, body {
 
 /* theme switch */
 .theme-toggle {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
     background: none;
     border: none;
     padding: 0;
