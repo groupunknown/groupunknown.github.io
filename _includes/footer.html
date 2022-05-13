@@ -1,5 +1,5 @@
 <script>
-	window.addEventListener("load", function() { 
+	window.addEventListener("load", function() {
 		var remove = document.querySelectorAll('a, span, div, time');
 		Array.prototype.forEach.call(remove, (item) => item.removeAttribute('data-placeholder'));
 	});
@@ -72,9 +72,11 @@ window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", ({m
     setPreference();
 });
 
-reflectPreference();
-window.onload = () => {reflectPreference();};
-document.querySelector("#theme-toggle").addEventListener("click", onClick);
+window.addEventListener("load", function() {
+	reflectPreference();
+	document.querySelector("#theme-toggle").addEventListener("click", onClick);
+});
+
 </script>
 {% if page.category %}
     <script>
