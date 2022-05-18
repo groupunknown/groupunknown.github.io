@@ -14,6 +14,11 @@ webmaster_verifications:
   #yandex: 
   #baidu: 
 
+# ["w92","w154","w185","w342","w500","w780","original"]
+# https://www.themoviedb.org/talk/53c11d4ec3a3684cf4006400
+article_size_img_home: w154
+article_size_img_post: w185
+
 donator_status: false
 
 encrypt_status: false
