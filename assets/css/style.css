@@ -29,8 +29,8 @@
 html[data-theme="dark"] {
     color-scheme: dark;
     --color: #fff;
-    --background: #2d333b;
-    --sub-background: #373e47;
+    --background: #252b31;
+    --sub-background: #3d4246;
     --search-background: #3d444b;
     --border: rgb(205 217 229 / 10%);
     --box-shadow: 0 0 10px rgb(0 0 0 / 25%);
