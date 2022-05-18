@@ -25,4 +25,25 @@
     {% if page.layout == "post" %}
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.posting.css" media="all">
     {% endif %}
+    <script>var toggleSwitch = document.querySelector("#theme-toggle"), currentTheme = localStorage.getItem("theme-preference");
+    if(currentTheme === null) {
+        var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+        if (prefersDarkScheme.matches) {
+            document.documentElement.setAttribute("data-theme", "dark");
+            toggleSwitch.setAttribute("aria-label", "dark");
+        } else {
+            document.documentElement.setAttribute("data-theme", "light");
+            toggleSwitch.setAttribute("aria-label", "light");
+        }
+    }
+    if (currentTheme) {
+        document.documentElement.setAttribute("data-theme", currentTheme);
+        toggleSwitch.setAttribute("aria-label", currentTheme);
+    }
+    document.querySelector("#theme-toggle").addEventListener("click", () => {
+        var scheme = (document.documentElement.getAttribute("data-theme") === "light") ? "dark" : "light";
+        document.documentElement.setAttribute("data-theme", scheme);
+        toggleSwitch.setAttribute("aria-label", scheme);
+        localStorage.setItem("theme-preference", scheme);
+    });</script>
 </head>
