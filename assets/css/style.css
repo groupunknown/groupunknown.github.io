@@ -968,73 +968,58 @@ svg:not(:root) {
 .bg-cert-18 {
     background-color: #000000;
 }
-
+/*
 .badge {
     text-transform: uppercase;
     padding: 0 .5rem;
     border-radius: 2px;
     box-shadow: inset 0 -2px 0 rgb(0 0 0 / 5%);
 }
-
 .badge-0 {
     color: #e95350;
     background-color: rgba(233,83,80,.2);
 }
-
 .badge-1 {
     color: #f2a45e;
     background-color: rgba(242,164,94,.2)
 }
-
 .badge-2 {
     color: #f7cc6b;
     background-color: rgba(247,204,107,.2)
 }
-
 .badge-3 {
     color: #65b89e;
     background-color: rgba(101,184,158,.2)
 }
-
 .badge-4 {
     color: #179de3;
     background-color: rgba(23,157,227,.2)
 }
-
 .badge-5 {
     color: #6462cd;
     background-color: rgba(100,98,205,.2)
 }
-
 .badge-6 {
     color: rgb(20, 106, 144);
     background-color: rgba(41, 171, 226, 0.2);
-    /*border: 1px dashed #29ABE2;*/
 }
-
 .badge-7 {
     color: rgb(120, 33, 117);
     background-color: rgba(200, 54, 195, 0.2);
-    /*border: 1px dashed #C836C3;*/
 }
-
 .badge-8 { 
     color: rgb(41, 0, 138);
     background-color: rgba(137, 86, 255, 0.2);
-    /*border: 1px dashed #8956FF;*/
 }
-
 .badge-9 {
     color: #886701;
     background-color: rgba(255, 205, 58, 0.2);
-    /*border: 1px dashed #FFCD3A;*/
 }
-
 .badge-10 {
     color: #BB2E3E;
     background-color: rgba(203, 56, 55, 0.2);
-    /*border: 1px dashed #cb3837;*/
 }
+*/
 
 /* Sidebar Filter */
 .hsf-sidebar {
