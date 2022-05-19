@@ -914,28 +914,28 @@ svg:not(:root) {
     text-transform: uppercase;
 }
 
-.article-rating svg path:nth-child(1) {
+/*.article-rating svg path:nth-child(1) {
     fill: none;
     opacity: .5;
     stroke: inherit;
     stroke-width: 4;
-}
+}*/
 
 .article-rating svg path:nth-child(2) {
     -webkit-animation: progress 1s ease-out forwards;
     animation: progress 1s ease-out forwards;
-    fill: none;
+    /*fill: none;
     stroke: inherit;
     stroke-linecap: round;
-    stroke-width: 4;
+    stroke-width: 4;*/
 }
 
 .article-rating svg text {
-    fill: inherit;
+    /*fill: inherit;
+    stroke: none !important;*/
     font-size: 1.2rem;
     letter-spacing: -0.0625rem;
     font-weight: 500;
-    stroke: none !important;
 }
 
 .rating-text {
@@ -951,7 +951,7 @@ svg:not(:root) {
     height: 3rem;
     user-select: none;
 }
-
+/*
 .rating.nenhum,
 .status-nenhum {
     fill: #dee0ec !important;
@@ -991,7 +991,7 @@ svg:not(:root) {
     color: #4aa757 !important;
     fill: #4aa757 !important;
     stroke: #4aa757 !important;
-}
+}*/
 
 .certification {
     display: flex;

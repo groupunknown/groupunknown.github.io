@@ -11,16 +11,22 @@
 {% assign execelente = "81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100" | split: ',' %}
 {% if pessimo contains vote_average %}
 {% assign status_text = "Péssimo" %}
+{% assign hex_color = "#ff3722" %}
 {% elsif ruim contains vote_average %}
 {% assign status_text = "Ruim" %}
+{% assign hex_color = "#ff8622" %}
 {% elsif aceitavel contains vote_average %}
 {% assign status_text = "Aceitável" %}
+{% assign hex_color = "#ffce00" %}
 {% elsif otimo contains vote_average %}
 {% assign status_text = "Ótimo" %}
+{% assign hex_color = "#73cf11" %}
 {% elsif execelente contains vote_average %}
 {% assign status_text = "Excelente" %}
+{% assign hex_color = "#4aa757" %}
 {% else %}
 {% assign status_text = "Nenhum" %}
+{% assign hex_color = "#dee0ec" %}
 {% endif %}
 {% if vote_average contains "100" %}
 {% assign status_num = "10" %}
@@ -42,10 +48,10 @@ Nenhuma avaliação
 {% endcapture %}
 <div class="article-rating">
 	<div class="rating {{ status_text | slugify: "latin" }}" data-placeholder>
-		<svg viewBox="0 0 36 36" data-status="{{ status_text | strip }}">
-			<path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
-			<path stroke-dasharray="{{ vote_average | strip }}, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
-			<text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle">{{ status_num | strip }}</text>
+		<svg viewBox="0 0 36 36" fill="{{ hex_color }}" xmlns="http://www.w3.org/2000/svg">
+			<path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" opacity=".5" stroke="{{ hex_color }}" stroke-width="4" fill="none"></path>
+			<path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" stroke-dasharray="{{ vote_average | strip }}, 100" stroke="{{ hex_color }}" stroke-width="4" fill="none" stroke-linecap="round"></path>
+			<text x="50%" y="55%" dominant-baseline="middle" stroke="none" text-anchor="middle">{{ status_num | strip }}</text>
 		</svg>
 	</div>
 	<a href="/avaliacoes?vote_average={{status_text | slugify: "latin"}}" class="status-{{ status_text | slugify: "latin" }}" data-placeholder>{{ status_text | strip }}</a>
