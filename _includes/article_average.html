@@ -47,11 +47,11 @@ Nenhuma avaliação
 {% endif %}
 {% endcapture %}
 <div class="article-rating">
-	<div class="rating {{ status_text | slugify: "latin" }}" data-placeholder>
-		<svg viewBox="0 0 36 36" fill="{{ hex_color }}" xmlns="http://www.w3.org/2000/svg">
+	<div class="rating" data-placeholder>
+		<svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
 			<path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" opacity=".5" stroke="{{ hex_color }}" stroke-width="4" fill="none"></path>
 			<path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" stroke-dasharray="{{ vote_average | strip }}, 100" stroke="{{ hex_color }}" stroke-width="4" fill="none" stroke-linecap="round"></path>
-			<text x="50%" y="55%" dominant-baseline="middle" stroke="none" text-anchor="middle">{{ status_num | strip }}</text>
+			<text x="50%" y="55%" dominant-baseline="middle" fill="{{ hex_color }}" stroke="none" text-anchor="middle">{{ status_num | strip }}</text>
 		</svg>
 	</div>
 	<a href="/avaliacoes?vote_average={{status_text | slugify: "latin"}}" class="status-{{ status_text | slugify: "latin" }}" data-placeholder>{{ status_text | strip }}</a>

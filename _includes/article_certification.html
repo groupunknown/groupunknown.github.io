@@ -20,8 +20,6 @@ NÃO RECOMENDADO PARA MENORES DE DEZOITO ANOS
 INDISPONÍVEL
 {% endif %}
 {% endcapture %}
-<div class="article-certification">
-	<div class="certification age-{{ postings.certification | strip }}" aria-label="{{ crtfctn_text | strip }}" data-tooltipped="top-right" data-placeholder>
-		<a href="/classificacao?certification={{ postings.certification | strip }}">{{ postings.certification | strip }}</a>
-	</div>
+<div class="parental-rating bg-cert-{{ postings.certification | strip }}" aria-label="{{ crtfctn_text | strip }}" data-tooltipped="top-right" data-placeholder>
+	<a href="/classificacao?certification={{ postings.certification | strip }}">{{ postings.certification | strip }}</a>
 </div>
