@@ -907,6 +907,9 @@ svg:not(:root) {
     place-items: center start;
     max-height: 42px;
 }
+.article-rating a {
+    color: var(--rating-color);
+}
 .rating {
     display: grid;
     grid-row: 1 / span 2;
