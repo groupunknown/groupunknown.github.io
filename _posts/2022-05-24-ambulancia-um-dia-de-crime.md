@@ -5,7 +5,7 @@ category: Filmes
 post_date: '2022-05-25T03:33:09.376Z'
 post_modified: '2022-05-25T03:33:09.376Z'
 title: 'Ambulância: Um Dia de Crime'
-description: 'O condecorado veterano Will Sharp, desesperado por dinheiro para cobrir as contas médicas de sua esposa, pede ajuda de uma pessoa que ele sabe que não deveria — seu irmão adotivo Danny. Um criminoso carismático, Danny oferece-lhe uma pontuação: o maior assalto a banco na história de Los Angeles: 32 milhões de dólares. Com a sobrevivência de sua esposa em jogo, Will não pode dizer não.'
+description: 'O condecorado veterano Will Sharp, desesperado por dinheiro para cobrir as contas médicas de sua esposa, pede ajuda de uma pessoa que ele sabe que não deveria, seu irmão adotivo Danny. Um criminoso carismático, Danny oferece-lhe um serviço, o maior assalto a banco na história de Los Angeles. Com a sobrevivência de sua esposa em jogo, Will não pode dizer não.'
 poster_path: /5XjQKmtfsiFFdBVDRhZFQvQq5AK.jpg
 tmdb_id: 763285
 imdb_id: tt4998632
