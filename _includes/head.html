@@ -33,14 +33,17 @@
             if (prefersDarkScheme.matches) {
                 document.documentElement.setAttribute("data-theme", "dark");
                 toggleSwitch.setAttribute("aria-label", "dark");
+                document.querySelector(".header-logo a img").src = "/assets/img/logo-dark.webp";
             } else {
                 document.documentElement.setAttribute("data-theme", "light");
                 toggleSwitch.setAttribute("aria-label", "light");
+                document.querySelector(".header-logo a img").src = "/assets/img/logo-light.webp";
             }
         }
         if (currentTheme) {
             document.documentElement.setAttribute("data-theme", currentTheme);
             toggleSwitch.setAttribute("aria-label", currentTheme);
+            document.querySelector(".header-logo a img").src = "/assets/img/logo-"+currentTheme+".webp";
         }
         document.querySelector("#theme-toggle").addEventListener("click", () => {
             var scheme = (document.documentElement.getAttribute("data-theme") === "light") ? "dark" : "light";
