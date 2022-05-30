@@ -3,25 +3,25 @@
 {% else %}
 {% assign postings = post %}
 {% endif %}
-{% assign rank = site.data.authors[postings.author].role | remove: "." %}
-{% capture role %}
-{% if rank == "0" %}
-assinante
-{% elsif rank == "1" %}
-administrador
-{% elsif rank == "2" %}
-autor
-{% elsif rank == "3" %}
-editor
-{% elsif rank == "4" %}
-contribuinte
-{% elsif rank == "5" %}
-premium
-{% endif %}
-{% endcapture %}
 <div class="author">
 	{% for author in site.data.authors %}
    	{% if author.name == postings.author %}
+   	{% assign rank = author.role %}
+	{% capture role %}
+	{% if rank == "0" %}
+	assinante
+	{% elsif rank == "1" %}
+	administrador
+	{% elsif rank == "2" %}
+	autor
+	{% elsif rank == "3" %}
+	editor
+	{% elsif rank == "4" %}
+	contribuinte
+	{% elsif rank == "5" %}
+	premium
+	{% endif %}
+	{% endcapture %}
 	<div class="author-image">
 		{% if author.avatar %}
 		<div class="author-avatar" data-placeholder>
@@ -38,13 +38,17 @@ premium
 			<span>Juntou-se:</span>
 			<span>{{ author.joined }}</span>
 		</div>
-		{% assign author_posts = site.posts | where: "author", postings.author %}
-		{% for post in author_posts %}
-		{% assign total_posts = author_posts.size %}
-		{% endfor %}
 		<div class="infor-posts" data-placeholder>
-			<span>Publicações:</span>
-			<span>{{ total_posts }}</span>
+			<span>Publicações:</span>{% assign author_posts = site.posts | where: "author", author.name %}
+			<span>{{ author_posts.size }}</span>
+		</div>
+		<div class="infor-posts" data-placeholder>
+			<span>Filmes:</span>{% assign movies = site.posts | where: "author", author.name | where: "category", "Filmes" %}
+			<span>{{ movies.size }}</span>
+		</div>
+		<div class="infor-posts" data-placeholder>
+			<span>Séries:</span>{% assign series = site.posts | where: "author", author.name | where: "category", "Séries" %}
+			<span>{{ series.size }}</span>
 		</div>
 	</div>
 	{% endif %}
