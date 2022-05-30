@@ -21,6 +21,7 @@ layout: null
             {% for post in author_posts %}
             {% assign total_posts = author_posts.size %}
             {% endfor %}
+            {% endfor %}
             "count": {{ total_posts | jsonify }}
         }{% if forloop.last == false %},{% endif %}{% endfor %}
     ]
