@@ -15,17 +15,10 @@ layout: null
             "name": {{ author.name | jsonify }},
             "joined": {{ author.joined | jsonify }},
             "role": {{ author.role | jsonify }},
-            "avatar": {{ author.avatar | jsonify }},
-            {% assign author_posts = site.posts | where: "author", author.name %}
-            "teste": {{ author_posts.size }},
-            {% for post in author_posts %}
-            {% if author_posts.size == empty %}
-                {% assign total_posts = 0 %}
-                {% else %}
-                    {% assign total_posts = author_posts.size %}
-                {% endif %}
-            {% endfor %}
-            "count": {{ total_posts | jsonify }}
+            "avatar": {{ author.avatar | jsonify }},{% assign author_posts = site.posts | where: "author", author.name %}
+            "count": {{ author_posts.size }},{% assign series = site.posts | where: "author", author.name | where: "category", "Séries" %}
+            "series": {{ series.size }},{% assign movies = site.posts | where: "author", author.name | where: "category", "Filmes" %}
+            "movies": {{ movies.size }}
         }{% if forloop.last == false %},{% endif %}{% endfor %}
     ]
 }
