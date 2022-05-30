@@ -21,7 +21,7 @@ layout: null
             {% assign author_posts = site.posts | where: "author", author.name %}
             {% for post in author_posts %}
 
-            {% if site.pages.size > 0 %}
+            {% if author_posts.size > 0 %}
                 {% assign total_posts = author_posts.size %}
             {% else %}
                 {% assign total_posts = 0 %}
