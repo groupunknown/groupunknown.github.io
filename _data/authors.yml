@@ -1,30 +1,20 @@
-heisenberg:
-    id: 111
-    name: Heisenberg
-    joined: 2018
-    role: 1
-    avatar: /assets/img/authors/heisenberg.webp
-hannibal_lecter:
-    id: 222
-    name: Hannibal Lecter
-    joined: 2019
-    role: 2
-    avatar: /assets/img/authors/hannibal_lecter.webp
-pennywise:
-    id: 333
-    name: Pennywise
-    joined: 2020
-    role: 3
-    avatar: /assets/img/authors/pennywise.webp
-voldemort:
-    id: 444
-    name: Voldemort
-    joined: 2021
-    role: 4
-    avatar: /assets/img/authors/voldemort.webp
-rick_grimes:
-    id: 555
-    name: Rick Grimes
-    joined: 2022
-    role: 5
-    avatar: /assets/img/authors/rick_grimes.webp
+- name: Heisenberg
+  joined: 2018
+  role: 1
+  avatar: /assets/img/authors/heisenberg.webp
+- name: Hannibal Lecter
+  joined: 2019
+  role: 2
+  avatar: /assets/img/authors/hannibal_lecter.webp
+- name: Pennywise
+  joined: 2020
+  role: 3
+  avatar: /assets/img/authors/pennywise.webp
+- name: Voldemort
+  joined: 2021
+  role: 4
+  avatar: /assets/img/authors/voldemort.webp
+- name: Rick Grimes
+  joined: 2022
+  role: 5
+  avatar: /assets/img/authors/rick_grimes.webp
