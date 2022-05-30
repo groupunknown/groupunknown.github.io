@@ -1,6 +1,6 @@
 ---
 layout: post
-author: heisenberg
+author: Heisenberg
 category: Séries
 post_date: '2022-05-25T03:40:09.087Z'
 post_modified: '2022-05-25T03:40:09.087Z'

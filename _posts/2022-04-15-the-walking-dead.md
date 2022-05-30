@@ -1,6 +1,6 @@
 ---
 layout: post
-author: heisenberg
+author: Rick Grimes
 category: Séries
 post_date: '2022-04-15T17:31:06.865Z'
 post_modified: '2022-04-15T17:31:06.866Z'

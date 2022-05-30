@@ -1,6 +1,6 @@
 ---
 layout: post
-author: pennywise
+author: Rick Grimes
 category: Filmes
 post_date: '2022-04-15T17:54:10.808Z'
 post_modified: '2022-04-15T17:54:10.808Z'

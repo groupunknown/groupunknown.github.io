@@ -1,6 +1,6 @@
 ---
 layout: post
-author: pennywise
+author: Pennywise
 category: Filmes
 post_date: '2022-04-15T17:54:54.057Z'
 post_modified: '2022-04-15T17:54:54.057Z'

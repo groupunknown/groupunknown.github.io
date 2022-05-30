@@ -16,7 +16,6 @@ layout: null
             "joined": {{ author.joined | jsonify }},
             "role": {{ author.role | jsonify }},
             "avatar": {{ author.avatar | jsonify }},
-
             {% for post in site.posts %}
             {% assign author_posts = site.posts | where: "author", author.name %}
             {% for post in author_posts %}
@@ -24,7 +23,6 @@ layout: null
             {% endfor %}
             {% endfor %}
             "count": {{ total_posts | jsonify }}
-            
         }{% if forloop.last == false %},{% endif %}{% endfor %}
     ]
 }
