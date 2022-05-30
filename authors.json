@@ -17,17 +17,15 @@ layout: null
             "role": {{ author.role | jsonify }},
             "avatar": {{ author.avatar | jsonify }},
 
-            {% for post in site.posts %}
-            {% assign author_posts = site.posts | where: "author", author.name %}
-            {% for post in author_posts %}
+                {% assign author_posts = site.posts | where: "author", author.name %}
 
-            {% if author_posts.size == empty %}
-                {% assign total_posts = author_posts.size %}
-            {% else %}
-                {% assign total_posts = 0 %}
-            {% endif %}
 
-            {% endfor %}{% endfor %}
+                {% if author_posts.size == empty %}
+                    {% assign total_posts = author_posts.size %}
+                {% else %}
+                    {% assign total_posts = 0 %}
+                {% endif %}
+
 
             "count": {{ total_posts | jsonify }}
         }{% if forloop.last == false %},{% endif %}{% endfor %}
