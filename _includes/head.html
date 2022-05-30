@@ -47,6 +47,7 @@
             document.documentElement.setAttribute("data-theme", scheme);
             toggleSwitch.setAttribute("aria-label", scheme);
             localStorage.setItem("theme-preference", scheme);
+            document.querySelector(".header-logo a img").src = "/assets/img/logo-"+scheme+".webp";
         });
     });
     </script>
