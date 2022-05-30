@@ -21,7 +21,7 @@ premium
 {% endcapture %}
 <div class="author">
 	{% for author in site.data.authors %}
-   	{% if author == postings.author %}
+   	{% if author.name == postings.author %}
 	<div class="author-image">
 		{% if author.avatar %}
 		<div class="author-avatar" data-placeholder>
