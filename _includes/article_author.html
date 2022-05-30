@@ -8,17 +8,17 @@
    	{% if author.name == postings.author %}
    	{% assign rank = author.role %}
 	{% capture role %}
-	{% if rank == "0" %}
+	{% if rank == 0 %}
 	assinante
-	{% elsif rank == "1" %}
+	{% elsif rank == 1 %}
 	administrador
-	{% elsif rank == "2" %}
+	{% elsif rank == 2 %}
 	autor
-	{% elsif rank == "3" %}
+	{% elsif rank == 3 %}
 	editor
-	{% elsif rank == "4" %}
+	{% elsif rank == 4 %}
 	contribuinte
-	{% elsif rank == "5" %}
+	{% elsif rank == 5 %}
 	premium
 	{% endif %}
 	{% endcapture %}
