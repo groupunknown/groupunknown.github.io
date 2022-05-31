@@ -5,7 +5,7 @@ layout: null
     "genres": [
         {% for ctgry in site.data.filter.genres %}{% assign posts = site.posts | where: "genres", ctgry.item %}
         {
-            "genre": {{ ctgry.item }},
+            "genre": {{ ctgry.item | jsonify }},
             "count": {{ posts.size }}
         }{% if forloop.last == false %},{% endif %}{% endfor %}
     ]
