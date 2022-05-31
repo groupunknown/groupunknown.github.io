@@ -24,6 +24,7 @@ layout: null
 {% assign rating_e_count = 0 %}
 {% assign reting_f_count = 0 %}
 {% for post in site.posts %}
+{{ post.vote_average | remove: "." }}
     {% for i in (10..20) %}
         {% if i == post.vote_average | remove: "." %}
             {% capture rating_a_count %}{{ rating_a_count | plus: 1 }}{% endcapture %}
