@@ -21,25 +21,23 @@ layout: null
 {% assign aceitavel = "41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60" | split: ',' %}
 {% assign otimo = "61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80" | split: ',' %}
 {% assign execelente = "81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100" | split: ',' %}
+
 {% for post in site.posts %}
-        {% if pessimo contains post.vote_average | remove: "." %}
-            {% capture rating_a_count %}{% increment rating_a_count %}{% endcapture %}
-        {% endif %}
-        {% if ruim contains post.vote_average | remove: "." %}
-            {% capture rating_b_count %}{% increment rating_b_count %}{% endcapture %}
-        {% endif %}
-        {% if aceitavel contains post.vote_average | remove: "." %}
-            {% capture rating_c_count %}{% increment rating_c_count %}{% endcapture %}
-        {% endif %}
-        {% if otimo contains post.vote_average | remove: "." %}
-            {% capture rating_d_count %}{% increment rating_d_count %}{% endcapture %}
-        {% endif %}
-        {% if execelente contains post.vote_average | remove: "." %}
-            {% capture rating_e_count %}{% increment rating_e_count %}{% endcapture %}
-        {% endif %}
-    {% if post.vote_average | remove: "." == "00" %}
-        {% capture rating_f_count %}{% increment rating_f_count %}{% endcapture %}
-    {% endif %}
+{{ post.title }}
+{% assign vote_average = post.vote_average | remove: "." %}
+{% if pessimo contains vote_average %}
+{% capture rating_a_count %}{% increment rating_a_count %}{% endcapture %}
+{% elsif ruim contains vote_average %}
+{% capture rating_b_count %}{% increment rating_b_count %}{% endcapture %}
+{% elsif aceitavel contains vote_average %}
+{% capture rating_c_count %}{% increment rating_c_count %}{% endcapture %}
+{% elsif otimo contains vote_average %}
+{% capture rating_d_count %}{% increment rating_d_count %}{% endcapture %}
+{% elsif execelente contains vote_average %}
+{% capture rating_e_count %}{% increment rating_e_count %}{% endcapture %}
+{% elsif vote_average == "00" %}
+{% capture rating_f_count %}{% increment rating_f_count %}{% endcapture %}
+{% endif %}
 {% endfor %}
     {
         "item": "Péssimo",
