@@ -2,10 +2,15 @@
 layout: null
 ---
 {
-    "genres": [
-        {% for ctgry in site.data.filter.genres %}{% assign posts = site.posts | where: "genres", ctgry.item %}
+    "genres": [{% for items in site.data.filter.genres %}{% assign posts = site.posts | where: "genres", items.item %}
         {
-            "genre": {{ ctgry.item | jsonify }},
+            "item": {{ items.item | jsonify }},
+            "count": {{ posts.size }}
+        }{% if forloop.last == false %},{% endif %}{% endfor %}
+    ],
+    "certification": [{% for items in site.data.filter.certification %}{% assign posts = site.posts | where: "certification", items.item %}
+        {
+            "item": {{ items.item | jsonify }},
             "count": {{ posts.size }}
         }{% if forloop.last == false %},{% endif %}{% endfor %}
     ]
