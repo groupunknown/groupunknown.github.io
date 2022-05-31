@@ -1,0 +1,11 @@
+---
+layout: null
+---
+[
+    {% for item in site.data.filter.genres %}
+    {
+        {% assign posts = site.posts | where: "genres", item %}
+        {{ item }}: {{ posts.size }}
+    }
+    {% endfor %}
+]
