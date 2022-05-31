@@ -17,40 +17,35 @@ layout: null
 }
 "vote_average": [
 
-{% assign rating_a_count = 0 %}
-{% assign rating_b_count = 0 %}
-{% assign rating_c_count = 0 %}
-{% assign rating_d_count = 0 %}
-{% assign rating_e_count = 0 %}
-{% assign reting_f_count = 0 %}
+
 {% for post in site.posts %}
     {% for i in (10..20) %}
         {% if post.vote_average | remove: "." == i %}
-            {{ assign rating_a_count = rating_a_count | plus: 1 }}
+            {% capture rating_a_count %}{% increment rating_a_count %}{% endcapture %}
         {% endif %}
     {% endfor %}
     {% for i in (21..40) %}
         {% if post.vote_average | remove: "." == i %}
-            {{ assign rating_b_count = rating_b_count | plus: 1 }}
+            {% capture rating_b_count %}{% increment rating_b_count %}{% endcapture %}
         {% endif %}
     {% endfor %}
     {% for i in (41..60) %}
         {% if post.vote_average | remove: "." == i %}
-            {{ assign rating_c_count = rating_c_count | plus: 1 }}
+            {% capture rating_c_count %}{% increment rating_c_count %}{% endcapture %}
         {% endif %}
     {% endfor %}
     {% for i in (61..80) %}
         {% if post.vote_average | remove: "." == i %}
-            {{ assign rating_d_count = rating_d_count | plus: 1 }}
+            {% capture rating_d_count %}{% increment rating_d_count %}{% endcapture %}
         {% endif %}
     {% endfor %}
     {% for i in (81..100) %}
         {% if post.vote_average | remove: "." == i %}
-            {{ assign rating_e_count = rating_e_count | plus: 1 }}
+            {% capture rating_e_count %}{% increment rating_e_count %}{% endcapture %}
         {% endif %}
     {% endfor %}
     {% if post.vote_average | remove: "." == "00" %}
-        {{ assign rating_f_count = rating_f_count | plus: 1 }}
+        {% capture rating_f_count %}{% increment rating_f_count %}{% endcapture %}
     {% endif %}
 {% endfor %}
     {
