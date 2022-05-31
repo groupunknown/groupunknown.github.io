@@ -23,7 +23,7 @@ layout: null
 {% assign rating_d_count = 0 %}{% assign rating_b_label = 0 %}
 {% assign rating_e_count = 0 %}{% assign rating_b_label = 0 %}
 {% for items in site.data.filter.avaliacoes %}
-    {% for post in posts %}
+    {% for post in site.posts %}
         {% for i in (10..100) %}
             {% if i == post.vote_average | remove: "." %}
                 {% assign rating_a_label = "Péssimo" %}
