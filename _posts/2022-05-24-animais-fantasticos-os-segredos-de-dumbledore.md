@@ -27,7 +27,7 @@ crews:
 trailer: hLoc55VAByk
 certification: 10
 adult: false
-vote_average: 1.7
+vote_average: 6.7
 vote_count: 1092
 qualitys:
   - 1080p

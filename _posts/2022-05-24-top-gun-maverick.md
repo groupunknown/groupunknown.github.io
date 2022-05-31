@@ -26,7 +26,7 @@ crews:
 trailer: 7aOCYTflp8o
 certification: 12
 adult: false
-vote_average: 8.1
+vote_average: 0
 vote_count: 50
 qualitys:
   - 1080p

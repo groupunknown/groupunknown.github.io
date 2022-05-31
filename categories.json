@@ -39,7 +39,7 @@ layout: null
 {% assign rating_d_count = rating_d_count | plus:1 %}
 {% elsif execelente contains vote_average %}
 {% assign rating_e_count = rating_e_count | plus:1 %}
-{% elsif vote_average == "00" %}
+{% elsif vote_average == "00" or vote_average == "0" %}
 {% assign rating_f_count = rating_f_count | plus:1 %}
 {% endif %}
 {% endfor %}
