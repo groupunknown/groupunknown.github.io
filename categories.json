@@ -15,7 +15,7 @@ layout: null
         }{% if forloop.last == false %},{% endif %}{% endfor %}
     ]
 }
-"parents_guide": [
+"vote_average": [
 
 {% assign rating_a_count = 0 %}
 {% assign rating_b_count = 0 %}
@@ -78,3 +78,13 @@ layout: null
         "count": {{ rating_f_count }}
     }
 ]
+
+{% for i in (21..40) %}
+{% if post.vote_average | remove: "." == 25 %}
+"fuck achei"
+{% endif %}
+{{ i }}
+{% if post.vote_average | remove: "." == 41 %}
+"fuck deu merda"
+{% endif %}
+{% endfor %}
