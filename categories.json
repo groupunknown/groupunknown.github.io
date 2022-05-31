@@ -26,27 +26,27 @@ layout: null
 {% for post in site.posts %}
 {{ post.vote_average | remove: "." }}
     {% for i in (10..20) %}
-        {% if i == post.vote_average | remove: "." %}
+        {% if post.vote_average | remove: "." contains i %}
             {% capture rating_a_count %}{{ rating_a_count | plus: 1 }}{% endcapture %}
         {% endif %}
     {% endfor %}
     {% for i in (21..40) %}
-        {% if i contains post.vote_average | remove: "." %}
+        {% if post.vote_average | remove: "." contains i %}
             {% capture rating_b_count %}{{ rating_b_count | plus: 1 }}{% endcapture %}
         {% endif %}
     {% endfor %}
     {% for i in (41..60) %}
-        {% if i contains post.vote_average | remove: "." %}
+        {% if post.vote_average | remove: "." contains i %}
             {% capture rating_c_count %}{{ rating_c_count | plus: 1 }}{% endcapture %}
         {% endif %}
     {% endfor %}
     {% for i in (61..80) %}
-        {% if i contains post.vote_average | remove: "." %}
+        {% if post.vote_average | remove: "." contains i %}
             {% capture rating_d_count %}{{ rating_d_count | plus: 1 }}{% endcapture %}
         {% endif %}
     {% endfor %}
     {% for i in (81..100) %}
-        {% if i contains post.vote_average | remove: "." %}
+        {% if post.vote_average | remove: "." contains i %}
             {% capture rating_e_count %}{{ rating_e_count | plus: 1 }}{% endcapture %}
         {% endif %}
     {% endfor %}
@@ -81,11 +81,10 @@ layout: null
 ]
 
 {% for i in (21..40) %}
-    {% if i contains 25 %}
+    {% if i == "25" %}
     "fuck achei"
     {% endif %}
-    {{ i }}
-    {% if i contains "25" %}
+    {% if i == 25 %}
     "fuck deu merda"
     {% endif %}
 {% endfor %}
