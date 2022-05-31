@@ -16,34 +16,27 @@ layout: null
     ]
 }
 "vote_average": [
-
-
+{% assign pessimo = "10,11,12,13,14,15,16,17,18,19,20" | split: ',' %}
+{% assign ruim = "21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40" | split: ',' %}
+{% assign aceitavel = "41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60" | split: ',' %}
+{% assign otimo = "61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80" | split: ',' %}
+{% assign execelente = "81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100" | split: ',' %}
 {% for post in site.posts %}
-    {% for i in (10..20) %}
-        {% if post.vote_average | remove: "." == i %}
+        {% if pessimo contains post.vote_average | remove: "." %}
             {% capture rating_a_count %}{% increment rating_a_count %}{% endcapture %}
         {% endif %}
-    {% endfor %}
-    {% for i in (21..40) %}
-        {% if post.vote_average | remove: "." == i %}
+        {% if ruim contains post.vote_average | remove: "." %}
             {% capture rating_b_count %}{% increment rating_b_count %}{% endcapture %}
         {% endif %}
-    {% endfor %}
-    {% for i in (41..60) %}
-        {% if post.vote_average | remove: "." == i %}
+        {% if aceitavel contains post.vote_average | remove: "." %}
             {% capture rating_c_count %}{% increment rating_c_count %}{% endcapture %}
         {% endif %}
-    {% endfor %}
-    {% for i in (61..80) %}
-        {% if post.vote_average | remove: "." == i %}
+        {% if otimo contains post.vote_average | remove: "." %}
             {% capture rating_d_count %}{% increment rating_d_count %}{% endcapture %}
         {% endif %}
-    {% endfor %}
-    {% for i in (81..100) %}
-        {% if post.vote_average | remove: "." == i %}
+        {% if execelente contains post.vote_average | remove: "." %}
             {% capture rating_e_count %}{% increment rating_e_count %}{% endcapture %}
         {% endif %}
-    {% endfor %}
     {% if post.vote_average | remove: "." == "00" %}
         {% capture rating_f_count %}{% increment rating_f_count %}{% endcapture %}
     {% endif %}
