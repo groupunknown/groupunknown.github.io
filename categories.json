@@ -2,10 +2,10 @@
 layout: null
 ---
 [
-    {% for item in site.data.filter.genres %}
+    {% for ctgry in site.data.filter.genres %}
     {
-        {% assign posts = site.posts | where: "genres", item %}
-        {{ item }}: {{ posts.size }}
+        {% assign posts = site.posts | where: "genres", ctgry.item %}
+        {{ ctgry.item }}: {{ posts.size }}
     }
     {% endfor %}
 ]
