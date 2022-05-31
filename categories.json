@@ -1,13 +1,12 @@
 ---
 layout: null
 ---
-[
+{
     "genres": [
+        {% for ctgry in site.data.filter.genres %}{% assign posts = site.posts | where: "genres", ctgry.item %}
         {
-        {% for ctgry in site.data.filter.genres %}
-        {% assign posts = site.posts | where: "genres", ctgry.item %}
-        {{ ctgry.item }}: {{ posts.size }}
-        {% if forloop.last == false %},{% endif %}{% endfor %}
-        }
+            "genre": {{ ctgry.item }},
+            "count": {{ posts.size }}
+        }{% if forloop.last == false %},{% endif %}{% endfor %}
     ]
-]
+}
