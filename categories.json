@@ -17,44 +17,64 @@ layout: null
 }
 "parents_guide": [
 
-{% assign rating_a_count = 0 %}{% assign rating_a_label = 0 %}
-{% assign rating_b_count = 0 %}{% assign rating_b_label = 0 %}
-{% assign rating_c_count = 0 %}{% assign rating_b_label = 0 %}
-{% assign rating_d_count = 0 %}{% assign rating_b_label = 0 %}
-{% assign rating_e_count = 0 %}{% assign rating_b_label = 0 %}
-{% for items in site.data.filter.avaliacoes %}
-    {% for post in site.posts %}
-        {% for i in (10..100) %}
-            {% if i == post.vote_average | remove: "." %}
-                {% assign rating_a_label = "Péssimo" %}
-                {% capture rating_a_count %}{{ rating_a_count | plus: 1 }}{% endcapture %}
-                {% break %}
-            {% elsif i == post.vote_average | remove: "." %}
-                {% assign rating_b_label = "Ruim" %}
-                {% capture rating_b_count %}{{ rating_b_count | plus: 1 }}{% endcapture %}
-                {% break %}
-            {% elsif i == post.vote_average | remove: "." %}
-                {% assign rating_c_label = "Aceitável" %}
-                {% capture rating_c_count %}{{ rating_c_count | plus: 1 }}{% endcapture %}
-                {% break %}
-            {% elsif i == post.vote_average | remove: "." %}
-                {% assign rating_d_label = "Ótimo" %}
-                {% capture rating_d_count %}{{ rating_d_count | plus: 1 }}{% endcapture %}
-                {% break %}
-            {% elsif i == post.vote_average | remove: "." %}
-                {% assign rating_e_label = "Excelente" %}
-                {% capture rating_e_count %}{{ rating_e_count | plus: 1 }}{% endcapture %}
-                {% break %}
-            {% else %}
-                {% assign rating_f_label = "Nenhum" %}
-                {% capture rating_f_count %}{{ rating_f_count | plus: 1 }}{% endcapture %}
-            {% endif %}
-        {% endfor %}
+{% assign rating_a_count = 0 %}
+{% assign rating_b_count = 0 %}
+{% assign rating_c_count = 0 %}
+{% assign rating_d_count = 0 %}
+{% assign rating_e_count = 0 %}
+{% assign reting_f_count = 0 %}
+{% for post in site.posts %}
+    {% for i in (10..20) %}
+        {% if i == post.vote_average | remove: "." %}
+            {% capture rating_a_count %}{{ rating_a_count | plus: 1 }}{% endcapture %}
+        {% endif %}
     {% endfor %}
-    {
-        "item": {{ items.item }},
-        "count": {{ rating_f_count }}
-    }{% if forloop.last == false %},{% endif %}{% endfor %}
+    {% for i in (21..40) %}
+        {% if i == post.vote_average | remove: "." %}
+            {% capture rating_b_count %}{{ rating_b_count | plus: 1 }}{% endcapture %}
+        {% endif %}
+    {% endfor %}
+    {% for i in (41..60) %}
+        {% if i == post.vote_average | remove: "." %}
+            {% capture rating_c_count %}{{ rating_c_count | plus: 1 }}{% endcapture %}
+        {% endif %}
+    {% endfor %}
+    {% for i in (61..80) %}
+        {% if i == post.vote_average | remove: "." %}
+            {% capture rating_d_count %}{{ rating_d_count | plus: 1 }}{% endcapture %}
+        {% endif %}
+    {% endfor %}
+    {% for i in (81..100) %}
+        {% if i == post.vote_average | remove: "." %}
+            {% capture rating_e_count %}{{ rating_e_count | plus: 1 }}{% endcapture %}
+        {% endif %}
+    {% endfor %}
+    {% if 0 == post.vote_average | remove: "." %}
+        {% capture rating_f_count %}{{ rating_f_count | plus: 1 }}{% endcapture %}
+    {% endif %}
 {% endfor %}
-
+    {
+        "item": "Péssimo",
+        "count": {{ rating_a_count }}
+    },
+    {
+        "item": "Ruim",
+        "count": {{ rating_b_count }}
+    },
+    {
+        "item": "Aceitável",
+        "count": {{ rating_c_count }}
+    },
+    {
+        "item": "Ótimo",
+        "count": {{ rating_d_count }}
+    },
+    {
+        "item": "Excelente",
+        "count": {{ rating_e_count }}
+    },
+    {
+        "item": "Nenhum",
+        "count": {{ rating_f_count }}
+    }
 ]
