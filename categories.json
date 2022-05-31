@@ -8,10 +8,53 @@ layout: null
             "count": {{ posts.size }}
         }{% if forloop.last == false %},{% endif %}{% endfor %}
     ],
-    "certification": [{% for items in site.data.filter.certification %}{% assign posts = site.posts | where: "certification", items.item %}
+    "parents_guide": [{% for items in site.data.filter.certification %}{% assign posts = site.posts | where: "certification", items.item %}
         {
             "item": {{ items.item | jsonify }},
             "count": {{ posts.size }}
         }{% if forloop.last == false %},{% endif %}{% endfor %}
     ]
 }
+"parents_guide": [
+
+{% assign rating_a_count = 0 %}{% assign rating_a_label = 0 %}
+{% assign rating_b_count = 0 %}{% assign rating_b_label = 0 %}
+{% assign rating_c_count = 0 %}{% assign rating_b_label = 0 %}
+{% assign rating_d_count = 0 %}{% assign rating_b_label = 0 %}
+{% assign rating_e_count = 0 %}{% assign rating_b_label = 0 %}
+{% for items in site.data.filter.avaliacoes %}
+    {% for post in posts %}
+        {% for i in (10..100) %}
+            {% if i == post.vote_average | remove: "." %}
+                {% assign rating_a_label = "Péssimo" %}
+                {% capture rating_a_count %}{{ rating_a_count | plus: 1 }}{% endcapture %}
+                {% break %}
+            {% elsif i == post.vote_average | remove: "." %}
+                {% assign rating_b_label = "Ruim" %}
+                {% capture rating_b_count %}{{ rating_b_count | plus: 1 }}{% endcapture %}
+                {% break %}
+            {% elsif i == post.vote_average | remove: "." %}
+                {% assign rating_c_label = "Aceitável" %}
+                {% capture rating_c_count %}{{ rating_c_count | plus: 1 }}{% endcapture %}
+                {% break %}
+            {% elsif i == post.vote_average | remove: "." %}
+                {% assign rating_d_label = "Ótimo" %}
+                {% capture rating_d_count %}{{ rating_d_count | plus: 1 }}{% endcapture %}
+                {% break %}
+            {% elsif i == post.vote_average | remove: "." %}
+                {% assign rating_e_label = "Excelente" %}
+                {% capture rating_e_count %}{{ rating_e_count | plus: 1 }}{% endcapture %}
+                {% break %}
+            {% else %}
+                {% assign rating_f_label = "Nenhum" %}
+                {% capture rating_f_count %}{{ rating_f_count | plus: 1 }}{% endcapture %}
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+    {
+        "item": {{ items.item }},
+        "count": {{ rating_f_count }}
+    }{% if forloop.last == false %},{% endif %}{% endfor %}
+{% endfor %}
+
+]
