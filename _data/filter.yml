@@ -25,6 +25,10 @@ avaliacoes:
 - item: Ótimo
 - item: Excelente
 
+adult:
+- item: true
+- item: false
+
 certification:
 - item: L
 - item: 10

@@ -34,7 +34,13 @@ layout: null
             "count": {{ rating_f_count }}
         }
     ],
-        "parents_guide": [{% for items in site.data.filter.certification %}{% assign posts = site.posts | where: "certification", items.item %}
+    "adult": [{% for items in site.data.filter.adult %}{% assign posts = site.posts | where: "adult", items.item %}
+        {
+            "item": {{ items.item | jsonify }},
+            "count": {{ posts.size }}
+        }{% if forloop.last == false %},{% endif %}{% endfor %}
+    ],
+    "parents_guide": [{% for items in site.data.filter.certification %}{% assign posts = site.posts | where: "certification", items.item %}
         {
             "item": {{ items.item | jsonify }},
             "count": {{ posts.size }}
