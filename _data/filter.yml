@@ -1,3 +1,7 @@
+categories:
+- item: Filmes
+- item: Séries
+
 genres:
 - item: Ação
 - item: Animação
@@ -36,6 +40,14 @@ certification:
 - item: 14
 - item: 16
 - item: 18
+
+authors:
+- item: Heisenberg
+- item: Hannibal Lecter
+- item: Pennywise
+- item: Voldemort
+- item: Rick Grimes
+- item: Unknown
 
 qualitys:
 - item: 4K

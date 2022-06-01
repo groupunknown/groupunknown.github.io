@@ -1,0 +1,26 @@
+- query: category
+  name: Categorias
+  items:
+  - item: Filmes
+  - item: Séries
+
+- query: genres
+  name: Gêneros
+  items:
+  - item: Ação
+  - item: Animação
+  - item: Aventura
+  - item: Comédia
+  - item: Crime
+  - item: Drama
+  - item: Família
+  - item: Fantasia
+  - item: Ficção científica
+  - item: Guerra
+  - item: História
+  - item: Mistério
+  - item: Música
+  - item: Romance
+  - item: Suspense
+  - item: Terror
+  - item: Thriller

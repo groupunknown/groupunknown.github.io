@@ -2,6 +2,12 @@
 layout: null
 ---
 {
+    "categories": [{% for items in site.data.filter.categories %}{% assign posts = site.posts | where: "category", items.item %}
+        {
+            "item": {{ items.item | jsonify }},
+            "count": {{ posts.size }}
+        }{% if forloop.last == false %},{% endif %}{% endfor %}
+    ],
     "genres": [{% for items in site.data.filter.genres %}{% assign posts = site.posts | where: "genres", items.item %}
         {
             "item": {{ items.item | jsonify }},
@@ -46,6 +52,12 @@ layout: null
             "count": {{ posts.size }}
         }{% if forloop.last == false %},{% endif %}{% endfor %}
     ],
+    "authors": [{% for items in site.data.filter.author %}{% assign posts = site.posts | where: "author", items.item %}
+        {
+            "item": {{ items.item | jsonify }},
+            "count": {{ posts.size }}
+        }{% if forloop.last == false %},{% endif %}{% endfor %}
+    ],
     "qualitys": [{% for items in site.data.filter.qualitys %}{% assign posts = site.posts | where: "qualitys", items.item %}
         {
             "item": {{ items.item | jsonify }},
@@ -65,3 +77,15 @@ layout: null
         }{% if forloop.last == false %},{% endif %}{% endfor %}
     ]
 }
+
+[{% for x in site.data.filters %}
+{
+    {{ x.name | jsonify }}: [
+        {% for y in x.items %}
+        {% assign posts = site.posts | where: x.query, y.item %}
+        {
+            "item": {{ y.item | jsonify }},
+            "count": {{ posts.size }}
+        }{% if forloop.last == false %},{% endif %}{% endfor %}
+    ]
+}{% if forloop.last == false %},{% endif %}{% endfor %}]
