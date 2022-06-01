@@ -79,13 +79,46 @@ layout: null
 }
 
 [{% for x in site.data.filters %}
-{
-    {{ x.name | jsonify }}: [
-        {% for y in x.items %}
-        {% assign posts = site.posts | where: x.query, y.item %}
-        {
-            "item": {{ y.item | jsonify }},
-            "count": {{ posts.size }}
-        }{% if forloop.last == false %},{% endif %}{% endfor %}
-    ]
-}{% if forloop.last == false %},{% endif %}{% endfor %}]
+    {
+        "query": {{ x.query | jsonify }},
+        "name": {{ x.name | jsonify }},
+        "items": [
+            {% for y in x.items %}
+            {% assign posts = site.posts | where: x.query, y.item %}
+            {
+                "item": {{ y.item | jsonify }},
+                "count": {{ posts.size }}
+            }{% if forloop.last == false %},{% endif %}{% endfor %}
+        ]
+    },{% endfor %}
+    {
+        "query": "vote_average",
+        "name": "Avaliações",
+        "items": [{% assign pessimo = "10,11,12,13,14,15,16,17,18,19,20" | split: ',' %}{% assign ruim = "21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40" | split: ',' %}{% assign aceitavel = "41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60" | split: ',' %}{% assign otimo = "61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80" | split: ',' %}{% assign execelente = "81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100" | split: ',' %}{% assign rating_a_count = 0 %}{% assign rating_b_count = 0 %}{% assign rating_c_count = 0 %}{% assign rating_d_count = 0 %}{% assign rating_e_count = 0 %}{% assign rating_f_count = 0 %}{% for post in site.posts %}{% assign vote_average = post.vote_average | remove: "." %}{% if pessimo contains vote_average %}{% assign rating_a_count = rating_a_count | plus:1 %}{% elsif ruim contains vote_average %}{% assign rating_b_count = rating_b_count | plus:1 %}{% elsif aceitavel contains vote_average %}{% assign rating_c_count = rating_c_count | plus:1 %}{% elsif otimo contains vote_average %}{% assign rating_d_count = rating_d_count | plus:1 %}{% elsif execelente contains vote_average %}{% assign rating_e_count = rating_e_count | plus:1 %}{% elsif vote_average == "0" %}{% assign rating_f_count = rating_f_count | plus:1 %}{% endif %}{% endfor %}
+            {
+                "item": "Péssimo",
+                "count": {{ rating_a_count }}
+            },
+            {
+                "item": "Ruim",
+                "count": {{ rating_b_count }}
+            },
+            {
+                "item": "Aceitável",
+                "count": {{ rating_c_count }}
+            },
+            {
+                "item": "Ótimo",
+                "count": {{ rating_d_count }}
+            },
+            {
+                "item": "Excelente",
+                "count": {{ rating_e_count }}
+            },
+            {
+                "item": "Nenhum",
+                "count": {{ rating_f_count }}
+            }
+        ]
+    }
+]

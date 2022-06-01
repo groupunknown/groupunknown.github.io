@@ -24,3 +24,67 @@
   - item: Suspense
   - item: Terror
   - item: Thriller
+
+- query: adult
+  name: Conteúdo explícito
+  items:
+  - item: true
+  - item: false
+
+- query: certification
+  name: Classificação indicativa
+  items:
+  - item: L
+  - item: 10
+  - item: 12
+  - item: 14
+  - item: 16
+  - item: 18
+
+- query: author
+  name: Autor
+  items:
+  - item: Heisenberg
+  - item: Hannibal Lecter
+  - item: Pennywise
+  - item: Voldemort
+  - item: Rick Grimes
+  - item: Unknown
+
+- query: qualitys
+  name: Qualidade
+  items:
+  - item: 4K
+  - item: 1080p
+  - item: 720p
+  - item: 480p
+
+- query: audios
+  name: Áudio
+  items:
+  - item: Trial Áudio
+  - item: Dual Áudio
+  - item: Português
+  - item: Inglês
+  - item: Espanhol
+  - item: Alemão
+  - item: Chinês
+  - item: Japonês
+  - item: Russo
+  - item: Dinamarquês
+
+- query: extensions
+  name: Extensão
+  items:
+  - item: mkv
+  - item: mp4
+
+- query: vote_average
+  name: Avaliações
+  items:
+  - item: Nenhum
+  - item: Péssimo
+  - item: Ruim
+  - item: Aceitável
+  - item: Ótimo
+  - item: Excelente
