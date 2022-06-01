@@ -78,7 +78,7 @@ layout: null
     ]
 }
 
-[{% for x in site.data.filters %}
+[{% for x in site.data.filters %}{% if x.query == "vote_average" %}{% continue %}{% else %}
     {
         "query": {{ x.query | jsonify }},
         "name": {{ x.name | jsonify }},
@@ -90,7 +90,7 @@ layout: null
                 "count": {{ posts.size }}
             }{% if forloop.last == false %},{% endif %}{% endfor %}
         ]
-    },{% endfor %}
+    },{% endif %}{% endfor %}
     {
         "query": "vote_average",
         "name": "Avaliações",
