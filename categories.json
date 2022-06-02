@@ -16,31 +16,6 @@ layout: null
         "name:" "Letras & Números",
         "query" "title",
         "items": [
-
-            {% assign letter = 0 %}
-            {% assign posts = site.posts | map: "title" %}
-            {% for post in posts %}
-                {% assign t = post | split: '' | first %}
-                {% if t == "A" %}
-                    {% assign letter = letter | plus: 1 %}
-                {% endif %}
-            {% endfor %}
-            {{ letter }}
-
-
-
-            
-            {% assign posts = site.posts | map: "title" %}
-            {% for post in posts %}
-
-                {% assign flt = post | split: '' | first %}
-                {% if flt == y.item %}
-                    {% assign letter = letter | plus: 1 %}
-                {% endif %}
-            {% endfor %}
-            
-
-
             {% assign posts = site.posts | map: "title" %}
             {% for x in site.data.filters %}
                 {% if x.query == "title" %}
@@ -54,7 +29,7 @@ layout: null
                     {% endfor %}
                     {
                         "item": {{ y.item | jsonify }},
-                        "count": {{ results[y.item].size }}
+                        "count": {{ results[y.item] }}
                     }{% if forloop.last == false %},{% endif %}
                     {% endfor %}
                 {% endif %}
