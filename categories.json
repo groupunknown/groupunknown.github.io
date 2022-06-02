@@ -1,7 +1,7 @@
 ---
 layout: null
 ---
-[{% for x in site.data.filters %}{% if x.query == "vote_average" %}{% continue %}{% else %}
+[{% for x in site.data.filters %}{% if x.query == "vote_average" or x.query == "title" or x.query == "release_date" %}{% continue %}{% else %}
     {
         "name": {{ x.name | jsonify }},
         "query": {{ x.query | jsonify }},
@@ -12,6 +12,23 @@ layout: null
             }{% if forloop.last == false %},{% endif %}{% endfor %}
         ]
     },{% endif %}{% endfor %}
+    {
+        "name:" "Letras & Números",
+        "query" "title",
+        "items": [
+            {% for x in site.data.filters %}
+            {% if x.query == "title" %}
+            {% for y in x.items %}
+            {% assign posts = site.posts | where: x.query, y.item | slice: 0 %}
+            {
+                "item": {{ y.item | jsonify }},
+                "count": {{ posts.size }}
+            }{% if forloop.last == false %},{% endif %}
+            {% endfor %}
+            {% endif %}
+            {% endfor %}
+        ]
+    },
     {
         "name": "Avaliações",
         "query": "vote_average",

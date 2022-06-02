@@ -28,8 +28,8 @@
 - query: adult
   name: Conteúdo explícito
   items:
-  - item: true
   - item: false
+  - item: true
 
 - query: certification
   name: Classificação indicativa
@@ -88,3 +88,60 @@
   - item: Aceitável
   - item: Ótimo
   - item: Excelente
+
+- query: title
+  name: Letras & Números
+  items:
+  - item: A
+  - item: B
+  - item: C
+  - item: D
+  - item: E
+  - item: F
+  - item: G
+  - item: H
+  - item: I
+  - item: J
+  - item: K
+  - item: L
+  - item: M
+  - item: N
+  - item: O
+  - item: P
+  - item: Q
+  - item: R
+  - item: S
+  - item: T
+  - item: U
+  - item: V
+  - item: W
+  - item: X
+  - item: Y
+  - item: Z
+
+- query: release_date
+  name: Lançamento
+  items:
+  - item: 2000
+  - item: 2001
+  - item: 2002
+  - item: 2003
+  - item: 2004
+  - item: 2005
+  - item: 2006
+  - item: 2007
+  - item: 2008
+  - item: 2009
+  - item: 2010
+  - item: 2011
+  - item: 2012
+  - item: 2013
+  - item: 2014
+  - item: 2015
+  - item: 2016
+  - item: 2017
+  - item: 2018
+  - item: 2019
+  - item: 2020
+  - item: 2021
+  - item: 2022
