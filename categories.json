@@ -15,23 +15,21 @@ layout: null
     {
         "name:" "Letras & Números",
         "query" "title",
-        "items": [{% assign result = 0 %}
+        "items": [
             {% for x in site.data.filters %}
-                {% if x.query == "title" %}
-                    {% for y in x.items %}
-
-                        {% for post in site.posts %}
-                            {% if post.title | split: '' | first == y.item %}
-                                {% assign result = result | plus: 1 %}
-                            {% endif %}
-                        {% endfor %}
-                        {
-                            "item": {{ y.item | jsonify }},
-                            "count": {{ result }}
-                        }{% if forloop.last == false %},{% endif %}
-                    {% endfor %}
-                {% endif %}
+            {% if x.query == "title" %}
+            {% for y in x.items %}
+            {% assign posts = site.posts | where_exp: x.query,  x.query | split: '' | first == y.item %}
+            {
+                "item": {{ y.item | jsonify }},
+                "count": {{ posts.size }}
+            }{% if forloop.last == false %},{% endif %}
             {% endfor %}
+            {% endif %}
+            {% endfor %}
+
+
+
         ]
     },
     {
