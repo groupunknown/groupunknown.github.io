@@ -16,20 +16,45 @@ layout: null
         "name:" "Letras & Números",
         "query" "title",
         "items": [
+
+            {% assign letter = 0 %}
+            {% assign posts = site.posts | map: "title" %}
+            {% for post in posts %}
+                {% assign t = post | split: '' | first %}
+                {% if t == "A" %}
+                    {% assign letter = letter | plus: 1 %}
+                {% endif %}
+            {% endfor %}
+            {{ letter }}
+
+
+
+            
+            {% assign posts = site.posts | map: "title" %}
+            {% for post in posts %}
+
+                {% assign flt = post | split: '' | first %}
+                {% if flt == y.item %}
+                    {% assign letter = letter | plus: 1 %}
+                {% endif %}
+            {% endfor %}
+            
+
+
             {% assign posts = site.posts | map: "title" %}
             {% for x in site.data.filters %}
                 {% if x.query == "title" %}
                     {% for y in x.items %}
-                    {% assign results = 0 %}
+                    {% assign results[y.item] = 0 %}
                     {% for post in posts %}
                         {% assign flt = post | split: '' | first %}
                         {% if flt == y.item %}
-                            {% assign results = results | plus: 1 %}
+                            {% assign results[y.item] = results[y.item] | plus: 1 %}
                         {% endif %}
                     {% endfor %}
                     {
                         "item": {{ y.item | jsonify }},
-                        "count": {{ results.size }}
+                        "count": {{ results[y.item].size }}
                     }{% if forloop.last == false %},{% endif %}
                     {% endfor %}
                 {% endif %}
