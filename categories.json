@@ -16,9 +16,6 @@ layout: null
         "name:" "Letras & Números",
         "query" "title",
         "items": [
-
-
-
             {% assign posts = site.posts | map: "title" %}
             {% for x in site.data.filters %}
                 {% if x.query == "title" %}
@@ -27,7 +24,7 @@ layout: null
                     {% for post in posts %}
                         {% assign flt = post | split: '' | first %}
                         {% if flt == y.item %}
-                            {% assign results = letter | plus: 1 %}
+                            {% assign results = results | plus: 1 %}
                         {% endif %}
                     {% endfor %}
                     {
