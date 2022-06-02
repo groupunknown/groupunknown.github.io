@@ -19,15 +19,16 @@ layout: null
             {% for x in site.data.filters %}
                 {% if x.query == "title" %}
                     {% for y in x.items %}
-                    {% for post in site.posts %}
-                        {% if post.title | slice: 0 == y.item %}
-                            {% assign result = result | plus:1 %}
-                        {% endif %}
-                    {% endfor %}
-                    {
-                        "item": {{ y.item | jsonify }},
-                        "count": {{ result }}
-                    }{% if forloop.last == false %},{% endif %}
+                        {% for post in site.posts %}
+                            {% if y.item == post.title | slice: 0 %}
+                                {% assign result = result | plus: 1 %}
+                                "teste": {{ post.title[0] | jsonify }},
+                            {% endif %}
+                        {% endfor %}
+                        {
+                            "item": {{ y.item | jsonify }},
+                            "count": {{ result }}
+                        }{% if forloop.last == false %},{% endif %}
                     {% endfor %}
                 {% endif %}
             {% endfor %}
