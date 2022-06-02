@@ -17,10 +17,18 @@ layout: null
         "query" "title",
         "items": [
 
+            {% assign letter = 0 %}
             {% assign posts = site.posts | map: "title" %}
             {% for post in posts %}
-                 {{ post | split: '' | first }}: {{ post }}
-            {% endfor %}]
+                {% if post | split: '' | first == "A" %}
+                    {% assign letter = letter | plus: 1 %}
+                {% endif %}
+            {% endfor %}
+            {{ letter }}
+
+
+
+        ]
     },
     {
         "name": "Avaliações",
