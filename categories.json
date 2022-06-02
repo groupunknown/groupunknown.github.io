@@ -20,8 +20,11 @@ layout: null
             {% assign posts = site.posts | map: "title" %}
 
             {% for post in posts %}
-                    {{ post | split: '' | first }}
+                {% if post | split: '' | first == "A" %}
+                    {{ post | split: '' | first }}: {{ post }}
+                {% endif %}
             {% endfor %}
+
 
             {% for x in site.data.filters %}
             {% if x.query == "title" %}
