@@ -20,12 +20,13 @@ layout: null
             {% assign letter = 0 %}
             {% assign posts = site.posts | map: "title" %}
             {% for post in posts %}
-                {% assign letter = post | split: '' | first %}
-                {% if letter == "A" %}
+                {% assign t = post | split: '' | first %}
+                {% if t == "A" %}
                     {% assign letter = letter | plus: 1 %}
                 {% endif %}
             {% endfor %}
             {{ letter }}
+
 
 
         ]
