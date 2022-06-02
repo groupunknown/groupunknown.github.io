@@ -15,22 +15,21 @@ layout: null
     {
         "name:" "Letras & Números",
         "query" "title",
-        "items": [
+        "items": [{% assign result = 0 %}
             {% for x in site.data.filters %}
-            {% if x.query == "title" %}
-            {% for y in x.items %}
-            {% assign result = 0 %}
-            {% for post in site.posts %}
-                {% if post.title | slice: 0 == y.item %}
-                    {% assign result = result | plus:1 %}
+                {% if x.query == "title" %}
+                    {% for y in x.items %}
+                    {% for post in site.posts %}
+                        {% if post.title | slice: 0 == y.item %}
+                            {% assign result = result | plus:1 %}
+                        {% endif %}
+                    {% endfor %}
+                    {
+                        "item": {{ y.item | jsonify }},
+                        "count": {{ result }}
+                    }{% if forloop.last == false %},{% endif %}
+                    {% endfor %}
                 {% endif %}
-            {% endfor %}
-            {
-                "item": {{ y.item | jsonify }},
-                "count": {{ result }}
-            }{% if forloop.last == false %},{% endif %}
-            {% endfor %}
-            {% endif %}
             {% endfor %}
         ]
     },
