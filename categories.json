@@ -19,16 +19,8 @@ layout: null
 
             {% assign posts = site.posts | map: "title" %}
             {% for post in posts %}
-                {% if post | slice: 0 == "A" %}
-                    {{ post | split: '' | first }}: {{ post }}
-                {% endif %}
-
-                
-
-            {% endfor %}
-
-            
-        ]
+                 {{ post | split: '' | first }}: {{ post }}
+            {% endfor %}]
     },
     {
         "name": "Avaliações",
