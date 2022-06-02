@@ -19,16 +19,15 @@ layout: null
             {% for x in site.data.filters %}
                 {% if x.query == "title" %}
                     {% for y in x.items %}
+
                         {% for post in site.posts %}
-                            {% if y.item == post.title | slice: 0 %}
+                            {% if post.title | split: '' | first == y.item %}
                                 {% assign result = result | plus: 1 %}
-                                {% assign teste = post.title | slice: 0 %}
                             {% endif %}
                         {% endfor %}
                         {
                             "item": {{ y.item | jsonify }},
-                            "count": {{ result }},
-                            "teste": {{ teste }}
+                            "count": {{ result }}
                         }{% if forloop.last == false %},{% endif %}
                     {% endfor %}
                 {% endif %}
