@@ -22,12 +22,13 @@ layout: null
                         {% for post in site.posts %}
                             {% if y.item == post.title | slice: 0 %}
                                 {% assign result = result | plus: 1 %}
-                                "teste": {{ post.title[0] | jsonify }},
+                                {% assign teste = post.title | slice: 0 %}
                             {% endif %}
                         {% endfor %}
                         {
                             "item": {{ y.item | jsonify }},
-                            "count": {{ result }}
+                            "count": {{ result }},
+                            "teste": {{ teste }}
                         }{% if forloop.last == false %},{% endif %}
                     {% endfor %}
                 {% endif %}
