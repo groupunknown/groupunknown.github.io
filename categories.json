@@ -20,16 +20,16 @@ layout: null
             {% for x in site.data.filters %}
                 {% if x.query == "title" %}
                     {% for y in x.items %}
-                    {% assign results[y.item] = 0 %}
-                    {% for post in posts %}
-                        {% assign flt = post | split: '' | first %}
-                        {% if flt == y.item %}
-                            {% assign results[y.item] = results[y.item] | plus: 1 %}
+                    {% assign results = 0 %}
+                    {% for title in posts %}
+                        {% assign first_letter = title | split: '' | first %}
+                        {% if first_letter == y.item %}
+                            {% assign results[first_letter] = results[first_letter] | plus: 1 %}
                         {% endif %}
                     {% endfor %}
                     {
                         "item": {{ y.item | jsonify }},
-                        "count": {{ results[y.item] }}
+                        "count": {{ results[first_letter] }}
                     }{% if forloop.last == false %},{% endif %}
                     {% endfor %}
                 {% endif %}
