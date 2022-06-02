@@ -18,25 +18,16 @@ layout: null
         "items": [
 
             {% assign posts = site.posts | map: "title" %}
-
             {% for post in posts %}
-                {% if post | split: '' | first == "A" %}
+                {% if post | slice: 0 == "A" %}
                     {{ post | split: '' | first }}: {{ post }}
                 {% endif %}
+
+                
+
             {% endfor %}
 
-
-            {% for x in site.data.filters %}
-            {% if x.query == "title" %}
-            {% for y in x.items %}
-            {% assign posts = site.posts | group_by_exp: x.query,  x.query | split: '' | first == y.item %}
-            {
-                "item": {{ y.item | jsonify }},
-                "count": {{ posts.size }}
-            }{% if forloop.last == false %},{% endif %}
-            {% endfor %}
-            {% endif %}
-            {% endfor %}
+            
         ]
     },
     {
