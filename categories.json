@@ -19,7 +19,7 @@ layout: null
             {% for x in site.data.filters %}
             {% if x.query == "title" %}
             {% for y in x.items %}
-            {% assign posts = site.posts | where_exp: x.query,  x.query | slice: 0 contains y.item %}
+            {% assign posts = site.posts | where_exp: x.query,  x.query contains y.item %}
             {
                 "item": {{ y.item | jsonify }},
                 "count": {{ posts.size }}
