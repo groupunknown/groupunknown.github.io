@@ -18,7 +18,7 @@ layout: null
         "items": [{% assign alphabet = "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z" %}{% assign alphabet = alphabet | split:',' %}{% for letter in alphabet %}{% assign amount = 0 %}
             {
                 "item": {{ letter }},
-                "count": {% for post in site.posts %}{% assign firstletter = post.title | truncate: 1, '' %}{% if letter | downcase == firstletter | downcase %}{% capture amount %}{{ amount | plus:1 }}{% endcapture %}{% endif %}{% endfor %}{{ amount }}
+                "count": {% for post in site.posts %}{% assign firstletter = post.title | truncate: 1 | downcase, '' %}{% assign downletter = letter | downcase %}{% if downletter == firstletter %}{% capture amount %}{{ amount | plus:1 }}{% endcapture %}{% endif %}{% endfor %}{{ amount }}
             }{% if forloop.last == false %},{% endif %}{% endfor %}
         ]
     },
