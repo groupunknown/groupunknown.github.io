@@ -16,17 +16,15 @@ layout: null
         "name:" "Letras & Números",
         "query" "title",
         "items": [
-            {% for x in site.data.filters %}
-            {% if x.query == "title" %}
-            {% for y in x.items %}
-            {% assign posts = site.posts | group_by_exp: x.query,  x.query | split: '' | first == y.item %}
-            {
-                "item": {{ y.item | jsonify }},
-                "count": {{ posts.size }}
-            }{% if forloop.last == false %},{% endif %}
+
+            {% assign posts = site.posts | map: "title" %}
+
+            {% for post in posts %}
+                {% if post.title | split: '' | first == "A" %}
+                    {{ post.title }}
+                {% endif %}
             {% endfor %}
-            {% endif %}
-            {% endfor %}
+
         ]
     },
     {
