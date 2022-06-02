@@ -19,9 +19,8 @@ layout: null
             {% for x in site.data.filters %}
             {% if x.query == "title" %}
             {% for y in x.items %}
-            {% assign posts = site.posts | group_by_exp: x.query, y.item | slice: 0 %}
+            {% assign posts = site.posts | where_exp: x.query, "x.query | slice: 0 == y.item" %}
             {
-                {{ y.item | slice: 0 | jsonify }}: {{ y.item | jsonify }},
                 "item": {{ y.item | jsonify }},
                 "count": {{ posts.size }}
             }{% if forloop.last == false %},{% endif %}
