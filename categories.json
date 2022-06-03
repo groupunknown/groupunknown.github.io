@@ -19,7 +19,11 @@ layout: null
             {
                 "item": {{ letter | jsonify }},
                 "count": {% for post in site.posts %}{% assign firstletter = post.title | truncate: 1, '' | downcase %}{% assign downletter = letter | downcase %}{% if downletter == firstletter %}{% capture amount %}{{ amount | plus:1 }}{% endcapture %}{% endif %}{% endfor %}{{ amount }}
-            }{% if forloop.last == false %},{% endif %}{% endfor %}
+            }{% endfor %},
+            {
+                "item": 0,
+                "count": {% assign numbers = "0,1,2,3,4,5,6,7,8,9" %}{% assign numbers = numbers | split:',' %}{% for number in numbers %}{% assign count = 0 %}{% for post in site.posts %}{% assign firstnumber = post.title | truncate: 1, '' %}{% if firstnumber contains number %}{% capture count %}{{ count | plus:1 }}{% endcapture %}{% endif %}{% endfor %}{% endfor %}{{ count }}
+            }
         ]
     },
     {
