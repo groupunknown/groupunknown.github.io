@@ -4,7 +4,7 @@ author: Heisenberg
 category: Séries
 post_date: '2022-04-15T17:40:47.580Z'
 post_modified: '2022-04-15T17:40:47.580Z'
-title: 'Vikings: Valhalla'
+title: '8Vikings: Valhalla'
 description: 'Nesta sequência de Vikings, cem anos se passaram. Uma nova geração de heróis lendários cria seu destino e faz história.'
 poster_path: /jd19Pt0cwC84tiydokVxK9ETrS2.jpg
 tmdb_id: 116135
