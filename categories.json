@@ -28,9 +28,8 @@ layout: null
                     {% assign count = 0 %}
                     {% for post in site.posts %}
                         {% assign firstnumber = post.title | truncate: 1, '' %}
-                        
                         {% if firstnumber == number %}
-                            {% assign count = count | plus:1 %}
+                            {% capture count %}{{ count | plus:1 }}{% endcapture %}
                         {% endif %}
                     {% endfor %}
                 {% endfor %}
