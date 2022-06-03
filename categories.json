@@ -17,7 +17,7 @@ layout: null
         "query": "title",
         "items": [{% assign alphabet = "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z" %}{% assign alphabet = alphabet | split:',' %}{% for letter in alphabet %}{% assign amount = 0 %}
             {
-                "item": {{ letter }},
+                "item": {{ letter | jsonify }},
                 "count": {% for post in site.posts %}{% assign firstletter = post.title | truncate: 1, '' | downcase %}{% assign downletter = letter | downcase %}{% if downletter == firstletter %}{% capture amount %}{{ amount | plus:1 }}{% endcapture %}{% endif %}{% endfor %}{{ amount }}
             }{% if forloop.last == false %},{% endif %}{% endfor %}
         ]
