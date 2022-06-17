@@ -14,6 +14,7 @@ layout: null
         {
             "author": {{ post.author | jsonify }},
             "category": {{ post.category | jsonify }},
+            "date_test": {{ post.date | jsonify  }},
             "post_date": {{ post.post_date | jsonify }},
             "post_modified": {{ post.post_modified | jsonify }},
             "title": {{ post.title | jsonify }},
