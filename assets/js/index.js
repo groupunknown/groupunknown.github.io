@@ -1,264 +1,409 @@
-var page_url = window.location.href,
-    base_url = new URL(page_url).origin + new URL(page_url).pathname;
+var authors_json = JSON.parse(document.getElementById("authors").textContent), authors = authors_json.items;
+var posts_json = JSON.parse(document.getElementById("posts").textContent), posts = posts_json.items;
+var filter_json = JSON.parse(document.getElementById("filter").textContent);
+var search_json = JSON.parse(document.getElementById("search").textContent);
 
-
-stringtoslug = (text) => {
-    return text.toString().toLowerCase().normalize('NFD').trim().replace(/\s+/g, '-').replace(/[^\w\-]+/g, '').replace(/\-\-+/g, '-');
-}
-
-rating_int = (average) => {
-    return (average === 0) ? average : (average === 10) ? 100 : (average.toString().length >= 3) ? String(average).substr(0, 3).replace(/\./g, '') : average + '0';
-}
-
-rating_string = (val) => {
-    let average = rating_int(val);
-    return (average === 0) ? 'Nenhum' : (average < 20) ? 'Péssimo' : (average < 40) ? 'Ruim' : (average < 60) ? 'Aceitável' : (average < 80) ? 'Ótimo' : 'Excelente';
-}
-
-rating_decimal = (average) => {
-    return (average === 0) ? 'N/A' : (average === 10) ? 10 : (average.toString().length >= 3) ? String(average).substr(0, 3) : average + '.0';
-}
-
-rating_vote_cont = (votes = 0) => {
-    return (votes === 0) ? 'Nenhuma avaliação' : Number(votes).toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,") + ' avaliações';
-}
-
-certification_text = (age) => {
-    if (age === "L") {
-        text = 'LIVRE PARA TODOS OS PÚBLICOS';
-    } else if (age === 10) {
-        text = 'NÃO RECOMENDADO PARA MENORES DE DEZ ANOS';
-    } else if (age === 12) {
-        text = 'NÃO RECOMENDADO PARA MENORES DE DOZE ANOS';
-    } else if (age === 14) {
-        text = 'NÃO RECOMENDADO PARA MENORES DE CATORZE ANOS';
-    } else if (age === 16) {
-        text = 'NÃO RECOMENDADO PARA MENORES DE DEZESSEIS ANOS';
-    } else if (age === 18) {
-        text = 'NÃO RECOMENDADO PARA MENORES DE DEZOITO ANOS';
-    } else {
-        text = 'INDISPONÍVEL';
-    }
-    return text;
-}
-
-filter_template = (data) => {
-    let resultado = '';
-
-    if (Object.keys(data).length === 0) {
-        return '<article class="feed__article">Não encontramos nenhum filme nessa categoria :(</div>';
-    }
-
-    data.forEach(function(item) {
-        resultado += `
-        <article class="feed__article">
-            <div class="feed__article-header">
-                <div class="feed__article-heade-column">`+ new Date(item.release_date.replace(/-/g,'/')).toLocaleString('pt-BR', { year: 'numeric', month: '2-digit', day: '2-digit' }) +`</div>
-                <div class="feed__article-heade-column">
-                    <div class="feed__article-ribbon badge-4">`+ item.type +`</div>
-                </div>
-            </div>
-            <div class="feed__article-column">
-                <div class="feed__article-row poster">
-                    <div class="backdrop">
-                         <img src="https://image.tmdb.org/t/p/w220_and_h330_face`+ item.poster_path +`" alt="`+ item.title +`">
-                    </div>
-                </div>
-                <div class="feed__article-row plot-summary">
-                    <div class="feed__article-sub-row">
-                        <h2><a href="`+ stringtoslug(item.title) +`">`+ item.title +`</a></h2>
-                        <div class="feed__plot">`+ item.description +`</div>
-                        <div class="feed__crew">
-                            <div>Diretor:</div>
-                            <div class="comma">`;
-                            item.crews.forEach((crew) => {
-                                resultado += `<a href="/diretor?crews=`+ crew +`">`+ crew +`</a>`;
-                            });
-               resultado += `</div></div>
-                        <div class="feed__cast">
-                            <div>Elenco:</div>
-                            <div class="comma">`;
-                            item.casts.forEach((cast) => {
-                                resultado += `<a href="/elenco?casts=`+ cast +`">`+ cast +`</a>`;
-                            });
-                resultado += `</div></div>
-                        <div class="feed__genre">
-                            <div>Gênero:</div>
-                            <div class="comma">`;
-                            item.genres.forEach((genre) => {
-                                resultado += `<a href="/genero?genres=`+ genre +`">`+ genre +`</a>`;
-                            });
-                resultado += `</div></div>
-                        <div class="feed__run-time">
-                            <div>Duração:</div>
-                            <div>`+ item.runtime +`</div>
-                        </div>
-                        <div class="feed__article-sub-row feed__article-sub-column">
-                        <div class="feed__article-rating">
-                            <div class="rating `+stringtoslug(rating_string(item.vote_average))+`">
-                                <svg viewBox="-1 -1 38 38" data-status="Ótimo">
-                                    <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
-                                    <path stroke-dasharray="`+rating_int(item.vote_average)+`, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
-                                    <text x="18" y="24.35">`+rating_decimal(item.vote_average)+`</text>
-                                </svg>
-                            </div>
-                            <div class="rating-content">
-                                <span class="status-`+stringtoslug(rating_string(item.vote_average))+`">`+rating_string(item.vote_average)+`</span>
-                                <span class="rating-text">`+rating_vote_cont(item.vote_count)+`</span>
-                            </div>
-                        </div>
-                        <div class="feed__article-certification">
-                            <div class="certification age-`+ item.certification +`" aria-label="`+ certification_text(item.certification) +`" data-tooltipped="top-right">
-                            <a href="/classificacao?certification=`+ item.certification +`">`+ item.certification +`</a></div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <div class="feed__article-footer">
-                <div class="feed__article-footer-column">
-                    <div>Qualidade:</div>
-                    <div class="comma">`;
-                        item.qualitys.forEach((quality) => {
-                            resultado += `<a href="/qualidade?qualitys=`+ quality +`">`+ quality +`</a>`;
-                        });
-        resultado += `</div></div>
-                <div class="feed__article-footer-column">
-                    <div>Áudio:</div>
-                    <div class="comma">`;
-                        item.audios.forEach((audio) => {
-                            resultado += `<a href="/audio?audios=`+ audio +`">`+ audio +`</a>`;
-                        });
-        resultado += `</div></div>
-                <div class="feed__article-footer-column">
-                    <div>Extensão:</div>
-                    <div class="comma">`;
-                        item.extensions.forEach((extension) => {
-                            resultado += `<a href="/extensao?extensions=`+ extension +`">`+ extension +`</a>`;
-                        });
-        resultado += `</div></div></article>`;
-    });
-    return resultado;
-}
-
-// https://www.w3schools.com/howto/howto_css_modals.asp
-$('.feed__btn-trailer').click(function() {
-    let id = $(this).data('key'),
-        slug = $(this).data('post-slug');
-    $(this).parent().parent().next('.feed__trailer-modal').toggleClass('active');
-    window.history.replaceState('', '', base_url + slug);
-});
-
-// DETECTA O CLICK FORA DO MODAL
-$(window).click(function() {
-    $('.feed__btn-trailer').removeClass('active');
-    $('.feed__trailer-modal').removeClass('active');
-    window.history.pushState('', '', base_url);
-});
-
-// IGNORA O CLICK NO BOTÃO E DENTRO DO MODAL
-$(document).on('click', '.feed__btn-trailer', function(e) {
-    e.stopPropagation();
-});
-
-$(document).on('click', '.feed__trailer-modal-content', function(e) {
-    e.stopPropagation();
-});
-
-jQuery(document).ready(function(){
-    $('.nav__btn').click(function() {
-        $(this).toggleClass('active');
-        $('body').toggleClass('header__content-show');
-        $('.header__content').toggleClass('fixed');
-        $('.nav__items-content').toggleClass('show');
-    });
-
-    $('.feed__content-btn').click(function() {
-        //$(this).toggleClass('active').next('.feed__content-article').toggleClass('active'); // DIV ABAIXO DO ITEM
-        //$(this).toggleClass('active').parent().next('.feed__content-article').toggleClass('active'); // DIV FORA DO ITEM E ABAIXO
-        $(this).toggleClass('active').parent().prev('.feed__content-article').toggleClass('active'); // DIV FORA DO ITEM E ACIMA
-    });
-
-    $('.temporada-main').click(function() {
-        $(this).toggleClass('active').next('.episodios-content').toggleClass('active');
-    });
-    $('.episodio-main').click(function() {
-        $(this).toggleClass('active').next('.episodio-content').toggleClass('active');
-    });
-    $('.episodio-main-download').click(function() {
-        $(this).next('.episodio-content-download').toggleClass('active');
-    });
-    $('.alert-close').click(function() {
-        $(this).parent('.alert').remove();
-    });
-
-
-    /*filter_template = (data) => {
-        let result = '';
-
-        if (Object.keys(data).length === 0) {
-            return '<ul><li><div>Não encontramos nenhum filme nessa categoria :(</div></li></ul>';
-        }
-
-        result += '<ul>';
-        $.each(data, function(index, item) {
-            result += '<li><div>'+ item.title +'</div><div>';
-            item.genres.forEach((genre) => {
-                result += '<span>'+ genre +'</span>';
-            });
-            result += '</div></li>';
+customElements.define("btn-stash", class extends HTMLElement {
+    constructor() {
+        super();
+        this.addEventListener("click", e => {
+            this.toggleShowOptions(this);
         });
-        result += '</ul>';
-        return result;
-    }*/
-
-    search_query_itens = (term, query) => {
-        const itens = new Promise((resolve, reject) => {
-            const url = 'https://groupunknown.com/posts.json';
-            $.getJSON(url, data => { resolve(data); })
-        })
-        itens.then(data => {
-            let item = data.items, result = {"items": []};
-            for (var x = 0; x < item.length; x++) {
-                const items = item[x][term]
-                if (typeof items.length === 'undefined') {
-                    if (items == query) {
-                        result.items.push(item[x])
-                    }
-                } else {
-                    for (var y = 0; y < items.length; y++) {
-                        if (items[y] == query) {
-                            result.items.push(item[x])
-                        }
-                    }
-                }
-            }
-            $('.filter__items-content').pagination({
-                dataSource: result,
-                locator: 'items',
-                pageSize: 2,
-                callback: function(data, pagination) {
-                    var html = filter_template(data)
-                    $('.filter__items-content-results').html(html)
-                }
-            })
-        })
     }
-
-    // CAPTURA A QUERY E EXECUTA A BUSCA
-    var query = Object.fromEntries(new URLSearchParams(window.location.search));
-    if (Object.keys(query)[0]) {
-        search_query_itens(Object.keys(query)[0], Object.values(query)[0])
-        window.history.pushState('', '', base_url)
-        $('.filter__items button[data-query="'+Object.values(query)[0]+'"]').addClass('active')
+    toggleShowOptions = (btn) => {
+        btn.classList.toggle("active");
+        btn.nextElementSibling.classList.toggle("active");
     }
-
-    $('.filter__items button').click(function() {
-        let term = $(this).data('term')     // CAPTURA O ATRIBUTO DATA-QUERY
-            query = $(this).data('query')   // CAPTURA O ATRIBUTO DATA-QUERY
-        $(this).addClass('active')      // ADD A CLASS NO BUTTON QUE FOI CLICADO
-        $(this).siblings().removeClass('active') // REMOVE A CLASS DOS OUTROS BUTTONS
-        search_query_itens(term, query)
-    });
-
 });
+class Filter extends HTMLElement {
+    constructor() {
+        super();
+        this.addEventListener("click", e => {
+            if (this.classList.contains("selected")) {
+                this.classList.remove("selected");
+            } else {
+                [...this.parentElement.children].forEach((sibling) => {
+                    const isCurrent = (sibling === this);
+                    sibling.classList.toggle("selected", isCurrent);
+                });
+            }
+            this.initFilter();
+        });
+    }
+    initFilter = () => {
+        var is = this,
+            terms = this.mergeKeysAndValuesOneObj(),
+            sort_order = this.FilterMultipleQuery(posts, terms),
+            results = this.FilterMultipleQuerySort(sort_order),
+            btn_reset = document.querySelector("filter-reset"),
+            number_status = document.querySelector("filter-status"),
+            number_text = this.pluralizeWord("Nenhum resultado encontrado", " resultado encontrado", " resultados encontrados", results.length);
+            (results.length === 0) ? number_status.classList.add("empty") : number_status.classList.remove("empty");
+            number_status.innerHTML = number_text;
+            (Object.keys(terms).length === 0) ? btn_reset.classList.add("selected") : btn_reset.classList.remove("selected");
+        $(".filter-pagination").pagination({
+            dataSource: results,
+            pageSize: 10,
+            callback: function(data, pagination) {
+                var html = is.FilterTemplate(data);
+                $(".filter-results").html(html);
+            },
+            afterRender: function() {
+                $("html").animate({
+                    scrollTop: ($("body").offset().top)
+                }, 300);
+            }
+        });
+    }
+    pluralizeWord = (emptyWord, singularWord, pluralWord, count) => {
+        return (count === 0) ? emptyWord : (count > 1) ? count + pluralWord : count + singularWord;
+    }
+    slugifyString = (text) => {
+        return text.toString().toLowerCase().normalize("NFD").trim().replace(/\s+/g, "-").replace(/[^\w\-]+/g, "").replace(/\-\-+/g, "-");
+    }
+    formatDateBR = (date) => {
+        var data = new Date(date);
+        return data.toLocaleString([], { year: "numeric", month: "long", day: "numeric" });
+    }
+    FilterMultipleQuerySort = (posts) => {
+        var order = "";
+        [...document.querySelectorAll("[data-sort]")].map(function(el) {
+            if (el.classList.contains("selected")) {
+                order = el.getAttribute("data-sort");
+            }
+        });
+        var query = "post_date", sort_order = (order === "desc") ? -1 : 1;
+        return posts.sort((function() {
+            return function(a, b) {
+                return (a[query] < b[query]) ? -1 * sort_order : (a[query] > b[query]) ? 1 * sort_order : 0 * sort_order;
+            }
+        })(0));
+    }
+    FilterMultipleQueryCategory = (post, term) => {
+        return (term === undefined) ? post.category : post.category.toString().toLowerCase() === term.toString().toLowerCase();
+    }
+    FilterMultipleQueryAdult = (post, term) => {
+        if (term === undefined) {
+            return post.adult.toString() === "false";
+        } else {
+            return post.adult.toString() === term.toString();
+        }
+    }
+    FilterMultipleQueryGenres = (post, term) => {
+        return (term === undefined) ? post.genres : post.genres.indexOf(term) > -1;
+    }
+    FilterMultipleQueryVoteAverage = (post, term) => {
+        if (term === undefined) {
+            return post.vote_average
+        } else {
+            var num = post.vote_average,
+            rating = (num === 0) ? num : (num === 10) ? 100 : (num.toString().length >= 3) ? String(num).substr(0, 3).replace(/\./g, "") : num + "0"
+            if (rating >= parseFloat(term)+1 && rating <= parseFloat(term)+20) {
+                return post.vote_average
+            }
+        }
+    }
+    FilterMultipleQueryCertification = (post, term) => {
+        return (term === undefined) ? post.certification : post.certification.toString().toLowerCase() === term.toString().toLowerCase();
+    }
+    FilterMultipleQueryFirstLetterOrNumber = (post, term) => {
+        if (term === undefined) {
+            return post.title
+        } else {
+            if (Number.isInteger(parseInt(term))) {
+                return /\d/.test(post.title.charAt(0));
+            } else {
+                return post.title.charAt(0).toLowerCase() === term.charAt(0).toLowerCase();
+            }
+        }
+    }
+    FilterMultipleQueryReleaseDate = (post, term) => {
+        return (term === undefined) ? post.release_date : post.release_date.slice(0, 4) === term.toString();
+    }
+    FilterMultipleQueryAuthor = (post, term) => {
+        return (term === undefined) ? post.author : post.author.toString().toLowerCase() === term.toString().toLowerCase();
+    }
+    FilterMultipleQueryQuality = (post, term) => {
+        return (term === undefined) ? post.qualitys : post.qualitys.indexOf(term) > -1;
+    }
+    FilterMultipleQueryAudio = (post, term) => {
+        return (term === undefined) ? post.audios : post.audios.indexOf(term) > -1;
+    }
+    FilterMultipleQueryExtension = (post, term) => {
+        return (term === undefined) ? post.extensions : post.extensions.indexOf(term) > -1;
+    }
+    FilterMultipleQuery = (posts, terms) => {
+        return posts.filter(cat =>
+            this.FilterMultipleQueryCategory(cat, terms.category)).filter(adu =>
+            this.FilterMultipleQueryAdult(adu, terms.adult)).filter(gen =>
+            this.FilterMultipleQueryGenres(gen, terms.genres)).filter(ave =>
+            this.FilterMultipleQueryVoteAverage(ave, terms.vote_average)).filter(cer =>
+            this.FilterMultipleQueryCertification(cer, terms.certification)).filter(tit =>
+            this.FilterMultipleQueryFirstLetterOrNumber(tit, terms.title)).filter(rel =>
+            this.FilterMultipleQueryReleaseDate(rel, terms.release_date)).filter(aut =>
+            this.FilterMultipleQueryAuthor(aut, terms.author)).filter(qua =>
+            this.FilterMultipleQueryQuality(qua, terms.qualitys)).filter(aud =>
+            this.FilterMultipleQueryAudio(aud, terms.audios)).filter(ext =>
+            this.FilterMultipleQueryExtension(ext, terms.extensions));
+    }
+    FilterTemplate = (posts) => {
+        if (Object.keys(posts).length === 0) {
+            return "<article>Nenhum resultado encontrado.</article>"
+        }
+        var results = "", is = this;
+        posts.forEach(function(item) {
+            results += `<article>
+                <article-author class="flex-column b-1 rounded box-shadow bg-current-100">`;
+                authors.forEach(function(author) {
+                    if (author.name.toLowerCase() == item.author.toLowerCase()) {
+                    results += `<div class="author-avatar">
+                        <img src="https://groupunknown.com`+author.avatar+`" alt="`+author.name+`" loading="lazy">
+                    </div>
+                    <div class="author-name">`+author.name+`</div>
+                    <div class="author-role role-`+author.role+`">`+is.FilterTemplateRole(author.role)+`</div>
+                    <div class="author-infor">
+                        <div>
+                            <span>Juntou-se:</span>
+                            <span>`+author.joined+`</span>
+                        </div>
+                        <div>
+                            <span>Publicações:</span>
+                            <span class="author-infor-count" style="--num:`+author.posts_total+`;"></span>
+                        </div>
+                        <div>
+                            <span>Filmes:</span>
+                            <span class="author-infor-count" style="--num:`+author.posts_movies+`;"></span>
+                        </div>
+                        <div>
+                            <span>Séries:</span>
+                            <span class="author-infor-count" style="--num:`+author.posts_series+`;"></span>
+                        </div>
+                    </div>`;
+                    }
+                });
+                results += `</article-author>
+                <article-summary class="summary">
+                    <div class="summary-header">
+                        <div>`+ is.FilterTemplateDate(item.post_date, item.post_modified) +`</div>
+                        <div>`+ item.category +`</div>
+                    </div>
+                    <div class="summary-content">
+                        <div class="summary-poster">
+                            <img src="https://image.tmdb.org/t/p/w300`+ item.poster_path +`" alt="`+ item.title +`">
+                        </div>
+                        <div class="summary-summary">
+                            <div class="summary-column">
+                                <h2 class="summary-title">
+                                    <a href="/`+is.slugifyString(item.title)+`">`+ item.title +`</a>
+                                </h2>
+                                <div class="summary-synopsis item-scroll">`+ item.description +`</div>
+                                <div class="summary-crew">
+                                    <div>Diretor:</div>
+                                    <div class="item-comma">`;
+                                        item.crews.forEach((crew) => {
+                                            results += `<a href="/diretor?crews=`+ crew +`">`+ crew +`</a>`;
+                                        });
+                                    results += `</div></div>
+                                <div class="summary-cast">
+                                    <div>Elenco:</div>
+                                    <div class="item-comma">`;
+                                        item.casts.forEach((cast) => {
+                                            results += `<a href="/genero?casts=`+ cast +`">`+ cast +`</a>`;
+                                        });
+                                    results += `</div></div>
+                                <div class="summary-genre">
+                                    <div>Gênero:</div>
+                                    <div class="item-comma">`;
+                                        item.genres.forEach((genre) => {
+                                            results += `<a href="/genero?genres=`+ genre +`">`+ genre +`</a>`;
+                                        });
+                                    results += `</div></div>
+                                <div class="summary-runtime">
+                                    <div>Duração:</div>
+                                    <div>`+ is.FilterTemplateMinConvert(item.runtime) +`</div>
+                                </div>
+                            </div>
+                            <div class="flex-row w-full justify-between">
+                                <div class="summary-rating" style="`+is.filterTemplateRatingStyle(item.vote_average)+`">
+                                    <div class="summary-average">
+                                        <svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" opacity=".5" stroke-width="4" fill="none"></path>
+                                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" stroke-dasharray="`+ is.FilterTemplateRating_a(item.vote_average) +`, 100" stroke-width="4" fill="none" stroke-linecap="round"></path>
+                                            <text x="50%" y="55%" dominant-baseline="middle" stroke="none" text-anchor="middle">`+ is.FilterTemplateRating_b(item.vote_average) +`</text>
+                                        </svg>
+                                    </div>
+                                    <a href="/avaliacoes?vote_average=excelente">`+is.FilterTemplateRating_c(item.vote_average)+`</a>
+                                    <div class="summary-rating-text">`+ is.FilterTemplateVoteCount(item.vote_count) +`</div>
+                                </div>
+                                <div class="parental-rating bg-cert-`+item.certification+`" aria-label="`+ is.FilterTemplateParental(item.certification) +`" data-tooltipped="top-right">
+                                    <a href="/classificacao?certification=`+item.certification+`">`+item.certification+`</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="summary-footer">
+                        <div class="flex-row gap-0">
+                            <div class="fw-600">Qualidade:</div>
+                            <div class="item-comma">`;
+                                item.qualitys.forEach((quality) => {
+                                    results += `<a href="/qualidade?qualitys=`+ quality +`">`+ quality +`</a>`;
+                                });
+                                results += `</div></div>
+                        <div class="flex-row gap-0">
+                            <div class="fw-600">Àudio:</div>
+                            <div class="item-comma">`;
+                                item.audios.forEach((audio) => {
+                                    results += `<a href="/audio?audios=`+ audio +`">`+ audio +`</a>`;
+                                });
+                                results += `</div></div>
+                        <div class="flex-row gap-0">
+                            <div class="fw-600">Extensão:</div>
+                            <div class="item-comma">`;
+                                item.extensions.forEach((extension) => {
+                                    results += `<a href="/extensao?extensions=`+ extension +`">`+ extension +`</a>`;
+                                });
+                                results += `</div></div>
+                    </div>
+                </article-summary>
+            </article>`;
+        });
+        return results;
+    }
+    FilterTemplateRole = (role) => {
+        const text = {
+            0: "estagiário",
+            1: "autor",
+            2: "suporte",
+            3: "editor",
+            4: "moderador",
+            5: "administrador"
+        }
+        return text[role];
+    }
+    FilterTemplateDate = (post_date, post_modified) => {
+        return (post_date == post_modified) ? "Adicionado " + this.formatDateBR(post_date) : "Atualizado " + this.formatDateBR(post_modified);
+    }
+    FilterTemplateParental = (age) => {
+        const text = {
+            "L": "LIVRE PARA TODOS OS PÚBLICOS",
+            10: "NÃO RECOMENDADO PARA MENORES DE DEZ ANOS",
+            12: "NÃO RECOMENDADO PARA MENORES DE DOZE ANOS",
+            14: "NÃO RECOMENDADO PARA MENORES DE CATORZE ANOS",
+            16: "NÃO RECOMENDADO PARA MENORES DE DEZESSEIS ANOS",
+            18: "NÃO RECOMENDADO PARA MENORES DE DEZOITO ANOS"
+        }
+        return text[age];
+    }
+    FilterTemplateMinConvert = (time) => {
+        var h = Math.floor(time / 60), m = time % 60
+        return (time <= 60) ? time + "min" : h+"h " + m+"min"
+    }
+    FilterTemplateRating_a = (a) => {
+        return (a === 0) ? a : (a === 10) ? 100 : (a.toString().length >= 3) ? String(a).substr(0, 3).replace(/\./g, '') : a + '0'
+    }
+    FilterTemplateRating_b = (b) => {
+        return (b === 0) ? 'N/A' : (b === 10) ? 10 : (b.toString().length >= 3) ? String(b).substr(0, 3) : b + '.0'
+    }
+    FilterTemplateRating_c = (c) => {
+        var c = this.FilterTemplateRating_a(c);
+        return (c === 0) ? "Nenhum" : (c < 20) ? "Péssimo" : (c < 41) ? "Ruim" : (c < 61) ? "Aceitável" : (c < 81) ? "Ótimo" : "Excelente";
+    }
+    filterTemplateRatingStyle = (d) => {
+        var r = this.FilterTemplateRating_a(d),
+            num = (r === 0) ? 0 : (r < 20) ? 1 : (r < 41) ? 2 : (r < 61) ? 3 : (r < 81) ? 4 : 5;
+        const color = {
+            0: "--rating-color:#dee0ec;",
+            1: "--rating-color:#ff3722;",
+            2: "--rating-color:#ff8622;",
+            3: "--rating-color:#ffce00;",
+            4: "--rating-color:#73cf11;",
+            5: "--rating-color:#4aa757;"
+        }
+        return color[num];
+    }
+    FilterTemplateVoteCount = (v = 0) => {
+        return (v === 1) ? '1 avaliação' : (v >= 2) ? Number(v).toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,") + ' avaliações' : 'Nenhuma avaliação'
+    }
+    mergeKeysAndValuesOneObj = () => {
+        var array = [], init = [...document.querySelectorAll("[data-query]")].map(function(el) {
+            if (el.classList.contains("selected")) {
+                var innerObj = {};
+                innerObj[el.getAttribute("data-category")] = el.getAttribute("data-query");
+                array.push(innerObj)
+            }
+        });
+        const results = array.reduce((a, v) => {
+            if(a[v]) {
+                a[v] = [a[v], v].join(", ")                         
+            } else {
+                a[v] = v
+            }
+            return a
+        }, {});
+        return Object.assign({}, ...array);
+    }
+};
+customElements.define("btn-filter", Filter);
+customElements.define("filter-reset", class extends Filter {
+    constructor() {
+        super().initFilter();
+        this.addEventListener("click", e => {
+            document.querySelectorAll("btn-filter").forEach(b => b.classList.remove("selected"));
+            this.initFilter();
+        });
+    }
+});
+customElements.define("filter-sort", class extends Filter {});
+FilterBTN = (items) => {
+    var results = "";
+    items.forEach(function(x) {
+        results += `<btn-stash>
+                    <div>`+x.name+`</div>
+                    <svg class="btn-stash" viewBox="0 0 10 16" version="1.1" width="14" height="18" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z"></path>
+                    </svg>
+                </btn-stash>
+                <div class="category-items item-scroll">`;
+                x.items.forEach(function(y) {
+                    if (x.query == "adult") {
+                        results += `<btn-filter class="category-item `+(y.count == 0 ? "disabled" : "")+`" data-category="`+x.query+`" data-query="`+y.item+`"><div class="category-selector"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.8 5.2" aria-label="Tick"><path d="M6.7.8L2.9 5c-.1.1-.3.2-.4.2-.1 0-.3-.1-.4-.2l-2-2c-.1-.2-.1-.5 0-.7s.5-.2.7 0L2.5 4 6 .2c.2-.2.5-.2.7 0 .2.1.2.4 0 .6z"></path></svg></div><div class="category-title">`+((y.item) ? "18+" : "Normal")+`</div><div class="category-count" style="--num: `+y.count+`;"></div></btn-filter>`;
+                    } else if(x.query == "vote_average") {
+                        results += `<btn-filter class="category-item `+(y.count == 0 ? "disabled" : "")+`" data-category="`+x.query+`" data-query="`+(y.item == "Péssimo" ? 0 : y.item == "Ruim" ? 20 : y.item == "Aceitável" ? 40 : y.item == "Ótimo" ? 60 : y.item == "Excelente" ? 80 : "N/A")+`"><div class="category-selector"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.8 5.2" aria-label="Tick"><path d="M6.7.8L2.9 5c-.1.1-.3.2-.4.2-.1 0-.3-.1-.4-.2l-2-2c-.1-.2-.1-.5 0-.7s.5-.2.7 0L2.5 4 6 .2c.2-.2.5-.2.7 0 .2.1.2.4 0 .6z"></path></svg></div><div class="category-title">`+y.item+`</div><div class="category-count" style="--num: `+y.count+`;"></div></btn-filter>`;
+                    } else {
+                        results += `<btn-filter class="category-item `+(y.count == 0 ? "disabled" : "")+`" data-category="`+x.query+`" data-query="`+y.item+`"><div class="category-selector"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.8 5.2" aria-label="Tick"><path d="M6.7.8L2.9 5c-.1.1-.3.2-.4.2-.1 0-.3-.1-.4-.2l-2-2c-.1-.2-.1-.5 0-.7s.5-.2.7 0L2.5 4 6 .2c.2-.2.5-.2.7 0 .2.1.2.4 0 .6z"></path></svg></div><div class="category-title">`+y.item+`</div><div class="category-count" style="--num: `+y.count+`;"></div></btn-filter>`;
+                    }
+                });
+        results += `</div>`;
+    });
+    $(".filtro-items").html(results);
+}
+FilterBTN(filter_json);
+/* Header sticky */
+const headerEl = document.querySelector("header-sticky");
+const sentinalEl = document.querySelector("header-observe");
+const handler = (entries) => {
+    (!entries[0].isIntersecting) ? headerEl.classList.add("isSticky") : headerEl.classList.remove("isSticky");
+}
+const observer = new window.IntersectionObserver(handler);
+observer.observe(sentinalEl);
+/* Header show/hidden */
+customElements.define("header-mobile", class extends HTMLElement {
+    constructor() {
+        super();
+        this.addEventListener("click", e => {
+            this.classList.toggle("active");
+            this.previousElementSibling.classList.toggle("active");
+            this.nextElementSibling.classList.toggle("active");
+        });
+    }
+});
+/* Banner Slider */
+var s  = document.querySelectorAll("slider-banner a"), c  = 0, n = s.length - 1;
+if (typeof s[0] !== "undefined") {
+    window.setInterval(function(){
+        var i =  c ? c - 1 : n;
+        s[i].className  = "";
+        s[c].className  = "active";
+        c = c >= n ? 0 : c+1;     
+    }, 4000);
+}

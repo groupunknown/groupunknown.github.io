@@ -12,46 +12,35 @@
     <link rel="alternate" type="application/json" title="{{ site.title }}" href="{{ site.baseurl }}/feed.json" />
     <link rel="sitemap" type="application/xml" title="sitemap" href="{{ site.baseurl }}/sitemap.xml" />
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" media="all">
-    <style type="text/css">:root {--lazyload-1: #f9fafa;--lazyload-2: #e5e6e7;}[data-theme="dark"] {--lazyload-1: #2f3234;--lazyload-2: #2a2b2c;}[data-placeholder]{background:linear-gradient(to right,var(--lazyload-1) 10%,var(--lazyload-2) 25%,var(--lazyload-1) 40%);animation:placeholder 1.5s infinite forwards linear;box-shadow:inset 0 0 0 200px rgb(0 0 0 / 3%);background-color:transparent!important;background-size:1000px 100px;position:relative;pointer-events:none;user-select:none;margin:1px;}a[data-placeholder],div[data-placeholder] a,span[data-placeholder],div[data-placeholder]{color:transparent!important;border-color:transparent!important;border-radius:3px}.author-role[data-placeholder]{box-shadow:inset 0 0 0 200px rgb(0 0 0 / 5%)!important}.author-role[data-placeholder]:before,.author-role[data-placeholder]:after,.author-name[data-placeholder]{opacity:0!important}div[data-placeholder] img,div[data-placeholder] svg{opacity:0}@keyframes placeholder{0%{background-position:-500px 0}100%{background-position:500px 0}}</style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-    {% if page.url != "/" %} 
-    <noscript>
-    <meta http-equiv="refresh" content="0; url={{ site.url }}" />
-    </noscript>
-    {% endif %}
-    {% if page.layout == "taxonomy" %}
-    
-    {% endif %}
+    <style type="text/css">.theme-toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;aspect-ratio:1;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent;outline-offset:5px}.theme-toggle>svg{stroke-linecap:round}.sun-and-moon>:is(.moon,.sun,.sun-beams){transform-origin:center center}.sun-and-moon>:is(.moon,.sun){fill:var(--icon-fill)}.theme-toggle:is(:hover,:focus-visible)>.sun-and-moon>:is(.moon,.sun){fill:var(--icon-fill-hover)}.sun-and-moon>.sun-beams{stroke:var(--icon-fill);stroke-width:2px}.theme-toggle:is(:hover,:focus-visible) .sun-and-moon>.sun-beams{stroke:var(--icon-fill-hover)}.theme-dark .sun-and-moon>.sun{transform:scale(1.75)}.theme-dark .sun-and-moon>.sun-beams{opacity:0}.theme-dark .sun-and-moon>.moon>circle{transform:translate(-7px)}@supports (cx:1){.theme-dark .sun-and-moon>.moon>circle{transform:translate(0);cx:17}}@media (prefers-reduced-motion:no-preference){.sun-and-moon>.sun{transition:transform 0.5s cubic-bezier(.5,1.25,.75,1.25)}.sun-and-moon>.sun-beams{transition:transform 0.5s cubic-bezier(.5,1.5,.75,1.25),opacity 0.5s cubic-bezier(.25,0,.3,1)}.sun-and-moon .moon>circle{transition:transform 0.25s cubic-bezier(0,0,0,1)}@supports (cx:1){.sun-and-moon .moon>circle{transition:cx 0.25s cubic-bezier(0,0,0,1)}}.theme-dark .sun-and-moon>.sun{transform:scale(1.75);transition-timing-function:cubic-bezier(.25,0,.3,1);transition-duration:0.25s}.theme-dark .sun-and-moon>.sun-beams{transform:rotate(-25deg);transition-duration:0.15s}.theme-dark .sun-and-moon>.moon>circle{transition-delay:0.25s;transition-duration:0.5s}}</style>
     {% if page.layout == "post" %}
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.posting.css" media="all">
     {% endif %}
-    <script>
-    document.addEventListener("DOMContentLoaded", function(){
-        var toggleSwitch = document.querySelector("#theme-toggle"), currentTheme = localStorage.getItem("theme-preference");
-        if(currentTheme === null) {
-            var prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-            if (prefersDarkScheme.matches) {
-                document.documentElement.setAttribute("data-theme", "dark");
-                toggleSwitch.setAttribute("aria-label", "dark");
-                document.querySelector(".header-logo a img").src = "/assets/img/logo-dark.webp";
-            } else {
-                document.documentElement.setAttribute("data-theme", "light");
-                toggleSwitch.setAttribute("aria-label", "light");
-                document.querySelector(".header-logo a img").src = "/assets/img/logo-light.webp";
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    {% if page.url != "/" %} 
+    <noscript>
+        <meta http-equiv="refresh" content="0; url={{ site.url }}" />
+    </noscript>
+    {% endif %}
+    <script type="text/javascript">
+        toggleClass = (scheme, event = false) => {
+            document.body.removeAttribute("class");
+            document.body.classList.add(scheme);
+            document.querySelector("header-logo a img").src = "assets/img/logo-"+scheme+".png";
+            if (event) { localStorage.setItem("theme-preference", scheme) }
+        };
+        customElements.define("theme-switch", class extends HTMLElement {
+            constructor() {
+                super();
+                this.addEventListener("click", e => {
+                    const scheme = (document.body.classList.contains("theme-light")) ? "theme-dark" : "theme-light";
+                    toggleClass(scheme, true);
+                });
             }
-        }
-        if (currentTheme) {
-            document.documentElement.setAttribute("data-theme", currentTheme);
-            toggleSwitch.setAttribute("aria-label", currentTheme);
-            document.querySelector(".header-logo a img").src = "/assets/img/logo-"+currentTheme+".webp";
-        }
-        document.querySelector("#theme-toggle").addEventListener("click", () => {
-            var scheme = (document.documentElement.getAttribute("data-theme") === "light") ? "dark" : "light";
-            document.documentElement.setAttribute("data-theme", scheme);
-            toggleSwitch.setAttribute("aria-label", scheme);
-            localStorage.setItem("theme-preference", scheme);
-            document.querySelector(".header-logo a img").src = "/assets/img/logo-"+scheme+".webp";
         });
-    });
+        document.addEventListener("DOMContentLoaded", function() {
+            toggleClass(localStorage.getItem("theme-preference"));
+        });
     </script>
+    <script id="search" type="application/json">{% include_relative search.json %}</script>
 </head>

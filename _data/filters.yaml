@@ -1,3 +1,11 @@
+- query: post_modified
+  name: Atualizações
+  items:
+  - item: Hoje
+  - item: Últimos 3 dias
+  - item: Últimos 7 dias
+  - item: Últimos 30 dias
+
 - query: category
   name: Categorias
   items:

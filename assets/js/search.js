@@ -1,50 +1,62 @@
-var json_posts = [];
-$.getJSON('/search.json').then(function(data) { json_posts = data });
-$("#search").keyup(function(){
-    var input = $(this).val(), regex = new RegExp(input, "i"), regex_array = new RegExp(input, "gi"), results = '';
-    if (input.length > 2) {
-        $(this).addClass("search-suggest-input-active");
-    } else {
-        $(this).removeClass("search-suggest-input-active");
-    }
-    if(input.length <= 2) {
-        $(".search-suggest-results").html("").addClass("search-suggest-result-empty");
+/**
+ * Live Search Engine
+ */
+window.addEventListener("click", function(e){
+    if (document.querySelector("live-search-results").contains(e.target)) {
         return;
     }
-    FilterQuerySearchByCategory = (postings, category) => {
-        postings.forEach((posting, key, last) => {
-            if ((posting.title.search(regex) != -1) || (posting.imdb_id.search(regex) != -1) || (posting.tmdb_id.search(regex) != -1) || (posting.crews.findIndex(v => regex_array.test(v)) != -1) || (posting.casts.findIndex(v => regex_array.test(v)) != -1)) {
-                results += `<a class="search-suggest-result" href="`+ posting.url +`">
-                <div class="search-suggest-poster">
-                <div class="search-suggest-category">`+ posting.category +`</div>
-                <img src="https://image.tmdb.org/t/p/w45`+ posting.poster +`" alt="`+ posting.title +`">
-                </div>
-                <div class="search-suggest-summary">
-                <div class="search-suggest-title">`+ posting.title +`</div>
-                <div class="search-suggest-synopsis">`+ posting.description +`</div>
-                </div>
-                </a>`;
-            }
-        });
-        return results;
-    }
-    var search = FilterQuerySearchByCategory(json_posts, "Filmes");
-    if (search.length === 0) {
-        $(".search-suggest-results").html('<div class="search-suggest-no-results">Nenhum resultado encontrado, tente procurar com o título em outra língua. Caso ainda não encontre faça um pedido na nossa página do Facebook.</div>');
+    if (document.querySelector("input[is='live-search']").contains(e.target)){
+        if (e.target.value.length > 2) {
+            e.target.classList.add("active");
+            e.target.nextElementSibling.classList.remove("disabled");
+        }
     } else {
-        $(".search-suggest-results").html(search).removeClass("search-suggest-result-empty");
-    }
-});
-var win = $(window);
-win.click(function() {
-    $("#search").removeClass("search-suggest-input-active");
-    $(".search-suggest-results").addClass("search-suggest-result-empty");
-});
-$(document).on("click", "#search", function(e) {
-    var size = $("#search").val();
-    if (size.length > 2) {
-        $("#search").addClass("search-suggest-input-active");
-        $(".search-suggest-results").removeClass("search-suggest-result-empty");
+        document.querySelector("input[is='live-search']").classList.remove("active");
+        document.querySelector("live-search-results").classList.add("disabled");
     }
     e.stopPropagation();
 });
+class LiveSearchEngine extends HTMLInputElement {
+    constructor() {
+        super();
+        this.addEventListener("input", () => {
+            this.LiveSearchEngine(this);
+        });
+    }
+    LiveSearchEngineEmpty = (input) => {
+        (input.value.length > 2) ? input.classList.add("active") : input.classList.remove("active");
+        if (input.value.length <= 2) {
+            input.nextElementSibling.innerHTML = "";
+            input.nextElementSibling.classList.add("disabled")
+            return;
+        }
+    }
+    LiveSearchEngine = (input) => {
+        var results = this.LiveSearchEngineTemplate(input);
+        input.nextElementSibling.innerHTML = results;
+        input.nextElementSibling.classList.remove("disabled");
+        this.LiveSearchEngineEmpty(input);
+    }
+    LiveSearchEngineTemplate = (input) => {
+        var results = "",
+            empty = "<live-search-result-empty>Nenhum resultado encontrado, tente procurar com o título em outra língua. Caso ainda não encontre faça um pedido na nossa página do Facebook.</live-search-result-empty>",
+            regexp_string = new RegExp(input.value, "i"),
+            regexp_object = new RegExp(input.value, "gi");
+        search_json.forEach((post, key, last) => {
+            if ((post.title.search(regexp_string) != -1) || (post.imdb_id.search(regexp_string) != -1) || (String(post.tmdb_id).search(regexp_string) != -1) || (post.crews.findIndex(v => regexp_object.test(v)) != -1) || (post.casts.findIndex(v => regexp_object.test(v)) != -1)) {
+            results += `<a href="`+ post.url +`">
+                <live-search-result-poster>
+                    <img src="https://image.tmdb.org/t/p/w45`+ post.poster +`" alt="`+ post.title +`">
+                    <live-search-category>`+ post.category +`</live-search-category>
+                </live-search-result-poster>
+                <live-search-result-summary>
+                    <live-search-result-title>`+ post.title +`</live-search-result-title>
+                    <live-search-result-synopsis>`+ post.description +`</live-search-result-synopsis>
+                </live-search-result-summary>
+            </a>`;
+            }
+        });
+        return (results.length === 0) ? empty : results;
+    }
+};
+customElements.define("live-search", LiveSearchEngine, { extends: "input" });

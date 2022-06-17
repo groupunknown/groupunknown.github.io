@@ -1,7 +1,7 @@
 ---
 layout: null
 ---
-[{% for x in site.data.filters %}{% if x.query == "vote_average" or x.query == "title" or x.query == "release_date" %}{% continue %}{% else %}
+[{% for x in site.data.filters %}{% if x.query == "post_modified" or x.query == "vote_average" or x.query == "title" or x.query == "release_date" %}{% continue %}{% else %}
     {
         "name": {{ x.name | jsonify }},
         "query": {{ x.query | jsonify }},
