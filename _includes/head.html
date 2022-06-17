@@ -42,5 +42,5 @@
             toggleClass(localStorage.getItem("theme-preference"));
         });
     </script>
-    <script id="search" type="application/json">{% include search.json | jsonify %}</script>
+    <script id="search" type="application/json">{% [{% for post in site.posts %}{"title":"{{ post.title | strip_html | escape }}","url":"{{ site.baseurl }}{{ post.url }}","category":"{{ post.categories | join: ', ' }}","date":"{{ post.date }}","poster":"{{ post.poster_path }}","description":"{{post.description | strip_html | strip_newlines | escape }}","tmdb_id":"{{ post.tmdb_id }}","imdb_id":"{{ post.imdb_id }}","casts":[{% for cast in post.casts %}{{ cast | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}],"crews":[{% for crew in post.crews %}{{ crew | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}]}{% unless forloop.last %},{% endunless %}{% endfor %}] %}</script>
 </head>
