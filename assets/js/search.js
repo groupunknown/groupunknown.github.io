@@ -1,6 +1,3 @@
-/**
- * Live Search Engine
- */
 window.addEventListener("click", function(e){
     if (document.querySelector("live-search-results").contains(e.target)) {
         return;

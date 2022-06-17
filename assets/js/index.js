@@ -3,16 +3,23 @@ var authors = JSON.parse(document.getElementById("authors").textContent),
     filter_json = JSON.parse(document.getElementById("filter").textContent),
     search_json = JSON.parse(document.getElementById("search").textContent);
 
+customElements.define("header-mobile", class extends HTMLElement {
+    constructor() {
+        super();
+        this.addEventListener("click", e => {
+            this.classList.toggle("active");
+            this.previousElementSibling.classList.toggle("active");
+            this.nextElementSibling.classList.toggle("active");
+        });
+    }
+});
 customElements.define("btn-stash", class extends HTMLElement {
     constructor() {
         super();
         this.addEventListener("click", e => {
-            this.toggleShowOptions(this);
+            this.classList.toggle("active");
+            this.nextElementSibling.classList.toggle("active");
         });
-    }
-    toggleShowOptions = (btn) => {
-        btn.classList.toggle("active");
-        btn.nextElementSibling.classList.toggle("active");
     }
 });
 class Filter extends HTMLElement {
@@ -344,6 +351,7 @@ class Filter extends HTMLElement {
     }
 };
 customElements.define("btn-filter", Filter);
+customElements.define("filter-sort", class extends Filter {});
 customElements.define("filter-reset", class extends Filter {
     constructor() {
         super();
@@ -353,7 +361,6 @@ customElements.define("filter-reset", class extends Filter {
         });
     }
 });
-customElements.define("filter-sort", class extends Filter {});
 FilterBTN = (items) => {
     var results = "";
     items.forEach(function(x) {
@@ -378,26 +385,6 @@ FilterBTN = (items) => {
     $(".filtro-items").html(results);
 }
 FilterBTN(filter_json);
-/* Header sticky
-const headerEl = document.querySelector("header-sticky");
-const sentinalEl = document.querySelector("header-observe");
-const handler = (entries) => {
-    (!entries[0].isIntersecting) ? headerEl.classList.add("isSticky") : headerEl.classList.remove("isSticky");
-}
-const observer = new window.IntersectionObserver(handler);
-observer.observe(sentinalEl); */
-/* Header show/hidden */
-customElements.define("header-mobile", class extends HTMLElement {
-    constructor() {
-        super();
-        this.addEventListener("click", e => {
-            this.classList.toggle("active");
-            this.previousElementSibling.classList.toggle("active");
-            this.nextElementSibling.classList.toggle("active");
-        });
-    }
-});
-/* Banner Slider */
 var s  = document.querySelectorAll("slider-banner a"), c  = 0, n = s.length - 1;
 if (typeof s[0] !== "undefined") {
     window.setInterval(function(){
