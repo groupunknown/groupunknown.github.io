@@ -20,6 +20,6 @@ NÃO RECOMENDADO PARA MENORES DE DEZOITO ANOS
 INDISPONÍVEL
 {% endif %}
 {% endcapture %}
-<div class="parental-rating bg-cert-{{ postings.certification | strip }}" aria-label="{{ crtfctn_text | strip }}" data-tooltipped="top-right" data-placeholder>
+<div class="parental-rating bg-cert-{{ postings.certification | strip }}" aria-label="{{ crtfctn_text | strip }}" data-tooltipped="top-right">
 	<a href="/classificacao?certification={{ postings.certification | strip }}">{{ postings.certification | strip }}</a>
 </div>

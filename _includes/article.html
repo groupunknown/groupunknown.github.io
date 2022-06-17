@@ -1,49 +1,45 @@
-<article class="row article width-responsive">
+<article>
 	{% include article_author.html %}
-	<div class="column posting">
-		<div class="row full-width justify-between article-header">
+	<article-summary class="summary">
+		<div class="summary-header">
 			{% include article_date_formatting.html %}
-			{% assign min = 0 %}
-			{% assign max = 10 %}
-			{% assign diff = max | minus: min %}
-			{% assign randomNumber = post.description | size | modulo: diff | plus: min %}
-			<div class="badge badge-{{ randomNumber }}" data-placeholder>{{ post.category }}</div>
+			<div>{{ post.category }}</div>
 		</div>
-		<div class="row article-content">
-			<div class="row poster" data-placeholder>
-				<img src="https://image.tmdb.org/t/p/{{ site.article_size_img_home }}{{ post.poster_path }}" alt="{{ post.title }}" {% if forloop.first %}{% else %}loading="lazy"{% endif %}>
-			</div>
-			<div class="article-summary">
-				<div class="column">
-					<h2 class="title">
-						<a href="{{ post.url | prepend: site.baseurl }}" data-placeholder>{{ post.title }}</a>
-					</h2>
-					<div class="synopsis scroll" data-placeholder>{{ post.description }}</div>
-					<div class="crew" data-placeholder>
+		<div class="summary-content">
+			<div class="summary-poster">
+                <img src="https://image.tmdb.org/t/p/{{ site.article_size_img_home }}{{ post.poster_path }}" alt="{{ post.title }}" {% if forloop.first %}{% else %}loading="lazy"{% endif %}>
+            </div>
+			<div class="summary-summary">
+				<div class="summary-column">
+					<h2 class="summary-title">
+						<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    </h2>
+                    <div class="summary-synopsis item-scroll">{{ post.description }}</div>
+					<div class="summary-crew">
 						<div>Diretor:</div>
-						<div class="comma">
+						<div class="item-comma">
 							{% for crew in post.crews %}
 							<a href="/diretor?crews={{crew}}">{{ crew }}</a>
 							{% endfor %}
 						</div>
 					</div>
-					<div class="cast" data-placeholder>
+					<div class="summary-cast">
 						<div>Elenco:</div>
-						<div class="comma">
+						<div class="item-comma">
 							{% for cast in post.casts %}
 							<a href="/elenco?casts={{cast}}">{{ cast }}</a>
 							{% endfor %}
 						</div>
 					</div>
-					<div class="genre" data-placeholder>
+					<div class="summary-genre">
 						<div>Gênero:</div>
-						<div class="comma">
+						<div class="item-comma">
 							{% for genre in post.genres %}
 							<a href="/genero?genres={{genre}}">{{ genre }}</a>
 							{% endfor %}
 						</div>
 					</div>
-					<div class="runtime" data-placeholder>
+					<div class="summary-runtime">
 						<div>Duração:</div>
 						{% if post.runtime <= 60 %}
 						<div>{{ post.runtime }}min</div>
@@ -52,37 +48,38 @@
 						{% endif %}
 					</div>
 				</div>
+
 				<div class="row full-width justify-between">
 					{% include article_average.html %}
 					{% include article_certification.html %}
 				</div>
 			</div>
 		</div>
-		<div class="row article-footer">
-			<div class="row" data-placeholder>
-				<div>Qualidade:</div>
-				<div class="comma">
+		<div class="summary-footer">
+			<div class="flex-row gap-0">
+				<div class="fw-600">Qualidade:</div>
+				<div class="item-comma">
 					{% for quality in post.qualitys %}
 					<a href="/qualidade?qualitys={{quality}}">{{ quality }}</a>
 					{% endfor %}
 				</div>
 			</div>
-			<div class="row" data-placeholder>
-				<div>Áudio:</div>
-				<div class="comma">
+			<div class="flex-row gap-0">
+				<div class="fw-600">Áudio:</div>
+				<div class="item-comma">
 					{% for audio in post.audios %}
 					<a href="/audio?audios={{audio}}">{{ audio }}</a>
 					{% endfor %}
 				</div>
 			</div>
-			<div class="row" data-placeholder>
-				<div>Extensão:</div>
-				<div class="comma">
+			<div class="flex-row gap-0">
+				<div class="fw-600">Extensão:</div>
+				<div class="item-comma">
 					{% for extension in post.extensions %}
 					<a href="/extensao?extensions={{extension}}">{{ extension }}</a>
 					{% endfor %}
 				</div>
 			</div>
 		</div>
-	</div>
+	</article-summary>
 </article>

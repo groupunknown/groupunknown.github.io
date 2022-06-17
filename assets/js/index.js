@@ -189,7 +189,7 @@ class Filter extends HTMLElement {
                     </div>
                     <div class="summary-content">
                         <div class="summary-poster">
-                            <img src="https://image.tmdb.org/t/p/w300`+ item.poster_path +`" alt="`+ item.title +`">
+                            <img src="https://image.tmdb.org/t/p/w154`+ item.poster_path +`" alt="`+ item.title +`">
                         </div>
                         <div class="summary-summary">
                             <div class="summary-column">
@@ -346,7 +346,7 @@ class Filter extends HTMLElement {
 customElements.define("btn-filter", Filter);
 customElements.define("filter-reset", class extends Filter {
     constructor() {
-        super().initFilter();
+        super();
         this.addEventListener("click", e => {
             document.querySelectorAll("btn-filter").forEach(b => b.classList.remove("selected"));
             this.initFilter();
