@@ -2,7 +2,7 @@
 layout: post
 author: Heisenberg
 category: Séries
-post_date: '2022-05-25T04:20:57.625Z'
+post_date: '2022-05-26T04:20:57.625Z'
 post_modified: '2022-05-25T04:20:57.625Z'
 title: 'Star Trek: Strange New Worlds'
 description: 'Segue a tripulação da USS Enterprise sob o comando do Capitão Christopher Pike.'
