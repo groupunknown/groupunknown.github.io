@@ -1,7 +1,7 @@
-var authors_json = JSON.parse(document.getElementById("authors").textContent), authors = authors_json.items;
-var posts_json = JSON.parse(document.getElementById("posts").textContent), posts = posts_json.items;
-var filter_json = JSON.parse(document.getElementById("filter").textContent);
-var search_json = JSON.parse(document.getElementById("search").textContent);
+var authors = JSON.parse(document.getElementById("authors").textContent),
+    posts = JSON.parse(document.getElementById("posts").textContent),
+    filter_json = JSON.parse(document.getElementById("filter").textContent),
+    search_json = JSON.parse(document.getElementById("search").textContent);
 
 customElements.define("btn-stash", class extends HTMLElement {
     constructor() {
