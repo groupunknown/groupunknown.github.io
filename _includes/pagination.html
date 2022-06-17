@@ -3,12 +3,12 @@
 		{% if paginator.previous_page %}
 			<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Anterior</a>
 		{% else %}
-			<a class="active">Anterior</a>
+			<span class="active">Anterior</span>
 		{% endif %}
 
 		{% for page in (1..paginator.total_pages) %}
 		{% if page == paginator.page %}
-			<a class="active">{{ page }}</a>
+			<span class="active">{{ page }}</span>
 		{% elsif page == 1 %}
 			<a href="/">{{ page }}</a>
 		{% else %}
@@ -19,7 +19,7 @@
 		{% if paginator.next_page %}
 			<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Próximo</a>
 		{% else %}
-			<a class="active">Próximo</a>
+			<span class="active">Próximo</span>
 		{% endif %}
 	</div>
 {% endif %}

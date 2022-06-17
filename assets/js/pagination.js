@@ -181,7 +181,7 @@
           if (attributes.showFirstOnEllipsisShow) {
             html += '<li class="' + classPrefix + '-page ' + classPrefix + '-first J-paginationjs-page" data-num="1"><a href="' + pageLink + '">1<\/a><\/li>';
           }
-          html += '<li class="' + classPrefix + '-ellipsis ' + disableClassName + '"><a>' + ellipsisText + '<\/a><\/li>';
+          html += '<li class="' + classPrefix + '-ellipsis ' + disableClassName + '"><span>' + ellipsisText + '<\/span><\/li>';
         }
 
         for (i = rangeStart; i <= rangeEnd; i++) {
