@@ -43,4 +43,112 @@
         });
     </script>
     <script id="search" type="application/json">[{% for post in site.posts %}{"title":"{{ post.title | strip_html | escape }}","url":"{{ site.baseurl }}{{ post.url }}","category":"{{ post.categories | join: ', ' }}","date":"{{ post.date }}","poster":"{{ post.poster_path }}","description":"{{post.description | strip_html | strip_newlines | escape }}","tmdb_id":"{{ post.tmdb_id }}","imdb_id":"{{ post.imdb_id }}","casts":[{% for cast in post.casts %}{{ cast | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}],"crews":[{% for crew in post.crews %}{{ crew | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}]}{% unless forloop.last %},{% endunless %}{% endfor %}]</script>
+    <script id="filter" type="application/json">[{% for x in site.data.filters %}{% if x.query == "post_modified" or x.query == "vote_average" or x.query == "title" or x.query == "release_date" %}{% continue %}{% else %}
+    {
+        "name": {{ x.name | jsonify }},
+        "query": {{ x.query | jsonify }},
+        "items": [{% for y in x.items %}{% assign posts = site.posts | where: x.query, y.item %}
+            {
+                "item": {{ y.item | jsonify }},
+                "count": {{ posts.size }}
+            }{% if forloop.last == false %},{% endif %}{% endfor %}
+        ]
+    },{% endif %}{% endfor %}
+    {
+        "name": "Letras & Números",
+        "query": "title",
+        "items": [
+            {
+                "item": "0 à 9",
+                "count": {% assign numbers = "0,1,2,3,4,5,6,7,8,9" %}{% assign numbers = numbers | split:',' %}{% assign count = 0 %}{% for number in numbers %}{% for post in site.posts %}{% assign firstnumber = post.title | truncate: 1, '' %}{% if firstnumber == number %}{% capture count %}{{ count | plus:1 }}{% endcapture %}{% endif %}{% endfor %}{% endfor %}{{ count }}
+            },{% assign alphabet = "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z" %}{% assign alphabet = alphabet | split:',' %}{% for letter in alphabet %}{% assign amount = 0 %}
+            {
+                "item": {{ letter | jsonify }},
+                "count": {% for post in site.posts %}{% assign firstletter = post.title | truncate: 1, '' | downcase %}{% assign downletter = letter | downcase %}{% if downletter == firstletter %}{% capture amount %}{{ amount | plus:1 }}{% endcapture %}{% endif %}{% endfor %}{{ amount }}
+            }{% if forloop.last == false %},{% endif %}{% endfor %}
+        ]
+    },
+    {
+        "name": "Avaliações",
+        "query": "vote_average",
+        "items": [{% assign pessimo = "10,11,12,13,14,15,16,17,18,19,20" | split: ',' %}{% assign ruim = "21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40" | split: ',' %}{% assign aceitavel = "41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60" | split: ',' %}{% assign otimo = "61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80" | split: ',' %}{% assign execelente = "81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100" | split: ',' %}{% assign rating_a_count = 0 %}{% assign rating_b_count = 0 %}{% assign rating_c_count = 0 %}{% assign rating_d_count = 0 %}{% assign rating_e_count = 0 %}{% assign rating_f_count = 0 %}{% for post in site.posts %}{% assign vote_average = post.vote_average | remove: "." %}{% if pessimo contains vote_average %}{% assign rating_a_count = rating_a_count | plus:1 %}{% elsif ruim contains vote_average %}{% assign rating_b_count = rating_b_count | plus:1 %}{% elsif aceitavel contains vote_average %}{% assign rating_c_count = rating_c_count | plus:1 %}{% elsif otimo contains vote_average %}{% assign rating_d_count = rating_d_count | plus:1 %}{% elsif execelente contains vote_average %}{% assign rating_e_count = rating_e_count | plus:1 %}{% elsif vote_average == "0" %}{% assign rating_f_count = rating_f_count | plus:1 %}{% endif %}{% endfor %}
+            {
+                "item": "Nenhum",
+                "count": {{ rating_f_count }}
+            },
+            {
+                "item": "Péssimo",
+                "count": {{ rating_a_count }}
+            },
+            {
+                "item": "Ruim",
+                "count": {{ rating_b_count }}
+            },
+            {
+                "item": "Aceitável",
+                "count": {{ rating_c_count }}
+            },
+            {
+                "item": "Ótimo",
+                "count": {{ rating_d_count }}
+            },
+            {
+                "item": "Excelente",
+                "count": {{ rating_e_count }}
+            }
+        ]
+    }
+]</script>
+    <script id="authors" type="application/json">[{% for author in site.data.authors %}{"name":{{ author.name | jsonify }},"joined":{{ author.joined | jsonify }},"role":{{ author.role | jsonify }},"avatar":{{ author.avatar | jsonify }},{% assign author_posts = site.posts | where: "author", author.name %}"posts_total":{{ author_posts.size }},{% assign movies = site.posts | where: "author", author.name | where: "category", "Filmes" %}"posts_movies":{{ movies.size }},{% assign series = site.posts | where: "author", author.name | where: "category", "Séries" %}"posts_series":{{ series.size }}}{% if forloop.last == false %},{% endif %}{% endfor %}]</script>
+    <script id="posts" type="application/json">[{% for post in site.posts %}
+        {
+            "author": {{ post.author | jsonify }},
+            "category": {{ post.category | jsonify }},
+            "post_date": {{ post.post_date | jsonify }},
+            "post_modified": {{ post.post_modified | jsonify }},
+            "title": {{ post.title | jsonify }},
+            "description": {{ post.description | jsonify }},
+            "poster_path": {{ post.poster_path | jsonify }},
+            "tmdb_id": {{ post.tmdb_id | jsonify }},
+            "imdb_id": {{ post.imdb_id | jsonify }},
+            "runtime": {{ post.runtime | jsonify }},
+            "release_date": {{ post.release_date | jsonify }},
+            "genres": [{% for genre in post.genres %}{{ genre | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}],
+            "casts": [{% for cast in post.casts %}{{ cast | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}],
+            "crews": [{% for crew in post.crews %}{{ crew | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}],
+            "trailer": {{ post.trailer | jsonify }},
+            "certification": {{ post.certification | jsonify }},
+            "adult": {{ post.adult | jsonify }},
+            "vote_average": {{ post.vote_average | jsonify }},
+            "vote_count": {{ post.vote_count | jsonify }},
+            "qualitys": [{% for quality in post.qualitys %}{{ quality | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}],
+            "audios": [{% for audio in post.audios %}{{ audio | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}],
+            "extensions": [{% for extension in post.extensions %}{{ extension | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}],
+            "seasons": [{% for season in post.seasons %}
+                {
+                    "season_number": {{ season.season_number | jsonify }},
+                    "season_status": {{ season.season_status | jsonify }},
+                    "episodes": [{% for episode in season.episodes %}
+                        {
+                            "episode_number": {{ episode.episode_number | jsonify }},
+                            "downloads": [{% for download in episode.downloads %}
+                                {
+                                    "quality": {{ download.quality | jsonify }},
+                                    "audio": {{ download.audio | jsonify }},
+                                    "size": {{ download.size | jsonify }},
+                                    "extension": {{ download.extension | jsonify }},
+                                    "urls": [{% for link in download.urls %}
+                                        {
+                                            "hostname": {% comment %}{{ link.hostname | jsonify }}{% endcomment %}null,
+                                            "url": {% comment %}{{ link.url | jsonify }}{% endcomment %}null
+                                        }{% unless forloop.last %},{% endunless %}{% endfor %}
+                                    ]
+                                }{% unless forloop.last %},{% endunless %}{% endfor %}
+                            ]
+                        }{% unless forloop.last %},{% endunless %}{% endfor %}
+                    ]
+                }{% unless forloop.last %},{% endunless %}{% endfor %}
+            ]
+        }{% if forloop.last == false %},{% endif %}{% endfor %}
+    ]</script>
 </head>
