@@ -153,7 +153,7 @@ class Filter extends HTMLElement {
         var results = "", is = this;
         posts.forEach(function(item) {
             results += `<article>
-                <article-author class="flex-column b-1 rounded box-shadow bg-current-100">`;
+                <article-author>`;
                 authors.forEach(function(author) {
                     if (author.name.toLowerCase() == item.author.toLowerCase()) {
                     results += `<div class="author-avatar">
@@ -223,7 +223,7 @@ class Filter extends HTMLElement {
                                     <div>`+ is.FilterTemplateMinConvert(item.runtime) +`</div>
                                 </div>
                             </div>
-                            <div class="flex-row w-full justify-between">
+                            <div class="summary-row">
                                 <div class="summary-rating" style="`+is.filterTemplateRatingStyle(item.vote_average)+`">
                                     <div class="summary-average">
                                         <svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
@@ -242,22 +242,22 @@ class Filter extends HTMLElement {
                         </div>
                     </div>
                     <div class="summary-footer">
-                        <div class="flex-row gap-0">
-                            <div class="fw-600">Qualidade:</div>
+                        <div>
+                            <div>Qualidade:</div>
                             <div class="item-comma">`;
                                 item.qualitys.forEach((quality) => {
                                     results += `<a href="/qualidade?qualitys=`+ quality +`">`+ quality +`</a>`;
                                 });
                                 results += `</div></div>
-                        <div class="flex-row gap-0">
-                            <div class="fw-600">Àudio:</div>
+                        <div>
+                            <div>Àudio:</div>
                             <div class="item-comma">`;
                                 item.audios.forEach((audio) => {
                                     results += `<a href="/audio?audios=`+ audio +`">`+ audio +`</a>`;
                                 });
                                 results += `</div></div>
-                        <div class="flex-row gap-0">
-                            <div class="fw-600">Extensão:</div>
+                        <div>
+                            <div>Extensão:</div>
                             <div class="item-comma">`;
                                 item.extensions.forEach((extension) => {
                                     results += `<a href="/extensao?extensions=`+ extension +`">`+ extension +`</a>`;
@@ -378,14 +378,14 @@ FilterBTN = (items) => {
     $(".filtro-items").html(results);
 }
 FilterBTN(filter_json);
-/* Header sticky */
+/* Header sticky
 const headerEl = document.querySelector("header-sticky");
 const sentinalEl = document.querySelector("header-observe");
 const handler = (entries) => {
     (!entries[0].isIntersecting) ? headerEl.classList.add("isSticky") : headerEl.classList.remove("isSticky");
 }
 const observer = new window.IntersectionObserver(handler);
-observer.observe(sentinalEl);
+observer.observe(sentinalEl); */
 /* Header show/hidden */
 customElements.define("header-mobile", class extends HTMLElement {
     constructor() {

@@ -49,31 +49,31 @@
 					</div>
 				</div>
 
-				<div class="flex-row w-full justify-between">
+				<div class="summary-row">
 					{% include article_average.html %}
 					{% include article_certification.html %}
 				</div>
 			</div>
 		</div>
 		<div class="summary-footer">
-			<div class="flex-row gap-0">
-				<div class="fw-600">Qualidade:</div>
+			<div>
+				<div>Qualidade:</div>
 				<div class="item-comma">
 					{% for quality in post.qualitys %}
 					<a href="/qualidade?qualitys={{quality}}">{{ quality }}</a>
 					{% endfor %}
 				</div>
 			</div>
-			<div class="flex-row gap-0">
-				<div class="fw-600">Áudio:</div>
+			<div>
+				<div>Áudio:</div>
 				<div class="item-comma">
 					{% for audio in post.audios %}
 					<a href="/audio?audios={{audio}}">{{ audio }}</a>
 					{% endfor %}
 				</div>
 			</div>
-			<div class="flex-row gap-0">
-				<div class="fw-600">Extensão:</div>
+			<div>
+				<div>Extensão:</div>
 				<div class="item-comma">
 					{% for extension in post.extensions %}
 					<a href="/extensao?extensions={{extension}}">{{ extension }}</a>

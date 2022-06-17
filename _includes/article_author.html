@@ -3,7 +3,7 @@
 {% else %}
 {% assign postings = post %}
 {% endif %}
-<article-author class="flex-column b-1 rounded box-shadow bg-current-100">
+<article-author>
 	{% for author in site.data.authors %}
    	{% if author.name == postings.author %}
    	{% assign rank = author.role %}
