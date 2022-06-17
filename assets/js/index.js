@@ -79,7 +79,7 @@ class Filter extends HTMLElement {
                 order = el.getAttribute("data-sort");
             }
         });
-        var query = "date_test", sort_order = (order === "desc") ? -1 : 1;
+        var query = "post_date", sort_order = (order === "desc") ? -1 : 1;
         return posts.sort((function() {
             return function(a, b) {
                 return (a[query] < b[query]) ? -1 * sort_order : (a[query] > b[query]) ? 1 * sort_order : 0 * sort_order;
