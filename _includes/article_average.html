@@ -47,7 +47,7 @@ Nenhuma avaliação
 {% endif %}
 {% endcapture %}
 <div class="summary-rating" style="--rating-color:{{ hex_color }}">
-	<div class="summary-rating">
+	<div class="summary-average">
 		<svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
 			<path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" opacity=".5" stroke-width="4" fill="none"></path>
 			<path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" stroke-dasharray="{{ vote_average | strip }}, 100" stroke-width="4" fill="none" stroke-linecap="round"></path>
