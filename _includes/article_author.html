@@ -9,24 +9,24 @@
    	{% assign rank = author.role %}
 	{% capture role %}
 	{% if rank == 0 %}
-	assinante
+	estagiário
 	{% elsif rank == 1 %}
-	administrador
-	{% elsif rank == 2 %}
 	autor
+	{% elsif rank == 2 %}
+	suporte
 	{% elsif rank == 3 %}
 	editor
 	{% elsif rank == 4 %}
-	contribuinte
+	moderador
 	{% elsif rank == 5 %}
-	premium
+	administrador
 	{% endif %}
 	{% endcapture %}
 	<div class="author-avatar">
 		<img src="{{ site.baseurl }}{{ author.avatar }}" alt="{{ author.name }}" loading="lazy">
 	</div>
 	<div class="author-name">{{ author.name }}</div>
-	<div class="author-role role-{{ role | slugify: "latin" }}">{{ role | slugify: "latin" }}</div>
+	<div class="author-role role-{{ author.role }}">{{ role | slugify: "latin" }}</div>
 	<div class="author-infor">
 		<div>
 			<span>Juntou-se:</span>
