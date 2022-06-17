@@ -509,7 +509,7 @@ article-author {
     position: sticky;
     display: flex;
     flex-direction: column;
-    top: 200px;
+    top: 75px;
     width: 122px;
     min-width: 122px;
     height: min-content;
