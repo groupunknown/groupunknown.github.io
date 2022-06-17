@@ -42,5 +42,5 @@
             toggleClass(localStorage.getItem("theme-preference"));
         });
     </script>
-    <script id="search" type="application/json">{% include_relative search.json %}</script>
+    <script id="search" type="application/json">{% include_relative search.json | jsonify %}</script>
 </head>
