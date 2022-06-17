@@ -26,7 +26,7 @@
         toggleClass = (scheme, event = false) => {
             document.body.removeAttribute("class");
             document.body.classList.add(scheme);
-            document.querySelector("header-logo a img").src = "assets/img/logo-"+scheme+".png";
+            document.querySelector("header-logo a img").src = "/assets/img/logo-"+scheme+".png";
             if (event) { localStorage.setItem("theme-preference", scheme) }
         };
         customElements.define("theme-switch", class extends HTMLElement {
