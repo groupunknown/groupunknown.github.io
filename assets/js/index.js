@@ -48,6 +48,7 @@ class Filter extends HTMLElement {
             (results.length === 0) ? number_status.classList.add("empty") : number_status.classList.remove("empty");
             number_status.innerHTML = number_text;
             (Object.keys(terms).length === 0) ? btn_reset.classList.add("selected") : btn_reset.classList.remove("selected");
+            (Object.keys(terms).length === 0) ? btn_reset.parentElement.classList.add("active") : btn_reset.parentElement.classList.remove("active");
         $(".filter-pagination").pagination({
             dataSource: results,
             pageSize: 10,

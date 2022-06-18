@@ -516,6 +516,7 @@ article-author {
     height: fit-content;
     min-height: 225px;
     border: 1px solid var(--border-color);
+    background: var(--sub-background);
     box-shadow: var(--box-shadow);
     border-radius: 4px;
     padding: 0.75rem;
@@ -805,11 +806,12 @@ article:nth-of-type(even) article-author:before {
 filter-status,
 filter-reset {
     border-radius: 3px;
+    text-align: center;
     text-transform: uppercase;
-    padding: 5px 8px;
-    margin: -5px 0;
+    padding: 1rem;
 }
 filter-status {
+    width: 100%;
     color: rgb(30 142 62);
     background-color: rgb(30 142 62 / 15%);
 }
@@ -820,7 +822,8 @@ filter-status.empty {
 filter-reset {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    min-width: 20%;
     color: #ff3722;
     background-color: #ff37221a;
     gap: .25rem;
@@ -846,17 +849,12 @@ filter-sort.selected {
     pointer-events: none;
 }
 .filter-results-items {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid var(--border-color);
-    border-radius: .25rem;
-    background: var(--sub-background);
-    padding: 1rem;
-}
-.filter-results-item {
-    display: flex;
+    display: none;
     gap: 1rem;
+    width: 100%;
+}
+.filter-results-items.active {
+    display: flex;
 }
 .filter-results {
     display: flex;
