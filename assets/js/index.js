@@ -48,7 +48,7 @@ class Filter extends HTMLElement {
             (results.length === 0) ? number_status.classList.add("empty") : number_status.classList.remove("empty");
             number_status.innerHTML = number_text;
             (Object.keys(terms).length === 0) ? btn_reset.classList.add("selected") : btn_reset.classList.remove("selected");
-            (Object.keys(terms).length === 0) ? btn_reset.parentElement.classList.add("active") : btn_reset.parentElement.classList.remove("active");
+            (Object.keys(terms).length === 0) ? btn_reset.parentElement.classList.remove("active") : btn_reset.parentElement.classList.add("active");
         $(".filter-pagination").pagination({
             dataSource: results,
             pageSize: 10,
@@ -363,7 +363,12 @@ customElements.define("filter-reset", class extends Filter {
     }
 });
 FilterBTN = (items) => {
-    var results = "";
+    var results = `<btn-stash><div>Ordem de exibição</div><svg class="btn-stash" viewBox="0 0 10 16" version="1.1" width="14" height="18" aria-hidden="true">
+            <path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z"></path></svg></btn-stash>
+            <div class="category-items item-scroll">
+            <filter-sort data-sort="desc" class="selected">Mais recente</filter-sort>
+            <filter-sort data-sort="asc">Mais antigo</filter-sort>
+        </div>`;
     items.forEach(function(x) {
         results += `<btn-stash>
                     <div>`+x.name+`</div>

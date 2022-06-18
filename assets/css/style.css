@@ -837,13 +837,18 @@ filter-sort {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 2px solid transparent;
     text-transform: uppercase;
+    width: 100%;
+    background: var(--hover);
+    font-size: 13px;
+    min-height: 40px;
+    border-radius: 3px;
     cursor: pointer;
 }
 filter-sort.selected,
 filter-sort:hover {
-    border-bottom: 2px solid rgb(30 142 62);
+    color: #4caf50;
+    background-color: rgb(76 175 80 / 20%);
 }
 filter-sort.selected {
     pointer-events: none;
@@ -888,6 +893,9 @@ btn-stash.active .btn-stash {
 }
 .category-items.active {
     display: flex;
+}
+.category-sort {
+    flex-direction: row;
 }
 .category-item {
     display: flex;
