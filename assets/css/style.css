@@ -477,6 +477,9 @@ header-menu a:nth-child(7) {
     border: 1px solid var(--border-color);
     border-radius: 0.25rem;
 }
+.nav-items > btn-stash:first-child {
+    display: none;
+}
 .nav-item-stash {
     display: none;
 }
@@ -1026,6 +1029,20 @@ slider-banner a.active{
         margin: auto;
         max-width: 100%;
         min-width: auto;
+    }
+    .nav-items > btn-stash:first-child {
+        display: flex;
+    }
+    .nav-items > btn-stash.active:first-child {
+        background: var(--border-color);
+        border-radius: 0.25rem;
+        margin-bottom: 0.5rem;
+    }
+    .filtro-items {
+        display: none;
+    }
+    .filtro-items.active {
+        display: block;
     }
     .filter-results {
         gap: 2rem;
