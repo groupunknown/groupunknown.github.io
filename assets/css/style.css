@@ -1082,7 +1082,31 @@ slider-banner a.active{
         justify-content: center;
     }
 }
-
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    gap: .5rem;
+}
+.pagination a,
+.pagination span {
+    padding: .5rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+}
+.pagination a.active,
+.pagination span.active {
+    background: var(--hover);
+}
+.pagination a:hover {
+    background: var(--hover);
+    cursor: pointer;
+}
+.pagination a.active:hover,
+.pagination span.active:hover {
+    cursor: default;
+}
 .paginationjs {
     margin: 3rem 0;
     cursor: default;
@@ -1127,7 +1151,6 @@ slider-banner a.active{
 .paginationjs .paginationjs-pages li:last-child > a {
     border-radius: 0 3px 3px 0;
 }
-
 @keyframes showLineConnector {
     0% {
         height: 0
