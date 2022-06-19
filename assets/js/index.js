@@ -342,7 +342,7 @@ class Filter extends HTMLElement {
         });
         const results = array.reduce((a, v) => {
             if(a[v]) {
-                a[v] = [a[v], v].join(", ")                         
+                a[v] = [a[v], v].join(", ")
             } else {
                 a[v] = v
             }
