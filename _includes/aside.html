@@ -87,7 +87,7 @@
 		{% assign rating_f_count = rating_f_count | plus:1 %}
 		{% endif %}
 		{% endfor %}
-		<btn-filter class="category-item {% if rating_f_count.size == 0 %}disabled{% endif %}" data-category="vote_average" data-query="N/A">
+		<btn-filter class="category-item {% if rating_f_count == 0 %}disabled{% endif %}" data-category="vote_average" data-query="N/A">
 			<div class="category-selector">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.8 5.2" aria-label="Tick">
 					<path d="M6.7.8L2.9 5c-.1.1-.3.2-.4.2-.1 0-.3-.1-.4-.2l-2-2c-.1-.2-.1-.5 0-.7s.5-.2.7 0L2.5 4 6 .2c.2-.2.5-.2.7 0 .2.1.2.4 0 .6z"></path>
@@ -96,7 +96,7 @@
 			<div class="category-title">Nenhum</div>
 			<div class="category-count" style="--num: {{ rating_f_count }};"></div>
 		</btn-filter>
-		<btn-filter class="category-item {% if rating_a_count.size == 0 %}disabled{% endif %}" data-category="vote_average" data-query="0">
+		<btn-filter class="category-item {% if rating_a_count == 0 %}disabled{% endif %}" data-category="vote_average" data-query="0">
 			<div class="category-selector">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.8 5.2" aria-label="Tick">
 					<path d="M6.7.8L2.9 5c-.1.1-.3.2-.4.2-.1 0-.3-.1-.4-.2l-2-2c-.1-.2-.1-.5 0-.7s.5-.2.7 0L2.5 4 6 .2c.2-.2.5-.2.7 0 .2.1.2.4 0 .6z"></path>
@@ -105,7 +105,7 @@
 			<div class="category-title">Péssimo</div>
 			<div class="category-count" style="--num: {{ rating_a_count }};"></div>
 		</btn-filter>
-		<btn-filter class="category-item {% if rating_b_count.size == 0 %}disabled{% endif %}" data-category="vote_average" data-query="20">
+		<btn-filter class="category-item {% if rating_b_count == 0 %}disabled{% endif %}" data-category="vote_average" data-query="20">
 			<div class="category-selector">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.8 5.2" aria-label="Tick">
 					<path d="M6.7.8L2.9 5c-.1.1-.3.2-.4.2-.1 0-.3-.1-.4-.2l-2-2c-.1-.2-.1-.5 0-.7s.5-.2.7 0L2.5 4 6 .2c.2-.2.5-.2.7 0 .2.1.2.4 0 .6z"></path>
@@ -114,7 +114,7 @@
 			<div class="category-title">Ruim</div>
 			<div class="category-count" style="--num: {{ rating_b_count }};"></div>
 		</btn-filter>
-	    <btn-filter class="category-item {% if rating_c_count.size == 0 %}disabled{% endif %}" data-category="vote_average" data-query="40">
+	    <btn-filter class="category-item {% if rating_c_count == 0 %}disabled{% endif %}" data-category="vote_average" data-query="40">
 			<div class="category-selector">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.8 5.2" aria-label="Tick">
 					<path d="M6.7.8L2.9 5c-.1.1-.3.2-.4.2-.1 0-.3-.1-.4-.2l-2-2c-.1-.2-.1-.5 0-.7s.5-.2.7 0L2.5 4 6 .2c.2-.2.5-.2.7 0 .2.1.2.4 0 .6z"></path>
@@ -123,7 +123,7 @@
 			<div class="category-title">Aceitável</div>
 			<div class="category-count" style="--num: {{ rating_c_count }};"></div>
 		</btn-filter>   
-		<btn-filter class="category-item {% if rating_d_count.size == 0 %}disabled{% endif %}" data-category="vote_average" data-query="60">
+		<btn-filter class="category-item {% if rating_d_count == 0 %}disabled{% endif %}" data-category="vote_average" data-query="60">
 			<div class="category-selector">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.8 5.2" aria-label="Tick">
 					<path d="M6.7.8L2.9 5c-.1.1-.3.2-.4.2-.1 0-.3-.1-.4-.2l-2-2c-.1-.2-.1-.5 0-.7s.5-.2.7 0L2.5 4 6 .2c.2-.2.5-.2.7 0 .2.1.2.4 0 .6z"></path>
@@ -132,7 +132,7 @@
 			<div class="category-title">Ótimo</div>
 			<div class="category-count" style="--num: {{ rating_d_count }};"></div>
 		</btn-filter>
-		<btn-filter class="category-item {% if rating_e_count.size == 0 %}disabled{% endif %}" data-category="vote_average" data-query="80">
+		<btn-filter class="category-item {% if rating_e_count == 0 %}disabled{% endif %}" data-category="vote_average" data-query="80">
 			<div class="category-selector">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.8 5.2" aria-label="Tick">
 					<path d="M6.7.8L2.9 5c-.1.1-.3.2-.4.2-.1 0-.3-.1-.4-.2l-2-2c-.1-.2-.1-.5 0-.7s.5-.2.7 0L2.5 4 6 .2c.2-.2.5-.2.7 0 .2.1.2.4 0 .6z"></path>
