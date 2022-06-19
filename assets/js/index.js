@@ -390,7 +390,7 @@ FilterBTN = (items) => {
     });
     $(".filtro-items").html(results);
 }
-FilterBTN(filter_json);
+/*FilterBTN(filter_json);*/
 var s  = document.querySelectorAll("slider-banner a"), c  = 0, n = s.length - 1;
 if (typeof s[0] !== "undefined") {
     window.setInterval(function(){
