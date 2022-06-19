@@ -10,7 +10,7 @@
 		<filter-sort data-sort="asc">Mais antigo</filter-sort>
     </div>
 {% for x in site.data.filters %}
-	{% if x.query == "post_modified" or x.query == "title" or x.query == "release_date" %}
+	{% if x.query == "post_modified" or x.query == "vote_average" or x.query == "title" or x.query == "release_date" %}
 		{% continue %}
 	{% else %}
 	<btn-stash>
@@ -32,16 +32,6 @@
 			<div class="category-title">{% if y.item %}18+{% else %}Normal{% endif %}</div>
 			<div class="category-count" style="--num: {{ posts.size }};"></div>
 		</btn-filter>
-		{% elsif x.query == "vote_average" %}
-		<btn-filter class="category-item {% if posts.size == 0 %}disabled{% endif %}" data-category="{{ x.query }}" data-query="{% if y.item == "Péssimo" %}0{% elsif y.item == "Ruim" %}20{% elsif y.item == "Aceitável" %}40{% elsif y.item == "Ótimo" %}60{% elsif y.item == "Excelente" %}80{% else %}N/A{% endif %}">
-		 	<div class="category-selector">
-		 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.8 5.2" aria-label="Tick">
-		 			<path d="M6.7.8L2.9 5c-.1.1-.3.2-.4.2-.1 0-.3-.1-.4-.2l-2-2c-.1-.2-.1-.5 0-.7s.5-.2.7 0L2.5 4 6 .2c.2-.2.5-.2.7 0 .2.1.2.4 0 .6z"></path>
-		 		</svg>
-		 	</div>
-		 	<div class="category-title">{{ y.item }}</div>
-		 	<div class="category-count" style="--num: {{ posts.size }};"></div>
-		</btn-filter>
 		{% else %}
 		<btn-filter class="category-item {% if posts.size == 0 %}disabled{% endif %}" data-category="{{ x.query }}" data-query="{{ y.item }}">
 			<div class="category-selector">
@@ -57,4 +47,93 @@
 	</div>
 	{% endif %}
 {% endfor %}
+	<btn-stash>
+		<div>Avaliações</div>
+		<svg class="btn-stash" viewBox="0 0 10 16" version="1.1" width="14" height="18" aria-hidden="true">
+            <path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z"></path>
+        </svg>
+    </btn-stash>
+    <div class="category-items item-scroll">
+		{% assign pessimo = "10,11,12,13,14,15,16,17,18,19,20" | split: ',' %}
+		{% assign ruim = "21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40" | split: ',' %}
+		{% assign aceitavel = "41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60" | split: ',' %}
+		{% assign otimo = "61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80" | split: ',' %}
+		{% assign execelente = "81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100" | split: ',' %}
+		{% assign rating_a_count = 0 %}
+		{% assign rating_b_count = 0 %}
+		{% assign rating_c_count = 0 %}
+		{% assign rating_d_count = 0 %}
+		{% assign rating_e_count = 0 %}
+		{% assign rating_f_count = 0 %}
+		{% for post in site.posts %}
+		{% assign vote_average = post.vote_average | remove: "." %}
+		{% if pessimo contains vote_average %}
+		{% assign rating_a_count = rating_a_count | plus:1 %}
+		{% elsif ruim contains vote_average %}
+		{% assign rating_b_count = rating_b_count | plus:1 %}
+		{% elsif aceitavel contains vote_average %}
+		{% assign rating_c_count = rating_c_count | plus:1 %}
+		{% elsif otimo contains vote_average %}
+		{% assign rating_d_count = rating_d_count | plus:1 %}
+		{% elsif execelente contains vote_average %}
+		{% assign rating_e_count = rating_e_count | plus:1 %}
+		{% elsif vote_average == "0" %}
+		{% assign rating_f_count = rating_f_count | plus:1 %}
+		{% endif %}
+		{% endfor %}
+		<btn-filter class="category-item {% if rating_f_count.size == 0 %}disabled{% endif %}" data-category="vote_average" data-query="N/A">
+			<div class="category-selector">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.8 5.2" aria-label="Tick">
+					<path d="M6.7.8L2.9 5c-.1.1-.3.2-.4.2-.1 0-.3-.1-.4-.2l-2-2c-.1-.2-.1-.5 0-.7s.5-.2.7 0L2.5 4 6 .2c.2-.2.5-.2.7 0 .2.1.2.4 0 .6z"></path>
+				</svg>
+			</div>
+			<div class="category-title">Nenhum</div>
+			<div class="category-count" style="--num: {{ rating_f_count }};"></div>
+		</btn-filter>
+		<btn-filter class="category-item {% if rating_a_count.size == 0 %}disabled{% endif %}" data-category="vote_average" data-query="0">
+			<div class="category-selector">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.8 5.2" aria-label="Tick">
+					<path d="M6.7.8L2.9 5c-.1.1-.3.2-.4.2-.1 0-.3-.1-.4-.2l-2-2c-.1-.2-.1-.5 0-.7s.5-.2.7 0L2.5 4 6 .2c.2-.2.5-.2.7 0 .2.1.2.4 0 .6z"></path>
+				</svg>
+			</div>
+			<div class="category-title">Péssimo</div>
+			<div class="category-count" style="--num: {{ rating_a_count }};"></div>
+		</btn-filter>
+		<btn-filter class="category-item {% if rating_b_count.size == 0 %}disabled{% endif %}" data-category="vote_average" data-query="20">
+			<div class="category-selector">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.8 5.2" aria-label="Tick">
+					<path d="M6.7.8L2.9 5c-.1.1-.3.2-.4.2-.1 0-.3-.1-.4-.2l-2-2c-.1-.2-.1-.5 0-.7s.5-.2.7 0L2.5 4 6 .2c.2-.2.5-.2.7 0 .2.1.2.4 0 .6z"></path>
+				</svg>
+			</div>
+			<div class="category-title">Ruim</div>
+			<div class="category-count" style="--num: {{ rating_b_count }};"></div>
+		</btn-filter>
+	    <btn-filter class="category-item {% if rating_c_count.size == 0 %}disabled{% endif %}" data-category="vote_average" data-query="40">
+			<div class="category-selector">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.8 5.2" aria-label="Tick">
+					<path d="M6.7.8L2.9 5c-.1.1-.3.2-.4.2-.1 0-.3-.1-.4-.2l-2-2c-.1-.2-.1-.5 0-.7s.5-.2.7 0L2.5 4 6 .2c.2-.2.5-.2.7 0 .2.1.2.4 0 .6z"></path>
+				</svg>
+			</div>
+			<div class="category-title">Aceitável</div>
+			<div class="category-count" style="--num: {{ rating_c_count }};"></div>
+		</btn-filter>   
+		<btn-filter class="category-item {% if rating_d_count.size == 0 %}disabled{% endif %}" data-category="vote_average" data-query="60">
+			<div class="category-selector">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.8 5.2" aria-label="Tick">
+					<path d="M6.7.8L2.9 5c-.1.1-.3.2-.4.2-.1 0-.3-.1-.4-.2l-2-2c-.1-.2-.1-.5 0-.7s.5-.2.7 0L2.5 4 6 .2c.2-.2.5-.2.7 0 .2.1.2.4 0 .6z"></path>
+				</svg>
+			</div>
+			<div class="category-title">Ótimo</div>
+			<div class="category-count" style="--num: {{ rating_d_count }};"></div>
+		</btn-filter>
+		<btn-filter class="category-item {% if rating_e_count.size == 0 %}disabled{% endif %}" data-category="vote_average" data-query="80">
+			<div class="category-selector">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.8 5.2" aria-label="Tick">
+					<path d="M6.7.8L2.9 5c-.1.1-.3.2-.4.2-.1 0-.3-.1-.4-.2l-2-2c-.1-.2-.1-.5 0-.7s.5-.2.7 0L2.5 4 6 .2c.2-.2.5-.2.7 0 .2.1.2.4 0 .6z"></path>
+				</svg>
+			</div>
+			<div class="category-title">Excelente</div>
+			<div class="category-count" style="--num: {{ rating_e_count }};"></div>
+		</btn-filter>
+    </div>
 </aside>
