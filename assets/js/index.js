@@ -1,7 +1,5 @@
 var authors = JSON.parse(document.getElementById("authors").textContent),
-    posts = JSON.parse(document.getElementById("posts").textContent),
-    filter_json = JSON.parse(document.getElementById("filter").textContent),
-    search_json = JSON.parse(document.getElementById("search").textContent);
+    posts = JSON.parse(document.getElementById("posts").textContent);
 
 customElements.define("header-mobile", class extends HTMLElement {
     constructor() {
@@ -362,35 +360,6 @@ customElements.define("filter-reset", class extends Filter {
         });
     }
 });
-FilterBTN = (items) => {
-    var results = `<btn-stash><div>Ordem de exibição</div><svg class="btn-stash" viewBox="0 0 10 16" version="1.1" width="14" height="18" aria-hidden="true">
-            <path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z"></path></svg></btn-stash>
-            <div class="category-sort category-items item-scroll">
-            <filter-sort data-sort="desc" class="selected">Mais recente</filter-sort>
-            <filter-sort data-sort="asc">Mais antigo</filter-sort>
-        </div>`;
-    items.forEach(function(x) {
-        results += `<btn-stash>
-                    <div>`+x.name+`</div>
-                    <svg class="btn-stash" viewBox="0 0 10 16" version="1.1" width="14" height="18" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z"></path>
-                    </svg>
-                </btn-stash>
-                <div class="category-items item-scroll">`;
-                x.items.forEach(function(y) {
-                    if (x.query == "adult") {
-                        results += `<btn-filter class="category-item `+(y.count == 0 ? "disabled" : "")+`" data-category="`+x.query+`" data-query="`+y.item+`"><div class="category-selector"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.8 5.2" aria-label="Tick"><path d="M6.7.8L2.9 5c-.1.1-.3.2-.4.2-.1 0-.3-.1-.4-.2l-2-2c-.1-.2-.1-.5 0-.7s.5-.2.7 0L2.5 4 6 .2c.2-.2.5-.2.7 0 .2.1.2.4 0 .6z"></path></svg></div><div class="category-title">`+((y.item) ? "18+" : "Normal")+`</div><div class="category-count" style="--num: `+y.count+`;"></div></btn-filter>`;
-                    } else if(x.query == "vote_average") {
-                        results += `<btn-filter class="category-item `+(y.count == 0 ? "disabled" : "")+`" data-category="`+x.query+`" data-query="`+(y.item == "Péssimo" ? 0 : y.item == "Ruim" ? 20 : y.item == "Aceitável" ? 40 : y.item == "Ótimo" ? 60 : y.item == "Excelente" ? 80 : "N/A")+`"><div class="category-selector"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.8 5.2" aria-label="Tick"><path d="M6.7.8L2.9 5c-.1.1-.3.2-.4.2-.1 0-.3-.1-.4-.2l-2-2c-.1-.2-.1-.5 0-.7s.5-.2.7 0L2.5 4 6 .2c.2-.2.5-.2.7 0 .2.1.2.4 0 .6z"></path></svg></div><div class="category-title">`+y.item+`</div><div class="category-count" style="--num: `+y.count+`;"></div></btn-filter>`;
-                    } else {
-                        results += `<btn-filter class="category-item `+(y.count == 0 ? "disabled" : "")+`" data-category="`+x.query+`" data-query="`+y.item+`"><div class="category-selector"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.8 5.2" aria-label="Tick"><path d="M6.7.8L2.9 5c-.1.1-.3.2-.4.2-.1 0-.3-.1-.4-.2l-2-2c-.1-.2-.1-.5 0-.7s.5-.2.7 0L2.5 4 6 .2c.2-.2.5-.2.7 0 .2.1.2.4 0 .6z"></path></svg></div><div class="category-title">`+y.item+`</div><div class="category-count" style="--num: `+y.count+`;"></div></btn-filter>`;
-                    }
-                });
-        results += `</div>`;
-    });
-    $(".filtro-items").html(results);
-}
-/*FilterBTN(filter_json);*/
 var s  = document.querySelectorAll("slider-banner a"), c  = 0, n = s.length - 1;
 if (typeof s[0] !== "undefined") {
     window.setInterval(function(){

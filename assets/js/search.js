@@ -1,3 +1,4 @@
+var search_json = JSON.parse(document.getElementById("search").textContent);
 window.addEventListener("click", function(e){
     if (document.querySelector("live-search-results").contains(e.target)) {
         return;

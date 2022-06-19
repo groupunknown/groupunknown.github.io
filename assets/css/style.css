@@ -1038,10 +1038,10 @@ slider-banner a.active{
         border-radius: 0.25rem;
         margin-bottom: 0.5rem;
     }
-    .filtro-items {
+    aside {
         display: none;
     }
-    .filtro-items.active {
+    aside.active {
         display: block;
     }
     .filter-results {
