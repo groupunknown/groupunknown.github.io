@@ -200,7 +200,7 @@ class Filter extends HTMLElement {
                         <div class="summary-summary">
                             <div class="summary-column">
                                 <h2 class="summary-title">
-                                    <a href="/`+is.slugifyString(item.title)+`">`+ item.title +`</a>
+                                    <a href="/`+is.slugifyString(item.category)+"/"+is.slugifyString(item.title)+`">`+ item.title +`</a>
                                 </h2>
                                 <div class="summary-synopsis item-scroll">`+ item.description +`</div>
                                 <div class="summary-crew">
