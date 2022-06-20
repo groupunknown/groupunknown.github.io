@@ -1202,6 +1202,14 @@ slider-banner a.active{
         max-width: 100%;
         min-width: auto;
     }
+    aside-highlights {
+        max-width: 100%;
+        min-width: auto;
+        padding: 0;
+    }
+    aside-highlights-header-tabs {
+        padding-top: 1rem;
+    }
     .nav-items > btn-stash:first-child {
         display: flex;
     }
