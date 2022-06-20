@@ -48,12 +48,18 @@ collections:
   posts:
     output: true
     permalink: /:slug #/:year/:month/:day/:slug
-  filmes:
-    output: true
-    permalink: /filmes/:name
-  series:
-    output: true
-    permalink: /series/:name
+
+defaults:
+  - scope:
+      path: "_posts/filmes"
+      type: posts
+    values:
+      permalink: filmes/:title
+  - scope:
+      path: "_posts/series"
+      type: posts
+    values:
+      permalink: series/:title
 
 compress_html:
   clippings: all
