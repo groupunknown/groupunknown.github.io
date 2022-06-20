@@ -229,7 +229,7 @@
     								<div>TMDb:</div>
     								<div>{{ post.vote_average }}</div>
     							</aside-highlights-tmdb>
-    							<aside-highlights-runtime>{{ post.runtime | divided_by: 60 | floor }}h {{ post.runtime | modulo: 60 }}min</aside-highlights-runtime>
+    							<aside-highlights-runtime>{% if post.runtime <= 60 %}{{ post.runtime }}min{% else %}{{ post.runtime | divided_by: 60 | floor }}h {{ post.runtime | modulo: 60 }}min{% endif %}</aside-highlights-runtime>
     							<aside-highlights-release-year>{{ post.release_date }}</aside-highlights-release-year>
     						</aside-highlights-row>
     					</aside-highlights-column>
@@ -255,7 +255,7 @@
     								<div>TMDb:</div>
     								<div>{{ post.vote_average }}</div>
     							</aside-highlights-tmdb>
-    							<aside-highlights-runtime>{{ post.runtime | divided_by: 60 | floor }}h {{ post.runtime | modulo: 60 }}min</aside-highlights-runtime>
+    							<aside-highlights-runtime>{% if post.runtime <= 60 %}{{ post.runtime }}min{% else %}{{ post.runtime | divided_by: 60 | floor }}h {{ post.runtime | modulo: 60 }}min{% endif %}</aside-highlights-runtime>
     							<aside-highlights-release-year>{{ post.release_date }}</aside-highlights-release-year>
     						</aside-highlights-row>
     					</aside-highlights-column>
