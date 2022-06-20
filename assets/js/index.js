@@ -371,3 +371,41 @@ if (typeof s[0] !== "undefined") {
         c = c >= n ? 0 : c+1;     
     }, 4000);
 }
+
+
+customElements.define("aside-highlights-header-tab", class extends HTMLElement {
+    constructor() {
+        super();
+        this.addEventListener("click", e => {
+            var tabid = "";
+            [...this.parentElement.children].forEach((sibling) => {
+                    const isCurrent = (sibling === this);
+                    sibling.classList.toggle("selected", isCurrent);
+                    tabid = sibling.selectedIndex
+            });
+            console.log(tabid);
+            [...this.parentElement.nextElementSibling.children].forEach((sibling) => {
+                    sibling[tabid].classList.toggle("selected");
+            });
+        });
+    }
+});
+
+customElements.define("aside-highlights-header-tab", class extends HTMLElement {
+    constructor() {
+        super();
+        this.addEventListener("click", e => {
+            var tabid = "";
+            [...this.parentElement.children].forEach((tab, index) => {
+                    const isCurrent = (tab === this);
+                    tab.classList.toggle("selected", isCurrent);
+                    [...this.parentElement.nextElementSibling.children].forEach(function(elem) {
+                        elem.classList.remove("selected");
+                    });
+                    if (tab === this) {
+                        this.parentElement.nextElementSibling.children[index].classList.add("selected")
+                    }
+            });
+        });
+    }
+});

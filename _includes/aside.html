@@ -207,11 +207,11 @@
 
     <aside-highlights>
     	<aside-highlights-header-tabs>
-    		<aside-highlights-header-tab>Filmes</aside-highlights-header-tab>
+    		<aside-highlights-header-tab class="selected">Filmes</aside-highlights-header-tab>
     		<aside-highlights-header-tab>Séries</aside-highlights-header-tab>
     	</aside-highlights-header-tabs>
     	<aside-highlights-content-tabs>
-    		<aside-highlights-content-tab>
+    		<aside-highlights-content-tab class="selected">
     			<aside-highlights-items>
     				{% assign posts = site.posts | where: "category", "Filmes" %}
     				{% for post in posts limit: 10 %}

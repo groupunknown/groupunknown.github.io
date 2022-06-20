@@ -982,8 +982,15 @@ aside-highlights-header-tab {
     text-align: center;
     border-radius: 3px;
 }
+aside-highlights-header-tab.selected,
 aside-highlights-header-tab:hover {
     background: var(--hover);
+}
+aside-highlights-content-tab {
+    display: none;
+}
+aside-highlights-content-tab.selected {
+    display: flex;
 }
 aside-highlights-items {
     display: flex;
