@@ -372,39 +372,19 @@ if (typeof s[0] !== "undefined") {
     }, 4000);
 }
 
-
 customElements.define("aside-highlights-header-tab", class extends HTMLElement {
     constructor() {
         super();
         this.addEventListener("click", e => {
-            var tabid = "";
-            [...this.parentElement.children].forEach((sibling) => {
-                    const isCurrent = (sibling === this);
-                    sibling.classList.toggle("selected", isCurrent);
-                    tabid = sibling.selectedIndex
+            [...this.parentElement.nextElementSibling.children].forEach((elem) => {
+                elem.classList.remove("selected");
             });
-            console.log(tabid);
-            [...this.parentElement.nextElementSibling.children].forEach((sibling) => {
-                    sibling[tabid].classList.toggle("selected");
-            });
-        });
-    }
-});
-
-customElements.define("aside-highlights-header-tab", class extends HTMLElement {
-    constructor() {
-        super();
-        this.addEventListener("click", e => {
-            var tabid = "";
             [...this.parentElement.children].forEach((tab, index) => {
-                    const isCurrent = (tab === this);
-                    tab.classList.toggle("selected", isCurrent);
-                    [...this.parentElement.nextElementSibling.children].forEach(function(elem) {
-                        elem.classList.remove("selected");
-                    });
-                    if (tab === this) {
-                        this.parentElement.nextElementSibling.children[index].classList.add("selected")
-                    }
+                const isCurrent = (tab === this);
+                tab.classList.toggle("selected", isCurrent);
+                if (tab === this) {
+                    this.parentElement.nextElementSibling.children[index].classList.add("selected")
+                }
             });
         });
     }
