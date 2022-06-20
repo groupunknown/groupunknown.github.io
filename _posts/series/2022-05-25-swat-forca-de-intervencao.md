@@ -10,7 +10,7 @@ poster_path: /am7NOjx56BpJOh1yFy6P70WmuTb.jpg
 tmdb_id: 71790
 imdb_id: tt6111130
 runtime: 42
-release_date: '2017-11-02'
+release_date: 2017
 genres:
   - Ação
   - Aventura

@@ -10,7 +10,7 @@ poster_path: /fC2HDm5t0kHl7mTm7jxMR31b7by.jpg
 tmdb_id: 60059
 imdb_id: tt3032476
 runtime: 45
-release_date: '2015-02-08'
+release_date: 2015
 genres:
   - Comédia
   - Crime

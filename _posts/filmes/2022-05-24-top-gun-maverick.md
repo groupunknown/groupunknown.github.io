@@ -10,7 +10,7 @@ poster_path: /4PlOR0ofLVXtnqos8BKaecqIRls.jpg
 tmdb_id: 361743
 imdb_id: tt1745960
 runtime: 131
-release_date: '2022-05-24'
+release_date: 2022
 genres:
   - Ação
   - Drama

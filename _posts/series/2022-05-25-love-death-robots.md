@@ -10,7 +10,7 @@ poster_path: /asDqvkE66EegtKJJXIRhBJPxscr.jpg
 tmdb_id: 86831
 imdb_id: tt9561862
 runtime: 15
-release_date: '2019-03-15'
+release_date: 2019
 genres:
   - Comédia
   - Drama

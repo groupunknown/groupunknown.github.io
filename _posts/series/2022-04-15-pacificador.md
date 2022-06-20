@@ -10,7 +10,7 @@ poster_path: /uEN0BR0nz9GB5dCmBuxsxC7cd7n.jpg
 tmdb_id: 110492
 imdb_id: tt13146488
 runtime: 46
-release_date: '2022-01-13'
+release_date: 2022
 genres:
   - Ação
   - Comédia

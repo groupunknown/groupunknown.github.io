@@ -10,7 +10,7 @@ poster_path: /jsrrz8leKD79YDPvKW4ssDgEwaE.jpg
 tmdb_id: 92749
 imdb_id: tt10234724
 runtime: 47
-release_date: '2022-03-30'
+release_date: 2022
 genres:
   - Ação
   - Fantasia

@@ -10,7 +10,7 @@ poster_path: /seyWFgGInaLqW7nOZvu0ZC95rtx.jpg
 tmdb_id: 414906
 imdb_id: tt1877830
 runtime: 185
-release_date: '2022-03-01'
+release_date: 2022
 genres:
   - Crime
   - Mistério

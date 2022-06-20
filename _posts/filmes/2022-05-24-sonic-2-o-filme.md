@@ -10,7 +10,7 @@ poster_path: /6DrHO1jr3qVrViUO6s6kFiAGM7.jpg
 tmdb_id: 675353
 imdb_id: tt12412888
 runtime: 122
-release_date: '2022-03-30'
+release_date: 2022
 genres:
   - Ação
   - Ficção científica

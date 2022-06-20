@@ -10,7 +10,7 @@ poster_path: /lzR4SjvSMoNTssE57VDiq6rh33r.jpg
 tmdb_id: 634649
 imdb_id: tt10872600
 runtime: 148
-release_date: '2021-12-15'
+release_date: 2021
 genres:
   - Ação
   - Aventura

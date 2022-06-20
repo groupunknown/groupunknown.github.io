@@ -10,7 +10,7 @@ poster_path: /5XjQKmtfsiFFdBVDRhZFQvQq5AK.jpg
 tmdb_id: 763285
 imdb_id: tt4998632
 runtime: 136
-release_date: '2022-03-16'
+release_date: 2022
 genres:
   - Ação
   - Thriller

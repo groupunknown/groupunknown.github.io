@@ -10,7 +10,7 @@ poster_path: /bGZn5RVzMMXju4ev7xbl1aLdXqq.jpg
 tmdb_id: 60574
 imdb_id: tt2442560
 runtime: 60
-release_date: '2013-09-12'
+release_date: 2013
 genres:
   - Drama
   - Crime

@@ -10,7 +10,7 @@ poster_path: /q7FmdJHKMLIC4XgWfcFRIu2iVdL.jpg
 tmdb_id: 810171
 imdb_id: tt4081630
 runtime: 124
-release_date: '2022-05-11'
+release_date: 2022
 genres:
   - Comédia
 casts:

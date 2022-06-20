@@ -10,7 +10,7 @@ poster_path: /pHcNHYPg0c2vg7qay6wjJoApUgS.jpg
 tmdb_id: 69050
 imdb_id: tt5420376
 runtime: 45
-release_date: '2017-01-26'
+release_date: 2017
 genres:
   - Crime
   - Drama

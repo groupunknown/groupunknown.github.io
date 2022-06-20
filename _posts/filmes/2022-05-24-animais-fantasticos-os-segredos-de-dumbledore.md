@@ -10,7 +10,7 @@ poster_path: /8ZbybiGYe8XM4WGmGlhF0ec5R7u.jpg
 tmdb_id: 338953
 imdb_id: tt4123432
 runtime: 142
-release_date: '2022-04-06'
+release_date: 2022
 genres:
   - Ação
   - Aventura

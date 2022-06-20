@@ -10,7 +10,7 @@ poster_path: /ow3LGLW3uCf7hFIwbX8A3Ym6m7K.jpg
 tmdb_id: 128010
 imdb_id: tt13457822
 runtime: 41
-release_date: '2022-05-06'
+release_date: 2022
 genres:
   - 'Action & Adventure'
 casts:

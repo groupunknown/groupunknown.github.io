@@ -10,7 +10,7 @@ poster_path: /4OkJ1UDiddBJeVYYKPdew9wHGlL.jpg
 tmdb_id: 1402
 imdb_id: tt1520211
 runtime: 45
-release_date: '2010-10-31'
+release_date: 2010
 genres:
   - Ação
   - Drama
