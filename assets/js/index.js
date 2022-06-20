@@ -72,15 +72,15 @@ class Filter extends HTMLElement {
         return data.toLocaleString([], { year: "numeric", month: "long", day: "numeric" });
     }
     FilterMultipleQuerySort = (posts) => {
-        var order = "";
-        /*[...document.querySelectorAll("[data-sort]")].map(function(el) {
-            if (el.classList.contains("selected")) {
-                order = el.getAttribute("data-sort");
-            }
-        });*/
-
-
-        var query = "post_date", sort_order = (order === "desc") ? -1 : 1;
+         var sort_order = document.querySelector(".category-sort");
+        if (sort_order.value == "default") {
+            return
+        }
+        sort_order.onchange = function (e) {
+            var selectedOption = this[this.selectedIndex];
+            var query = selectedOption.value;
+            var sort_order = (selectedOption.getAttribute("data-sort") === "desc") ? -1 : 1;
+        }
         return posts.sort((function() {
             return function(a, b) {
                 return (a[query] < b[query]) ? -1 * sort_order : (a[query] > b[query]) ? 1 * sort_order : 0 * sort_order;
@@ -372,10 +372,11 @@ if (typeof s[0] !== "undefined") {
     }, 4000);
 }
 
-
-var sort_order = document.querySelector(".category-sort");
-sort_order.onchange = function (e) {
-    var selectedOption = this[this.selectedIndex];
-    var selectedText = selectedOption.text;
-    console.log(selectedText, e)
-}
+customElements.define("sort-select", class extends Filter {
+    constructor() {
+        super();
+        this.addEventListener("change", e => {
+            this.initFilter();
+        });
+    }
+}, { extends: "select" });
