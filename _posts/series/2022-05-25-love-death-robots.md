@@ -2,8 +2,8 @@
 layout: post
 author: Heisenberg
 category: Séries
-post_date: '2022-05-25T04:16:06.155Z'
-post_modified: '2022-05-25T04:16:06.155Z'
+post_date: 2022-05-25
+post_modified: 2022-05-25
 title: 'Love, Death + Robots'
 description: 'Criaturas aterrorizantes, surpresas bizarras e humor ácido. Tudo isso e muito mais nesta série de animação de Tim Miller e David Fincher.'
 poster_path: /asDqvkE66EegtKJJXIRhBJPxscr.jpg

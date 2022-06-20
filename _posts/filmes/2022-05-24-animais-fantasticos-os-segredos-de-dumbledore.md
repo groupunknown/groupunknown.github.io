@@ -2,8 +2,8 @@
 layout: post
 author: Voldemort
 category: Filmes
-post_date: '2022-05-25T03:24:35.676Z'
-post_modified: '2022-05-25T03:24:35.676Z'
+post_date: 2022-05-24
+post_modified: 2022-05-24
 title: 'Animais Fantásticos: Os Segredos de Dumbledore'
 description: 'O professor Alvo Dumbledore sabe que o poderoso mago das trevas Gellert Grindelwald está se movimentando para assumir o controle do mundo mágico. Incapaz de detê-lo sozinho, ele pede ao magizoologista Newt Scamander para liderar uma intrépida equipe de bruxos, bruxas e um corajoso padeiro trouxa em uma missão perigosa, em que eles encontram velhos e novos animais fantásticos e entram em conflito com a crescente legião de seguidores de Grindelwald. Mas com tantas ameaças, quanto tempo poderá Dumbledore permanecer à margem do embate?'
 poster_path: /8ZbybiGYe8XM4WGmGlhF0ec5R7u.jpg

@@ -2,8 +2,8 @@
 layout: post
 author: Heisenberg
 category: Filmes
-post_date: '2022-05-25T03:34:28.456Z'
-post_modified: '2022-05-25T03:34:28.456Z'
+post_date: 2022-05-24
+post_modified: 2022-05-24
 title: Deserto do Ouro
 description: 'Dois estranhos que estão viajando em um deserto e se surpreendem ao encontrar uma grande pepita de ouro. Eles pensam em uma estratégia para explorar e dividir a recompensa do tesouro encontrado. Enquanto um vai procurar equipamentos para dar continuidade no plano, o outro fica responsável por proteger o local e ambos lidam com diversos desafios nessa aventura.'
 poster_path: /ejXBuNLvK4kZ7YcqeKqUWnCxdJq.jpg

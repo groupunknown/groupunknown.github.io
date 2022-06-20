@@ -2,8 +2,8 @@
 layout: post
 author: Pennywise
 category: Filmes
-post_date: '2022-04-15T17:49:48.515Z'
-post_modified: '2022-04-15T17:49:48.515Z'
+post_date: 2022-04-15
+post_modified: 2022-04-15
 title: 'Homem-Aranha: Sem Volta Para Casa'
 description: 'Peter Parker é desmascarado e não consegue mais separar sua vida normal dos grandes riscos de ser um super-herói. Quando ele pede ajuda ao Doutor Estranho, os riscos se tornam ainda mais perigosos, e o forçam a descobrir o que realmente significa ser o Homem-Aranha.'
 poster_path: /lzR4SjvSMoNTssE57VDiq6rh33r.jpg

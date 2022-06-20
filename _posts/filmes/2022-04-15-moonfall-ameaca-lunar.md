@@ -2,8 +2,8 @@
 layout: post
 author: Pennywise
 category: Filmes
-post_date: '2022-04-15T17:48:14.393Z'
-post_modified: '2022-04-15T17:48:14.393Z'
+post_date: 2022-04-15
+post_modified: 2022-04-15
 title: 'Moonfall: Ameaça Lunar'
 description: 'Poucas semanas antes do impacto e com a humanidade à beira da aniquilação, a ex-astronauta da NASA Jo Fowler está convencida de que tem a resposta para salvar o planeta, mas apenas um colega do passado, o astronauta Brian Harper, e o teorista K.C. Houseman, acreditam nela. Os improváveis heróis correm contra o tempo para montar uma missão ao espaço, mas lá descobrem que a Lua não é o que parece.'
 poster_path: /odVv1sqVs0KxBXiA8bhIBlPgalx.jpg

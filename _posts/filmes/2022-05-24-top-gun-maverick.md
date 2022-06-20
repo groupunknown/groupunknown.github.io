@@ -2,8 +2,8 @@
 layout: post
 author: Heisenberg
 category: Filmes
-post_date: '2022-05-25T03:28:35.645Z'
-post_modified: '2022-05-25T03:28:35.645Z'
+post_date: 2022-05-24
+post_modified: 2022-05-24
 title: 'Top Gun: Maverick'
 description: 'Depois de mais de 30 anos de serviço como um dos principais aviadores da Marinha, Pete Maverick Mitchell está de volta, rompendo os limites como um piloto de testes corajoso. No mundo contemporâneo das guerras tecnológicas, Maverick enfrenta drones e prova que o fator humano ainda é essencial.'
 poster_path: /4PlOR0ofLVXtnqos8BKaecqIRls.jpg

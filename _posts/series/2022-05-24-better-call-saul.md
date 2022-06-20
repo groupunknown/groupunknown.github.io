@@ -2,8 +2,8 @@
 layout: post
 author: Heisenberg
 category: Séries
-post_date: '2022-05-25T03:40:09.087Z'
-post_modified: '2022-05-25T03:40:09.087Z'
+post_date: 2022-05-24
+post_modified: 2022-05-24
 title: Better Call Saul
 description: 'Antes de se transformar no infame Saul Goodman, o advogado de Breaking Bad era mais inocente, mas não era santo.'
 poster_path: /fC2HDm5t0kHl7mTm7jxMR31b7by.jpg

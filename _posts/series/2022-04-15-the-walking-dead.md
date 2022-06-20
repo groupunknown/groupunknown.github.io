@@ -2,8 +2,8 @@
 layout: post
 author: Rick Grimes
 category: Séries
-post_date: '2022-04-15T17:31:06.865Z'
-post_modified: '2022-04-15T17:31:06.866Z'
+post_date: 2022-04-15
+post_modified: 2022-04-15
 title: The Walking Dead
 description: 'Nos Estados Unidos pós-apocalíptico, um pequeno grupo de sobreviventes segue viajando à procura de uma nova casa longe dos mortos-vivos. O desespero por segurança e suprimentos os coloca constantemente à beira da sanidade.'
 poster_path: /4OkJ1UDiddBJeVYYKPdew9wHGlL.jpg

@@ -2,8 +2,8 @@
 layout: post
 author: Pennywise
 category: Filmes
-post_date: '2022-04-15T17:54:54.057Z'
-post_modified: '2022-04-15T17:54:54.057Z'
+post_date: 2022-04-15
+post_modified: 2022-04-15
 title: '007: Sem Tempo para Morrer'
 description: 'Bond deixou o serviço ativo e está desfrutando de uma vida tranquila na Jamaica. Sua paz é interrompida quando o seu velho amigo Felix Leiter, da CIA, aparece pedindo sua ajuda. A missão de resgatar um cientista sequestrado acaba sendo muito mais difícil do que o esperado, deixando Bond no caminho de um vilão misterioso e armado com uma nova tecnologia perigosa.'
 poster_path: /iOPXG7q6ZqxSFp2iSY2CvgeRXyC.jpg

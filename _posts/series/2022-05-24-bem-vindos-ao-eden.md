@@ -2,8 +2,8 @@
 layout: post
 author: Heisenberg
 category: Séries
-post_date: '2022-05-25T03:46:07.349Z'
-post_modified: '2022-05-25T03:46:07.349Z'
+post_date: 2022-05-24
+post_modified: 2022-05-24
 title: Bem-vindos ao Éden
 description: 'Um grupo de jovens vai a uma festa em uma ilha paradisíaca, mas acaba vivendo um inferno cheio de segredos, perigos e armadilhas.'
 poster_path: /ow3LGLW3uCf7hFIwbX8A3Ym6m7K.jpg

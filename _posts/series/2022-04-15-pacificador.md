@@ -2,8 +2,8 @@
 layout: post
 author: Heisenberg
 category: Séries
-post_date: '2022-04-15T17:27:05.389Z'
-post_modified: '2022-04-15T17:27:05.389Z'
+post_date: 2022-04-15
+post_modified: 2022-04-15
 title: Pacificador
 description: 'A série explorará as origens do Pacificador, um homem que acredita na paz a qualquer custo - não importa quantas pessoas ele tenha que matar para obtê-la.'
 poster_path: /uEN0BR0nz9GB5dCmBuxsxC7cd7n.jpg

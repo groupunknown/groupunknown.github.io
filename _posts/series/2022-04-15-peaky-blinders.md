@@ -2,8 +2,8 @@
 layout: post
 author: Heisenberg
 category: Séries
-post_date: '2022-04-15T17:39:38.500Z'
-post_modified: '2022-04-15T17:39:38.500Z'
+post_date: 2022-04-15
+post_modified: 2022-04-15
 title: Peaky Blinders
 description: 'Thomas Shelby e seus irmãos retornam a Birmingham depois de servir no exército britânico durante a Primeira Guerra Mundial. Os Peaky Blinders, a gangue na qual Thomas é líder, controlam a cidade de Birmingham. Mas, como as ambições de Shelby se estendem para além de Birmingham, ele planeja construir o império de negócios que criou e impedir qualquer um que atrapalhar.'
 poster_path: /bGZn5RVzMMXju4ev7xbl1aLdXqq.jpg

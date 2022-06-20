@@ -2,8 +2,8 @@
 layout: post
 author: Pennywise
 category: Filmes
-post_date: '2022-04-15T17:51:01.972Z'
-post_modified: '2022-04-15T17:51:01.972Z'
+post_date: 2022-04-15
+post_modified: 2022-04-15
 title: The Batman
 description: 'Bruce Wayne é um jovem bilionário da cidade de Gotham City, Nova Jersey, que também age secretamente como o vigilante noturno Batman após o assassinato dos seus pais.'
 poster_path: /seyWFgGInaLqW7nOZvu0ZC95rtx.jpg
