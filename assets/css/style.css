@@ -1037,10 +1037,10 @@ aside-highlights-poster img {
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
-aside-highlights-items > aside-highlights-item {
+aside-highlights-items a {
     counter-increment: count;
 }
-aside-highlights-items aside-highlights-rank:before {
+aside-highlights-items a aside-highlights-rank:before {
     content: counter(count, upper-roman);
     font-weight: 600;
 }
