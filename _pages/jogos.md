@@ -1,4 +1,4 @@
 ---
 layout: page
-title: Jogos
+title: Jogos – Coming soon!
 ---

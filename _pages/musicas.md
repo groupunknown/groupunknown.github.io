@@ -1,4 +1,4 @@
 ---
 layout: page
-title: Músicas
+title: Músicas – Coming soon!
 ---
