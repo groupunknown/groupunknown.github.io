@@ -1,5 +1,5 @@
 ---
 layout: page
-title: "Filmes"
-permalink: "/filmes/"
+title: Filmes
+permalink: /filmes/
 ---

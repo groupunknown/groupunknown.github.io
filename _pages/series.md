@@ -1,5 +1,5 @@
 ---
 layout: page
-title: "Series"
-permalink: "/series/"
+title: Series
+permalink: /series/
 ---

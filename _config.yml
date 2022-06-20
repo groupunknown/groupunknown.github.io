@@ -50,10 +50,10 @@ collections:
     permalink: /:slug #/:year/:month/:day/:slug
   filmes:
     output: true
-    permalink: /filmes/:slug
+    permalink: /filmes/:name
   series:
     output: true
-    permalink: /series/:slug
+    permalink: /series/:name
 
 compress_html:
   clippings: all
