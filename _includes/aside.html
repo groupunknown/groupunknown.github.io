@@ -16,7 +16,7 @@
 		<filter-sort data-sort="asc">Mais antigo</filter-sort>
     </div>
 {% for x in site.data.filters %}
-	{% if x.query == "post_modified" or x.query == "vote_average" or x.query == "title" or x.query == "release_date" %}
+	{% if x.query == "post_modified" or x.query == "vote_average" or x.query == "title" %}
 		{% continue %}
 	{% else %}
 	<btn-stash>
