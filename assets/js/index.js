@@ -72,12 +72,10 @@ class Filter extends HTMLElement {
         return data.toLocaleString([], { year: "numeric", month: "long", day: "numeric" });
     }
     FilterMultipleQuerySort = (posts) => {
-        var el = document.querySelector(".category-sort");
+        var el = document.querySelector(".category-sort"), query = "", sort_order = "";
         [...el.parentElement.children].forEach((sibling) => {
-            if (sibling[sibling.selectedIndex]) {
-                var query = sibling[sibling.selectedIndex].value,
-                    sort_order = (sibling[sibling.selectedIndex].getAttribute("data-sort") === "desc") ? -1 : 1;
-            }
+            var query = sibling[sibling.selectedIndex].value,
+                sort_order = (sibling[sibling.selectedIndex].getAttribute("data-sort") === "desc") ? -1 : 1;
         });
         return posts.sort((function() {
             return function(a, b) {
