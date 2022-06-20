@@ -74,8 +74,7 @@ class Filter extends HTMLElement {
     FilterMultipleQuerySort = (posts) => {
         var el = document.querySelector(".category-sort"), query = "", sort_order = "";
         [...el.parentElement.children].forEach((sibling) => {
-            var query = sibling[sibling.selectedIndex].value,
-                sort_order = (sibling[sibling.selectedIndex].getAttribute("data-sort") === "desc") ? -1 : 1;
+            query = sibling[sibling.selectedIndex].value, sort_order = (sibling[sibling.selectedIndex].getAttribute("data-sort") === "desc") ? -1 : 1;
         });
         return posts.sort((function() {
             return function(a, b) {
