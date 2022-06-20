@@ -1083,43 +1083,43 @@ aside-highlights-item:hover aside-highlights-rank {
     color: var(--highlight-color);
     background: var(--highlight-background);
 }
-aside-highlights-item:nth-child(1) {
+aside-highlights-items a:nth-child(1) {
     --highlight-color: #ff0000;
     --highlight-background: rgb(255 0 0 / .1);
 }
-aside-highlights-item:nth-child(2) {
+aside-highlights-items a:nth-child(2) {
     --highlight-color: #ffff00;
     --highlight-background: rgb(255 127 0 / .1);
 }
-aside-highlights-item:nth-child(3) {
+aside-highlights-items a:nth-child(3) {
     --highlight-color: #ff7f00;
     --highlight-background: rgb(255 255 0 / .1);
 }
-aside-highlights-item:nth-child(4) {
+aside-highlights-items a:nth-child(4) {
     --highlight-color: #7fff00;
     --highlight-background: rgb(127 255 0 / .1);
 }
-aside-highlights-item:nth-child(5) {
+aside-highlights-items a:nth-child(5) {
     --highlight-color: #00ff00;
     --highlight-background: rgb(0 255 0 / .1);
 }
-aside-highlights-item:nth-child(6) {
+aside-highlights-items a:nth-child(6) {
     --highlight-color: #00ff7f;
     --highlight-background: rgb(0 255 127 / .1);
 }
-aside-highlights-item:nth-child(7) {
+aside-highlights-items a:nth-child(7) {
     --highlight-color: #00ffff;
     --highlight-background: rgb(0 255 255 / .1);
 }
-aside-highlights-item:nth-child(8) {
+aside-highlights-items a:nth-child(8) {
     --highlight-color: #007fff;
     --highlight-background: rgb(0 127 255 / .1);
 }
-aside-highlights-item:nth-child(9) {
+aside-highlights-items a:nth-child(9) {
     --highlight-color: #0000ff;
     --highlight-background: rgb(0 0 255 / .1);
 }
-aside-highlights-item:nth-child(10) {
+aside-highlights-items a:nth-child(10) {
     --highlight-color: #7f00ff;
     --highlight-background: rgb(127 0 255 / .1);
 }
