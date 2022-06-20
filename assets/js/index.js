@@ -72,15 +72,13 @@ class Filter extends HTMLElement {
         return data.toLocaleString([], { year: "numeric", month: "long", day: "numeric" });
     }
     FilterMultipleQuerySort = (posts) => {
-         var sort_order = document.querySelector(".category-sort");
-        if (sort_order.value == "default") {
-            return
-        }
-        sort_order.onchange = function (e) {
-            var selectedOption = this[this.selectedIndex];
-            var query = selectedOption.value;
-            var sort_order = (selectedOption.getAttribute("data-sort") === "desc") ? -1 : 1;
-        }
+        var el = document.querySelector(".category-sort");
+        [...el.parentElement.children].forEach((sibling) => {
+            if (sibling[sibling.selectedIndex]) {
+                var query = sibling[sibling.selectedIndex].value,
+                    sort_order = (sibling[sibling.selectedIndex].getAttribute("data-sort") === "desc") ? -1 : 1;
+            }
+        });
         return posts.sort((function() {
             return function(a, b) {
                 return (a[query] < b[query]) ? -1 * sort_order : (a[query] > b[query]) ? 1 * sort_order : 0 * sort_order;
@@ -352,7 +350,6 @@ class Filter extends HTMLElement {
     }
 };
 customElements.define("btn-filter", Filter);
-//customElements.define("filter-sort", class extends Filter {});
 customElements.define("filter-reset", class extends Filter {
     constructor() {
         super();
@@ -362,6 +359,12 @@ customElements.define("filter-reset", class extends Filter {
         });
     }
 });
+var sort_order = document.querySelector(".category-sort");
+sort_order.onchange = function (e) {
+    var opt = new Filter();
+    opt.initFilter();
+}
+
 var s  = document.querySelectorAll("slider-banner a"), c  = 0, n = s.length - 1;
 if (typeof s[0] !== "undefined") {
     window.setInterval(function(){
@@ -371,12 +374,3 @@ if (typeof s[0] !== "undefined") {
         c = c >= n ? 0 : c+1;     
     }, 4000);
 }
-
-customElements.define("sort-select", class extends Filter {
-    constructor() {
-        super();
-        this.addEventListener("change", e => {
-            this.initFilter();
-        });
-    }
-}, { extends: "select" });
