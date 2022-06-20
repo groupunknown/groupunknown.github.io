@@ -886,7 +886,17 @@ btn-stash.active .btn-stash {
     display: flex;
 }
 .category-sort {
-    flex-direction: row;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: var(--border-color);
+    min-height: 40px;
+    padding: 0 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+}
+.category-sort option {
+    border: 1px solid var(--border-color);
 }
 .category-item {
     display: flex;

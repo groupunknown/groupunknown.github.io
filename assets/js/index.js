@@ -73,11 +73,13 @@ class Filter extends HTMLElement {
     }
     FilterMultipleQuerySort = (posts) => {
         var order = "";
-        [...document.querySelectorAll("[data-sort]")].map(function(el) {
+        /*[...document.querySelectorAll("[data-sort]")].map(function(el) {
             if (el.classList.contains("selected")) {
                 order = el.getAttribute("data-sort");
             }
-        });
+        });*/
+
+
         var query = "post_date", sort_order = (order === "desc") ? -1 : 1;
         return posts.sort((function() {
             return function(a, b) {
@@ -350,7 +352,7 @@ class Filter extends HTMLElement {
     }
 };
 customElements.define("btn-filter", Filter);
-customElements.define("filter-sort", class extends Filter {});
+//customElements.define("filter-sort", class extends Filter {});
 customElements.define("filter-reset", class extends Filter {
     constructor() {
         super();
@@ -368,4 +370,12 @@ if (typeof s[0] !== "undefined") {
         s[c].className  = "active";
         c = c >= n ? 0 : c+1;     
     }, 4000);
+}
+
+
+var sort_order = document.querySelector(".category-sort");
+sort_order.onchange = function (e) {
+    var selectedOption = this[this.selectedIndex];
+    var selectedText = selectedOption.text;
+    console.log(selectedText, e)
 }
