@@ -2,8 +2,8 @@
 layout: post
 author: Heisenberg
 category: Séries
-post_date: '2022-05-25T04:02:28.196Z'
-post_modified: '2022-05-25T04:02:28.196Z'
+post_date: '2022-05-28T04:02:28.196Z'
+post_modified: '2022-05-29T04:02:28.196Z'
 title: 'S.W.A.T.: Força de Intervenção'
 description: 'Dividido entre a corporação e as ruas, o tenente Daniel Harrelson encara a missão de liderar uma unidade do Esquadrão de Armas e Táticas Especiais na comunidade onde cresceu.'
 poster_path: /am7NOjx56BpJOh1yFy6P70WmuTb.jpg
