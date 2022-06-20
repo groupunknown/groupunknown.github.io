@@ -16,8 +16,8 @@ layout: default
 		</div>
 		<div class="filter-pagination">
 			<div class="filter-results">
-				{% assign posts = site.posts | sort: "post_date" %}
-				{% for post in paginator.posts %}
+				{% assign sort_posts = site.posts | sort: "post_date" %}
+				{% for post in paginator.sort_posts %}
 				{% include article.html %}
 					{% if forloop.index == 5 %}
 					{% include banner.html %}
