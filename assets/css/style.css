@@ -472,10 +472,6 @@ main {
     min-width: 300px;
     max-width: 320px;
     height: 100%;
-    padding: 1rem;
-    background: var(--sub-background);
-    border: 1px solid var(--border-color);
-    border-radius: 0.25rem;
 }
 .nav-items > btn-stash:first-child {
     display: none;
@@ -996,6 +992,7 @@ aside-highlights-items {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    width: 100%;
 }
 aside-highlights-item {
     display: flex;
