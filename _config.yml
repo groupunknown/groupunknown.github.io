@@ -49,17 +49,44 @@ collections:
     output: true
     permalink: /:slug #/:year/:month/:day/:slug
 
+# https://talk.jekyllrb.com/t/creating-custom-permalinks-for-each-post-category/434/5
 defaults:
   - scope:
       path: "_posts/filmes"
       type: posts
     values:
       permalink: filmes/:title
+      layout: post
   - scope:
       path: "_posts/series"
       type: posts
     values:
       permalink: series/:title
+      layout: post
+  - scope:
+      path: "_posts/musicas"
+      type: posts
+    values:
+      permalink: musicas/:title
+      layout: post
+  - scope:
+      path: "_posts/jogos"
+      type: posts
+    values:
+      permalink: jogos/:title
+      layout: post
+  - scope:
+      path: "_posts/livros"
+      type: posts
+    values:
+      permalink: livros/:title
+      layout: post
+  - scope:
+      path: "_posts/blog"
+      type: posts
+    values:
+      permalink: blog/:title
+      layout: post
 
 compress_html:
   clippings: all
