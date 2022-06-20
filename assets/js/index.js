@@ -124,7 +124,7 @@ class Filter extends HTMLElement {
         }
     }
     FilterMultipleQueryReleaseDate = (post, term) => {
-        return (term === undefined) ? post.release_date : post.release_date === term.toString();
+        return (term === undefined) ? post.release_date : post.release_date.toString() === term.toString();
     }
     FilterMultipleQueryAuthor = (post, term) => {
         return (term === undefined) ? post.author : post.author.toString().toLowerCase() === term.toString().toLowerCase();
