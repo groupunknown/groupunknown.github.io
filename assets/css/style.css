@@ -463,7 +463,7 @@ main {
     width: 100%;
     max-width: 768px;
     min-height: 100vh;
-    gap: 2rem;
+    gap: 3rem;
 }
 .nav-items {
     display: flex;
@@ -963,7 +963,6 @@ aside-highlights {
     width: 100%;
     min-width: 300px;
     max-width: 320px;
-    padding: 1rem;
 }
 aside-highlights-header-tabs {
     display: flex;
@@ -1181,7 +1180,7 @@ slider-banner a.active{
     .container {
         max-width: 768px;;
         min-height: auto;
-        gap: 2rem;
+        gap: 3rem;
         margin: auto;
     }
     main,
@@ -1189,7 +1188,7 @@ slider-banner a.active{
        max-width:100%;
     }
     main {
-        flex-direction: column-reverse;
+        flex-direction: column;
         padding: 0 2rem;
     }
     article-author {
@@ -1206,7 +1205,6 @@ slider-banner a.active{
     aside-highlights {
         max-width: 100%;
         min-width: auto;
-        padding: 0;
     }
     aside-highlights-header-tabs {
         padding-top: 1rem;
@@ -1234,10 +1232,10 @@ slider-banner a.active{
 }
 @media screen and (max-width: 768px) {
     .container {
-        gap: 1rem;
+        gap: 2rem;
     }
     main {
-        padding: 0 1rem;
+        padding: 0 2rem;
     }
     .nav-items {
         padding: .5rem;
@@ -1283,7 +1281,7 @@ slider-banner a.active{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     gap: .5rem;
 }
 .pagination a,
