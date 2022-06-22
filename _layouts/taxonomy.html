@@ -1,19 +1,24 @@
 ---
 layout: default
 ---
-
-<section class="filter__taxonomy">
-	{% if site.data.filter[page.taxonomy] %}
-	<div class="filter__items">
-		{% for items in site.data.filter[page.taxonomy] %}
-			<button class="filter__item" data-term="{{ page.taxonomy }}" data-query="{{ items.item }}">{{ items.item | strip }}</button>
-		{% endfor %}
+<main>
+	<div class="container">
+		<div class="filter-results-items">
+			<filter-status>Aguardando...</filter-status>
+			<filter-reset class="selected">
+				<div>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" xml:space="preserve" width="20" height="20" fill="#ff3722">
+						<path d="M740.4 401.4c-46-25.4-92.5-49.9-139.1-74.2-36.3-18.9-73.3-19.2-110-.9-22 11-38.8 27.5-50.4 49.9 116.5 62 232.2 123.6 348.7 185.6 2.2-5.1 4.4-9.3 6-13.7 21.1-56.8-1.1-116.9-55.2-146.7zM875.6 35.1c-9.2-12.8-21.9-20.4-37.2-23.8-16.7-3.7-26.1.2-35 14.3l-159 253.8c-1.7 2.7-3.2 5.4-4.8 8.1 1 1.1 1.5 2 2.3 2.4 36.2 19.3 72.4 38.6 109.1 58.2 1.3-2.1 2-3.1 2.6-4.2 41.6-93.9 83.1-187.8 124.8-281.6 4.3-10 3.3-18.8-2.8-27.2zM754.3 597.7c7.1-18.1-1.8-38.5-19.9-45.6-18-7.2-38.5 1.7-45.6 19.8-3.7 9.4-80.7 208.2-18.2 347.6-29.6-.3-76.3-7.1-141.9-31.8-12.2-38-20.9-97.3 5.7-166.9 0 0-63.7 72.8-74.3 137.5-13.7-6.6-28-13.8-43-21.8-15-8.1-28.9-16-42-23.8 48.1-44.6 73.5-137.9 73.5-137.9-43.3 60.6-97.5 86.2-135.9 97-57.1-41.1-88.6-76.3-105.1-100.6 150.8-25 273.9-199.1 279.7-207.4 11.1-15.9 7.2-37.9-8.7-48.9-15.9-11.2-37.8-7.2-49 8.7-1.4 1.9-137.8 193.7-271.7 179.5-10.4-1.1-21 2.5-28.6 10-7.5 7.5-11.3 17.9-10.2 28.5 1.3 12.4 19.5 125.3 264.8 256.9C522.1 972.6 615.5 990 672.6 990c44.3 0 66.9-10.4 71.7-13 9.4-4.9 16-13.8 18.1-24.3 2.1-10.4-.7-21.2-7.5-29.4-86.2-103.8-1.4-323.4-.6-325.6z"></path>
+					</svg>
+				</div>
+				<div>LIMPA FILTRO</div>
+			</filter-reset>
+		</div>
+		<div class="filter-pagination">
+			<div class="filter-results"></div>
+		</div>
 	</div>
-	{% endif %}
-	<div class="filter__items-header">
-		<div class="filter__items-header-term"></div>
+	<div class="nav-items">
+		{% include aside.html %}
 	</div>
-	<div class="filter__items-content">
-		<div class="filter__items-content-results"></div>
-	</div>
-</section>
+</main>

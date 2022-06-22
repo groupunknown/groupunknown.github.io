@@ -1,6 +1,10 @@
-var authors = JSON.parse(document.getElementById("authors").textContent),
-    posts = JSON.parse(document.getElementById("posts").textContent);
-
+var posts, authors;
+$.getJSON("/posts.json", function(json){
+    posts = json.items;
+});
+$.getJSON("/authors.json", function(json){
+    authors = json.items;
+});
 customElements.define("header-mobile", class extends HTMLElement {
     constructor() {
         super();
@@ -349,7 +353,7 @@ class Filter extends HTMLElement {
 customElements.define("btn-filter", Filter);
 customElements.define("filter-reset", class extends Filter {
     constructor() {
-        super();
+        super().initFilter();
         this.addEventListener("click", e => {
             document.querySelectorAll("btn-filter").forEach(b => b.classList.remove("selected"));
             this.initFilter();

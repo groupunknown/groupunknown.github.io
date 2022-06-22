@@ -1,4 +1,7 @@
-var search_json = JSON.parse(document.getElementById("search").textContent);
+var search;
+$.getJSON("/search.json", function(json){
+    search = json;
+});
 window.addEventListener("click", function(e){
     if (document.querySelector("live-search-results").contains(e.target)) {
         return;
@@ -40,7 +43,7 @@ class LiveSearchEngine extends HTMLInputElement {
             empty = "<live-search-result-empty>Nenhum resultado encontrado, tente procurar com o título em outra língua. Caso ainda não encontre faça um pedido na nossa página do Facebook.</live-search-result-empty>",
             regexp_string = new RegExp(input.value, "i"),
             regexp_object = new RegExp(input.value, "gi");
-        search_json.forEach((post, key, last) => {
+        search.forEach((post, key, last) => {
             if ((post.title.search(regexp_string) != -1) || (post.imdb_id.search(regexp_string) != -1) || (String(post.tmdb_id).search(regexp_string) != -1) || (post.crews.findIndex(v => regexp_object.test(v)) != -1) || (post.casts.findIndex(v => regexp_object.test(v)) != -1)) {
             results += `<a href="`+ post.url +`">
                 <live-search-result-poster>

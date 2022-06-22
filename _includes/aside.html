@@ -1,3 +1,4 @@
+{% if page.layout == "taxonomy" %}
 <btn-stash>
 	<div>Exibir filtro avançado</div>
 	<svg class="btn-stash" viewBox="0 0 10 16" version="1.1" width="14" height="18" aria-hidden="true">
@@ -205,67 +206,68 @@
 		{% endfor %}
     </div>
 </aside>
-    <aside-highlights>
-    	<aside-highlights-header-tabs>
-    		<aside-highlights-header-tab class="selected">Filmes</aside-highlights-header-tab>
-    		<aside-highlights-header-tab>Séries</aside-highlights-header-tab>
-    	</aside-highlights-header-tabs>
-    	<aside-highlights-content-tabs>
-    		<aside-highlights-content-tab class="selected">
-    			<aside-highlights-items>
-    				{% assign posts = site.posts | where: "category", "Filmes" %}
-    				{% for post in posts limit: 10 %}
-    				<a href="{{ post.url | prepend: site.baseurl }}">
-	    				<aside-highlights-item>
-	    					<aside-highlights-row>
-	    						<aside-highlights-rank></aside-highlights-rank>
-	    						<aside-highlights-poster>
-	    							<img src="https://image.tmdb.org/t/p/w92{{ post.poster_path }}" alt="{{ post.title }}">
-	    						</aside-highlights-poster>
-	    					</aside-highlights-row>
-	    					<aside-highlights-column>
-	    						<aside-highlights-title>{{ post.title }}</aside-highlights-title>
-	    						<aside-highlights-row>
-	    							<aside-highlights-tmdb>
-	    								<div>TMDb:</div>
-	    								<div>{{ post.vote_average }}</div>
-	    							</aside-highlights-tmdb>
+{% endif %}
+<aside-highlights>
+	<aside-highlights-header-tabs>
+ 		<aside-highlights-header-tab class="selected">Filmes</aside-highlights-header-tab>
+   		<aside-highlights-header-tab>Séries</aside-highlights-header-tab>
+   	</aside-highlights-header-tabs>
+   	<aside-highlights-content-tabs>
+   		<aside-highlights-content-tab class="selected">
+   			<aside-highlights-items>
+   				{% assign posts = site.posts | where: "category", "Filmes" %}
+   				{% for post in posts limit: 10 %}
+   				<a href="{{ post.url | prepend: site.baseurl }}">
+    				<aside-highlights-item>
+    					<aside-highlights-row>
+    						<aside-highlights-rank></aside-highlights-rank>
+    						<aside-highlights-poster>
+    							<img src="https://image.tmdb.org/t/p/w92{{ post.poster_path }}" alt="{{ post.title }}">
+    						</aside-highlights-poster>
+    					</aside-highlights-row>
+    					<aside-highlights-column>
+    						<aside-highlights-title>{{ post.title }}</aside-highlights-title>
+    						<aside-highlights-row>
+    							<aside-highlights-tmdb>
+    								<div>TMDb:</div>
+    								<div>{{ post.vote_average }}</div>
+    							</aside-highlights-tmdb>
 	    							<aside-highlights-runtime>{% if post.runtime <= 60 %}{{ post.runtime }}min{% else %}{{ post.runtime | divided_by: 60 | floor }}h {{ post.runtime | modulo: 60 }}min{% endif %}</aside-highlights-runtime>
-	    							<aside-highlights-release-year>{{ post.release_date }}</aside-highlights-release-year>
-	    						</aside-highlights-row>
-	    					</aside-highlights-column>
-	    				</aside-highlights-item>
-	    			</a>
-    				{% endfor %}
-    			</aside-highlights-items>
-    		</aside-highlights-content-tab>
-    		<aside-highlights-content-tab>
-    			<aside-highlights-items>
-    				{% assign posts = site.posts | where: "category", "Séries" %}
-    				{% for post in posts limit: 10 %}
-    				<a href="{{ post.url | prepend: site.baseurl }}">
-	    				<aside-highlights-item>
-	    					<aside-highlights-row>
-	    						<aside-highlights-rank></aside-highlights-rank>
-	    						<aside-highlights-poster>
-	    							<img src="https://image.tmdb.org/t/p/w92{{ post.poster_path }}" alt="{{ post.title }}">
-	    						</aside-highlights-poster>
-	    					</aside-highlights-row>
-	    					<aside-highlights-column>
-	    						<aside-highlights-title>{{ post.title }}</aside-highlights-title>
-	    						<aside-highlights-row>
-	    							<aside-highlights-tmdb>
-	    								<div>TMDb:</div>
-	    								<div>{{ post.vote_average }}</div>
-	    							</aside-highlights-tmdb>
-	    							<aside-highlights-runtime>{% if post.runtime <= 60 %}{{ post.runtime }}min{% else %}{{ post.runtime | divided_by: 60 | floor }}h {{ post.runtime | modulo: 60 }}min{% endif %}</aside-highlights-runtime>
-	    							<aside-highlights-release-year>{{ post.release_date }}</aside-highlights-release-year>
-	    						</aside-highlights-row>
-	    					</aside-highlights-column>
-	    				</aside-highlights-item>
-    				</a>
-    				{% endfor %}
-    			</aside-highlights-items>
-    		</aside-highlights-content-tab>
-    	</aside-highlights-content-tabs>
-    </aside-highlights>
+    							<aside-highlights-release-year>{{ post.release_date }}</aside-highlights-release-year>
+    						</aside-highlights-row>
+    					</aside-highlights-column>
+    				</aside-highlights-item>
+    			</a>
+   				{% endfor %}
+   			</aside-highlights-items>
+   		</aside-highlights-content-tab>
+   		<aside-highlights-content-tab>
+   			<aside-highlights-items>
+   				{% assign posts = site.posts | where: "category", "Séries" %}
+   				{% for post in posts limit: 10 %}
+   				<a href="{{ post.url | prepend: site.baseurl }}">
+    				<aside-highlights-item>
+    					<aside-highlights-row>
+    						<aside-highlights-rank></aside-highlights-rank>
+    						<aside-highlights-poster>
+    							<img src="https://image.tmdb.org/t/p/w92{{ post.poster_path }}" alt="{{ post.title }}">
+    						</aside-highlights-poster>
+    					</aside-highlights-row>
+    					<aside-highlights-column>
+    						<aside-highlights-title>{{ post.title }}</aside-highlights-title>
+    						<aside-highlights-row>
+    							<aside-highlights-tmdb>
+    								<div>TMDb:</div>
+    								<div>{{ post.vote_average }}</div>
+    							</aside-highlights-tmdb>
+    							<aside-highlights-runtime>{% if post.runtime <= 60 %}{{ post.runtime }}min{% else %}{{ post.runtime | divided_by: 60 | floor }}h {{ post.runtime | modulo: 60 }}min{% endif %}</aside-highlights-runtime>
+    							<aside-highlights-release-year>{{ post.release_date }}</aside-highlights-release-year>
+    						</aside-highlights-row>
+    					</aside-highlights-column>
+    				</aside-highlights-item>
+   				</a>
+   				{% endfor %}
+   			</aside-highlights-items>
+   		</aside-highlights-content-tab>
+   	</aside-highlights-content-tabs>
+</aside-highlights>
