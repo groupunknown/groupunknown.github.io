@@ -1,9 +1,9 @@
 var posts, authors;
 $.getJSON("/posts.json", function(json){
-    posts = json.items;
+    posts = await json.items;
 });
 $.getJSON("/authors.json", function(json){
-    authors = json.items;
+    authors = await json.items;
 });
 customElements.define("header-mobile", class extends HTMLElement {
     constructor() {
@@ -366,30 +366,3 @@ sort_order.onchange = function (e) {
     opt.initFilter();
 }
 
-var s  = document.querySelectorAll("slider-banner a"), c  = 0, n = s.length - 1;
-if (typeof s[0] !== "undefined") {
-    window.setInterval(function(){
-        var i =  c ? c - 1 : n;
-        s[i].className  = "";
-        s[c].className  = "active";
-        c = c >= n ? 0 : c+1;     
-    }, 4000);
-}
-
-customElements.define("aside-highlights-header-tab", class extends HTMLElement {
-    constructor() {
-        super();
-        this.addEventListener("click", e => {
-            [...this.parentElement.nextElementSibling.children].forEach((elem) => {
-                elem.classList.remove("selected");
-            });
-            [...this.parentElement.children].forEach((tab, index) => {
-                const isCurrent = (tab === this);
-                tab.classList.toggle("selected", isCurrent);
-                if (tab === this) {
-                    this.parentElement.nextElementSibling.children[index].classList.add("selected")
-                }
-            });
-        });
-    }
-});

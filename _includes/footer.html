@@ -35,6 +35,34 @@
     </script>
     {% endif %}
 {% endif %}
+<script>
+var s  = document.querySelectorAll("slider-banner a"), c  = 0, n = s.length - 1;
+if (typeof s[0] !== "undefined") {
+    window.setInterval(function(){
+        var i =  c ? c - 1 : n;
+        s[i].className  = "";
+        s[c].className  = "active";
+        c = c >= n ? 0 : c+1;     
+    }, 4000);
+}
+customElements.define("aside-highlights-header-tab", class extends HTMLElement {
+    constructor() {
+        super();
+        this.addEventListener("click", e => {
+            [...this.parentElement.nextElementSibling.children].forEach((elem) => {
+                elem.classList.remove("selected");
+            });
+            [...this.parentElement.children].forEach((tab, index) => {
+                const isCurrent = (tab === this);
+                tab.classList.toggle("selected", isCurrent);
+                if (tab === this) {
+                    this.parentElement.nextElementSibling.children[index].classList.add("selected")
+                }
+            });
+        });
+    }
+});
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 <script src="{{ site.baseurl }}/assets/js/search.js"></script>
 {% if page.layout == "taxonomy" %}
