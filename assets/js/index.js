@@ -1,10 +1,21 @@
-var posts, authors;
-$.getJSON("/posts.json", function(json){
-    posts = json.items;
+$.ajaxSetup({
+    async: false
 });
-$.getJSON("/authors.json", function(json){
-    authors = json.items;
-});
+var posts= (function() {
+    var result_posts;
+    $.getJSON("/posts.json", {}, function(data){
+        result_posts = data;
+    });
+    return result_posts.items;
+})();
+
+var authors= (function() {
+    var result_authors;
+    $.getJSON("/authors.json", {}, function(data){
+        result_authors = data;
+    });
+    return result_authors.items;
+})();
 
 console.log(posts);
 console.log(authors);
