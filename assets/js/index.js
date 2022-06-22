@@ -1,10 +1,9 @@
-var posts, authors;
-$.getJSON("/posts.json", function(json){
-    posts = await json.items;
-});
-$.getJSON("/authors.json", function(json){
-    authors = await json.items;
-});
+var await_posts = await $.getJSON("/posts.json"),
+    await_authors = await $.getJSON("/authors.json");
+
+var posts = await_posts.items,
+    authors = await_authors.items;
+
 customElements.define("header-mobile", class extends HTMLElement {
     constructor() {
         super();
