@@ -19,7 +19,7 @@
 						<div>Diretor:</div>
 						<div class="item-comma">
 							{% for crew in post.crews %}
-							<a href="/diretor?crews={{crew}}">{{ crew }}</a>
+							<a href="/diretor?crews={{crew | url_encode}}">{{ crew }}</a>
 							{% endfor %}
 						</div>
 					</div>
@@ -27,7 +27,7 @@
 						<div>Elenco:</div>
 						<div class="item-comma">
 							{% for cast in post.casts %}
-							<a href="/elenco?casts={{cast}}">{{ cast }}</a>
+							<a href="/elenco?casts={{cast | url_encode}}">{{ cast }}</a>
 							{% endfor %}
 						</div>
 					</div>
@@ -35,7 +35,7 @@
 						<div>Gênero:</div>
 						<div class="item-comma">
 							{% for genre in post.genres %}
-							<a href="/genero?genres={{genre}}">{{ genre }}</a>
+							<a href="/genero?genres={{genre | url_encode}}">{{ genre }}</a>
 							{% endfor %}
 						</div>
 					</div>
@@ -60,7 +60,7 @@
 				<div>Qualidade:</div>
 				<div class="item-comma">
 					{% for quality in post.qualitys %}
-					<a href="/qualidade?qualitys={{quality}}">{{ quality }}</a>
+					<a href="/qualidade?qualitys={{quality | url_encode}}">{{ quality }}</a>
 					{% endfor %}
 				</div>
 			</div>
@@ -68,7 +68,7 @@
 				<div>Áudio:</div>
 				<div class="item-comma">
 					{% for audio in post.audios %}
-					<a href="/audio?audios={{audio}}">{{ audio }}</a>
+					<a href="/audio?audios={{audio | url_encode}}">{{ audio }}</a>
 					{% endfor %}
 				</div>
 			</div>
@@ -76,7 +76,7 @@
 				<div>Extensão:</div>
 				<div class="item-comma">
 					{% for extension in post.extensions %}
-					<a href="/extensao?extensions={{extension}}">{{ extension }}</a>
+					<a href="/extensao?extensions={{extension | url_encode}}">{{ extension }}</a>
 					{% endfor %}
 				</div>
 			</div>

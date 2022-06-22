@@ -1,4 +1,4 @@
 ---
-layout: page
+layout: taxonomy
 title: Filmes
 ---

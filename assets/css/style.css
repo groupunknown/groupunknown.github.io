@@ -173,10 +173,10 @@ a:not([href]):not([tabindex]):focus {
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
 }
-[aria-label][data-tooltipped] {
+[tooltipped-label][data-tooltipped] {
     position: relative;
 }
-[aria-label][data-tooltipped]:before {
+[tooltipped-label][data-tooltipped]:before {
     width: 0;
     height: 0;
     border: 5px solid transparent;
@@ -188,7 +188,7 @@ a:not([href]):not([tabindex]):focus {
     position: absolute;
     z-index: 10;
 }
-[aria-label][data-tooltipped]:after {
+[tooltipped-label][data-tooltipped]:after {
     opacity: 0;
     pointer-events: none;
     transition: all 0.18s ease-out 0.18s;
@@ -202,55 +202,55 @@ a:not([href]):not([tabindex]):focus {
     border-radius: 2px;
     color: var(--color-inverted);
     border-radius: 2px;
-    content: attr(aria-label);
+    content: attr(tooltipped-label);
     padding: .5rem .75rem;
     position: absolute;
     white-space: nowrap;
     z-index: 10;
 }
-[aria-label][data-tooltipped]:hover:before,
-[aria-label][data-tooltipped]:hover:after {
+[tooltipped-label][data-tooltipped]:hover:before,
+[tooltipped-label][data-tooltipped]:hover:after {
     opacity: 1;
     pointer-events: none;
 }
-[aria-label][data-tooltipped][data-tooltipped^="top-left"]:before {
+[tooltipped-label][data-tooltipped][data-tooltipped^="top-left"]:before {
     bottom: 100%;
     left: 50%;
     margin-left: -5px;
 }
-[aria-label][data-tooltipped][data-tooltipped^="top-left"]:after {
+[tooltipped-label][data-tooltipped][data-tooltipped^="top-left"]:after {
     margin-bottom: 10px;
     margin-left: -20px;
     bottom: 100%;
     left: 50%;
 }
-[aria-label][data-tooltipped][data-tooltipped^="top-right"]:before {
+[tooltipped-label][data-tooltipped][data-tooltipped^="top-right"]:before {
     bottom: 100%;
     right: 50%;
     margin-right: -5px;
 }
-[aria-label][data-tooltipped][data-tooltipped^="top-right"]:after {
+[tooltipped-label][data-tooltipped][data-tooltipped^="top-right"]:after {
     margin-bottom: 10px;
     margin-right: -20px;
     bottom: 100%;
     right: 50%;
 }
-[aria-label][data-tooltipped][data-tooltipped^="top"]:before {
+[tooltipped-label][data-tooltipped][data-tooltipped^="top"]:before {
     bottom: 100%;
     right: 50%;
     margin-right: -5px;
 }
-[aria-label][data-tooltipped][data-tooltipped^="top"]:after {
+[tooltipped-label][data-tooltipped][data-tooltipped^="top"]:after {
     margin-bottom: 10px;
     bottom: 100%;
 }
-[aria-label][data-tooltipped][data-tooltipped^="bottom"]:before {
+[tooltipped-label][data-tooltipped][data-tooltipped^="bottom"]:before {
     top: 100%;
     right: 50%;
     margin-right: -5px;
     transform: rotateX(180deg);
 }
-[aria-label][data-tooltipped][data-tooltipped^="bottom"]:after {
+[tooltipped-label][data-tooltipped][data-tooltipped^="bottom"]:after {
     margin-top: 10px;
     top: 100%;
 }
@@ -1002,6 +1002,7 @@ aside-highlights-item {
 }
 aside-highlights-item > aside-highlights-column {
     justify-content: center;
+    width: 100%;
 }
 aside-highlights-row {
     display: flex;
