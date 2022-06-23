@@ -1282,13 +1282,14 @@ slider-banner a.active{
     justify-content: center;
     align-items: center;
     margin-bottom: 3rem;
-    gap: .5rem;
 }
 .pagination a,
 .pagination span {
-    padding: .5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid var(--border-color);
-    border-radius: 3px;
+    border-left: 0;
 }
 .pagination a.active,
 .pagination span.active {
@@ -1301,6 +1302,16 @@ slider-banner a.active{
 .pagination a.active:hover,
 .pagination span.active:hover {
     cursor: default;
+}
+.pagination a:first-child,
+.pagination span:first-child {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.pagination a:last-child,
+.pagination span:last-child {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 .paginationjs {
     margin: 3rem 0;
