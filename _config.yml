@@ -96,5 +96,5 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
-paginate: 3
+paginate: 10
 paginate_path: /page/:num/

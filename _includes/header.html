@@ -35,11 +35,11 @@
 		</header-mobile>
 		<nav>
 			<a href="{{ site.baseurl }}/filmes" {% if page.url == "/filmes" %} class="active"{% endif %}>Filmes</a>
-			<a href="{{ site.baseurl }}/series" {% if page.url == "/series/" %} class="active"{% endif %}>Séries</a>
-			<a href="{{ site.baseurl }}/musicas" tooltipped-label="Coming soon!" data-tooltipped="bottom">Músicas</a>
-			<a href="{{ site.baseurl }}/jogos" tooltipped-label="Coming soon!" data-tooltipped="bottom">Jogos</a>
-			<a href="{{ site.baseurl }}/livros" tooltipped-label="Coming soon!" data-tooltipped="bottom">Livros</a>
-			<a href="{{ site.baseurl }}/blog" tooltipped-label="Coming soon!" data-tooltipped="bottom">Blog</a>
+			<a href="{{ site.baseurl }}/series" {% if page.url == "/series" %} class="active"{% endif %}>Séries</a>
+			<a href="{{ site.baseurl }}/musicas" {% if page.url == "/musicas" %} class="active"{% endif %} tooltipped-label="Coming soon!" data-tooltipped="bottom">Músicas</a>
+			<a href="{{ site.baseurl }}/jogos" {% if page.url == "/jogos" %} class="active"{% endif %} tooltipped-label="Coming soon!" data-tooltipped="bottom">Jogos</a>
+			<a href="{{ site.baseurl }}/livros" {% if page.url == "/livros" %} class="active"{% endif %} tooltipped-label="Coming soon!" data-tooltipped="bottom">Livros</a>
+			<a href="{{ site.baseurl }}/blog" {% if page.url == "/blog" %} class="active"{% endif %} tooltipped-label="Coming soon!" data-tooltipped="bottom">Blog</a>
 		</nav>
 	</header>
 </header-sticky>
