@@ -1288,6 +1288,8 @@ slider-banner a.active{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 40px;
+    height: 40px;
     border: 1px solid var(--border-color);
     border-left: 0;
 }
@@ -1305,6 +1307,7 @@ slider-banner a.active{
 }
 .pagination a:first-child,
 .pagination span:first-child {
+    border-left: 1px solid var(--border-color);
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
 }
