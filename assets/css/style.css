@@ -417,7 +417,8 @@ nav a {
 }
 nav a:active,
 nav a:focus,
-nav a:hover {
+nav a:hover,
+nav a.active {
     background: var(--link-background);
     transition: background .2s ease-in;
 }
