@@ -93,7 +93,7 @@ defaults:
       path: "_downloads/series"
       type: downloads
     values:
-      permalink: downloads/:title
+      permalink: series/downloads/:title
       layout: downloads
 
 compress_html:
