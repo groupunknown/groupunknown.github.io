@@ -47,7 +47,7 @@ collections:
     permalink: /:name #/:categories/:name
   posts:
     output: true
-    permalink: /:slug #/:year/:month/:day/:slug
+    permalink: /:slug/ #/:year/:month/:day/:slug
   downloads:
     output: true # https://ognjen.io/generating-json-in-jekyll/
 
