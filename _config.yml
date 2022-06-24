@@ -63,7 +63,7 @@ defaults:
       path: "_posts/series"
       type: posts
     values:
-      permalink: series/:title
+      permalink: series/:slug/
       layout: post
   - scope:
       path: "_posts/musicas"
