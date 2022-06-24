@@ -48,8 +48,8 @@ collections:
   posts:
     output: true
     permalink: /:slug #/:year/:month/:day/:slug
-#  downloads:
-#    output: true # https://ognjen.io/generating-json-in-jekyll/
+  downloads:
+    output: true # https://ognjen.io/generating-json-in-jekyll/
 
 # https://talk.jekyllrb.com/t/creating-custom-permalinks-for-each-post-category/434/5
 defaults:
