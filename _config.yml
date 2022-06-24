@@ -47,7 +47,7 @@ collections:
     permalink: /:name #/:categories/:name
   posts:
     output: true
-    permalink: /:slug/ #/:year/:month/:day/:slug
+    permalink: /:slug #/:year/:month/:day/:slug
   downloads:
     output: true # https://ognjen.io/generating-json-in-jekyll/
 
@@ -57,37 +57,37 @@ defaults:
       path: "_posts/filmes"
       type: posts
     values:
-      permalink: filmes/:title
+      permalink: filmes/:slug
       layout: post
   - scope:
       path: "_posts/series"
       type: posts
     values:
-      permalink: series/:slug/
+      permalink: series/:slug
       layout: post
   - scope:
       path: "_posts/musicas"
       type: posts
     values:
-      permalink: musicas/:title
+      permalink: musicas/:slug
       layout: post
   - scope:
       path: "_posts/jogos"
       type: posts
     values:
-      permalink: jogos/:title
+      permalink: jogos/:slug
       layout: post
   - scope:
       path: "_posts/livros"
       type: posts
     values:
-      permalink: livros/:title
+      permalink: livros/:slug
       layout: post
   - scope:
       path: "_posts/blog"
       type: posts
     values:
-      permalink: blog/:title
+      permalink: blog/:slug
       layout: post
   - scope:
       path: "_downloads/series"
