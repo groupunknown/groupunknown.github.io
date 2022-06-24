@@ -1,0 +1,27 @@
+{
+    "seasons": [{% for season in page.seasons %}
+        {
+            "season_number": {{ season.season_number | jsonify }},
+            "season_status": {{ season.season_status | jsonify }},
+            "episodes": [{% for episode in season.episodes %}
+                {
+                    "episode_number": {{ episode.episode_number | jsonify }},
+                    "downloads": [{% for download in episode.downloads %}
+                        {
+                            "quality": {{ download.quality | jsonify }},
+                            "audio": {{ download.audio | jsonify }},
+                            "size": {{ download.size | jsonify }},
+                            "extension": {{ download.extension | jsonify }},
+                            "urls": [{% for link in download.urls %}
+                                {
+                                    "hostname": {% comment %}{{ link.hostname | jsonify }}{% endcomment %}null,
+                                    "url": {% comment %}{{ link.url | jsonify }}{% endcomment %}null
+                                }{% unless forloop.last %},{% endunless %}{% endfor %}
+                            ]
+                        }{% unless forloop.last %},{% endunless %}{% endfor %}
+                    ]
+                }{% unless forloop.last %},{% endunless %}{% endfor %}
+            ]
+        }{% unless forloop.last %},{% endunless %}{% endfor %}
+    ]
+}
