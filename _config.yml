@@ -89,6 +89,12 @@ defaults:
     values:
       permalink: blog/:title
       layout: post
+  - scope:
+      path: "_downloads/series"
+      type: downloads
+    values:
+      permalink: downloads/:title
+      layout: downloads
 
 compress_html:
   clippings: all
