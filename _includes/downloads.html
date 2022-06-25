@@ -1,45 +1,47 @@
-{% if page.category == "Séries" %}
-<div class="download-content">
-{% for season in page.seasons %}
-    <div class="season-content">
-        <div class="season-title" data-placeholder>{{ season.season_number }}ª Temporada</div>
-        <div class="season-status {% if season.season_status == 'Completo' %}badge-3{% else %}badge-9{% endif %}" data-placeholder>{{ season.season_status }}</div>
-    </div>
-    <div class="episode-content">
-        {% for episode in season.episodes %}
-        <div class="episode-title">{{ episode.episode_number | prepend: '00' | slice: -2, 2 }} – Episódio</div>
-        <div class="episode-content-options">
-            <div class="episode-main-menu">
-                <span>Qualidade</span>
-                <span>Áudio</span>
-                <span>Tamanho</span>
-                <span>Extensão</span>
-                <span>Download</span>
-            </div>
-            {% for download in episode.downloads %}
-            <div class="episode-main-download">
-                <span>{{ download.quality }}</span>
-                <span>{{ download.audio }}</span>
-                <span>{{ download.size }}</span>
-                <span>{{ download.extension }}</span>
-                <span>Opções</span>
-            </div>
-            <div class="episode-content-download">
-                {% for link in download.urls %}
-                <a href="{{ link.url }}" target="_blank">
-                    <span>
-                        <img src="https://s2.googleusercontent.com/s2/favicons?domain={{ link.url }}" />
-                    </span>
-                    <span>{{ link.hostname }}</span>
-                </a>
+{% if page.category == "Filmes" %}
+
+{% elsif page.category == "Séries" %}
+    <div class="download-content">
+    {% for season in page.seasons %}
+        <div class="season-content">
+            <div class="season-title">{{ season.season_number }}ª Temporada</div>
+            <div class="season-status {% if season.season_status == 'Completo' %}badge-3{% else %}badge-9{% endif %}">{{ season.season_status }}</div>
+        </div>
+        <div class="episode-content">
+            {% for episode in season.episodes %}
+            <div class="episode-title">{{ episode.episode_number | prepend: '00' | slice: -2, 2 }} – Episódio</div>
+            <div class="episode-content-options">
+                <div class="episode-main-menu">
+                    <span>Qualidade</span>
+                    <span>Áudio</span>
+                    <span>Tamanho</span>
+                    <span>Extensão</span>
+                    <span>Download</span>
+                </div>
+                {% for download in episode.downloads %}
+                <div class="episode-main-download">
+                    <span>{{ download.quality }}</span>
+                    <span>{{ download.audio }}</span>
+                    <span>{{ download.size }}</span>
+                    <span>{{ download.extension }}</span>
+                    <span>Opções</span>
+                </div>
+                <div class="episode-content-download">
+                    {% for link in download.urls %}
+                    <a href="{{ link.url }}" target="_blank">
+                        <span>
+                            <img src="https://s2.googleusercontent.com/s2/favicons?domain={{ link.url }}" />
+                        </span>
+                        <span>{{ link.hostname }}</span>
+                    </a>
+                    {% endfor %}
+                </div>
                 {% endfor %}
             </div>
             {% endfor %}
         </div>
-        {% endfor %}
+    {% endfor %}
     </div>
-{% endfor %}
-</div>
 {% else %}
 
 {% endif %}
