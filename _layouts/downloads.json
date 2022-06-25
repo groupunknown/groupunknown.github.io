@@ -56,5 +56,9 @@
     ]
 }
 {% else %}
-{{ page.category }}
+
 {% endif %}
+
+{{ page.category }}
+
+{{ page.downloads_modified }}
