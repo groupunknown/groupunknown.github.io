@@ -7,6 +7,12 @@ lang: pt_BR
 author: groupunknown
 google_analytics: UA-120280297-1
 
+social:
+  name: Agregador
+  links:
+    - https://twitter.com/
+    - https://www.facebook.com/
+
 webmaster_verifications:
   google: BHhjherZoAFIqjGDO05JmCzgLmKjOIr-pD8N7TYvkg8
   #bing: 
@@ -108,6 +114,7 @@ compress_html:
 
 plugins:
   - jekyll-paginate
+  - jekyll-seo-tag
   - jekyll-sitemap
 
 paginate: 10
