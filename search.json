@@ -16,6 +16,5 @@ layout: null
       "imdb_id": {{ post.imdb_id | jsonify }},
       "casts": [{% for cast in post.casts %}{{ cast | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}],
       "crews": [{% for crew in post.crews %}{{ crew | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}]
-    } {% unless forloop.last %},{% endunless %}
-  {% endfor %}
+    }{% unless forloop.last %},{% endunless %}{% endfor %}
 ]

@@ -56,7 +56,7 @@ class LiveSearchEngine extends HTMLInputElement {
                 <live-search-result-summary>
                     <live-search-result-title>`+post.title+` (`+post.release_date+`)</live-search-result-title>
                     <live-search-result-summary-row>
-                        <live-search-result-summary-parental class="bg-cert-`+post.parental+`">`+post.parental+`</live-search-result-summary-parental>
+                        <live-search-result-summary-parental class="bg-cert-`+post.certification+`">`+post.certification+`</live-search-result-summary-parental>
                         <live-search-result-summary-separator></live-search-result-summary-separator>
                         <live-search-result-summary-tmdb>
                             <svg width="16" height="16" viewBox="0 0 16 16">

@@ -357,8 +357,8 @@ live-search-result-summary {
     justify-content: center;
 }
 live-search-result-title {
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 500;
 }
 live-search-result-summary-row {
     display: flex;
