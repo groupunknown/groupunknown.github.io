@@ -3,16 +3,16 @@
 {
     "@context": "http://schema.org",
     "@type": "TVSeries",
-    "name": {{ post.title | jsonify }},
-    "image": "https://image.tmdb.org/t/p/original{{ post.poster_path }}",
-    "genre": [{% for genre in post.genres %}{{ genre | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}],
-    "description": {{ post.description | jsonify }},
+    "name": {{ page.title | jsonify }},
+    "image": "https://image.tmdb.org/t/p/original{{ page.poster_path }}",
+    "genre": [{% for genre in page.genres %}{{ genre | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}],
+    "description": {{ page.description | jsonify }},
     "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingCount": {{ post.vote_count | jsonify }},
+        "ratingCount": {{ page.vote_count | jsonify }},
         "bestRating": 10,
         "worstRating": 1,
-        "ratingValue": {{ post.vote_average | jsonify }}
+        "ratingValue": {{ page.vote_average | jsonify }}
     }
 }
 </script>
