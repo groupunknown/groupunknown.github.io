@@ -1,3 +1,33 @@
+{% if page.category == "Filmes" %}
+{
+    "downloads_modified": {{ page.downloads_modified | jsonify }},
+    "downloads": [{% for download in page.downloads %}
+        {
+            "download_title": {{ download.download_title | jsonify }},
+            "download_status": {{ download.download_status | jsonify }},
+            "episodes": [{% for option in download.download_options %}
+                {
+                    "download_text": {{ option.download_text | jsonify }},
+                    "downloads": [{% for opt_url in option.download_urls %}
+                        {
+                            "quality": {{ opt_url.quality | jsonify }},
+                            "audio": {{ opt_url.audio | jsonify }},
+                            "size": {{ opt_url.size | jsonify }},
+                            "extension": {{ opt_url.extension | jsonify }},
+                            "urls": [{% for link in opt_url.urls %}
+                                {
+                                    "hostname": {{ link.hostname | jsonify }},
+                                    "url": {{ link.url | jsonify }}
+                                }{% unless forloop.last %},{% endunless %}{% endfor %}
+                            ]
+                        }{% unless forloop.last %},{% endunless %}{% endfor %}
+                    ]
+                }{% unless forloop.last %},{% endunless %}{% endfor %}
+            ]
+        }{% unless forloop.last %},{% endunless %}{% endfor %}
+    ]
+}
+{% elsif page.category == "Séries" %}
 {
     "seasons": [{% for season in page.seasons %}
         {
@@ -25,3 +55,6 @@
         }{% unless forloop.last %},{% endunless %}{% endfor %}
     ]
 }
+{% else %}
+
+{% endif %}

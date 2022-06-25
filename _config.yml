@@ -48,11 +48,10 @@ collections:
   posts:
     output: true
     permalink: /:slug #/:year/:month/:day/:slug
-  downloads:
-    output: true # https://ognjen.io/generating-json-in-jekyll/
+  downloads: # https://ognjen.io/generating-json-in-jekyll/
+    output: true
 
-# https://talk.jekyllrb.com/t/creating-custom-permalinks-for-each-post-category/434/5
-defaults:
+defaults: # https://talk.jekyllrb.com/t/creating-custom-permalinks-for-each-post-category/434/5
   - scope:
       path: "_posts/filmes"
       type: posts
@@ -89,6 +88,12 @@ defaults:
     values:
       permalink: blog/:slug
       layout: post
+  - scope:
+      path: "_downloads/filmes"
+      type: downloads
+    values:
+      permalink: filmes/:slug/downloads
+      layout: downloads
   - scope:
       path: "_downloads/series"
       type: downloads
