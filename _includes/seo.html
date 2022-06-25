@@ -10,7 +10,6 @@
     "genre": [{% for genre in page.genres %}{{ genre | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}],
     "description": {{ page.description | jsonify }},
     "contentRating": {{ page.certification | jsonify }},
-    
     "creator": [{% for crew in page.crews %}
         {
             "@type": "Person",
@@ -30,7 +29,7 @@
         "worstRating": 1,
         "ratingValue": {{ page.vote_average | jsonify }}
     },
-    "duration": "PT{% if post.runtime <= 60 %}{{ post.runtime }}M{% else %}{{ post.runtime | divided_by: 60 | floor }}H{{ post.runtime | modulo: 60 }}M{% endif %}"
+    "duration": "PT{% if page.runtime <= 60 %}{{ page.runtime }}M{% else %}{{ page.runtime | divided_by: 60 | floor }}H{{ page.runtime | modulo: 60 }}M{% endif %}"
 }
 </script>
 {% else %}
