@@ -32,6 +32,7 @@
     },
     "duration": "PT{% if post.runtime <= 60 %}{{ post.runtime }}M{% else %}{{ post.runtime | divided_by: 60 | floor }}H{{ post.runtime | modulo: 60 }}M{% endif %}"
 }
+</script>
 {% else %}
 {% seo title=false %}
 {% endif %}
