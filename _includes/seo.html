@@ -29,7 +29,7 @@
         "worstRating": 1,
         "ratingValue": {{ page.vote_average | jsonify }}
     },
-    "duration": "PT{% if page.runtime <= 60 %}{{ page.runtime }}M{% else %}{{ page.runtime | divided_by: 60 | floor }}H{{ page.runtime | modulo: 60 }}M{% endif %}"
+    "{% if page.category == "Filmes" %}timeRequired{% elsif page.category == "Séries" %}duration{% endif %}": "PT{% if page.runtime <= 60 %}{{ page.runtime }}M{% else %}{{ page.runtime | divided_by: 60 | floor }}H{{ page.runtime | modulo: 60 }}M{% endif %}"
 }
 </script>
 {% else %}
