@@ -1,5 +1,7 @@
 ---
 layout: downloads
+category: Séries
+downloads_modified: 2022-06-24
 seasons:
   - season_number: 1
     season_status: Completo

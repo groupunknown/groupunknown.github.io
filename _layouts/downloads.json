@@ -58,7 +58,3 @@
 {% else %}
 
 {% endif %}
-
-{{ page.category }}
-
-{{ page.downloads_modified }}
