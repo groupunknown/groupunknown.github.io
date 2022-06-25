@@ -56,5 +56,5 @@
     ]
 }
 {% else %}
-
+{{ page.category }}
 {% endif %}
