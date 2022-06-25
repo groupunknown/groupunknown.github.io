@@ -49,7 +49,7 @@
 			<div class="category-count" style="--num: {{ posts.size }};"></div>
 		</btn-filter>
 		{% else %}
-		<btn-filter class="category-item {% if posts.size == 0 %}disabled{% endif %} {% if x.item == "Filmes" and page.url == "/filmes" %}selected{% endif %}{% if x.item == "Séries" and page.url == "/series" %}selected{% endif %}" data-category="{{ x.query }}" data-query="{{ y.item }}">
+		<btn-filter class="category-item {% if posts.size == 0 %}disabled{% endif %} {% if y.item == "Filmes" and page.url == "/filmes" %}selected{% endif %}{% if y.item == "Séries" and page.url == "/series" %}selected{% endif %}" data-category="{{ x.query }}" data-query="{{ y.item }}">
 			<div class="category-selector">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.8 5.2" aria-label="Tick">
 					<path d="M6.7.8L2.9 5c-.1.1-.3.2-.4.2-.1 0-.3-.1-.4-.2l-2-2c-.1-.2-.1-.5 0-.7s.5-.2.7 0L2.5 4 6 .2c.2-.2.5-.2.7 0 .2.1.2.4 0 .6z"></path>
