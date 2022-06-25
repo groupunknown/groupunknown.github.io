@@ -28,7 +28,7 @@
                 </div>
                 <div class="episode-content-download">
                     {% for link in download.urls %}
-                    <a href="{{ link.url }}" target="_blank">
+                    <a href="{{ link.url }}" rel="noopener" target="_blank">
                         <span>
                             <img src="https://s2.googleusercontent.com/s2/favicons?domain={{ link.url }}" />
                         </span>
