@@ -10,6 +10,19 @@
     "genre": [{% for genre in page.genres %}{{ genre | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}],
     "description": {{ page.description | jsonify }},
     "contentRating": {{ page.certification | jsonify }},
+    
+    "creator": [{% for crew in page.crews %}
+        {
+            "@type": "Person",
+            "name": {{ crew | jsonify }}
+        }{% unless forloop.last %},{% endunless %}{% endfor %}
+    ],
+    "actor": [{% for cast in page.casts %}
+        {
+            "@type": "Person",
+            "name": {{ cast | jsonify }}
+        }{% unless forloop.last %},{% endunless %}{% endfor %}
+    ],
     "aggregateRating": {
         "@type": "AggregateRating",
         "ratingCount": {{ page.vote_count | jsonify }},
@@ -17,18 +30,7 @@
         "worstRating": 1,
         "ratingValue": {{ page.vote_average | jsonify }}
     },
-    "creator": [{% for crew in page.crews %}
-        {
-            "@type": "Person",
-            "name": {{ crew | jsonify }}
-        }{% unless forloop.last %},{% endunless %}{% endfor %}
-    ]
-    "actor": [{% for cast in page.casts %}
-        {
-            "@type": "Person",
-            "name": {{ cast | jsonify }}
-        }{% unless forloop.last %},{% endunless %}{% endfor %}
-    ]
+    "duration": "PT{% if post.runtime <= 60 %}{{ post.runtime }}M{% else %}{{ post.runtime | divided_by: 60 | floor }}H{{ post.runtime | modulo: 60 }}M{% endif %}"
 }
 {% else %}
 {% seo title=false %}
