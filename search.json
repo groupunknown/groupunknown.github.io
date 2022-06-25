@@ -4,10 +4,11 @@ layout: null
 [
   {% for post in site.posts %}
     {
-      "title": {{ post.title | jsonify }},
       "url": "{{ site.baseurl }}{{ post.url }}",
       "date": {{ post.date | jsonify }},
+      "title": {{ post.title | jsonify }},
       "poster": {{ post.poster_path | jsonify }},
+      "category": {{ post.category | jsonify }},
       "release_date": {{ post.release_date | jsonify }},
       "runtime": "{% if post.runtime <= 60 %}{{ post.runtime }}min{% else %}{{ post.runtime | divided_by: 60 | floor }}h {{ post.runtime | modulo: 60 }}min{% endif %}",
       "certification": {{ post.certification | jsonify }},

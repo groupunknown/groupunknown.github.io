@@ -15,16 +15,6 @@ var authors = (function() {
     });
     return result_authors.items;
 })();
-customElements.define("header-mobile", class extends HTMLElement {
-    constructor() {
-        super();
-        this.addEventListener("click", e => {
-            this.classList.toggle("active");
-            this.previousElementSibling.classList.toggle("active");
-            this.nextElementSibling.classList.toggle("active");
-        });
-    }
-});
 customElements.define("btn-stash", class extends HTMLElement {
     constructor() {
         super();

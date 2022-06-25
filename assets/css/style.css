@@ -383,6 +383,7 @@ live-search-result-summary-parental {
     font-size: 11px;
     font-weight: 500;
     color: #fff;
+    opacity: .9;
 }
 live-search-result-summary-separator {
     display: flex;
@@ -398,6 +399,7 @@ live-search-result-summary-runtime {
 }
 live-search-result-summary-tmdb {
     display: flex;
+    align-items: center;
     gap: 0.25rem;
 }
 live-search-result-empty {
