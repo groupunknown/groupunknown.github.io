@@ -11,7 +11,7 @@
         "genre": [{% for genre in page.genres %}{{ genre | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}],
         "description": {{ page.description | jsonify }},
         "contentRating": {{ page.certification | jsonify }},
-        "creator": [{% for crew in page.crews %}
+        "director": [{% for crew in page.crews %}
             {
                 "@type": "Person",
                 "name": {{ crew | jsonify }}
@@ -45,7 +45,7 @@
             "@type": "ListItem",
             "position": 2,
             "name": "Página de {{ page.category }}",
-            "item": "{{ site.url }}{{ page.category | slugify: "latin" }}"
+            "item": "{{ site.url }}/{{ page.category | slugify: "latin" }}"
         },
         {
             "@type": "ListItem",
