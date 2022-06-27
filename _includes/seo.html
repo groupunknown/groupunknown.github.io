@@ -65,7 +65,7 @@
             "@type": "ListItem",
             "position": 3,
             "name": {{ page.title | jsonify }},
-            "item": "{{ site.url }}{{ page.url }}"
+            "item": "{{ page.url | absolute_url }}"
         }]
     }
 ]
