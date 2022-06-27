@@ -468,6 +468,9 @@ nav a.active {
     background: var(--link-background);
     transition: background .2s ease-in;
 }
+nav a.active {
+    pointer-events: none;
+}
 nav a:nth-child(1) {
     --link-color:#ad3;
     --link-background:rgba(170,221,51,.1);
