@@ -282,8 +282,7 @@ header.taxonomy {
     max-width: 1100px;
     justify-items: flex-start;
 }
-header-logo,
-header-logo a img {
+header-logo {
     width: 140px;
     height: 40px;
 }
