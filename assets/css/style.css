@@ -1283,6 +1283,9 @@ slider-banner a.active{
     }
 }
 @media screen and (max-width: 425px) {
+    nav {
+        flex-direction: column;
+    }
     .filter-results-items {
         flex-direction: column;
         gap: 1rem;
