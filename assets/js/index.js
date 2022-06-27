@@ -242,7 +242,7 @@ class Filter extends HTMLElement {
                                     <div class="summary-average-text">`+is.FilterTemplateRating_c(item.vote_average)+`</div>
                                     <div class="summary-rating-text">`+ is.FilterTemplateVoteCount(item.vote_count) +`</div>
                                 </div>
-                                <div class="parental-rating bg-cert-`+item.certification+`" aria-label="`+ is.FilterTemplateParental(item.certification) +`" data-tooltipped="top-right">`+item.certification+`</div>
+                                <div class="parental-rating bg-cert-`+item.certification+`" tooltipped-label="`+ is.FilterTemplateParental(item.certification) +`" data-tooltipped="top-right">`+item.certification+`</div>
                             </div>
                         </div>
                     </div>
