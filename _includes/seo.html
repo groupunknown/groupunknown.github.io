@@ -7,12 +7,11 @@
 <meta property="og:title" content="{{ page.title }}" />
 <meta property="og:description" content="{{ page.description }}" />
 <meta property="og:image" content="https://image.tmdb.org/t/p/original{{ page.poster_path }}" />
-<meta property="og:url" content="{{ site.baseurl }}{{ page.url }}" />
+<meta property="og:url" content="{{ page.url | absolute_url }}" />
 <meta property="og:site_name" content="{{ site.site }}" />
-<meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:image:alt" content="{{ page.description }}">
 <meta property="twitter:title" content="{{ page.title }}" />
+<meta name="twitter:image:alt" content="{{ page.description }}">
 <meta name="google-site-verification" content="{{ site.webmaster_verifications.google }}" />
 <script type="application/ld+json">
 [
