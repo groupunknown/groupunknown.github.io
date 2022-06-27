@@ -208,21 +208,21 @@ class Filter extends HTMLElement {
                                     <div>Diretor:</div>
                                     <div class="item-comma">`;
                                         item.crews.forEach((crew) => {
-                                            results += `<a href="/diretor?crews=`+ crew +`">`+ crew +`</a>`;
+                                            results += `<span>`+ crew +`</span>`;
                                         });
                                     results += `</div></div>
                                 <div class="summary-cast">
                                     <div>Elenco:</div>
                                     <div class="item-comma">`;
                                         item.casts.forEach((cast) => {
-                                            results += `<a href="/genero?casts=`+ cast +`">`+ cast +`</a>`;
+                                            results += `<span>`+ cast +`</span>`;
                                         });
                                     results += `</div></div>
                                 <div class="summary-genre">
                                     <div>Gênero:</div>
                                     <div class="item-comma">`;
                                         item.genres.forEach((genre) => {
-                                            results += `<a href="/genero?genres=`+ genre +`">`+ genre +`</a>`;
+                                            results += `<span>`+ genre +`</span>`;
                                         });
                                     results += `</div></div>
                                 <div class="summary-runtime">
@@ -239,12 +239,10 @@ class Filter extends HTMLElement {
                                             <text x="50%" y="55%" dominant-baseline="middle" stroke="none" text-anchor="middle">`+ is.FilterTemplateRating_b(item.vote_average) +`</text>
                                         </svg>
                                     </div>
-                                    <a href="/avaliacoes?vote_average=excelente">`+is.FilterTemplateRating_c(item.vote_average)+`</a>
+                                    <div class="summary-average-text">`+is.FilterTemplateRating_c(item.vote_average)+`</div>
                                     <div class="summary-rating-text">`+ is.FilterTemplateVoteCount(item.vote_count) +`</div>
                                 </div>
-                                <div class="parental-rating bg-cert-`+item.certification+`" aria-label="`+ is.FilterTemplateParental(item.certification) +`" data-tooltipped="top-right">
-                                    <a href="/classificacao?certification=`+item.certification+`">`+item.certification+`</a>
-                                </div>
+                                <div class="parental-rating bg-cert-`+item.certification+`" aria-label="`+ is.FilterTemplateParental(item.certification) +`" data-tooltipped="top-right">`+item.certification+`</div>
                             </div>
                         </div>
                     </div>
@@ -253,21 +251,21 @@ class Filter extends HTMLElement {
                             <div>Qualidade:</div>
                             <div class="item-comma">`;
                                 item.qualitys.forEach((quality) => {
-                                    results += `<a href="/qualidade?qualitys=`+ quality +`">`+ quality +`</a>`;
+                                    results += `<span>`+ quality +`</span>`;
                                 });
                                 results += `</div></div>
                         <div>
                             <div>Àudio:</div>
                             <div class="item-comma">`;
                                 item.audios.forEach((audio) => {
-                                    results += `<a href="/audio?audios=`+ audio +`">`+ audio +`</a>`;
+                                    results += `<span>`+ audio +`</span>`;
                                 });
                                 results += `</div></div>
                         <div>
                             <div>Extensão:</div>
                             <div class="item-comma">`;
                                 item.extensions.forEach((extension) => {
-                                    results += `<a href="/extensao?extensions=`+ extension +`">`+ extension +`</a>`;
+                                    results += `<span>`+ extension +`</span>`;
                                 });
                                 results += `</div></div>
                     </div>
