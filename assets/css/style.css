@@ -1208,6 +1208,9 @@ slider-banner a.active{
         grid-auto-flow: dense;
         padding: 0 2rem;
     }
+    header.taxonomy {
+        justify-items: center;
+    }
     live-search,
     nav {
         display: none;
