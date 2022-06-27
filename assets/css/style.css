@@ -5,7 +5,6 @@ body.theme-light {
     --sub-background: #fff;
     --search-background: #fcfcfc;
     --border-color: #efefef;
-    --box-shadow: none;
     --icon-fill: #454d54;
     --icon-fill-hover: #22262a;
     --lazyload-1: #f9fafa;
@@ -26,7 +25,6 @@ body.theme-dark {
     --sub-background: #2d333b;
     --search-background: #3d444b;
     --border-color: #373e47;
-    --box-shadow: 0 0 10px rgb(0 0 0 / 25%);
     --icon-fill: #abb3ba;
     --icon-fill-hover: #e2e6e9;
     --lazyload-1: #2f3234;
@@ -263,7 +261,7 @@ header-sticky {
     padding: .5rem 0;
     justify-content: center;
     background: var(--background);
-    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 3px 6px 3px rgb(0 0 0 / 10%);
     margin-bottom: 2rem;
 }
 header-observe {
@@ -555,7 +553,6 @@ article-author {
     min-height: 225px;
     border: 1px solid var(--border-color);
     background: var(--sub-background);
-    box-shadow: var(--box-shadow);
     border-radius: 4px;
     padding: 0.75rem;
 }
@@ -776,8 +773,6 @@ article:nth-of-type(even) article-author:before {
     font-weight: 500;
     border-radius: 3px;
     user-select: none;
-}
-.parental-rating a {
     color: #fff;
 }
 .bg-cert-L {
@@ -814,7 +809,7 @@ article:nth-of-type(even) article-author:before {
     max-height: 42px;
 }
 .summary-rating svg,
-.summary-rating a {
+.summary-rating .summary-average-text {
     color: var(--rating-color);
     stroke: var(--rating-color);
     fill: var(--rating-color);

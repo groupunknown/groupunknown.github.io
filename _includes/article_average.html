@@ -54,6 +54,6 @@ Nenhuma avaliação
 			<text x="50%" y="55%" dominant-baseline="middle" stroke="none" text-anchor="middle">{{ status_num | strip }}</text>
 		</svg>
 	</div>
-	<a href="/avaliacoes?vote_average={{status_text | slugify: "latin"}}">{{ status_text | strip }}</a>
+	<div class="summary-average-text">{{ status_text | strip }}</div>
 	<div class="summary-rating-text">{{ rating | strip }}</div>
 </div>
