@@ -270,10 +270,12 @@ header-observe {
     display: none;
 }
 header {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto 1fr auto;
+    place-items: center;
+    grid-auto-flow: dense;
     width: 100%;
-    max-width: 1100px;
-    justify-content: flex-start;
+    max-width: 768px;
     gap: 1rem;
 }
 header-logo,
@@ -408,7 +410,7 @@ live-search-result-empty {
     text-align: center;
 }
 header-mobile {
-    display: none;
+    display: grid;
     place-items: center;
     min-height: 30px;
     user-select: none;
@@ -433,8 +435,12 @@ header-mobile.active span:nth-child(3) {
     transform: translateY(-10px) rotate(-45deg);
 }
 nav {
-    display: flex;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
     gap: 0.25rem;
+    width: 100%;
+    grid-column-end: span 4;
 }
 nav.active {
     display: flex;
@@ -443,9 +449,10 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 600;
-    padding: 0 0.875rem;
+    width: 100%;
+    padding: 0.75rem 1rem;
     border-radius: 0.25rem;
+    font-weight: 600;
     color: var(--link-color);
     transition: background .5s ease-in;
     cursor: pointer;
@@ -499,6 +506,7 @@ main {
     width: 100%;
     max-width: 768px;
     min-height: 100vh;
+    margin: auto;
     gap: 3rem;
 }
 .nav-items {
@@ -1205,9 +1213,6 @@ slider-banner a.active{
         display: flex;
         grid-column-end: span 3;
         width: 100%;
-    }
-    header-mobile {
-        display: grid;
     }
     nav a {
         width: 100%;
