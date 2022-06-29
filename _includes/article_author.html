@@ -4,6 +4,7 @@
 {% assign postings = post %}
 {% endif %}
 <article-author>
+	{% assign author_check = 0 %}
 	{% for author in site.data.authors %}
    	{% if author.name == postings.author %}
    	{% assign rank = author.role %}
@@ -22,6 +23,7 @@
 	administrador
 	{% endif %}
 	{% endcapture %}
+	{% assign author_check = author_check | plus:1 %}
 	<div class="author-avatar">
 		<img src="{{ site.baseurl }}{{ author.avatar }}" alt="{{ author.name }}" loading="lazy">
 	</div>
@@ -46,6 +48,8 @@
 		</div>
 	</div>
 	{% endif %}
+	{% endfor %}
+	{% if author_check != 0 %}
 	<div class="author-avatar">
 		<img src="{{ site.baseurl }}/assets/img/authors/unknown.gif" alt="???" loading="lazy">
 	</div>
@@ -69,5 +73,5 @@
 			<span class="author-infor-count"></span>
 		</div>
 	</div>
-	{% endfor %}
+	{% endif %}
 </article-author>
