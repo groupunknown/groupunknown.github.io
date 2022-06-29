@@ -1,6 +1,6 @@
 ---
 layout: post
-author: heisenberg
+author: Heisenberg
 category: Séries
 post_date: 2022-06-29
 post_modified: 2022-06-29
