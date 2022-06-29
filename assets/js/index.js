@@ -40,13 +40,13 @@ class Filter extends HTMLElement {
         });
     }
     initFilter = () => {
-        var is = this,
-            terms = this.mergeKeysAndValuesOneObj(),
-            sort_order = this.FilterMultipleQuery(posts, terms),
-            results = this.FilterMultipleQuerySort(sort_order),
+        var _ = this,
+            terms = _.mergeKeysAndValuesOneObj(),
+            sort_order = _.FilterMultipleQuery(posts, terms),
+            results = _.FilterMultipleQuerySort(sort_order),
             btn_reset = document.querySelector("filter-reset"),
             number_status = document.querySelector("filter-status"),
-            number_text = this.pluralizeWord("Nenhum resultado encontrado", " resultado encontrado", " resultados encontrados", results.length);
+            number_text = _.pluralizeWord("Nenhum resultado encontrado", " resultado encontrado", " resultados encontrados", results.length);
             (results.length === 0) ? number_status.classList.add("empty") : number_status.classList.remove("empty");
             number_status.innerHTML = number_text;
             (Object.keys(terms).length === 0) ? btn_reset.classList.add("selected") : btn_reset.classList.remove("selected");
@@ -55,7 +55,7 @@ class Filter extends HTMLElement {
             dataSource: results,
             pageSize: 10,
             callback: function(data, pagination) {
-                var html = is.FilterTemplate(data);
+                var html = _.FilterTemplate(data);
                 $(".filter-results").html(html);
             },
             afterRender: function() {
@@ -157,7 +157,7 @@ class Filter extends HTMLElement {
         if (Object.keys(posts).length === 0) {
             return "<article>Nenhum resultado encontrado.</article>"
         }
-        var results = "", is = this;
+        var results = "", _ = this;
         posts.forEach(function(item) {
             results += `<article>
                 <article-author>`;
@@ -167,7 +167,7 @@ class Filter extends HTMLElement {
                         <img src="https://groupunknown.com`+author.avatar+`" alt="`+author.name+`" loading="lazy">
                     </div>
                     <div class="author-name">`+author.name+`</div>
-                    <div class="author-role role-`+author.role+`">`+is.FilterTemplateRole(author.role)+`</div>
+                    <div class="author-role role-`+author.role+`">`+_.FilterTemplateRole(author.role)+`</div>
                     <div class="author-infor">
                         <div>
                             <span>Juntou-se:</span>
@@ -191,7 +191,7 @@ class Filter extends HTMLElement {
                 results += `</article-author>
                 <article-summary class="summary">
                     <div class="summary-header">
-                        <div>`+ is.FilterTemplateDate(item.post_date, item.post_modified) +`</div>
+                        <div>`+ _.FilterTemplateDate(item.post_date, item.post_modified) +`</div>
                         <div>`+ item.category +`</div>
                     </div>
                     <div class="summary-content">
@@ -201,7 +201,7 @@ class Filter extends HTMLElement {
                         <div class="summary-summary">
                             <div class="summary-column">
                                 <h2 class="summary-title">
-                                    <a href="/`+is.slugifyString(item.category)+"/"+is.slugifyString(item.title)+`">`+ item.title +`</a>
+                                    <a href="/`+_.slugifyString(item.category)+"/"+_.slugifyString(item.title)+`">`+ item.title +`</a>
                                 </h2>
                                 <div class="summary-synopsis item-scroll">`+ item.description +`</div>
                                 <div class="summary-crew">
@@ -227,22 +227,22 @@ class Filter extends HTMLElement {
                                     results += `</div></div>
                                 <div class="summary-runtime">
                                     <div>Duração:</div>
-                                    <div>`+ is.FilterTemplateMinConvert(item.runtime) +`</div>
+                                    <div>`+ _.FilterTemplateMinConvert(item.runtime) +`</div>
                                 </div>
                             </div>
                             <div class="summary-row">
-                                <div class="summary-rating" style="`+is.filterTemplateRatingStyle(item.vote_average)+`">
+                                <div class="summary-rating" style="`+_.filterTemplateRatingStyle(item.vote_average)+`">
                                     <div class="summary-average">
                                         <svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" opacity=".5" stroke-width="4" fill="none"></path>
-                                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" stroke-dasharray="`+ is.FilterTemplateRating_a(item.vote_average) +`, 100" stroke-width="4" fill="none" stroke-linecap="round"></path>
-                                            <text x="50%" y="55%" dominant-baseline="middle" stroke="none" text-anchor="middle">`+ is.FilterTemplateRating_b(item.vote_average) +`</text>
+                                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" stroke-dasharray="`+ _.FilterTemplateRating_a(item.vote_average) +`, 100" stroke-width="4" fill="none" stroke-linecap="round"></path>
+                                            <text x="50%" y="55%" dominant-baseline="middle" stroke="none" text-anchor="middle">`+ _.FilterTemplateRating_b(item.vote_average) +`</text>
                                         </svg>
                                     </div>
-                                    <div class="summary-average-text">`+is.FilterTemplateRating_c(item.vote_average)+`</div>
-                                    <div class="summary-rating-text">`+ is.FilterTemplateVoteCount(item.vote_count) +`</div>
+                                    <div class="summary-average-text">`+_.FilterTemplateRating_c(item.vote_average)+`</div>
+                                    <div class="summary-rating-text">`+ _.FilterTemplateVoteCount(item.vote_count) +`</div>
                                 </div>
-                                <div class="parental-rating bg-cert-`+item.certification+`" tooltipped-label="`+ is.FilterTemplateParental(item.certification) +`" data-tooltipped="top-right">`+item.certification+`</div>
+                                <div class="parental-rating bg-cert-`+item.certification+`" tooltipped-label="`+ _.FilterTemplateParental(item.certification) +`" data-tooltipped="top-right">`+item.certification+`</div>
                             </div>
                         </div>
                     </div>
