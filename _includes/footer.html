@@ -35,6 +35,15 @@
     </script>
     {% endif %}
 {% endif %}
+{% if site.google_analytics_status %}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ site.google_analytics }}');
+</script>
+{% endif %}
 <script>
 purejscarousel = (el, ms = 4000) => {
     var c = 0, n = el.length - 1;

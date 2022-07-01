@@ -6,6 +6,7 @@ tagline: Download de Filmes, Séries, Músicas, Jogos, Livros e muito mais...
 lang: pt_BR
 author: groupunknown
 google_analytics: UA-120280297-1
+google_analytics_status: false
 
 social:
   name: Agregador
