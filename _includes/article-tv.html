@@ -1,0 +1,218 @@
+<article>
+	<article-author>
+	{% assign author_check = 0 %}
+	{% for author in site.data.authors %}
+   	{% if author.name == post.author %}
+   	{% assign rank = author.role %}
+	{% capture role %}{% if rank == 0 %}estagiário{% elsif rank == 1 %}autor{% elsif rank == 2 %}suporte{% elsif rank == 3 %}editor{% elsif rank == 4 %}moderador{% elsif rank == 5 %}administrador{% endif %}{% endcapture %}
+	{% assign author_check = author_check | plus:1 %}
+	<div class="author-avatar">
+		<img src="{{ site.baseurl }}{{ author.avatar }}" alt="{{ author.name }}" loading="lazy">
+	</div>
+	<div class="author-name">{{ author.name }}</div>
+	<div class="author-role role-{{ author.role }}">{{ role | slugify: "latin" }}</div>
+	<div class="author-infor">
+		<div>
+			<span>Juntou-se:</span>
+			<span>{{ author.joined }}</span>
+		</div>
+		<div>
+			<span>Publicações:</span>{% assign author_posts = site.posts | where: "author", author.name %}
+			<span class="author-infor-count" style="--num:{{ author_posts.size }};"></span>
+		</div>
+		<div>
+			<span>Filmes:</span>{% assign movies = site.posts | where: "author", author.name | where: "category", "Filmes" %}
+			<span class="author-infor-count" style="--num:{{ movies.size }};"></span>
+		</div>
+		<div>
+			<span>Séries:</span>{% assign series = site.posts | where: "author", author.name | where: "category", "Séries" %}
+			<span class="author-infor-count" style="--num:{{ series.size }};"></span>
+		</div>
+	</div>
+	{% endif %}
+	{% endfor %}
+	{% if author_check == 0 %}
+	<div class="author-avatar">
+		<img src="{{ site.baseurl }}/assets/img/authors/unknown.gif" alt="???" loading="lazy">
+	</div>
+	<div class="author-name">???</div>
+	<div class="author-role role-4">???</div>
+	<div class="author-infor">
+		<div>
+			<span>Juntou-se:</span>
+			<span>∞</span>
+		</div>
+		<div>
+			<span>Publicações:</span>
+			<span class="author-infor-count"></span>
+		</div>
+		<div>
+			<span>Filmes:</span>
+			<span class="author-infor-count"></span>
+		</div>
+		<div>
+			<span>Séries:</span>
+			<span class="author-infor-count"></span>
+		</div>
+	</div>
+	{% endif %}
+	</article-author>
+	<article-summary class="summary">
+		<div class="summary-header">
+			<div>{% assign months = "janeiro, fevereiro, março, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro" | split: "," %}
+			{% if post.post_date == post.post_modified %}
+			{% assign month_number = post.post_date | date: "%-m" | minus: 1 %}
+			Adicionado em {{ post.post_date | date: "%-d" }} de {{ months[month_number] }} de {{ post.post_date | date: "%Y" }}
+			{% else %}
+			{% assign month_number = post.post_modified | date: "%-m" | minus: 1 %}
+			Atualizado em {{ post.post_modified | date: "%-d" }} de {{ months[month_number] }} de {{ post.post_modified | date: "%Y" }}
+			{% endif %}</div>
+			<div>{{ post.category }}</div>
+		</div>
+		<div class="summary-content">
+			<div class="summary-poster">
+                <img src="https://image.tmdb.org/t/p/{{ site.article_size_img_home }}{{ post.poster_path }}" alt="{{ post.title }}" {% if forloop.first %}{% else %}loading="lazy"{% endif %}>
+            </div>
+			<div class="summary-summary">
+				<div class="summary-column">
+					<h2 class="summary-title">
+						<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    </h2>
+                    <div class="summary-synopsis item-scroll">{{ post.description }}</div>
+					<div class="summary-crew">
+						<div>Diretor:</div>
+						<div class="item-comma">
+							{% for crew in post.crews %}
+							<span>{{ crew }}</span>
+							{% endfor %}
+						</div>
+					</div>
+					<div class="summary-cast">
+						<div>Elenco:</div>
+						<div class="item-comma">
+							{% for cast in post.casts %}
+							<span>{{ cast }}</span>
+							{% endfor %}
+						</div>
+					</div>
+					<div class="summary-genre">
+						<div>Gênero:</div>
+						<div class="item-comma">
+							{% for genre in post.genres %}
+							<span>{{ genre }}</span>
+							{% endfor %}
+						</div>
+					</div>
+					<div class="summary-runtime">
+						<div>Duração:</div>
+						{% if post.runtime <= 60 %}
+						<div>{{ post.runtime }}min</div>
+						{% else %}
+						<div>{{ post.runtime | divided_by: 60 | floor }}h {{ post.runtime | modulo: 60 }}min</div>
+						{% endif %}
+					</div>
+				</div>
+				<div class="summary-row">
+					{% assign vote_average = post.vote_average | remove: "." %}
+					{% assign pessimo = "10,11,12,13,14,15,16,17,18,19,20" | split: ',' %}
+					{% assign ruim = "21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40" | split: ',' %}
+					{% assign aceitavel = "41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60" | split: ',' %}
+					{% assign otimo = "61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80" | split: ',' %}
+					{% assign execelente = "81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100" | split: ',' %}
+					{% if pessimo contains vote_average %}
+					{% assign status_text = "Péssimo" %}
+					{% assign hex_color = "#ff3722" %}
+					{% elsif ruim contains vote_average %}
+					{% assign status_text = "Ruim" %}
+					{% assign hex_color = "#ff8622" %}
+					{% elsif aceitavel contains vote_average %}
+					{% assign status_text = "Aceitável" %}
+					{% assign hex_color = "#ffce00" %}
+					{% elsif otimo contains vote_average %}
+					{% assign status_text = "Ótimo" %}
+					{% assign hex_color = "#73cf11" %}
+					{% elsif execelente contains vote_average %}
+					{% assign status_text = "Excelente" %}
+					{% assign hex_color = "#4aa757" %}
+					{% else %}
+					{% assign status_text = "Nenhum" %}
+					{% assign hex_color = "#dee0ec" %}
+					{% endif %}
+					{% if vote_average contains "100" %}
+					{% assign status_num = "10" %}
+					{% endif %}
+					{% if vote_average == "00" %}
+					{% assign status_num = "N/A" %}
+					{% endif %}
+					{% if vote_average != "00" and vote_average != "100" %}
+					{% assign status_num = post.vote_average %}
+					{% endif %}
+					{% capture rating %}
+					{% if post.vote_count == 0 %}
+					Nenhuma avaliação
+					{% elsif post.vote_count <= 1 %}
+					{{post.vote_count}} avaliação
+					{% elsif post.vote_count >= 2 %}
+					{{post.vote_count}} avaliações
+					{% endif %}
+					{% endcapture %}
+					<div class="summary-rating" style="--rating-color:{{ hex_color }}">
+						<div class="summary-average">
+							<svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+								<path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" opacity=".5" stroke-width="4" fill="none"></path>
+								<path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" stroke-dasharray="{{ vote_average | strip }}, 100" stroke-width="4" fill="none" stroke-linecap="round"></path>
+								<text x="50%" y="55%" dominant-baseline="middle" stroke="none" text-anchor="middle">{{ status_num | strip }}</text>
+							</svg>
+						</div>
+						<div class="summary-average-text">{{ status_text | strip }}</div>
+						<div class="summary-rating-text">{{ rating | strip }}</div>
+					</div>
+					{% capture crtfctn_text %}
+					{% if post.certification == "L" %}
+					LIVRE PARA TODOS OS PÚBLICOS
+					{% elsif post.certification == 10 %}
+					NÃO RECOMENDADO PARA MENORES DE DEZ ANOS
+					{% elsif post.certification == 12 %}
+					NÃO RECOMENDADO PARA MENORES DE DOZE ANOS
+					{% elsif post.certification == 14 %}
+					NÃO RECOMENDADO PARA MENORES DE CATORZE ANOS
+					{% elsif post.certification == 16 %}
+					NÃO RECOMENDADO PARA MENORES DE DEZESSEIS ANOS
+					{% elsif post.certification == 18 %}
+					NÃO RECOMENDADO PARA MENORES DE DEZOITO ANOS
+					{% else %}
+					INDISPONÍVEL
+					{% endif %}
+					{% endcapture %}
+					<div class="parental-rating bg-cert-{{ post.certification | strip }}" tooltipped-label="{{ crtfctn_text | strip }}" data-tooltipped="top-right">{{ post.certification | strip }}</div>
+				</div>
+			</div>
+		</div>
+		<div class="summary-footer">
+			<div>
+				<div>Qualidade:</div>
+				<div class="item-comma">
+					{% for quality in post.qualitys %}
+					<span>{{ quality }}</span>
+					{% endfor %}
+				</div>
+			</div>
+			<div>
+				<div>Áudio:</div>
+				<div class="item-comma">
+					{% for audio in post.audios %}
+					<span>{{ audio }}</span>
+					{% endfor %}
+				</div>
+			</div>
+			<div>
+				<div>Extensão:</div>
+				<div class="item-comma">
+					{% for extension in post.extensions %}
+					<span>{{ extension }}</span>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</article-summary>
+</article>
