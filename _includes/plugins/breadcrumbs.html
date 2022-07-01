@@ -13,3 +13,12 @@
     / <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
   {% endif %}
 {% endfor %}
+
+
+<div class="breadcrumbs">
+	<a href="{{ site.baseurl }}">Página Inicial</a>
+	<span>/</span>
+	<a href="{{ site.baseurl }}/{{ post.category | slugify }}">{{ post.category }}</a>
+	<span>/</span>
+	<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+</div>
