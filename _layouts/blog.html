@@ -6,6 +6,21 @@ layout: default
 		Right
 	</div>
 	<div class="container">
-		Center
+		<div class="blog-channel">
+			<div class="blog-channel-col">
+				<div class="blog-channel-title">Blog da equipe {{ site.title }}</div>
+				<div class="blog-channel-description">{{ site.description }}</div>
+				<div class="blog-channel-row">
+					<div class="blog-channel-col">{% assign blog_count = site.posts | where: "category", "Blog" %}
+						<div class="blog-channel-postings">{{ blog_count.size }}</div>
+						<div class="blog-channel-description">total de publicações</div>
+					</div>
+				</div>
+			</div>
+			<div class="blog-channel-col">
+				<img src="{{ site.baseurl }}/assets/img/authors/unknown.gif" alt="???" loading="lazy">
+			</div>
+		</div>
+
 	</div>
 </main>
