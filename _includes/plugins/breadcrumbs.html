@@ -16,9 +16,9 @@
 
 
 <div class="breadcrumbs">
-	<a href="{{ site.baseurl }}">Página Inicial</a>
+	<a href="{{ site.url }}">Página Inicial</a>
 	<span>/</span>
-	<a href="{{ site.baseurl }}/{{ page.category | slugify }}">{{ page.category }}</a>
+	<a href="{{ site.baseurl }}/{{ page.category | slugify: "latin" }}">{{ page.category }}</a>
 	<span>/</span>
 	<a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
 </div>
