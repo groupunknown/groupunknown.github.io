@@ -1,4 +1,4 @@
 ---
-layout: page
+layout: blog
 title: Blog – Coming soon!
 ---

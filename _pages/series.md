@@ -1,4 +1,4 @@
 ---
-layout: taxonomy
+layout: tv
 title: Séries
 ---
