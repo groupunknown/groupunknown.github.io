@@ -1513,8 +1513,9 @@ aside-highlights-items a:nth-child(10) {
 .blog-channel-row img {
     border-radius: 6px;
 }
-.blog-channel-result:hover .blog-channel-row img {
-    filter: grayscale(1);
+.blog-channel-result-author {
+    gap: .5rem;
+    line-height: 1.2;
 }
 .blog-channel-result-an {
     font-weight: 700;
@@ -1542,7 +1543,4 @@ aside-highlights-items a:nth-child(10) {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-}
-.blog-channel-result .blog-channel-col .blog-channel-col {
-    line-height: 1.2;
 }
