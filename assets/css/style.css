@@ -1504,12 +1504,13 @@ aside-highlights-items a:nth-child(10) {
 .blog-channel-title {
     font-size: 1.75rem;
     font-weight: 700;
+    text-align: center;
 }
 .blog-channel-description {
     font-style: italic;
     opacity: .7;
+    text-align: center;
 }
-
 .blog-channel-row img {
     border-radius: 6px;
 }
