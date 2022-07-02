@@ -1,24 +1,24 @@
 - name: Heisenberg
   joined: 2018
   role: 5 # Administrador
-  avatar: /assets/img/authors/heisenberg.webp
+  avatar: /assets/img/authors/heisenberg/100x100.webp
 - name: Hannibal Lecter
   joined: 2019
   role: 4 # Moderador
-  avatar: /assets/img/authors/hannibal_lecter.webp
+  avatar: /assets/img/authors/hannibal_lecter/100x100.webp
 - name: Pennywise
   joined: 2020
   role: 3 # Editor
-  avatar: /assets/img/authors/pennywise.webp
+  avatar: /assets/img/authors/pennywise/100x100.webp
 - name: Voldemort
   joined: 2021
   role: 2 # Suporte
-  avatar: /assets/img/authors/voldemort.webp
+  avatar: /assets/img/authors/voldemort/100x100.webp
 - name: Rick Grimes
   joined: 2022
   role: 1 # Autor
-  avatar: /assets/img/authors/rick_grimes.webp
+  avatar: /assets/img/authors/rick_grimes/100x100.webp
 - name: Unknown
   joined: 2022
   role: 0 # Estagiário
-  avatar: /assets/img/authors/unknown.webp
+  avatar: /assets/img/authors/unknown.gif

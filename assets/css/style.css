@@ -1535,7 +1535,8 @@ aside-highlights-items a:nth-child(10) {
     line-height: 1;
     font-weight: 700;
 }
-.blog-channel-result-t, .blog-channel-result-d {
+.blog-channel-result-t,
+.blog-channel-result-d {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
