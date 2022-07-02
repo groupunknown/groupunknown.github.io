@@ -1509,3 +1509,39 @@ aside-highlights-items a:nth-child(10) {
     font-style: italic;
     opacity: .7;
 }
+
+.blog-channel-row img {
+    border-radius: 6px;
+}
+.blog-channel-result:hover .blog-channel-row img {
+    filter: grayscale(1);
+}
+.blog-channel-result-an {
+    font-weight: 700;
+}
+.blog-channel-result-ac,
+.blog-channel-result-dt {
+    font-size: .875rem;
+    font-weight: 300;
+}
+.blog-channel-result-d {
+    line-height: 1.3;
+}
+.blog-channel-result > .blog-channel-col {
+    gap: .25rem;
+}
+.blog-channel-result-t {
+    font-size: 1.875rem;
+    line-height: 1;
+    font-weight: 700;
+}
+.blog-channel-result-t, .blog-channel-result-d {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.blog-channel-result .blog-channel-col .blog-channel-col {
+    line-height: 1.2;
+}
