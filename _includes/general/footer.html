@@ -99,3 +99,12 @@ customElements.define("header-mobile", class extends HTMLElement {
         </g>
     </symbol>
 </svg>
+<script>
+    let ad = document.createElement("div");
+    ad.className = "textads banner-ads banner_ads ad-unit ad-zone ad-space adsbox ads pub_300x250 pub_300x250m pub_728x90 text-ad textAd text_ad text_ads text-ads text-ad-links";
+    ad.style.height = "1px";
+    document.body.appendChild(ad);
+    let w = ad.offsetHeight;
+    let r = (w) ? "AdBlocker detectado!" : "AdBlocker não detectado!";
+    console.log(r);
+</script>
