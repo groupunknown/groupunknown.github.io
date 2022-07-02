@@ -1536,7 +1536,8 @@ aside-highlights-items a:nth-child(10) {
 .blog-channel-result-a span {
     font-weight: 700;
 }
+.blog-channel-result-a,
 .blog-channel-result-dt {
     font-size: .875rem;
-    font-weight: 300;
+    font-weight: 400;
 }
