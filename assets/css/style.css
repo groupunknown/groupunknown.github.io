@@ -1515,14 +1515,15 @@ aside-highlights-items a:nth-child(10) {
     display: flex;
     align-items: center;
     background: var(--sub-background);
-    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 8px rgb(18 17 36 / 4%), 0 4px 32px rgb(18 17 36 / 8%);
     padding: 1rem;
     gap: 1rem;
     border-radius: 8px;
 }
+.blog-channel-img,
 .blog-channel-img img {
-    width: 280px;
-    height: 250px;
+    max-width: 240px;
+    max-height: 180px;
     border-radius: 4px;
 }
 .blog-channel-result > .blog-channel-col {
