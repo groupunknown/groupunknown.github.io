@@ -1485,3 +1485,27 @@ aside-highlights-items a:nth-child(10) {
 }
 
 
+/*Blog*/
+.blog-channel {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.blog-channel-col {
+    display: flex;
+    flex-direction: column;
+}
+.blog-channel-row {
+    display: flex;
+    flex-direction: row;
+}
+.blog-channel-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+.blog-channel-description {
+    font-style: italic;
+    opacity: .7;
+}
