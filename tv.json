@@ -4,9 +4,9 @@ layout: null
 {
     "version": "https://jsonfeed.org/version/1",
     "title": "{{ site.title }}",
+    "description": {{ site.description | jsonify }},
     "home_page_url": "{{ "/" | absolute_url }}",
     "feed_url": "{{ "/tv.json" | absolute_url }}",
-    "description": {{ site.description | jsonify }},
     "icon": "{{ "/apple-touch-icon.png" | absolute_url }}",
     "favicon": "{{ "/favicon.ico" | absolute_url }}",
     "expired": false,

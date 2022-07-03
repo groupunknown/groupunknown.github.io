@@ -3,7 +3,7 @@ $.ajaxSetup({
 });
 var posts = (function() {
     var result_posts;
-    $.getJSON("/posts.json", {}, function(data){
+    $.getJSON("/tv.json", {}, function(data){
         result_posts = data;
     });
     return result_posts.items;
