@@ -10,7 +10,7 @@ layout: null
     "icon": "{{ "/apple-touch-icon.png" | absolute_url }}",
     "favicon": "{{ "/favicon.ico" | absolute_url }}",
     "expired": false,
-    "items": [{% assign posts = site.posts | where: "category", "Filmes" | where: "category", "Séries" %}{% for post in posts %}
+    "items": [{% assign posts = site.posts | where_exp: "post", "post.category == 'Filmes' or post.category == 'Séries'" %}{% for post in posts %}
         {
             "author": {{ post.author | jsonify }},
             "category": {{ post.category | jsonify }},
@@ -37,3 +37,4 @@ layout: null
         }{% if forloop.last == false %},{% endif %}{% endfor %}
     ]
 }
+
