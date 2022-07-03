@@ -1,0 +1,11 @@
+<article class="blog-channel-result blog-channel-row">
+	<div class="blog-channel-img">
+		<img src="{{ post.poster_path }}" alt="{{ post.title }}" {% if forloop.first %}{% else %}loading="lazy"{% endif %}>
+	</div>
+	<div class="blog-channel-col">
+		<a href="{{ post.url | prepend: site.baseurl }}" class="blog-channel-result-t">{{ post.title }}</a>
+		<div class="blog-channel-result-d">{{ post.description }}</div>
+		<div class="blog-channel-result-a">{% assign months = "janeiro, fevereiro, março, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro" | split: "," %}{% if post.post_date == post.post_modified %}{% assign month_number = post.post_date | date: "%-m" | minus: 1 %}Adicionado em {{ post.post_date | date: "%-d" }} de {{ months[month_number] }} de {{ post.post_date | date: "%Y" }}{% else %}{% assign month_number = post.post_modified | date: "%-m" | minus: 1 %}Atualizado em {{ post.post_modified | date: "%-d" }} de {{ months[month_number] }} de {{ post.post_modified | date: "%Y" }}{% endif %} por <span>{{ post.author }}</span></div>
+	</div>
+</article>
+
