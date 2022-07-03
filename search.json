@@ -1,21 +1,20 @@
 ---
 layout: null
 ---
-[
-  {% for post in site.posts %}
+[{% for post in site.posts %}
     {
-      "url": "{{ site.baseurl }}{{ post.url }}",
-      "date": {{ post.date | jsonify }},
-      "title": {{ post.title | jsonify }},
-      "poster": {{ post.poster_path | jsonify }},
-      "category": {{ post.category | jsonify }},
-      "release_date": {{ post.release_date | jsonify }},
-      "runtime": "{% if post.runtime <= 60 %}{{ post.runtime }}min{% else %}{{ post.runtime | divided_by: 60 | floor }}h {{ post.runtime | modulo: 60 }}min{% endif %}",
-      "certification": {{ post.certification | jsonify }},
-      "vote_average": {{ post.vote_average | jsonify }},
-      "tmdb_id": {{ post.tmdb_id | jsonify }},
-      "imdb_id": {{ post.imdb_id | jsonify }},
-      "casts": [{% for cast in post.casts %}{{ cast | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}],
-      "crews": [{% for crew in post.crews %}{{ crew | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}]
+        "url": "{{ site.baseurl }}{{ post.url }}",
+        "date": {{ post.date | jsonify }},
+        "title": {{ post.title | jsonify }},
+        "poster": {{ post.poster_path | jsonify }},
+        "category": {{ post.category | jsonify }},
+        "release_date": {{ post.release_date | jsonify }},
+        "runtime": "{% if post.runtime <= 60 %}{{ post.runtime }}min{% else %}{{ post.runtime | divided_by: 60 | floor }}h {{ post.runtime | modulo: 60 }}min{% endif %}",
+        "certification": {{ post.certification | jsonify }},
+        "vote_average": {{ post.vote_average | jsonify }},
+        "tmdb_id": {{ post.tmdb_id | jsonify }},
+        "imdb_id": {{ post.imdb_id | jsonify }},
+        "casts": [{% for cast in post.casts %}{{ cast | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}],
+        "crews": [{% for crew in post.crews %}{{ crew | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}]
     }{% unless forloop.last %},{% endunless %}{% endfor %}
 ]

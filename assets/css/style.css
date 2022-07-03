@@ -1522,9 +1522,9 @@ aside-highlights-items a:nth-child(10) {
 }
 .blog-channel-img,
 .blog-channel-img img {
-    max-width: 240px;
-    max-height: 180px;
-    border-radius: 4px;
+    width: 240px;
+    height: 180px;
+    border-radius: .25rem;
 }
 .blog-channel-result > .blog-channel-col {
     gap: 1rem;
