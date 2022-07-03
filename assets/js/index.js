@@ -170,10 +170,6 @@ class Filter extends HTMLElement {
                     <div class="author-role role-`+author.role+`">`+_.FilterTemplateRole(author.role)+`</div>
                     <div class="author-infor">
                         <div>
-                            <span>Juntou-se:</span>
-                            <span>`+author.joined+`</span>
-                        </div>
-                        <div>
                             <span>Publicações:</span>
                             <span class="author-infor-count" style="--num:`+author.posts_total+`;"></span>
                         </div>

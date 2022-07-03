@@ -3,35 +3,13 @@ layout: default
 ---
 <main>
 	<div class="container">
-		<header-carousel class="carousel">
-			<a class="active" href="{{ site.baseurl }}/series/the-boys">
-				<img src="{{ site.baseurl }}/assets/img/banners/the-boys-banner-768x142.webp" alt="The Boys">
-			</a>
-			<a href="{{ site.baseurl }}/series/stranger-things">
-				<img src="{{ site.baseurl }}/assets/img/banners/stranger-things-banner-768x142.webp" alt="Stranger Things" loading="lazy">
-			</a>
-			<a href="{{ site.baseurl }}/series/ms-marvel">
-				<img src="{{ site.baseurl }}/assets/img/banners/ms-marvel-banner-768x142.webp" alt="Ms. Marvel" loading="lazy">
-			</a>
-		</header-carousel>
+		{% include plugins/header-carousel.html %}
 		{% for post in paginator.posts %}
-
 		{% if post.category == "Filmes" or post.category == "Séries" %}
 			{% include articles/article-tv.html %}
 		{% endif %}
-
 		{% if forloop.index == 5 %}
-		<posts-carousel class="carousel">
-			<a href="{{ site.baseurl }}/series/halo">
-				<img src="{{ site.baseurl }}/assets/img/banners/halo-banner-768x142.webp" alt="Halo" loading="lazy">
-			</a>
-			<a href="{{ site.baseurl }}/series/pacificador">
-				<img src="{{ site.baseurl }}/assets/img/banners/peacemaker-banner-768x142.webp" alt="Peacemaker" loading="lazy">
-			</a>
-			<a href="{{ site.baseurl }}/series/ruptura">
-				<img src="{{ site.baseurl }}/assets/img/banners/severance-banner-768x142.webp" alt="Severance" loading="lazy">
-			</a>
-		</posts-carousel>
+		{% include plugins/posts-carousel.html %}
 		{% endif %}
 		{% endfor %}
 		{% include plugins/pagination.html %}
