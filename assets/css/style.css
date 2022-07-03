@@ -1531,7 +1531,7 @@ aside-highlights-items a:nth-child(10) {
 }
 .blog-channel-result-t {
     font-size: 1.875rem;
-    line-height: 1;
+    line-height: 1.25;
     font-weight: 700;
     -webkit-line-clamp: 3;
 }

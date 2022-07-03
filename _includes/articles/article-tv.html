@@ -13,10 +13,6 @@
 	<div class="author-role role-{{ author.role }}">{{ role | slugify: "latin" }}</div>
 	<div class="author-infor">
 		<div>
-			<span>Juntou-se:</span>
-			<span>{{ author.joined }}</span>
-		</div>
-		<div>
 			<span>Publicações:</span>{% assign author_posts = site.posts | where: "author", author.name %}
 			<span class="author-infor-count" style="--num:{{ author_posts.size }};"></span>
 		</div>
@@ -38,10 +34,6 @@
 	<div class="author-name">???</div>
 	<div class="author-role role-4">???</div>
 	<div class="author-infor">
-		<div>
-			<span>Juntou-se:</span>
-			<span>∞</span>
-		</div>
 		<div>
 			<span>Publicações:</span>
 			<span class="author-infor-count"></span>
