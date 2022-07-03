@@ -20,7 +20,7 @@ BlogTemplateDate = (post_date, post_modified) => {
 }
 BlogTemplate = (posts) => {
     if (Object.keys(posts).length === 0) {
-        return "<article>Nenhum resultado encontrado.</article>";
+        return '<article class="filter-no-results">Coming soon!</article>';
     }
     var results = "";
     posts.forEach(function(item) {

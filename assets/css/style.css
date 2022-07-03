@@ -899,6 +899,18 @@ filter-sort.selected {
     flex-direction: column;
     gap: 3rem;
 }
+.filter-no-results {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    border-radius: 0.25rem;
+    background: var(--sub-background);
+    font-weight: 300;
+    text-transform: uppercase;
+    font-style: italic;
+}
 btn-stash {
     display: flex;
     justify-content: space-between;

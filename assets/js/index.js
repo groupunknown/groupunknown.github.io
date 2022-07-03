@@ -155,7 +155,7 @@ class Filter extends HTMLElement {
     }
     FilterTemplate = (posts) => {
         if (Object.keys(posts).length === 0) {
-            return "<article>Nenhum resultado encontrado.</article>"
+            return '<article class="filter-no-results">Não encontramos publicações compatíveis com os critérios selecionados, caso tenha selecionado muitas opções no filtro, seja menos especifico e desmarque algumas opções.</article>';
         }
         var results = "", _ = this;
         posts.forEach(function(item) {
