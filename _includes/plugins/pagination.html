@@ -53,3 +53,113 @@
 		{% endif %}
 	</div>
 {% endif %}
+
+
+<div class="pagination">
+  {% if paginator.total_pages > 1 %}
+    <ul>
+      {% if paginator.previous_page %}
+        <li><a href="{{ paginator.previous_page_path | replace: '//', '/' }}">&lt;</a></li>
+      {% endif %}
+
+      {% for page in (1..paginator.total_pages) %}
+
+        {% assign last_five = forloop.length | minus: 4 %}
+        {% assign last_page = forloop.length %}
+
+        {% if forloop.length > 5 %}
+
+          {% if paginator.page <= 5 %}
+
+            {% if forloop.index <= 5 %}
+              {% if forloop.first and page == paginator.page %}
+                <li class="current-page"><span>{{ page }}</span></li>
+              {% elsif forloop.first %}
+                <li><a href="{{ page_root }}">1</a></li>
+              {% elsif page == paginator.page %}
+                <li class="current-page"><span>{{ page }}</span></li>
+              {% else %}
+                <li><a href="{{ page_path | append: page }}">{{ page }}</a></li>
+              {% endif %}
+            {% else %}
+              {% if paginator.page == 5 %}
+                <li><a href="{{ page_path }}6">6</a></li>
+              {% endif %}
+              <li>…</li>
+              <li><a href="{{ page_path | append: last_page }}">{{ last_page }}</a></li>
+              {% break %}
+            {% endif %}
+
+          {% elsif paginator.page >= last_five %}
+
+            {% if forloop.index >= last_five %}
+              {% if forloop.index == last_five %}
+                <li><a href="{{ page_root }}">1</a></li>
+                <li>…</li>
+                {% if page == last_five %}
+                  <li><a href="{{ page_path }}{{ page | minus: 1 }}">{{ page | minus: 1 }}</a></li>
+                {% endif %}
+                {% if page == paginator.page %}
+                  <li class="current-page"><span>{{ page }}</span></li>
+                {% else %}
+                  <li><a href="{{ page_path | append: page }}">{{ page }}</a></li>
+                {% endif %}
+              {% elsif forloop.last and page == paginator.page %}
+                <li class="current-page"><span>{{ page }}</span></li>
+              {% elsif page == paginator.page %}
+                <li class="current-page"><span>{{ page }}</span></li>
+              {% else %}
+                <li><a href="{{ page_path | append: page }}">{{ page }}</a></li>
+              {% endif %}
+            {% endif %}
+
+
+          {% else %}
+
+            {% if forloop.first %}
+              <li><a href="{{ page_root }}">1</a></li>
+            {% endif %}
+            {% if forloop.index == paginator.page | minus: 2 %}
+              <li>…</li>
+              <li><a href="{{ page | minus: 2 | prepend: page_path }}">{{ page | minus: 2 }}</a></li>
+            {% endif %}
+            {% if forloop.index == paginator.page | minus: 1 %}
+              <li><a href="{{ page | minus: 1 | prepend: page_path }}">{{ page | minus: 1 }}</a></li>
+            {% endif %}
+            {% if page == paginator.page %}
+              <li class="current-page"><span>{{ page }}</span></li>
+            {% endif %}
+            {% if forloop.index == paginator.page | plus: 1 %}
+              <li><a href="{{ page | plus: 1 | prepend: page_path }}">{{ page | plus: 1 }}</a></li>
+            {% endif %}
+            {% if forloop.index == paginator.page | plus: 2 %}
+              <li><a href="{{ page | plus: 2 | prepend: page_path }}">{{ page | plus: 2 }}</a></li>
+              <li>…</li>
+            {% endif %}
+            {% if forloop.last %}
+              <li><a href="{{ page_path | append: forloop.index }}">{{ forloop.index }}</a></li>
+            {% endif %}
+
+          {% endif %}
+
+        {% else %}
+
+          {% if page == paginator.page %}
+            <li class="current-page"><span>{{ page }}</span></li>
+          {% elsif page == 1 %}
+            <li><a href="{{ page_root }}">{{ page }}</a></li>
+          {% else %}
+            <li><a href="{{ page_path | append: page }}">{{ page }}</a></li>
+          {% endif %}
+
+        {% endif %}
+
+      {% endfor %}
+
+
+      {% if paginator.next_page %}
+        <li><a href="{{ paginator.next_page_path | replace: '//', '/' }}">&gt;</a></li>
+      {% endif %}
+    </ul>
+  {% endif %}
+</div>
