@@ -99,7 +99,7 @@
 				{% endif %}
             {% else %}
            		{% if paginator.page == 5 %}
-                	<a href="/page/{{ page | minus: 1 }}">{{ page | minus: 1 }}</a>
+                	<a href="/page/{{ page | plus: 1 }}">{{ page | plus: 1 }}</a>
               	{% endif %}
               		<span>...</span>
               		<a href="{{ page_path | append: last_page }}">{{ last_page }}</a>
