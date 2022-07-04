@@ -1396,13 +1396,18 @@ aside-highlights-items a:nth-child(10) {
 }
 .paginationjs .paginationjs-pages li > a {
     display: flex;
-    padding: .5rem 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
 }
-.paginationjs .paginationjs-pages li.active > a {
-    background: var(--hover);
-}
+.paginationjs .paginationjs-pages li.active > a,
 .paginationjs .paginationjs-pages li.disabled > a {
-    opacity: 0.3;
+    background: var(--hover);
+    pointer-events: none;
+}
+.paginationjs .paginationjs-pages li.disabled > a svg {
+    opacity: .3;
 }
 .paginationjs .paginationjs-pages li > a:hover {
     background: var(--background);
