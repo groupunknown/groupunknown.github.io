@@ -113,19 +113,19 @@
 	            	<a href="/">1</a>
 	             	<span>...</span>
 	            {% if page == last_five %}
-	                <a href="{{ page_path }}{{ page | minus: 1 }}">{{ page | minus: 1 }}</a>
+	                <a href="/page/{{ page | minus: 1 }}">{{ page | minus: 1 }}</a>
 	            {% endif %}
 	            {% if page == paginator.page %}
 	                <span class="active">{{ page }}</span>
 	            {% else %}
-	            	<a href="{{ page_path | append: page }}">{{ page }}</a>
+	            	<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
 	            {% endif %}
 	            {% elsif forloop.last and page == paginator.page %}
 	                <span class="active">{{ page }}</span>
 	            {% elsif page == paginator.page %}
 	                <span class="active">{{ page }}</span>
 	            {% else %}
-	                <a href="{{ page_path | append: page }}">{{ page }}</a>
+	                <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
 	            {% endif %}
 	        {% endif %}
 
