@@ -1409,7 +1409,7 @@ aside-highlights-items a:nth-child(10) {
     opacity: .3;
 }
 .paginationjs .paginationjs-pages li > a:hover {
-    background: var(--background);
+    background: var(--hover);
 }
 .paginationjs .paginationjs-pages li.disabled > a:hover {
     background: transparent;
