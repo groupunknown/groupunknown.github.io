@@ -269,10 +269,10 @@
           if (showPrevious) {
             if (currentPage <= 1) {
               if (!autoHidePrevious) {
-                html += '<li class="' + classPrefix + '-prev ' + disableClassName + '"><span>' + prevText + '<\/span><\/li>';
+                html += '<li class="' + classPrefix + '-prev ' + disableClassName + '"><span>' + prevSVG + '<\/span><\/li>';
               }
             } else {
-              html += '<li class="' + classPrefix + '-prev J-paginationjs-previous" data-num="' + (currentPage - 1) + '" title="Previous page"><a href="' + pageLink + '">' + prevText + '<\/a><\/li>';
+              html += '<li class="' + classPrefix + '-prev J-paginationjs-previous" data-num="' + (currentPage - 1) + '" title="Previous page"><a href="' + pageLink + '">' + prevSVG + '<\/a><\/li>';
             }
           }
 
@@ -285,10 +285,10 @@
           if (showNext) {
             if (currentPage >= totalPage) {
               if (!autoHideNext) {
-                html += '<li class="' + classPrefix + '-next ' + disableClassName + '"><span>' + nextText + '<\/span><\/li>';
+                html += '<li class="' + classPrefix + '-next ' + disableClassName + '"><span>' + nextSVG + '<\/span><\/li>';
               }
             } else {
-              html += '<li class="' + classPrefix + '-next J-paginationjs-next" data-num="' + (currentPage + 1) + '" title="Next page"><a href="' + pageLink + '">' + nextText + '<\/a><\/li>';
+              html += '<li class="' + classPrefix + '-next J-paginationjs-next" data-num="' + (currentPage + 1) + '" title="Next page"><a href="' + pageLink + '">' + nextSVG + '<\/a><\/li>';
             }
           }
           html += '<\/ul><\/div>';
@@ -933,10 +933,12 @@
     // 'Previous' text
     //prevText: '&laquo;',
     prevText: 'Anterior',
+    prevSVG: '<svg width="8" height="16" viewBox="0 0 8 13"><g fill="none" stroke="none" stroke-width="1" fill-rule="evenodd"><g transform="translate(1.000000, 1.000000)" stroke="currentColor" stroke-width="2"><polyline transform="translate(3.500000, 5.507797) rotate(90.000000) translate(-3.500000, -5.507797)" points="-1.5 3 3.5155939 8.0155939 8.5 3.0311879"></polyline></g></g></svg>',
 
     // 'Next' text
     //nextText: '&raquo;',
     nextText: 'Próximo',
+    nextSVG: '<svg width="8" height="16" viewBox="0 0 8 13"><g fill="none" stroke="none" stroke-width="1" fill-rule="evenodd"><g transform="translate(-2.000000, 4.000000)" stroke="currentColor" stroke-width="2"><polyline transform="translate(5.500000, 2.500000) rotate(90.000000) translate(-5.500000, -2.500000)" points="10.5 5 5.5 6.66133815e-16 0.5 5"></polyline></g></g></svg>',
 
     // Ellipsis text
     ellipsisText: '...',
