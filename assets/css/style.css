@@ -1353,17 +1353,16 @@ aside-highlights-items a:nth-child(10) {
     border: 1px solid var(--border-color);
     border-left: 0;
 }
-.pagination a.active,
-.pagination span.active {
+.pagination .active {
     background: var(--hover);
+    pointer-events: none;
+}
+.pagination .active svg {
+    opacity: .3;
 }
 .pagination a:hover {
     background: var(--hover);
     cursor: pointer;
-}
-.pagination a.active:hover,
-.pagination span.active:hover {
-    cursor: default;
 }
 .pagination a:first-child,
 .pagination span:first-child {
