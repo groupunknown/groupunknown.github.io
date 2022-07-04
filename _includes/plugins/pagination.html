@@ -136,23 +136,23 @@
             {% endif %}
             {% if forloop.index == paginator.page | minus: 2 %}
             	<span>...</span>
-            	<a href="{{ page | minus: 2 | prepend: page_path }}">{{ page | minus: 2 }}</a>
+            	<a href="{{ page | minus: 2 | prepend: site.paginate_path }}">{{ page | minus: 2 }}</a>
             {% endif %}
             {% if forloop.index == paginator.page | minus: 1 %}
-            	<a href="{{ page | minus: 1 | prepend: page_path }}">{{ page | minus: 1 }}</a>
+            	<a href="{{ page | minus: 1 | prepend: site.paginate_path }}">{{ page | minus: 1 }}</a>
             {% endif %}
             {% if page == paginator.page %}
             	<span class="active">{{ page }}</span>
             {% endif %}
             {% if forloop.index == paginator.page | plus: 1 %}
-            	<a href="{{ page | plus: 1 | prepend: page_path }}">{{ page | plus: 1 }}</a>
+            	<a href="{{ page | plus: 1 | prepend: site.paginate_path }}">{{ page | plus: 1 }}</a>
             {% endif %}
             {% if forloop.index == paginator.page | plus: 2 %}
-            	<a href="{{ page | plus: 2 | prepend: page_path }}">{{ page | plus: 2 }}</a>
+            	<a href="{{ page | plus: 2 | prepend: site.paginate_path }}">{{ page | plus: 2 }}</a>
             	<span>...</span>
             {% endif %}
             {% if forloop.last %}
-           		<a href="{{ page_path | append: forloop.index }}">{{ forloop.index }}</a>
+           		<a href="{{ site.paginate_path | append: forloop.index }}">{{ forloop.index }}</a>
             {% endif %}
 
           {% endif %}
@@ -164,7 +164,7 @@
         {% elsif page == 1 %}
             <a href="{{ page_root }}">{{ page }}</a>
         {% else %}
-            <a href="{{ page_path | append: page }}">{{ page }}</a>
+            <a href="{{ site.paginate_path | append: page }}">{{ page }}</a>
         {% endif %}
 
         {% endif %}
