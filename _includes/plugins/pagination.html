@@ -102,7 +102,7 @@
                 	<a href="/page/{{ page | plus: 1 }}">{{ page | plus: 1 }}</a>
               	{% endif %}
               		<span>...</span>
-              		<a href="{{ page_path | append: last_page }}">{{ last_page }}</a>
+              		<a href="/page/{{ last_page }}">{{ last_page }}</a>
               	{% break %}
             {% endif %}
 
