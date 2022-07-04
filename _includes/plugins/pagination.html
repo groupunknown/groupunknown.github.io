@@ -91,7 +91,7 @@
             	{% if forloop.first and page == paginator.page %}
             		<span class="active">{{ page }}</span>
             	{% elsif forloop.first %}
-            		<a href="/page/1">1</a>
+            		<a href="/">1</a>
 				{% elsif page == paginator.page %}
 					<span class="active">{{ page }}</span>
             	{% else %}
@@ -110,7 +110,7 @@
 
 	        {% if forloop.index >= last_five %}
 	            {% if forloop.index == last_five %}
-	            	<a href="/page/1">1</a>
+	            	<a href="/">1</a>
 	             	<span>...</span>
 	            {% if page == last_five %}
 	                <a href="{{ page_path }}{{ page | minus: 1 }}">{{ page | minus: 1 }}</a>
@@ -132,7 +132,7 @@
 		{% else %}
 
             {% if forloop.first %}
-            	<a href="{{ page_root }}">1</a>
+            	<a href="/">1</a>
             {% endif %}
             {% if forloop.index == paginator.page | minus: 2 %}
             	<span>...</span>
