@@ -841,6 +841,7 @@ filter-reset {
     border-radius: 3px;
     text-align: center;
     text-transform: uppercase;
+    font-weight: 600;
     padding: 1rem;
 }
 filter-status {
@@ -859,11 +860,17 @@ filter-reset {
     min-width: 20%;
     color: #ff3722;
     background-color: rgb(255 55 34 / 10%);
-    gap: .25rem;
+    gap: .5rem;
     cursor: pointer;
+    transition: 80ms cubic-bezier(0.33, 1, 0.68, 1);
+    transition-property: color, background-color, fill;
 }
 filter-reset:hover {
-    background-color: rgb(255 55 34 / 15%);
+    color: #fff;
+    background-color: #da3633;
+}
+filter-reset:hover svg {
+    fill: #fff;
 }
 filter-reset.selected {
     filter: grayscale(1);
