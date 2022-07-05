@@ -1229,6 +1229,9 @@ footer {
     display: flex;
     gap: 1rem;
 }
+.footer-items span {
+    font-size: .875rem;
+}
 @media screen and (max-width: 1024px) {
     header-sticky {
         margin-bottom: 2rem;
