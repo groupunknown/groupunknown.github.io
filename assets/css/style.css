@@ -681,14 +681,14 @@ article:nth-of-type(even) article-author:before {
 }
 /* Left */
 article:nth-of-type(odd) article-author author-card {
-    z-index: 0;
+    z-index: -1;
+    opacity: 0;
     position: absolute;
     top: 1.25rem;
     left: 1.25rem;
     border-radius: 100%;
     width: 0rem;
     height: 0rem;
-    z-index: -1;
     transform: translate(-50%, -50%);
     transition: 0.25s cubic-bezier(0.25, 0, 0, 1);
 }
@@ -761,21 +761,22 @@ article:nth-of-type(odd) article-author author-card button:first-child:nth-last-
     left: 18.75%;
     top: 62.5%;
 }
-article-author:hover author-card,
-article-author author-card:focus-within {
+article:nth-of-type(odd) article-author:hover author-card,
+article:nth-of-type(odd) article-author author-card:focus-within {
     width: 10rem;
     height: 10rem;
+    opacity: 1;
 }
 /* Right */
 article:nth-of-type(even) article-author author-card {
-    z-index: 0;
+    z-index: -1;
+    opacity: 0;
     position: absolute;
     top: 1.25rem;
     right: 1.25rem;
     border-radius: 100%;
     width: 0rem;
     height: 0rem;
-    z-index: -1;
     transform: translate(50%, -50%);
     transition: 0.25s cubic-bezier(0.25, 0, 0, 1);
 }
@@ -852,6 +853,7 @@ article:nth-of-type(even) article-author:hover author-card,
 article:nth-of-type(even) article-author author-card:focus-within {
     width: 10rem;
     height: 10rem;
+    opacity: 1;
 }
 .summary {
     display: flex;
