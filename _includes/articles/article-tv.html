@@ -6,6 +6,11 @@
    	{% assign rank = author.role %}
 	{% capture role %}{% if rank == 0 %}estagiário{% elsif rank == 1 %}autor{% elsif rank == 2 %}suporte{% elsif rank == 3 %}editor{% elsif rank == 4 %}moderador{% elsif rank == 5 %}administrador{% endif %}{% endcapture %}
 	{% assign author_check = author_check | plus:1 %}
+	<author-card>
+		<button>1</button>
+		<button>2</button>
+		<button>3</button>
+	</author-card>
 	<div class="author-avatar">
 		<img src="{{ site.baseurl }}{{ author.avatar }}" alt="{{ author.name }}" loading="lazy">
 	</div>

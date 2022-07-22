@@ -24,6 +24,7 @@
                 super();
                 this.addEventListener("click", e => {
                     const scheme = (document.body.classList.contains("theme-light")) ? "theme-dark" : "theme-light";
+                    localStorage.setItem("theme-preference", scheme);
                     toggleClass(scheme);
                 });
             }
