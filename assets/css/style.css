@@ -703,13 +703,13 @@ article:nth-of-type(odd) article-author author-card button {
     height: 2rem;
     border: none;
     border-radius: 100%;
+    background: var(--border-color);
     transform: translate(-50%, -50%);
     cursor: pointer;
     transition: 0.25s cubic-bezier(0.25, 0, 0, 1);
-    box-shadow: 0 0 0rem -0.25rem var(--background);
 }
 article:nth-of-type(odd) article-author author-card button:hover {
-    
+    background: var(--border-color);
 }
 article:nth-of-type(odd) article-author author-card button:first-child:nth-last-child(1) {
     left: 25%;
@@ -787,12 +787,13 @@ article:nth-of-type(even) article-author author-card button {
     height: 2rem;
     border: none;
     border-radius: 100%;
+    background: var(--border-color);
     transform: translate(50%, -50%);
     cursor: pointer;
     transition: 0.25s cubic-bezier(0.25, 0, 0, 1);
-    box-shadow: 0 0 0rem -0.25rem var(--background);
 }
 article:nth-of-type(even) article-author author-card button:hover {
+    background: var(--border-color);
 }
 article:nth-of-type(even) article-author author-card button:first-child:nth-last-child(1) {
     right: 25%;
