@@ -760,8 +760,8 @@ article-author author-card button:first-child:nth-last-child(4) ~ *:nth-child(4)
     left: 18.75%;
     top: 62.5%;
 }
-article-author:hover .multi-button,
-article-author .multi-button:focus-within {
+article-author:hover author-card,
+article-author author-card:focus-within {
     width: 10rem;
     height: 10rem;
 }
