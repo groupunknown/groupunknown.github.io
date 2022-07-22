@@ -685,6 +685,7 @@ author-card button svg {
 /* Left */
 article:nth-of-type(odd) article-author author-card {
     z-index: -1;
+    opacity: 0;
     position: absolute;
     top: 1.25rem;
     left: 1.25rem;
@@ -763,10 +764,12 @@ article:nth-of-type(odd) article-author:hover author-card,
 article:nth-of-type(odd) article-author author-card:focus-within {
     width: 10rem;
     height: 10rem;
+    opacity: 1;
 }
 /* Right */
 article:nth-of-type(even) article-author author-card {
     z-index: -1;
+    opacity: 0;
     position: absolute;
     top: 1.25rem;
     right: 1.25rem;
@@ -844,6 +847,7 @@ article:nth-of-type(even) article-author:hover author-card,
 article:nth-of-type(even) article-author author-card:focus-within {
     width: 10rem;
     height: 10rem;
+    opacity: 1;
 }
 .summary {
     display: flex;
