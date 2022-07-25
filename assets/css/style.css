@@ -545,7 +545,7 @@ article-author {
     position: sticky;
     display: flex;
     flex-direction: column;
-    top: 75px;
+    top: 90px;
     width: 122px;
     min-width: 122px;
     height: min-content;
@@ -1514,6 +1514,9 @@ footer {
 @media screen and (max-width: 425px) {
     nav {
         flex-direction: column;
+    }
+    nav a {
+        justify-content: flex-start;
     }
     .filter-results-items {
         flex-direction: column;
