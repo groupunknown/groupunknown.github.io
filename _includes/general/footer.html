@@ -135,3 +135,18 @@ customElements.define("header-mobile", class extends HTMLElement {
     let r = (w) ? "AdBlocker detectado!" : "AdBlocker não detectado!";
     console.log(r);
 </script>
+
+
+{% if page.category %}
+<script>
+customElements.define("toc-close", class extends HTMLElement {
+    constructor() {
+        super();
+        this.addEventListener("click", e => {
+            this.classList.toggle("show");
+            this.parentElement.classList.toggle("show");
+        });
+    }
+});
+</script>
+{% endif %}
