@@ -1787,9 +1787,10 @@ toc-close.show .panel-stash {
     align-items: center;
     gap: 0.25rem;
     padding: 1rem;
-    border: 1px solid var(--border-color);
+    padding-top: 0;
+    margin: 0 -1rem;
+    border-bottom: 1px solid var(--border-color);
     background: var(--sub-background);
-    border-radius: 0.25rem;
 }
 .breadcrumbs a {
     text-transform: uppercase;
@@ -1803,6 +1804,7 @@ toc-close.show .panel-stash {
 }
 .breadcrumbs svg {
     width: 11px;
+    height: 14px;
     fill: #4caf50;
 }
 
