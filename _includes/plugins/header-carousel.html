@@ -1,11 +1,7 @@
 <header-carousel class="carousel">
-	<a class="active" href="{{ site.baseurl }}/series/the-boys">
-		<img src="{{ site.baseurl }}/assets/img/banners/the-boys-banner-768x142.webp" alt="The Boys">
+	{% for item in site.data.carousels %}
+	<a href="{{ site.baseurl }}{{ item.slug }}">
+		<img src="{{ site.baseurl }}{{ item.src }}" alt="{{ item.alt }}" {% if forloop.first %}{% else %}loading="lazy"{% endif %}>
 	</a>
-	<a href="{{ site.baseurl }}/series/stranger-things">
-		<img src="{{ site.baseurl }}/assets/img/banners/stranger-things-banner-768x142.webp" alt="Stranger Things" loading="lazy">
-	</a>
-	<a href="{{ site.baseurl }}/series/ms-marvel">
-		<img src="{{ site.baseurl }}/assets/img/banners/ms-marvel-banner-768x142.webp" alt="Ms. Marvel" loading="lazy">
-	</a>
+	{% endfor %}
 </header-carousel>
