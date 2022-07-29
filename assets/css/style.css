@@ -1781,6 +1781,33 @@ toc-close.show .panel-stash {
 }
 
 /* post */
+
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    background: var(--sub-background);
+    border-radius: 0.25rem;
+}
+.breadcrumbs a {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #4caf50;
+    padding: 0 .5rem;
+    border-radius: .25rem;
+}
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+    background: rgb(76 175 80 / 15%);
+}
+.breadcrumbs svg {
+    width: 11px;
+    fill: #4caf50;
+}
+
 .article-content {
     background-color: var(--sub-background);
     border: 1px solid var(--border-color);
