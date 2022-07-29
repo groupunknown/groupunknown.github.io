@@ -5,15 +5,19 @@ layout: default
 	<div class="container">
 		{% include plugins/header-carousel.html %}
 		{% include plugins/breadcrumbs.html %}
-		{% include articles/downloads.html %}
-		<div class="main-headings">
-	        <div class="">
-	            <toc-close class="">
-	                <svg class="btn-stash" viewBox="0 0 10 16" version="1.1" width="24" height="24" aria-hidden="true">
+		<div class="article-content">
+			{% include articles/downloads.html %}
+		</div>
+		<div class="user-panel">
+	        <div class="user-panel-content">
+	            <toc-close>
+	                <svg class="panel-stash" viewBox="0 0 10 16" version="1.1" width="24" height="24" aria-hidden="true">
 	                    <path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z"></path>
 	                </svg>
 	            </toc-close>
-	            <p>Configurações</p>
+	            <div class="user-panel-summary">
+	            	
+	            </div>
 	        </div>
 	    </div>
 	</div>

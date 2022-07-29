@@ -1728,7 +1728,7 @@ footer {
 
 
 
-.main-headings {
+.user-panel {
     position: fixed;
     display: flex;
     align-items: center;
@@ -1737,11 +1737,7 @@ footer {
     bottom: 0;
     z-index: 1;
 }
-.main-headings > div.show {
-    transform: translate(0,0);
-    right: -1.5rem;
-}
-.main-headings > div {
+.user-panel-content {
     position: relative;
     transform: translate(22px,0) translateX(100%);
     transition: all .2s;
@@ -1753,21 +1749,13 @@ footer {
     padding: 1rem;
     max-width: 300px;
     min-width: 250px;
+    min-height: 80px;
     border: 3px solid var(--border-color);
     border-right: 0;
 }
-.main-headings > div p {
-    font-size: 18px;
-    font-weight: 300;
-    -webkit-clip-path: polygon(5% 0,100% 0,95% 100%,0% 100%);
-    clip-path: polygon(5% 0,100% 0,95% 100%,0% 100%);
-    color: var(--color);
-    background: var(--border-color);
-    line-height: 2;
-    margin-bottom: 0.875rem;
-    white-space: pre-wrap;
-    padding: 0 4%;
-    text-align: center;
+.user-panel-content.show {
+    transform: translate(0,0);
+    right: -1.5rem;
 }
 toc-close {
     position: absolute;
@@ -1783,11 +1771,19 @@ toc-close {
     transform: translate(0,-50%) translateY(0);
     cursor: pointer;
 }
-toc-close .btn-stash {
+toc-close .panel-stash {
     fill: var(--color);
     transform: rotate(90deg) scaleY(1);
     transition: transform .2s linear;
 }
-toc-close.show .btn-stash {
+toc-close.show .panel-stash {
     transform: rotate(90deg) scaleY(-1);
+}
+
+/* post */
+.article-content {
+    background-color: var(--sub-background);
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+    padding: 1rem;
 }
