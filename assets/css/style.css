@@ -1792,9 +1792,7 @@ toc-close.show .panel-stash {
     border-radius: 0.25rem;
 }
 .breadcrumbs a {
-    font-weight: 300;
     text-transform: uppercase;
-    font-size: 16px;
     color: #4caf50;
     padding: 0 .5rem;
     border-radius: .25rem;
@@ -1813,4 +1811,13 @@ toc-close.show .panel-stash {
     border: 1px solid var(--border-color);
     border-radius: 0.25rem;
     padding: 1rem;
+}
+
+@media screen and (max-width: 425px) {
+    .breadcrumbs {
+        flex-direction: column;
+    }
+    .breadcrumbs svg {
+        transform: rotate(90deg);
+    }
 }
