@@ -1823,17 +1823,30 @@ dashboard-close.show .dashboard-stash {
     display: flex;
     gap: 1.5rem;
     padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
 }
 .article-row {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 .article-column {
     display: flex;
     flex-direction: column;
 }
+.article-summary {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.article-poster,
 .article-poster img {
-    border-radius: .25rem;
+    width: 154px;
+    height: 231px;
+    border-radius: 0.25rem;
+}
+.article-poster {
+    background-color: var(--background);
 }
 .article-title {
     font-size: 1.25rem;
@@ -1846,7 +1859,7 @@ dashboard-close.show .dashboard-stash {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
-    padding-bottom: 0.25rem;
+    padding-bottom: .25rem;
 }
 .article-crew,
 .article-cast,
@@ -1854,7 +1867,7 @@ dashboard-close.show .dashboard-stash {
 .article-runtime {
     display: flex;
     width: 100%;
-    gap: 0.25rem;
+    gap: .25rem;
 }
 .article-crew > div:first-child,
 .article-cast > div:first-child,
