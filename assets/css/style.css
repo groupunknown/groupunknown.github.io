@@ -479,33 +479,33 @@ nav a.active {
 nav a.active {
     pointer-events: none;
 }
-nav a:nth-child(1) {
-    --link-color:#ad3;
-    --link-background:rgba(170,221,51,.1);
+.category-filmes {
+    --link-color: #4caf50;
+    --link-background: rgb(76 175 80 / 15%);
 }
-nav a:nth-child(2) {
-    --link-color:#f43;
-    --link-background:rgba(255,68,51,.1);
+.category-series {
+    --link-color: #f44336;
+    --link-background: rgb(244 67 54 / 15%);
 }
-nav a:nth-child(3) {
-    --link-color:#b760f0;
-    --link-background:rgba(183,96,240,.1);
+.category-musicas {
+    --link-color: #b760f0;
+    --link-background: rgb(183 96 240 / 15%);
 }
-nav a:nth-child(4) {
-    --link-color:#e73;
-    --link-background:rgba(238,119,51,.1);
+.category-jogos {
+    --link-color: #ff9800;
+    --link-background: rgb(255 152 0 / 15%);
 }
-nav a:nth-child(5) {
-    --link-color:#d55;
-    --link-background:rgba(221,85,85,.1);
+.category-livros {
+    --link-color: #2196f3;
+    --link-background: rgb(33 150 243 / 15%);
 }
-nav a:nth-child(6) {
-    --link-color:#fb3;
-    --link-background:rgba(255,187,51,.1);
+.category-blog {
+    --link-color: #e91e63;
+    --link-background: rgb(233 30 99 / 15%);
 }
-nav a:nth-child(7) {
-    --link-color:#49f;
-    --link-background:rgba(68,153,255,.1);
+.category-programas {
+    --link-color: #00bcd4;
+    --link-background: rgb(0 188 212 / 15%);
 }
 main {
     display: flex;
@@ -1794,18 +1794,18 @@ toc-close.show .panel-stash {
 }
 .breadcrumbs a {
     text-transform: uppercase;
-    color: #4caf50;
+    color: var(--link-color);
     padding: 0 .5rem;
     border-radius: .25rem;
 }
 .breadcrumbs a:hover,
 .breadcrumbs a:focus {
-    background: rgb(76 175 80 / 15%);
+    background: var(--link-background);
 }
 .breadcrumbs svg {
     width: 11px;
     height: 14px;
-    fill: #4caf50;
+    fill: var(--link-color);
 }
 
 .article-content {

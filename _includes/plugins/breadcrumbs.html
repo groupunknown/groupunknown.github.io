@@ -1,9 +1,9 @@
-<div class="breadcrumbs">
+<div class="breadcrumbs category-{{ page.category | slugify: 'latin' }}">
 	<a href="{{ site.url }}">Página Inicial</a>
 	<svg width="100%" height="100%">
 		<use xlink:href="#arrow-right"></use>
 	</svg>
-	<a href="{{ site.url }}/{{ page.category | slugify: "latin" }}">{{ page.category }}</a>
+	<a href="{{ site.url }}/{{ page.category | slugify: 'latin' }}">{{ page.category }}</a>
 	<svg width="100%" height="100%">
 		<use xlink:href="#arrow-right"></use>
 	</svg>
