@@ -14,7 +14,7 @@ body.theme-light {
     --white: #fff;
     --black: #000;
     --scrollbar-thumb-color: #bdbdbd;
-    --scrollbar-track-color: #ececec;
+    --scrollbar-track-color: #efefef;
     --color-inverted: #fff;
     --color-bg-inverted: #111212;
 }
@@ -34,7 +34,7 @@ body.theme-dark {
     --white: #fff;
     --black: #000;
     --scrollbar-thumb-color: #bdbdbd;
-    --scrollbar-track-color: #252b31;
+    --scrollbar-track-color: #373e47;
     --color-inverted: #000;
     --color-bg-inverted: #fff;
 }
@@ -135,6 +135,12 @@ a:not([href]):not([tabindex]):focus {
 }
 :-ms-input-placeholder {  
    color: var(--color);
+}
+::-webkit-scrollbar {
+    background: var(--scrollbar-track-color);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-color);
 }
 .item-scroll:hover {
     overflow: overlay;
