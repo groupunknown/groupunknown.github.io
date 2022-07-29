@@ -6,19 +6,69 @@ layout: default
 		{% include plugins/header-carousel.html %}
 		<div class="article-content">
 			{% include plugins/breadcrumbs.html %}
+
+			<div class="article">
+				<div class="article-poster">
+	                <img src="https://image.tmdb.org/t/p/{{ site.article_size_img_home }}{{ page.poster_path }}" alt="{{ page.title }}">
+	            </div>
+	            <div class="article-summary">
+	            	<div class="article-column">
+						<h2 class="article-title">
+							<a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+	                    </h2>
+	                    <div class="article-synopsis item-scroll">{{ page.description }}</div>
+						<div class="article-crew">
+							<div>Diretor:</div>
+							<div class="item-comma">
+								{% for crew in page.crews %}
+								<span>{{ crew }}</span>
+								{% endfor %}
+							</div>
+						</div>
+						<div class="article-cast">
+							<div>Elenco:</div>
+							<div class="item-comma">
+								{% for cast in page.casts %}
+								<span>{{ cast }}</span>
+								{% endfor %}
+							</div>
+						</div>
+						<div class="article-genre">
+							<div>Gênero:</div>
+							<div class="item-comma">
+								{% for genre in page.genres %}
+								<span>{{ genre }}</span>
+								{% endfor %}
+							</div>
+						</div>
+						<div class="article-runtime">
+							<div>Duração:</div>
+							{% if page.runtime <= 60 %}
+							<div>{{ page.runtime }}min</div>
+							{% else %}
+							<div>{{ page.runtime | divided_by: 60 | floor }}h {{ page.runtime | modulo: 60 }}min</div>
+							{% endif %}
+						</div>
+					</div>
+					<div class="article-row">{% assign vote_average = page.vote_average | remove: "." %}{% assign pessimo = "10,11,12,13,14,15,16,17,18,19,20" | split: ',' %}{% assign ruim = "21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40" | split: ',' %}{% assign aceitavel = "41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60" | split: ',' %}{% assign otimo = "61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80" | split: ',' %}{% assign execelente = "81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100" | split: ',' %}{% if pessimo contains vote_average %}{% assign status_text = "Péssimo" %}{% assign hex_color = "#ff3722" %}{% elsif ruim contains vote_average %}{% assign status_text = "Ruim" %}{% assign hex_color = "#ff8622" %}{% elsif aceitavel contains vote_average %}{% assign status_text = "Aceitável" %}{% assign hex_color = "#ffce00" %}{% elsif otimo contains vote_average %}{% assign status_text = "Ótimo" %}{% assign hex_color = "#73cf11" %}{% elsif execelente contains vote_average %}{% assign status_text = "Excelente" %}{% assign hex_color = "#4aa757" %}{% else %}{% assign status_text = "Nenhum" %}{% assign hex_color = "#dee0ec" %}{% endif %}{% if vote_average contains "100" %}{% assign status_num = "10" %}{% endif %}{% if vote_average == "00" %}{% assign status_num = "N/A" %}{% endif %}{% if vote_average != "00" and vote_average != "100" %}{% assign status_num = page.vote_average %}{% endif %}{% capture rating %}{% if page.vote_count == 0 %}Nenhuma avaliação{% elsif page.vote_count <= 1 %}{{page.vote_count}} avaliação{% elsif page.vote_count >= 2 %}{{page.vote_count}} avaliações{% endif %}{% endcapture %}
+						<div class="article-rating" style="--rating-color:{{ hex_color }}">
+							<div class="article-average">
+								<svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+									<path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" opacity=".5" stroke-width="4" fill="none"></path>
+									<path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" stroke-dasharray="{{ vote_average | strip }}, 100" stroke-width="4" fill="none" stroke-linecap="round"></path>
+									<text x="50%" y="55%" dominant-baseline="middle" stroke="none" text-anchor="middle">{{ status_num | strip }}</text>
+								</svg>
+							</div>
+							<div class="article-average-text">{{ status_text | strip }}</div>
+							<div class="article-rating-text">{{ rating | strip }}</div>
+						</div>{% capture crtfctn_text %}{% if page.certification == "L" %}LIVRE PARA TODOS OS PÚBLICOS{% elsif page.certification == 10 %}NÃO RECOMENDADO PARA MENORES DE DEZ ANOS{% elsif page.certification == 12 %}NÃO RECOMENDADO PARA MENORES DE DOZE ANOS{% elsif page.certification == 14 %}NÃO RECOMENDADO PARA MENORES DE CATORZE ANOS{% elsif page.certification == 16 %}NÃO RECOMENDADO PARA MENORES DE DEZESSEIS ANOS{% elsif page.certification == 18 %}NÃO RECOMENDADO PARA MENORES DE DEZOITO ANOS{% else %}INDISPONÍVEL{% endif %}{% endcapture %}
+						<div class="article-parental bg-cert-{{ page.certification | strip }}" tooltipped-label="{{ crtfctn_text | strip }}" data-tooltipped="top-right">{{ page.certification | strip }}</div>
+					</div>
+		        </div>
+			</div>
+
 			{% include articles/downloads.html %}
 		</div>
-		<div class="user-panel">
-	        <div class="user-panel-content">
-	            <toc-close>
-	                <svg class="panel-stash" viewBox="0 0 10 16" version="1.1" width="24" height="24" aria-hidden="true">
-	                    <path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z"></path>
-	                </svg>
-	            </toc-close>
-	            <div class="user-panel-summary">
-	            	
-	            </div>
-	        </div>
-	    </div>
+		{% include plugins/user-dashboard.html %}
 	</div>
 </main>

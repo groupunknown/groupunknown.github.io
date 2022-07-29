@@ -1728,7 +1728,7 @@ footer {
 
 
 
-.user-panel {
+.user-dashboard {
     position: fixed;
     display: flex;
     align-items: center;
@@ -1737,7 +1737,7 @@ footer {
     bottom: 0;
     z-index: 1;
 }
-.user-panel-content {
+.user-dashboard-content {
     position: relative;
     transform: translate(22px,0) translateX(100%);
     transition: all .2s;
@@ -1753,11 +1753,11 @@ footer {
     border: 3px solid var(--border-color);
     border-right: 0;
 }
-.user-panel-content.show {
+.user-dashboard-content.show {
     transform: translate(0,0);
     right: -1.5rem;
 }
-toc-close {
+dashboard-close {
     position: absolute;
     top: 50%;
     right: 100%;
@@ -1771,12 +1771,12 @@ toc-close {
     transform: translate(0,-50%) translateY(0);
     cursor: pointer;
 }
-toc-close .panel-stash {
+dashboard-close .dashboard-stash {
     fill: var(--color);
     transform: rotate(90deg) scaleY(1);
     transition: transform .2s linear;
 }
-toc-close.show .panel-stash {
+dashboard-close.show .dashboard-stash {
     transform: rotate(90deg) scaleY(-1);
 }
 
