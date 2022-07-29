@@ -72,6 +72,11 @@ body {
     -webkit-tap-highlight-color: transparent;
     cursor: default;
 }
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
     margin: 0;
 }
@@ -507,7 +512,7 @@ main {
     flex-direction: row;
     width: 100%;
     max-width: 1100px;
-    margin: auto;
+    margin: 0 auto;
     gap: 2rem;
 }
 .container {
@@ -515,8 +520,7 @@ main {
     flex-direction: column;
     width: 100%;
     max-width: 768px;
-    min-height: 100vh;
-    margin: auto;
+    margin: 0 auto;
     gap: 3rem;
 }
 .nav-items {
@@ -1402,6 +1406,7 @@ footer {
     justify-content: center;
     background: var(--sub-background);
     border-top: 1px solid var(--border-color);
+    margin-top: auto;
 }
 .footer {
     display: flex;
