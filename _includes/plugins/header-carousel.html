@@ -1,6 +1,6 @@
 <header-carousel class="carousel">
 	{% for item in site.data.carousels %}
-	<a href="{{ site.baseurl }}{{ item.slug }}">
+	<a href="{{ site.baseurl }}{{ item.slug }}" {% if forloop.first %}class="active"{% endif %}>
 		<img src="{{ site.baseurl }}{{ item.src }}" alt="{{ item.alt }}" {% if forloop.first %}{% else %}loading="lazy"{% endif %}>
 	</a>
 	{% endfor %}
