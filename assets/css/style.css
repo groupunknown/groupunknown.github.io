@@ -1964,6 +1964,8 @@ dashboard-close.show .dashboard-stash {
     text-transform: uppercase;
     border-radius: .25rem;
     cursor: pointer;
+    gap: .5rem;
+    line-height: 1;
 }
 .tab-header-item.active,
 .tab-header-item:hover,
