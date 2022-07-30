@@ -1948,3 +1948,33 @@ dashboard-close.show .dashboard-stash {
     letter-spacing: -0.0625rem;
     font-weight: 500;
 }
+
+
+.tab-header {
+    display: flex;
+    gap: .25rem;
+}
+.tab-header-item {
+    display: flex;
+    padding: 1rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.25rem;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+.tab-header-item.active,
+.tab-header-item:hover,
+.tab-header-item:focus {
+    color: #f44336;
+    background: rgb(244 67 54 / 15%);
+}
+.tab-header > div:first-child {
+    margin-right: 0;
+}
+.tab-header > div:last-child {
+    margin-left: 0;
+}
