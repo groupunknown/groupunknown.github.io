@@ -1953,6 +1953,7 @@ dashboard-close.show .dashboard-stash {
 .tab-header {
     display: flex;
     gap: .25rem;
+    border-bottom: 1px solid var(--border-color);
 }
 .tab-header-item {
     display: flex;
