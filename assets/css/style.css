@@ -9,7 +9,7 @@ body.theme-light {
     --icon-fill-hover: #22262a;
     --lazyload-1: #f9fafa;
     --lazyload-2: #e5e6e7;
-    --hover: #f3f3f3;
+    --hover: #efefef;
     --active: #f3f3f3;
     --white: #fff;
     --black: #000;
@@ -29,7 +29,7 @@ body.theme-dark {
     --icon-fill-hover: #e2e6e9;
     --lazyload-1: #2f3234;
     --lazyload-2: #2a2b2c;
-    --hover: #2a2e39;
+    --hover: #373e47;
     --active: #131722;
     --white: #fff;
     --black: #000;
@@ -1952,30 +1952,35 @@ dashboard-close.show .dashboard-stash {
 
 .tab-header {
     display: flex;
-    gap: .25rem;
     border-bottom: 1px solid var(--border-color);
 }
 .tab-header-item {
     display: flex;
-    padding: 1rem;
-    width: 100%;
     justify-content: center;
     align-items: center;
-    font-weight: 500;
+    width: 100%;
+    padding: 1rem;
+    margin: .5rem;
     text-transform: uppercase;
-    margin: 0.25rem;
     border-radius: .25rem;
     cursor: pointer;
 }
 .tab-header-item.active,
 .tab-header-item:hover,
 .tab-header-item:focus {
-    color: #f44336;
-    background: rgb(244 67 54 / 15%);
+    color: var(--color);
+    background: var(--hover);
 }
-.tab-header > div:first-child {
+.tab-header > div:not(:last-child) {
     margin-right: 0;
 }
-.tab-header > div:last-child {
-    margin-left: 0;
+@media screen and (max-width: 1024px) {
+    .tab-header {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.5rem;
+    }
+    .tab-header > div {
+        margin: 0;
+    }
 }
