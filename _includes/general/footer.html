@@ -157,7 +157,7 @@ customElements.define("dashboard-close", class extends HTMLElement {
 <script>
 var disqus_config = function () {
     this.page.url = "{{site.url}}{{page.url}}";
-    this.page.identifier = "{{page.tmdb_id}}";
+    this.page.identifier = "{{page.url}}";
 };
 (function() {
     var d = document, s = d.createElement("script");
