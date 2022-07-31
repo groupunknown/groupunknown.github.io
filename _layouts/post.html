@@ -82,8 +82,10 @@ layout: default
 				</div>
 			</div>
 			<div class="tab-content">
-				{% include articles/downloads.html %}
-				<div id="disqus_thread"></div>
+				<div class="download-content">
+					{% include articles/downloads.html %}
+				</div>
+				<div class="disqus-content" id="disqus_thread"></div>
 			</div>
 		</div>
 		{% include plugins/user-dashboard.html %}

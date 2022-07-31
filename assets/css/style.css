@@ -1986,3 +1986,7 @@ dashboard-close.show .dashboard-stash {
         margin: 0;
     }
 }
+.download-content,
+.disqus-content {
+    padding: 1rem;
+}
