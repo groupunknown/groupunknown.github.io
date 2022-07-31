@@ -1996,6 +1996,9 @@ dashboard-close.show .dashboard-stash {
 .disqus-content {
     padding: 1rem;
 }
+.disqus-content {
+    background: #fff;
+}
 .tab-content > div:not(.active) {
     display: none;
 }
