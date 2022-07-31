@@ -89,7 +89,7 @@ ol, ul {
     margin: 0;
     padding: 0;
 }
-img, svg, video, canvas, audio, iframe, embed, object {
+img, svg, video, canvas, audio, embed, object {
     display: block;
     vertical-align: middle;
     border-style: none;
