@@ -161,11 +161,11 @@ const tabClick = (el, btn) => {
         node.classList.remove("active");
     });
     el.currentTarget.classList.add("active");
-    contents.forEach(x => x.classList.remove("active"))
+    contents.forEach(x => x.classList.remove("active"));
     btn.classList.add("active");
 };
 tabs.forEach((node, i) => {
-    node.addEventListener("click", (el) => tabClick(el, contents[i]))
+    node.addEventListener("click", (el) => tabClick(el, contents[i]));
 });
 var disqus_config = function () {
     this.page.url = "{{site.url}}{{page.url}}";
