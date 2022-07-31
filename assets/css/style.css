@@ -1734,58 +1734,6 @@ footer {
 
 
 
-.user-dashboard {
-    position: fixed;
-    display: flex;
-    align-items: center;
-    right: 1.5rem;
-    top: 0;
-    bottom: 0;
-    z-index: 1;
-}
-.user-dashboard-content {
-    position: relative;
-    transform: translate(22px,0) translateX(100%);
-    transition: all .2s;
-    color: var(--color);
-    background: var(--background);
-    border-right: 0;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    padding: 1rem;
-    max-width: 300px;
-    min-width: 250px;
-    min-height: 80px;
-    border: 3px solid var(--border-color);
-    border-right: 0;
-}
-.user-dashboard-content.show {
-    transform: translate(0,0);
-    right: -1.5rem;
-}
-dashboard-close {
-    position: absolute;
-    top: 50%;
-    right: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 60px;
-    background: var(--border-color);
-    border-radius: 4px 0 0 4px;
-    transform: translate(0,-50%) translateY(0);
-    cursor: pointer;
-}
-dashboard-close .dashboard-stash {
-    fill: var(--color);
-    transform: rotate(90deg) scaleY(1);
-    transition: transform .2s linear;
-}
-dashboard-close.show .dashboard-stash {
-    transform: rotate(90deg) scaleY(-1);
-}
-
 /* post */
 .breadcrumbs {
     display: flex;
