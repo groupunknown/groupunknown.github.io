@@ -38,6 +38,9 @@ body.theme-dark {
     --color-inverted: #000;
     --color-bg-inverted: #fff;
 }
+:root {
+    color-scheme: light dark;
+}
 *,
 ::before,
 ::after {
