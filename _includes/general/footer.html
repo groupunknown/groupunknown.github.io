@@ -153,7 +153,6 @@ customElements.define("dashboard-close", class extends HTMLElement {
         });
     }
 });
-
 var tabs = Array.from(document.querySelectorAll(".tab-header > div")),
     contents = Array.from(document.querySelectorAll(".tab-content > div"));
 const tabClick = (el, btn) => {
@@ -164,11 +163,10 @@ const tabClick = (el, btn) => {
     el.currentTarget.classList.add("active");
     contents.forEach(x => x.classList.remove("active"))
     btn.classList.add("active");
-}
+};
 tabs.forEach((node, i) => {
     node.addEventListener("click", (el) => tabClick(el, contents[i]))
 });
-
 var disqus_config = function () {
     this.page.url = "{{site.url}}{{page.url}}";
     this.page.identifier = "{{page.url}}";
