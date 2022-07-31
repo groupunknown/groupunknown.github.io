@@ -101,6 +101,9 @@ svg:not(:root) {
 button {
     all: unset;
 }
+frame {
+    color-scheme: light dark;
+}
 a {
     color: inherit;
     background-color: transparent;
