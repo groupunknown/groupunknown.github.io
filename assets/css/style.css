@@ -900,6 +900,13 @@ article:nth-of-type(even) article-author author-card:focus-within {
 .summary-footer > div > div:first-child {
     font-weight: 600;
 }
+.summary-category {
+    text-transform: uppercase;
+    color: var(--link-color);
+    background: var(--link-background);
+    padding: 0 0.5rem;
+    border-radius: 0.25rem;
+}
 .summary-poster {
     background-color: var(--background);
 }

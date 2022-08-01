@@ -71,7 +71,7 @@
 			{% assign month_number = post.post_modified | date: "%-m" | minus: 1 %}
 			Atualizado em {{ post.post_modified | date: "%-d" }} de {{ months[month_number] }} de {{ post.post_modified | date: "%Y" }}
 			{% endif %}</div>
-			<div>{{ post.category }}</div>
+			<div class="summary-category category-{{ post.category | slugify: 'latin' }}">{{ post.category }}</div>
 		</div>
 		<div class="summary-content">
 			<div class="summary-poster">
