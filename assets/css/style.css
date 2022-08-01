@@ -1664,6 +1664,25 @@ footer {
 .paginationjs .paginationjs-pages li:last-child > a {
     border-radius: 0 3px 3px 0;
 }
+/* Coming Soon */
+.coming-soon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 3px;
+    color: var(--color);
+    background: var(--hover);
+}
+.coming-soon h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.coming-soon p {
+    font-style: italic;
+}
 /*Blog*/
 .blog-channel {
     display: flex;
