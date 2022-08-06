@@ -280,7 +280,6 @@ header-sticky {
     justify-content: center;
     background: var(--sub-background);
     box-shadow: 0 3px 6px 3px rgb(0 0 0 / 10%);
-    margin-bottom: 3rem;
 }
 header-observe {
     display: none;
@@ -519,7 +518,7 @@ main {
     flex-direction: row;
     width: 100%;
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 3rem auto;
     gap: 2rem;
 }
 .container {
@@ -1102,6 +1101,7 @@ filter-sort.selected {
 .filter-results-items.active {
     display: flex;
 }
+.filter-pagination,
 .filter-results {
     display: flex;
     flex-direction: column;
@@ -1515,9 +1515,6 @@ footer {
     .filter-results {
         gap: 2rem;
     }
-    .paginationjs {
-        margin-bottom: 0;
-    }
 }
 @media screen and (max-width: 768px) {
     .container {
@@ -1582,7 +1579,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 3rem;
 }
 .pagination a,
 .pagination span {
@@ -1617,7 +1613,7 @@ footer {
     border-bottom-right-radius: 3px;
 }
 .paginationjs {
-    margin: 3rem 0;
+    margin: auto;
     cursor: default;
 }
 .paginationjs .paginationjs-pages ul {
