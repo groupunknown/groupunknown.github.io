@@ -5,11 +5,12 @@ layout: default
 	<div class="container">
 		{% include plugins/header-carousel.html %}
 		<div class="article-content">
-			
 			<div class="article-header category-{{ page.category | slugify: 'latin' }}">
 				{% include plugins/breadcrumbs.html %}
 				<div class="article-category">{{ page.category }}</div>
 			</div>
+
+			{% if page.category == "Filmes" or page.category == "Séries" %}
 			<div class="article">
 				<div class="article-poster">
 	                <img src="https://image.tmdb.org/t/p/{{ site.article_size_img_home }}{{ page.poster_path }}" alt="{{ page.title }}">
@@ -90,6 +91,12 @@ layout: default
 				</div>
 				<div class="disqus-content" id="disqus_thread"></div>
 			</div>
+			{% elsif page.category == "api" %}
+			<div class="article-api">
+				<h2>{{ page.title }}</h2>
+            	{{ content }}
+			</div>
+			{% endif %}
 		</div>
 	</div>
 </main>
