@@ -14,7 +14,7 @@
 <meta name="twitter:image:alt" content="{{ page.description }}">
 <meta name="google-site-verification" content="{{ site.webmaster_verifications.google }}" />
 <script type="application/ld+json">
-[
+[{% if page.category == "Filmes" or page.category == "Séries" %}
     {
         "@context": "http://schema.org",
         "@type": "{% if page.category == "Filmes" %}Movie{% elsif page.category == "Séries" %}TVSeries{% endif %}",
@@ -45,7 +45,7 @@
             "ratingValue": {{ page.vote_average | jsonify }}
         },
         "{% if page.category == "Filmes" %}duration{% elsif page.category == "Séries" %}timeRequired{% endif %}": "PT{% if page.runtime <= 60 %}{{ page.runtime }}M{% else %}{{ page.runtime | divided_by: 60 | floor }}H{{ page.runtime | modulo: 60 }}M{% endif %}"
-    },
+    },{% endif %}
     {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
