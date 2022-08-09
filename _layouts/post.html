@@ -3,7 +3,9 @@ layout: default
 ---
 <main>
 	<div class="container {% if page.category == "Api" %}fluid{% endif %}">
-		{% include plugins/header-carousel.html %}
+		{% if page.category != "Api" %}
+			{% include plugins/header-carousel.html %}
+		{% endif %}
 		<div class="article-content">
 			<div class="article-header category-{{ page.category | slugify: 'latin' }}">
 				{% include plugins/breadcrumbs.html %}

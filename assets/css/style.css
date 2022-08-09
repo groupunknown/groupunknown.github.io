@@ -293,7 +293,7 @@ header {
     max-width: 768px;
     gap: 1rem;
 }
-header.taxonomy {
+header.fluid {
     max-width: 1100px;
     justify-items: flex-start;
 }
@@ -1452,7 +1452,7 @@ footer {
         grid-auto-flow: dense;
         padding: 0 2rem;
     }
-    header.taxonomy {
+    header.fluid {
         justify-items: center;
     }
     live-search,
