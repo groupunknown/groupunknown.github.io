@@ -5,12 +5,12 @@ layout: default
 	<div class="container">
 		{% include plugins/header-carousel.html %}
 		{% for post in paginator.posts %}
-		{% if post.category == "Filmes" or post.category == "Séries" %}
-			{% include articles/article-tv.html %}
-		{% endif %}
-		{% if forloop.index == 5 %}
-		{% include plugins/posts-carousel.html %}
-		{% endif %}
+			{% if post.category == "Filmes" or post.category == "Séries" %}
+				{% include articles/article-tv.html %}
+			{% endif %}
+			{% if forloop.index == 5 %}
+				{% include plugins/posts-carousel.html %}
+			{% endif %}
 		{% endfor %}
 		{% include plugins/pagination.html %}
 	</div>
