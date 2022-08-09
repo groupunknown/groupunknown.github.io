@@ -2,20 +2,20 @@
 	<div id="mssg" class="col-sm-12"></div>
 	<div class="card-body">
 		<div class="row row-sm">
-			<div class="col-sm-2">
+			<div class="col-sm-4">
 				<div class="md-form-group">
 					<input class="md-input" name="api_key" value="af9cdd17ba78c9e7b40970de25f91af6" />
 					<label>API TMDb</label>
 				</div>
 			</div>
-			<div class="col-sm-2 col-sm-select">
+			<div class="col-sm-4 col-sm-select">
 				<label class="md-select" for="search_type">Selecione o tipo</label>
 				<select name="search_type" id="search_type">
 					<option value="movie">Filmes</option>
 					<option value="tv">Séries</option>
 				</select>
 			</div>
-			<div class="col-sm-2 col-sm-select">
+			<div class="col-sm-4 col-sm-select">
 				<label class="md-select" for="search_lang">Selecione o idioma</label>
 				<select name="search_lang" id="search_lang">
 					<option value="pt-BR">Português Brasileiro</option>
@@ -25,15 +25,7 @@
 					<option value="fr-FR">Francês</option>
 				</select>
 			</div>
-			<div class="col-sm-6 align-right">
-				<input type="button" name="buscar" class="btn w-sm mb-1 bg-warning-lt" value="Buscar" />
-				<input type="button" name="reset" class="btn w-sm mb-1 bg-danger-lt" value="Reset" />
-				<input type="submit" name="enviar" class="btn w-sm mb-1 bg-success-lt" value="Salvar" />
-			</div>
-		</div>
-	</div>
-	<div class="card-body field-reset">
-		<div class="row row-sm">
+			
 			<div class="col-sm-3">
 				<div class="md-form-group float-label">
 					<input class="md-input" value="" onkeyup="this.setAttribute('value', this.value);" name="search_id" />
@@ -149,6 +141,11 @@
 					<label class="img-input">Poster</label>
 				</div>
 				<div class="img-select"></div>
+			</div>
+			<div class="col-sm-6 align-right">
+				<input type="button" name="buscar" class="btn w-sm mb-1 bg-warning-lt" value="Buscar" />
+				<input type="button" name="reset" class="btn w-sm mb-1 bg-danger-lt" value="Reset" />
+				<input type="submit" name="enviar" class="btn w-sm mb-1 bg-success-lt" value="Salvar" />
 			</div>
 		</div>
 	</div>

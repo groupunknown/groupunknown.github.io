@@ -36,17 +36,9 @@ textarea {
     position: relative;
     display: flex;
     flex-direction: column;
-    min-width: 0;
     word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid rgba(19, 24, 44, 0.125);
-    border-radius: 0.25rem;
-    background: #fff;
-    border-width: 0;
-    border-radius: 0.25rem;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-    margin-bottom: 1.5rem;
+    background: var(--sub-background);
+    padding: 1rem;
 }
 .md-form-group {
     padding: 18px 0 24px 0;
