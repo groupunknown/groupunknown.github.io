@@ -138,15 +138,6 @@
             tagifyDiretor.addTags(this.crewTMDB(obj, 'Director', type))
             this.postersTMDB(obj.posters, 10)
         },
-        getTMDB: function(type, id, key, lang) {
-            var details = 'https://api.themoviedb.org/3/'+type+'/'+id.replace(/\s/g, '')+'?api_key='+key+'&language='+lang+'&append_to_response=videos',
-                person = 'https://api.themoviedb.org/3/movie/'+id.replace(/\s/g, '')+'/credits?api_key=af9cdd17ba78c9e7b40970de25f91af6',
-                parental = 'https://api.themoviedb.org/3/movie/'+id.replace(/\s/g, '')+'/release_dates?api_key=af9cdd17ba78c9e7b40970de25f91af6',
-                posters = 'https://api.themoviedb.org/3/movie/' + id.replace(/\s/g, '') + '/images?api_key=af9cdd17ba78c9e7b40970de25f91af6&include_image_language=en,null'
-            $.when(this.searchTMDB(details), this.searchTMDB(person), this.searchTMDB(parental), this.searchTMDB(posters)).done((res1, res2, res3,res4) => {
-                this.sendtofields($.extend(res1, res2, res3, res4), type)
-            })
-        },
         SearchSeriesTMDB: function(url, key, type, lang, id) {
             $.when(
                 this.searchTMDB(url + type +"/"+ id +"?api_key="+key+"&language="+lang+"&append_to_response=videos,external_ids"),
