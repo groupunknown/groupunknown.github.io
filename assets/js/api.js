@@ -32,10 +32,6 @@
             }
             return null;
         },
-        statusmsg: function(mssg, clss) {
-            var div = `<div class="alert bg-soft-`+clss+`"><div class="strong">`+mssg+`</div><button class="btn-close">X</button></div>`
-            $('#mssg').append(div)
-        },
         ArrayofObjectsintoCommaSeparatedString: function(obj, key) {
             return Array.prototype.map.call(obj, function(item) { return item[key] }).join(', ');
         },
@@ -45,7 +41,6 @@
                 if (typeof age != "undefined" && age != null && age.length != null && age.length > 0) {
                     return age[0].rating
                 } else {
-                    this.statusmsg('Classificação indicativa indisponível!', 'warning')
                     return null
                 }
             } else {
@@ -53,7 +48,6 @@
                 if (typeof age != "undefined" && age != null && age.length != null && age.length > 0) {
                     return age[0].release_dates[0].certification
                 } else {
-                    this.statusmsg('Classificação indicativa indisponível!', 'warning')
                     return null
                 }
             }
@@ -63,7 +57,6 @@
             if (typeof video != "undefined" && video != null && video.length != null && video.length > 0) {
                 return video[0].key
             } else {
-                this.statusmsg('Trailer não encontrado!', 'warning')
                 return null
             }
         },
@@ -83,7 +76,7 @@
             var filter = obj.filter((val, i) => val.iso_639_1 == 'en'),
                 limit = filter.filter((val, i) => i < max);
             for (var i = 0; i < limit.length; i++) {
-                $('.img-select').append(`<label for="img${i}">
+                $('.poster-selection').append(`<label for="img${i}">
                 <input type="radio" name="poster" id="img${i}" value="${limit[i].file_path}">
                 <img src="https://image.tmdb.org/t/p/w500/${limit[i].file_path}"></label>`);
             }
@@ -143,7 +136,6 @@
             tagifyGenero.addTags(this.ArrayofObjectsintoCommaSeparatedString(obj.genres, 'name'))
             tagifyElenco.addTags(this.castTMDB(obj.cast, 6))
             tagifyDiretor.addTags(this.crewTMDB(obj, 'Director', type))
-            this.statusmsg('Busca completa!', 'info')
             this.postersTMDB(obj.posters, 10)
         },
         getTMDB: function(type, id, key, lang) {
@@ -187,8 +179,10 @@
     };
     result.tmdb = tmdb
 })(this);
+
 // DESATIVA A CORREÇÃO ORTOGRAFICA
-tmdb.disablespellcheck()
+tmdb.disablespellcheck();
+
 // INICIA O PLUGIN TAGFY
 var inputAutor = document.querySelector('input[name=author]'),
     inputGenero = document.querySelector('input[name=genero]'),
@@ -213,48 +207,50 @@ var inputAutor = document.querySelector('input[name=author]'),
     tagifyExtensao = new Tagify(inputExtensao, {
         whitelist : ['mkv', 'mp4'],
     });
+
 // CONTA O NUMERO DE CARACTERES DENTRO DA TEXTAREA
 var sinopse_count = document.querySelector('textarea[name=sinopse]');
 sinopse_count.addEventListener('input', function() {
     var currentLength = this.value.length
     document.querySelector('span[name=count]').innerHTML = currentLength + ' caracteres.'
 });
-// CAPTURA O ID E INICIA A BUSCA
-var BTN_SEARCH = document.querySelector("input[name=buscar]"),
-    BTN_SEND = document.querySelector("input[name=enviar]"),
-    BTN_RESET = document.querySelector("input[name=reset]"),
-    SELECT_KEY = document.querySelector("input[name=api_key]"),
+
+var SELECT_KEY = document.querySelector("input[name=api_key]"),
     SELECT_TYPE = document.querySelector("select[name=search_type]"),
     SELECT_LANG = document.querySelector("select[name=search_lang]"),
     INPUT_ID = document.querySelector("input[name=search_id]");
-/**
- * INICIA A BUSCA
- */
-BTN_SEARCH.addEventListener("click", function() {
-    tmdb.SearchByTypeTMDB(SELECT_KEY.value, SELECT_TYPE.value, SELECT_LANG.value, INPUT_ID.value.replace(/\s/g, ''));
+
+customElements.define("btn-find", class extends HTMLElement {
+    constructor() {
+        super();
+        this.addEventListener("click", e => {
+            tmdb.SearchByTypeTMDB(SELECT_KEY.value, SELECT_TYPE.value, SELECT_LANG.value, INPUT_ID.value.replace(/\s/g, ''));
+        });
+    }
 });
-BTN_SEND.addEventListener("click", function() {
-    tmdb.GenerateMarkdownFile()
+customElements.define("btn-reset", class extends HTMLElement {
+    constructor() {
+        super();
+        this.addEventListener("click", e => {
+            $(".card-body").find("input:not([name^='api_key']").val("");
+            $("textarea[name=sinopse]").val("");
+            $("#mssg").empty();
+            $(".poster-selection").empty();
+            tagifyAutor.removeAllTags();
+            tagifyGenero.removeAllTags();
+            tagifyDiretor.removeAllTags();
+            tagifyElenco.removeAllTags();
+            tagifyQualidade.removeAllTags();
+            tagifyAudio.removeAllTags();
+            tagifyExtensao.removeAllTags();
+        });
+    }
 });
-/**
- * LIMPA TOOS OS CAMPOS
- */
-BTN_RESET.addEventListener("click", function() {
-    $('.field-reset').find('input:text').val('')
-    $('textarea[name=sinopse]').val('')
-    $('#mssg').empty()
-    $('.img-select').empty()
-    tagifyAutor.removeAllTags()
-    tagifyGenero.removeAllTags()
-    tagifyDiretor.removeAllTags()
-    tagifyElenco.removeAllTags()
-    tagifyQualidade.removeAllTags()
-    tagifyAudio.removeAllTags()
-    tagifyExtensao.removeAllTags()
-});
-/**
- * FECHA O ALERTA
- */
-$(document).on("click", ".btn-close", function() {
-    $(this).closest(".alert").remove();
+customElements.define("btn-save", class extends HTMLElement {
+    constructor() {
+        super();
+        this.addEventListener("click", e => {
+            tmdb.GenerateMarkdownFile();
+        });
+    }
 });
