@@ -142,7 +142,7 @@ customElements.define("header-mobile", class extends HTMLElement {
 </script>
 
 
-{% if page.category %}
+{% if page.category == "Filmes" or page.category == "Séries" or page.category == "Blog" %}
 <script>
 var tabs = Array.from(document.querySelectorAll(".tab-header > div")),
     contents = Array.from(document.querySelectorAll(".tab-content > div"));
