@@ -1,4 +1,155 @@
-<div class="article-api">
-	<h2>{{ page.title }}</h2>
-	{{ content }}
+<div class="card">
+	<div id="mssg" class="col-sm-12"></div>
+	<div class="card-body">
+		<div class="row row-sm">
+			<div class="col-sm-2">
+				<div class="md-form-group">
+					<input class="md-input" name="api_key" value="af9cdd17ba78c9e7b40970de25f91af6" />
+					<label>API TMDb</label>
+				</div>
+			</div>
+			<div class="col-sm-2 col-sm-select">
+				<label class="md-select" for="search_type">Selecione o tipo</label>
+				<select name="search_type" id="search_type">
+					<option value="movie">Filmes</option>
+					<option value="tv">Séries</option>
+				</select>
+			</div>
+			<div class="col-sm-2 col-sm-select">
+				<label class="md-select" for="search_lang">Selecione o idioma</label>
+				<select name="search_lang" id="search_lang">
+					<option value="pt-BR">Português Brasileiro</option>
+					<option value="pt-PT">Português</option>
+					<option value="en-US">Inglês</option>
+					<option value="es-ES">Espanhol</option>
+					<option value="fr-FR">Francês</option>
+				</select>
+			</div>
+			<div class="col-sm-6 align-right">
+				<input type="button" name="buscar" class="btn w-sm mb-1 bg-warning-lt" value="Buscar" />
+				<input type="button" name="reset" class="btn w-sm mb-1 bg-danger-lt" value="Reset" />
+				<input type="submit" name="enviar" class="btn w-sm mb-1 bg-success-lt" value="Salvar" />
+			</div>
+		</div>
+	</div>
+	<div class="card-body field-reset">
+		<div class="row row-sm">
+			<div class="col-sm-3">
+				<div class="md-form-group float-label">
+					<input class="md-input" value="" onkeyup="this.setAttribute('value', this.value);" name="search_id" />
+					<label>TMDb ID</label>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="md-form-group">
+					<input class="md-input" name="imdb_id" />
+					<label>IMDb ID</label>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="md-form-group">
+					<input class="md-input" name="author" />
+					<label>Autor</label>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="md-form-group">
+					<input class="md-input" name="trailer" />
+					<label>Trailer</label>
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<div class="md-form-group">
+					<input class="md-input" name="titulo" />
+					<label>Título</label>
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<div class="md-form-group">
+					<textarea class="md-input" name="sinopse" rows="4"></textarea>
+					<label>Descrição</label>
+					<span class="md-input-msg right" name="count"></span>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="md-form-group">
+					<input class="md-input" name="lancamento" />
+					<label>Lançamento</label>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="md-form-group">
+					<input class="md-input" name="duracao" />
+					<label>Duração</label>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="md-form-group">
+					<input class="md-input" name="vote_average" />
+					<label>Média de votos</label>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="md-form-group">
+					<input class="md-input" name="vote_count" />
+					<label>Total de votos</label>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="md-form-group">
+					<input class="md-input" name="parental" />
+					<label>Classificação Indicativa</label>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="md-form-group">
+					<input class="md-input" name="adult" />
+					<label>Conteúdo adulto?</label>
+				</div>
+			</div>
+
+			<div class="col-sm-4">
+				<div class="md-form-group">
+					<input class="md-input" name="genero" />
+					<label>Gêneros</label>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="md-form-group">
+					<input class="md-input" name="diretor" />
+					<label>Diretor</label>
+				</div>
+			</div>
+			<div class="col-sm-5">
+				<div class="md-form-group">
+					<input class="md-input" name="elenco" />
+					<label>Elenco</label>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="md-form-group">
+					<input class="md-input" name="qualidade" value="1080p, 720p" />
+					<label>Qualidade</label>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="md-form-group">
+					<input class="md-input" name="audio" value="Dual Áudio, Português, Inglês" />
+					<label>Áudio</label>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="md-form-group">
+					<input class="md-input" name="extensao" value="mkv, mp4" />
+					<label>Extensão</label>
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<div class="md-form-group">
+					<label class="img-input">Poster</label>
+				</div>
+				<div class="img-select"></div>
+			</div>
+		</div>
+	</div>
 </div>
