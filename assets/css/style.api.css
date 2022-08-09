@@ -57,7 +57,7 @@ button:not(:disabled) {
     border-radius: 0;
     border-bottom: 2px solid rgba(135, 150, 165, 0.15);
     width: 100%;
-    min-height: 36px;
+    min-height: 38px;
     padding: 0 .5rem;
     color: inherit;
 }

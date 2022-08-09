@@ -34,7 +34,7 @@
         },
         statusmsg: function(mssg, clss) {
             var div = `<div class="alert bg-soft-`+clss+`"><div class="strong">`+mssg+`</div><button class="btn-close">X</button></div>`
-            //$('#mssg').append(div)
+            $('#mssg').append(div)
         },
         ArrayofObjectsintoCommaSeparatedString: function(obj, key) {
             return Array.prototype.map.call(obj, function(item) { return item[key] }).join(', ');
