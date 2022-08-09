@@ -33,6 +33,9 @@ button:not(:disabled) {
 .row > div {
     padding: 0 15px;
 }
+.mb-2 {
+    margin-bottom: 2rem;
+}
 .card {
     position: relative;
     display: flex;
@@ -189,7 +192,7 @@ textarea.md-input {
 }
 .img-select {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(9%, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(16%, 1fr));
     border-bottom: 1px solid rgba(135, 150, 165, 0.15);
     gap: 1rem;
 }
