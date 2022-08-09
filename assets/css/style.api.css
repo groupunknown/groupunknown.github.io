@@ -20,12 +20,6 @@ textarea {
     overflow: auto;
     resize: vertical;
 }
-[type="button"]:not(:disabled),
-[type="reset"]:not(:disabled),
-[type="submit"]:not(:disabled),
-button:not(:disabled) {
-    cursor: pointer;
-}
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -139,6 +133,7 @@ textarea.md-input {
     border-radius: 0.25rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     width: 100%;
+    cursor: pointer;
 }
 .bg-success-lt:focus,
 .bg-success-lt:hover {
