@@ -529,6 +529,9 @@ main {
     margin: 0 auto;
     gap: 3rem;
 }
+.container.fluid {
+    max-width: 1100px;
+}
 .nav-items {
     display: flex;
     flex-direction: column;
