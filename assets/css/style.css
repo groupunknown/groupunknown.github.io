@@ -2006,6 +2006,9 @@ footer {
 .season-content:last-child {
     border-bottom: 0;
 }
+.table-content > div:not(.show):nth-last-child(2) {
+    border-bottom: 0;
+}
 .season-title {
     font-weight: 500;
     text-transform: uppercase;
@@ -2038,7 +2041,7 @@ footer {
 .episode-content:last-child > div:nth-last-child(2) {
     border-bottom: 0;
 }
-.episode-content.active:last-child .episode-title {
+.episode-content.active:last-child .episode-title.show {
     border-bottom: 1px solid var(--border-color);
 }
 .episode-content-options {
@@ -2058,6 +2061,9 @@ footer {
 }
 .episode-content:last-child .episode-content-options.active {
     border-top: 0;
+}
+.episode-content:last-child .episode-content-options:is(.active):last-child {
+    border-bottom: 0;
 }
 .episode-content-options a {
     display: grid;
@@ -2103,4 +2109,15 @@ footer {
 .episode-content-download.active {
     display: grid;
     box-shadow: inset 0px 0px 10px 0px rgb(100 100 100 / 10%);
+}
+.season-content.show,
+.episode-title.show,
+.episode-main-download.show {
+    background-color: var(--hover);
+}
+
+@media screen and (max-width: 1024px) {
+    .episode-content-download {
+        grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+    }
 }
