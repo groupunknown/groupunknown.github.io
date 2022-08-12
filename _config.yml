@@ -24,7 +24,9 @@ webmaster_verifications:
 # ["w92","w154","w185","w342","w500","w780","original"]
 # https://www.themoviedb.org/talk/53c11d4ec3a3684cf4006400
 article_size_img_home: w154
+article_size_img_home_mobile: w342
 article_size_img_post: w185
+article_size_img_post_mobile: w342
 
 encrypt_status: false
 encrypt_key: sua_chave

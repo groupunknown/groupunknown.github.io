@@ -1,6 +1,9 @@
 <div class="article">
 	<div class="article-poster">
-		<img src="https://image.tmdb.org/t/p/{{ site.article_size_img_post }}{{ page.poster_path }}" alt="{{ page.title }}">
+		<picture>
+			<source media="(max-width: 425px)" srcset="https://image.tmdb.org/t/p/{{ site.article_size_img_post_mobile }}{{ page.poster_path }}">
+			<img src="https://image.tmdb.org/t/p/{{ site.article_size_img_post }}{{ page.poster_path }}" alt="{{ page.title }}">
+		</picture>
 	</div>
 	<div class="article-summary">
 		<div class="article-column">
