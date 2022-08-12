@@ -916,7 +916,7 @@ article:nth-of-type(even) article-author author-card:focus-within {
 .summary-poster,
 .summary-poster img {
     width: 154px;
-    height: 231px;
+    height: auto;
     border-radius: .25rem;
 }
 .summary-summary {
@@ -1831,19 +1831,20 @@ footer {
 .article-summary {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: .5rem;
 }
 .article-poster,
 .article-poster img {
-    width: 154px;
-    height: 231px;
+    width: 185px;
+    height: auto;
     border-radius: 0.25rem;
 }
 .article-poster {
     background-color: var(--background);
 }
 .article-title {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 600;
     padding-bottom: .25rem;
 }
@@ -1851,7 +1852,7 @@ footer {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     padding-bottom: .25rem;
 }
