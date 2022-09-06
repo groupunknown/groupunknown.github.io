@@ -34,11 +34,11 @@
 				{% elsif page == paginator.page %}
 					<span class="active">{{ page }}</span>
             	{% else %}
-                	<a href="{{ site.paginate_path | prepend: site.url | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+                	<a href="{{ site.paginate_path | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
 				{% endif %}
             {% else %}
            		{% if paginator.page == 5 %}
-                	<a href="{{ paginator.next_page_path | prepend: site.url | replace: '//', '/' }}">{{ page }}</a>
+                	<a href="{{ paginator.next_page_path | replace: '//', '/' }}">{{ page }}</a>
               	{% endif %}
               		<span>...</span>
               		<a href="/page/{{ last_page }}/">{{ last_page }}</a>
