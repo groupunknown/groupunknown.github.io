@@ -1,7 +1,7 @@
 {% if paginator.total_pages > 1 %}
     <div class="pagination">
     {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+    <a href="{{ paginator.previous_page_path }}" aria-label="Anterior">
     	<svg width="8" height="16" viewBox="0 0 8 13">
     		<g fill="none" stroke="none" stroke-width="1" fill-rule="evenodd">
     			<g transform="translate(1.000000, 1.000000)" stroke="currentColor" stroke-width="2">
@@ -34,11 +34,11 @@
 				{% elsif page == paginator.page %}
 					<span class="active">{{ page }}</span>
             	{% else %}
-                	<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+                	<a href="{{ site.paginate_path | prepend: site.url | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
 				{% endif %}
             {% else %}
            		{% if paginator.page == 5 %}
-                	<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+                	<a href="{{ paginator.next_page_path | prepend: site.url | replace: '//', '/' }}">{{ page }}</a>
               	{% endif %}
               		<span>...</span>
               		<a href="/page/{{ last_page }}/">{{ last_page }}</a>
@@ -101,7 +101,7 @@
         {% endif %}
     {% endfor %}
     {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+    <a href="{{ paginator.next_page_path }}" aria-label="Próximo">
     	<svg width="8" height="16" viewBox="0 0 8 13">
     		<g fill="none" stroke="none" stroke-width="1" fill-rule="evenodd">
     			<g transform="translate(-2.000000, 4.000000)" stroke="currentColor" stroke-width="2">
