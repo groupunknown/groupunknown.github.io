@@ -2,7 +2,7 @@
 layout: default
 ---
 <main>
-	<div class="container {% if page.category == "Api" %}fluid{% endif %}">
+	<div class="container {% if page.category == "Api" or site.aside_status %}fluid{% endif %}">
 		{% if page.category != "Api" %}
 			{% include plugins/header-carousel.html %}
 		{% endif %}
@@ -18,7 +18,9 @@ layout: default
 			{% endif %}
 		</div>
 	</div>
+	{% if site.aside_status %}
 	<div class="nav-items">
 		{% include general/aside.html %}
 	</div>
+	{% endif %}
 </main>
